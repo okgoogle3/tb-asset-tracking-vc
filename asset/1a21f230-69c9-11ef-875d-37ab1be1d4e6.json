@@ -1,0 +1,55 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "e6765270-6539-11ef-9a16-c37bf92a3a90"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "1a21f230-69c9-11ef-875d-37ab1be1d4e6"
+    },
+    "label" : null,
+    "name" : "Zone 11",
+    "ownerId" : null,
+    "type" : "default"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "cc11e1a0-69d1-11ef-875d-37ab1be1d4e6"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "1a21f230-69c9-11ef-875d-37ab1be1d4e6"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 72
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "1a21f230-69c9-11ef-875d-37ab1be1d4e6"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "12d8b630-69c9-11ef-875d-37ab1be1d4e6"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 67
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "f98de780-6a96-11ef-9d56-a967fa43ae4a"
+    },
+    "name" : "Generator Rule Chain",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 213,
+        "layoutY" : 397
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 15,
+        "scriptLang" : "TBEL",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var msg = {\n    temp: 42,\n    humidity: 77,\n    batteryLevel: 78,\n    signalLevel: 3,\n    lat: parseFloat(toFixed((25.730 + (Math.random() * (64 - 57 + 1) + 57) * 0.01),6)),\n    lon: parseFloat(toFixed((40.803 + (Math.random() * (97 - 46 + 1) + 46) * 0.001),6))\n};\nvar metadata = {\n    data: 40\n};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn {\n    msg: msg,\n    metadata: metadata,\n    msgType: msgType\n};",
+        "originatorId" : "55dd6390-69c9-11ef-875d-37ab1be1d4e6",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "663c5290-6a97-11ef-9d56-a967fa43ae4a"
+      },
+      "name" : "Device 1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 561,
+        "layoutY" : 385
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "e617b7b0-6539-11ef-9a16-c37bf92a3a90"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "7809d150-6a97-11ef-9d56-a967fa43ae4a"
+      },
+      "name" : "to root",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

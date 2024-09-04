@@ -1,0 +1,71 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "e6765270-6539-11ef-9a16-c37bf92a3a90"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "e1caa450-69d1-11ef-875d-37ab1be1d4e6"
+    },
+    "label" : null,
+    "name" : "AssetEntity 1",
+    "ownerId" : null,
+    "type" : "default"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e1caa450-69d1-11ef-875d-37ab1be1d4e6"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "cc11e1a0-69d1-11ef-875d-37ab1be1d4e6"
+    },
+    "type" : "EntityToGeofence",
+    "typeGroup" : "COMMON",
+    "version" : 78
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "55dd6390-69c9-11ef-875d-37ab1be1d4e6"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e1caa450-69d1-11ef-875d-37ab1be1d4e6"
+    },
+    "type" : "DeviceToEntity",
+    "typeGroup" : "COMMON",
+    "version" : 76
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : 26.379576,
+      "jsonValue" : null,
+      "key" : "lat",
+      "lastUpdateTs" : 1725453607187,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 40.857075,
+      "jsonValue" : null,
+      "key" : "lon",
+      "lastUpdateTs" : 1725453607187,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
