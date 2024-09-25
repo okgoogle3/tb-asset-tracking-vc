@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "1c08fb60-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -15,22 +15,22 @@
     "externalId" : null,
     "id" : {
       "entityType" : "ASSET",
-      "id" : "f6019c50-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "90d9c460-6b6e-11ef-9e6c-75c864e5f031"
     },
     "label" : null,
-    "name" : "Geofence 112",
+    "name" : "Geofence 2",
     "ownerId" : null,
-    "type" : "default"
+    "type" : "Geofence"
   },
   "relations" : [ {
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "f6019c50-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "90d9c460-6b6e-11ef-9e6c-75c864e5f031"
     },
     "to" : {
       "entityType" : "ASSET",
-      "id" : "e9cb3cc0-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
     "type" : "GeofenceToZone",
     "typeGroup" : "COMMON"
@@ -39,9 +39,17 @@
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[[25,41],[25,42],[27,42],[27,41]]",
+      "jsonValue" : "[[49.89016197466272,30.234378000774356],[49.49616352762781,31.475833078899356]]",
       "key" : "perimeter",
-      "lastUpdateTs" : 1725532365725,
+      "lastUpdateTs" : 1725631833055,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[49.89016197466272, 30.234378000774356], [49.49616352762781, 31.475833078899356]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1725631833073,
       "longValue" : null,
       "strValue" : null
     } ]

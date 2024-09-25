@@ -1,23 +1,23 @@
 {
   "entityType" : "DEVICE_PROFILE",
   "entity" : {
-    "default" : true,
+    "default" : false,
     "defaultDashboardId" : null,
     "defaultEdgeRuleChainId" : null,
     "defaultQueueName" : null,
-    "defaultRuleChainId" : null,
-    "description" : "Default device profile",
-    "externalId" : {
-      "entityType" : "DEVICE_PROFILE",
-      "id" : "1c035610-6b6e-11ef-b852-5f7f6439defe"
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "affce570-6b5a-11ef-9e6c-75c864e5f031"
     },
+    "description" : "",
+    "externalId" : null,
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "1c035610-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "b06b5eb0-6b5a-11ef-9e6c-75c864e5f031"
     },
     "image" : null,
-    "name" : "default",
+    "name" : "local tracker",
     "profileData" : {
       "alarms" : null,
       "configuration" : {

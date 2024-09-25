@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "1c08fb60-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "fe059240-6b6d-11ef-9e6c-75c864e5f031"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -15,77 +15,77 @@
     "externalId" : null,
     "id" : {
       "entityType" : "ASSET",
-      "id" : "0414ab20-6b6f-11ef-b852-5f7f6439defe"
+      "id" : "f7304a80-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
     "label" : null,
-    "name" : "Entity 1",
+    "name" : "Zone 2",
     "ownerId" : null,
-    "type" : "default"
+    "type" : "Zone"
   },
   "relations" : [ {
     "additionalInfo" : null,
     "from" : {
-      "entityType" : "DEVICE",
-      "id" : "d4dafa30-6b6e-11ef-b852-5f7f6439defe"
+      "entityType" : "ASSET",
+      "id" : "979629b0-6b6e-11ef-9e6c-75c864e5f031"
     },
     "to" : {
       "entityType" : "ASSET",
-      "id" : "0414ab20-6b6f-11ef-b852-5f7f6439defe"
+      "id" : "f7304a80-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
-    "type" : "DeviceToEntity",
+    "type" : "GeofenceToZone",
     "typeGroup" : "COMMON"
   }, {
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "0414ab20-6b6f-11ef-b852-5f7f6439defe"
+      "id" : "adcc80f0-6c57-11ef-aa90-d190550e228a"
     },
     "to" : {
       "entityType" : "ASSET",
-      "id" : "dedd62c0-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "f7304a80-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
-    "type" : "EntityToLocation",
+    "type" : "GeofenceToZone",
     "typeGroup" : "COMMON"
   }, {
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "0414ab20-6b6f-11ef-b852-5f7f6439defe"
+      "id" : "f7304a80-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
     "to" : {
       "entityType" : "ASSET",
-      "id" : "e9cb3cc0-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
     },
-    "type" : "EntityToZone",
+    "type" : "ZoneToAsset",
     "typeGroup" : "COMMON"
   }, {
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "0414ab20-6b6f-11ef-b852-5f7f6439defe"
+      "id" : "f7304a80-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
     "to" : {
       "entityType" : "ASSET",
-      "id" : "f2276f60-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "d5dd8f50-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
-    "type" : "EntityToGeofence",
+    "type" : "ZoneToLocation",
     "typeGroup" : "COMMON"
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
-      "doubleValue" : 21.5,
-      "jsonValue" : null,
-      "key" : "lat",
-      "lastUpdateTs" : 1725532460086,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.559735512679225,27.1537813126455],[46.20384760074374,33.28732383479371]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1725625464115,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : 40.5,
-      "jsonValue" : null,
-      "key" : "lon",
-      "lastUpdateTs" : 1725532460086,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.559735512679225, 27.1537813126455], [46.20384760074374, 33.28732383479371]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1725625464168,
       "longValue" : null,
       "strValue" : null
     } ]

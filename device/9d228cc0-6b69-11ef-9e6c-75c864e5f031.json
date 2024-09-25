@@ -20,36 +20,45 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "1c035610-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "a0be6fa0-6b52-11ef-9e6c-75c864e5f031"
     },
-    "externalId" : {
-      "entityType" : "DEVICE",
-      "id" : "d9743160-6b6e-11ef-b852-5f7f6439defe"
-    },
+    "externalId" : null,
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "d9743160-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "9d228cc0-6b69-11ef-9e6c-75c864e5f031"
     },
     "label" : "",
-    "name" : "Device 2",
+    "name" : "gps device",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "default"
+    "type" : "gps tracker"
   },
   "credentials" : {
-    "credentialsId" : "aZV7oN8H1BF2RyB2R39r",
+    "credentialsId" : "24upZp37WNY5gkej2r25",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "9d228cc0-6b69-11ef-9e6c-75c864e5f031"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
+    },
+    "type" : "DeviceToAsset",
+    "typeGroup" : "COMMON"
+  } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1725532896775,
+      "lastUpdateTs" : 1725529292411,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -57,8 +66,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1725531555967,
-      "longValue" : 1725531555966,
+      "lastUpdateTs" : 1725529292411,
+      "longValue" : 1725529292411,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

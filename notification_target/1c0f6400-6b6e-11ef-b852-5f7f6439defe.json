@@ -10,7 +10,10 @@
         "tenantsIds" : null
       }
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "1c0f6400-6b6e-11ef-b852-5f7f6439defe"
+    },
     "id" : {
       "entityType" : "NOTIFICATION_TARGET",
       "id" : "1c0f6400-6b6e-11ef-b852-5f7f6439defe"

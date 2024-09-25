@@ -1,22 +1,22 @@
 {
   "entityType" : "ASSET_PROFILE",
   "entity" : {
-    "default" : true,
+    "default" : false,
     "defaultDashboardId" : null,
     "defaultEdgeRuleChainId" : null,
     "defaultQueueName" : null,
-    "defaultRuleChainId" : null,
-    "description" : "Default asset profile",
-    "externalId" : {
-      "entityType" : "ASSET_PROFILE",
-      "id" : "1c08fb60-6b6e-11ef-b852-5f7f6439defe"
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "f296e810-6c34-11ef-aeb3-a9c0ce73bddf"
     },
+    "description" : null,
+    "externalId" : null,
     "id" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "1c08fb60-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "fe059240-6b6d-11ef-9e6c-75c864e5f031"
     },
     "image" : null,
-    "name" : "default"
+    "name" : "Zone"
   },
   "relations" : [ ],
   "attributes" : {

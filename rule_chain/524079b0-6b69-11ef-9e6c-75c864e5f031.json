@@ -6,39 +6,32 @@
     },
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "fe9f2840-6b6f-11ef-b852-5f7f6439defe"
-    },
+    "externalId" : null,
     "firstRuleNodeId" : null,
     "id" : {
       "entityType" : "RULE_CHAIN",
-      "id" : "fe9f2840-6b6f-11ef-b852-5f7f6439defe"
+      "id" : "524079b0-6b69-11ef-9e6c-75c864e5f031"
     },
-    "name" : "Generator Rule Chain",
+    "name" : "data emulator",
     "root" : false,
     "type" : "CORE"
   },
   "metaData" : {
-    "connections" : [ {
-      "fromIndex" : 0,
-      "toIndex" : 1,
-      "type" : "Success"
-    } ],
+    "connections" : null,
     "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 209,
-        "layoutY" : 327
+        "layoutX" : 77,
+        "layoutY" : 265
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 15,
+        "periodInSeconds" : 4,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = { temp: 42, lat: 21.5, lon: 40.5 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "originatorId" : "d4dafa30-6b6e-11ef-b852-5f7f6439defe",
+        "tbelScript" : "var randomGps =  Math.random()*10+30;\nvar msg = { latitude:randomGps, longitude: randomGps};\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "originatorId" : "9d228cc0-6b69-11ef-9e6c-75c864e5f031",
         "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
@@ -47,9 +40,9 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1d883670-6b70-11ef-b852-5f7f6439defe"
+        "id" : "aa13b0d0-6b69-11ef-9e6c-75c864e5f031"
       },
-      "name" : "ggg",
+      "name" : "gps generator",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -57,12 +50,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 506,
-        "layoutY" : 332
+        "layoutX" : 405,
+        "layoutY" : 259
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "1bb38860-6b6e-11ef-b852-5f7f6439defe"
+        "ruleChainId" : "a0594530-6b52-11ef-9e6c-75c864e5f031"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -70,9 +63,9 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1d888490-6b70-11ef-b852-5f7f6439defe"
+        "id" : "aa142600-6b69-11ef-9e6c-75c864e5f031"
       },
-      "name" : "root",
+      "name" : "gps",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
