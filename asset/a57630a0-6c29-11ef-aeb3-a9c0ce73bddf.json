@@ -38,18 +38,6 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "adcc80f0-6c57-11ef-aa90-d190550e228a"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
-    },
-    "type" : "GeofenceToAsset",
-    "typeGroup" : "COMMON"
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
       "id" : "d5dd8f50-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
     "to" : {
@@ -58,34 +46,22 @@
     },
     "type" : "LocationToAsset",
     "typeGroup" : "COMMON"
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "f7304a80-6c2d-11ef-aeb3-a9c0ce73bddf"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
-    },
-    "type" : "ZoneToAsset",
-    "typeGroup" : "COMMON"
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf\"},\"enterTs\":1725866426167,\"insideTs\":null,\"leftTs\":1725866454689},{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"f7304a80-6c2d-11ef-aeb3-a9c0ce73bddf\"},\"enterTs\":1725866454689,\"insideTs\":null,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_4dac9bb0-6b53-11ef-9e6c-75c864e5f031",
-      "lastUpdateTs" : 1725866454798,
+      "lastUpdateTs" : 1728048012071,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"adcc80f0-6c57-11ef-aa90-d190550e228a\"},\"enterTs\":1725866454799,\"insideTs\":null,\"leftTs\":null},{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"086b7790-6b6e-11ef-9e6c-75c864e5f031\"},\"enterTs\":1725866432674,\"insideTs\":null,\"leftTs\":1725866448995},{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"90d9c460-6b6e-11ef-9e6c-75c864e5f031\"},\"enterTs\":1725866448995,\"insideTs\":null,\"leftTs\":1725866454689}]}",
+      "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_7982ab30-6c43-11ef-b066-57f29b5e1e98",
-      "lastUpdateTs" : 1725866454995,
+      "lastUpdateTs" : 1728048012073,
       "longValue" : null,
       "strValue" : null
     } ]

@@ -21,209 +21,88 @@
   },
   "metaData" : {
     "connections" : [ {
-      "fromIndex" : 0,
+      "fromIndex" : 1,
+      "toIndex" : 0,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "RPC Request from Device"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 3,
+      "type" : "Other"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 4,
+      "type" : "RPC Request to Device"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 10,
+      "type" : "Timeseries Updated"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 7,
+      "type" : "True"
+    }, {
+      "fromIndex" : 7,
       "toIndex" : 8,
       "type" : "Success"
     }, {
-      "fromIndex" : 2,
-      "toIndex" : 0,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 1,
-      "type" : "Post attributes"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 3,
-      "type" : "RPC Request from Device"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 4,
-      "type" : "Other"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 5,
-      "type" : "RPC Request to Device"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 30,
-      "type" : "Timeseries Updated"
-    }, {
-      "fromIndex" : 6,
-      "toIndex" : 2,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 7,
-      "toIndex" : 13,
-      "type" : "Entered"
-    }, {
-      "fromIndex" : 7,
-      "toIndex" : 33,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 7,
-      "toIndex" : 40,
-      "type" : "Left"
-    }, {
       "fromIndex" : 8,
-      "toIndex" : 9,
-      "type" : "True"
+      "toIndex" : 19,
+      "type" : "Success"
     }, {
       "fromIndex" : 9,
-      "toIndex" : 10,
+      "toIndex" : 12,
       "type" : "Success"
     }, {
       "fromIndex" : 10,
-      "toIndex" : 7,
+      "toIndex" : 9,
       "type" : "Success"
     }, {
       "fromIndex" : 11,
-      "toIndex" : 18,
+      "toIndex" : 6,
       "type" : "Success"
     }, {
       "fromIndex" : 12,
+      "toIndex" : 6,
+      "type" : "False"
+    }, {
+      "fromIndex" : 12,
       "toIndex" : 11,
-      "type" : "Success"
+      "type" : "True"
     }, {
       "fromIndex" : 13,
-      "toIndex" : 31,
+      "toIndex" : 16,
       "type" : "Success"
     }, {
       "fromIndex" : 14,
-      "toIndex" : 28,
+      "toIndex" : 15,
       "type" : "Success"
     }, {
       "fromIndex" : 15,
-      "toIndex" : 38,
+      "toIndex" : 13,
       "type" : "Success"
     }, {
       "fromIndex" : 16,
       "toIndex" : 17,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 17,
-      "toIndex" : 12,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 18,
-      "toIndex" : 19,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 20,
-      "toIndex" : 21,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 21,
-      "toIndex" : 22,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 23,
-      "toIndex" : 24,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 24,
-      "toIndex" : 25,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 25,
-      "toIndex" : 26,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 26,
-      "toIndex" : 20,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 27,
-      "toIndex" : 15,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 28,
-      "toIndex" : 32,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 29,
-      "toIndex" : 8,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 30,
-      "toIndex" : 29,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 31,
-      "toIndex" : 27,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 32,
-      "toIndex" : 33,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 33,
-      "toIndex" : 23,
-      "type" : "Left"
-    }, {
-      "fromIndex" : 33,
-      "toIndex" : 35,
-      "type" : "Entered"
-    }, {
-      "fromIndex" : 33,
-      "toIndex" : 36,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 34,
-      "toIndex" : 42,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 35,
-      "toIndex" : 34,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 36,
-      "toIndex" : 16,
       "type" : "True"
     }, {
-      "fromIndex" : 37,
-      "toIndex" : 39,
-      "type" : "Success"
+      "fromIndex" : 16,
+      "toIndex" : 18,
+      "type" : "False"
     }, {
-      "fromIndex" : 38,
-      "toIndex" : 14,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 39,
-      "toIndex" : 33,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 40,
-      "toIndex" : 37,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 42,
-      "toIndex" : 41,
+      "fromIndex" : 19,
+      "toIndex" : 20,
       "type" : "Success"
     } ],
-    "firstNodeIndex" : 6,
+    "firstNodeIndex" : 5,
     "nodes" : [ {
-      "additionalInfo" : {
-        "layoutX" : 822,
-        "layoutY" : 294
-      },
-      "configuration" : {
-        "defaultTTL" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "a05c2b60-6b52-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "Save Timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
       "additionalInfo" : {
         "layoutX" : 824,
         "layoutY" : 221
@@ -362,52 +241,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 240,
-        "layoutY" : 953
-      },
-      "configuration" : {
-        "latitudeKeyName" : "latitude",
-        "longitudeKeyName" : "longitude",
-        "entityRelationsQuery" : {
-          "parameters" : {
-            "direction" : "TO",
-            "relationTypeGroup" : "COMMON",
-            "maxLevel" : 2,
-            "fetchLastLevelOnly" : true
-          },
-          "filters" : [ {
-            "relationType" : "ZoneToLocation",
-            "entityTypes" : [ "ASSET" ],
-            "negate" : false
-          }, {
-            "relationType" : "LocationToAsset",
-            "entityTypes" : [ "ASSET" ],
-            "negate" : false
-          } ]
-        },
-        "perimeterAttributeKey" : "polygon",
-        "geofenceStateAttributeKey" : "zoneState",
-        "insideDurationMs" : 60000,
-        "outsideDurationMs" : 60000
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "4dac9bb0-6b53-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "check zones",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.geo.TbGpsMultiGeofencingActionNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 67,
-        "layoutY" : 536
+        "layoutX" : 379,
+        "layoutY" : 754
       },
       "configuration" : {
         "checkForSingleEntity" : false,
@@ -432,8 +267,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 66,
-        "layoutY" : 614
+        "layoutX" : 384,
+        "layoutY" : 842
       },
       "configuration" : {
         "originatorSource" : "RELATED",
@@ -465,8 +300,8 @@
       "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 62,
-        "layoutY" : 686
+        "layoutX" : 385,
+        "layoutY" : 936
       },
       "configuration" : {
         "defaultTTL" : 0
@@ -487,454 +322,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1170,
-        "layoutY" : 1487
-      },
-      "configuration" : {
-        "deleteForSingleEntity" : true,
-        "direction" : "FROM",
-        "entityType" : "ASSET",
-        "entityNamePattern" : "${originatorName}",
-        "relationType" : "ZoneToAsset"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "53e4a510-6b6f-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "delete relation assetToZone",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbDeleteRelationNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1169,
-        "layoutY" : 1366
-      },
-      "configuration" : {
-        "originatorSource" : "ENTITY",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : "ASSET",
-        "entityNamePattern" : "${zoneName}",
-        "relationsQuery" : {
-          "direction" : "FROM",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "Contains",
-            "entityTypes" : [ ],
-            "negate" : false
-          } ],
-          "fetchLastLevelOnly" : false
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "53e4f330-6b6f-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "change originator to Zone from Asset",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1159,
-        "layoutY" : 321
-      },
-      "configuration" : {
-        "dataMapping" : {
-          "id" : "zoneId",
-          "name" : "zoneName"
-        },
-        "ignoreNullStrings" : false,
-        "fetchTo" : "METADATA"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "690c06c0-6b7b-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "get Zone id/name",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1160,
-        "layoutY" : 696
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var ts = metadata.ts!=null ? metadata.ts : new Date().getTime();\n\nvar newMsg = {\n    originatorId: metadata.assetId,\n    originatorName: metadata.assetName,\n    originatorType: \"ASSET\",\n    message:  \"ASSET \" + metadata.originatorName + \" just entered \" + metadata.zoneName,\n    ts : ts\n    \n};\n\n\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "e49cc210-6b7c-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "event builder (entered)",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "layoutX" : 1157,
-        "layoutY" : 541
-      },
-      "configuration" : {
-        "defaultTTL" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "19fdeb50-6b7d-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "Save Timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1166,
-        "layoutY" : 1166
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var ts = metadata.ts!=null ? metadata.ts : new Date().getTime();\nmetadata.remove(\"ts\");\nmetadata.status = \"left\";\nvar newMsg = {\n    originatorId: metadata.originatorId,\n    originatorName: metadata.originatorName,\n    originatorType: \"ASSET\",\n    message: \"ASSET \" + metadata.originatorName + \" just left this zone\",\n    ts : ts\n    \n};\n\n\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "49555d70-6b7d-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "event builder (left) for Zone",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "layoutX" : 1164,
-        "layoutY" : 1243
-      },
-      "configuration" : {
-        "defaultTTL" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "49558480-6b7d-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "Save Timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1169,
-        "layoutY" : 1581
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var ts = metadata.ts!=null ? metadata.ts : new Date().getTime();\nvar newMetadata = {};\n\nvar newMsg = {\n    originatorId: metadata.assetId,\n    originatorName: metadata.assetName,\n    originatorType: \"ASSET\",\n    message:  \"ASSET \" + metadata.assetName + \" just left \" + metadata.zoneName,\n    ts : ts\n    \n};\n\n\nreturn {msg: newMsg, metadata: newMetadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "9a03b400-6b7e-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "event builder (left)",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "layoutX" : 1170,
-        "layoutY" : 1673
-      },
-      "configuration" : {
-        "defaultTTL" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "c9e45350-6b7e-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "Save Timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1459,
-        "layoutY" : 1320
-      },
-      "configuration" : {
-        "originatorSource" : "ENTITY",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : "ASSET",
-        "entityNamePattern" : "{originatorName}",
-        "relationsQuery" : {
-          "direction" : "FROM",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "Contains",
-            "entityTypes" : [ ],
-            "negate" : false
-          } ],
-          "fetchLastLevelOnly" : false
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "40c41aa0-6b89-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "change originator to Asset from Geofence",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1456,
-        "layoutY" : 1396
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var ts = metadata.ts!=null ? metadata.ts : new Date().getTime();\nvar newMetadata = {};\n\nvar newMsg = {\n    originatorId: metadata.assetId,\n    originatorName: metadata.originatorName,\n    originatorType: \"ASSET\",\n    message:  \"ASSET \" + metadata.originatorName + \" just left \" + metadata.geofenceName,\n    ts : ts\n    \n};\n\n\nreturn {msg: newMsg, metadata: newMetadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "40c441b0-6b89-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "event builder (left)",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "layoutX" : 1457,
-        "layoutY" : 1474
-      },
-      "configuration" : {
-        "defaultTTL" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "40c441b1-6b89-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "Save Timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1460,
-        "layoutY" : 989
-      },
-      "configuration" : {
-        "deleteForSingleEntity" : true,
-        "direction" : "FROM",
-        "entityType" : "ASSET",
-        "entityNamePattern" : "${originatorName}",
-        "relationType" : "GeofenceToAsset"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "63f9c6a0-6b89-11ef-9e6c-75c864e5f031"
-      },
-      "name" : "delete relation assetToGeofence",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbDeleteRelationNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1464,
-        "layoutY" : 1080
-      },
-      "configuration" : {
-        "dataMapping" : {
-          "name" : "geofenceName",
-          "id" : "geofenceId"
-        },
-        "ignoreNullStrings" : false,
-        "fetchTo" : "METADATA"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "0d6366f0-6c26-11ef-aeb3-a9c0ce73bddf"
-      },
-      "name" : "get geofence name/id",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1463,
-        "layoutY" : 1155
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var ts = metadata.ts!=null ? metadata.ts : new Date().getTime();\nvar newMetadata = {};\n\nvar newMsg = {\n    originatorId: metadata.assetId,\n    originatorName: metadata.originatorName,\n    originatorType: \"ASSET\",\n    message:  \"ASSET \" + metadata.originatorName + \" just left \" + metadata.geofenceName,\n    ts : ts\n    \n};\n\n\nreturn {msg: newMsg, metadata: newMetadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "0d63b510-6c26-11ef-aeb3-a9c0ce73bddf"
-      },
-      "name" : "event builder (left)",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "layoutX" : 1464,
-        "layoutY" : 1233
-      },
-      "configuration" : {
-        "defaultTTL" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "0d63b511-6c26-11ef-aeb3-a9c0ce73bddf"
-      },
-      "name" : "Save Timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1158,
-        "layoutY" : 469
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var ts = metadata.ts!=null ? metadata.ts : new Date().getTime();\nmetadata.remove(\"ts\");\n\nvar newMsg = {\n    originatorId: metadata.originatorId,\n    originatorName: metadata.originatorName,\n    originatorType: \"ASSET\",\n    message: \"ASSET \" + metadata.originatorName + \" just entered this zone\",\n    ts : ts\n    \n};\n\n\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "c5a9c790-6c26-11ef-aeb3-a9c0ce73bddf"
-      },
-      "name" : "event builder (entered)",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "layoutX" : 1159,
-        "layoutY" : 784
-      },
-      "configuration" : {
-        "defaultTTL" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "900cb150-6c27-11ef-aeb3-a9c0ce73bddf"
-      },
-      "name" : "Save Timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 78,
-        "layoutY" : 424
+        "layoutX" : 67,
+        "layoutY" : 523
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -949,7 +338,7 @@
         "entityType" : "RULE_NODE",
         "id" : "798b14d0-6c31-11ef-aeb3-a9c0ce73bddf"
       },
-      "name" : "change gps from widget",
+      "name" : "tmp rule node to transform emulated data from dashboard",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -957,8 +346,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 86,
-        "layoutY" : 353
+        "layoutX" : 73,
+        "layoutY" : 447
       },
       "configuration" : {
         "deleteFrom" : "METADATA",
@@ -972,7 +361,7 @@
         "entityType" : "RULE_NODE",
         "id" : "9c309c80-6c36-11ef-aeb3-a9c0ce73bddf"
       },
-      "name" : "delete",
+      "name" : "tmp rule node to transform emulated data from dashboard",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -980,246 +369,23 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1159,
-        "layoutY" : 390
+        "layoutX" : 65,
+        "layoutY" : 741
       },
       "configuration" : {
-        "copyFrom" : "DATA",
-        "keys" : [ "latitude", "longitude" ]
-      },
-      "configurationVersion" : 2,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "378fdca0-6c3b-11ef-b781-e94c1075f864"
-      },
-      "name" : "copy coordinates to metadata",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbCopyKeysNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1154,
-        "layoutY" : 864
-      },
-      "configuration" : {
-        "copyFrom" : "METADATA",
-        "keys" : [ "latitude", "longitude" ]
-      },
-      "configurationVersion" : 2,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "216e7370-6c43-11ef-b066-57f29b5e1e98"
-      },
-      "name" : "copy coordinates to msg",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbCopyKeysNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1154,
-        "layoutY" : 956
-      },
-      "configuration" : {
-        "latitudeKeyName" : "latitude",
-        "longitudeKeyName" : "longitude",
-        "entityRelationsQuery" : {
-          "parameters" : {
-            "direction" : "TO",
-            "relationTypeGroup" : "COMMON",
-            "maxLevel" : 2,
-            "fetchLastLevelOnly" : true
-          },
-          "filters" : [ {
-            "relationType" : "GeofenceToZone",
-            "entityTypes" : [ "ASSET" ],
-            "negate" : false
-          }, {
-            "relationType" : "ZoneToAsset",
-            "entityTypes" : [ "ASSET" ],
-            "negate" : false
-          } ]
-        },
-        "perimeterAttributeKey" : "polygon",
-        "geofenceStateAttributeKey" : "geofenceState",
-        "insideDurationMs" : 60000,
-        "outsideDurationMs" : 60000
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "7982ab30-6c43-11ef-b066-57f29b5e1e98"
-      },
-      "name" : "check zones",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.geo.TbGpsMultiGeofencingActionNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 526,
-        "layoutY" : 1175
-      },
-      "configuration" : {
-        "direction" : "FROM",
-        "entityType" : "ASSET",
-        "entityNamePattern" : "${originatorName}",
-        "entityTypePattern" : "Geofence",
-        "relationType" : "GeofenceToAsset",
-        "createEntityIfNotExists" : false,
-        "removeCurrentRelations" : false,
-        "changeOriginatorToRelatedEntity" : false
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "23ca6e60-6c4f-11ef-962c-15efb17b6e4c"
-      },
-      "name" : "create new relation from Geofence to Asset",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 530,
-        "layoutY" : 1092
-      },
-      "configuration" : {
-        "dataMapping" : {
-          "name" : "geofenceName",
-          "id" : "geofenceId"
-        },
-        "ignoreNullStrings" : false,
-        "fetchTo" : "METADATA"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "23ca6e61-6c4f-11ef-962c-15efb17b6e4c"
-      },
-      "name" : "get geofence name/id",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1155,
-        "layoutY" : 1052
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return msg.temperature > 20;",
-        "tbelScript" : "return metadata.status!=null;"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "3c63ed60-6c50-11ef-962c-15efb17b6e4c"
-      },
-      "name" : "left",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 655,
-        "layoutY" : 853
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.status = \"left\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "3c641470-6c50-11ef-962c-15efb17b6e4c"
-      },
-      "name" : "set left status",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1161,
-        "layoutY" : 619
-      },
-      "configuration" : {
-        "direction" : "FROM",
-        "entityType" : "ASSET",
-        "entityNamePattern" : "${originatorName}",
-        "entityTypePattern" : "Asset",
-        "relationType" : "ZoneToAsset",
-        "createEntityIfNotExists" : false,
-        "removeCurrentRelations" : false,
-        "changeOriginatorToRelatedEntity" : true
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "3c6489a0-6c50-11ef-962c-15efb17b6e4c"
-      },
-      "name" : "create new relation from Zone to Asset",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 918,
-        "layoutY" : 860
-      },
-      "configuration" : {
-        "originatorSource" : "ENTITY",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : "ASSET",
-        "entityNamePattern" : "${originatorName}",
         "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
           "direction" : "FROM",
           "maxLevel" : 1,
           "filters" : [ {
-            "relationType" : "Contains",
-            "entityTypes" : [ ],
-            "negate" : false
-          } ],
-          "fetchLastLevelOnly" : false
+            "relationType" : "alarmConfig",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        },
+        "dataToFetch" : "ATTRIBUTES",
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "serialNumber" : "sn"
         }
       },
       "configurationVersion" : 1,
@@ -1228,26 +394,105 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "0089fab0-6c54-11ef-aa90-d190550e228a"
+        "id" : "f38f2790-8229-11ef-b5ef-a3c9386e22a5"
       },
-      "name" : "change originator to Asset from Zone",
+      "name" : "get alarm config",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetRelatedAttributeNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 657,
-        "layoutY" : 754
+        "layoutX" : 65,
+        "layoutY" : 644
       },
       "configuration" : {
-        "dataMapping" : {
-          "name" : "zoneName",
-          "id" : "zoneId"
-        },
-        "ignoreNullStrings" : false,
-        "fetchTo" : "METADATA"
+        "checkForSingleEntity" : false,
+        "direction" : "FROM",
+        "entityType" : "DEVICE",
+        "entityId" : null,
+        "relationType" : "Contains"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f38f75b0-8229-11ef-b5ef-a3c9386e22a5"
+      },
+      "name" : "check for alarm config",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1229,
+        "layoutY" : 388
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "var alarmSettings = JSON.parse(metadata.ss_alarmSettings).profileSettings;\nvar alarmMsgs = [];\n\nforeach(setting: alarmSettings.variables.entrySet()) {\n    var keyName = setting.getKey();\n    var alarmRules = setting.getValue();\n\n    if (msg[keyName] == null || alarmRules == null ||\n        alarmRules.isEmpty()) {\n        break;\n    }\n\n    var alarmVariable = msg[keyName];\n\n    foreach(alarmRule: alarmRules) {\n        if (alarmRule.enabled == null || !alarmRule.enabled) {\n            break;\n        }\n\n        var isLower = alarmRule.lowThresholdValue != null ? alarmVariable < alarmRule.lowThresholdValue : null;\n        var isHigher = alarmRule.highThresholdValue != null ? alarmVariable > alarmRule.highThresholdValue : null;\n        var isCreate = isLower === true || isHigher === true;\n\n\n\n\n        alarmMsgs.push({\n            msg: {\n                severity: alarmRule\n                    .severity,\n                alarmName: alarmRule\n                    .alarmName\n            },\n            metadata: {ts:metadata.ts,isCreate:isCreate},\n            msgType: \"alarm\"\n        });\n    }\n\n\n}\n\nmsg.alarmSettings = alarmSettings;\n\n\n\nreturn alarmMsgs;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "62fb0820-822e-11ef-b5ef-a3c9386e22a5"
+      },
+      "name" : "check for alarms",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1225,
+        "layoutY" : 255
+      },
+      "configuration" : {
+        "msgCount" : 1,
+        "periodInSeconds" : 2,
+        "scriptLang" : "TBEL",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var msg = {\n    temperature: 8,\n    battery: 3.9\n\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn {\n    msg: msg,\n    metadata: metadata,\n    msgType: msgType\n};",
+        "originatorId" : "ebf3bed0-8227-11ef-b5ef-a3c9386e22a5",
+        "originatorType" : "ASSET"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "7d760dd0-822e-11ef-b5ef-a3c9386e22a5"
+      },
+      "name" : "test",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1530,
+        "layoutY" : 247
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "alarmSettings" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -1255,44 +500,23 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "5d4767d0-6c57-11ef-aa90-d190550e228a"
+        "id" : "7d7634e0-822e-11ef-b5ef-a3c9386e22a5"
       },
-      "name" : "get zone name/id",
+      "name" : "get alarmSettings",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
-    }, {
-      "additionalInfo" : {
-        "layoutX" : 527,
-        "layoutY" : 1353
-      },
-      "configuration" : {
-        "defaultTTL" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "6ddf3ad0-6c59-11ef-aa90-d190550e228a"
-      },
-      "name" : "Save Timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 528,
-        "layoutY" : 1281
+        "layoutX" : 1229,
+        "layoutY" : 470
       },
       "configuration" : {
         "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var ts = metadata.ts!=null ? metadata.ts : new Date().getTime();\nmetadata.remove(\"ts\");\n\nvar newMsg = {\n    originatorId: metadata.originatorId,\n    originatorName: metadata.originatorName,\n    originatorType: \"ASSET\",\n    message: \"ASSET \" + metadata.originatorName + \" just entered this geofence\",\n    ts : ts\n    \n};\n\n\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
+        "jsScript" : "return msg.temperature > 20;",
+        "tbelScript" : "return metadata.isCreate===true;"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -1300,13 +524,118 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "6ddf61e0-6c59-11ef-aa90-d190550e228a"
+        "id" : "52dc45a0-8240-11ef-b5ef-a3c9386e22a5"
       },
-      "name" : "event builder (entered)",
+      "name" : "alarm switch",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1123,
+        "layoutY" : 586
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "$[alarmName]",
+        "severity" : "$[severity]",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToOwnerHierarchy" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "52dcbad0-8240-11ef-b5ef-a3c9386e22a5"
+      },
+      "name" : "create alarm",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1412,
+        "layoutY" : 586
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "$[alarmName]"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "52dce1e0-8240-11ef-b5ef-a3c9386e22a5"
+      },
+      "name" : "clear alarm",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 379,
+        "layoutY" : 1023
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "08ef77f0-8254-11ef-b5ef-a3c9386e22a5"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "84f13a00-8254-11ef-b5ef-a3c9386e22a5"
+      },
+      "name" : "geofence logic",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 378,
+        "layoutY" : 1118
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "45025820-8254-11ef-b5ef-a3c9386e22a5"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "84f16110-8254-11ef-b5ef-a3c9386e22a5"
+      },
+      "name" : "event logic",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },

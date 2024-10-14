@@ -1,0 +1,95 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "first_name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "last_name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "email",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : { }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : null,
+    "groupAll" : false,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "51599d00-87c1-11ef-96bb-3dcd23b6dd8c"
+    },
+    "name" : "Default user group",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "514f63d0-87c1-11ef-96bb-3dcd23b6dd8c"
+    },
+    "type" : "USER"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : true,
+  "permissions" : [ {
+    "entityGroupId" : null,
+    "entityGroupType" : null,
+    "roleId" : {
+      "entityType" : "ROLE",
+      "id" : "755881e0-87c0-11ef-9765-fdaca86446ad"
+    },
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "cb04b3b0-5ed6-11ef-a76c-83ce07aa7f5e"
+    },
+    "userGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "51599d00-87c1-11ef-96bb-3dcd23b6dd8c"
+    },
+    "createdTime" : 1728644983513,
+    "id" : {
+      "entityType" : "GROUP_PERMISSION",
+      "id" : "515afc90-87c1-11ef-96bb-3dcd23b6dd8c"
+    },
+    "name" : "GENERIC_[51599d00-87c1-11ef-96bb-3dcd23b6dd8c]_[755881e0-87c0-11ef-9765-fdaca86446ad]",
+    "public" : false
+  }, {
+    "entityGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "515bbfe0-87c1-11ef-96bb-3dcd23b6dd8c"
+    },
+    "entityGroupType" : "DASHBOARD",
+    "roleId" : {
+      "entityType" : "ROLE",
+      "id" : "755b8f20-87c0-11ef-9765-fdaca86446ad"
+    },
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "cb04b3b0-5ed6-11ef-a76c-83ce07aa7f5e"
+    },
+    "userGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "51599d00-87c1-11ef-96bb-3dcd23b6dd8c"
+    },
+    "createdTime" : 1728644983525,
+    "id" : {
+      "entityType" : "GROUP_PERMISSION",
+      "id" : "515cd150-87c1-11ef-96bb-3dcd23b6dd8c"
+    },
+    "name" : "GROUP_[51599d00-87c1-11ef-96bb-3dcd23b6dd8c]_[755b8f20-87c0-11ef-9765-fdaca86446ad]_[515bbfe0-87c1-11ef-96bb-3dcd23b6dd8c]_[DASHBOARD]",
+    "public" : false
+  } ]
+}
