@@ -1,0 +1,69 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "adcc80f0-6c57-11ef-aa90-d190550e228a"
+    },
+    "label" : null,
+    "name" : "Geofence 4",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "adcc80f0-6c57-11ef-aa90-d190550e228a"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
+    },
+    "type" : "GeofenceToAsset",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "adcc80f0-6c57-11ef-aa90-d190550e228a"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "f7304a80-6c2d-11ef-aeb3-a9c0ce73bddf"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.24800083319806,30.366317691074702],[46.40980811118005,32.97006771445973]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1725631006877,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.24800083319806, 30.366317691074702], [46.40980811118005, 32.97006771445973]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1725631006884,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

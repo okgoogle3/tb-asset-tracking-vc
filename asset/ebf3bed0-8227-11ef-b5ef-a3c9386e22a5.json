@@ -1,0 +1,45 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "ebf3bed0-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "label" : null,
+    "name" : "alarm asset config 1",
+    "ownerId" : null,
+    "type" : "alarmConfig"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"profileSettings\":{\"variables\":{\"temperature\":[{\"enabled\":true,\"lowThresholdValue\":10,\"highThresholdValue\":null,\"alarmName\":\"temperature is low\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}},{\"enabled\":true,\"lowThresholdValue\":5,\"highThresholdValue\":40,\"alarmName\":\"temp is less than 5 or higher that 40\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}}],\"battery\":[]},\"perimeters\":{\"zone\":[{\"enabled\":true,\"geofenceId\":1245626,\"duration\":100000,\"type\":\"out\",\"alarmName\":\"zone out\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}}],\"geofence\":[{\"enabled\":true,\"zoneId\":1245626,\"duration\":100000,\"type\":\"in\",\"alarmName\":\"geofence in\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}}]}}}",
+      "key" : "alarmSettings",
+      "lastUpdateTs" : 1729498267468,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "support",
+      "lastUpdateTs" : 1729512686671,
+      "longValue" : null,
+      "strValue" : "{\"inside\":true,\"stateSwitchTime\":1729512623165,\"stayed\":true}"
+    } ]
+  }
+}

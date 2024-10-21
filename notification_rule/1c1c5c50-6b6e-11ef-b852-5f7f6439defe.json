@@ -1,0 +1,39 @@
+{
+  "entityType" : "NOTIFICATION_RULE",
+  "entity" : {
+    "additionalConfig" : {
+      "description" : "Send notification to tenant admins when device is created"
+    },
+    "enabled" : true,
+    "externalId" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "1c1c5c50-6b6e-11ef-b852-5f7f6439defe"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "1c1c5c50-6b6e-11ef-b852-5f7f6439defe"
+    },
+    "name" : "Device created",
+    "recipientsConfig" : {
+      "targets" : [ "1c0f6400-6b6e-11ef-b852-5f7f6439defe" ],
+      "triggerType" : "ENTITY_ACTION"
+    },
+    "templateId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "1c1b9900-6b6e-11ef-b852-5f7f6439defe"
+    },
+    "triggerConfig" : {
+      "triggerType" : "ENTITY_ACTION",
+      "created" : true,
+      "deleted" : false,
+      "entityTypes" : [ "DEVICE" ],
+      "updated" : false,
+      "triggerType" : "ENTITY_ACTION"
+    },
+    "triggerType" : "ENTITY_ACTION"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
