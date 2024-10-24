@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "89d6e380-8254-11ef-b5ef-a3c9386e22a5"
+      "id" : "0825e250-91ea-11ef-b984-655f1d07912d"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -23,37 +23,25 @@
     "connections" : [ {
       "fromIndex" : 0,
       "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 0,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 1,
       "type" : "True"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 4,
+      "type" : "Success"
     } ],
-    "firstNodeIndex" : 0,
+    "firstNodeIndex" : 2,
     "nodes" : [ {
       "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 319,
-        "layoutY" : 152
-      },
-      "configuration" : {
-        "messageNames" : [ ],
-        "metadataNames" : [ "geofenceStatus", "zoneStatus" ],
-        "checkAllKeys" : false
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "89d6e380-8254-11ef-b5ef-a3c9386e22a5"
-      },
-      "name" : "check if event just happened",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
-    }, {
-      "additionalInfo" : {
-        "layoutX" : 963,
-        "layoutY" : 603
+        "layoutX" : 325,
+        "layoutY" : 333
       },
       "configuration" : {
         "defaultTTL" : 0
@@ -74,13 +62,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 668,
-        "layoutY" : 521
+        "layoutX" : 325,
+        "layoutY" : 240
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var ts = metadata.ts!=null ? metadata.ts : new Date().getTime();\n\nvar newMsg = {\n    originatorId: metadata.assetId,\n    originatorName: metadata.assetName,\n    originatorType: \"ASSET\",\n    message:  \"ASSET \" + metadata.originatorName + \" just entered \" + metadata.zoneName,\n    ts : ts\n    \n};\n\n\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var assetName = metadata.assetName;\nvar level =  metadata.level;\nvar levelName = metadata.levelName;\nvar status = metadata.status;\n\nvar newMsg = {\n    message:  \"ASSET \" + assetName + \" \" +  status + \" \" + levelName + \" \" + level,\n};\n\n\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -90,7 +78,7 @@
         "entityType" : "RULE_NODE",
         "id" : "97143651-8255-11ef-b5ef-a3c9386e22a5"
       },
-      "name" : "event builder (entered)",
+      "name" : "event builder",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -98,13 +86,69 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 624,
-        "layoutY" : 153
+        "layoutX" : 327,
+        "layoutY" : 150
       },
       "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType === 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);",
-        "tbelScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType == 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);"
+        "messageNames" : [ ],
+        "metadataNames" : [ "level", "status", "levelName" ],
+        "checkAllKeys" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "0825e250-91ea-11ef-b984-655f1d07912d"
+      },
+      "name" : "isEvent",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 327,
+        "layoutY" : 421
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "${assetName}",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "54911b80-91ec-11ef-b984-655f1d07912d"
+      },
+      "name" : "to asset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 329,
+        "layoutY" : 504
+      },
+      "configuration" : {
+        "defaultTTL" : 0
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -112,13 +156,13 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "97145d60-8255-11ef-b5ef-a3c9386e22a5"
+        "id" : "54911b81-91ec-11ef-b984-655f1d07912d"
       },
-      "name" : "switch to asset/geofence/zone",
+      "name" : "Save Timeseries",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     } ],
     "ruleChainConnections" : null
   },

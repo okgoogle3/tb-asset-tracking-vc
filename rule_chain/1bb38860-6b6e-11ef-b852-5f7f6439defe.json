@@ -10,7 +10,7 @@
     },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "1bb758f0-6b6e-11ef-b852-5f7f6439defe"
+      "id" : "6cfdd400-6b73-11ef-9e6c-75c864e5f031"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -88,7 +88,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1bb4e7f0-6b6e-11ef-b852-5f7f6439defe"
+        "id" : "6cfd37c0-6b73-11ef-9e6c-75c864e5f031"
       },
       "name" : "Save Attributes",
       "queueName" : null,
@@ -109,7 +109,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1bb53610-6b6e-11ef-b852-5f7f6439defe"
+        "id" : "6cfd5ed0-6b73-11ef-9e6c-75c864e5f031"
       },
       "name" : "Message Type Switch",
       "queueName" : null,
@@ -132,7 +132,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1bb58430-6b6e-11ef-b852-5f7f6439defe"
+        "id" : "6cfd5ed1-6b73-11ef-9e6c-75c864e5f031"
       },
       "name" : "Log RPC from Device",
       "queueName" : null,
@@ -155,7 +155,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1bb5ab40-6b6e-11ef-b852-5f7f6439defe"
+        "id" : "6cfd85e0-6b73-11ef-9e6c-75c864e5f031"
       },
       "name" : "Log Other",
       "queueName" : null,
@@ -176,7 +176,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1bb5f960-6b6e-11ef-b852-5f7f6439defe"
+        "id" : "6cfd85e1-6b73-11ef-9e6c-75c864e5f031"
       },
       "name" : "RPC Call Request",
       "queueName" : null,
@@ -197,7 +197,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1bb64780-6b6e-11ef-b852-5f7f6439defe"
+        "id" : "6cfdacf0-6b73-11ef-9e6c-75c864e5f031"
       },
       "name" : "Is Entity Group",
       "queueName" : null,
@@ -218,7 +218,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1bb695a0-6b6e-11ef-b852-5f7f6439defe"
+        "id" : "6cfdacf1-6b73-11ef-9e6c-75c864e5f031"
       },
       "name" : "Post attributes or RPC request",
       "queueName" : null,
@@ -240,7 +240,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1bb70ad0-6b6e-11ef-b852-5f7f6439defe"
+        "id" : "6cfdacf2-6b73-11ef-9e6c-75c864e5f031"
       },
       "name" : "Duplicate To Group Entities",
       "queueName" : null,
@@ -263,7 +263,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1bb758f0-6b6e-11ef-b852-5f7f6439defe"
+        "id" : "6cfdd400-6b73-11ef-9e6c-75c864e5f031"
       },
       "name" : "Device Profile Node",
       "queueName" : null,
@@ -286,7 +286,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1bb7ce20-6b6e-11ef-b852-5f7f6439defe"
+        "id" : "6cfdd401-6b73-11ef-9e6c-75c864e5f031"
       },
       "name" : "Generate Report",
       "queueName" : null,
@@ -296,26 +296,27 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1011,
-        "layoutY" : 292
+        "layoutX" : 999,
+        "layoutY" : 275
       },
       "configuration" : {
-        "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "2725e9c0-6b70-11ef-b852-5f7f6439defe"
+        "defaultTTL" : 0,
+        "skipLatestPersistence" : false,
+        "useServerTs" : false
       },
-      "configurationVersion" : 1,
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "c7f58400-6b70-11ef-b852-5f7f6439defe"
+        "id" : "200fc8c0-91dd-11ef-b984-655f1d07912d"
       },
-      "name" : "process ts save",
+      "name" : "Save Timeseries",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     } ],
     "ruleChainConnections" : null
   },
