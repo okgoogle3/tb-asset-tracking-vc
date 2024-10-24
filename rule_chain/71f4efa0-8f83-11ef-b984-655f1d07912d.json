@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "89617cd0-8f83-11ef-b984-655f1d07912d"
+      "id" : "c51183e0-91f1-11ef-b984-655f1d07912d"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -22,88 +22,80 @@
   "metaData" : {
     "connections" : [ {
       "fromIndex" : 0,
-      "toIndex" : 3,
+      "toIndex" : 1,
       "type" : "Success"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 19,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 0,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 3,
-      "toIndex" : 4,
+      "toIndex" : 2,
       "type" : "True"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 3,
+      "type" : "False"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 4,
+      "type" : "Created"
+    }, {
       "fromIndex" : 3,
-      "toIndex" : 5,
+      "toIndex" : 6,
       "type" : "False"
     }, {
       "fromIndex" : 4,
-      "toIndex" : 6,
-      "type" : "Created"
+      "toIndex" : 13,
+      "type" : "Success"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 8,
-      "type" : "False"
-    }, {
-      "fromIndex" : 6,
-      "toIndex" : 15,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 7,
-      "toIndex" : 13,
+      "toIndex" : 11,
       "type" : "phone"
     }, {
-      "fromIndex" : 7,
-      "toIndex" : 14,
+      "fromIndex" : 5,
+      "toIndex" : 12,
       "type" : "sms"
     }, {
-      "fromIndex" : 8,
-      "toIndex" : 15,
+      "fromIndex" : 6,
+      "toIndex" : 13,
       "type" : "Success"
     }, {
-      "fromIndex" : 9,
-      "toIndex" : 12,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 10,
-      "toIndex" : 11,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 13,
+      "fromIndex" : 7,
       "toIndex" : 10,
       "type" : "Success"
     }, {
-      "fromIndex" : 14,
+      "fromIndex" : 8,
       "toIndex" : 9,
       "type" : "Success"
     }, {
-      "fromIndex" : 15,
-      "toIndex" : 16,
+      "fromIndex" : 11,
+      "toIndex" : 8,
       "type" : "Success"
     }, {
-      "fromIndex" : 16,
-      "toIndex" : 17,
-      "type" : "True"
-    }, {
-      "fromIndex" : 17,
+      "fromIndex" : 12,
       "toIndex" : 7,
       "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 14,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 15,
+      "type" : "True"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 5,
+      "type" : "Success"
     } ],
-    "firstNodeIndex" : 2,
+    "firstNodeIndex" : 17,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 392,
-        "layoutY" : 253
+        "layoutX" : 114,
+        "layoutY" : 383
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var alarmSettings = JSON.parse(metadata.ss_alarmSettings).profileSettings;\nvar alarmMsgs = [];\n\nforeach(setting: alarmSettings.variables.entrySet()) {\n    var keyName = setting.getKey();\n    var alarmRules = setting.getValue();\n\n    if (msg[keyName] == null || alarmRules == null ||\n        alarmRules.isEmpty()) {\n        break;\n    }\n\n    var alarmVariable = msg[keyName];\n\n    foreach(alarmRule: alarmRules) {\n        if (alarmRule.enabled == null || !alarmRule.enabled) {\n            break;\n        }\n\n        var isLower = alarmRule.lowThresholdValue != null ? alarmVariable < alarmRule.lowThresholdValue : null;\n        var isHigher = alarmRule.highThresholdValue != null ? alarmVariable > alarmRule.highThresholdValue : null;\n        var isCreate = isLower === true || isHigher === true;\n        var notificationSettings = JSON.stringify(alarmRule.notifications);\n\n        alarmMsgs.push({\n            msg: {\n                severity: alarmRule\n                    .severity,\n                alarmName: alarmRule\n                    .alarmName\n            },\n            metadata: {ts:metadata.ts,isCreate:isCreate,notifications:notificationSettings },\n            msgType: \"alarm\"\n        });\n    }\n\n\n}\n\nmsg.alarmSettings = alarmSettings;\n\n\nreturn alarmMsgs;"
+        "tbelScript" : "var alarmSettings = JSON.parse(metadata.alarmSettings).profileSettings;\nvar alarmMsgs = [];\n\nforeach(setting: alarmSettings.variables.entrySet()) {\n    var keyName = setting.getKey();\n    var alarmRules = setting.getValue();\n\n    if (msg[keyName] == null || alarmRules == null ||\n        alarmRules.isEmpty()) {\n        break;\n    }\n\n    var alarmVariable = msg[keyName];\n\n    foreach(alarmRule: alarmRules) {\n        if (alarmRule.enabled == null || !alarmRule.enabled) {\n            break;\n        }\n\n        var isLower = alarmRule.lowThresholdValue != null ? alarmVariable < alarmRule.lowThresholdValue : null;\n        var isHigher = alarmRule.highThresholdValue != null ? alarmVariable > alarmRule.highThresholdValue : null;\n        var isCreate = isLower === true || isHigher === true;\n        var notificationSettings = JSON.stringify(alarmRule.notifications);\n\n        alarmMsgs.push({\n            msg: {\n                severity: alarmRule\n                    .severity,\n                alarmName: alarmRule\n                    .alarmName\n            },\n            metadata: {ts:metadata.ts,isCreate:isCreate,notifications:notificationSettings },\n            msgType: \"alarm\"\n        });\n    }\n\n\n}\n\nmsg.alarmSettings = alarmSettings;\n\n\nreturn alarmMsgs;"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -121,64 +113,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 148,
-        "layoutY" : 730
-      },
-      "configuration" : {
-        "msgCount" : 4,
-        "periodInSeconds" : 1,
-        "scriptLang" : "TBEL",
-        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = {\nlatitude:47,\nlongitude:31\n\n};\nvar metadata = {test:123};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn {\n    msg: msg,\n    metadata: metadata,\n    msgType: msgType\n};",
-        "originatorId" : "ebf3bed0-8227-11ef-b5ef-a3c9386e22a5",
-        "originatorType" : "ASSET"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "896155c0-8f83-11ef-b984-655f1d07912d"
-      },
-      "name" : "test",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 398,
-        "layoutY" : 150
-      },
-      "configuration" : {
-        "tellFailureIfAbsent" : true,
-        "fetchTo" : "METADATA",
-        "clientAttributeNames" : [ ],
-        "sharedAttributeNames" : [ ],
-        "serverAttributeNames" : [ "alarmSettings" ],
-        "latestTsKeyNames" : [ ],
-        "getLatestValueWithTs" : false
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "89617cd0-8f83-11ef-b984-655f1d07912d"
-      },
-      "name" : "get alarmSettings",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 389,
-        "layoutY" : 350
+        "layoutX" : 111,
+        "layoutY" : 480
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -201,8 +137,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 662,
-        "layoutY" : 354
+        "layoutX" : 384,
+        "layoutY" : 484
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -235,8 +171,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 656,
-        "layoutY" : 433
+        "layoutX" : 378,
+        "layoutY" : 563
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -260,13 +196,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 953,
-        "layoutY" : 354
+        "layoutX" : 675,
+        "layoutY" : 484
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.alarmStatus = true;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.alarmCreated = true;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -284,8 +220,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1534,
-        "layoutY" : 541
+        "layoutX" : 1256,
+        "layoutY" : 671
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -308,13 +244,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 954,
-        "layoutY" : 432
+        "layoutX" : 676,
+        "layoutY" : 562
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.alarmStatus = false;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.alarmCreated = false;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -332,8 +268,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2085,
-        "layoutY" : 433
+        "layoutX" : 1807,
+        "layoutY" : 563
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -356,8 +292,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2087,
-        "layoutY" : 534
+        "layoutX" : 1809,
+        "layoutY" : 664
       },
       "configuration" : {
         "fromTemplate" : "info@testmail.org",
@@ -385,8 +321,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2367,
-        "layoutY" : 527
+        "layoutX" : 2089,
+        "layoutY" : 657
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -420,8 +356,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2366,
-        "layoutY" : 432
+        "layoutX" : 2088,
+        "layoutY" : 562
       },
       "configuration" : {
         "numbersToTemplate" : "${userPhone}",
@@ -445,8 +381,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1820,
-        "layoutY" : 538
+        "layoutX" : 1542,
+        "layoutY" : 668
       },
       "configuration" : {
         "fetchTo" : "METADATA",
@@ -472,8 +408,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1818,
-        "layoutY" : 433
+        "layoutX" : 1540,
+        "layoutY" : 563
       },
       "configuration" : {
         "dataMapping" : {
@@ -498,8 +434,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1259,
-        "layoutY" : 363
+        "layoutX" : 981,
+        "layoutY" : 493
       },
       "configuration" : {
         "originatorSource" : "RELATED",
@@ -532,8 +468,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1533,
-        "layoutY" : 361
+        "layoutX" : 1255,
+        "layoutY" : 491
       },
       "configuration" : {
         "checkForSingleEntity" : false,
@@ -558,8 +494,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1535,
-        "layoutY" : 445
+        "layoutX" : 1257,
+        "layoutY" : 575
       },
       "configuration" : {
         "relationsQuery" : {
@@ -589,8 +525,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 117,
-        "layoutY" : 254
+        "layoutX" : 714,
+        "layoutY" : 211
       },
       "configuration" : {
         "msgCount" : 1,
@@ -617,39 +553,37 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 608,
-        "layoutY" : 550
+        "layoutX" : 119,
+        "layoutY" : 311
       },
       "configuration" : {
-        "reportPresenceStatusOnEachMessage" : false,
-        "latitudeKeyName" : "latitude",
-        "longitudeKeyName" : "longitude",
-        "perimeterType" : "POLYGON",
-        "fetchPerimeterInfoFromMessageMetadata" : false,
-        "perimeterKeyName" : "ss_perimeter",
-        "centerLatitude" : null,
-        "centerLongitude" : null,
-        "range" : null,
-        "rangeUnit" : null,
-        "polygonsDefinition" : "[   [     48.559735512679225,     27.1537813126455   ],   [     46.20384760074374,     33.28732383479371   ] ]",
-        "minInsideDuration" : 1,
-        "minInsideDurationTimeUnit" : "MILLISECONDS",
-        "minOutsideDuration" : 1,
-        "minOutsideDurationTimeUnit" : "MILLISECONDS"
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "${assetName}",
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "toAlarmConfig",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        }
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "77bc4e20-8fa5-11ef-b984-655f1d07912d"
+        "id" : "c51183e0-91f1-11ef-b984-655f1d07912d"
       },
-      "name" : "test",
+      "name" : "to asset",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.geo.TbGpsGeofencingActionNode"
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     } ],
     "ruleChainConnections" : null
   },

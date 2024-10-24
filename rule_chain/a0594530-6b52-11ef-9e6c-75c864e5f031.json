@@ -41,6 +41,10 @@
       "toIndex" : 10,
       "type" : "Timeseries Updated"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 12,
+      "type" : "Post telemetry"
+    }, {
       "fromIndex" : 5,
       "toIndex" : 1,
       "type" : "Success"
@@ -54,27 +58,27 @@
       "type" : "Success"
     }, {
       "fromIndex" : 8,
-      "toIndex" : 13,
+      "toIndex" : 14,
       "type" : "Success"
     }, {
       "fromIndex" : 9,
-      "toIndex" : 12,
+      "toIndex" : 6,
       "type" : "Success"
     }, {
       "fromIndex" : 10,
       "toIndex" : 9,
       "type" : "Success"
     }, {
-      "fromIndex" : 11,
+      "fromIndex" : 12,
       "toIndex" : 6,
       "type" : "Success"
     }, {
-      "fromIndex" : 12,
-      "toIndex" : 6,
-      "type" : "False"
-    }, {
-      "fromIndex" : 12,
+      "fromIndex" : 13,
       "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 13,
       "type" : "True"
     } ],
     "firstNodeIndex" : 5,
@@ -217,8 +221,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 379,
-        "layoutY" : 754
+        "layoutX" : 1148,
+        "layoutY" : 301
       },
       "configuration" : {
         "checkForSingleEntity" : false,
@@ -243,8 +247,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 384,
-        "layoutY" : 842
+        "layoutX" : 1145,
+        "layoutY" : 384
       },
       "configuration" : {
         "originatorSource" : "RELATED",
@@ -276,8 +280,8 @@
       "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 385,
-        "layoutY" : 936
+        "layoutX" : 1146,
+        "layoutY" : 473
       },
       "configuration" : {
         "defaultTTL" : 0
@@ -298,8 +302,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 67,
-        "layoutY" : 523
+        "layoutX" : 505,
+        "layoutY" : 498
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -322,8 +326,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 73,
-        "layoutY" : 447
+        "layoutX" : 511,
+        "layoutY" : 422
       },
       "configuration" : {
         "deleteFrom" : "METADATA",
@@ -345,69 +349,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 65,
-        "layoutY" : 741
-      },
-      "configuration" : {
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "FROM",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "alarmConfig",
-            "entityTypes" : [ "ASSET" ]
-          } ]
-        },
-        "dataToFetch" : "ATTRIBUTES",
-        "fetchTo" : "METADATA",
-        "dataMapping" : {
-          "serialNumber" : "sn"
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "f38f2790-8229-11ef-b5ef-a3c9386e22a5"
-      },
-      "name" : "get alarm config",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetRelatedAttributeNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 65,
-        "layoutY" : 644
-      },
-      "configuration" : {
-        "checkForSingleEntity" : false,
-        "direction" : "FROM",
-        "entityType" : "DEVICE",
-        "entityId" : null,
-        "relationType" : "toAlarmConfig"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "f38f75b0-8229-11ef-b5ef-a3c9386e22a5"
-      },
-      "name" : "check for alarm config",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbCheckRelationNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 379,
-        "layoutY" : 1023
+        "layoutX" : 1150,
+        "layoutY" : 753
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -426,6 +369,88 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 827,
+        "layoutY" : 302
+      },
+      "configuration" : {
+        "defaultTTL" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6a945d0-91ee-11ef-b984-655f1d07912d"
+      },
+      "name" : "Save Timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1149,
+        "layoutY" : 665
+      },
+      "configuration" : {
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "alarmConfig",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        },
+        "dataToFetch" : "ATTRIBUTES",
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "alarmSettings" : "alarmSettings"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73973550-91f1-11ef-b984-655f1d07912d"
+      },
+      "name" : "get alarm config",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetRelatedAttributeNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1149,
+        "layoutY" : 568
+      },
+      "configuration" : {
+        "checkForSingleEntity" : false,
+        "direction" : "FROM",
+        "entityType" : "DEVICE",
+        "entityId" : null,
+        "relationType" : "toAlarmConfig"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73973551-91f1-11ef-b984-655f1d07912d"
+      },
+      "name" : "check for alarm config",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckRelationNode"
     } ],
     "ruleChainConnections" : null
   },

@@ -27,9 +27,9 @@
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"profileSettings\":{\"variables\":{\"temperature\":[{\"enabled\":true,\"lowThresholdValue\":10,\"highThresholdValue\":null,\"alarmName\":\"temperature is low\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}},{\"enabled\":true,\"lowThresholdValue\":5,\"highThresholdValue\":40,\"alarmName\":\"temp is less than 5 or higher that 40\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}}],\"battery\":[]},\"perimeters\":{\"zone\":[{\"enabled\":true,\"geofenceId\":1245626,\"duration\":100000,\"type\":\"out\",\"alarmName\":\"zone out\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}}],\"geofence\":[{\"enabled\":true,\"zoneId\":1245626,\"duration\":100000,\"type\":\"in\",\"alarmName\":\"geofence in\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}}]}}}",
+      "jsonValue" : "{\"profileSettings\":{\"variables\":{\"temperature\":[{\"enabled\":true,\"lowThresholdValue\":10,\"highThresholdValue\":null,\"alarmName\":\"temperature is low\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}},{\"enabled\":true,\"lowThresholdValue\":5,\"highThresholdValue\":40,\"alarmName\":\"temp is less than 5 or higher that 40\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}}],\"battery\":[]},\"perimeters\":{\"zone\":[{\"enabled\":true,\"entityId\":1245626,\"duration\":100000,\"type\":\"out\",\"alarmName\":\"zone out\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}}],\"geofence\":[{\"enabled\":true,\"entityId\":1245626,\"duration\":100000,\"type\":\"in\",\"alarmName\":\"geofence in\",\"severity\":\"CRITICAL\",\"notifications\":{\"email\":false,\"sms\":false,\"web\":false}}]}}}",
       "key" : "alarmSettings",
-      "lastUpdateTs" : 1729498267468,
+      "lastUpdateTs" : 1729777636237,
       "longValue" : null,
       "strValue" : null
     }, {

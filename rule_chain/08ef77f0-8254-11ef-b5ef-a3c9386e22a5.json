@@ -34,15 +34,15 @@
       "type" : "Entered"
     }, {
       "fromIndex" : 0,
-      "toIndex" : 19,
+      "toIndex" : 17,
       "type" : "Inside"
     }, {
       "fromIndex" : 0,
-      "toIndex" : 21,
+      "toIndex" : 19,
       "type" : "Outside"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 18,
+      "toIndex" : 16,
       "type" : "Success"
     }, {
       "fromIndex" : 2,
@@ -54,19 +54,19 @@
       "type" : "Left"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 25,
+      "toIndex" : 22,
       "type" : "Outside"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 27,
+      "toIndex" : 24,
       "type" : "Inside"
     }, {
       "fromIndex" : 3,
-      "toIndex" : 17,
+      "toIndex" : 16,
       "type" : "Success"
     }, {
       "fromIndex" : 4,
-      "toIndex" : 15,
+      "toIndex" : 14,
       "type" : "Success"
     }, {
       "fromIndex" : 5,
@@ -94,7 +94,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 11,
-      "toIndex" : 16,
+      "toIndex" : 15,
       "type" : "Success"
     }, {
       "fromIndex" : 12,
@@ -105,8 +105,16 @@
       "toIndex" : 1,
       "type" : "Success"
     }, {
-      "fromIndex" : 16,
+      "fromIndex" : 15,
       "toIndex" : 14,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 18,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 26,
       "type" : "Success"
     }, {
       "fromIndex" : 19,
@@ -114,31 +122,31 @@
       "type" : "Success"
     }, {
       "fromIndex" : 20,
-      "toIndex" : 23,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 21,
-      "toIndex" : 22,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 22,
-      "toIndex" : 24,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 25,
       "toIndex" : 26,
       "type" : "Success"
     }, {
-      "fromIndex" : 26,
-      "toIndex" : 30,
+      "fromIndex" : 22,
+      "toIndex" : 23,
       "type" : "Success"
     }, {
-      "fromIndex" : 27,
+      "fromIndex" : 23,
       "toIndex" : 28,
       "type" : "Success"
     }, {
+      "fromIndex" : 24,
+      "toIndex" : 25,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 28,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 21,
+      "type" : "Success"
+    }, {
       "fromIndex" : 28,
-      "toIndex" : 29,
+      "toIndex" : 27,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
@@ -189,8 +197,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2043,
-        "layoutY" : 510
+        "layoutX" : 2354,
+        "layoutY" : 132
       },
       "configuration" : {
         "deleteForSingleEntity" : true,
@@ -215,8 +223,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1412,
-        "layoutY" : 277
+        "layoutX" : 1451,
+        "layoutY" : 292
       },
       "configuration" : {
         "latitudeKeyName" : "latitude",
@@ -226,7 +234,7 @@
             "direction" : "TO",
             "relationTypeGroup" : "COMMON",
             "maxLevel" : 2,
-            "fetchLastLevelOnly" : false
+            "fetchLastLevelOnly" : true
           },
           "filters" : [ {
             "relationType" : "GeofenceToZone",
@@ -259,8 +267,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2038,
-        "layoutY" : 53
+        "layoutX" : 2354,
+        "layoutY" : 73
       },
       "configuration" : {
         "direction" : "FROM",
@@ -288,8 +296,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 888,
-        "layoutY" : 55
+        "layoutX" : 1144,
+        "layoutY" : 74
       },
       "configuration" : {
         "direction" : "FROM",
@@ -317,8 +325,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 351,
-        "layoutY" : 512
+        "layoutX" : 617,
+        "layoutY" : 139
       },
       "configuration" : {
         "dataMapping" : {
@@ -369,8 +377,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 344,
-        "layoutY" : 56
+        "layoutX" : 614,
+        "layoutY" : 78
       },
       "configuration" : {
         "dataMapping" : {
@@ -395,8 +403,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1407,
-        "layoutY" : 48
+        "layoutX" : 1723,
+        "layoutY" : 68
       },
       "configuration" : {
         "dataMapping" : {
@@ -421,8 +429,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1409,
-        "layoutY" : 511
+        "layoutX" : 1720,
+        "layoutY" : 133
       },
       "configuration" : {
         "dataMapping" : {
@@ -447,8 +455,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 627,
-        "layoutY" : 54
+        "layoutX" : 883,
+        "layoutY" : 75
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -471,8 +479,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 614,
-        "layoutY" : 514
+        "layoutX" : 880,
+        "layoutY" : 141
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -495,8 +503,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1714,
-        "layoutY" : 49
+        "layoutX" : 2042,
+        "layoutY" : 71
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -519,8 +527,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1728,
-        "layoutY" : 514
+        "layoutX" : 2039,
+        "layoutY" : 136
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -543,8 +551,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1165,
-        "layoutY" : 516
+        "layoutX" : 1431,
+        "layoutY" : 143
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -566,31 +574,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1169,
-        "layoutY" : 52
-      },
-      "configuration" : {
-        "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "45025820-8254-11ef-b5ef-a3c9386e22a5"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "33cfac30-91de-11ef-b984-655f1d07912d"
-      },
-      "name" : "event logic",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 877,
-        "layoutY" : 516
+        "layoutX" : 1143,
+        "layoutY" : 143
       },
       "configuration" : {
         "deleteForSingleEntity" : true,
@@ -615,31 +600,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2317,
-        "layoutY" : 55
-      },
-      "configuration" : {
-        "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "45025820-8254-11ef-b5ef-a3c9386e22a5"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "9302dba0-91de-11ef-b984-655f1d07912d"
-      },
-      "name" : "event logic",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2328,
-        "layoutY" : 511
+        "layoutX" : 2655,
+        "layoutY" : 134
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -662,7 +624,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 624,
-        "layoutY" : 147
+        "layoutY" : 404
       },
       "configuration" : {
         "dataMapping" : {
@@ -687,8 +649,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 894,
-        "layoutY" : 146
+        "layoutX" : 889,
+        "layoutY" : 403
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -711,8 +673,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 617,
-        "layoutY" : 432
+        "layoutX" : 621,
+        "layoutY" : 491
       },
       "configuration" : {
         "dataMapping" : {
@@ -737,8 +699,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 879,
-        "layoutY" : 433
+        "layoutX" : 892,
+        "layoutY" : 491
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -761,31 +723,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1172,
-        "layoutY" : 147
-      },
-      "configuration" : {
-        "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "71f4efa0-8f83-11ef-b984-655f1d07912d"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "3ea6d470-91df-11ef-b984-655f1d07912d"
-      },
-      "name" : "Alarm rule chain",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1164,
-        "layoutY" : 431
+        "layoutX" : 1447,
+        "layoutY" : 489
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -807,8 +746,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1729,
-        "layoutY" : 419
+        "layoutX" : 1728,
+        "layoutY" : 485
       },
       "configuration" : {
         "dataMapping" : {
@@ -833,8 +772,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2048,
-        "layoutY" : 422
+        "layoutX" : 2047,
+        "layoutY" : 488
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -857,8 +796,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1733,
-        "layoutY" : 152
+        "layoutX" : 1730,
+        "layoutY" : 420
       },
       "configuration" : {
         "dataMapping" : {
@@ -883,8 +822,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2040,
-        "layoutY" : 153
+        "layoutX" : 2046,
+        "layoutY" : 421
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -907,8 +846,42 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2315,
-        "layoutY" : 151
+        "layoutX" : 1183,
+        "layoutY" : 490
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "${assetName}",
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "toAlarmConfig",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "0e01ee30-91f4-11ef-b984-655f1d07912d"
+      },
+      "name" : "to asset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2653,
+        "layoutY" : 481
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -920,7 +893,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "9682be21-91df-11ef-b984-655f1d07912d"
+        "id" : "39db3610-91f4-11ef-b984-655f1d07912d"
       },
       "name" : "Alarm rule chain",
       "queueName" : null,
@@ -930,12 +903,23 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2321,
-        "layoutY" : 424
+        "layoutX" : 2369,
+        "layoutY" : 481
       },
       "configuration" : {
-        "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "71f4efa0-8f83-11ef-b984-655f1d07912d"
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "${assetName}",
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "toAlarmConfig",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        }
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -943,13 +927,13 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "9682be22-91df-11ef-b984-655f1d07912d"
+        "id" : "39db5d20-91f4-11ef-b984-655f1d07912d"
       },
-      "name" : "Alarm rule chain",
+      "name" : "to asset",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     } ],
     "ruleChainConnections" : null
   },
