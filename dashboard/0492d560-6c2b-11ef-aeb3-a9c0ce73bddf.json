@@ -1381,7 +1381,7 @@
             "stateEntityParamName" : "Zone",
             "defaultStateEntity" : null,
             "rootEntity" : null,
-            "direction" : "FROM",
+            "direction" : "TO",
             "maxLevel" : 1,
             "fetchLastLevelOnly" : false,
             "filters" : [ {
@@ -1400,7 +1400,7 @@
             "stateEntityParamName" : "Geofence",
             "defaultStateEntity" : null,
             "rootEntity" : null,
-            "direction" : "FROM",
+            "direction" : "TO",
             "maxLevel" : 1,
             "fetchLastLevelOnly" : false,
             "filters" : [ {

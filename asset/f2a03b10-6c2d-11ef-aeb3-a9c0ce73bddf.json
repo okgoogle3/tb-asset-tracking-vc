@@ -38,11 +38,11 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf"
+      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
     },
     "to" : {
       "entityType" : "ASSET",
-      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
+      "id" : "f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
     "type" : "ZoneToAsset",
     "typeGroup" : "COMMON"

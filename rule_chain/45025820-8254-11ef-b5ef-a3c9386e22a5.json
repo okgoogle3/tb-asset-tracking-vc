@@ -21,31 +21,31 @@
   },
   "metaData" : {
     "connections" : [ {
-      "fromIndex" : 0,
-      "toIndex" : 3,
-      "type" : "Success"
-    }, {
       "fromIndex" : 1,
       "toIndex" : 0,
       "type" : "Success"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 5,
+      "toIndex" : 3,
+      "type" : "True"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 4,
       "type" : "True"
     }, {
       "fromIndex" : 3,
       "toIndex" : 4,
       "type" : "Success"
     }, {
-      "fromIndex" : 5,
+      "fromIndex" : 4,
       "toIndex" : 1,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 2,
     "nodes" : [ {
       "additionalInfo" : {
-        "layoutX" : 324,
-        "layoutY" : 434
+        "layoutX" : 1134,
+        "layoutY" : 261
       },
       "configuration" : {
         "defaultTTL" : 0
@@ -66,8 +66,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 329,
-        "layoutY" : 339
+        "layoutX" : 848,
+        "layoutY" : 258
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -90,8 +90,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 327,
-        "layoutY" : 150
+        "layoutX" : 284,
+        "layoutY" : 153
       },
       "configuration" : {
         "messageNames" : [ ],
@@ -114,8 +114,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 326,
-        "layoutY" : 522
+        "layoutX" : 556,
+        "layoutY" : 159
       },
       "configuration" : {
         "originatorSource" : "ENTITY",
@@ -148,30 +148,9 @@
       "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 328,
-        "layoutY" : 605
-      },
-      "configuration" : {
-        "defaultTTL" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "54911b81-91ec-11ef-b984-655f1d07912d"
-      },
-      "name" : "Save Timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
         "description" : "This rule node is used to prevent overwriting telemetry data as potentially several events may have the same timestamp, as they are pushed from multiple related entities. ",
-        "layoutX" : 329,
-        "layoutY" : 256
+        "layoutX" : 558,
+        "layoutY" : 260
       },
       "configuration" : {
         "interval" : 1,

@@ -368,7 +368,7 @@
         "entityType" : "RULE_NODE",
         "id" : "84f13a00-8254-11ef-b5ef-a3c9386e22a5"
       },
-      "name" : "geofence logic",
+      "name" : "Area handler",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,

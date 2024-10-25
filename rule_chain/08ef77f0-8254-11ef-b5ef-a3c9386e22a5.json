@@ -15,7 +15,7 @@
       "entityType" : "RULE_CHAIN",
       "id" : "08ef77f0-8254-11ef-b5ef-a3c9386e22a5"
     },
-    "name" : "Geofence handler",
+    "name" : "Area handler",
     "root" : false,
     "type" : "CORE"
   },
@@ -205,7 +205,7 @@
       },
       "configuration" : {
         "deleteForSingleEntity" : true,
-        "direction" : "FROM",
+        "direction" : "TO",
         "entityType" : "ASSET",
         "entityNamePattern" : "${assetName}",
         "relationType" : "GeofenceToAsset"
@@ -277,7 +277,7 @@
         "layoutY" : 73
       },
       "configuration" : {
-        "direction" : "FROM",
+        "direction" : "TO",
         "entityType" : "ASSET",
         "entityNamePattern" : "${assetName}",
         "entityTypePattern" : "Asset",
@@ -306,7 +306,7 @@
         "layoutY" : 74
       },
       "configuration" : {
-        "direction" : "FROM",
+        "direction" : "TO",
         "entityType" : "ASSET",
         "entityNamePattern" : "${assetName}",
         "entityTypePattern" : "Asset",
@@ -585,7 +585,7 @@
       },
       "configuration" : {
         "deleteForSingleEntity" : true,
-        "direction" : "FROM",
+        "direction" : "TO",
         "entityType" : "ASSET",
         "entityNamePattern" : "${assetName}",
         "relationType" : "ZoneToAsset"
