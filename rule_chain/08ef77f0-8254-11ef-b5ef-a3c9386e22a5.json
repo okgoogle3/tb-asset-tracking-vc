@@ -15,7 +15,7 @@
       "entityType" : "RULE_CHAIN",
       "id" : "08ef77f0-8254-11ef-b5ef-a3c9386e22a5"
     },
-    "name" : "Geofence checker",
+    "name" : "Geofence handler",
     "root" : false,
     "type" : "CORE"
   },
@@ -161,15 +161,17 @@
         "layoutY" : 275
       },
       "configuration" : {
+        "fetchPerimeterInfoFromMessageMetadata" : false,
+        "perimeterKeyName" : "polygon",
         "latitudeKeyName" : "latitude",
         "longitudeKeyName" : "longitude",
-        "entityRelationsQuery" : {
-          "parameters" : {
-            "direction" : "TO",
-            "relationTypeGroup" : "COMMON",
-            "maxLevel" : 2,
-            "fetchLastLevelOnly" : true
-          },
+        "minInsideDurationTimeUnit" : "MILLISECONDS",
+        "minOutsideDurationTimeUnit" : "MILLISECONDS",
+        "minInsideDuration" : 1000,
+        "minOutsideDuration" : 1000,
+        "relationsQuery" : {
+          "direction" : "TO",
+          "maxLevel" : 2,
           "filters" : [ {
             "relationType" : "ZoneToLocation",
             "entityTypes" : [ "ASSET" ],
@@ -178,12 +180,9 @@
             "relationType" : "LocationToAsset",
             "entityTypes" : [ "ASSET" ],
             "negate" : false
-          } ]
-        },
-        "perimeterAttributeKey" : "polygon",
-        "geofenceStateAttributeKey" : "zoneState",
-        "insideDurationMs" : 1000,
-        "outsideDurationMs" : 1000
+          } ],
+          "fetchLastLevelOnly" : true
+        }
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -231,29 +230,32 @@
         "layoutY" : 281
       },
       "configuration" : {
+        "fetchPerimeterInfoFromMessageMetadata" : false,
+        "perimeterKeyName" : "polygon",
         "latitudeKeyName" : "latitude",
         "longitudeKeyName" : "longitude",
-        "entityRelationsQuery" : {
-          "parameters" : {
-            "direction" : "TO",
-            "relationTypeGroup" : "COMMON",
-            "maxLevel" : 2,
-            "fetchLastLevelOnly" : true
-          },
+        "minInsideDurationTimeUnit" : "MILLISECONDS",
+        "minOutsideDurationTimeUnit" : "MILLISECONDS",
+        "minInsideDuration" : 1000,
+        "minOutsideDuration" : 1000,
+        "relationsQuery" : {
+          "direction" : "TO",
+          "maxLevel" : 3,
           "filters" : [ {
-            "relationType" : "GeofenceToZone",
+            "relationType" : "ZoneToLocation",
             "entityTypes" : [ "ASSET" ],
             "negate" : false
           }, {
-            "relationType" : "ZoneToAsset",
+            "relationType" : "LocationToAsset",
             "entityTypes" : [ "ASSET" ],
             "negate" : false
-          } ]
-        },
-        "perimeterAttributeKey" : "polygon",
-        "geofenceStateAttributeKey" : "geofenceState",
-        "insideDurationMs" : 60000,
-        "outsideDurationMs" : 60000
+          }, {
+            "relationType" : "GeofenceToZone",
+            "entityTypes" : [ "ASSET" ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : true
+        }
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -278,9 +280,9 @@
         "direction" : "FROM",
         "entityType" : "ASSET",
         "entityNamePattern" : "${assetName}",
-        "entityTypePattern" : "Geofence",
+        "entityTypePattern" : "Asset",
         "relationType" : "GeofenceToAsset",
-        "createEntityIfNotExists" : true,
+        "createEntityIfNotExists" : false,
         "removeCurrentRelations" : false,
         "changeOriginatorToRelatedEntity" : false
       },
@@ -334,7 +336,7 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName"
+          "name" : "areaName"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -347,7 +349,7 @@
         "entityType" : "RULE_NODE",
         "id" : "1c685cc2-8254-11ef-b5ef-a3c9386e22a5"
       },
-      "name" : "get levelName",
+      "name" : "get zone name",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -386,7 +388,7 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName"
+          "name" : "areaName"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -399,7 +401,7 @@
         "entityType" : "RULE_NODE",
         "id" : "1c6883d1-8254-11ef-b5ef-a3c9386e22a5"
       },
-      "name" : "get levelName",
+      "name" : "get zone name",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -412,7 +414,7 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName"
+          "name" : "areaName"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -425,7 +427,7 @@
         "entityType" : "RULE_NODE",
         "id" : "1c6883d2-8254-11ef-b5ef-a3c9386e22a5"
       },
-      "name" : "get levelName",
+      "name" : "get geofence name",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -438,7 +440,7 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName"
+          "name" : "areaName"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -451,7 +453,7 @@
         "entityType" : "RULE_NODE",
         "id" : "1c68aae0-8254-11ef-b5ef-a3c9386e22a5"
       },
-      "name" : "get levelName",
+      "name" : "get geofence name",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -465,7 +467,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.level = \"zone\";\nmetadata.status = \"entered\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.area = \"zone\";\nmetadata.status = \"entered\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -489,7 +491,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.level = \"zone\";\nmetadata.status = \"left\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.area = \"zone\";\nmetadata.status = \"left\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -513,7 +515,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.level = \"geofence\";\nmetadata.status = \"entered\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.area = \"geofence\";\nmetadata.status = \"entered\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -537,7 +539,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.level = \"geofence\";\nmetadata.status = \"left\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.area = \"geofence\";\nmetadata.status = \"left\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -632,8 +634,8 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName",
-          "id" : "levelId"
+          "name" : "areaName",
+          "id" : "areaId"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -646,7 +648,7 @@
         "entityType" : "RULE_NODE",
         "id" : "00847530-91df-11ef-b984-655f1d07912d"
       },
-      "name" : "get zoneName",
+      "name" : "get zone name/id",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -660,7 +662,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.level = \"zone\";\nmetadata.status = \"inside\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.area = \"zone\";\nmetadata.status = \"inside\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -683,8 +685,8 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName",
-          "id" : "levelId"
+          "name" : "areaName",
+          "id" : "areaId"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -697,7 +699,7 @@
         "entityType" : "RULE_NODE",
         "id" : "00849c40-91df-11ef-b984-655f1d07912d"
       },
-      "name" : "get levelName",
+      "name" : "get zone name/id",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -711,7 +713,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.level = \"zone\";\nmetadata.status = \"outside\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.area = \"zone\";\nmetadata.status = \"outside\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -757,7 +759,7 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName",
+          "name" : "areaName",
           "id" : "levelId"
         },
         "ignoreNullStrings" : false,
@@ -771,7 +773,7 @@
         "entityType" : "RULE_NODE",
         "id" : "96827000-91df-11ef-b984-655f1d07912d"
       },
-      "name" : "get levelName",
+      "name" : "get geofence name/id",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -785,7 +787,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.level = \"geofence\";\nmetadata.status = \"outside\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.area = \"geofence\";\nmetadata.status = \"outside\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -808,8 +810,8 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName",
-          "id" : "levelId"
+          "name" : "areaName",
+          "id" : "areaId"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -822,7 +824,7 @@
         "entityType" : "RULE_NODE",
         "id" : "96829711-91df-11ef-b984-655f1d07912d"
       },
-      "name" : "get levelName",
+      "name" : "get geofence name/id",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -836,7 +838,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.level = \"geofence\";\nmetadata.status = \"inside\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.area = \"geofence\";\nmetadata.status = \"inside\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,

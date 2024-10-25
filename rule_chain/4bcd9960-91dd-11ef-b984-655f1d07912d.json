@@ -22,10 +22,6 @@
       "toIndex" : 3,
       "type" : "Success"
     }, {
-      "fromIndex" : 1,
-      "toIndex" : 2,
-      "type" : "Success"
-    }, {
       "fromIndex" : 2,
       "toIndex" : 0,
       "type" : "Success"

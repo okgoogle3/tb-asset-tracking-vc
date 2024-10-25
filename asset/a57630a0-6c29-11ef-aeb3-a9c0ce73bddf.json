@@ -58,14 +58,26 @@
     },
     "type" : "AlarmConfigToAsset",
     "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
+    },
+    "type" : "ZoneToAsset",
+    "typeGroup" : "COMMON"
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[]}",
+      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf\"},\"enterTs\":1729850590707,\"insideTs\":1729850687784,\"leftTs\":null}]}",
       "key" : "geofenceState_1c67e790-8254-11ef-b5ef-a3c9386e22a5",
-      "lastUpdateTs" : 1729843991297,
+      "lastUpdateTs" : 1729851374376,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -73,7 +85,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_1c6835b0-8254-11ef-b5ef-a3c9386e22a5",
-      "lastUpdateTs" : 1729843991298,
+      "lastUpdateTs" : 1729851374380,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -90,14 +102,6 @@
       "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_7982ab30-6c43-11ef-b066-57f29b5e1e98",
       "lastUpdateTs" : 1728048012073,
-      "longValue" : null,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : "{\"in\":{\"uuid1\":1729513395000},\"out\":{\"uuid2\":1729513395000}}",
-      "key" : "geofencesStatus",
-      "lastUpdateTs" : 1729513450604,
       "longValue" : null,
       "strValue" : null
     } ]

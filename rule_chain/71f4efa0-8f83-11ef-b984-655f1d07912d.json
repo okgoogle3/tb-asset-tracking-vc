@@ -229,7 +229,7 @@
       },
       "configuration" : {
         "messageNames" : [ ],
-        "metadataNames" : [ "level", "status", "levelId" ],
+        "metadataNames" : [ "status", "area", "areaId" ],
         "checkAllKeys" : true
       },
       "configurationVersion" : 0,
@@ -254,7 +254,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var alarmSettings = JSON.parse(metadata.alarmSettings).profileSettings;\nvar alarmRules = alarmSettings.perimeters[metadata.level];\n\nif (ruleIsEmpty(alarmRules)) {\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\n\nvar levelAlarmRule = alarmRules[metadata.levelId][metadata.status];\nreturn buildReturnMsg(levelAlarmRule);\n\n\nfunction ruleIsEmpty(alarmRules) {\n    return alarmRules == null ||\n        alarmRules[metadata.levelId] == null ||\n        alarmRules[metadata.levelId][metadata.status]==null;\n}\n\nfunction buildReturnMsg(alarmRule) {\n        var notificationSettings = JSON.stringify(alarmRule.notifications);\n\n    return {\n        msg: alarmRule.alarmFields,\n        metadata: {\n            ts: metadata.ts,\n            create: alarmRule.enabled,\n            notificationSettings: notificationSettings\n        },\n        msgType: \"ALARM\"\n    }\n}"
+        "tbelScript" : "var alarmSettings = JSON.parse(metadata.alarmSettings).profileSettings;\nif(profileSettings.isEmpty()){\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\nvar alarmRules = alarmSettings.perimeters[metadata.area];\n\nif (ruleIsEmpty(alarmRules)) {\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\n\nvar areaAlarmRule = alarmRules[metadata.areaId][metadata.status];\nreturn buildReturnMsg(areaAlarmRule);\n\n\nfunction ruleIsEmpty(alarmRules) {\n    return alarmRules == null ||\n        alarmRules[metadata.areaId] == null ||\n        alarmRules[metadata.areaId][metadata.status]==null;\n}\n\nfunction buildReturnMsg(alarmRule) {\n        var notificationSettings = JSON.stringify(alarmRule.notifications);\n\n    return {\n        msg: alarmRule.alarmFields,\n        metadata: {\n            ts: metadata.ts,\n            create: alarmRule.enabled,\n            notificationSettings: notificationSettings\n        },\n        msgType: \"ALARM\"\n    }\n}"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,

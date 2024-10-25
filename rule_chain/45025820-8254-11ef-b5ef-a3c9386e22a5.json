@@ -15,7 +15,7 @@
       "entityType" : "RULE_CHAIN",
       "id" : "45025820-8254-11ef-b5ef-a3c9386e22a5"
     },
-    "name" : "event logic",
+    "name" : "Events handler",
     "root" : false,
     "type" : "CORE"
   },
@@ -30,18 +30,22 @@
       "type" : "Success"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 1,
+      "toIndex" : 5,
       "type" : "True"
     }, {
       "fromIndex" : 3,
       "toIndex" : 4,
       "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 1,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 2,
     "nodes" : [ {
       "additionalInfo" : {
-        "layoutX" : 325,
-        "layoutY" : 333
+        "layoutX" : 324,
+        "layoutY" : 434
       },
       "configuration" : {
         "defaultTTL" : 0
@@ -62,13 +66,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 325,
-        "layoutY" : 240
+        "layoutX" : 329,
+        "layoutY" : 339
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var assetName = metadata.assetName;\nvar level =  metadata.level;\nvar levelName = metadata.levelName;\nvar status = metadata.status;\n\nvar newMsg = {\n    message: assetName + \" \" +  status + \" \" + levelName + \" \" + level,\n};\n\n\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var message = [];\nforeach(msg1: msg) {\n    message.push({\n        assetName: msg1.metadata.assetName,\n        area: msg1.metadata.area,\n        areaName: msg1.metadata.areaName,\n        status: msg1.metadata.status\n    });\n}\nvar metadataNew = {\n    assetName: msg[0].metadata.assetName,\n    ts:metadata.ts\n};\nreturn {\n    msg: {\n        message: message\n    },\n    metadata: metadataNew,\n    msgType: msgType\n};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -91,7 +95,7 @@
       },
       "configuration" : {
         "messageNames" : [ ],
-        "metadataNames" : [ "level", "status", "levelName" ],
+        "metadataNames" : [ "status", "area", "areaName" ],
         "checkAllKeys" : true
       },
       "configurationVersion" : 0,
@@ -110,8 +114,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 327,
-        "layoutY" : 421
+        "layoutX" : 326,
+        "layoutY" : 522
       },
       "configuration" : {
         "originatorSource" : "ENTITY",
@@ -131,7 +135,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -144,8 +148,8 @@
       "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 329,
-        "layoutY" : 504
+        "layoutX" : 328,
+        "layoutY" : 605
       },
       "configuration" : {
         "defaultTTL" : 0
@@ -163,6 +167,32 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "This rule node is used to prevent overwriting telemetry data as potentially several events may have the same timestamp, as they are pushed from multiple related entities. ",
+        "layoutX" : 329,
+        "layoutY" : 256
+      },
+      "configuration" : {
+        "interval" : 1,
+        "strategy" : "ALL",
+        "outMsgType" : "POST_TELEMETRY_REQUEST",
+        "maxPendingMsgs" : 1000,
+        "maxRetries" : 3
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "22b27420-92ae-11ef-b984-655f1d07912d"
+      },
+      "name" : "deduplication",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.deduplication.TbMsgDeduplicationNode"
     } ],
     "ruleChainConnections" : null
   },

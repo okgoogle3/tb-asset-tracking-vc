@@ -1103,6 +1103,91 @@
           "row" : 0,
           "col" : 0,
           "id" : "00e8eb0e-57f1-c48f-9dca-9a8b1e1cb184"
+        },
+        "8d89279b-0549-3d60-d733-1b72e4c83997" : {
+          "typeFullFqn" : "system.cards.timeseries_table",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 6.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "95ec5f23-abc4-41f9-932f-d1091122eae8",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "message",
+                "type" : "timeseries",
+                "label" : "message",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.01935819512695458
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 3600000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 2000
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showTimestamp" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true
+            },
+            "title" : "Asset events",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "displayTimewindow" : true,
+            "configMode" : "advanced",
+            "titleFont" : null,
+            "titleColor" : null,
+            "titleIcon" : null,
+            "enableDataExport" : true,
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8d89279b-0549-3d60-d733-1b72e4c83997"
         }
       },
       "states" : {
@@ -1114,45 +1199,51 @@
               "widgets" : {
                 "b93fd818-5bd6-da5d-238a-4924de210fa7" : {
                   "sizeX" : 7,
-                  "sizeY" : 11,
+                  "sizeY" : 14,
                   "row" : 0,
                   "col" : 0
                 },
                 "0c680b46-349b-9a58-b591-25e2a45e01d6" : {
                   "sizeX" : 24,
-                  "sizeY" : 23,
+                  "sizeY" : 18,
                   "row" : 0,
                   "col" : 24
                 },
                 "54f839a4-a0d9-abbb-9ba0-3c336651f402" : {
                   "sizeX" : 6,
-                  "sizeY" : 11,
+                  "sizeY" : 14,
                   "row" : 0,
                   "col" : 7
                 },
                 "2e1adb40-38de-b951-8607-a2b0e2eb0a6c" : {
                   "sizeX" : 7,
-                  "sizeY" : 13,
-                  "row" : 11,
+                  "sizeY" : 15,
+                  "row" : 14,
                   "col" : 0
                 },
                 "012a2408-d991-e950-1532-55e053a82aa5" : {
                   "sizeX" : 6,
-                  "sizeY" : 13,
-                  "row" : 11,
+                  "sizeY" : 15,
+                  "row" : 14,
                   "col" : 7
                 },
                 "954e669d-1cf4-f0ae-1706-cc55b71c980c" : {
                   "sizeX" : 11,
-                  "sizeY" : 11,
+                  "sizeY" : 14,
                   "row" : 0,
                   "col" : 13
                 },
                 "00e8eb0e-57f1-c48f-9dca-9a8b1e1cb184" : {
                   "sizeX" : 11,
-                  "sizeY" : 13,
-                  "row" : 11,
+                  "sizeY" : 15,
+                  "row" : 14,
                   "col" : 13
+                },
+                "8d89279b-0549-3d60-d733-1b72e4c83997" : {
+                  "sizeX" : 24,
+                  "sizeY" : 11,
+                  "row" : 18,
+                  "col" : 24
                 }
               },
               "gridSettings" : {
@@ -1348,6 +1439,18 @@
             "resolveMultiple" : false,
             "stateEntityParamName" : "Geofence",
             "defaultStateEntity" : null
+          }
+        },
+        "95ec5f23-abc4-41f9-932f-d1091122eae8" : {
+          "id" : "95ec5f23-abc4-41f9-932f-d1091122eae8",
+          "alias" : "Asset worker",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "ASSET",
+              "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
+            }
           }
         }
       },
