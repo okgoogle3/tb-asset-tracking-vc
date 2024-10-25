@@ -65,7 +65,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_1c67e790-8254-11ef-b5ef-a3c9386e22a5",
-      "lastUpdateTs" : 1729861429342,
+      "lastUpdateTs" : 1729862202750,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -73,7 +73,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_1c6835b0-8254-11ef-b5ef-a3c9386e22a5",
-      "lastUpdateTs" : 1729861429343,
+      "lastUpdateTs" : 1729862202751,
       "longValue" : null,
       "strValue" : null
     }, {

@@ -4,7 +4,7 @@
     "additionalConfig" : {
       "description" : "Send notification to tenant admins when comment is added by user on active alarm"
     },
-    "enabled" : true,
+    "enabled" : false,
     "externalId" : {
       "entityType" : "NOTIFICATION_RULE",
       "id" : "1c1f4280-6b6e-11ef-b852-5f7f6439defe"

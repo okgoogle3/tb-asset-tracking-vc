@@ -467,10 +467,10 @@
       },
       "configuration" : {
         "msgCount" : 1,
-        "periodInSeconds" : 2,
+        "periodInSeconds" : 1,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = { temperature: 33, humidity: 77,latitude:50, longitude:50 };\nvar metadata = { };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var msg = { temperature: 313, humidity: 77,latitude:50, longitude:50 };\nvar metadata = { };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "originatorId" : "9d228cc0-6b69-11ef-9e6c-75c864e5f031",
         "originatorType" : "DEVICE"
       },

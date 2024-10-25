@@ -11,9 +11,9 @@
             },
             "actionButtonConfig" : null
           },
-          "body" : "asdf",
+          "body" : "${message}",
           "enabled" : true,
-          "subject" : "sdf"
+          "subject" : "${subject}"
         }
       }
     },
@@ -22,7 +22,7 @@
       "entityType" : "NOTIFICATION_TEMPLATE",
       "id" : "5d2ec2f0-8f86-11ef-b984-655f1d07912d"
     },
-    "name" : "fasd",
+    "name" : "Text from message",
     "notificationType" : "RULE_NODE"
   },
   "relations" : [ ],

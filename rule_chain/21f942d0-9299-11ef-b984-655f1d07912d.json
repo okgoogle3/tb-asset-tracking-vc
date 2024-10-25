@@ -139,7 +139,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -199,7 +199,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -251,7 +251,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -361,7 +361,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "metadata.subject = \"subject msg\";\nmetadata.message = \" message msg\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -413,7 +413,7 @@
           "entityType" : "NOTIFICATION_TEMPLATE",
           "id" : "5d2ec2f0-8f86-11ef-b984-655f1d07912d"
         },
-        "targets" : [ "1c135ba0-6b6e-11ef-b852-5f7f6439defe" ]
+        "targets" : [ "1c0f6400-6b6e-11ef-b852-5f7f6439defe" ]
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
