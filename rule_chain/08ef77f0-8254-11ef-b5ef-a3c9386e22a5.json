@@ -531,7 +531,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2039,
+        "layoutX" : 2042,
         "layoutY" : 136
       },
       "configuration" : {
@@ -654,7 +654,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 889,
+        "layoutX" : 893,
         "layoutY" : 403
       },
       "configuration" : {

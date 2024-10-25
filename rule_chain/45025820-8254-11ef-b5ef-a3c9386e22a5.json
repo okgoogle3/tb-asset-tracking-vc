@@ -68,7 +68,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var assetName = metadata.assetName;\nvar level =  metadata.level;\nvar levelName = metadata.levelName;\nvar status = metadata.status;\n\nvar newMsg = {\n    message:  \"ASSET \" + assetName + \" \" +  status + \" \" + levelName + \" \" + level,\n};\n\n\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var assetName = metadata.assetName;\nvar level =  metadata.level;\nvar levelName = metadata.levelName;\nvar status = metadata.status;\n\nvar newMsg = {\n    message: assetName + \" \" +  status + \" \" + levelName + \" \" + level,\n};\n\n\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
