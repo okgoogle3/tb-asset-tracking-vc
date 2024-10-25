@@ -38,30 +38,6 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf"
-    },
-    "type" : "ZoneToAsset",
-    "typeGroup" : "COMMON"
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "086b7790-6b6e-11ef-9e6c-75c864e5f031"
-    },
-    "type" : "GeofenceToAsset",
-    "typeGroup" : "COMMON"
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
       "id" : "d5dd8f50-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
     "to" : {
@@ -87,17 +63,17 @@
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf\"},\"enterTs\":1729860150808,\"insideTs\":1729860162749,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_1c67e790-8254-11ef-b5ef-a3c9386e22a5",
-      "lastUpdateTs" : 1729860212186,
+      "lastUpdateTs" : 1729861429342,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"086b7790-6b6e-11ef-9e6c-75c864e5f031\"},\"enterTs\":1729860212108,\"insideTs\":null,\"leftTs\":null},{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"90d9c460-6b6e-11ef-9e6c-75c864e5f031\"},\"enterTs\":1729860210282,\"insideTs\":null,\"leftTs\":1729860212108}]}",
+      "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_1c6835b0-8254-11ef-b5ef-a3c9386e22a5",
-      "lastUpdateTs" : 1729860212187,
+      "lastUpdateTs" : 1729861429343,
       "longValue" : null,
       "strValue" : null
     }, {

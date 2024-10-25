@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "39fc1c91-9299-11ef-b984-655f1d07912d"
+      "id" : "49d82690-92d0-11ef-8a10-c14d60276279"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -68,18 +68,22 @@
       "fromIndex" : 11,
       "toIndex" : 10,
       "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 7,
+      "type" : "True"
     } ],
-    "firstNodeIndex" : 7,
+    "firstNodeIndex" : 13,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 44,
-        "layoutY" : 496
+        "layoutX" : 45,
+        "layoutY" : 593
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType === 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);",
-        "tbelScript" : "var result = [];\nvar notifications = JSON.parse(metadata.notifications);\nif (notifications.sms === true) {\n    result.add(\"sms\");\n}\nif (notifications.email === true) {\n    result.add(\"email\");\n}\nif (notifications.web === true) {\n    result.add(\"web\");\n}\nreturn result;"
+        "tbelScript" : "var result = [];\nvar notificationSettings = JSON.parse(metadata.notificationSettings);\nif (notificationSettings.sms === true) {\n    result.add(\"sms\");\n}\nif (notificationSettings.email === true) {\n    result.add(\"email\");\n}\nif (notificationSettings.web === true) {\n    result.add(\"web\");\n}\nif(result.isEmpty()){\n    return \"nothing\";\n}\nreturn result;"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -97,8 +101,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 597,
-        "layoutY" : 400
+        "layoutX" : 598,
+        "layoutY" : 497
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -121,8 +125,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 597,
-        "layoutY" : 503
+        "layoutX" : 598,
+        "layoutY" : 600
       },
       "configuration" : {
         "fromTemplate" : "info@testmail.org",
@@ -149,8 +153,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 876,
-        "layoutY" : 503
+        "layoutX" : 877,
+        "layoutY" : 600
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -184,8 +188,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 878,
-        "layoutY" : 399
+        "layoutX" : 879,
+        "layoutY" : 496
       },
       "configuration" : {
         "numbersToTemplate" : "${originatorPhone}",
@@ -209,8 +213,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 326,
-        "layoutY" : 503
+        "layoutX" : 323,
+        "layoutY" : 600
       },
       "configuration" : {
         "dataMapping" : {
@@ -235,8 +239,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 330,
-        "layoutY" : 400
+        "layoutX" : 324,
+        "layoutY" : 499
       },
       "configuration" : {
         "dataMapping" : {
@@ -261,8 +265,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 50,
-        "layoutY" : 234
+        "layoutX" : 51,
+        "layoutY" : 331
       },
       "configuration" : {
         "originatorSource" : "RELATED",
@@ -271,17 +275,17 @@
         "entityNamePattern" : null,
         "relationsQuery" : {
           "fetchLastLevelOnly" : false,
-          "direction" : "FROM",
+          "direction" : "TO",
           "maxLevel" : 1,
           "filters" : [ {
-            "relationType" : "toAlarmConfig",
+            "relationType" : "AlarmConfigToAsset",
             "entityTypes" : [ "ASSET" ]
           } ]
         }
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -295,8 +299,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 49,
-        "layoutY" : 318
+        "layoutX" : 50,
+        "layoutY" : 415
       },
       "configuration" : {
         "checkForSingleEntity" : false,
@@ -321,8 +325,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 51,
-        "layoutY" : 402
+        "layoutX" : 52,
+        "layoutY" : 499
       },
       "configuration" : {
         "relationsQuery" : {
@@ -351,8 +355,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 594,
-        "layoutY" : 599
+        "layoutX" : 595,
+        "layoutY" : 696
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -375,8 +379,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 321,
-        "layoutY" : 600
+        "layoutX" : 322,
+        "layoutY" : 697
       },
       "configuration" : {
         "dataMapping" : {
@@ -401,8 +405,8 @@
     }, {
       "additionalInfo" : {
         "description" : "rule node will be updated in 3.9 to satisfy requirements from ticket https://thingsboard-portal.atlassian.net/browse/PROD-4780",
-        "layoutX" : 872,
-        "layoutY" : 598
+        "layoutX" : 873,
+        "layoutY" : 695
       },
       "configuration" : {
         "templateId" : {
@@ -424,6 +428,32 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.notification.TbNotificationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 53,
+        "layoutY" : 235
+      },
+      "configuration" : {
+        "checkForSingleEntity" : false,
+        "direction" : "TO",
+        "entityType" : null,
+        "entityId" : null,
+        "relationType" : "AlarmConfigToAsset"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "49d82690-92d0-11ef-8a10-c14d60276279"
+      },
+      "name" : "check relation AlarmConfigToAsset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckRelationNode"
     } ],
     "ruleChainConnections" : null
   },

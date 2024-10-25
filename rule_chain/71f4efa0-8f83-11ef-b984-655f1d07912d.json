@@ -31,7 +31,7 @@
     }, {
       "fromIndex" : 2,
       "toIndex" : 4,
-      "type" : "False"
+      "type" : "Cleared"
     }, {
       "fromIndex" : 3,
       "toIndex" : 8,
@@ -186,7 +186,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -254,7 +254,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var alarmSettings = JSON.parse(metadata.alarmSettings).profileSettings;\nif(profileSettings.isEmpty()){\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\nvar alarmRules = alarmSettings.perimeters[metadata.area];\n\nif (ruleIsEmpty(alarmRules)) {\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\n\nvar areaAlarmRule = alarmRules[metadata.areaId][metadata.status];\nreturn buildReturnMsg(areaAlarmRule);\n\n\nfunction ruleIsEmpty(alarmRules) {\n    return alarmRules == null ||\n        alarmRules[metadata.areaId] == null ||\n        alarmRules[metadata.areaId][metadata.status]==null;\n}\n\nfunction buildReturnMsg(alarmRule) {\n        var notificationSettings = JSON.stringify(alarmRule.notifications);\n\n    return {\n        msg: alarmRule.alarmFields,\n        metadata: {\n            ts: metadata.ts,\n            create: alarmRule.enabled,\n            notificationSettings: notificationSettings\n        },\n        msgType: \"ALARM\"\n    }\n}"
+        "tbelScript" : "var alarmSettings = JSON.parse(metadata.alarmSettings).profileSettings;\nif(alarmSettings.isEmpty()){\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\nvar alarmRules = alarmSettings.perimeters[metadata.area];\n\nif (ruleIsEmpty(alarmRules)) {\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\n\nvar areaAlarmRule = alarmRules[metadata.areaId][metadata.status];\nreturn buildReturnMsg(areaAlarmRule);\n\n\nfunction ruleIsEmpty(alarmRules) {\n    return alarmRules == null ||\n        alarmRules[metadata.areaId] == null ||\n        alarmRules[metadata.areaId][metadata.status]==null;\n}\n\nfunction buildReturnMsg(alarmRule) {\n        var notificationSettings = JSON.stringify(alarmRule.notifications);\n\n    return {\n        msg: alarmRule.alarmFields,\n        metadata: {\n            ts: metadata.ts,\n            create: alarmRule.enabled,\n            notificationSettings: notificationSettings\n        },\n        msgType: \"ALARM\"\n    }\n}"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -301,7 +301,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType === 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);",
-        "tbelScript" : "if(metadata.create!=null){\n    return metadata.create === true;\n}\nreturn \"nothing\";\n"
+        "tbelScript" : "if(metadata.create!=null){\n    return (metadata.create === true).toString();\n}\nreturn \"nothing\";\n"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,

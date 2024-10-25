@@ -26,18 +26,6 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "086b7790-6b6e-11ef-9e6c-75c864e5f031"
-    },
-    "type" : "GeofenceToAsset",
-    "typeGroup" : "COMMON"
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
       "id" : "086b7790-6b6e-11ef-9e6c-75c864e5f031"
     },
     "to" : {
