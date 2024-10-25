@@ -15,7 +15,7 @@
       "entityType" : "RULE_CHAIN",
       "id" : "08ef77f0-8254-11ef-b5ef-a3c9386e22a5"
     },
-    "name" : "geofence logic",
+    "name" : "Geofence checker",
     "root" : false,
     "type" : "CORE"
   },
@@ -60,6 +60,10 @@
       "fromIndex" : 2,
       "toIndex" : 24,
       "type" : "Inside"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 29,
+      "type" : "Success"
     }, {
       "fromIndex" : 3,
       "toIndex" : 16,
@@ -224,7 +228,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1451,
-        "layoutY" : 292
+        "layoutY" : 281
       },
       "configuration" : {
         "latitudeKeyName" : "latitude",
@@ -296,7 +300,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1144,
+        "layoutX" : 1163,
         "layoutY" : 74
       },
       "configuration" : {
@@ -325,7 +329,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 617,
+        "layoutX" : 615,
         "layoutY" : 139
       },
       "configuration" : {
@@ -551,8 +555,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1431,
-        "layoutY" : 143
+        "layoutX" : 1447,
+        "layoutY" : 145
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -574,7 +578,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1143,
+        "layoutX" : 1162,
         "layoutY" : 143
       },
       "configuration" : {
@@ -628,7 +632,8 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName"
+          "name" : "levelName",
+          "id" : "levelId"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -673,12 +678,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 621,
-        "layoutY" : 491
+        "layoutX" : 624,
+        "layoutY" : 488
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName"
+          "name" : "levelName",
+          "id" : "levelId"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -751,7 +757,8 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName"
+          "name" : "levelName",
+          "id" : "levelId"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -801,7 +808,8 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "levelName"
+          "name" : "levelName",
+          "id" : "levelId"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
@@ -934,6 +942,29 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1728,
+        "layoutY" : 281
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "71f4efa0-8f83-11ef-b984-655f1d07912d"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "dff32670-92a8-11ef-b984-655f1d07912d"
+      },
+      "name" : "Alarm rule chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },

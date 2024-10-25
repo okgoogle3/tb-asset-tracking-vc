@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "c51183e0-91f1-11ef-b984-655f1d07912d"
+      "id" : "df3ea8b0-9296-11ef-b984-655f1d07912d"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -22,80 +22,60 @@
   "metaData" : {
     "connections" : [ {
       "fromIndex" : 0,
-      "toIndex" : 1,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 2,
-      "type" : "True"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 3,
-      "type" : "False"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 4,
-      "type" : "Created"
-    }, {
-      "fromIndex" : 3,
-      "toIndex" : 6,
-      "type" : "False"
-    }, {
-      "fromIndex" : 4,
-      "toIndex" : 13,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 5,
-      "toIndex" : 11,
-      "type" : "phone"
-    }, {
-      "fromIndex" : 5,
-      "toIndex" : 12,
-      "type" : "sms"
-    }, {
-      "fromIndex" : 6,
-      "toIndex" : 13,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 7,
-      "toIndex" : 10,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 8,
       "toIndex" : 9,
       "type" : "Success"
     }, {
-      "fromIndex" : 11,
+      "fromIndex" : 1,
+      "toIndex" : 3,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 4,
+      "type" : "False"
+    }, {
+      "fromIndex" : 3,
       "toIndex" : 8,
       "type" : "Success"
     }, {
-      "fromIndex" : 12,
-      "toIndex" : 7,
+      "fromIndex" : 4,
+      "toIndex" : 8,
       "type" : "Success"
     }, {
-      "fromIndex" : 13,
-      "toIndex" : 14,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 14,
-      "toIndex" : 15,
+      "fromIndex" : 5,
+      "toIndex" : 6,
       "type" : "True"
     }, {
-      "fromIndex" : 15,
-      "toIndex" : 5,
+      "fromIndex" : 6,
+      "toIndex" : 0,
+      "type" : "False"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 7,
+      "type" : "True"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 9,
       "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 1,
+      "type" : "true"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 2,
+      "type" : "false"
     } ],
-    "firstNodeIndex" : 17,
+    "firstNodeIndex" : 5,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 114,
-        "layoutY" : 383
+        "layoutX" : 351,
+        "layoutY" : 406
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var alarmSettings = JSON.parse(metadata.alarmSettings).profileSettings;\nvar alarmMsgs = [];\n\nforeach(setting: alarmSettings.variables.entrySet()) {\n    var keyName = setting.getKey();\n    var alarmRules = setting.getValue();\n\n    if (msg[keyName] == null || alarmRules == null ||\n        alarmRules.isEmpty()) {\n        break;\n    }\n\n    var alarmVariable = msg[keyName];\n\n    foreach(alarmRule: alarmRules) {\n        if (alarmRule.enabled == null || !alarmRule.enabled) {\n            break;\n        }\n\n        var isLower = alarmRule.lowThresholdValue != null ? alarmVariable < alarmRule.lowThresholdValue : null;\n        var isHigher = alarmRule.highThresholdValue != null ? alarmVariable > alarmRule.highThresholdValue : null;\n        var isCreate = isLower === true || isHigher === true;\n        var notificationSettings = JSON.stringify(alarmRule.notifications);\n\n        alarmMsgs.push({\n            msg: {\n                severity: alarmRule\n                    .severity,\n                alarmName: alarmRule\n                    .alarmName\n            },\n            metadata: {ts:metadata.ts,isCreate:isCreate,notifications:notificationSettings },\n            msgType: \"alarm\"\n        });\n    }\n\n\n}\n\nmsg.alarmSettings = alarmSettings;\n\n\nreturn alarmMsgs;"
+        "tbelScript" : "var alarmSettings = JSON.parse(metadata.alarmSettings).profileSettings;\nvar alarmMsgs = [];\n\nforeach(setting: alarmSettings.variables.entrySet()) {\n    var keyName = setting.getKey();\n    var alarmRules = setting.getValue();\n\n    if (msg[keyName] == null || alarmRules == null ||\n        alarmRules.isEmpty()) {\n        break;\n    }\n\n    var alarmVariable = msg[keyName];\n\n    foreach(alarmRule: alarmRules) {\n        if (alarmRule.enabled == null || !alarmRule.enabled) {\n            alarmMsgs.push(buildReturnMsg(alarmRule,false));\n            break;\n        }\n\n        var create = overThreshold(alarmRule);\n        alarmMsgs.push(buildReturnMsg(alarmRule,create));\n    }\n\n\n}\nmsg.alarmSettings = alarmSettings;\n\nif (alarmMsgs.isEmpty()) {\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\nreturn alarmMsgs;\n\n\nfunction buildReturnMsg(alarmRule,create) {\n        var notificationSettings = JSON.stringify(alarmRule.notifications);\n\n    return {\n        msg: alarmRule.alarmFields,\n        metadata: {\n            ts: metadata.ts,\n            create: create,\n            notificationSettings: notificationSettings\n        },\n        msgType: \"ALARM\"\n    }\n}\n\nfunction overThreshold(alarmRule){\n    var isLower = alarmRule.lowThresholdValue != null ? alarmVariable < alarmRule.lowThresholdValue : null;\n    var isHigher = alarmRule.highThresholdValue != null ? alarmVariable > alarmRule.highThresholdValue : null;\n    return isLower === true || isHigher === true;\n}\n"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -105,7 +85,7 @@
         "entityType" : "RULE_NODE",
         "id" : "89612eb0-8f83-11ef-b984-655f1d07912d"
       },
-      "name" : "check for alarms",
+      "name" : "check telemetry",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -113,32 +93,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 111,
-        "layoutY" : 480
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return msg.temperature > 20;",
-        "tbelScript" : "return metadata.isCreate===true;"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "8961a3e0-8f83-11ef-b984-655f1d07912d"
-      },
-      "name" : "alarm switch",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 384,
-        "layoutY" : 484
+        "layoutX" : 926,
+        "layoutY" : 411
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -171,8 +127,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 378,
-        "layoutY" : 563
+        "layoutX" : 928,
+        "layoutY" : 491
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -196,8 +152,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 675,
-        "layoutY" : 484
+        "layoutX" : 1225,
+        "layoutY" : 412
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -220,32 +176,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1256,
-        "layoutY" : 671
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType === 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);",
-        "tbelScript" : "var result = [];\nvar notifications = JSON.parse(metadata.notifications);\nif (notifications.sms === true) {\n    result.add(\"sms\");\n}\nif (notifications.email === true) {\n    result.add(\"email\");\n}\nif (notifications.web === true) {\n    result.add(\"web\");\n}\nreturn result;"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "8ada4f41-8f85-11ef-b984-655f1d07912d"
-      },
-      "name" : "notification switch",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 676,
-        "layoutY" : 562
+        "layoutX" : 1226,
+        "layoutY" : 490
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -268,13 +200,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1807,
-        "layoutY" : 563
+        "layoutX" : 47,
+        "layoutY" : 239
       },
       "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+        "messageNames" : [ ],
+        "metadataNames" : [ "alarmSettings" ],
+        "checkAllKeys" : true
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -282,9 +214,57 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "54af77f0-8f86-11ef-b984-655f1d07912d"
+        "id" : "df3ea8b0-9296-11ef-b984-655f1d07912d"
       },
-      "name" : "prepare sms",
+      "name" : "check alarmSettings",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 51,
+        "layoutY" : 319
+      },
+      "configuration" : {
+        "messageNames" : [ ],
+        "metadataNames" : [ "level", "status", "levelId" ],
+        "checkAllKeys" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b0d6f850-9297-11ef-b984-655f1d07912d"
+      },
+      "name" : "is geofence",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 347,
+        "layoutY" : 323
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "var alarmSettings = JSON.parse(metadata.alarmSettings).profileSettings;\nvar alarmRules = alarmSettings.perimeters[metadata.level];\n\nif (ruleIsEmpty(alarmRules)) {\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\n\nvar levelAlarmRule = alarmRules[metadata.levelId][metadata.status];\nreturn buildReturnMsg(levelAlarmRule);\n\n\nfunction ruleIsEmpty(alarmRules) {\n    return alarmRules == null ||\n        alarmRules[metadata.levelId] == null ||\n        alarmRules[metadata.levelId][metadata.status]==null;\n}\n\nfunction buildReturnMsg(alarmRule) {\n        var notificationSettings = JSON.stringify(alarmRule.notifications);\n\n    return {\n        msg: alarmRule.alarmFields,\n        metadata: {\n            ts: metadata.ts,\n            enabled: alarmRule.enabled,\n            notificationSettings: notificationSettings\n        },\n        msgType: \"ALARM\"\n    }\n}"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "16020f20-9299-11ef-b984-655f1d07912d"
+      },
+      "name" : "check perimeters",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -292,105 +272,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1809,
-        "layoutY" : 664
+        "layoutX" : 1561,
+        "layoutY" : 488
       },
       "configuration" : {
-        "fromTemplate" : "info@testmail.org",
-        "toTemplate" : "${userEmail}",
-        "ccTemplate" : null,
-        "bccTemplate" : null,
-        "subjectTemplate" : "Device ${deviceType} temperature high",
-        "bodyTemplate" : "Device ${deviceName} has high temperature $[temperature]",
-        "isHtmlTemplate" : null,
-        "mailBodyType" : "false"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "54af9f00-8f86-11ef-b984-655f1d07912d"
-      },
-      "name" : "prepare email",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2089,
-        "layoutY" : 657
-      },
-      "configuration" : {
-        "useSystemSmtpSettings" : true,
-        "smtpHost" : "localhost",
-        "smtpPort" : 25,
-        "username" : null,
-        "password" : null,
-        "smtpProtocol" : "smtp",
-        "timeout" : 10000,
-        "enableTls" : false,
-        "tlsVersion" : "TLSv1.2",
-        "enableProxy" : false,
-        "proxyHost" : null,
-        "proxyPort" : null,
-        "proxyUser" : null,
-        "proxyPassword" : null
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "54afed20-8f86-11ef-b984-655f1d07912d"
-      },
-      "name" : "send email",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.mail.TbSendEmailNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2088,
-        "layoutY" : 562
-      },
-      "configuration" : {
-        "numbersToTemplate" : "${userPhone}",
-        "smsMessageTemplate" : "Device ${deviceName} has high temperature ${temp}",
-        "useSystemSmsSettings" : true,
-        "smsProviderConfiguration" : null
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "54afed21-8f86-11ef-b984-655f1d07912d"
-      },
-      "name" : "send sms",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.sms.TbSendSmsNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1542,
-        "layoutY" : 668
-      },
-      "configuration" : {
-        "fetchTo" : "METADATA",
-        "dataMapping" : {
-          "name" : "originatorName",
-          "type" : "originatorType"
-        },
-        "ignoreNullStrings" : false
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "21f942d0-9299-11ef-b984-655f1d07912d"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -398,192 +285,37 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "88c24f40-8f86-11ef-b984-655f1d07912d"
+        "id" : "4a195340-9299-11ef-b984-655f1d07912d"
       },
-      "name" : "get email",
+      "name" : "Notification rule chain",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1540,
-        "layoutY" : 563
+        "layoutX" : 636,
+        "layoutY" : 412
       },
       "configuration" : {
-        "dataMapping" : {
-          "phone" : "originatorPhone"
-        },
-        "ignoreNullStrings" : false,
-        "fetchTo" : "METADATA"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "88c24f41-8f86-11ef-b984-655f1d07912d"
-      },
-      "name" : "get phone",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 981,
-        "layoutY" : 493
-      },
-      "configuration" : {
-        "originatorSource" : "RELATED",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : null,
-        "entityNamePattern" : null,
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "FROM",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "toAlarmConfig",
-            "entityTypes" : [ "ASSET" ]
-          } ]
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "92e402d0-8f8a-11ef-b984-655f1d07912d"
-      },
-      "name" : "toAlarmConfig",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1255,
-        "layoutY" : 491
-      },
-      "configuration" : {
-        "checkForSingleEntity" : false,
-        "direction" : "FROM",
-        "entityType" : null,
-        "entityId" : null,
-        "relationType" : "fromAlarmConfigAssetToInformingUser"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "92e429e0-8f8a-11ef-b984-655f1d07912d"
-      },
-      "name" : "check if there are users to be informed",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbCheckRelationNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1257,
-        "layoutY" : 575
-      },
-      "configuration" : {
-        "relationsQuery" : {
-          "direction" : "FROM",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "Contains",
-            "entityTypes" : [ ],
-            "negate" : false
-          } ],
-          "fetchLastLevelOnly" : false
-        }
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "92e450f0-8f8a-11ef-b984-655f1d07912d"
-      },
-      "name" : "duplicate to informing users",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToRelatedNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 714,
-        "layoutY" : 211
-      },
-      "configuration" : {
-        "msgCount" : 1,
-        "periodInSeconds" : 2,
         "scriptLang" : "TBEL",
-        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = {\n    temperature: 8,\n    battery: 3.9\n\n};\nvar metadata = {test:123};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn {\n    msg: msg,\n    metadata: metadata,\n    msgType: msgType\n};",
-        "originatorId" : "ebf3bed0-8227-11ef-b5ef-a3c9386e22a5",
-        "originatorType" : "ASSET"
+        "jsScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType === 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);",
+        "tbelScript" : "if(metadata.enabled!=null){\n    return metadata.enabled === true;\n}\nreturn \"nothing\";\n"
       },
-      "configurationVersion" : 1,
+      "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "72422cd0-8fa5-11ef-b984-655f1d07912d"
+        "id" : "1e149c50-929e-11ef-b984-655f1d07912d"
       },
-      "name" : "test",
+      "name" : "switch",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 119,
-        "layoutY" : 311
-      },
-      "configuration" : {
-        "originatorSource" : "ENTITY",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : "ASSET",
-        "entityNamePattern" : "${assetName}",
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "FROM",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "toAlarmConfig",
-            "entityTypes" : [ "ASSET" ]
-          } ]
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "c51183e0-91f1-11ef-b984-655f1d07912d"
-      },
-      "name" : "to asset",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
     } ],
     "ruleChainConnections" : null
   },
