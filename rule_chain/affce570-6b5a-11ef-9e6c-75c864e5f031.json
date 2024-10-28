@@ -15,12 +15,16 @@
       "entityType" : "RULE_CHAIN",
       "id" : "affce570-6b5a-11ef-9e6c-75c864e5f031"
     },
-    "name" : "local tracker (Root)",
+    "name" : "local tracker (Root Rule Chain)",
     "root" : false,
     "type" : "CORE"
   },
   "metaData" : {
     "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 0,
       "type" : "Post telemetry"
@@ -43,6 +47,14 @@
     }, {
       "fromIndex" : 6,
       "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 8,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
@@ -202,6 +214,76 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1102,
+        "layoutY" : 293
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "123e7870-94ff-11ef-8a10-c14d60276279"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c46160f0-9516-11ef-8a10-c14d60276279"
+      },
+      "name" : "Device to asset transformation",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1639,
+        "layoutY" : 291
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "cf65c7a0-94ff-11ef-8a10-c14d60276279"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c46160f1-9516-11ef-8a10-c14d60276279"
+      },
+      "name" : "Geofence Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "depending on incoming msg (no info yet)a relation to a zone must be checked and changed if needed",
+        "layoutX" : 1363,
+        "layoutY" : 292
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5592b880-9517-11ef-8a10-c14d60276279"
+      },
+      "name" : "TODO",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },

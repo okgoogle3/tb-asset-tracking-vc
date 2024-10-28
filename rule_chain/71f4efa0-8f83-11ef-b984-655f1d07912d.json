@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "df3ea8b0-9296-11ef-b984-655f1d07912d"
+      "id" : "c6272340-950a-11ef-8a10-c14d60276279"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -22,7 +22,7 @@
   "metaData" : {
     "connections" : [ {
       "fromIndex" : 0,
-      "toIndex" : 9,
+      "toIndex" : 8,
       "type" : "Success"
     }, {
       "fromIndex" : 1,
@@ -34,43 +34,43 @@
       "type" : "Cleared"
     }, {
       "fromIndex" : 3,
-      "toIndex" : 8,
+      "toIndex" : 7,
       "type" : "Success"
     }, {
       "fromIndex" : 4,
-      "toIndex" : 8,
+      "toIndex" : 7,
       "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 0,
+      "type" : "False"
     }, {
       "fromIndex" : 5,
       "toIndex" : 6,
       "type" : "True"
     }, {
       "fromIndex" : 6,
-      "toIndex" : 0,
-      "type" : "False"
-    }, {
-      "fromIndex" : 6,
-      "toIndex" : 7,
-      "type" : "True"
-    }, {
-      "fromIndex" : 7,
-      "toIndex" : 9,
+      "toIndex" : 8,
       "type" : "Success"
     }, {
-      "fromIndex" : 9,
+      "fromIndex" : 8,
       "toIndex" : 1,
       "type" : "true"
     }, {
-      "fromIndex" : 9,
+      "fromIndex" : 8,
       "toIndex" : 2,
       "type" : "false"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 5,
+      "type" : "True"
     } ],
-    "firstNodeIndex" : 5,
+    "firstNodeIndex" : 9,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 346,
-        "layoutY" : 406
+        "layoutX" : 341,
+        "layoutY" : 409
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -93,8 +93,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 926,
-        "layoutY" : 411
+        "layoutX" : 921,
+        "layoutY" : 414
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -127,8 +127,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 928,
-        "layoutY" : 491
+        "layoutX" : 923,
+        "layoutY" : 494
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -152,8 +152,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1225,
-        "layoutY" : 412
+        "layoutX" : 1220,
+        "layoutY" : 415
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -176,8 +176,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1226,
-        "layoutY" : 490
+        "layoutX" : 1221,
+        "layoutY" : 493
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -200,32 +200,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 47,
-        "layoutY" : 239
-      },
-      "configuration" : {
-        "messageNames" : [ ],
-        "metadataNames" : [ "alarmSettings" ],
-        "checkAllKeys" : true
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "df3ea8b0-9296-11ef-b984-655f1d07912d"
-      },
-      "name" : "check alarmSettings",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 51,
-        "layoutY" : 319
+        "layoutX" : 46,
+        "layoutY" : 322
       },
       "configuration" : {
         "messageNames" : [ ],
@@ -248,8 +224,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 347,
-        "layoutY" : 323
+        "layoutX" : 342,
+        "layoutY" : 326
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -272,8 +248,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1561,
-        "layoutY" : 488
+        "layoutX" : 1556,
+        "layoutY" : 491
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -295,8 +271,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 636,
-        "layoutY" : 412
+        "layoutX" : 631,
+        "layoutY" : 415
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -316,6 +292,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 49,
+        "layoutY" : 238
+      },
+      "configuration" : {
+        "messageNames" : [ ],
+        "metadataNames" : [ "alarmSettings" ],
+        "checkAllKeys" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c6272340-950a-11ef-8a10-c14d60276279"
+      },
+      "name" : "check for alarmSettings",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
     } ],
     "ruleChainConnections" : null
   },

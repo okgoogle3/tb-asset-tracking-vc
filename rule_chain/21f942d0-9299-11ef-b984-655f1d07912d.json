@@ -42,11 +42,11 @@
       "type" : "Success"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 2,
+      "toIndex" : 15,
       "type" : "Success"
     }, {
       "fromIndex" : 6,
-      "toIndex" : 1,
+      "toIndex" : 14,
       "type" : "Success"
     }, {
       "fromIndex" : 7,
@@ -72,6 +72,14 @@
       "fromIndex" : 13,
       "toIndex" : 7,
       "type" : "True"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 1,
+      "type" : "True"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 2,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 13,
     "nodes" : [ {
@@ -101,8 +109,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 598,
-        "layoutY" : 497
+        "layoutX" : 880,
+        "layoutY" : 500
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -125,17 +133,17 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 598,
-        "layoutY" : 600
+        "layoutX" : 876,
+        "layoutY" : 597
       },
       "configuration" : {
         "fromTemplate" : "info@testmail.org",
         "toTemplate" : "${originatorEmail}",
         "ccTemplate" : null,
         "bccTemplate" : null,
-        "subjectTemplate" : "Device ${deviceType} temperature high",
+        "subjectTemplate" : "Asset $[originatorName] report",
         "mailBodyType" : "false",
-        "bodyTemplate" : "Device ${deviceName} has high temperature $[temperature]"
+        "bodyTemplate" : "Alarm $[name]\nstatus $ [cl] "
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -153,8 +161,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 877,
-        "layoutY" : 600
+        "layoutX" : 1154,
+        "layoutY" : 596
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -188,8 +196,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 879,
-        "layoutY" : 496
+        "layoutX" : 1154,
+        "layoutY" : 503
       },
       "configuration" : {
         "numbersToTemplate" : "${originatorPhone}",
@@ -454,6 +462,54 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbCheckRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 597,
+        "layoutY" : 502
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return msg.temperature > 20;",
+        "tbelScript" : "return metadata.originatorPhone!=null;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "24c26400-9501-11ef-8a10-c14d60276279"
+      },
+      "name" : "originatorPhone is present",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 600,
+        "layoutY" : 599
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "92a7ef80-9501-11ef-8a10-c14d60276279"
+      },
+      "name" : "prepare email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },

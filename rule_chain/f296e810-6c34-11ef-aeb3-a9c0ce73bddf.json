@@ -15,7 +15,7 @@
       "entityType" : "RULE_CHAIN",
       "id" : "f296e810-6c34-11ef-aeb3-a9c0ce73bddf"
     },
-    "name" : "Zone rule chain",
+    "name" : "Area (Root Rule Chain)",
     "root" : false,
     "type" : "CORE"
   },
@@ -221,8 +221,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 806,
-        "layoutY" : 86
+        "layoutX" : 824,
+        "layoutY" : 88
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -269,8 +269,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1109,
-        "layoutY" : 81
+        "layoutX" : 1127,
+        "layoutY" : 83
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",

@@ -15,7 +15,7 @@
       "entityType" : "RULE_CHAIN",
       "id" : "45025820-8254-11ef-b5ef-a3c9386e22a5"
     },
-    "name" : "Events handler",
+    "name" : "Events logger",
     "root" : false,
     "type" : "CORE"
   },
