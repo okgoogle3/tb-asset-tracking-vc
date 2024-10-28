@@ -379,7 +379,7 @@
         "entityType" : "RULE_NODE",
         "id" : "b4dfbf40-92ab-11ef-b984-655f1d07912d"
       },
-      "name" : "prepare web notification",
+      "name" : "prepare web notification (TODO) waining for notifications rule node update",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
