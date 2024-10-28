@@ -1385,7 +1385,7 @@
             "maxLevel" : 1,
             "fetchLastLevelOnly" : false,
             "filters" : [ {
-              "relationType" : "ZoneToAsset",
+              "relationType" : "AssetToZone",
               "entityTypes" : [ "ASSET" ]
             } ]
           }
@@ -1404,7 +1404,7 @@
             "maxLevel" : 1,
             "fetchLastLevelOnly" : false,
             "filters" : [ {
-              "relationType" : "GeofenceToAsset",
+              "relationType" : "AssetToGeofence",
               "entityTypes" : [ "ASSET" ]
             } ]
           }
