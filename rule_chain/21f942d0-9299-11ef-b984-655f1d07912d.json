@@ -23,7 +23,7 @@
     "connections" : [ {
       "fromIndex" : 0,
       "toIndex" : 5,
-      "type" : "phone"
+      "type" : "email"
     }, {
       "fromIndex" : 0,
       "toIndex" : 6,
@@ -115,7 +115,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.originatorName  + \" has \" + status + \" alarm\";\nmsg.message = message;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -141,9 +141,9 @@
         "toTemplate" : "${originatorEmail}",
         "ccTemplate" : null,
         "bccTemplate" : null,
-        "subjectTemplate" : "Asset $[originatorName] report",
+        "subjectTemplate" : "$[message]",
         "mailBodyType" : "false",
-        "bodyTemplate" : "Alarm $[name]\nstatus $ [cl] "
+        "bodyTemplate" : "Alarm name is $[name]"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -201,7 +201,7 @@
       },
       "configuration" : {
         "numbersToTemplate" : "${originatorPhone}",
-        "smsMessageTemplate" : "Device ${deviceName} has high temperature ${temp}",
+        "smsMessageTemplate" : "$[message]",
         "useSystemSmsSettings" : true,
         "smsProviderConfiguration" : null
       },
@@ -369,7 +369,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "metadata.subject = \"subject msg\";\nmetadata.message = \" message msg\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.originatorName  + \" has \" + status + \" alarm\";\n\n\nmetadata.subject = \"subject msg\";\nmetadata.message = message;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -495,7 +495,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.originatorName  + \" has \" + status + \" alarm\";\nmsg.message = message;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
