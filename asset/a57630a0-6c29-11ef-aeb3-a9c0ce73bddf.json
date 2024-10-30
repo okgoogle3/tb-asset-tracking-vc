@@ -38,30 +38,6 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf"
-    },
-    "type" : "AssetToZone",
-    "typeGroup" : "COMMON"
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "a57630a0-6c29-11ef-aeb3-a9c0ce73bddf"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "086b7790-6b6e-11ef-9e6c-75c864e5f031"
-    },
-    "type" : "AssetToGeofence",
-    "typeGroup" : "COMMON"
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
       "id" : "d5dd8f50-6c2d-11ef-aeb3-a9c0ce73bddf"
     },
     "to" : {
@@ -87,9 +63,9 @@
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf\"},\"enterTs\":1730106060979,\"insideTs\":1730106173234,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"f2a03b10-6c2d-11ef-aeb3-a9c0ce73bddf\"},\"enterTs\":1730106060979,\"insideTs\":1730106173234,\"leftTs\":1730293724947}]}",
       "key" : "geofenceState_1c67e790-8254-11ef-b5ef-a3c9386e22a5",
-      "lastUpdateTs" : 1730106173321,
+      "lastUpdateTs" : 1730293725043,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -119,9 +95,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"086b7790-6b6e-11ef-9e6c-75c864e5f031\"},\"enterTs\":1730106060979,\"insideTs\":1730106173234,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"086b7790-6b6e-11ef-9e6c-75c864e5f031\"},\"enterTs\":1730106060979,\"insideTs\":1730106173234,\"leftTs\":1730293724947}]}",
       "key" : "geofenceState_f86ba431-94ff-11ef-8a10-c14d60276279",
-      "lastUpdateTs" : 1730106173324,
+      "lastUpdateTs" : 1730293725044,
       "longValue" : null,
       "strValue" : null
     } ]

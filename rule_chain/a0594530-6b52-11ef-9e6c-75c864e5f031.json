@@ -61,6 +61,10 @@
       "toIndex" : 10,
       "type" : "Success"
     }, {
+      "fromIndex" : 9,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
       "fromIndex" : 10,
       "toIndex" : 11,
       "type" : "Success"
@@ -278,7 +282,7 @@
       },
       "configuration" : {
         "msgCount" : 1,
-        "periodInSeconds" : 1,
+        "periodInSeconds" : 2,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "tbelScript" : "var msg = { temperature: 313, humidity: 77,latitude:50, longitude:50 };\nvar metadata = { };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
