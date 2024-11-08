@@ -20,7 +20,7 @@
     "label" : null,
     "name" : "alarm asset config 1",
     "ownerId" : null,
-    "type" : "alarmConfig"
+    "type" : "Alarm config"
   },
   "relations" : [ {
     "additionalInfo" : null,
