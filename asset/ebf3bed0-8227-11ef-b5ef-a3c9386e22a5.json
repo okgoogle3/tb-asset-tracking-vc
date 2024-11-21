@@ -34,18 +34,6 @@
     },
     "type" : "AlarmConfigToAsset",
     "typeGroup" : "COMMON"
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "ebf3bed0-8227-11ef-b5ef-a3c9386e22a5"
-    },
-    "to" : {
-      "entityType" : "USER",
-      "id" : "d3eece70-5ed6-11ef-a76c-83ce07aa7f5e"
-    },
-    "type" : "AlarmConfigToInformingUser",
-    "typeGroup" : "COMMON"
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
