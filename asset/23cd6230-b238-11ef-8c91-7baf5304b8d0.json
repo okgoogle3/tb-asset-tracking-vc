@@ -1,0 +1,301 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Novokramatorsky Mashynobudivny Zavod (English:New Kramatorsk Machinebuilding Plant) (Ukrainian: Новокраматорський машинобудівний завод) is a large heavy equipment manufacturer in Ukraine. Its abbreviation is NKMZ. The company produces mining equipment; metallurgy equipment; rolling mills, forges, blast furnaces, ore crushers, presses, and other industrial process equipment. The company manufactures propeller shafts for icebreakers and components for submarines According to its website, the company has designed and constructed over 18 mining complexes."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "0d968e80-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Kramatorsk Machinebuilding Factory",
+    "ownerId" : null,
+    "type" : "Location"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "d48790b0-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 15662
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "d6ef9760-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 14486
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 14468
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 14446
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "faa29ed0-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 14514
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0e16be20-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 14498
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "903e5130-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14638
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14641
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "a61cc450-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14644
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "a879bb80-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 26372
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "af699880-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14647
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "b8eda950-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14650
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "c0674420-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14653
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "c7d63090-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14656
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "d11485d0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14659
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "f14185b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14664
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1733383991593,
+      "longValue" : null,
+      "strValue" : "Oleksy Tykhoho St, 5"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAssetsCount",
+      "lastUpdateTs" : 1733489020605,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "city",
+      "lastUpdateTs" : 1733383991593,
+      "longValue" : null,
+      "strValue" : "Kramatorsk"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "country",
+      "lastUpdateTs" : 1733383991593,
+      "longValue" : null,
+      "strValue" : "Ukraine"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733383991593,
+      "longValue" : null,
+      "strValue" : "Novokramatorsky Mashynobudivny Zavod (English:New Kramatorsk Machinebuilding Plant) (Ukrainian: Новокраматорський машинобудівний завод) is a large heavy equipment manufacturer in Ukraine. Its abbreviation is NKMZ. The company produces mining equipment; metallurgy equipment; rolling mills, forges, blast furnaces, ore crushers, presses, and other industrial process equipment. The company manufactures propeller shafts for icebreakers and components for submarines According to its website, the company has designed and constructed over 18 mining complexes."
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 48.75140396498977,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1733383991593,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 37.57949592367951,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1733383991593,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "zonesCount",
+      "lastUpdateTs" : 1733408884358,
+      "longValue" : 6,
+      "strValue" : null
+    } ]
+  }
+}

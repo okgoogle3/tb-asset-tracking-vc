@@ -1,0 +1,131 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Technical capabilities of heat treatment facilities allow to accomplish various types of heat treatment and to provide required physical and mechanical properties of products.\n\nAutomated Process Control Systems (APCS) accomplish full maintenance and stabilization of thermal mode in the furnace, according to the preset programs of heating, cooling and energy saving modes, providing differential temperature up to ±5°C.\n\nBig fleet of new heat-treatment furnaces and devices is equipped with:\n- efficient impulse heating and cooling systems on high-speed gas burners basis, equipped with electrical ignition, flame control and implemented in cooling air supply lance;\n- lining from modern ceramic fiber, low inertia, refractory and heat-insulating materials produced by such companies as Parok (Finland) and Keratech (Czech Republic);\n- high-speed burners with impulse system of gas burning."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "0e16be20-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "HEAT TREATMENT FACILITIES PRODUCTION",
+    "ownerId" : null,
+    "type" : "Shape"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "82e05b30-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "0e16be20-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14493
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "a61cc450-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "0e16be20-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToZone",
+    "typeGroup" : "COMMON",
+    "version" : 26872
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "b8eda950-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "0e16be20-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14724
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "c7bfe310-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "0e16be20-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14497
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "f0fedfb0-b3c1-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "0e16be20-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AnchorToZone",
+    "typeGroup" : "COMMON",
+    "version" : 25504
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0e16be20-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 14498
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733401117464,
+      "longValue" : null,
+      "strValue" : "Technical capabilities of heat treatment facilities allow to accomplish various types of heat treatment and to provide required physical and mechanical properties of products.\n\nAutomated Process Control Systems (APCS) accomplish full maintenance and stabilization of thermal mode in the furnace, according to the preset programs of heating, cooling and energy saving modes, providing differential temperature up to ±5°C.\n\nBig fleet of new heat-treatment furnaces and devices is equipped with:\n- efficient impulse heating and cooling systems on high-speed gas burners basis, equipped with electrical ignition, flame control and implemented in cooling air supply lance;\n- lining from modern ceramic fiber, low inertia, refractory and heat-insulating materials produced by such companies as Parok (Finland) and Keratech (Czech Republic);\n- high-speed burners with impulse system of gas burning."
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.747203300934494,37.56646558642388],[48.74749158218796,37.566568851470954],[48.747358053346716,37.56740033626557],[48.74767374678992,37.567534446716316],[48.747776324624695,37.56694301962853],[48.74950685187539,37.56761759519578],[48.749406930359534,37.568191587924964],[48.749161104899564,37.56809771060944],[48.74896126029409,37.56926447153092],[48.74939278216423,37.5694401562214],[48.749331768026394,37.56981164216996],[48.74943964804589,37.56985858082772],[48.74967928234252,37.56846114993096],[48.749940137565545,37.56856575608254],[48.74957936116955,37.57067665457726],[48.74948386110173,37.57063105702401],[48.749347684765134,37.57141694426537],[48.74843776977209,37.571064233779914],[48.748513817720294,37.57068201899529],[48.74660993155421,37.56993100047112]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733401254438,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.747203300934494, 37.56646558642388], [48.74749158218796, 37.566568851470954], [48.747358053346716, 37.56740033626557], [48.74767374678992, 37.567534446716316], [48.747776324624695, 37.56694301962853], [48.74950685187539, 37.56761759519578], [48.749406930359534, 37.568191587924964], [48.749161104899564, 37.56809771060944], [48.74896126029409, 37.56926447153092], [48.74939278216423, 37.5694401562214], [48.749331768026394, 37.56981164216996], [48.74943964804589, 37.56985858082772], [48.74967928234252, 37.56846114993096], [48.749940137565545, 37.56856575608254], [48.74957936116955, 37.57067665457726], [48.74948386110173, 37.57063105702401], [48.749347684765134, 37.57141694426537], [48.74843776977209, 37.571064233779914], [48.748513817720294, 37.57068201899529], [48.74660993155421, 37.56993100047112]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733401254461,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

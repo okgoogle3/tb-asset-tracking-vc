@@ -1,0 +1,64 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "21b66f60-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Manual arc welding ",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "21b66f60-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "faa29ed0-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14505
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733401579889,
+      "longValue" : null,
+      "strValue" : "#C70AEB"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.76043158457915,37.57229939103127],[48.760246814016,37.57331594824792],[48.75957668349568,37.57302895188332],[48.75930880560176,37.574493438005454],[48.758094054254705,37.5739972293377],[48.75851577257093,37.57149875164033]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733401665862,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.76043158457915, 37.57229939103127], [48.760246814016, 37.57331594824792], [48.75957668349568, 37.57302895188332], [48.75930880560176, 37.574493438005454], [48.758094054254705, 37.5739972293377], [48.75851577257093, 37.57149875164033]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733401665875,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

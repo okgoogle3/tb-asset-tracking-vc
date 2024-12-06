@@ -1,0 +1,45 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iMjAiIGZpbGw9IiM2NjcwODUiLz4KPHBhdGggZD0iTTI1IDIzLjMzMzNIMjMuMzMzM1YyMi40OTk5SDE2LjY2NjZWMjMuMzMzM0gxNVYyMi40OTk5SDExLjY2NjZWMjYuNjY2NkgyOC4zMzMzVjIyLjQ5OTlIMjVWMjMuMzMzM1oiIGZpbGw9IiNGQ0ZDRkQiLz4KPHBhdGggZD0iTTI2LjY2NjYgMTYuNjY2NkgyNC4xNjY2VjE0Ljk5OTlDMjQuMTY2NiAxNC4wODMzIDIzLjQxNjYgMTMuMzMzMyAyMi41IDEzLjMzMzNIMTcuNUMxNi41ODMzIDEzLjMzMzMgMTUuODMzMyAxNC4wODMzIDE1LjgzMzMgMTQuOTk5OVYxNi42NjY2SDEzLjMzMzNDMTIuNDE2NiAxNi42NjY2IDExLjY2NjYgMTcuNDE2NiAxMS42NjY2IDE4LjMzMzNWMjEuNjY2NkgxNVYxOS45OTk5SDE2LjY2NjZWMjEuNjY2NkgyMy4zMzMzVjE5Ljk5OTlIMjVWMjEuNjY2NkgyOC4zMzMzVjE4LjMzMzNDMjguMzMzMyAxNy40MTY2IDI3LjU4MzMgMTYuNjY2NiAyNi42NjY2IDE2LjY2NjZaTTIyLjUgMTYuNjY2NkgxNy41VjE0Ljk5OTlIMjIuNVYxNi42NjY2WiIgZmlsbD0iI0ZDRkNGRCIvPgo8L3N2Zz4K",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 40,
+      "height" : 40,
+      "size" : 672,
+      "etag" : "5eeebac39510f573b399f6861541e0a4511a146fb3d1ca4f318bbe7b14686d9d",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 40,
+        "height" : 40,
+        "size" : 672,
+        "etag" : "5eeebac39510f573b399f6861541e0a4511a146fb3d1ca4f318bbe7b14686d9d"
+      }
+    },
+    "etag" : "5eeebac39510f573b399f6861541e0a4511a146fb3d1ca4f318bbe7b14686d9d",
+    "externalId" : null,
+    "fileName" : "Map bullet.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "36ab0f10-ad6f-11ef-8cf8-bf1e58a469db"
+    },
+    "link" : "/api/images/tenant/Map bullet.svg",
+    "name" : "Map bullet.svg",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/r2MzqMdKmKs9On7KAIL1rLwnJxzE8lv0",
+    "publicResourceKey" : "r2MzqMdKmKs9On7KAIL1rLwnJxzE8lv0",
+    "resourceKey" : "Map bullet.svg",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "Map bullet.svg"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

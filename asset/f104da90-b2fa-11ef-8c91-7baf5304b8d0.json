@@ -1,0 +1,74 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "f104da90-b2fa-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Andrew alarm",
+    "ownerId" : null,
+    "type" : "Alarm config"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f104da90-b2fa-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "96a1fdf0-a5bf-11ef-aeb9-2d6dbc59e038"
+    },
+    "type" : "AlarmConfigToInformingUser",
+    "typeGroup" : "COMMON",
+    "version" : 14417
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f104da90-b2fa-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "a41cb7f4-b2f2-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 14416
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f104da90-b2fa-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "0a9c81f0-b2f7-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 14415
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"description\":\"цімвваім\",\"isActive\":true,\"phone\":true,\"email\":true,\"application\":true}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1733399132243,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

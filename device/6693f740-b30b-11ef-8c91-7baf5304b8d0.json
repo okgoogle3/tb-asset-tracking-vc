@@ -1,0 +1,188 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "464cd5f0-b2da-11ef-8c91-7baf5304b8d0"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "6693f740-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Demo Device 7",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Tag"
+  },
+  "credentials" : {
+    "credentialsId" : "W4Xzju9uOXfbbw8HIutM",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "9f560fa0-b3d8-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "6693f740-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26291
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "6693f740-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26322
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "6693f740-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "c7d63090-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "DeviceToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14655
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1733405360768,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"FOUNDRY PRODUCTION\",\"status\":\"inside\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"status\":\"inside\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"MECHANICAL ASSEMBLY PRODUCTION\",\"status\":\"inside\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"METALWORKS PRODUCTION\",\"status\":\"inside\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"PRESS-FORGING FACILITIES PRODUCTION\",\"status\":\"inside\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"name\":\"STEELMAKING PRODUCTION\",\"status\":\"inside\"},\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"Dangerous area\",\"status\":\"inside\"},\"82e05b30-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"High-speed burners\",\"status\":\"inside\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of alloyed\",\"status\":\"inside\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of carbon\",\"status\":\"inside\"},\"b2c13380-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of special cast iron\",\"status\":\"inside\"},\"21b66f60-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Manual arc welding \",\"status\":\"outside\"},\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Metal-arc inert gas welding \",\"status\":\"outside\"},\"a83918d0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Tungsten inert gas arc welding\",\"status\":\"outside\"},\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"Steelmaking units\",\"status\":\"outside\"},\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"Steel vacuum degassing area\",\"status\":\"outside\"}}",
+      "key" : "areaAlarmRules",
+      "lastUpdateTs" : 1733493165454,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "configPreset",
+      "lastUpdateTs" : 1733404704913,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectivity",
+      "lastUpdateTs" : 1733404704913,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733404704913,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"82e05b30-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"b2c13380-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"21b66f60-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"a83918d0-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"}}",
+      "key" : "geofenceThresolds",
+      "lastUpdateTs" : 1733493165454,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "hasRelatedAsset",
+      "lastUpdateTs" : 1733404865079,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1733405360768,
+      "longValue" : 1733405360768,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"id\":\"c7d63090-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 7\"}",
+      "key" : "info",
+      "lastUpdateTs" : 1733404865105,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isAssigned",
+      "lastUpdateTs" : 1733404865105,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "modelNumber",
+      "lastUpdateTs" : 1733404704913,
+      "longValue" : null,
+      "strValue" : "Demo Device 7"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "serialNumber",
+      "lastUpdateTs" : 1733404704913,
+      "longValue" : null,
+      "strValue" : "Demo Device 7"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"}}",
+      "key" : "zoneThresolds",
+      "lastUpdateTs" : 1733493059215,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

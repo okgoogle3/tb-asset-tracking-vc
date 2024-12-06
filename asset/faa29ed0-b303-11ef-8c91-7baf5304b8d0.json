@@ -1,0 +1,105 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Metalworks division of PJSC NKMZ is characterized by high flexibility and unique technical possibilities in products manufacturing and is capable to fulfill any order for metallurgical, steelmaking, rolling-mill, handling, blast-furnace and other facilities as per DIN, EN, ISO standards.\n\n\nEngineering and technical staff is certified according to the following norms and standards: ДНАОП 0.00-1,07-94 Rules for Design and Safe Operation of Pressure Vessels; ДНАОП 0.00-1,11-98 Rules for Design and Safe Operation of Steam and Hot Water Pipelines; ДНАОП 0.00-1,01-07 Rules for Design and Safe Operation of Cargo Cranes; СНиП 3.05.03-85 Building Codes and Regulations. Heat Networks; СНиП 3.05.04-85 Building Codes and Regulations. Water-supply and sewerage outdoor networks and structures, and other standards, regulations and specifications providing high quality of welding works.\n\n\n\nProduction personnel is certified in accordance with\nДНАОП 0.00-1,16-96 as per welding methods:\n- manual arc welding (111);\n- submerged arc welding with wire electrode (121);\n- metal-arc inert gas welding (131);\n- metal-arc active gas welding (135);\n- flux cored wire metal-arc welding with active gas shield (136);\n- flux cored wire metal-arc welding with inert gas shield (137);\n- tungsten inert gas arc welding with filler metal wire or without it (141)."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "faa29ed0-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "METALWORKS PRODUCTION",
+    "ownerId" : null,
+    "type" : "Shape"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "a83918d0-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "faa29ed0-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14513
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "faa29ed0-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 14514
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "21b66f60-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "faa29ed0-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14505
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "75c0b7a0-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "faa29ed0-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14508
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733401514327,
+      "longValue" : null,
+      "strValue" : "Metalworks division of PJSC NKMZ is characterized by high flexibility and unique technical possibilities in products manufacturing and is capable to fulfill any order for metallurgical, steelmaking, rolling-mill, handling, blast-furnace and other facilities as per DIN, EN, ISO standards.\n\n\nEngineering and technical staff is certified according to the following norms and standards: ДНАОП 0.00-1,07-94 Rules for Design and Safe Operation of Pressure Vessels; ДНАОП 0.00-1,11-98 Rules for Design and Safe Operation of Steam and Hot Water Pipelines; ДНАОП 0.00-1,01-07 Rules for Design and Safe Operation of Cargo Cranes; СНиП 3.05.03-85 Building Codes and Regulations. Heat Networks; СНиП 3.05.04-85 Building Codes and Regulations. Water-supply and sewerage outdoor networks and structures, and other standards, regulations and specifications providing high quality of welding works.\n\n\n\nProduction personnel is certified in accordance with\nДНАОП 0.00-1,16-96 as per welding methods:\n- manual arc welding (111);\n- submerged arc welding with wire electrode (121);\n- metal-arc inert gas welding (131);\n- metal-arc active gas welding (135);\n- flux cored wire metal-arc welding with active gas shield (136);\n- flux cored wire metal-arc welding with inert gas shield (137);\n- tungsten inert gas arc welding with filler metal wire or without it (141)."
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.75675461096533,37.5799584388733],[48.7585193089779,37.571514844894416],[48.76079670335841,37.57244288921357],[48.75913817636351,37.58101925253869]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733401771504,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75675461096533, 37.5799584388733], [48.7585193089779, 37.571514844894416], [48.76079670335841, 37.57244288921357], [48.75913817636351, 37.58101925253869]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733401771514,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

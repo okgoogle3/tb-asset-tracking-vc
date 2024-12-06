@@ -1,0 +1,64 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "710cb760-b302-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Automated process control systems room",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "710cb760-b302-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "d6ef9760-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14479
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733400854023,
+      "longValue" : null,
+      "strValue" : "#35F80A"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.75271838273213,37.570754438638694],[48.75281652925866,37.5702515244484],[48.75256364682793,37.57013618946076],[48.75246461559915,37.57061362266541]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733400919163,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75271838273213, 37.570754438638694], [48.75281652925866, 37.5702515244484], [48.75256364682793, 37.57013618946076], [48.75246461559915, 37.57061362266541]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733400919187,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

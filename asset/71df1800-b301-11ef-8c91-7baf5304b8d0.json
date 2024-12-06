@@ -1,0 +1,64 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "71df1800-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Castings producing of alloyed",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "71df1800-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14461
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733400488806,
+      "longValue" : null,
+      "strValue" : "#181485"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.751916403480145,37.57421851158143],[48.751520272290826,37.574046850204475],[48.751297447124344,37.57511973381043],[48.75170772761789,37.57533967494965]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733400436588,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.751916403480145, 37.57421851158143], [48.751520272290826, 37.574046850204475], [48.751297447124344, 37.57511973381043], [48.75170772761789, 37.57533967494965]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733400436596,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

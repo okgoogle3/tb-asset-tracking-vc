@@ -4,7 +4,7 @@
     "additionalConfig" : {
       "description" : "Send notification to tenant admins when an alarm is created"
     },
-    "enabled" : true,
+    "enabled" : false,
     "externalId" : {
       "entityType" : "NOTIFICATION_RULE",
       "id" : "1c146d10-6b6e-11ef-b852-5f7f6439defe"

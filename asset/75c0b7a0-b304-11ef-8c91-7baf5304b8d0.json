@@ -1,0 +1,64 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "75c0b7a0-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Metal-arc inert gas welding ",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "75c0b7a0-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "faa29ed0-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14508
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733401720879,
+      "longValue" : null,
+      "strValue" : "#C8FF00"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.757651113594676,37.57598608732224],[48.759867545993764,37.57700130343438],[48.75970752762421,37.577827423810966],[48.75868551982465,37.577383518219],[48.758592689366345,37.577822059392936],[48.75739825549863,37.57728427648545]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733401782150,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.757651113594676, 37.57598608732224], [48.759867545993764, 37.57700130343438], [48.75970752762421, 37.577827423810966], [48.75868551982465, 37.577383518219], [48.758592689366345, 37.577822059392936], [48.75739825549863, 37.57728427648545]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733401782166,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

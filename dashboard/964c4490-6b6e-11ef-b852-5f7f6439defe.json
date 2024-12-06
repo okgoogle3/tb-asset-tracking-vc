@@ -1854,7 +1854,7 @@
             "stateEntityParamName" : null,
             "defaultStateEntity" : {
               "entityType" : "ASSET",
-              "id" : "cb04b3b0-5ed6-11ef-a76c-83ce07aa7f5e"
+              "id" : "964a19f0-a5bf-11ef-aeb9-2d6dbc59e038"
             },
             "rootEntity" : null,
             "direction" : "TO",
@@ -1877,7 +1877,7 @@
             "defaultStateEntity" : null,
             "rootEntity" : {
               "entityType" : "ASSET",
-              "id" : "cb04b3b0-5ed6-11ef-a76c-83ce07aa7f5e"
+              "id" : "964a19f0-a5bf-11ef-aeb9-2d6dbc59e038"
             },
             "direction" : "TO",
             "maxLevel" : 2,

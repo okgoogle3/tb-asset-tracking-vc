@@ -1,0 +1,139 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "FOUNDRY\n\nCasting processes design\n\nTechnical capacities of foundry allows castings producing of carbon, alloyed, high-alloyed steel grades; of grey, high-strength, bearing and special cast iron; of bronzed alloys.\n\nCastings are made for machines of own production, as well as for other companies manufacturing special-purpose equipment: hydrotechnical, power-generating, ship-building, handling, mining, and metallurgical production.\n\nThere is a fleet of centrifugal casting machines for non-ferrous castings producing. Modern kneading-and-mixing machinery, manufactured by FAT and GUT companies (Germany), usage of new materials while making casting molds as per “Furan-process” provides possibility of the castings obtaining of the following weight (in tons)\n\nUsage of computer systems of engineering analysis (CAE) by MAGMASoft (Germany) allows to develop technological procedures of castings producing having guaranteed high quality."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "FOUNDRY PRODUCTION",
+    "ownerId" : null,
+    "type" : "Shape"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "903e5130-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToZone",
+    "typeGroup" : "COMMON",
+    "version" : 26902
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "b2c13380-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14467
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "c0674420-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14717
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 14468
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "46376770-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14459
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "71df1800-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14461
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733400212879,
+      "longValue" : null,
+      "strValue" : "#89D5FC"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733400196804,
+      "longValue" : null,
+      "strValue" : "FOUNDRY\n\nCasting processes design\n\nTechnical capacities of foundry allows castings producing of carbon, alloyed, high-alloyed steel grades; of grey, high-strength, bearing and special cast iron; of bronzed alloys.\n\nCastings are made for machines of own production, as well as for other companies manufacturing special-purpose equipment: hydrotechnical, power-generating, ship-building, handling, mining, and metallurgical production.\n\nThere is a fleet of centrifugal casting machines for non-ferrous castings producing. Modern kneading-and-mixing machinery, manufactured by FAT and GUT companies (Germany), usage of new materials while making casting molds as per “Furan-process” provides possibility of the castings obtaining of the following weight (in tons)\n\nUsage of computer systems of engineering analysis (CAE) by MAGMASoft (Germany) allows to develop technological procedures of castings producing having guaranteed high quality."
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.75029030041387,37.57351845502854],[48.751920824569545,37.57420510053635],[48.751391175290976,37.57706299424172],[48.751036598947756,37.57691279053689],[48.75098354491562,37.577197104692466],[48.75118426570895,37.577281594276435],[48.75123201414966,37.577034831047065],[48.751400017561814,37.57710725069047],[48.75135403773642,37.57734596729279],[48.751306289411694,37.5773298740387],[48.75126384641825,37.57754847407342],[48.7505989015072,37.577265501022346],[48.75063515537942,37.57703080773354],[48.750896889875975,37.57714211940766],[48.750950828234515,37.57688060402871],[48.749760633947204,37.57637768983842]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733400280256,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75029030041387, 37.57351845502854], [48.751920824569545, 37.57420510053635], [48.751391175290976, 37.57706299424172], [48.751036598947756, 37.57691279053689], [48.75098354491562, 37.577197104692466], [48.75118426570895, 37.577281594276435], [48.75123201414966, 37.577034831047065], [48.751400017561814, 37.57710725069047], [48.75135403773642, 37.57734596729279], [48.751306289411694, 37.5773298740387], [48.75126384641825, 37.57754847407342], [48.7505989015072, 37.577265501022346], [48.75063515537942, 37.57703080773354], [48.750896889875975, 37.57714211940766], [48.750950828234515, 37.57688060402871], [48.749760633947204, 37.57637768983842]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733400280280,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

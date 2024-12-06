@@ -1,0 +1,165 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "label" : null,
+    "name" : "Test Alerts Zaiko ",
+    "ownerId" : null,
+    "type" : "Alarm config"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "96a1fdf0-a5bf-11ef-aeb9-2d6dbc59e038"
+    },
+    "type" : "AlarmConfigToInformingUser",
+    "typeGroup" : "COMMON",
+    "version" : 26325
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "25003f00-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26316
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26317
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "32f6ec30-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26319
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "53accb20-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26318
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "592788b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26321
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5ea52c70-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26320
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "6693f740-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26322
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "6eb51cb0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26324
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "75fb7280-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26323
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"description\":\"Test Alerts Zaiko \",\"isActive\":true,\"phone\":false,\"email\":false,\"application\":false,\"locationThresholds\":[{\"eventType\":\"Zone In\",\"locations\":{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"23cd6230-b238-11ef-8c91-7baf5304b8d0\"}},\"zones\":[{\"name\":\"FOUNDRY PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"e955c920-b300-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"0e16be20-b303-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"MECHANICAL ASSEMBLY PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"d48790b0-b304-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"METALWORKS PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"PRESS-FORGING FACILITIES PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"STEELMAKING PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\"}}],\"geofences\":\"\",\"duration\":\"1\",\"index\":\"a421003e-59d6-b86c-9e16-ffd5411e9b2a\"},{\"eventType\":\"Geofence In\",\"locations\":{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"23cd6230-b238-11ef-8c91-7baf5304b8d0\"}},\"zones\":{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"0e16be20-b303-11ef-8c91-7baf5304b8d0\"}},\"geofences\":[{\"name\":\"Dangerous area\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"High-speed burners\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"82e05b30-b303-11ef-8c91-7baf5304b8d0\"}}],\"duration\":\"1\",\"index\":\"30c1564d-b7f0-5ded-5972-368890caceab\"},{\"eventType\":\"Geofence In\",\"locations\":{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"23cd6230-b238-11ef-8c91-7baf5304b8d0\"}},\"zones\":{\"name\":\"FOUNDRY PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"e955c920-b300-11ef-8c91-7baf5304b8d0\"}},\"geofences\":[{\"name\":\"Castings producing of alloyed\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"71df1800-b301-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"Castings producing of carbon\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"46376770-b301-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"Castings producing of special cast iron\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"b2c13380-b301-11ef-8c91-7baf5304b8d0\"}}],\"duration\":\"1\",\"index\":\"0dbc177d-2496-a68b-88c7-99ab0a4363cb\"},{\"eventType\":\"Geofence Out\",\"locations\":{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"23cd6230-b238-11ef-8c91-7baf5304b8d0\"}},\"zones\":{\"name\":\"METALWORKS PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\"}},\"geofences\":[{\"name\":\"Manual arc welding \",\"id\":{\"entityType\":\"ASSET\",\"id\":\"21b66f60-b304-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"Metal-arc inert gas welding \",\"id\":{\"entityType\":\"ASSET\",\"id\":\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"Tungsten inert gas arc welding\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"a83918d0-b304-11ef-8c91-7baf5304b8d0\"}}],\"duration\":\"1\",\"index\":\"7980a893-141a-eb32-8449-d57e1176e8c6\"},{\"eventType\":\"Geofence Out\",\"locations\":{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"23cd6230-b238-11ef-8c91-7baf5304b8d0\"}},\"zones\":{\"name\":\"STEELMAKING PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\"}},\"geofences\":[{\"name\":\"Steelmaking units\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"Steel vacuum degassing area\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\"}}],\"duration\":\"1\",\"index\":\"ede8a2a6-c6d2-92a1-2ee8-a7560d6dac64\"}]}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1733493165232,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

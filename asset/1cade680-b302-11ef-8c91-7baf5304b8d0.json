@@ -1,0 +1,64 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "1cade680-b302-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Handling equipment",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "1cade680-b302-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "d6ef9760-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14475
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733400722504,
+      "longValue" : null,
+      "strValue" : "#D9F109"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.751281531003194,37.5695662200451],[48.7510772736678,37.570738345384605],[48.751849202873366,37.57108569145203],[48.75206406765563,37.569913566112525]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733400826592,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.751281531003194, 37.5695662200451], [48.7510772736678, 37.570738345384605], [48.751849202873366, 37.57108569145203], [48.75206406765563, 37.569913566112525]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733400826596,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

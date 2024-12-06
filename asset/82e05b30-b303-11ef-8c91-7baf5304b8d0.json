@@ -1,0 +1,64 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "82e05b30-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "High-speed burners",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "82e05b30-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "0e16be20-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14493
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733401313393,
+      "longValue" : null,
+      "strValue" : "#F8770D"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.74749246648374,37.56657019257546],[48.747202858784064,37.56646558642388],[48.746609047242885,37.569929659366615],[48.747289962344055,37.57020592689515],[48.747672862497346,37.5675317645073],[48.74735716904857,37.567403018474586]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733401385299,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.74749246648374, 37.56657019257546], [48.747202858784064, 37.56646558642388], [48.746609047242885, 37.569929659366615], [48.747289962344055, 37.57020592689515], [48.747672862497346, 37.5675317645073], [48.74735716904857, 37.567403018474586]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733401385304,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "464cd5f0-b2da-11ef-8c91-7baf5304b8d0"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "9b5a8290-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "label" : null,
+    "name" : "Alert Test Device 1",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Tag"
+  },
+  "credentials" : {
+    "credentialsId" : "EDi9iT4dicFTdluOGMU8",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "9b5a8290-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "a879bb80-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "type" : "DeviceToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 26371
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "b8e75c20-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "9b5a8290-b3d9-11ef-838c-5dd5db96bde1"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 26381
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1733493892378,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"FOUNDRY PRODUCTION\",\"status\":\"inside\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"status\":\"outside\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of alloyed\",\"status\":\"inside\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of carbon\",\"status\":\"outside\"}}",
+      "key" : "areaAlarmRules",
+      "lastUpdateTs" : 1733493410179,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "configPreset",
+      "lastUpdateTs" : 1733493271151,
+      "longValue" : null,
+      "strValue" : "Default config"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectivity",
+      "lastUpdateTs" : 1733493271151,
+      "longValue" : null,
+      "strValue" : "RFID (MQTT)"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733493271151,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"}}",
+      "key" : "geofenceThresolds",
+      "lastUpdateTs" : 1733493410179,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "hasRelatedAsset",
+      "lastUpdateTs" : 1733493288791,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1733493892378,
+      "longValue" : 1733493892378,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"id\":\"a879bb80-b3d9-11ef-838c-5dd5db96bde1\",\"name\":\"Alert Test Asset 1\"}",
+      "key" : "info",
+      "lastUpdateTs" : 1733493288798,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isAssigned",
+      "lastUpdateTs" : 1733493288798,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "modelNumber",
+      "lastUpdateTs" : 1733493271151,
+      "longValue" : null,
+      "strValue" : "Alert Test Device 1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "serialNumber",
+      "lastUpdateTs" : 1733493271151,
+      "longValue" : null,
+      "strValue" : "Alert Test Device 1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"}}",
+      "key" : "zoneThresolds",
+      "lastUpdateTs" : 1733493385730,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

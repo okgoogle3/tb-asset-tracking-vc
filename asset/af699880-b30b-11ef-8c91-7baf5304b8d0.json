@@ -1,0 +1,175 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "193547a0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "af699880-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Demo Asset 4",
+    "ownerId" : null,
+    "type" : "Box"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "af699880-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14647
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "53accb20-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "af699880-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "DeviceToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 14646
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"53accb20-b30b-11ef-8c91-7baf5304b8d0\"},\"name\":\"Demo Device 4\"}",
+      "key" : "assignedDevice",
+      "lastUpdateTs" : 1733404824100,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"23cd6230-b238-11ef-8c91-7baf5304b8d0\"}}",
+      "key" : "assignedLocation",
+      "lastUpdateTs" : 1733404824100,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 64.33,
+      "jsonValue" : null,
+      "key" : "batteryLevel",
+      "lastUpdateTs" : 1733405026156,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "department",
+      "lastUpdateTs" : 1733404824100,
+      "longValue" : null,
+      "strValue" : "Demo Asset 4"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733404824100,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "hasRelatedDevice",
+      "lastUpdateTs" : 1733404824100,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "hasRelatedLocation",
+      "lastUpdateTs" : 1733404824100,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"id\":\"53accb20-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Device 4\"}",
+      "key" : "info",
+      "lastUpdateTs" : 1733404824115,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isAssigned",
+      "lastUpdateTs" : 1733404824115,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 48.7561967485,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1733405026156,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 37.5756035954,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1733405026156,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "modelNumber",
+      "lastUpdateTs" : 1733404824100,
+      "longValue" : null,
+      "strValue" : "Demo Asset 4"
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "movement",
+      "lastUpdateTs" : 1733405026156,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "serialNumber",
+      "lastUpdateTs" : 1733404824100,
+      "longValue" : null,
+      "strValue" : "Demo Asset 4"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "temperature",
+      "lastUpdateTs" : 1733405026156,
+      "longValue" : 80,
+      "strValue" : null
+    } ]
+  }
+}

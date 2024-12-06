@@ -1,0 +1,45 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iMjAiIGZpbGw9IiMwQjRBNkYiLz4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzU5Ml8xOTg5OSkiPgo8cGF0aCBkPSJNMjguOTM5OSAyNS43OTE4TDIxLjM1NjYgMTguMjA4NUMyMi4xMDY2IDE2LjI5MTggMjEuNjg5OSAxNC4wNDE4IDIwLjEwNjYgMTIuNDU4NUMxOC40Mzk5IDEwLjc5MTggMTUuOTM5OSAxMC40NTg1IDEzLjkzOTkgMTEuMzc1MUwxNy41MjMyIDE0Ljk1ODVMMTUuMDIzMiAxNy40NTg1TDExLjM1NjYgMTMuODc1MUMxMC4zNTY2IDE1Ljg3NTEgMTAuNzczMiAxOC4zNzUxIDEyLjQzOTkgMjAuMDQxOEMxNC4wMjMyIDIxLjYyNTEgMTYuMjczMiAyMi4wNDE4IDE4LjE4OTkgMjEuMjkxOEwyNS43NzMyIDI4Ljg3NTFDMjYuMTA2NiAyOS4yMDg1IDI2LjYwNjYgMjkuMjA4NSAyNi45Mzk5IDI4Ljg3NTFMMjguODU2NiAyNi45NTg1QzI5LjI3MzIgMjYuNjI1MSAyOS4yNzMyIDI2LjA0MTggMjguOTM5OSAyNS43OTE4WiIgZmlsbD0iI0Y1RkJGRiIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzU5Ml8xOTg5OSI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwIDEwKSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 40,
+      "height" : 40,
+      "size" : 761,
+      "etag" : "ab8ef98005c89201a1b16c4e4c474382bb3595714906ad0b9207f041ddfba8a1",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 40,
+        "height" : 40,
+        "size" : 761,
+        "etag" : "ab8ef98005c89201a1b16c4e4c474382bb3595714906ad0b9207f041ddfba8a1"
+      }
+    },
+    "etag" : "ab8ef98005c89201a1b16c4e4c474382bb3595714906ad0b9207f041ddfba8a1",
+    "externalId" : null,
+    "fileName" : "Map bullet (1).svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "e0c0bc30-ad6e-11ef-8cf8-bf1e58a469db"
+    },
+    "link" : "/api/images/tenant/Map bullet (1).svg",
+    "name" : "Map bullet (1).svg",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/VyV6ypzPqjPpYkrtG69obKEOQMe3br1w",
+    "publicResourceKey" : "VyV6ypzPqjPpYkrtG69obKEOQMe3br1w",
+    "resourceKey" : "Map bullet (1).svg",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "Map bullet (1).svg"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

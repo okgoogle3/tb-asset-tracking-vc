@@ -5,15 +5,21 @@
     "defaultDashboardId" : null,
     "defaultEdgeRuleChainId" : null,
     "defaultQueueName" : null,
-    "defaultRuleChainId" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "dc666db0-a8d7-11ef-980e-bd1641dc870a"
+    },
     "description" : null,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
     "id" : {
       "entityType" : "ASSET_PROFILE",
       "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
     },
     "image" : null,
-    "name" : "alarmConfig"
+    "name" : "Alarm config"
   },
   "relations" : [ ],
   "attributes" : {

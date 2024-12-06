@@ -1,0 +1,113 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "The technical capacity of press-forging facilities enables to produce forgings with weight from 0,2 t up to 110 t by using forging ingots weighing from 1,6 up to 170 t, out of carbon, structural, tool and high-alloyed steel grades.\n\nOpen die forging process is realized with automated forging complexes in technological interconnection with reheating, heat-treating and handling equipment under control of automated process control systems (APCS)."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "d6ef9760-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "PRESS-FORGING FACILITIES PRODUCTION",
+    "ownerId" : null,
+    "type" : "Shape"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "d6ef9760-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 14486
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "12b59010-b302-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "d6ef9760-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14473
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "1cade680-b302-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "d6ef9760-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14475
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "710cb760-b302-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "d6ef9760-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14479
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733400646316,
+      "longValue" : null,
+      "strValue" : "#842FDD"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733400595487,
+      "longValue" : null,
+      "strValue" : "Technical capacities of foundry allows castings producing of carbon, alloyed, high-alloyed steel grades; of grey, high-strength, bearing and special cast iron; of bronzed alloys.\n\nCastings are made for machines of own production, as well as for other companies manufacturing special-purpose equipment: hydrotechnical, power-generating, ship-building, handling, mining, and metallurgical production.\n\nThere is a fleet of centrifugal casting machines for non-ferrous castings producing. Modern kneading-and-mixing machinery, manufactured by FAT and GUT companies (Germany), usage of new materials while making casting molds as per “Furan-process” provides possibility of the castings obtaining of the following weight (in tons)\n\nUsage of computer systems of engineering analysis (CAE) by MAGMASoft (Germany) allows to develop technological procedures of castings producing having guaranteed high quality."
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.75055115246484,37.56924033164979],[48.752818297662785,37.57024884223939],[48.75238680521102,37.57247507572175],[48.750123177540644,37.5714933872223]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733400639942,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75055115246484, 37.56924033164979], [48.752818297662785, 37.57024884223939], [48.75238680521102, 37.57247507572175], [48.750123177540644, 37.5714933872223]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733400639950,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP5SURBVHgBzZk9TFNRFMf/5z40GlHbVTG0OhkTxTDpYk3URQeMOuiiLjqig6OhrDqoqwshDg6GgIkbJJTBGBOJaCJxkZYIGqeWooEA713PeX1tXku/3hfwS9red9977b/3nXvOuecSApDN6xh/pKCsFBF1Q6MHBOmLOZcUuC/HfQWt9RdYKsN9mWScCvAJwQcsNEWGHuBmj0ucF8a0ScMsfAwe8SQ4W9zoI6hn3EwgHHKkKN3dScPt3tCWYB7RBI/oEOTxRwHRjN7AVR7xXKtLVasL5pd1P4v9jKjEClr3yG9kl8wHrS5tOsIsdoAnSxpbCE/edPd+Gmx4vtGJ7RBbppnouoK3U2yZRqI3CRabZbHPsQNgHQ+TB40qLVWCHW8gE8yPb42CAvvr027vUeUlSOlR7ByxQsxxpxUqgjko3OHx7sHOI5XNb/SVDyqCOYINwCfF1TUs5P8hKsiwo2upLW9OyB2FD+6/msL4t592+8CeXbh44gj6L5xEV7wTYaJN83wyvitjjzCLvQ2fPL7Si8OOuOLqOkam53Dr5Thmf+URJmQYtgWQpIhs2IG+fSH/FzdfTmCRP8t0xffhXf9lHvXdCAnxGEkFw0zBIzd5BBeqxHXi9b0LlZEWxKZHPs0hRGKGgXMKmlJe7hKhH+f+2I/dLVogztbdzP4O1yxMbZ1XHAJPwQcygmXR8iq1qz3FYs0fCoymRIe9pNHt3yM2uZ9fy44rE6FCPbd2/FAcYUIKp9gkvK0eDuzdjUsnuirHIrSRDy6urCNkYuLWPIdi8bOH2/CzI9M/8OjNB4RIrOWKox71vEIjwhZNuaIlU9l3wiOCxBvI4xffW1xZw9D775uuu9Z7DE9vnEFACh3yhgCCRci1mj6x8xcTX6v65I8JgURryolJzCBkxMblVUtg8yBdUJzVzyMCohAt1SPFqjOIiLBFG6QmFUwjg5IdR0Iz0ZJHe8E0MaWcwlzoduymnugnN856yuS0hbei1fbDnBwPImLcokXs9d6jXm6Hoche21VWzbklK8tHCUSMmIHnHJlLtomDKinNSqTTlvUQW4CfhF6KKpW2+wRHvUlEWfTzg8YMj+7p8mFVLsFLkLuI0GN4RvOyyKKr7q4qwVJh0aaOfAK2i4YerK0Zb8rWknHjOUeUbRctGmrrakLDcisXl9Ns7L6LK0FwxKbrnWta0N4O0c3ECi33OLJ58wEZtuhoi4QywVDfDNy0vykjlc3oioUZ8VDtbMp42/bKb9whxUXDsCIiRzAJWMl4R9v7dT43Frl4aNj1uD7PN/Oj51+dkfxFinvwiC/BZUpbt1zqUpSyCzLatvOEs31bEgdHoCwULMm9jUBbt/8B2NW9yip4yi0AAAAASUVORK5CYII=",
+    "descriptor" : {
+      "mediaType" : "image/png",
+      "width" : 44,
+      "height" : 44,
+      "size" : 1124,
+      "etag" : "5174a000c6aa6c0e3e416369d36e293bdaae4eaab6415ea51e996c5a3a6daa7b",
+      "previewDescriptor" : {
+        "mediaType" : "image/png",
+        "width" : 44,
+        "height" : 44,
+        "size" : 1124,
+        "etag" : "5174a000c6aa6c0e3e416369d36e293bdaae4eaab6415ea51e996c5a3a6daa7b"
+      }
+    },
+    "etag" : "5174a000c6aa6c0e3e416369d36e293bdaae4eaab6415ea51e996c5a3a6daa7b",
+    "externalId" : null,
+    "fileName" : "tools.png",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "4c24f400-ad6f-11ef-8cf8-bf1e58a469db"
+    },
+    "link" : "/api/images/tenant/tools.png",
+    "name" : "tools.png",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/X0Q5P1z1n0AwFeJowPdWgZNvVUYtW8fL",
+    "publicResourceKey" : "X0Q5P1z1n0AwFeJowPdWgZNvVUYtW8fL",
+    "resourceKey" : "tools.png",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "tools.png"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

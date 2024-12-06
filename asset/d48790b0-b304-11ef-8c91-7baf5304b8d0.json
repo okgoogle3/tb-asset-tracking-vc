@@ -1,0 +1,66 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Fleet of metal-cutting equipment totals approximately 820 machines and machining centers including machines produced by German, Italian, Swiss, Japanese, etc. companies.\nProcesses providing machining of parts weight of which ranges from several grams to 300 tons are implemented.\nMachining of complex box-shaped and basic parts makes no difficulty for PJSC NKMZ.\nCapacity of PJSC NKMZ and its engineering and technical potential allow to manufacture almost any of mechanical engineering products meeting requirements of international standards and requests of the most discerning customers.\n"
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "d48790b0-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "MECHANICAL ASSEMBLY PRODUCTION",
+    "ownerId" : null,
+    "type" : "Shape"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "d48790b0-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 15662
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733408882347,
+      "longValue" : null,
+      "strValue" : "Fleet of metal-cutting equipment totals approximately 820 machines and machining centers including machines produced by German, Italian, Swiss, Japanese, etc. companies.\nProcesses providing machining of parts weight of which ranges from several grams to 300 tons are implemented.\nMachining of complex box-shaped and basic parts makes no difficulty for PJSC NKMZ.\nCapacity of PJSC NKMZ and its engineering and technical potential allow to manufacture almost any of mechanical engineering products meeting requirements of international standards and requests of the most discerning customers.\n"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.75382716206907,37.5658205151558],[48.757506118198755,37.56758406758309],[48.757445113913185,37.5679461658001],[48.757239113386944,37.56785899400712],[48.757198443655305,37.56810307502747],[48.757077318389925,37.56805077195168],[48.756786439734974,37.569641321897514],[48.75695088805686,37.56971642374993],[48.7569111022219,37.56992831826211],[48.753345279319,37.56826400756837]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733401958121,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75382716206907, 37.5658205151558], [48.757506118198755, 37.56758406758309], [48.757445113913185, 37.5679461658001], [48.757239113386944, 37.56785899400712], [48.757198443655305, 37.56810307502747], [48.757077318389925, 37.56805077195168], [48.756786439734974, 37.569641321897514], [48.75695088805686, 37.56971642374993], [48.7569111022219, 37.56992831826211], [48.753345279319, 37.56826400756837]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733401958146,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

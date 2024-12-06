@@ -1,0 +1,45 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQZSURBVHgBzZlPjAtRHMe/v5kSwq7WRSIr2zqxgpVIkAiV2BOHOrg4+HfAiXUgDqTdOIkDVy6CxAVB4mQPSgQHYh2Ii21lOTi1dglhO8/v99rZne5u/7zpdDufZNLpm5nMd37v937v936P0AK5goryTxKWkySiXij0gyBt0cotRW7Lc1tRKfUejpXltmwiRkX4hOADFpokW6X5tN8jzoSHqkQ3WfhDGGIkODc+mSJYV/g0jmDIk0WZ3qV0s9kHmhLMFo2zRW9Aur8dEI2oSexji+cb3Wo1uuHLhDrFYt+hXWIFpfrlHbkfpcFGt9a1MItN82DJYB7hwZvp7aKhmtdrXeiEWJd6oucU3EmxLrVEzxIsPstiryIEsI7TiWV2lZYqwZVoIAPMT2xtB0WO15u80aMqSpClHiA8YoVoJZxOMSWYJ4XDbO9+hI9krjCZcv9MuUR+3MkhuBksaPLxbishJ9rCMuUivGKFeK7wLyknWjDnB4cQcsi20/pXUkR27AJaZPjDGC4+flPV1hNbivN7N6NvZQwBIBEjYcEuJREA43/+4mvhF6e/pIXK8Xr0Ow5cH9bXAiBq29hpQVESATK4ez3uHBvQx+X927RYsb7wtfATwx/H4JeScnZFeArciHlAxGpr//6H5+dWoHvRQhijKB7RSxpl9Ji20r03o5jwdLUIqsfZu6+0ywg3XnzCqd0bYApZ2BhhsXGTh8Z//8XxW89ginyQWLVr8UIt+Mj2NX6sHCWeMIzsKy/eccl4KabpiS3Rlj3D1pZfP1ZuuOIIgoG+Vehia4r/uoiV/UQPEex7yd0s0v1H+RCBYl1BzkW0IcUIyoLbmqHdfzuqQ9zW1Suq2rtMfVhRXiw8Ah8M9PXg8ck9NV8qA0quizvcf/tZR4gtLNh7GM+ApIoRzuq/cCyGOYRvxXIoE9HrPC8fY3ETHE3KPloe092LF6BVpHpEleLIA5MHz9x9qbvZ5drBndqSLk94Zjtxezr0iQ9f4JyiVSxQyk1+JBc28mMR9Y1D3NqVy2f5piDhTz5Kut37Ma3AyU9M+wLH4qdoZ6EkAJSDR4moldJxWJVKQwg5tkV6bTe9RPrBSyQK6aqDS7bxZZ4lkm5znNMIKVJUmTr3XgilLyuMsHU3uX+rcgkehUcwD1N10yheFjm0z9tUJVgqLKqkQjMAFdTQzJrxrGwtEbOv8ozScdGiYWZdTag5J3NxOcPOnkYHqIjNzHWtbhLRCdH1xAoNs55coTRIthbd3iKhDDDM7QZemt+Ukcpm+4qFWYlQzWzKmG17FSYPk2WlA5sReQaTCSsRizS9SPS5scgpqa3rcSnjh7nr+a0jkr8kYguyMMSXYJfy1i2XuixK6oKM0n4er2zflsWhIpAXCnBUltOYlrZu/wM1/b7sUn81XQAAAABJRU5ErkJggg==",
+    "descriptor" : {
+      "mediaType" : "image/png",
+      "width" : 44,
+      "height" : 44,
+      "size" : 1156,
+      "etag" : "2e7178f2cf091ca9e9f7e4124d87b71d59ba305d12f448679cb4d052ccb2b7c3",
+      "previewDescriptor" : {
+        "mediaType" : "image/png",
+        "width" : 44,
+        "height" : 44,
+        "size" : 1156,
+        "etag" : "2e7178f2cf091ca9e9f7e4124d87b71d59ba305d12f448679cb4d052ccb2b7c3"
+      }
+    },
+    "etag" : "2e7178f2cf091ca9e9f7e4124d87b71d59ba305d12f448679cb4d052ccb2b7c3",
+    "externalId" : null,
+    "fileName" : "loaders.png",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "58477d70-ad6f-11ef-8cf8-bf1e58a469db"
+    },
+    "link" : "/api/images/tenant/loaders.png",
+    "name" : "loaders.png",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/Ui4xLY7QTwAf0IVthu4ofIXobALhUPui",
+    "publicResourceKey" : "Ui4xLY7QTwAf0IVthu4ofIXobALhUPui",
+    "resourceKey" : "loaders.png",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "loaders.png"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

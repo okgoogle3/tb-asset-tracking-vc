@@ -1,0 +1,64 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "b2c13380-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Castings producing of special cast iron",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "b2c13380-b301-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14467
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733400534735,
+      "longValue" : null,
+      "strValue" : "#78088D"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.749921568255445,37.575527429580696],[48.75053700459171,37.575795650482185],[48.750399062620055,37.57663786411286],[48.749758865435474,37.5763750076294]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733400548721,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.749921568255445, 37.575527429580696], [48.75053700459171, 37.575795650482185], [48.750399062620055, 37.57663786411286], [48.749758865435474, 37.5763750076294]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733400548742,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

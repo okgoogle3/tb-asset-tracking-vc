@@ -1,0 +1,45 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASPSURBVHgBzZlPjBN1FMe/v5lCMEBpuai4uO1ycSFICQf8l1AjcFAPSwwXDspejLddEj2a7cqRg3iUgxu8GDVECHoBE0qiYU3YWE1QLtISdknkQEthA2F3+uO9106Z7rbb+c1s6XySptPfbyb95v3e770376cQgmJZJ+grC6uWVUoNQiMDBR5LNG6p0FiJxipa679Qs/I0lk8nVQUBUQgACc0qW0/QZcYjzoSz2lGnSfhZGGIkuFhdHFGwvqTLFFaHkrJUbnCDOu33AV+CyaIpsugUePl7gVIFvYhDZPFSt1utbjfcvK/HSOyf6JVYRusM/0fxnjPe7dYVLUxiJ2iz5PAMoc2bG9yoJjvOd5roh1iXlUS3FdxPsS6dRC8TzD5LYk8iApCOY+lNdouWFsGNaMAbLEhs7QUVite7vdGjJUooS/+E6IhlEo1w2qQpmJLCUbJ3BtEjWywvjrg/mi5RqtaKWL0MttqUUnErzRdiYU65iK5YJlUsL2T5QgRTffARngHTN/7HV7/+jSAo2+ZiC7F6iahHEILqo8eYvTuPqd+v44M9Q9i+JYn4urXN+dnyA5yZuSGC/6APM5BcT/dugwEZ1mrBdrIIAYv55NvLuE+iz8z8hzn6ffz8VRl3mSvPi2Wrjxbw+ft78M1v1/HF+RkYkrBt7ItBq2ywqrgOC2HLTZ+6KL8/+/GKfFcfLuDrD/fJ9d6h57GRLD7+zk4c2LEV08U7YmFTHF1726IUuAsBYSv+c7vcdo6X3rUyW55X4PjPV+Vz8dotXLg2K65khFapmLzSaASCrXiQLMafdsySKwwkN4ivxp9bSyJvYYrc4cTh1/ESjXv93A/Kwi5yieDhjDfXXOWBWGvZ3ItJvEau4ML3jL75iowZbjYviRhCpuJhEvbpD1dkyV3YX8f275Rrdpkjpy6IRY+Qn4++NYwQJLq+cXSDl/yXsXclnLH4A9u34ruP98u4zG9eT4uo6J73sHfbC7IBw8AW5lfuUFZmcScOv9F2rvrwsUSETO57sfKcbMTAoisqbA3BO52X/d/bdyXOxtetwfCWzcuSB8fegzsGmpYPhFYFFswlpXGmc9Osm7naUd9gQ2E22VLyMarqb1IsNnqKhfqpCSShSDyep034KsLC3SMLSudNHmKfNC1g+P5OCcYEW1mXLDh2HvWN5wvj7BTyOS+Og8sxbsyRHxfgs1ESlxhrvrxBagcvuoZzrFWcl4tjqjcvIcKQ7468HFfnnr4i3aPwpiL61kEt29QmzyuSjNVqxxBRuKnSvPZOkC+zW2QRJTQKZN3d7s+WWoKaFqMwiBg9R1MjpaYOeYdaBHOHRTt6EhFBQ08u7Rkvq9bSSfskZZS+i2YNS/tqTMecTM3lHDn7BPpAQ2yu3dyKRUQ/RK8klula9RTLzriyRXRvm4S8wdDeDbz4P5ThzmbvmoV5jlB+DmXMjr3Ki0eVZU2sWkakDMYJK52M+T6vC3iwSOd1tvTjzFtctPT0rwXtOBSy1uRhSIiej3t0S60uS2WlIaPFz1ON49u6ODQE0osCalx726GObp8ATBL1cX1Xbk8AAAAASUVORK5CYII=",
+    "descriptor" : {
+      "mediaType" : "image/png",
+      "width" : 44,
+      "height" : 44,
+      "size" : 1274,
+      "etag" : "055a129c2ad686e1406f4bd2650d1482177682c4d080d644a66f1b4fb4b933bc",
+      "previewDescriptor" : {
+        "mediaType" : "image/png",
+        "width" : 44,
+        "height" : 44,
+        "size" : 1274,
+        "etag" : "055a129c2ad686e1406f4bd2650d1482177682c4d080d644a66f1b4fb4b933bc"
+      }
+    },
+    "etag" : "055a129c2ad686e1406f4bd2650d1482177682c4d080d644a66f1b4fb4b933bc",
+    "externalId" : null,
+    "fileName" : "workers.png",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "49f0fd00-ad6f-11ef-8cf8-bf1e58a469db"
+    },
+    "link" : "/api/images/tenant/workers.png",
+    "name" : "workers.png",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/rvnJVXwPHpVVmkOrAnaC4V5SLIFVbl0W",
+    "publicResourceKey" : "rvnJVXwPHpVVmkOrAnaC4V5SLIFVbl0W",
+    "resourceKey" : "workers.png",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "workers.png"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

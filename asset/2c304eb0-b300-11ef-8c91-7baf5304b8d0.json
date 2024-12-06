@@ -1,0 +1,77 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "2c304eb0-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Steel vacuum degassing area",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2c304eb0-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToGeofence",
+    "typeGroup" : "COMMON",
+    "version" : 26887
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "2c304eb0-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14443
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733399879467,
+      "longValue" : null,
+      "strValue" : "#031E2B"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.75300088505369,37.57386982440949],[48.75422239089294,37.57444381713868],[48.753789142130124,37.576383054256446],[48.752602551900104,37.57582783699036]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733400032505,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75300088505369, 37.57386982440949], [48.75422239089294, 37.57444381713868], [48.753789142130124, 37.576383054256446], [48.752602551900104, 37.57582783699036]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733400032524,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

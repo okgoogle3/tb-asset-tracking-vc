@@ -1,0 +1,45 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE1SURBVHgBdVLLTcNAEH27iSMkLk4HKcHpIJSQCmIkAojT3iMUR8hw3TMgxVQAHQAV2B0AFeAjimObN/5ElhEj+bMzbz7vzSr0zDeB68CZlCjcPfIkskHajasucITRukTpd4JuCUQZss0IzqJA8a5r8N2E4BgopwMU8we7GstD8JRJHjsyhkCww/qV86DSe7uayfnM3MxkHCYl5yZ8UQ24wsooGmoh1Vonz/4Qg2hpQnLBKV1fh4QjDLwcSKVaXwD6In6irk/n0Cn+WqKht+w+aR3s9i2jqkbGD8o4f7TXby3gyoTeHupZY3eSw3HJI94hG7fZdmluX/GPkXh8YcLtQSXqHIisEhCSLZ9qBKg1f9kh2zS7qe2SuyhqeUWxLq+nYxa0zcZVv70hp59KOZ0S+Gl7V+MX1m190rV5JRAAAAAASUVORK5CYII=",
+    "descriptor" : {
+      "mediaType" : "image/png",
+      "width" : 12,
+      "height" : 12,
+      "size" : 416,
+      "etag" : "fbabc94040e832104abedf4ca0840d4a74d5452f5b205f2c8887fd055925bf67",
+      "previewDescriptor" : {
+        "mediaType" : "image/png",
+        "width" : 12,
+        "height" : 12,
+        "size" : 416,
+        "etag" : "fbabc94040e832104abedf4ca0840d4a74d5452f5b205f2c8887fd055925bf67"
+      }
+    },
+    "etag" : "fbabc94040e832104abedf4ca0840d4a74d5452f5b205f2c8887fd055925bf67",
+    "externalId" : null,
+    "fileName" : "time.png",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "64fcd100-ad6f-11ef-8cf8-bf1e58a469db"
+    },
+    "link" : "/api/images/tenant/time.png",
+    "name" : "time.png",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/qIMIiefcnjEUKWxP0ozUbZUvmCfq2RMs",
+    "publicResourceKey" : "qIMIiefcnjEUKWxP0ozUbZUvmCfq2RMs",
+    "resourceKey" : "time.png",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "time.png"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

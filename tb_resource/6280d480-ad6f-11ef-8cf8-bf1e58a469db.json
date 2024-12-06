@@ -1,0 +1,45 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ/SURBVHgBzZlNTBNREMdnXksRa7R48GI0EKsnE2pMBPRAjRfUaOpNbx78uBjbiwfjF34lGg+2iRe/Em96K2oiNTFSDhIwMSnRg4kkosaDHnRRKtjCPmeeu2uh27K7IPSXvPTt7Cv8mZn3NSB4ZElnIoqotyBglB4jKCAEkhqDoFF/RFIDlEO6LrITmWQWPIBuBoeiiVBhqR5HxIQlxjkj1LJTOp4nsSNOv+RIIAsrBuU5EpWA+eGeU6G+2QY07Dwel/XQTeKiMH9EBEIssKFVK74bHKo2sKrA4O74dcqxLuougfmHUgRjgXBbqDg8+LTSINsQq5A2yDS9jcLCkKv7hdu1bFKb+ULYjS4ulb0LKI6JKIfYUBZiDit9xGChQWiyC/c0gcFdiYP0cQUWC4Q2f3jL6OTwy4F/JgNaeJuEkL1kaILFRaN8bDbz0cpBH+pdNSCO4Ql6znxQHmTv+YR8DzUEebGRvag8yN6DObB1YxhO7O+E5cEGWEGN+2ybC7Slql1LCZSIHTAHtrHAA51KHIvk/rY5CqQNIq4++VRC4e0Fl2xsXg0XD+2DtatWWsI+ff2m3q0h24/8OIxSY9vpO2l48/4zuAV13C6E0KPgARanvCQBRsdIyJdvqs+N+2zjPof6Eo31whRORfykswU8wJ5j72w+cqHquFe3zyqPegElRv1ulxb2CHuOQ8phLLWV8uLNMPRTY5YbE6fU5kigwBY/bzEqNA4xJwRjCiy1WdzPWGJWGBOn1OaQkN/tyfjm4z548PwldF8+VvYuduqGWljTM95xKvC7UeMPciNQQI0j1AXHBUf3dFRMfPZq2sazPJa/w991ieanm5eG4DzMnOicS0f2dpTZysYZcGhvPeqbZnME3QppmYEcuJjJ/cZM3L9jS5mtEjyZrj3IgFuklB/Ig3ofonB9QP1Iic+zl0NXDQ5v/2uXnjMRkBM+6cuBB87Q9qVCJv+ucyonjZ2E+2zj/gsSd/pu2suvAEEXfnXcomP+dw8XcQtehHmd23z4767CXr1GOeklrBaUf/meVLM68tetb20wShie4bWOPVooTsLvwqTqm4cHTyB00535ofJgKEbXzIL8DjUEVR6aufKgFmqtO0lLjUxB7XDPLItYO4k/ILrcLtr/Bco9rtuYj9a1c+LtwEQg3P6bRHbCYiJlYjyT6jMfp92Li8MDA/XrWxspQ9tgEaDzXyqfSV2dZrMbGNwZX+jSB5PLP0ltmmm0Pc3U1SOf0T0t4J6QkOXikd2rqgXMZbuOJ6Vxu/pfcFjHepIVC6NV64OFd4OZwLr2D5Jr0Oh9p6kA1bHxZL4n2VVt0KwVVpo4OV+4/aEA2QiIEZgH2Gt147jv57PZC+uuiuiqREJVCAp7B6LrOg5tBpjy/4KkXaGyEq4ElrKMLvy6ulNji3Ez5GamgcYHYfrpOTrTZX1SDI15/DfEH/SlvwFdkLHMAAAAAElFTkSuQmCC",
+    "descriptor" : {
+      "mediaType" : "image/png",
+      "width" : 40,
+      "height" : 40,
+      "size" : 1194,
+      "etag" : "b42f851a43b7584440a41c010aa5a0dbc91f6dfecc075cdcb2a2bac928efaba6",
+      "previewDescriptor" : {
+        "mediaType" : "image/png",
+        "width" : 40,
+        "height" : 40,
+        "size" : 1194,
+        "etag" : "b42f851a43b7584440a41c010aa5a0dbc91f6dfecc075cdcb2a2bac928efaba6"
+      }
+    },
+    "etag" : "b42f851a43b7584440a41c010aa5a0dbc91f6dfecc075cdcb2a2bac928efaba6",
+    "externalId" : null,
+    "fileName" : "Map bullet (3).png",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "6280d480-ad6f-11ef-8cf8-bf1e58a469db"
+    },
+    "link" : "/api/images/tenant/Map bullet (3).png",
+    "name" : "Map bullet (3).png",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/HniJ9cXkt73cgRLuFYS5Yc1VtCvmClhM",
+    "publicResourceKey" : "HniJ9cXkt73cgRLuFYS5Yc1VtCvmClhM",
+    "resourceKey" : "Map bullet (3).png",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "Map bullet (3).png"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

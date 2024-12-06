@@ -1,0 +1,33 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "card",
+    "name" : "Card",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "latest",
+      "sizeX" : 7.5,
+      "sizeY" : 3.5,
+      "resources" : [ ],
+      "templateHtml" : " <div class=\"mainDiv\">\n    <div class=\"leftBlock\">\n        <div class=\"fixedTop\">\n            <span class=\"title\">{{title}}</span>\n            <span class=\"value\">{{value}}<span class=\"unit\">{{unit}}</span></span>\n        </div>\n        <div class=\"timeBlock\">\n            <img [src]=\"'/api/images/tenant/time.png' | image | async\" />\n            <span class=\"time\">{{time}}</span>\n        </div>\n    </div>\n    <div class=\"rightBlock\">\n        <img [src]=\"('/api/images/tenant/' + imgUrl) | image | async\" />\n    </div>\n</div>",
+      "templateCss" : ".mainDiv {\n    display: flex;\n    height: 100%;\n    width: 100%;\n    justify-content: space-between;\n}\n\n.leftBlock {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\n\n.fixedTop {\n    display: flex;\n    flex-direction: column;\n}\n\n.timeBlock {\n    display: flex;\n    align-items: center;\n}\n\n.time {\n    margin-left: 5px;\n    font-size: 14px;\n    font-weight: 400;\n    color: #667085;\n}\n\n.title {\n    color: rgba(0, 0, 0, 0.87);\n    font-size: 16px;\n    font-style: normal;\n    font-weight: 400;\n    letter-spacing: normal;\n    line-height: 24px;\n}\n\n.value {\n    font-size: 28px;\n    font-weight: 600;\n    color: #212529;\n    margin-top: 10px;\n}\n\n.unit {\n    font-size: 18px;\n    font-weight: 400;\n    color: #344054;\n}\n",
+      "controllerScript" : "self.onInit = function() {\n    utils = self.ctx.$scope.$injector.get(self.ctx.servicesMap.get('utils'));\n    settings = utils.deepClone(self.ctx.settings) || {};\n    \n    self.ctx.$scope.title = settings.title;\n    self.ctx.$scope.imgUrl = settings.imgUrl;\n\n    self.ctx.$scope.value = \"40.1\";\n    self.ctx.$scope.unit = \"°N\";\n    self.ctx.$scope.time = \"2 min ago\";\n}    \n\nself.onDataUpdated = function() {\n    self.ctx.$scope.value = [];\n    \n    self.ctx.data.forEach(x=>{\n        if(x.data[0]){\n            if(x.data[0]){\n                self.ctx.$scope.unit = x.dataKey.units || '' \n                \n                if(x.data[0][1] != \"\"){\n                    self.ctx.$scope.value = x.data[0][1];\n                } else {\n                    self.ctx.$scope.value = 0;\n                }\n                \n                self.ctx.$scope.time = x.data[0][0] == 0 ? \"No updates\" : moment(x.data[0][0]).fromNow();\n            }\n        }\n    })\n    \n    self.ctx.detectChanges();\n}\n\nself.actionSources = function() {\n    return {\n        'elementClick': {\n            name: 'widget-action.element-click',\n            multiple: true\n        }\n    };\n}\n\nself.onResize = function() {\n  \n}\n\nself.onDestroy = function() {\n}\n",
+      "settingsSchema" : "{\n    \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n            \"title\": {\n                \"title\": \"Title\",\n                \"type\": \"string\"\n            },\n            \"imgUrl\": {\n                \"title\": \"Image URL\",\n                \"type\": \"string\"\n            }\n        },\n        \"required\": []\n    },\n    \"form\": [\n        \"title\",\n        \"imgUrl\"\n    ]\n}",
+      "dataKeySettingsSchema" : "{}\n",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"function\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":false,\"backgroundColor\":\"#fff\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{\"title\":\"Current lat, long\"},\"title\":\"Card\",\"dropShadow\":false,\"enableFullscreen\":false,\"enableDataExport\":false,\"borderRadius\":\"6px\",\"widgetStyle\":{\"border\":\"1px solid #E6E6E6\"},\"widgetCss\":\"\",\"pageSize\":1024,\"noDataDisplayMessage\":\"\"}"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "14d964b0-a5c0-11ef-b1f1-697ed6298748"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

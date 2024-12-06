@@ -1,0 +1,105 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "STEELMAKING\n\nProcess of quality steel production\n\nFully upgraded and formed according to its own engineering the steelmaking technological complex of NKMZ includes: 1 electric arc furnace EAF with the capacity of 50 t; 2 electric arc furnaces EAF with the capacity of 12 t; 1 electric arc furnace EAF with the capacity of 5 t; 2 after-furnace ladle steel treatment units \"Ladle-furnace\"; steel vacuum degassing area based on the steam-jet pump and 4 vacuum chambers including vacuum chamber for VD and VOD.\n\nMetal smelting is effected in steelmaking units with minimum time consumption, then metal is secondary treated in the ladle using the «Ladle-furnace» unit and vacuum degassed. Depending on the preset chemical composition and required properties of steel casting may be performed either in vacuum by top pouring or in air by bottom pouring.\n\nTechnical capabilities of steelmaking allow to produce forging ingots weighing from 1,6 to 170 t and up to 200 t of liquid metal for steel casting producing.."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "STEELMAKING PRODUCTION",
+    "ownerId" : null,
+    "type" : "Shape"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToZone",
+    "typeGroup" : "COMMON",
+    "version" : 26888
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23cd6230-b238-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 14446
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "2c304eb0-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14443
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "69e1eac0-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 14445
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733399768888,
+      "longValue" : null,
+      "strValue" : "STEELMAKING\n\nProcess of quality steel production\n\nFully upgraded and formed according to its own engineering the steelmaking technological complex of NKMZ includes: 1 electric arc furnace EAF with the capacity of 50 t; 2 electric arc furnaces EAF with the capacity of 12 t; 1 electric arc furnace EAF with the capacity of 5 t; 2 after-furnace ladle steel treatment units \"Ladle-furnace\"; steel vacuum degassing area based on the steam-jet pump and 4 vacuum chambers including vacuum chamber for VD and VOD.\n\nMetal smelting is effected in steelmaking units with minimum time consumption, then metal is secondary treated in the ladle using the «Ladle-furnace» unit and vacuum degassed. Depending on the preset chemical composition and required properties of steel casting may be performed either in vacuum by top pouring or in air by bottom pouring.\n\nTechnical capabilities of steelmaking allow to produce forging ingots weighing from 1,6 to 170 t and up to 200 t of liquid metal for steel casting producing.."
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.75299867455656,37.57386580109597],[48.75498277764773,37.574781775474555],[48.75419586556586,37.57869243621827],[48.752214384035256,37.577769756317146]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1733472724123,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75299867455656, 37.57386580109597], [48.75498277764773, 37.574781775474555], [48.75419586556586, 37.57869243621827], [48.752214384035256, 37.577769756317146]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1733399824198,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

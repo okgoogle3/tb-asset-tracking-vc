@@ -1,0 +1,45 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOCSURBVHgBzVk9bxNBEJ3ZM2niELtJRGW7oEIoSZV0XKBH0ESiAqRQJ2lpcH5BnBokQkVBAUpBh7BEAxWOUCoKnyuUNDb5KIDcDjN7d47t2Jdby7H9JMu+3dvbd292ZmfHCH2iWidXpWCOiFwgmAeEDDdnwu4Gt3nc5nH/HmhVLmSxDH0AbW5mUhkmtcaTrreQSQqPpyuTD5tM1ks6KBFBQ8yBFwSG2ACAO0mJXkqwdkyiWBHsFbsMHios5tL4Ju6mWIK1I9oanGq9CGApdx03evd3gZgUHXrPP10YBggqpHGZTd7o7FLd7scUfYZhkTMTwnwoyAVcIChmNWFj+HDN3B1oM3H16OwJgnoNIwQ75EZh2ilF102CvO7yLLOYNg+jRYN8LETr8dzEShdh9OQEJuZGF0bBUL0qjBFYxayoGCgYqDdeUNrEX0MQEe/AmIE5rZlvyUpC5xg7kO8vp1hK1zKpaeLgmNquZ6cwtt0aSs2nWMo5sMTuvoa33zWc/m1vf7nimFd99s5va59JA9y7qeDRggIrELopfmIeKPkYISafYFKEyYlzddLh704in34GYyYnAO7fSk4SFcyhd6TrkDCVOmTTrbI6Qm77gdNGLg6i9POPPhyeELxaSRmiCdFIgUWed3ASfIsKEbmvNZ70m+56/+oiwlJONZXb/uLDj1/atCVExmpRRGvOQoGWsRSOtXMYUVD2vEQq3r6BhtzuPrEKAdGlnKjkxI47/UPGsQQzU2CDhhVBISQOICZd+3BmPLMVkQNEZAw5Vk6WweFJMHY2baEgoScEK2CRJAgJMXXkma24y14t03e2y4utLiorDzb8iGpY/e2vcyzcgj5w1YGaCW6mQOsKOE5fD+g1cd87Rye0Lpsn2cTCoYErE/lpVTCLgqXchnEDBqWSKGGVY2Ydxghh2u8ZBSVzHS8VcScqi7QemjJh2j/atchrLzzEe3LZDExGRZ82YcTgkFdsLSq1Rc5C1imN0tQyN9dp2opJXQMWh53hlj4EXJ/hsLLQ2dx172EPeigDYHgoy7rr1hEb8nkbLEWnq6uCmJVLHT1LfLG7twwkXz819eZBg6AR1mFi649JS8B5Odyzmo9hADCOqFWxWz2wE7ZF9IAo8EEfLes4ohgYYqUkxPoi2Ipq/Z/L51bXHFvJkM2Hf0UYMiCJMEIFCctan+0VstfK0Af+A4Avd4Z3sgXPAAAAAElFTkSuQmCC",
+    "descriptor" : {
+      "mediaType" : "image/png",
+      "width" : 40,
+      "height" : 40,
+      "size" : 1005,
+      "etag" : "06362e1ad2ba8d5215544c72228b62aa698750f7b0f09d31aa84cbe5a100b779",
+      "previewDescriptor" : {
+        "mediaType" : "image/png",
+        "width" : 40,
+        "height" : 40,
+        "size" : 1005,
+        "etag" : "06362e1ad2ba8d5215544c72228b62aa698750f7b0f09d31aa84cbe5a100b779"
+      }
+    },
+    "etag" : "06362e1ad2ba8d5215544c72228b62aa698750f7b0f09d31aa84cbe5a100b779",
+    "externalId" : null,
+    "fileName" : "Card icon (1).png",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "55af9480-ad6f-11ef-8cf8-bf1e58a469db"
+    },
+    "link" : "/api/images/tenant/Card icon (1).png",
+    "name" : "Card icon (1).png",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/oJglStAAH5eAmDyFP6AAzCn4e7k1nTQ2",
+    "publicResourceKey" : "oJglStAAH5eAmDyFP6AAzCn4e7k1nTQ2",
+    "resourceKey" : "Card icon (1).png",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "Card icon (1).png"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

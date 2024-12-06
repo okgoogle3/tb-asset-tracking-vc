@@ -6,21 +6,28 @@
     },
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "affce570-6b5a-11ef-9e6c-75c864e5f031"
+    },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "afffcba0-6b5a-11ef-9e6c-75c864e5f031"
+      "id" : "3af945b0-a7ec-11ef-98fa-d9f628e02cb7"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "affce570-6b5a-11ef-9e6c-75c864e5f031"
     },
-    "name" : "local tracker (Root)",
+    "name" : "local tracker (Root Rule Chain)",
     "root" : false,
     "type" : "CORE"
   },
   "metaData" : {
     "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 0,
       "type" : "Post telemetry"
@@ -44,10 +51,19 @@
       "fromIndex" : 6,
       "toIndex" : 2,
       "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 8,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
       "additionalInfo" : {
+        "description" : null,
         "layoutX" : 822,
         "layoutY" : 294
       },
@@ -60,7 +76,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "affda8c0-6b5a-11ef-9e6c-75c864e5f031"
+        "id" : "3af91ea1-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "Save Timeseries",
       "queueName" : null,
@@ -84,7 +100,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "affdf6e0-6b5a-11ef-9e6c-75c864e5f031"
+        "id" : "3af91ea2-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "Save Client Attributes",
       "queueName" : null,
@@ -93,6 +109,7 @@
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
     }, {
       "additionalInfo" : {
+        "description" : null,
         "layoutX" : 494,
         "layoutY" : 309
       },
@@ -105,7 +122,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "affe6c10-6b5a-11ef-9e6c-75c864e5f031"
+        "id" : "3af91ea3-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "Message Type Switch",
       "queueName" : null,
@@ -128,7 +145,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "affee140-6b5a-11ef-9e6c-75c864e5f031"
+        "id" : "3af91ea4-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "Log RPC from Device",
       "queueName" : null,
@@ -151,7 +168,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "afff2f60-6b5a-11ef-9e6c-75c864e5f031"
+        "id" : "3af91ea5-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "Log Other",
       "queueName" : null,
@@ -172,7 +189,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "afff7d80-6b5a-11ef-9e6c-75c864e5f031"
+        "id" : "3af91ea6-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "RPC Call Request",
       "queueName" : null,
@@ -189,19 +206,89 @@
         "persistAlarmRulesState" : false,
         "fetchAlarmRulesStateOnStart" : false
       },
-      "configurationVersion" : 0,
+      "configurationVersion" : 1,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "afffcba0-6b5a-11ef-9e6c-75c864e5f031"
+        "id" : "3af945b0-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "Device Profile Node",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1102,
+        "layoutY" : 293
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "123e7870-94ff-11ef-8a10-c14d60276279"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3af945b1-a7ec-11ef-98fa-d9f628e02cb7"
+      },
+      "name" : "Device to asset transformation",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1639,
+        "layoutY" : 291
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "cf65c7a0-94ff-11ef-8a10-c14d60276279"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3af945b2-a7ec-11ef-98fa-d9f628e02cb7"
+      },
+      "name" : "Geofence Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "depending on incoming msg (no info yet)a relation to a zone must be checked and changed if needed",
+        "layoutX" : 1363,
+        "layoutY" : 292
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3af945b3-a7ec-11ef-98fa-d9f628e02cb7"
+      },
+      "name" : "TODO",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
