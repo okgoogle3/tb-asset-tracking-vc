@@ -1,7 +1,9 @@
 {
   "entityType" : "ENTITY_GROUP",
   "entity" : {
-    "additionalInfo" : null,
+    "additionalInfo" : {
+      "description" : ""
+    },
     "configuration" : {
       "columns" : [ {
         "type" : "ENTITY_FIELD",
@@ -20,19 +22,16 @@
       "actions" : { }
     },
     "edgeGroupAll" : false,
-    "externalId" : {
-      "entityType" : "ENTITY_GROUP",
-      "id" : "d9892890-87c0-11ef-acbf-19d9671e26a9"
-    },
-    "groupAll" : true,
+    "externalId" : null,
+    "groupAll" : false,
     "id" : {
       "entityType" : "ENTITY_GROUP",
-      "id" : "d9892890-87c0-11ef-acbf-19d9671e26a9"
+      "id" : "7fabed40-b86b-11ef-838c-5dd5db96bde1"
     },
-    "name" : "All",
+    "name" : "Kramatorsk location",
     "ownerId" : {
-      "entityType" : "CUSTOMER",
-      "id" : "d987c900-87c0-11ef-acbf-19d9671e26a9"
+      "entityType" : "TENANT",
+      "id" : "964a19f0-a5bf-11ef-aeb9-2d6dbc59e038"
     },
     "type" : "ASSET"
   },

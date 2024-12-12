@@ -34,7 +34,7 @@
     },
     "type" : "ZoneToLocation",
     "typeGroup" : "COMMON",
-    "version" : 15662
+    "version" : 86928
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -293,7 +293,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "zonesCount",
-      "lastUpdateTs" : 1733408884358,
+      "lastUpdateTs" : 1733922021277,
       "longValue" : 6,
       "strValue" : null
     } ]

@@ -24,32 +24,6 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "903e5130-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "46376770-b301-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AssetToGeofence",
-    "typeGroup" : "COMMON",
-    "version" : 26912
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "c0674420-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "46376770-b301-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AssetToGeofence",
-    "typeGroup" : "COMMON",
-    "version" : 26911
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
       "id" : "46376770-b301-11ef-8c91-7baf5304b8d0"
     },
     "to" : {

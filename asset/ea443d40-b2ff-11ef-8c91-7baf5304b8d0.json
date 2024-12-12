@@ -26,19 +26,6 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AssetToZone",
-    "typeGroup" : "COMMON",
-    "version" : 26888
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
       "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
     },
     "to" : {
@@ -48,6 +35,19 @@
     "type" : "ZoneToLocation",
     "typeGroup" : "COMMON",
     "version" : 14446
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "11642720-b7b3-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 82751
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -77,6 +77,14 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assetsCount",
+      "lastUpdateTs" : 1733996967394,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
