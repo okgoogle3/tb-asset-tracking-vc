@@ -1,0 +1,51 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "e9f35250-b88a-11ef-838c-5dd5db96bde1"
+    },
+    "label" : null,
+    "name" : "Resting room",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1734009224201,
+      "longValue" : null,
+      "strValue" : "#0086C9"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.76050315367903,37.573440251200886],[48.76029804976395,37.573311501140196],[48.759993928624176,37.57487796021205],[48.76020610635777,37.574953064414146]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1734009248353,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.76050315367903, 37.573440251200886], [48.76029804976395, 37.573311501140196], [48.759993928624176, 37.57487796021205], [48.76020610635777, 37.574953064414146]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1734009248387,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
