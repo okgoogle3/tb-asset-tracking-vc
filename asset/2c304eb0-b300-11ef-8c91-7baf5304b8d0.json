@@ -27,6 +27,19 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
+      "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2c304eb0-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToGeofence",
+    "typeGroup" : "COMMON",
+    "version" : 122393
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
       "id" : "2c304eb0-b300-11ef-8c91-7baf5304b8d0"
     },
     "to" : {

@@ -22,11 +22,11 @@
   "metaData" : {
     "connections" : [ {
       "fromIndex" : 0,
-      "toIndex" : 8,
+      "toIndex" : 11,
       "type" : "LocationToAsset"
     }, {
       "fromIndex" : 0,
-      "toIndex" : 9,
+      "toIndex" : 12,
       "type" : "ZoneToLocation"
     }, {
       "fromIndex" : 3,
@@ -58,27 +58,27 @@
       "type" : "RPC Request to Device"
     }, {
       "fromIndex" : 3,
-      "toIndex" : 11,
+      "toIndex" : 9,
       "type" : "REST API request"
     }, {
       "fromIndex" : 7,
       "toIndex" : 3,
       "type" : "Success"
     }, {
-      "fromIndex" : 8,
-      "toIndex" : 10,
-      "type" : "Success"
-    }, {
       "fromIndex" : 9,
       "toIndex" : 10,
       "type" : "Success"
     }, {
+      "fromIndex" : 10,
+      "toIndex" : 0,
+      "type" : "Success"
+    }, {
       "fromIndex" : 11,
-      "toIndex" : 12,
+      "toIndex" : 8,
       "type" : "Success"
     }, {
       "fromIndex" : 12,
-      "toIndex" : 0,
+      "toIndex" : 8,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 7,
@@ -95,7 +95,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -266,70 +266,6 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 505,
-        "layoutY" : 628
-      },
-      "configuration" : {
-        "outputValueKey" : "assignedAssetsCount",
-        "outMsgType" : "POST_ATTRIBUTES_REQUEST",
-        "relationsQuery" : {
-          "direction" : "FROM",
-          "fetchLastLevelOnly" : false,
-          "filters" : [ {
-            "entityTypes" : [ ],
-            "relationType" : "LocationToAsset"
-          } ],
-          "maxLevel" : 1
-        }
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "007d9c70-b312-11ef-9e78-2dc2db4c8810"
-      },
-      "name" : "assignedAssetsCount",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.node.TbRelationsCountNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 802,
-        "layoutY" : 627
-      },
-      "configuration" : {
-        "outputValueKey" : "zonesCount",
-        "outMsgType" : "POST_ATTRIBUTES_REQUEST",
-        "relationsQuery" : {
-          "direction" : "TO",
-          "fetchLastLevelOnly" : false,
-          "filters" : [ {
-            "entityTypes" : [ ],
-            "relationType" : "ZoneToLocation"
-          } ],
-          "maxLevel" : 1
-        }
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "210fedd0-b312-11ef-9e78-2dc2db4c8810"
-      },
-      "name" : "zonesCount",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.node.TbRelationsCountNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 805,
         "layoutY" : 703
       },
@@ -399,6 +335,70 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 505,
+        "layoutY" : 629
+      },
+      "configuration" : {
+        "outputValueKey" : "assignedAssetsCount",
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "LocationToAsset",
+            "entityTypes" : [ ]
+          } ]
+        },
+        "outMsgType" : "POST_ATTRIBUTES_REQUEST"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "0a735f70-bc55-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "assignedAssetsCount",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.relation.TbRelationsCountNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 802,
+        "layoutY" : 629
+      },
+      "configuration" : {
+        "outputValueKey" : "zonesCount",
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "TO",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "ZoneToLocation",
+            "entityTypes" : [ ]
+          } ]
+        },
+        "outMsgType" : "POST_ATTRIBUTES_REQUEST"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "bc453c60-bc59-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "zonesCount",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.relation.TbRelationsCountNode"
     } ],
     "ruleChainConnections" : null
   },

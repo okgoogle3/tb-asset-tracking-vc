@@ -41,59 +41,62 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "9f560fa0-b3d8-11ef-838c-5dd5db96bde1"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "5ea52c70-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AlarmConfigToDevice",
-    "typeGroup" : "COMMON",
-    "version" : 26296
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "5ea52c70-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AlarmConfigToDevice",
-    "typeGroup" : "COMMON",
-    "version" : 26320
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "5ea52c70-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "to" : {
-      "entityType" : "ASSET",
       "id" : "c0674420-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5ea52c70-b30b-11ef-8c91-7baf5304b8d0"
     },
     "type" : "DeviceToAsset",
     "typeGroup" : "COMMON",
-    "version" : 14652
+    "version" : 83255
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "46975030-bd11-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5ea52c70-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 120501
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1733405300768,
+      "lastUpdateTs" : 1734008795480,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"FOUNDRY PRODUCTION\",\"status\":\"inside\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"status\":\"inside\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"MECHANICAL ASSEMBLY PRODUCTION\",\"status\":\"inside\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"METALWORKS PRODUCTION\",\"status\":\"inside\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"PRESS-FORGING FACILITIES PRODUCTION\",\"status\":\"inside\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"name\":\"STEELMAKING PRODUCTION\",\"status\":\"inside\"},\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"Dangerous area\",\"status\":\"inside\"},\"82e05b30-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"High-speed burners\",\"status\":\"inside\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of alloyed\",\"status\":\"inside\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of carbon\",\"status\":\"inside\"},\"b2c13380-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of special cast iron\",\"status\":\"inside\"},\"21b66f60-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Manual arc welding \",\"status\":\"outside\"},\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Metal-arc inert gas welding \",\"status\":\"outside\"},\"a83918d0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Tungsten inert gas arc welding\",\"status\":\"outside\"},\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"Steelmaking units\",\"status\":\"outside\"},\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"Steel vacuum degassing area\",\"status\":\"outside\"}}",
+      "jsonValue" : "{}",
       "key" : "areaAlarmRules",
-      "lastUpdateTs" : 1733493165365,
+      "lastUpdateTs" : 1734506736864,
       "longValue" : null,
       "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAlarmProfile",
+      "lastUpdateTs" : 1734506736868,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAsset",
+      "lastUpdateTs" : 1733924092171,
+      "longValue" : null,
+      "strValue" : "{\"name\":\"Demo Asset 6\",\"id\":{\"id\":\"c0674420-b30b-11ef-8c91-7baf5304b8d0\",\"entityType\":\"ASSET\"}}"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -121,9 +124,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"82e05b30-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"b2c13380-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"21b66f60-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"a83918d0-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"}}",
+      "jsonValue" : "{}",
       "key" : "geofenceThresolds",
-      "lastUpdateTs" : 1733493165365,
+      "lastUpdateTs" : 1733819133211,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -131,7 +134,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedAsset",
-      "lastUpdateTs" : 1733404852594,
+      "lastUpdateTs" : 1733924092171,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -139,15 +142,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1733405300768,
-      "longValue" : 1733405300767,
+      "lastUpdateTs" : 1734007973134,
+      "longValue" : 1734007973133,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"id\":\"c0674420-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 6\"}",
+      "jsonValue" : "{\"id\":\"5ea52c70-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 6\"}",
       "key" : "info",
-      "lastUpdateTs" : 1733404852615,
+      "lastUpdateTs" : 1733924092193,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -155,8 +158,32 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isAssigned",
-      "lastUpdateTs" : 1733404852615,
+      "lastUpdateTs" : 1733924092193,
       "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1734518647692,
+      "longValue" : 1734518647144,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1734442675242,
+      "longValue" : 1734442675242,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1734442633463,
+      "longValue" : 1734442633463,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -177,9 +204,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"}}",
+      "jsonValue" : "{}",
       "key" : "zoneThresolds",
-      "lastUpdateTs" : 1733492910613,
+      "lastUpdateTs" : 1734506736864,
       "longValue" : null,
       "strValue" : null
     } ],

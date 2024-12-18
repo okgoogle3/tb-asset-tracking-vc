@@ -41,57 +41,31 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "9f560fa0-b3d8-11ef-838c-5dd5db96bde1"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "75fb7280-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AlarmConfigToDevice",
-    "typeGroup" : "COMMON",
-    "version" : 26294
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "75fb7280-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AlarmConfigToDevice",
-    "typeGroup" : "COMMON",
-    "version" : 26323
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "75fb7280-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "to" : {
-      "entityType" : "ASSET",
       "id" : "f14185b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "75fb7280-b30b-11ef-8c91-7baf5304b8d0"
     },
     "type" : "DeviceToAsset",
     "typeGroup" : "COMMON",
-    "version" : 14663
+    "version" : 83262
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1733471572340,
+      "lastUpdateTs" : 1734008795459,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"FOUNDRY PRODUCTION\",\"status\":\"inside\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"status\":\"inside\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"MECHANICAL ASSEMBLY PRODUCTION\",\"status\":\"inside\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"METALWORKS PRODUCTION\",\"status\":\"inside\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"PRESS-FORGING FACILITIES PRODUCTION\",\"status\":\"inside\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"name\":\"STEELMAKING PRODUCTION\",\"status\":\"inside\"},\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"Dangerous area\",\"status\":\"inside\"},\"82e05b30-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"High-speed burners\",\"status\":\"inside\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of alloyed\",\"status\":\"inside\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of carbon\",\"status\":\"inside\"},\"b2c13380-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of special cast iron\",\"status\":\"inside\"},\"21b66f60-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Manual arc welding \",\"status\":\"outside\"},\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Metal-arc inert gas welding \",\"status\":\"outside\"},\"a83918d0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Tungsten inert gas arc welding\",\"status\":\"outside\"},\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"Steelmaking units\",\"status\":\"outside\"},\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"Steel vacuum degassing area\",\"status\":\"outside\"}}",
+      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"FOUNDRY PRODUCTION\",\"status\":\"inside\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"status\":\"inside\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"MECHANICAL ASSEMBLY PRODUCTION\",\"status\":\"inside\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"METALWORKS PRODUCTION\",\"status\":\"inside\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"PRESS-FORGING FACILITIES PRODUCTION\",\"status\":\"inside\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"name\":\"STEELMAKING PRODUCTION\",\"status\":\"inside\"}}",
       "key" : "areaAlarmRules",
-      "lastUpdateTs" : 1733493165371,
+      "lastUpdateTs" : 1733819133217,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -99,7 +73,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "assignedAsset",
-      "lastUpdateTs" : 1733408927166,
+      "lastUpdateTs" : 1733924350348,
       "longValue" : null,
       "strValue" : "{\"name\":\"Demo Asset 9\",\"id\":{\"id\":\"f14185b0-b30b-11ef-8c91-7baf5304b8d0\",\"entityType\":\"ASSET\"}}"
     }, {
@@ -129,9 +103,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"82e05b30-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"b2c13380-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"21b66f60-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"a83918d0-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"}}",
+      "jsonValue" : "{}",
       "key" : "geofenceThresolds",
-      "lastUpdateTs" : 1733493165371,
+      "lastUpdateTs" : 1733819133217,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -139,7 +113,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedAsset",
-      "lastUpdateTs" : 1733404934560,
+      "lastUpdateTs" : 1733924350348,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -147,15 +121,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1733471572340,
-      "longValue" : 1733471572340,
+      "lastUpdateTs" : 1734007973134,
+      "longValue" : 1734007973133,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"id\":\"f14185b0-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 9\"}",
+      "jsonValue" : "{\"id\":\"75fb7280-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 9\"}",
       "key" : "info",
-      "lastUpdateTs" : 1733404934583,
+      "lastUpdateTs" : 1733924350361,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -163,7 +137,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isAssigned",
-      "lastUpdateTs" : 1733404934583,
+      "lastUpdateTs" : 1733924350361,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -171,8 +145,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1733470915229,
-      "longValue" : 1733470914343,
+      "lastUpdateTs" : 1734518647703,
+      "longValue" : 1734518647145,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1734442675240,
+      "longValue" : 1734442675240,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1734442633461,
+      "longValue" : 1734442633461,
       "strValue" : null
     }, {
       "booleanValue" : null,

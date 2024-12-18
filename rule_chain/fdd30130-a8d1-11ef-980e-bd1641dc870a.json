@@ -293,7 +293,7 @@
       "configuration" : {
         "relationsQuery" : {
           "fetchLastLevelOnly" : false,
-          "direction" : "TO",
+          "direction" : "FROM",
           "maxLevel" : 1,
           "filters" : [ {
             "relationType" : "DeviceToAsset",
@@ -425,7 +425,7 @@
       "configuration" : {
         "relationsQuery" : {
           "fetchLastLevelOnly" : false,
-          "direction" : "TO",
+          "direction" : "FROM",
           "maxLevel" : 1,
           "filters" : [ {
             "relationType" : "DeviceToAsset",

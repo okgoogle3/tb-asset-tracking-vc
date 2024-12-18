@@ -12,7 +12,7 @@
     },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "0825e250-91ea-11ef-b984-655f1d07912d"
+      "id" : "3a0aee12-a7ec-11ef-98fa-d9f628e02cb7"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -59,7 +59,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "97143650-8255-11ef-b5ef-a3c9386e22a5"
+        "id" : "3a0aee10-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "Save Timeseries",
       "queueName" : null,
@@ -75,7 +75,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var message = [];\nforeach(msg1: msg) {\n    message.push({\n        assetName: msg1.metadata.assetName,\n        area: msg1.metadata.area,\n        areaName: msg1.metadata.areaName,\n        status: msg1.metadata.status\n    });\n}\nvar metadataNew = {\n    assetName: msg[0].metadata.assetName,\n    ts:metadata.ts\n};\nreturn {\n    msg: {\n        message: message\n    },\n    metadata: metadataNew,\n    msgType: msgType\n};"
+        "tbelScript" : "var msgsNew = [];\nvar i = 0;\nforeach(msg1: msg) {\n    msgsNew.push({\n        msg: {\n            message: {\n                assetName: msg1.metadata\n                    .assetName,\n                area: msg1.metadata.area,\n                areaName: msg1.metadata\n                    .areaName,\n                status: msg1.metadata.status\n            }\n        },\n        metadata: {\n            assetName: msg[0].metadata\n                .assetName,\n            ts: parseLong(metadata.ts)+i\n        },\n        msgType: msgType\n    });\n    i++;\n}\n\n\nreturn msgsNew;"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -83,7 +83,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "97143651-8255-11ef-b5ef-a3c9386e22a5"
+        "id" : "3a0aee11-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "event builder",
       "queueName" : null,
@@ -107,7 +107,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "0825e250-91ea-11ef-b984-655f1d07912d"
+        "id" : "3a0aee12-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "isEvent",
       "queueName" : null,
@@ -142,7 +142,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "54911b80-91ec-11ef-b984-655f1d07912d"
+        "id" : "3a0b1520-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "to asset",
       "queueName" : null,
@@ -168,7 +168,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "22b27420-92ae-11ef-b984-655f1d07912d"
+        "id" : "3a0b1521-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "deduplication",
       "queueName" : null,

@@ -838,7 +838,7 @@
                   "userValue" : null
                 }
               },
-              "value" : false,
+              "value" : true,
               "valueType" : "BOOLEAN"
             }, {
               "key" : {
@@ -896,7 +896,7 @@
                     "userValue" : null
                   }
                 },
-                "value" : false,
+                "value" : true,
                 "valueType" : "BOOLEAN"
               }, {
                 "key" : {

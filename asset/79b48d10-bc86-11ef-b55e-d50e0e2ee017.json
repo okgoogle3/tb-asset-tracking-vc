@@ -1,0 +1,56 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "79b48d10-bc86-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Image geo 1",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "79b48d10-bc86-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6ae9ee10-bc86-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 116631
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1734447122542,
+      "longValue" : null,
+      "strValue" : "#C9B000"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[53.992976004747895,31.007087230682377],[53.995894612764445,31.004319190979007],[53.99667665773646,31.00775241851807],[53.99387636432051,31.01052045822144]]",
+      "key" : "geoPerimeter",
+      "lastUpdateTs" : 1734447136715,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

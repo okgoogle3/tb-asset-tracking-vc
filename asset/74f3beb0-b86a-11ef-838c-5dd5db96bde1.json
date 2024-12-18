@@ -1,0 +1,56 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "74f3beb0-b86a-11ef-838c-5dd5db96bde1"
+    },
+    "label" : null,
+    "name" : "Grey area ",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "74f3beb0-b86a-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "d48790b0-b304-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 86860
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1733995292971,
+      "longValue" : null,
+      "strValue" : "#1B2327"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.754240553407705,37.56751954991193],[48.7545402884968,37.56765097885885],[48.754504921628026,37.567840075170096],[48.75420430212774,37.56770462306077]]",
+      "key" : "geoPerimeter",
+      "lastUpdateTs" : 1733995322709,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

@@ -60,9 +60,21 @@
       "toIndex" : 27,
       "type" : "Inactivity Event"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 29,
+      "type" : "Inactivity Event"
+    }, {
       "fromIndex" : 5,
       "toIndex" : 1,
       "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 28,
+      "type" : "Alarm Cleared"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 28,
+      "type" : "Alarm Created"
     }, {
       "fromIndex" : 6,
       "toIndex" : 17,
@@ -125,6 +137,10 @@
       "type" : "AlarmConfigToDevice"
     }, {
       "fromIndex" : 27,
+      "toIndex" : 26,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 29,
       "toIndex" : 26,
       "type" : "Success"
     } ],
@@ -390,7 +406,7 @@
       "configuration" : {
         "relationsQuery" : {
           "fetchLastLevelOnly" : false,
-          "direction" : "FROM",
+          "direction" : "TO",
           "maxLevel" : 1,
           "filters" : [ {
             "relationType" : "DeviceToAsset",
@@ -579,7 +595,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var msgNew = {\n    areaAlarmRules: {},\n    geofenceThresolds: {},\n    zoneThresolds: {},\n    \"upperThresholdtemperatureEnabled\": false,\n    \"lowerThresholdtemperatureEnabled\": false,\n    \"equalThresholdtemperatureEnabled\": false,\n    \"upperThresholdbatteryLevelEnabled\": false,\n    \"lowerThresholdbatteryLevelEnabled\": false,\n    \"equalThresholdbatteryLevelEnabled\": false,\n    \"movementEnabled\": false,\n    \"idleEnabled\": false\n};\n\n\nreturn {\n    msg: msgNew,\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};"
+        "tbelScript" : "var msgNew = {\n    assignedAlarmProfile:false,\n    areaAlarmRules: {},\n    geofenceThresolds: {},\n    zoneThresolds: {},\n    \"upperThresholdtemperatureEnabled\": false,\n    \"lowerThresholdtemperatureEnabled\": false,\n    \"equalThresholdtemperatureEnabled\": false,\n    \"upperThresholdbatteryLevelEnabled\": false,\n    \"lowerThresholdbatteryLevelEnabled\": false,\n    \"equalThresholdbatteryLevelEnabled\": false,\n    \"movementEnabled\": false,\n    \"idleEnabled\": false\n};\n\n\nreturn {\n    msg: msgNew,\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -663,7 +679,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var result = {};\n\nvar thresholds = msg.alarmConfig.deviceThresholds;\nif(thresholds!=null){\n    foreach(threshold : thresholds){\n    if(threshold.type == \"temperature\" || threshold.type ==  \"batteryLevel\"){\n    result.put(\"upperThreshold\" + threshold.type + \"Enabled\",threshold.status && msg.isActive);\n    result.put(\"lowerThreshold\" + threshold.type + \"Enabled\",threshold.status && msg.isActive);\n    result.put(\"equalThreshold\" + threshold.type + \"Enabled\",threshold.status && msg.isActive);\n    \n    result.put(\"upperThreshold\" + threshold.type,threshold.upperThreshold);\n    result.put(\"lowerThreshold\" + threshold.type,threshold.lowerThreshold);\n    result.put(\"equalThreshold\" + threshold.type,threshold.equalThreshold);\n    }else if (threshold.type == \"movement\" || threshold.type == \"idle\"){\n        result.put(threshold.type + \"Enabled\",threshold.status && msg.isActive);\n        result.put(threshold.type + \"TimeSec\",threshold.timeSec);\n\n    }\n}\n}\n\n\nvar zoneThresolds = {};\nvar geofenceThresolds = {};\nvar areaAlarmRules = {};\n\nif( msg.alarmConfig.locationThresholds!=null){\n     foreach(locationThreshold : msg.alarmConfig.locationThresholds){\n         \nif (locationThreshold.eventType.contains(\"Geofence\")) {\n    processThresholds(locationThreshold.geofences, geofenceThresolds, locationThreshold.eventType, locationThreshold.duration);\n}\n\nif (locationThreshold.eventType.contains(\"Zone\")) {\n    processThresholds(locationThreshold.zones, zoneThresolds, locationThreshold.eventType, locationThreshold.duration);\n}\n     \n }\n}\n\n \n result.put(\"geofenceThresolds\",geofenceThresolds);\n result.put(\"zoneThresolds\",zoneThresolds);\n result.put(\"areaAlarmRules\",areaAlarmRules);\n\n\n\n\nreturn {msg: result, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};\n\n\nfunction processThresholds(thresholdList, thresholdMap, eventType, durationKey) {\n    if (thresholdList != null) {\n        foreach (item : thresholdList) {\n            var itemId = item.id.id;\n            boolean insideEvent = eventType.contains(\"In\");\n            var type = insideEvent ? \"minInsideDuration\" : \"minOutsideDuration\";\n            areaAlarmRules.put(itemId,{\"name\":item.name,\"status\" : (insideEvent ? \"inside\" : \"outside\")});\n            var jsn = {};\n            if (thresholdMap[itemId] == null) {\n                jsn[type] = durationKey;\n                thresholdMap.put(itemId, jsn);\n            } else {\n                jsn = thresholdMap[itemId];\n                jsn[type] = durationKey;\n            }\n        }\n    }\n}"
+        "tbelScript" : "var result = {};\nresult.put(\"assignedAlarmProfile\",true);\nvar thresholds = msg.alarmConfig.deviceThresholds;\nif(thresholds!=null){\n    foreach(threshold : thresholds){\n    if(threshold.type == \"temperature\" || threshold.type ==  \"batteryLevel\"){\n    result.put(\"upperThreshold\" + threshold.type + \"Enabled\",threshold.status && msg.isActive);\n    result.put(\"lowerThreshold\" + threshold.type + \"Enabled\",threshold.status && msg.isActive);\n    result.put(\"equalThreshold\" + threshold.type + \"Enabled\",threshold.status && msg.isActive);\n    \n    result.put(\"upperThreshold\" + threshold.type,threshold.upperThreshold);\n    result.put(\"lowerThreshold\" + threshold.type,threshold.lowerThreshold);\n    result.put(\"equalThreshold\" + threshold.type,threshold.equalThreshold);\n    }else if (threshold.type == \"movement\" || threshold.type == \"idle\"){\n        result.put(threshold.type + \"Enabled\",threshold.status && msg.isActive);\n        result.put(threshold.type + \"TimeSec\",threshold.timeSec);\n\n    }\n}\n}\n\n\nvar zoneThresolds = {};\nvar geofenceThresolds = {};\nvar areaAlarmRules = {};\n\nif( msg.alarmConfig.locationThresholds!=null){\n     foreach(locationThreshold : msg.alarmConfig.locationThresholds){\n         \nif (locationThreshold.eventType.contains(\"Geofence\")) {\n    processThresholds(locationThreshold.geofences, geofenceThresolds, locationThreshold.eventType, locationThreshold.duration);\n}\n\nif (locationThreshold.eventType.contains(\"Zone\")) {\n    processThresholds(locationThreshold.zones, zoneThresolds, locationThreshold.eventType, locationThreshold.duration);\n}\n     \n }\n}\n\n \n result.put(\"geofenceThresolds\",geofenceThresolds);\n result.put(\"zoneThresolds\",zoneThresolds);\n result.put(\"areaAlarmRules\",areaAlarmRules);\n\n\n\n\nreturn {msg: result, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};\n\n\nfunction processThresholds(thresholdList, thresholdMap, eventType, durationKey) {\n    if (thresholdList != null) {\n        foreach (item : thresholdList) {\n            var itemId = item.id.id;\n            boolean insideEvent = eventType.contains(\"In\");\n            var type = insideEvent ? \"minInsideDuration\" : \"minOutsideDuration\";\n            areaAlarmRules.put(itemId,{\"name\":item.name,\"status\" : (insideEvent ? \"inside\" : \"outside\")});\n            var jsn = {};\n            if (thresholdMap[itemId] == null) {\n                jsn[type] = durationKey;\n                thresholdMap.put(itemId, jsn);\n            } else {\n                jsn = thresholdMap[itemId];\n                jsn[type] = durationKey;\n            }\n        }\n    }\n}"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -778,8 +794,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 489,
-        "layoutY" : 134
+        "layoutX" : 809,
+        "layoutY" : 33
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -801,8 +817,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 493,
-        "layoutY" : 218
+        "layoutX" : 813,
+        "layoutY" : 117
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -818,6 +834,53 @@
         "id" : "984ffc20-b3a1-11ef-838c-5dd5db96bde1"
       },
       "name" : "set status",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 202,
+        "layoutY" : 446
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "130bb840-bc77-11ef-b55e-d50e0e2ee017"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5877c8b0-bc77-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "update alert activity/alert type",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 493,
+        "layoutY" : 25
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: {rssi:0}, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\"};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e5507050-bc7e-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "set rssi",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,

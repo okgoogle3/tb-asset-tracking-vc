@@ -45,7 +45,11 @@
       "type" : "Success"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 6,
+      "toIndex" : 16,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 18,
       "type" : "Success"
     }, {
       "fromIndex" : 2,
@@ -65,7 +69,11 @@
       "type" : "Success"
     }, {
       "fromIndex" : 7,
-      "toIndex" : 6,
+      "toIndex" : 16,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 19,
       "type" : "Success"
     }, {
       "fromIndex" : 8,
@@ -87,6 +95,22 @@
       "fromIndex" : 13,
       "toIndex" : 12,
       "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 6,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 0,
     "nodes" : [ {
@@ -101,10 +125,10 @@
         "perimeterKeyName" : "polygon",
         "latitudeKeyName" : "latitude",
         "longitudeKeyName" : "longitude",
-        "minInsideDurationTimeUnit" : "MILLISECONDS",
-        "minOutsideDurationTimeUnit" : "MILLISECONDS",
-        "minInsideDuration" : 1000,
-        "minOutsideDuration" : 1000,
+        "minInsideDurationTimeUnit" : "MINUTES",
+        "minOutsideDurationTimeUnit" : "MINUTES",
+        "minInsideDuration" : 10,
+        "minOutsideDuration" : 10,
         "relationsQuery" : {
           "direction" : "TO",
           "maxLevel" : 2,
@@ -151,7 +175,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -227,7 +251,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -251,7 +275,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -265,8 +289,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1495,
-        "layoutY" : 147
+        "layoutX" : 1862,
+        "layoutY" : 94
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -300,7 +324,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -351,7 +375,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -402,7 +426,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -493,6 +517,142 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1863,
+        "layoutY" : 516
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2ecd6e41-b3f1-11ef-838c-5dd5db96bde1"
+      },
+      "name" : "Save Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1862,
+        "layoutY" : 363
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {\n    msg: msg,\n    metadata: metadata,\n    msgType: \"RELATION_ADD_OR_UPDATE\"\n};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4bacfb60-b3f2-11ef-838c-5dd5db96bde1"
+      },
+      "name" : "RELATION_ADD_OR_UPDATE",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1863,
+        "layoutY" : 440
+      },
+      "configuration" : {
+        "outputValueKey" : "assetsCount",
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "TO",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "AssetToZone",
+            "entityTypes" : [ ]
+          } ]
+        },
+        "outMsgType" : "POST_ATTRIBUTES_REQUEST"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "782f0280-bc5a-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "assetsCount",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.relation.TbRelationsCountNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1517,
+        "layoutY" : 84
+      },
+      "configuration" : {
+        "direction" : "FROM",
+        "entityType" : "ASSET",
+        "entityNamePattern" : "${assetName}",
+        "entityTypePattern" : "Asset",
+        "relationType" : "ZoneToAsset",
+        "createEntityIfNotExists" : false,
+        "removeCurrentRelations" : false,
+        "changeOriginatorToRelatedEntity" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b65b12c0-bd2b-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "create new relation from Zone to Asset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1516,
+        "layoutY" : 153
+      },
+      "configuration" : {
+        "deleteForSingleEntity" : true,
+        "direction" : "FROM",
+        "entityType" : "ASSET",
+        "entityNamePattern" : "${assetName}",
+        "relationType" : "ZoneToAsset"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b65b12c1-bd2b-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "delete relation  from Zone to Asset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbDeleteRelationNode"
     } ],
     "ruleChainConnections" : null
   },

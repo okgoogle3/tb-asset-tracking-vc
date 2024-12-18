@@ -42,6 +42,19 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
+      "id" : "a61cc450-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "0e16be20-b303-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToZone",
+    "typeGroup" : "COMMON",
+    "version" : 122143
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
       "id" : "b8eda950-b30b-11ef-8c91-7baf5304b8d0"
     },
     "to" : {
@@ -76,7 +89,7 @@
     },
     "type" : "AnchorToZone",
     "typeGroup" : "COMMON",
-    "version" : 81873
+    "version" : 91985
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -97,8 +110,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "assetsCount",
-      "lastUpdateTs" : 1733997082321,
-      "longValue" : 1,
+      "lastUpdateTs" : 1734517937298,
+      "longValue" : 2,
       "strValue" : null
     }, {
       "booleanValue" : null,

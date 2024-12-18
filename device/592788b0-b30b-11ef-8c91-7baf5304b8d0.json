@@ -41,57 +41,52 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "9f560fa0-b3d8-11ef-838c-5dd5db96bde1"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "592788b0-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AlarmConfigToDevice",
-    "typeGroup" : "COMMON",
-    "version" : 26289
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "592788b0-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AlarmConfigToDevice",
-    "typeGroup" : "COMMON",
-    "version" : 26321
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "592788b0-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "to" : {
-      "entityType" : "ASSET",
       "id" : "b8eda950-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "592788b0-b30b-11ef-8c91-7baf5304b8d0"
     },
     "type" : "DeviceToAsset",
     "typeGroup" : "COMMON",
-    "version" : 14649
+    "version" : 82341
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f8d6f780-b6dd-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "592788b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 77736
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1733405300768,
+      "lastUpdateTs" : 1734008795458,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"FOUNDRY PRODUCTION\",\"status\":\"inside\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"status\":\"inside\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"MECHANICAL ASSEMBLY PRODUCTION\",\"status\":\"inside\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"METALWORKS PRODUCTION\",\"status\":\"inside\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"PRESS-FORGING FACILITIES PRODUCTION\",\"status\":\"inside\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"name\":\"STEELMAKING PRODUCTION\",\"status\":\"inside\"},\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"Dangerous area\",\"status\":\"inside\"},\"82e05b30-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"High-speed burners\",\"status\":\"inside\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of alloyed\",\"status\":\"inside\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of carbon\",\"status\":\"inside\"},\"b2c13380-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of special cast iron\",\"status\":\"inside\"},\"21b66f60-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Manual arc welding \",\"status\":\"outside\"},\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Metal-arc inert gas welding \",\"status\":\"outside\"},\"a83918d0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Tungsten inert gas arc welding\",\"status\":\"outside\"},\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"Steelmaking units\",\"status\":\"outside\"},\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"Steel vacuum degassing area\",\"status\":\"outside\"}}",
+      "jsonValue" : "{\"978e0480-b63a-11ef-838c-5dd5db96bde1\":{\"name\":\"Artemii Zone\",\"status\":\"inside\"}}",
       "key" : "areaAlarmRules",
-      "lastUpdateTs" : 1733493165382,
+      "lastUpdateTs" : 1733903870550,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAlarmProfile",
+      "lastUpdateTs" : 1733829143107,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -119,11 +114,27 @@
       "longValue" : null,
       "strValue" : ""
     }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1733831367583,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1733831367583,
+      "longValue" : null,
+      "strValue" : null
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"82e05b30-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"b2c13380-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"21b66f60-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"a83918d0-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"}}",
+      "jsonValue" : "{}",
       "key" : "geofenceThresolds",
-      "lastUpdateTs" : 1733493165382,
+      "lastUpdateTs" : 1733819133208,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -135,19 +146,27 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : null,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
-      "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1733405300768,
-      "longValue" : 1733405300767,
+      "key" : "idleEnabled",
+      "lastUpdateTs" : 1733831367583,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"id\":\"b8eda950-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 5\"}",
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1734007973134,
+      "longValue" : 1734007973133,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"id\":\"592788b0-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 5\"}",
       "key" : "info",
-      "lastUpdateTs" : 1733404840084,
+      "lastUpdateTs" : 1733913738208,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -155,7 +174,47 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isAssigned",
-      "lastUpdateTs" : 1733404840084,
+      "lastUpdateTs" : 1733913738208,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1734518647703,
+      "longValue" : 1734518647144,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1734442675251,
+      "longValue" : 1734442675251,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1734442633473,
+      "longValue" : 1734442633473,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1733831367583,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1733831367583,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -167,6 +226,14 @@
       "longValue" : null,
       "strValue" : "Demo Device 5"
     }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "movementEnabled",
+      "lastUpdateTs" : 1733831367583,
+      "longValue" : null,
+      "strValue" : null
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
@@ -175,11 +242,27 @@
       "longValue" : null,
       "strValue" : "Demo Device 5"
     }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1733831367583,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1733831367583,
+      "longValue" : null,
+      "strValue" : null
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"}}",
+      "jsonValue" : "{\"978e0480-b63a-11ef-838c-5dd5db96bde1\":{\"minInsideDuration\":23}}",
       "key" : "zoneThresolds",
-      "lastUpdateTs" : 1733493059301,
+      "lastUpdateTs" : 1733903870550,
       "longValue" : null,
       "strValue" : null
     } ],

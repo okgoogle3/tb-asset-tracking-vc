@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "assignedAsset",
-      "lastUpdateTs" : 1733469448043,
+      "lastUpdateTs" : 1733924350348,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -84,7 +84,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedAsset",
-      "lastUpdateTs" : 1733469448043,
+      "lastUpdateTs" : 1733924350348,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -100,7 +100,7 @@
       "doubleValue" : null,
       "jsonValue" : "{}",
       "key" : "info",
-      "lastUpdateTs" : 1733469448063,
+      "lastUpdateTs" : 1733924350372,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -108,7 +108,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isAssigned",
-      "lastUpdateTs" : 1733469448063,
+      "lastUpdateTs" : 1733924350372,
       "longValue" : null,
       "strValue" : null
     }, {

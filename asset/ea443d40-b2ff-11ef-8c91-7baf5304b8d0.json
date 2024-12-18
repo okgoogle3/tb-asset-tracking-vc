@@ -29,6 +29,45 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
+      "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToZone",
+    "typeGroup" : "COMMON",
+    "version" : 122377
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 122378
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "f14185b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 122389
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
       "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
     },
     "to" : {
@@ -42,15 +81,15 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "11642720-b7b3-11ef-838c-5dd5db96bde1"
+      "id" : "f14185b0-b30b-11ef-8c91-7baf5304b8d0"
     },
     "to" : {
       "entityType" : "ASSET",
       "id" : "ea443d40-b2ff-11ef-8c91-7baf5304b8d0"
     },
-    "type" : "GeofenceToZone",
+    "type" : "AssetToZone",
     "typeGroup" : "COMMON",
-    "version" : 82751
+    "version" : 122387
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -84,8 +123,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "assetsCount",
-      "lastUpdateTs" : 1733996967394,
-      "longValue" : 0,
+      "lastUpdateTs" : 1734518607365,
+      "longValue" : 2,
       "strValue" : null
     }, {
       "booleanValue" : null,

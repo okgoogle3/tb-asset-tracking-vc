@@ -1,0 +1,61 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "5cd85930-b6d0-11ef-838c-5dd5db96bde1"
+    },
+    "label" : null,
+    "name" : "123",
+    "ownerId" : null,
+    "type" : "Alarm config"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "5cd85930-b6d0-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "96a1fdf0-a5bf-11ef-aeb9-2d6dbc59e038"
+    },
+    "type" : "AlarmConfigToInformingUser",
+    "typeGroup" : "COMMON",
+    "version" : 75547
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "5cd85930-b6d0-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "0a9c81f0-b2f7-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 75546
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"description\":null,\"isActive\":false,\"phone\":false,\"email\":true,\"application\":false,\"locationThresholds\":[{\"eventType\":\"Zone In\",\"locations\":{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"23cd6230-b238-11ef-8c91-7baf5304b8d0\"}},\"zones\":[{\"name\":\"FOUNDRY PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"e955c920-b300-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"0e16be20-b303-11ef-8c91-7baf5304b8d0\"}}],\"geofences\":\"\",\"duration\":22,\"index\":\"d634138f-d661-384c-6cce-6d0f003b00a6\"}]}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1733829243505,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

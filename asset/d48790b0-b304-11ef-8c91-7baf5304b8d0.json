@@ -12,10 +12,7 @@
       "entityType" : "CUSTOMER",
       "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
-    "externalId" : {
-      "entityType" : "ASSET",
-      "id" : "d48790b0-b304-11ef-8c91-7baf5304b8d0"
-    },
+    "externalId" : null,
     "id" : {
       "entityType" : "ASSET",
       "id" : "d48790b0-b304-11ef-8c91-7baf5304b8d0"
@@ -37,7 +34,7 @@
     },
     "type" : "ZoneToLocation",
     "typeGroup" : "COMMON",
-    "version" : 86928
+    "version" : 90104
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -71,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1733996496881,
+      "lastUpdateTs" : 1734075365207,
       "longValue" : null,
       "strValue" : "Fleet of metal-cutting equipment totals approximately 820 machines and machining centers including machines produced by German, Italian, Swiss, Japanese, etc. companies.\nProcesses providing machining of parts weight of which ranges from several grams to 300 tons are implemented.\nMachining of complex box-shaped and basic parts makes no difficulty for PJSC NKMZ.\nCapacity of PJSC NKMZ and its engineering and technical potential allow to manufacture almost any of mechanical engineering products meeting requirements of international standards and requests of the most discerning customers.\n"
     }, {
@@ -85,41 +82,41 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[[48.7561246443032,37.56890859019656],[48.7561246443032,37.56690859019656],[48.754124644303204,37.56690859019656],[48.754124644303204,37.56890859019656]]",
+      "jsonValue" : "[[48.75379796152659,37.56576418876649],[48.75616047023023,37.5668478012085],[48.75568303061889,37.56934225559235],[48.75332052191525,37.56825864315034]]",
       "key" : "perimeter",
-      "lastUpdateTs" : 1733995214219,
+      "lastUpdateTs" : 1734082841372,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[48.75568568498935,37.56935299170559]",
+      "jsonValue" : "[48.75568303061889,37.56934225559235]",
       "key" : "pointA",
-      "lastUpdateTs" : 1733995260019,
+      "lastUpdateTs" : 1734082841372,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[48.75616666990525,37.56690279299079]",
+      "jsonValue" : "[48.75616047023023,37.5668478012085]",
       "key" : "pointB",
-      "lastUpdateTs" : 1733995260019,
+      "lastUpdateTs" : 1734082841372,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[48.753313438516706,37.56826402420194]",
+      "jsonValue" : "[48.75332052191525,37.56825864315034]",
       "key" : "pointC",
-      "lastUpdateTs" : 1733995260019,
+      "lastUpdateTs" : 1734082841372,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.7561246443032, 37.56890859019656], [48.7561246443032, 37.56690859019656], [48.754124644303204, 37.56690859019656], [48.754124644303204, 37.56890859019656]]\"}",
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75379796152659, 37.56576418876649], [48.75616047023023, 37.5668478012085], [48.75568303061889, 37.56934225559235], [48.75332052191525, 37.56825864315034]]\"}",
       "key" : "polygon",
-      "lastUpdateTs" : 1733995214241,
+      "lastUpdateTs" : 1734082841379,
       "longValue" : null,
       "strValue" : null
     } ]

@@ -29,6 +29,19 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
+      "id" : "903e5130-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToZone",
+    "typeGroup" : "COMMON",
+    "version" : 122204
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
       "id" : "b2c13380-b301-11ef-8c91-7baf5304b8d0"
     },
     "to" : {
@@ -51,6 +64,32 @@
     "type" : "AssetToZone",
     "typeGroup" : "COMMON",
     "version" : 14717
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "c7d63090-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AssetToZone",
+    "typeGroup" : "COMMON",
+    "version" : 122362
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e955c920-b300-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "c7d63090-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "ZoneToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 122363
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -97,8 +136,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "assetsCount",
-      "lastUpdateTs" : 1733997359325,
-      "longValue" : 1,
+      "lastUpdateTs" : 1734518547425,
+      "longValue" : 3,
       "strValue" : null
     }, {
       "booleanValue" : null,

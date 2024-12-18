@@ -41,59 +41,86 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "9f560fa0-b3d8-11ef-838c-5dd5db96bde1"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AlarmConfigToDevice",
-    "typeGroup" : "COMMON",
-    "version" : 26292
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "0796c050-b3d9-11ef-838c-5dd5db96bde1"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AlarmConfigToDevice",
-    "typeGroup" : "COMMON",
-    "version" : 26317
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "to" : {
-      "entityType" : "ASSET",
       "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
     },
     "type" : "DeviceToAsset",
     "typeGroup" : "COMMON",
-    "version" : 14640
+    "version" : 82350
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "72764540-b6ee-11ef-838c-5dd5db96bde1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 77883
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "BatteryAlarms",
+      "lastUpdateTs" : 1734088087622,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "IdleAlarms",
+      "lastUpdateTs" : 1734088087622,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "MovementAlarms",
+      "lastUpdateTs" : 1734088087622,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1733405240766,
+      "lastUpdateTs" : 1734008795458,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"FOUNDRY PRODUCTION\",\"status\":\"inside\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"status\":\"inside\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"MECHANICAL ASSEMBLY PRODUCTION\",\"status\":\"inside\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"METALWORKS PRODUCTION\",\"status\":\"inside\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"PRESS-FORGING FACILITIES PRODUCTION\",\"status\":\"inside\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"name\":\"STEELMAKING PRODUCTION\",\"status\":\"inside\"},\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"Dangerous area\",\"status\":\"inside\"},\"82e05b30-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"High-speed burners\",\"status\":\"inside\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of alloyed\",\"status\":\"inside\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of carbon\",\"status\":\"inside\"},\"b2c13380-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"Castings producing of special cast iron\",\"status\":\"inside\"},\"21b66f60-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Manual arc welding \",\"status\":\"outside\"},\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Metal-arc inert gas welding \",\"status\":\"outside\"},\"a83918d0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"Tungsten inert gas arc welding\",\"status\":\"outside\"},\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"Steelmaking units\",\"status\":\"outside\"},\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"Steel vacuum degassing area\",\"status\":\"outside\"}}",
+      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"FOUNDRY PRODUCTION\",\"status\":\"inside\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"name\":\"MECHANICAL ASSEMBLY PRODUCTION\",\"status\":\"inside\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"status\":\"outside\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"METALWORKS PRODUCTION\",\"status\":\"outside\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"name\":\"PRESS-FORGING FACILITIES PRODUCTION\",\"status\":\"outside\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"name\":\"STEELMAKING PRODUCTION\",\"status\":\"outside\"},\"978e0480-b63a-11ef-838c-5dd5db96bde1\":{\"name\":\"Artemii Zone\",\"status\":\"inside\"}}",
       "key" : "areaAlarmRules",
-      "lastUpdateTs" : 1733493165358,
+      "lastUpdateTs" : 1733839510347,
       "longValue" : null,
       "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAlarmProfile",
+      "lastUpdateTs" : 1733832071126,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAsset",
+      "lastUpdateTs" : 1734419501969,
+      "longValue" : null,
+      "strValue" : "{\"name\":\"Demo Asset 2\",\"id\":{\"id\":\"986765e0-b30b-11ef-8c91-7baf5304b8d0\",\"entityType\":\"ASSET\"}}"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -121,9 +148,41 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"c7bfe310-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"82e05b30-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"71df1800-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"46376770-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"b2c13380-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"21b66f60-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"75c0b7a0-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"a83918d0-b304-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"69e1eac0-b300-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"},\"2c304eb0-b300-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":\"1\"}}",
+      "jsonValue" : null,
+      "key" : "equalThresholdBatteryLevel",
+      "lastUpdateTs" : 1733907739091,
+      "longValue" : 53,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1733832197257,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdTemperature",
+      "lastUpdateTs" : 1733907736491,
+      "longValue" : 53,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1733832137736,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{}",
       "key" : "geofenceThresolds",
-      "lastUpdateTs" : 1733493165358,
+      "lastUpdateTs" : 1733819133214,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -135,19 +194,35 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : null,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
-      "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1733405240766,
-      "longValue" : 1733405240765,
+      "key" : "idleEnabled",
+      "lastUpdateTs" : 1733832213331,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"id\":\"986765e0-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 2\"}",
+      "jsonValue" : null,
+      "key" : "idleTimeSec",
+      "lastUpdateTs" : 1733907479790,
+      "longValue" : 13,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1734007973133,
+      "longValue" : 1734007973133,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"id\":\"2c1301b0-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 2\"}",
       "key" : "info",
-      "lastUpdateTs" : 1733404785512,
+      "lastUpdateTs" : 1733913780202,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -155,7 +230,63 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isAssigned",
-      "lastUpdateTs" : 1733404785512,
+      "lastUpdateTs" : 1733913780202,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1734518647696,
+      "longValue" : 1734518647144,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1734442675234,
+      "longValue" : 1734442675234,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1734442633104,
+      "longValue" : 1734442633104,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdBatteryLevel",
+      "lastUpdateTs" : 1733907465397,
+      "longValue" : 9,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1733832197257,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdTemperature",
+      "lastUpdateTs" : 1733907538647,
+      "longValue" : 5,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1733832137736,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -167,6 +298,22 @@
       "longValue" : null,
       "strValue" : "Demo Device 2"
     }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "movementEnabled",
+      "lastUpdateTs" : 1733839278054,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "movementTimeSec",
+      "lastUpdateTs" : 1733907475110,
+      "longValue" : 13,
+      "strValue" : null
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
@@ -177,9 +324,65 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":\"1\"}}",
+      "jsonValue" : null,
+      "key" : "temperatureAlarms",
+      "lastUpdateTs" : 1734441821385,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "totalActiveAlarms",
+      "lastUpdateTs" : 1734441821385,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "totalAlarms",
+      "lastUpdateTs" : 1734088087622,
+      "longValue" : 21781,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdBatteryLevel",
+      "lastUpdateTs" : 1733907465397,
+      "longValue" : 90,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1733832197257,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdTemperature",
+      "lastUpdateTs" : 1733907538647,
+      "longValue" : 95,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1733832137736,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":12},\"d48790b0-b304-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":12},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":1},\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":1},\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":1},\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\":{\"minOutsideDuration\":1},\"978e0480-b63a-11ef-838c-5dd5db96bde1\":{\"minInsideDuration\":12}}",
       "key" : "zoneThresolds",
-      "lastUpdateTs" : 1733492910613,
+      "lastUpdateTs" : 1733839510347,
       "longValue" : null,
       "strValue" : null
     } ],

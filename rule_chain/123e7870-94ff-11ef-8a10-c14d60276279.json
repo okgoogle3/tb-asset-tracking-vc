@@ -57,7 +57,7 @@
       },
       "configuration" : {
         "checkForSingleEntity" : false,
-        "direction" : "FROM",
+        "direction" : "TO",
         "entityType" : null,
         "entityId" : null,
         "relationType" : "DeviceToAsset"
@@ -88,7 +88,7 @@
         "entityNamePattern" : null,
         "relationsQuery" : {
           "fetchLastLevelOnly" : false,
-          "direction" : "FROM",
+          "direction" : "TO",
           "maxLevel" : 1,
           "filters" : [ {
             "relationType" : "DeviceToAsset",
@@ -215,7 +215,7 @@
       },
       "configurationVersion" : 2,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",

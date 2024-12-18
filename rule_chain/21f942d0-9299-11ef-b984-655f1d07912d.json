@@ -12,7 +12,7 @@
     },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "49d82690-92d0-11ef-8a10-c14d60276279"
+      "id" : "3afb4182-a7ec-11ef-98fa-d9f628e02cb7"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -102,7 +102,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "39fba760-9299-11ef-b984-655f1d07912d"
+        "id" : "3afa7e37-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "notification switch",
       "queueName" : null,
@@ -126,7 +126,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "39fbce70-9299-11ef-b984-655f1d07912d"
+        "id" : "3afa7e38-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "prepare sms",
       "queueName" : null,
@@ -154,7 +154,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "39fbce71-9299-11ef-b984-655f1d07912d"
+        "id" : "3afaa540-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "prepare email",
       "queueName" : null,
@@ -189,7 +189,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "39fbf580-9299-11ef-b984-655f1d07912d"
+        "id" : "3afaa541-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "send email",
       "queueName" : null,
@@ -214,7 +214,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "39fbf581-9299-11ef-b984-655f1d07912d"
+        "id" : "3afacc54-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "send sms",
       "queueName" : null,
@@ -240,7 +240,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "39fbf582-9299-11ef-b984-655f1d07912d"
+        "id" : "3afaf360-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "get email",
       "queueName" : null,
@@ -266,7 +266,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "39fc1c90-9299-11ef-b984-655f1d07912d"
+        "id" : "3afaf361-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "get phone",
       "queueName" : null,
@@ -300,7 +300,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "39fc1c91-9299-11ef-b984-655f1d07912d"
+        "id" : "3afaf363-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "toAlarmConfig asset",
       "queueName" : null,
@@ -326,7 +326,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "39fc43a0-9299-11ef-b984-655f1d07912d"
+        "id" : "3afaf364-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "check if there are users to be informed",
       "queueName" : null,
@@ -356,7 +356,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "39fc43a1-9299-11ef-b984-655f1d07912d"
+        "id" : "3afaf365-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "duplicate to informing users",
       "queueName" : null,
@@ -380,7 +380,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b4dfbf40-92ab-11ef-b984-655f1d07912d"
+        "id" : "3afaf366-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "prepare web notification (TODO) waining for notifications rule node update",
       "queueName" : null,
@@ -406,7 +406,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b4dfe650-92ab-11ef-b984-655f1d07912d"
+        "id" : "3afb1a70-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "get userId",
       "queueName" : null,
@@ -432,7 +432,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b4e00d60-92ab-11ef-b984-655f1d07912d"
+        "id" : "3afb4180-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "(TODO) send notification",
       "queueName" : null,
@@ -450,7 +450,7 @@
         "direction" : "TO",
         "entityType" : null,
         "entityId" : null,
-        "relationType" : "AlarmConfigToAsset"
+        "relationType" : "AlarmConfigToDevice"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -458,9 +458,9 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "49d82690-92d0-11ef-8a10-c14d60276279"
+        "id" : "3afb4182-a7ec-11ef-98fa-d9f628e02cb7"
       },
-      "name" : "check relation AlarmConfigToAsset",
+      "name" : "check relation AlarmConfigToDevice",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -482,7 +482,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "24c26400-9501-11ef-8a10-c14d60276279"
+        "id" : "3afb4187-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "originatorPhone is present",
       "queueName" : null,
@@ -506,7 +506,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "92a7ef80-9501-11ef-8a10-c14d60276279"
+        "id" : "3afb4189-a7ec-11ef-98fa-d9f628e02cb7"
       },
       "name" : "prepare email",
       "queueName" : null,

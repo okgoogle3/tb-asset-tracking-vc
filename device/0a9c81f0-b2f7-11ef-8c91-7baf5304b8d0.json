@@ -43,7 +43,7 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
-      "id" : "f104da90-b2fa-11ef-8c91-7baf5304b8d0"
+      "id" : "5cd85930-b6d0-11ef-838c-5dd5db96bde1"
     },
     "to" : {
       "entityType" : "DEVICE",
@@ -51,20 +51,7 @@
     },
     "type" : "AlarmConfigToDevice",
     "typeGroup" : "COMMON",
-    "version" : 14415
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "0a9c81f0-b2f7-11ef-8c91-7baf5304b8d0"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "b8261450-b39f-11ef-838c-5dd5db96bde1"
-    },
-    "type" : "DeviceToAsset",
-    "typeGroup" : "COMMON",
-    "version" : 22332
+    "version" : 75546
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -78,9 +65,17 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{}",
+      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"name\":\"FOUNDRY PRODUCTION\",\"status\":\"inside\"},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"status\":\"inside\"}}",
       "key" : "areaAlarmRules",
-      "lastUpdateTs" : 1733399132272,
+      "lastUpdateTs" : 1733829243524,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAlarmProfile",
+      "lastUpdateTs" : 1733819150015,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -88,15 +83,31 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "assignedAsset",
-      "lastUpdateTs" : 1733469464307,
+      "lastUpdateTs" : 1734101017239,
       "longValue" : null,
       "strValue" : "{\"name\":\"test dima dev\",\"id\":{\"id\":\"b8261450-b39f-11ef-838c-5dd5db96bde1\",\"entityType\":\"ASSET\"}}"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdbatteryLevelEnabled",
+      "lastUpdateTs" : 1733818225016,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdtemperatureEnabled",
+      "lastUpdateTs" : 1733818225016,
+      "longValue" : null,
+      "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : "{}",
       "key" : "geofenceThresolds",
-      "lastUpdateTs" : 1733398168999,
+      "lastUpdateTs" : 1733818557491,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -105,6 +116,14 @@
       "jsonValue" : null,
       "key" : "hasRelatedAsset",
       "lastUpdateTs" : 1733469464307,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "idleEnabled",
+      "lastUpdateTs" : 1733818225016,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -118,9 +137,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"id\":\"b8261450-b39f-11ef-838c-5dd5db96bde1\",\"name\":\"test dima dev\"}",
+      "jsonValue" : "{\"id\":\"0a9c81f0-b2f7-11ef-8c91-7baf5304b8d0\",\"name\":\"test dima dev\"}",
       "key" : "info",
-      "lastUpdateTs" : 1733469464339,
+      "lastUpdateTs" : 1733913814397,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -128,7 +147,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isAssigned",
-      "lastUpdateTs" : 1733469464339,
+      "lastUpdateTs" : 1733913814397,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -140,11 +159,51 @@
       "longValue" : 1733470809112,
       "strValue" : null
     }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdbatteryLevelEnabled",
+      "lastUpdateTs" : 1733818225016,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdtemperatureEnabled",
+      "lastUpdateTs" : 1733818225016,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "movementEnabled",
+      "lastUpdateTs" : 1733818225016,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdbatteryLevelEnabled",
+      "lastUpdateTs" : 1733818225016,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdtemperatureEnabled",
+      "lastUpdateTs" : 1733818225016,
+      "longValue" : null,
+      "strValue" : null
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{}",
+      "jsonValue" : "{\"e955c920-b300-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":22},\"0e16be20-b303-11ef-8c91-7baf5304b8d0\":{\"minInsideDuration\":22}}",
       "key" : "zoneThresolds",
-      "lastUpdateTs" : 1733399132272,
+      "lastUpdateTs" : 1733829243524,
       "longValue" : null,
       "strValue" : null
     } ],

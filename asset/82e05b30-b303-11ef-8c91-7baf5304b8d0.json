@@ -36,19 +36,6 @@
     "type" : "GeofenceToZone",
     "typeGroup" : "COMMON",
     "version" : 14493
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "a61cc450-b30b-11ef-8c91-7baf5304b8d0"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "82e05b30-b303-11ef-8c91-7baf5304b8d0"
-    },
-    "type" : "AssetToGeofence",
-    "typeGroup" : "COMMON",
-    "version" : 87551
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

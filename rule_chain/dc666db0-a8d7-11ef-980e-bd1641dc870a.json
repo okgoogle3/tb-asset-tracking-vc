@@ -45,6 +45,10 @@
       "toIndex" : 10,
       "type" : "Attributes Updated"
     }, {
+      "fromIndex" : 2,
+      "toIndex" : 11,
+      "type" : "Entity Created"
+    }, {
       "fromIndex" : 6,
       "toIndex" : 2,
       "type" : "Success"
@@ -258,7 +262,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var result = {};\n\n\nvar thresholds = msg.deviceThresholds;\nif(thresholds!=null){\n    foreach(threshold : thresholds){\n    if(threshold.type == \"temperature\" || threshold.type ==  \"batteryLevel\"){\n    result.put(\"upperThreshold\" + threshold.type + \"Enabled\",threshold.status && msg.isActive);\n    result.put(\"lowerThreshold\" + threshold.type + \"Enabled\",threshold.status && msg.isActive);\n    result.put(\"equalThreshold\" + threshold.type + \"Enabled\",threshold.status && msg.isActive);\n    \n    result.put(\"upperThreshold\" + threshold.type,threshold.upperThreshold);\n    result.put(\"lowerThreshold\" + threshold.type,threshold.lowerThreshold);\n    result.put(\"equalThreshold\" + threshold.type,threshold.equalThreshold);\n    }else if (threshold.type == \"movement\" || threshold.type == \"idle\"){\n        result.put(threshold.type + \"Enabled\",threshold.status && msg.isActive);\n        result.put(threshold.type + \"TimeSec\",threshold.timeSec);\n\n    }\n}\n}\n\n\nvar zoneThresolds = {};\nvar geofenceThresolds = {};\nvar areaAlarmRules = {};\n\nif( msg.alarmConfig.locationThresholds!=null){\n     foreach(locationThreshold : msg.alarmConfig.locationThresholds){\n         \nif (locationThreshold.eventType.contains(\"Geofence\")) {\n    processThresholds(locationThreshold.geofences, geofenceThresolds, locationThreshold.eventType, locationThreshold.duration);\n}\n\nif (locationThreshold.eventType.contains(\"Zone\")) {\n    processThresholds(locationThreshold.zones, zoneThresolds, locationThreshold.eventType, locationThreshold.duration);\n}\n     \n }\n}\n\n \n result.put(\"geofenceThresolds\",geofenceThresolds);\n result.put(\"zoneThresolds\",zoneThresolds);\n result.put(\"areaAlarmRules\",areaAlarmRules);\n\n\n\n\nreturn {msg: result, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};\n\n\nfunction processThresholds(thresholdList, thresholdMap, eventType, durationKey) {\n    if (thresholdList != null) {\n        foreach (item : thresholdList) {\n            var itemId = item.id.id;\n            boolean insideEvent = eventType.contains(\"In\");\n            var type = insideEvent ? \"minInsideDuration\" : \"minOutsideDuration\";\n            areaAlarmRules.put(itemId,{\"name\":item.name,\"status\" : (insideEvent ? \"inside\" : \"outside\")});\n            var jsn = {};\n            if (thresholdMap[itemId] == null) {\n                jsn[type] = durationKey;\n                thresholdMap.put(itemId, jsn);\n            } else {\n                jsn = thresholdMap[itemId];\n                jsn[type] = durationKey;\n            }\n        }\n    }\n}"
+        "tbelScript" : "var result = {};\nvar variableMap = {\n    \"Temperature\" : \"Temperature\",\n    \"Battery level\" : \"BatteryLevel\",\n    \"Movement\" : \"movement\",\n    \"Idle\" : \"idle\",\n};\nvar thresholds = msg.alarmConfig.deviceThresholds;\n// return {msg: {test:thresholds}, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};\n\n\nvar activeGlobal = msg.alarmConfig.isActive;\n\nif(thresholds!=null){\n    foreach(threshold : thresholds){\n    if(threshold.type == \"Temperature\" || threshold.type ==  \"Battery level\"){\n      type =  variableMap[threshold.type];\n    result.put(\"upperThreshold\" +type + \"Enabled\",threshold.status && activeGlobal);\n    result.put(\"lowerThreshold\" +type + \"Enabled\",threshold.status && activeGlobal);\n    result.put(\"equalThreshold\" +type + \"Enabled\",threshold.status && activeGlobal);\n    \n    result.put(\"upperThreshold\" + type,threshold.upperThreshold);\n    result.put(\"lowerThreshold\" + type,threshold.lowerThreshold);\n    result.put(\"equalThreshold\" + type,threshold.equalThreshold);\n    }else if (threshold.type == \"Movement\" || threshold.type == \"Idle\"){\n              type =  variableMap[threshold.type];\n        result.put(type + \"Enabled\",threshold.status && activeGlobal);\n        result.put(type + \"TimeSec\",threshold.durationThreshold);\n\n    }\n}\n}\n\n\nvar zoneThresolds = {};\nvar geofenceThresolds = {};\nvar areaAlarmRules = {};\n\nif( msg.alarmConfig.locationThresholds!=null){\n     foreach(locationThreshold : msg.alarmConfig.locationThresholds){\n         \nif (locationThreshold.eventType.contains(\"Geofence\")) {\n    processThresholds(locationThreshold.geofences, geofenceThresolds, locationThreshold.eventType, locationThreshold.duration);\n}\n\nif (locationThreshold.eventType.contains(\"Zone\")) {\n    processThresholds(locationThreshold.zones, zoneThresolds, locationThreshold.eventType, locationThreshold.duration);\n}\n     \n }\n}\n\n \n result.put(\"geofenceThresolds\",geofenceThresolds);\n result.put(\"zoneThresolds\",zoneThresolds);\n result.put(\"areaAlarmRules\",areaAlarmRules);\n\n\n\n\nreturn {msg: result, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};\n\n\nfunction processThresholds(thresholdList, thresholdMap, eventType, durationKey) {\n    if (thresholdList != null) {\n        foreach (item : thresholdList) {\n            var itemId = item.id.id;\n            boolean insideEvent = eventType.contains(\"In\");\n            var type = insideEvent ? \"minInsideDuration\" : \"minOutsideDuration\";\n            areaAlarmRules.put(itemId,{\"name\":item.name,\"status\" : (insideEvent ? \"inside\" : \"outside\")});\n            var jsn = {};\n            if (thresholdMap[itemId] == null) {\n                jsn[type] = durationKey;\n                thresholdMap.put(itemId, jsn);\n            } else {\n                jsn = thresholdMap[itemId];\n                jsn[type] = durationKey;\n            }\n        }\n    }\n}"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -322,6 +326,31 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 493,
+        "layoutY" : 201
+      },
+      "configuration" : {
+        "groupNamePattern" : "configuration assets",
+        "createGroupIfNotExists" : true,
+        "removeFromCurrentGroups" : false,
+        "groupCacheExpiration" : 300
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "24586040-bd11-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "add to configuration assets group",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbAddToGroupNode"
     } ],
     "ruleChainConnections" : null
   },
