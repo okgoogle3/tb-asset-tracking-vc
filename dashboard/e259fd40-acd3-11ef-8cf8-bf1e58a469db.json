@@ -10199,7 +10199,14 @@
               "type" : "entity",
               "name" : "",
               "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
-              "dataKeys" : [ ],
+              "dataKeys" : [ {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.7003339545422091
+              } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
