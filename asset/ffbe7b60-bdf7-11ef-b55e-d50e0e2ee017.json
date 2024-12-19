@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : null
+      "description" : ""
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -34,17 +34,17 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[[48.75040396498977,37.580495923679514],[48.75240396498977,37.580495923679514],[48.75240396498977,37.57849592367952],[48.75040396498977,37.57849592367952]]",
+      "jsonValue" : "[[48.750474177374954,37.58041742833742],[48.75240396498977,37.580495923679514],[48.752333752604585,37.57857441902161],[48.75040396498977,37.57849592367952]]",
       "key" : "perimeter",
-      "lastUpdateTs" : 1734605837813,
+      "lastUpdateTs" : 1734605846078,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[48.75240396498977,37.57849592367952]",
+      "jsonValue" : "[48.752333752604585,37.57857441902161]",
       "key" : "pointA",
-      "lastUpdateTs" : 1734605837813,
+      "lastUpdateTs" : 1734605846078,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : "[48.75240396498977,37.580495923679514]",
       "key" : "pointB",
-      "lastUpdateTs" : 1734605837813,
+      "lastUpdateTs" : 1734605846078,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,15 +60,15 @@
       "doubleValue" : null,
       "jsonValue" : "[48.75040396498977,37.57849592367952]",
       "key" : "pointC",
-      "lastUpdateTs" : 1734605837813,
+      "lastUpdateTs" : 1734605846078,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75040396498977, 37.580495923679514], [48.75240396498977, 37.580495923679514], [48.75240396498977, 37.57849592367952], [48.75040396498977, 37.57849592367952]]\"}",
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.750474177374954, 37.58041742833742], [48.75240396498977, 37.580495923679514], [48.752333752604585, 37.57857441902161], [48.75040396498977, 37.57849592367952]]\"}",
       "key" : "polygon",
-      "lastUpdateTs" : 1734605837841,
+      "lastUpdateTs" : 1734605846123,
       "longValue" : null,
       "strValue" : null
     } ]
