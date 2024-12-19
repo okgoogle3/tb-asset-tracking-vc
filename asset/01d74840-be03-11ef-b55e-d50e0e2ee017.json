@@ -21,6 +21,14 @@
     "type" : "Alarm config"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"description\":null,\"isActive\":false,\"phone\":false,\"email\":true,\"application\":false}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1734610559707,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
