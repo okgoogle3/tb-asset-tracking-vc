@@ -27,7 +27,7 @@
       "id" : "b3cbc330-be19-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "wef",
+    "name" : "wefwef",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "temporaryDevice"
@@ -38,7 +38,31 @@
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1734620307182,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 48.74836893168731,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1734620322410,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 37.570281028747566,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1734620322410,
+      "longValue" : null,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
