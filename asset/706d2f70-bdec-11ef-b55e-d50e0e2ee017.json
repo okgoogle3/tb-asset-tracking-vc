@@ -1,0 +1,34 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "706d2f70-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Tkachenko test alarm config",
+    "ownerId" : null,
+    "type" : "Alarm config"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"description\":null,\"isActive\":true,\"phone\":true,\"email\":true,\"application\":true,\"deviceThresholds\":[{\"type\":\"Temperature\",\"status\":true,\"upperThreshold\":null,\"lowerThreshold\":null,\"equalThreshold\":null},{\"type\":\"Battery level\",\"status\":false,\"upperThreshold\":null,\"lowerThreshold\":null,\"equalThreshold\":null},{\"type\":\"Movement\",\"status\":false,\"durationThreshold\":null},{\"type\":\"Idle\",\"status\":false,\"durationThreshold\":null}],\"locationThresholds\":[{\"index\":\"206f7f48-bd69-6d8c-604a-ecddacc16116\",\"eventType\":\"Zone In\",\"locations\":{\"name\":\"Artemii Location\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"493be6a0-bdfe-11ef-b55e-d50e0e2ee017\"}},\"zones\":[{\"name\":\"Artemii Zone\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"4e634cb0-be01-11ef-b55e-d50e0e2ee017\"}}],\"geofences\":\"\",\"duration\":23}]}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1734610006651,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
