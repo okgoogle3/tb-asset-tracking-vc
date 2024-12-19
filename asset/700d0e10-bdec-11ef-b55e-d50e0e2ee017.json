@@ -1,0 +1,34 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "700d0e10-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Demo Alert Configuration 1",
+    "ownerId" : null,
+    "type" : "Alarm config"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"description\":null,\"isActive\":true,\"phone\":false,\"email\":false,\"application\":false,\"deviceThresholds\":[{\"type\":\"Temperature\",\"status\":true,\"upperThreshold\":95,\"lowerThreshold\":5,\"equalThreshold\":53},{\"type\":\"Battery level\",\"status\":true,\"upperThreshold\":90,\"lowerThreshold\":9,\"equalThreshold\":53},{\"type\":\"Movement\",\"status\":true,\"durationThreshold\":13},{\"type\":\"Idle\",\"status\":true,\"durationThreshold\":13}],\"locationThresholds\":[{\"index\":\"3425a6ac-2d53-a42d-be1e-181bf8a7c32b\",\"eventType\":\"Zone In\",\"locations\":{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"23cd6230-b238-11ef-8c91-7baf5304b8d0\"}},\"zones\":[{\"name\":\"FOUNDRY PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"e955c920-b300-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"MECHANICAL ASSEMBLY PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"d48790b0-b304-11ef-8c91-7baf5304b8d0\"}}],\"geofences\":\"\",\"duration\":12},{\"eventType\":\"Zone Out\",\"locations\":{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"23cd6230-b238-11ef-8c91-7baf5304b8d0\"}},\"zones\":[{\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"0e16be20-b303-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"METALWORKS PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"faa29ed0-b303-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"PRESS-FORGING FACILITIES PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"d6ef9760-b301-11ef-8c91-7baf5304b8d0\"}},{\"name\":\"STEELMAKING PRODUCTION\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"ea443d40-b2ff-11ef-8c91-7baf5304b8d0\"}}],\"geofences\":\"\",\"duration\":1,\"index\":\"52d733d1-ce71-32b3-724b-7babf33f02c3\"},{\"index\":\"f50c1844-1745-e2d9-f07b-453348ecc9e8\",\"eventType\":\"Zone In\",\"locations\":{\"name\":\"Artemii Location\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"41ae9270-b60b-11ef-838c-5dd5db96bde1\"}},\"zones\":[{\"name\":\"Artemii Zone\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"978e0480-b63a-11ef-838c-5dd5db96bde1\"}}],\"geofences\":\"\",\"duration\":12}]}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1733907739085,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
