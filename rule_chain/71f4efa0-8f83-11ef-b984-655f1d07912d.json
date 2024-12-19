@@ -82,7 +82,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmDetailsBuildTbel" : "var details = {\nstatus: metadata.status,\narea: metadata.area\n};\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\n\ndetails[metadata.area] = metadata.areaName;\nreturn details;",
         "useMessageAlarmData" : false,
         "overwriteAlarmDetails" : false,
         "alarmType" : "$[alarmName]",
