@@ -46,6 +46,22 @@
       "lastUpdateTs" : 1734619808136,
       "longValue" : null,
       "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -0.010270182236685153,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1734619830372,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -0.03570556640625001,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1734619830372,
+      "longValue" : null,
+      "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
   }
