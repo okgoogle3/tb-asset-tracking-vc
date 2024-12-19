@@ -644,28 +644,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 400,
-        "layoutY" : 405
-      },
-      "configuration" : {
-        "originatorTypes" : [ "DEVICE" ]
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "38f3d390-bdf7-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "еуые",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbOriginatorTypeFilterNode"
     } ],
     "ruleChainConnections" : null
   },
