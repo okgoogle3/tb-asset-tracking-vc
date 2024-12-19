@@ -390,7 +390,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var areaAlarms;\n\nif (metadata.ss_areaAlarms == null) {\n    areaAlarms = {\n        \"zone\": {\n            \"inside\": [],\n            \"outside\": []\n        },\n        \"geofence\": {\n            \"inside\": [],\n            \"outside\": []\n        }\n    };\n} else {\n    areaAlarms = JSON.parse(metadata.ss_areaAlarms);\n}\n\n\nreturn {\n    msg: msg,\n    metadata: {\n        areaAlarms : JSON.stringify(areaAlarms)\n    },\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};"
+        "tbelScript" : "var areaAlarms;\n\nif (metadata.ss_areaAlarms == null || msg.totalActiveAlarms == 0 ) {\n    areaAlarms = {\n        \"zone\": {\n            \"inside\": [],\n            \"outside\": []\n        },\n        \"geofence\": {\n            \"inside\": [],\n            \"outside\": []\n        }\n    };\n} else {\n    areaAlarms = JSON.parse(metadata.ss_areaAlarms);\n}\n\n\nreturn {\n    msg: msg,\n    metadata: {\n        areaAlarms : JSON.stringify(areaAlarms)\n    },\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
