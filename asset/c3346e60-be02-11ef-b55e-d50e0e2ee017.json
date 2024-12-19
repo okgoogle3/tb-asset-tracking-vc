@@ -16,11 +16,35 @@
       "id" : "c3346e60-be02-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "artemii geo",
+    "name" : "Artemii geo",
     "ownerId" : null,
     "type" : "Geofence"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1734610454625,
+      "longValue" : null,
+      "strValue" : "#0086C9"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[50.00023318573673,30.997729518984336],[49.9996676834451,31.00339463559959]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1734610457267,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[50.00023318573673, 30.997729518984336], [49.9996676834451, 31.00339463559959]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1734610457278,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
