@@ -27,7 +27,7 @@
       "id" : "2ac15d70-be19-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "dima",
+    "name" : "dima1",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "temporaryDevice"
@@ -38,7 +38,31 @@
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1734620077268,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -0.020629882366761495,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1734620085552,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.36529541015625006,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1734620085552,
+      "longValue" : null,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
