@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -20,9 +20,25 @@
     "label" : null,
     "name" : "tkachenko zone 2",
     "ownerId" : null,
-    "type" : "Temporary asset"
+    "type" : "Shape"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "perimeter",
+      "lastUpdateTs" : 1734613245076,
+      "longValue" : null,
+      "strValue" : "[[0.001, 0.001], [0.001, -0.001], [-0.001, -0.001], [-0.001, 0.001]]"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[0.001, 0.001], [0.001, -0.001], [-0.001, -0.001], [-0.001, 0.001]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1734613245091,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
