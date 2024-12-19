@@ -1,7 +1,9 @@
 {
   "entityType" : "ENTITY_GROUP",
   "entity" : {
-    "additionalInfo" : null,
+    "additionalInfo" : {
+      "description" : ""
+    },
     "configuration" : {
       "columns" : [ {
         "type" : "ENTITY_FIELD",
@@ -21,15 +23,15 @@
     },
     "edgeGroupAll" : false,
     "externalId" : null,
-    "groupAll" : true,
+    "groupAll" : false,
     "id" : {
       "entityType" : "ENTITY_GROUP",
-      "id" : "d702f2e0-87c0-11ef-acbf-19d9671e26a9"
+      "id" : "17bcae50-be05-11ef-b55e-d50e0e2ee017"
     },
-    "name" : "All",
+    "name" : "toRestore",
     "ownerId" : {
-      "entityType" : "CUSTOMER",
-      "id" : "d700f710-87c0-11ef-acbf-19d9671e26a9"
+      "entityType" : "TENANT",
+      "id" : "964a19f0-a5bf-11ef-aeb9-2d6dbc59e038"
     },
     "type" : "ASSET"
   },
