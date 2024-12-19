@@ -57,7 +57,7 @@
       "type" : "REST API request"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 21,
+      "toIndex" : 15,
       "type" : "Entity Deleted"
     }, {
       "fromIndex" : 6,
@@ -89,7 +89,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 15,
-      "toIndex" : 16,
+      "toIndex" : 21,
       "type" : "Success"
     }, {
       "fromIndex" : 16,
@@ -109,7 +109,7 @@
       "type" : "True"
     }, {
       "fromIndex" : 21,
-      "toIndex" : 15,
+      "toIndex" : 16,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
@@ -474,8 +474,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 828,
-        "layoutY" : 673
+        "layoutX" : 817,
+        "layoutY" : 591
       },
       "configuration" : {
         "searchEntityGroupForTenantOnly" : true,
@@ -621,8 +621,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 823,
-        "layoutY" : 578
+        "layoutX" : 822,
+        "layoutY" : 675
       },
       "configuration" : {
         "version" : 0
@@ -633,7 +633,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1760aba0-be05-11ef-b55e-d50e0e2ee017"
+        "id" : "04c70240-be10-11ef-b55e-d50e0e2ee017"
       },
       "name" : "SequentialByOriginator",
       "queueName" : "SequentialByOriginator",
