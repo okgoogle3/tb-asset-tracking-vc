@@ -1,0 +1,66 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "8331c730-a729-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "dcdd7d70-b704-11ef-838c-5dd5db96bde1"
+    },
+    "label" : null,
+    "name" : "Artemii Tag Config",
+    "ownerId" : null,
+    "type" : "deviceConfig"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectivity",
+      "lastUpdateTs" : 1733928250384,
+      "longValue" : null,
+      "strValue" : "RFID (MQQT)"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733928250384,
+      "longValue" : null,
+      "strValue" : "Description"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "firmware",
+      "lastUpdateTs" : 1733928250384,
+      "longValue" : null,
+      "strValue" : "Artemii Firmware"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "frequency",
+      "lastUpdateTs" : 1733928250384,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "type",
+      "lastUpdateTs" : 1733928250384,
+      "longValue" : null,
+      "strValue" : "Tag"
+    } ]
+  }
+}
