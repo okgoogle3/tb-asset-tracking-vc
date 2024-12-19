@@ -33,7 +33,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 18,
+      "toIndex" : 11,
       "type" : "Success"
     }, {
       "fromIndex" : 3,
@@ -41,7 +41,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 4,
-      "toIndex" : 10,
+      "toIndex" : 7,
       "type" : "Success"
     }, {
       "fromIndex" : 5,
@@ -65,34 +65,10 @@
       "type" : "Success"
     }, {
       "fromIndex" : 9,
-      "toIndex" : 15,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 10,
-      "toIndex" : 11,
+      "toIndex" : 10,
       "type" : "Success"
     }, {
       "fromIndex" : 11,
-      "toIndex" : 12,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 12,
-      "toIndex" : 13,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 14,
-      "toIndex" : 17,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 15,
-      "toIndex" : 16,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 16,
-      "toIndex" : 14,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 18,
       "toIndex" : 3,
       "type" : "Success"
     } ],
@@ -301,89 +277,6 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 979,
-        "layoutY" : 820
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "areaAlarms = msg.areaAlarms;\n\nvar alertActivity = msg.totalActiveAlarms > 0;\nvar alertTypes = [];\nif(msg.temperatureAlarms>0){\n    alertTypes.add(\"Temperature\");\n}\nif(msg.BatteryAlarms>0){\n    alertTypes.add(\"Battery level\");\n}\nif(msg.MovementAlarms>0){\n    alertTypes.add(\"Moving\");\n}\nif(msg.IdleAlarms>0){\n    alertTypes.add(\"Idle\");\n}\n\nif(areaAlarms.zone.inside.length>0){\n    alertTypes.add(\"Zone in\");\n}\nif(areaAlarms.zone.outside.length>0){\n    alertTypes.add(\"Zone out\");\n}\n\n\n\nvar newMsg = {\n    alertActivity: alertActivity,\n    alertTypes: JSON.stringify(alertTypes)\n};\nreturn {\n    msg: newMsg,\n    metadata: metadata,\n    msgType: msgType\n};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "764639a3-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "build alertTypes /alertActivity",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 985,
-        "layoutY" : 905
-      },
-      "configuration" : {
-        "originatorSource" : "RELATED",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : null,
-        "entityNamePattern" : null,
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "TO",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "DeviceToAsset",
-            "entityTypes" : [ "ASSET" ]
-          } ]
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "764639a4-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "to asset",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 983,
-        "layoutY" : 996
-      },
-      "configuration" : {
-        "scope" : "SERVER_SCOPE",
-        "notifyDevice" : false,
-        "sendAttributesUpdatedNotification" : false,
-        "updateAttributesOnlyOnValueChange" : true
-      },
-      "configurationVersion" : 2,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "764639a5-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "save attributes",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 491,
         "layoutY" : 940
       },
@@ -482,138 +375,6 @@
       "id" : {
         "entityType" : "RULE_NODE",
         "id" : "764660b2-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "save attributes",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 970,
-        "layoutY" : 1252
-      },
-      "configuration" : {
-        "alarmsCountMappings" : [ {
-          "target" : "totalActiveAlarms",
-          "typesList" : [ ],
-          "severityList" : [ ],
-          "statusList" : [ "ACTIVE_UNACK", "ACTIVE_ACK" ]
-        }, {
-          "target" : "temperatureAlarms",
-          "typesList" : [ "Temperature is high", "Temperature is low", "Temperature is equal" ],
-          "severityList" : [ ],
-          "statusList" : [ "ACTIVE_UNACK", "ACTIVE_ACK" ]
-        }, {
-          "target" : "BatteryAlarms",
-          "typesList" : [ "Battery level is high", "Battery level is low", "Battery level is equal" ],
-          "severityList" : [ ],
-          "statusList" : [ "ACTIVE_UNACK", "ACTIVE_ACK" ]
-        }, {
-          "target" : "MovementAlarms",
-          "typesList" : [ "Movement detected" ],
-          "severityList" : [ ],
-          "statusList" : [ "ACTIVE_UNACK", "ACTIVE_ACK" ]
-        }, {
-          "target" : "IdleAlarms",
-          "typesList" : [ "Device is standing still" ],
-          "severityList" : [ ],
-          "statusList" : [ "ACTIVE_UNACK", "ACTIVE_ACK" ]
-        } ],
-        "countAlarmsForPropagationEntities" : false,
-        "propagationEntityTypes" : [ ],
-        "outMsgType" : "POST_ATTRIBUTES_REQUEST"
-      },
-      "configurationVersion" : 2,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "764660b3-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "count alarms",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.analytics.latest.alarm.TbAlarmsCountNodeV2"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 976,
-        "layoutY" : 1083
-      },
-      "configuration" : {
-        "originatorSource" : "RELATED",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : null,
-        "entityNamePattern" : null,
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "FROM",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "DeviceToAsset",
-            "entityTypes" : [ "DEVICE" ]
-          } ]
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "764660b4-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "to device",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 968,
-        "layoutY" : 1171
-      },
-      "configuration" : {
-        "copyFrom" : "METADATA",
-        "keys" : [ "alarm" ]
-      },
-      "configurationVersion" : 2,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "764660b5-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "copy",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbCopyKeysNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 965,
-        "layoutY" : 1340
-      },
-      "configuration" : {
-        "scope" : "SERVER_SCOPE",
-        "notifyDevice" : false,
-        "sendAttributesUpdatedNotification" : false,
-        "updateAttributesOnlyOnValueChange" : true
-      },
-      "configurationVersion" : 2,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "764660b6-bdec-11ef-b55e-d50e0e2ee017"
       },
       "name" : "save attributes",
       "queueName" : null,
