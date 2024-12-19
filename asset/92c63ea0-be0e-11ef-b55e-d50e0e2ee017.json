@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "0d968e80-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "92c63ea0-be0e-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Artemii Location 2",
+    "ownerId" : null,
+    "type" : "Location"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
