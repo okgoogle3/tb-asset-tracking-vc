@@ -1006,7 +1006,7 @@
               }, {
                 "name" : "originator",
                 "type" : "alarm",
-                "label" : "Originator",
+                "label" : "Device",
                 "color" : "#4caf50",
                 "settings" : {
                   "useCellStyleFunction" : false,
@@ -1015,49 +1015,12 @@
                   "cellContentFunction" : ""
                 },
                 "_hash" : 0.2780007688856758,
-                "funcBody" : null
-              }, {
-                "name" : "type",
-                "type" : "alarm",
-                "label" : "Alert type",
-                "color" : "#f44336",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.7323586880398418,
                 "funcBody" : null,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              }, {
-                "name" : "severity",
-                "type" : "alarm",
-                "label" : "Severity",
-                "color" : "#ffc107",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : false
-                },
-                "_hash" : 0.09927019860088193,
-                "funcBody" : null
-              }, {
-                "name" : "status",
-                "type" : "alarm",
-                "label" : "Status",
-                "color" : "#607d8b",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.6588418951443418,
-                "funcBody" : null
               }, {
                 "name" : "zone",
                 "type" : "alarm",
@@ -1104,6 +1067,54 @@
                 "units" : null,
                 "decimals" : null,
                 "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "type",
+                "type" : "alarm",
+                "label" : "Alert type",
+                "color" : "#f44336",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "if(value.includes(\"zone in\")){\n    return \"Zone in\";\n} else if(value.includes(\"zone in\")){\n    return \"Zone out\";\n} else {\n    return value;\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.7323586880398418,
+                "funcBody" : null,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "status",
+                "type" : "alarm",
+                "label" : "Status",
+                "color" : "#607d8b",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : false,
+                  "cellContentFunction" : "if(value.includes(\"ACTIVE\")){\n    return \"Active\";\n} else {\n    return \"Inactive\";\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.6588418951443418,
+                "funcBody" : null,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               } ],
