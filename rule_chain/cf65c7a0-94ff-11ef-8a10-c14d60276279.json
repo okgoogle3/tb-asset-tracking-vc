@@ -1,0 +1,479 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "cf65c7a0-94ff-11ef-8a10-c14d60276279"
+    },
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "698e7510-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "cf65c7a0-94ff-11ef-8a10-c14d60276279"
+    },
+    "name" : "Geofence Rule Chain",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 3,
+      "type" : "Entered"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 4,
+      "type" : "Left"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 8,
+      "type" : "Outside"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 10,
+      "type" : "Inside"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 0,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 12,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 1,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1252,
+        "layoutY" : 101
+      },
+      "configuration" : {
+        "deleteForSingleEntity" : true,
+        "direction" : "TO",
+        "entityType" : "ASSET",
+        "entityNamePattern" : "${assetName}",
+        "relationType" : "AssetToGeofence"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e4e00-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "delete relation assetToGeofence",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbDeleteRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 349,
+        "layoutY" : 250
+      },
+      "configuration" : {
+        "metadataDurationConfigKey" : "geofenceThresolds",
+        "fetchPerimeterInfoFromMessageMetadata" : false,
+        "perimeterKeyName" : "polygon",
+        "latitudeKeyName" : "latitude",
+        "longitudeKeyName" : "longitude",
+        "minInsideDurationTimeUnit" : "SECONDS",
+        "minOutsideDurationTimeUnit" : "SECONDS",
+        "minInsideDuration" : 10,
+        "minOutsideDuration" : 10,
+        "relationsQuery" : {
+          "direction" : "TO",
+          "maxLevel" : 3,
+          "filters" : [ {
+            "relationType" : "ZoneToLocation",
+            "entityTypes" : [ "ASSET" ],
+            "negate" : false
+          }, {
+            "relationType" : "LocationToAsset",
+            "entityTypes" : [ "ASSET" ],
+            "negate" : false
+          }, {
+            "relationType" : "GeofenceToZone",
+            "entityTypes" : [ "ASSET" ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : true
+        }
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e7510-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "check geofences",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.geo.TbGpsMultiGeofencingActionNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1252,
+        "layoutY" : 42
+      },
+      "configuration" : {
+        "direction" : "TO",
+        "entityType" : "ASSET",
+        "entityNamePattern" : "${assetName}",
+        "entityTypePattern" : "Asset",
+        "relationType" : "AssetToGeofence",
+        "createEntityIfNotExists" : false,
+        "removeCurrentRelations" : false,
+        "changeOriginatorToRelatedEntity" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e7511-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "create new relation from Geofence to Asset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 627,
+        "layoutY" : 40
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "name" : "areaName"
+        },
+        "ignoreNullStrings" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e7512-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "get geofence name",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 624,
+        "layoutY" : 105
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "name" : "areaName"
+        },
+        "ignoreNullStrings" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e7513-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "get geofence name",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 940,
+        "layoutY" : 40
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "metadata.area = \"geofence\";\nmetadata.status = \"entered\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e7514-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "geofence entered",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 940,
+        "layoutY" : 105
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "metadata.area = \"geofence\";\nmetadata.status = \"left\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e7515-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "geofence left",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1553,
+        "layoutY" : 103
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "45025820-8254-11ef-b5ef-a3c9386e22a5"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e7516-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "Events logger",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 626,
+        "layoutY" : 454
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "name" : "areaName",
+          "id" : "areaId"
+        },
+        "ignoreNullStrings" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e7517-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "get geofence name/id",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 945,
+        "layoutY" : 457
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "metadata.area = \"geofence\";\nmetadata.status = \"outside\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e9c20-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "geofence outside",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 628,
+        "layoutY" : 389
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "name" : "areaName",
+          "id" : "areaId"
+        },
+        "ignoreNullStrings" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e9c21-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "get geofence name/id",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 944,
+        "layoutY" : 390
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "metadata.area = \"geofence\";\nmetadata.status = \"inside\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e9c22-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "geofence inside",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1551,
+        "layoutY" : 450
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "71f4efa0-8f83-11ef-b984-655f1d07912d"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e9c23-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "Alarm rule chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1267,
+        "layoutY" : 450
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "${assetName}",
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "toAlarmConfig",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "698e9c24-bdec-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "to asset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
