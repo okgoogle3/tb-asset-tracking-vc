@@ -1019,7 +1019,7 @@
               }, {
                 "name" : "type",
                 "type" : "alarm",
-                "label" : "Type",
+                "label" : "Alert type",
                 "color" : "#f44336",
                 "settings" : {
                   "useCellStyleFunction" : false,
@@ -1028,7 +1028,12 @@
                   "cellContentFunction" : ""
                 },
                 "_hash" : 0.7323586880398418,
-                "funcBody" : null
+                "funcBody" : null,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "severity",
                 "type" : "alarm",
@@ -1053,6 +1058,54 @@
                 },
                 "_hash" : 0.6588418951443418,
                 "funcBody" : null
+              }, {
+                "name" : "zone",
+                "type" : "alarm",
+                "label" : "Zone",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "return alarm[\"details\"][\"zone\"];",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.8873269313772159,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "geofence",
+                "type" : "alarm",
+                "label" : "Geofence",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "return alarm[\"details\"][\"geofence\"];",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.20757878572233657,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1071,7 +1124,7 @@
             "actions" : { },
             "configMode" : "advanced",
             "alarmFilterConfig" : {
-              "statusList" : [ ],
+              "statusList" : [ "ACTIVE" ],
               "severityList" : [ ],
               "typeList" : [ ],
               "searchPropagatedAlarms" : true,
