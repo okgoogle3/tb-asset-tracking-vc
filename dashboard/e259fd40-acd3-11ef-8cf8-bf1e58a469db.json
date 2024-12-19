@@ -4835,6 +4835,13 @@
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.2283767087976727
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.27794897937989615
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -4878,7 +4885,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "<div class=\"dashboard-header-container\">\n    <div class=\"title\">Overview</div>\n    <button id=\"addNewUser\" class=\"create-asset-button\" *ngIf=\"localStorage.getItem('role'\n    ) === 'Admin'\">+ New user</button>\n</div>",
-              "markdownTextFunction" : "let devicesBlock = ``;\n\ndata.forEach(x=>{\n    if(x.entityType == \"DEVICE\"){\n        devicesBlock += `<span>${x.entityName}</span>`;\n    }\n});\n\nreturn `<div class=\"mainDiv\">\n            <div class=\"descriptionBlock\">\n                <span class=\"title\">Description</span>\n                <span class=\"text\">${data[0].description}</span>\n            </div>\n            <div class=\"mt10\">\n                <span class=\"title\">Assigned devices</span>\n                <div class=\"deviceBlock mt10\">` + devicesBlock +`</div>\n            </div>\n        </div>`;",
+              "markdownTextFunction" : "let devicesBlock = ``;\n\ndata.forEach(x=>{\n    if(x.entityType == \"DEVICE\"){\n        devicesBlock += `<span>${x.entityName} - ${x.Type}</span>`;\n    }\n});\n\nreturn `<div class=\"mainDiv\">\n            <div class=\"descriptionBlock\">\n                <span class=\"title\">Description</span>\n                <span class=\"text\">${data[0].description}</span>\n            </div>\n            <div class=\"mt10\">\n                <span class=\"title\">Assigned devices</span>\n                <div class=\"deviceBlock mt10\">` + devicesBlock +`</div>\n            </div>\n        </div>`;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".mainDiv {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    padding: 0;\n}\n\n.mt10 {\n    margin-top: 10px;\n}\n\n.descriptionBlock {\n    height: auto;\n    color: #344054;\n    display: flex;\n    flex-direction: column;\n    border-bottom: 1px solid #D0D5DD;\n}\n\n.deviceBlock {\n    height: auto;\n    color: #344054;\n    display: flex;\n    flex-direction: column;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 24px;\n    font-weight: 600;\n    line-height: 32px;\n    text-align: left;\n}\n\n.text {\n    padding: 10px 0px;    \n}"
             },
