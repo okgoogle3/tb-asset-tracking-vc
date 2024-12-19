@@ -18,7 +18,7 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "bfb09ea0-a7e4-11ef-98fa-d9f628e02cb7"
+      "id" : "6ddb8fb0-a751-11ef-98fa-d9f628e02cb7"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -30,7 +30,7 @@
     "name" : "pinkevych",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "temporaryDevice"
+    "type" : "Anchor"
   },
   "credentials" : {
     "credentialsId" : "FqSIJndhstYcbbcyTMEj",
@@ -38,7 +38,31 @@
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1734619476446,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 1.4205575634258496,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1734619519506,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 8.525390625000002,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1734619519506,
+      "longValue" : null,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
