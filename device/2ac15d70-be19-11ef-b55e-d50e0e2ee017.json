@@ -27,7 +27,7 @@
       "id" : "2ac15d70-be19-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "dima1",
+    "name" : "dima112",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "temporaryDevice"
@@ -48,18 +48,18 @@
       "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : -0.020629882366761495,
+      "doubleValue" : 0.14991031073042546,
       "jsonValue" : null,
       "key" : "latitude",
-      "lastUpdateTs" : 1734620085552,
+      "lastUpdateTs" : 1734620096063,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : 0.36529541015625006,
+      "doubleValue" : 0.5136108398437501,
       "jsonValue" : null,
       "key" : "longitude",
-      "lastUpdateTs" : 1734620085552,
+      "lastUpdateTs" : 1734620096063,
       "longValue" : null,
       "strValue" : null
     } ],
