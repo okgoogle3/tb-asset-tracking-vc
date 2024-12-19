@@ -2,8 +2,6 @@
   "entityType" : "DEVICE",
   "entity" : {
     "additionalInfo" : {
-      "gateway" : false,
-      "overwriteActivityTime" : false,
       "description" : ""
     },
     "customerId" : {
@@ -28,7 +26,7 @@
       "entityType" : "DEVICE",
       "id" : "151d63a0-be0b-11ef-b55e-d50e0e2ee017"
     },
-    "label" : "",
+    "label" : null,
     "name" : "tkachenko device",
     "ownerId" : null,
     "softwareId" : null,
