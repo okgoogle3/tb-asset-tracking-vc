@@ -26,7 +26,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"description\":null,\"isActive\":false,\"phone\":false,\"email\":true,\"application\":false}",
       "key" : "alarmConfig",
-      "lastUpdateTs" : 1734610572521,
+      "lastUpdateTs" : 1734610587488,
       "longValue" : null,
       "strValue" : null
     } ]
