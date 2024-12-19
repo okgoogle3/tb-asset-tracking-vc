@@ -10931,6 +10931,40 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
+              "dataKeys" : [ {
+                "name" : "color",
+                "type" : "attribute",
+                "label" : "color",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.32745496397524
+              }, {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.15539432037574996
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.9297269095197587,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
               "name" : "",
               "entityAliasId" : "eaa11b8a-34e9-0254-699d-3e69daeb37e1",
               "filterId" : "836b55e8-d2af-b9fa-9a21-565629143be6",
@@ -11009,27 +11043,6 @@
                 "color" : "#03a9f4",
                 "settings" : { },
                 "_hash" : 0.5394829156575089
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            }, {
-              "type" : "entity",
-              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
-              "dataKeys" : [ {
-                "name" : "color",
-                "type" : "attribute",
-                "label" : "color",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.32745496397524
-              }, {
-                "name" : "perimeter",
-                "type" : "attribute",
-                "label" : "perimeter",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.15539432037574996
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
