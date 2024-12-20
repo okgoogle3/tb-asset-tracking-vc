@@ -10779,6 +10779,65 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "e920dcaa-8e16-d045-c862-23ae936565ca",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#009688",
+                "settings" : { },
+                "_hash" : 0.49047970417122144,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "createdTime",
+                "type" : "entityField",
+                "label" : "Created time",
+                "color" : "#795548",
+                "settings" : { },
+                "_hash" : 0.4734360865167253,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#00bcd4",
+                "settings" : { },
+                "_hash" : 5.168501834666994E-4,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "color",
+                "type" : "attribute",
+                "label" : "color",
+                "color" : "#ff5722",
+                "settings" : { },
+                "_hash" : 0.136482728533736,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -16923,6 +16982,25 @@
             "filters" : [ {
               "relationType" : null,
               "entityTypes" : [ "DEVICE" ]
+            } ]
+          }
+        },
+        "e920dcaa-8e16-d045-c862-23ae936565ca" : {
+          "id" : "e920dcaa-8e16-d045-c862-23ae936565ca",
+          "alias" : "Selected zone geofences (for map)",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedEntity",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "TO",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ {
+              "relationType" : "GeofenceToZone",
+              "entityTypes" : [ "ASSET" ]
             } ]
           }
         }
