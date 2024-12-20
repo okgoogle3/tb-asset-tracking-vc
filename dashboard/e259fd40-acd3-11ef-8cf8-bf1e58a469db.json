@@ -1081,7 +1081,7 @@
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "if(value.includes(\"zone in\")){\n    return \"Zone in\";\n} else if(value.includes(\"zone in\")){\n    return \"Zone out\";\n} else {\n    return value;\n}",
+                  "cellContentFunction" : "if(value.includes(\"zone in\")){\n    return \"Zone in\";\n} else if(value.includes(\"zone out\")){\n    return \"Zone out\";\n} else if(value.includes(\"geofence in\")){\n    return \"Geofence in\";\n} else if(value.includes(\"geofence out\")){\n    return \"Geofence out\";\n} else {\n    return value;\n}",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible"
