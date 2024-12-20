@@ -15067,7 +15067,7 @@
               "imageAlias" : "Selected location zones",
               "imageKey" : "image",
               "aliasPolygonKey" : "perimeter",
-              "polygonColorFunction" : "return data.color;",
+              "polygonColorFunction" : "return data.Type == \"Image on map\" ? \"#FFFFFF00\" : data.color;",
               "polygonStrokeColorFunction" : "return data.color;"
             },
             "title" : "Geo Map Testing (several)",
