@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : "r"
+      "description" : ""
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "address",
-      "lastUpdateTs" : 1734608588981,
+      "lastUpdateTs" : 1734685566583,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -36,7 +36,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "city",
-      "lastUpdateTs" : 1734608588981,
+      "lastUpdateTs" : 1734685566583,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "country",
-      "lastUpdateTs" : 1734608588981,
+      "lastUpdateTs" : 1734685566583,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -52,15 +52,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1734608588981,
+      "lastUpdateTs" : 1734685566583,
       "longValue" : null,
-      "strValue" : ""
+      "strValue" : "r"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "latitude",
-      "lastUpdateTs" : 1734608588981,
+      "lastUpdateTs" : 1734685566583,
       "longValue" : 50,
       "strValue" : null
     }, {
@@ -68,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "longitude",
-      "lastUpdateTs" : 1734608588981,
+      "lastUpdateTs" : 1734685566583,
       "longValue" : 31,
       "strValue" : null
     }, {
