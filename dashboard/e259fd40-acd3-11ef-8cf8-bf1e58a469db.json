@@ -16851,7 +16851,7 @@
             "maxLevel" : 1,
             "fetchLastLevelOnly" : true,
             "filters" : [ {
-              "relationType" : "LocationToAsset",
+              "relationType" : "",
               "entityTypes" : [ "ASSET" ]
             } ]
           }
