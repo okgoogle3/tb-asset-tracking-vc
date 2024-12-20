@@ -9875,7 +9875,7 @@
             "iconSize" : "24px",
             "titleTooltip" : "",
             "dropShadow" : false,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "widgetStyle" : { },
             "titleStyle" : {
               "fontSize" : "16px",
