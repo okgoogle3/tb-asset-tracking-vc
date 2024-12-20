@@ -1,0 +1,24 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "a_template",
+    "description" : null,
+    "externalId" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "eeb486a0-acd3-11ef-8cf8-bf1e58a469db"
+    },
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "eeb486a0-acd3-11ef-8cf8-bf1e58a469db"
+    },
+    "image" : null,
+    "name" : "A_Template",
+    "order" : null,
+    "scada" : false,
+    "title" : "A_Template"
+  },
+  "fqns" : [ "navigation_side_bar2", "tab_navigation", "information_card", "description_widget", "map_with_custom_navigation_route", "broadcast_map", "broadcast_image_map", "broadcast_geo_map_floor_plan_layer", "threshold_table", "zone_selector", "header_location_zone_selector", "filtration_tab2", "simpe_card", "simple_wide_card", "alarm_card", "test_alarm_per_multiple_entities", "alarm_wide_card", "alarm_simple_card_", "geo_map_testing_several_" ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
