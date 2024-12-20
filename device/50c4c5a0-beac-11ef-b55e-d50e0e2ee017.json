@@ -27,7 +27,7 @@
       "id" : "50c4c5a0-beac-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "dima ",
+    "name" : "dima  dima",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "temporaryDevice"
@@ -38,7 +38,15 @@
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1734683277079,
+      "longValue" : null,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
