@@ -14457,6 +14457,7 @@
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "eaa11b8a-34e9-0254-699d-3e69daeb37e1",
+              "filterId" : "836b55e8-d2af-b9fa-9a21-565629143be6",
               "dataKeys" : [ {
                 "name" : "type",
                 "type" : "entityField",
@@ -14738,7 +14739,7 @@
               "defaultCenterPosition" : "0,0",
               "disableScrollZooming" : false,
               "disableZoomControl" : false,
-              "fitMapBounds" : true,
+              "fitMapBounds" : false,
               "useDefaultCenterPosition" : false,
               "mapPageSize" : 16384,
               "markerOffsetX" : 0.5,
