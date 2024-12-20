@@ -27,7 +27,7 @@
       "id" : "50c4c5a0-beac-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "dima  dima",
+    "name" : "dima  dima dima",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "temporaryDevice"
@@ -44,6 +44,22 @@
       "jsonValue" : null,
       "key" : "active",
       "lastUpdateTs" : 1734683277079,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 50.00034724618284,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1734683303644,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 30.999662876129154,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1734683303644,
       "longValue" : null,
       "strValue" : null
     } ],
