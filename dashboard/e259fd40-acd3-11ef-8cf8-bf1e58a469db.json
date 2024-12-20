@@ -15181,7 +15181,7 @@
             "displayTimewindow" : true,
             "enableDataExport" : false,
             "borderRadius" : "12px",
-            "widgetCss" : "",
+            "widgetCss" : ".leaflet-popup-content-wrapper, .leaflet-popup-tip {\n    border: 1px solid #D0D5DD;\n    box-shadow: none;\n    border-radius: 8px;\n}\n\n.leaflet-popup-content {\n    margin: 0px;\n    padding: 15px;\n}\n\n.leaflet-container a {\n    text-align: center;\n    font-size: 15px;\n    font-weight: 500;\n    color: #026AA2;\n    text-decoration: none;\n    line-height: 28px;\n    border-bottom: 0;\n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
           },
