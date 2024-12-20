@@ -6740,7 +6740,7 @@
             "iconSize" : "24px",
             "titleTooltip" : "",
             "dropShadow" : false,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "widgetStyle" : {
               "border" : "1px solid #D0D5DD",
               "margin-top" : "5px"
