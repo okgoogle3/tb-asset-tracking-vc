@@ -16,11 +16,19 @@
       "id" : "e5b19300-beb6-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "123",
+    "name" : "123qwd",
     "ownerId" : null,
     "type" : "Geofence"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1734687821883,
+      "longValue" : null,
+      "strValue" : "#0086C9"
+    } ]
   }
 }
