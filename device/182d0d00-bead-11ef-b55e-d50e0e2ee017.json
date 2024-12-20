@@ -2,7 +2,7 @@
   "entityType" : "DEVICE",
   "entity" : {
     "additionalInfo" : {
-      "description" : "111111"
+      "description" : "22222"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -27,7 +27,7 @@
       "id" : "182d0d00-bead-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "11111",
+    "name" : "22222",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "temporaryDevice"
