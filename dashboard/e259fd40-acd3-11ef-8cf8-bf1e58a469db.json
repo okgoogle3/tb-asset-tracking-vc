@@ -616,7 +616,21 @@
           "sizeX" : 4,
           "sizeY" : 6,
           "config" : {
-            "datasources" : [ ],
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
+              "dataKeys" : [ {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5443376902941099
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
             "timewindow" : {
               "displayValue" : "",
               "selectedTab" : 0,
