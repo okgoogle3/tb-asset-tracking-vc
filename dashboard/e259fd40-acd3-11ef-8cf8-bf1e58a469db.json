@@ -3796,10 +3796,16 @@
               }, {
                 "name" : "perimeter",
                 "type" : "attribute",
-                "label" : "perimeter",
+                "label" : "perimeter 2",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.531485799843272
+                "_hash" : 0.531485799843272,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "pointA",
                 "type" : "attribute",
@@ -3895,7 +3901,7 @@
               "tooltipOffsetY" : -1,
               "imageAlias" : "Temporary zone",
               "imageKey" : "image",
-              "aliasPolygonKey" : "perimeter",
+              "aliasPolygonKey" : "perimeter 2",
               "polygonKeyName" : "perimeter",
               "editablePolygon" : true,
               "showPolygonLabel" : false,
