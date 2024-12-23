@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : null
+      "description" : ""
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -18,7 +18,7 @@
       "id" : "a1811e90-c121-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "test zone",
+    "name" : "A Zone",
     "ownerId" : null,
     "type" : "Shape"
   },
