@@ -80,6 +80,10 @@
       "toIndex" : 7,
       "type" : "DeviceToAsset"
     }, {
+      "fromIndex" : 13,
+      "toIndex" : 20,
+      "type" : "LocationToAsset"
+    }, {
       "fromIndex" : 14,
       "toIndex" : 10,
       "type" : "Success"
@@ -257,8 +261,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 815,
-        "layoutY" : 760
+        "layoutX" : 978,
+        "layoutY" : 812
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -281,8 +285,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 814,
-        "layoutY" : 861
+        "layoutX" : 977,
+        "layoutY" : 913
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
@@ -414,8 +418,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 824,
-        "layoutY" : 657
+        "layoutX" : 987,
+        "layoutY" : 709
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -588,6 +592,64 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1233,
+        "layoutY" : 808
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "\nvar msgNew = {\n    status:null,\n    isAssigned: false,\n    info : {\n        id: null,\n        name:null\n    }\n};\n\n\nreturn {msg: msgNew, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "05913960-c12c-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "clear attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1275,
+        "layoutY" : 709
+      },
+      "configuration" : {
+        "originatorSource" : "RELATED",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : null,
+        "entityNamePattern" : null,
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "DeviceToAsset",
+            "entityTypes" : [ "DEVICE" ]
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "05913961-c12c-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "from Asset to Device",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     } ],
     "ruleChainConnections" : null
   },
