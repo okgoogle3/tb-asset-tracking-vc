@@ -99,6 +99,14 @@
       "fromIndex" : 17,
       "toIndex" : 18,
       "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 21,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 19,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
@@ -595,13 +603,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1233,
-        "layoutY" : 808
+        "layoutX" : 1278,
+        "layoutY" : 809
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "\nvar msgNew = {\n    status:null,\n    isAssigned: false,\n    info : {\n        id: null,\n        name:null\n    }\n};\n\n\nreturn {msg: msgNew, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};"
+        "tbelScript" : "\nvar msgNew = {\n  relatedEntityName: \"\"\n};\n\n\nreturn {msg: msgNew, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -650,6 +658,31 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1272,
+        "layoutY" : 910
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "436f3ca0-c12c-11ef-b55e-d50e0e2ee017"
+      },
+      "name" : "save attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
     } ],
     "ruleChainConnections" : null
   },
