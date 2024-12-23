@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : " Mykolaiv Alumina Plant Type of business and enterprise Legal form limited liability company Industry non-ferrous metallurgy Founded on 6 June 1977 Headquarters Halytsynove Mykolaiv Alumina Plant (Mykolaiv Alumina Plant LLC) is the largest non-ferrous metallurgy enterprise in Ukraine and one of the largest in Europe, equipped with modern facilities. The company covers many times Ukraine's needs for alumina and aluminium hydroxide, so it is important for Ukrainian exports and thus foreign currency inflows into the country's economy."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "0d968e80-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "12d6a6b0-c126-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Mykolaiv Alumina Plant",
+    "ownerId" : null,
+    "type" : "Location"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
