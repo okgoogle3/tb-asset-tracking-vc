@@ -3760,19 +3760,25 @@
               "type" : "entity",
               "entityAliasId" : "d15b6c70-c9a8-429f-370a-e3b97ddba8f6",
               "dataKeys" : [ {
-                "name" : "geoPerimeter",
-                "type" : "attribute",
-                "label" : "geoPerimeter",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.41097431357211933
-              }, {
                 "name" : "color",
                 "type" : "attribute",
                 "label" : "color",
                 "color" : "#8bc34a",
                 "settings" : { },
                 "_hash" : 0.5410708330780984
+              }, {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.012345128010430528,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -3890,7 +3896,7 @@
               "imageAlias" : "Temporary zone",
               "imageKey" : "image",
               "aliasPolygonKey" : "perimeter",
-              "polygonKeyName" : "geoPerimeter",
+              "polygonKeyName" : "perimeter",
               "editablePolygon" : true,
               "showPolygonLabel" : false,
               "usePolygonColorFunction" : true,
