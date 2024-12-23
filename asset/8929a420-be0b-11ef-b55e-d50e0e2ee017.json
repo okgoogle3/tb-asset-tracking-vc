@@ -21,6 +21,14 @@
     "type" : "Alarm config"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"isActive\":true,\"phone\":false,\"email\":false,\"application\":false,\"deviceThresholds\":[{\"type\":\"Temperature\",\"status\":false,\"upperThreshold\":11,\"lowerThreshold\":-2,\"equalThreshold\":1},{\"type\":\"Battery level\",\"status\":false,\"upperThreshold\":0},{\"type\":\"Movement\",\"status\":false,\"durationThreshold\":1},{\"type\":\"Idle\",\"status\":false,\"durationThreshold\":1}],\"locationThresholds\":[]}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1734945718943,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
