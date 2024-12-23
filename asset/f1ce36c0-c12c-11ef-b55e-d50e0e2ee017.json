@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "The main task of the shop is to ensure that scheduled repairs and equipment testing are carried out on time and in accordance with approved schedules.\n\nThe shop repairs and replaces sections of main and distribution heating and hot water supply networks. If necessary, it fills pre-insulated pipes to ensure maximum preservation of the temperature of the heat carrier during its transportation through the main pipelines, and also repairs, installs and adjusts the main and auxiliary heat and mechanical equipment, boiler houses, district heating and cooling plants and ITPs on the company's heating networks.\n\nThe shop repairs, assembles and adjusts various thermal and mechanical equipment of boiler houses, central heating stations and heating networks of all heating districts of the city.\n\nIn addition, the shop's specialists perform various carpentry and blacksmithing works."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "f1ce36c0-c12c-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Repair and construction workshops",
+    "ownerId" : null,
+    "type" : "Temporary asset"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
