@@ -11685,7 +11685,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF",
             "color" : "#384250",
-            "padding" : "18px",
+            "padding" : "14px",
             "settings" : {
               "iconColor" : "#0044b3",
               "iconBackground" : "#e9f9ff",
@@ -12427,7 +12427,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF",
             "color" : "#384250",
-            "padding" : "18px",
+            "padding" : "14px",
             "settings" : {
               "iconColor" : "#0044b3",
               "iconBackground" : "#e9f9ff",
@@ -12555,7 +12555,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF",
             "color" : "#384250",
-            "padding" : "18px",
+            "padding" : "14px",
             "settings" : {
               "iconColor" : "#0044b3",
               "iconBackground" : "#e9f9ff",
@@ -13878,7 +13878,7 @@
             "showTitle" : false,
             "backgroundColor" : "rgb(255, 255, 255)",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "18px",
+            "padding" : "14px",
             "settings" : {
               "alarmsTitle" : "",
               "enableSelection" : false,
