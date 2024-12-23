@@ -16,11 +16,19 @@
       "id" : "95c2df90-c0fd-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "dangerous area",
+    "name" : "Dangerous area 1",
     "ownerId" : null,
     "type" : "Geofence"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1734938084396,
+      "longValue" : null,
+      "strValue" : "#3E00C9"
+    } ]
   }
 }
