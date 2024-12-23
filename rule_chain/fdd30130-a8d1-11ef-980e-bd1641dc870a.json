@@ -74,6 +74,10 @@
     }, {
       "fromIndex" : 12,
       "toIndex" : 15,
+      "type" : "DeviceToAsset"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 15,
       "type" : "LocationToAsset"
     }, {
       "fromIndex" : 13,
