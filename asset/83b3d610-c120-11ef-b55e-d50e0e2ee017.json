@@ -21,6 +21,14 @@
     "type" : "Geofence"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1734953086477,
+      "longValue" : null,
+      "strValue" : "#0086C9"
+    } ]
   }
 }
