@@ -16726,9 +16726,10 @@
           "id" : "868672d7-2554-0d05-c85f-aad8f4826a2d",
           "alias" : "Devices",
           "filter" : {
-            "type" : "entityType",
+            "type" : "deviceType",
             "resolveMultiple" : true,
-            "entityType" : "DEVICE"
+            "deviceTypes" : [ "Anchor", "Tag" ],
+            "deviceNameFilter" : ""
           }
         },
         "10b1d443-e815-ef4f-35b5-d9d97a3366b4" : {
