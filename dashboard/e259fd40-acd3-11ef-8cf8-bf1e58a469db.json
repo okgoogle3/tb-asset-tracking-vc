@@ -12269,8 +12269,8 @@
                 "units" : "°C",
                 "decimals" : null,
                 "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value ? value : 0;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -12398,7 +12398,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value ? value.toFixed(0) : value;"
+                "postFuncBody" : "return value ? value.toFixed(0) : 0;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
