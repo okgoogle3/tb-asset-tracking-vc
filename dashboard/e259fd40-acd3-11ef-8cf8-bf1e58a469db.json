@@ -2768,7 +2768,8 @@
               }, {
                 "name" : "Alerts",
                 "action" : "alerts"
-              } ]
+              } ],
+              "showDescription" : true
             },
             "title" : "HTML Card",
             "dropShadow" : false,
