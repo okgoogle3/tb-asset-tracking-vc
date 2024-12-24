@@ -6123,7 +6123,8 @@
               }, {
                 "name" : "Alerts",
                 "action" : "alerts"
-              } ]
+              } ],
+              "showDescription" : true
             },
             "title" : "HTML Card",
             "dropShadow" : false,
@@ -6168,6 +6169,19 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "8482a379-fa7e-5770-2331-929714d07c8c"
+              }, {
+                "name" : "Show description",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"mainBlock\">\n    <div class=\"header\">\n        Description\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </div>\n    <div class=\"desc-body\">\n        {{description}}\n    </div>\n</div>    ",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n    padding-top: 16px!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.mainBlock {\n    width: 600px;\n    display: flex;\n    flex-direction: column;\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    overflow: auto;\n}\n\n.header {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n    color: #0C111D;\n}\n\n.desc-body {\n    font-size: 16px;\n    font-weight: 400;\n    line-height: 24px;\n    color: #344054;\n}",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet params = widgetContext.stateController.getStateParams();\n\nlet description;\n\nattributeService.getEntityAttributes(params.selectedZone.entityId, 'SERVER_SCOPE', [\"description\"]).subscribe(res=>{\n    description = res[0].value;\n    openAddEntityDialog();\n})\n\n\nfunction openAddEntityDialog() {\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.description = description;\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "e0f216cd-e983-31e8-ae34-846bfbde6899"
               } ]
             }
           },
@@ -12056,110 +12070,6 @@
           "col" : 0,
           "id" : "a4836a32-c7c5-320d-673f-fca8d9d92a4d"
         },
-        "f1a819b3-f759-1246-7057-b5e05f02112a" : {
-          "typeFullFqn" : "system.cards.markdown_card",
-          "type" : "latest",
-          "sizeX" : 5,
-          "sizeY" : 3.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
-              "dataKeys" : [ {
-                "name" : "description",
-                "type" : "attribute",
-                "label" : "description",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.8862620474895921
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1733814170148,
-                  "endTimeMs" : 1733900570148
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#FFFFFF00",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "useMarkdownTextFunction" : true,
-              "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "return `<div class=\"mainDiv\" id=\"show_description\">\n            <mat-icon class=\"icon\">info_outline</mat-icon>\n            <span class=\"button\">View description</span>\n        </div>`",
-              "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ".mainDiv {\n    padding: 15px;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: end;\n}\n\n.button {\n    font-size: 18px;\n    font-weight: 500;\n    line-height: 28px;\n    color: #026AA2;\n    cursor: pointer;\n}\n\n.icon {\n    cursor: pointer;\n    font-size: 18px;\n    color: #026AA2;\n    display: flex;\n    align-items: center;\n}"
-            },
-            "title" : "Markdown/HTML Card",
-            "showTitleIcon" : false,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "showLegend" : false,
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "enableDataExport" : false,
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "actions" : {
-              "elementClick" : [ {
-                "name" : "show_description",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "customPretty",
-                "customHtml" : "<div class=\"mainBlock\">\n    <div class=\"header\">\n        Description\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </div>\n    <div class=\"desc-body\">\n        {{description}}\n    </div>\n</div>    ",
-                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n    padding-top: 16px!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.mainBlock {\n    width: 600px;\n    display: flex;\n    flex-direction: column;\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    overflow: auto;\n}\n\n.header {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n    color: #0C111D;\n}\n\n.desc-body {\n    font-size: 16px;\n    font-weight: 400;\n    line-height: 24px;\n    color: #344054;\n}",
-                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nlet description;\n\nattributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', [\"description\"]).subscribe(res=>{\n    console.log(res)\n    description = res[0].value;\n    openAddEntityDialog();\n})\n\n\nfunction openAddEntityDialog() {\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.description = description;\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n}\n",
-                "customResources" : [ ],
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "1f5e990a-f90f-308b-a425-05e08d7a2f2e"
-              } ]
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "f1a819b3-f759-1246-7057-b5e05f02112a"
-        },
         "3dbfa7ea-049c-f538-acf6-0cf689bae3bf" : {
           "typeFullFqn" : "system.cards.markdown_card",
           "type" : "latest",
@@ -16048,7 +15958,7 @@
             "main" : {
               "widgets" : {
                 "cde0bc43-e61f-4061-d1b3-bb8420d48879" : {
-                  "sizeX" : 57,
+                  "sizeX" : 72,
                   "sizeY" : 2,
                   "row" : 5,
                   "col" : 0
@@ -16070,12 +15980,6 @@
                   "sizeY" : 3,
                   "row" : 1,
                   "col" : 52
-                },
-                "f1a819b3-f759-1246-7057-b5e05f02112a" : {
-                  "sizeX" : 14,
-                  "sizeY" : 2,
-                  "row" : 5,
-                  "col" : 58
                 },
                 "9e48bad8-2cf2-0ef0-93ab-92f4d1883de2" : {
                   "sizeX" : 9,
