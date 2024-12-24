@@ -1,0 +1,26 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "26fa1af0-c1f8-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "wefcdasc",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
