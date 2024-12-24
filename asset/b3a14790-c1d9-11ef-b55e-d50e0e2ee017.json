@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Electrical repair shop of the main works:\nrepair of generators and synchronous compensators of any capacity and design with air, hydrogen and hydrogen-water cooling, both in the scope of standard nomenclature and complex special works, including partial or complete replacement of stator windings with replaceable insulation;\nrepair of damages in frontal and groove parts of rotor windings, repair and replacement of rotor bands and contact rings, repair of gas coolers and rotating exciters of various types;\nrepair of rotating electric machines of direct and alternating current (up to and over 1000 V) of all sizes and designs with manufacturing and replacement of stator and rotor windings;\nrestoration and replacement of insulation of winding wires;\nrepair of oil-filled and dry-type transformers of all sizes, manufacture and replacement of their windings, restoration and replacement of wire insulation, drying and regeneration of transformer oil;\nrepair of oil-filled, mastic-filled and reinforced leads up to 330 kV for transformers and switches;\nrepair of PO, 220, 330 and 500 kV air circuit breakers, as well as oil circuit breakers, load breakers, disconnectors and their drives."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "b3a14790-c1d9-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Electrical repair workshop",
+    "ownerId" : null,
+    "type" : "Temporary asset"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
