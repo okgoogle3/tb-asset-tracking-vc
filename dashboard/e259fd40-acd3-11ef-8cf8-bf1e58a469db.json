@@ -2885,7 +2885,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "console.log(data)\nif(data.length == 0){\n    return `<div class=\"user-layout\">\n                <div class=\"noZonesContainer\">\n                    <span class=\"noZonesText\">No zones added. Please, add zone to location to start using assets tracking</span>\n                    <button mat-raised-button color=\"primary\" class=\"btn\">+ Add zone</button>\n                </div>\n            </div>`\n} else return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='general'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"locationDetailsGeneral\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='zones'\" [ctx]=\"ctx\" stateId=\"locationDetailsZones\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"locationDetailsAlerts\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
+              "markdownTextFunction" : "console.log(data)\nif(data.length == 0){\n    return `<div class=\"user-layout\" style=\"background-color: #fff\">\n                <div class=\"noZonesContainer\">\n                    <span class=\"noZonesText\">No zones added. Please, add zone to location to start using assets tracking</span>\n                    <button mat-raised-button color=\"primary\" class=\"btn\">+ Add zone</button>\n                </div>\n            </div>`\n} else return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='general'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"locationDetailsGeneral\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='zones'\" [ctx]=\"ctx\" stateId=\"locationDetailsZones\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"locationDetailsAlerts\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".tb-markdown-view div,\n.tb-markdown-view p {\n    line-height: normal;\n}\n.mat-content {\n    background-color: #fff !important;\n}\n.user-layout {\n    width: 100%;\n    height: 100%;\n    padding: 0px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n.header-state {\n    height: 80px;\n    padding: 0px;\n}\n.table {\n    flex-grow: 1;\n    padding: 0px;\n}\n\n.user-layout-overflow {\n    height: 100%;\n    overflow: auto;\n}\n\n.noZonesContainer {\n    height: 100%;\n    width: 360px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    gap: 15px;\n}\n\n.noZonesText {\n    font-size: 16px;\n    font-weight: 400;\n    line-height: 24px;\n    text-align: center;\n    color: #344054;\n}\n\n.btn {\n    width: 140px;\n}\n"
             },
@@ -14794,6 +14794,45 @@
           "row" : 0,
           "col" : 0,
           "id" : "45247355-2edb-a1c2-5f95-7c4d01e36911"
+        },
+        "d44f1ac6-96e7-ae9a-f928-4a007f2876ee" : {
+          "typeFullFqn" : "system.cards.html_card",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class=\"user-layout\" style=\"background-color: #fff\">\n    <div class=\"noZonesContainer\">\n        <span class=\"noZonesText\">No zones added. Please, add zone to location to start using assets tracking</span>\n        <button mat-raised-button color=\"primary\" class=\"btn\">+ Add zone</button>\n    </div>\n</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "HTML Card",
+            "dropShadow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d44f1ac6-96e7-ae9a-f928-4a007f2876ee"
         }
       },
       "states" : {
@@ -16556,6 +16595,30 @@
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "noZonesState" : {
+          "name" : "noZonesState",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "d44f1ac6-96e7-ae9a-f928-4a007f2876ee" : {
+                  "sizeX" : 16,
+                  "sizeY" : 9,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
               }
             }
           }
