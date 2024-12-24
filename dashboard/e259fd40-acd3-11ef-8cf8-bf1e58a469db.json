@@ -14875,7 +14875,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "console.log(\"uraa\")",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"zones\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "f1a368a4-f589-a78c-fb7e-34e57dde6161"
