@@ -17164,7 +17164,7 @@
         "hideToolbar" : false,
         "showFilters" : true,
         "showUpdateDashboardImage" : true,
-        "dashboardCss" : ".tb-widget-header {\n    align-items: center;\n}"
+        "dashboardCss" : ".tb-widget-header {\n    align-items: center;\n}\n\n.tb-widget-actions {\n    margin: 0px;    \n}"
       }
     },
     "customerId" : null,
