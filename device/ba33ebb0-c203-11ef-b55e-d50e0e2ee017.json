@@ -27,7 +27,7 @@
       "id" : "ba33ebb0-c203-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "Artemii Asset",
+    "name" : "Artemii Device",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "Tag"
@@ -46,6 +46,78 @@
       "lastUpdateTs" : 1735050673668,
       "longValue" : null,
       "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAsset",
+      "lastUpdateTs" : 1735050695991,
+      "longValue" : null,
+      "strValue" : "{\"name\":\"Artemii Asset\",\"id\":{\"id\":\"b4752040-c203-11ef-b55e-d50e0e2ee017\",\"entityType\":\"ASSET\"}}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "configPreset",
+      "lastUpdateTs" : 1735050675189,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectivity",
+      "lastUpdateTs" : 1735050675189,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1735050675189,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "hasRelatedAsset",
+      "lastUpdateTs" : 1735050695991,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"id\":\"ba33ebb0-c203-11ef-b55e-d50e0e2ee017\",\"name\":\"Artemii Asset\"}",
+      "key" : "info",
+      "lastUpdateTs" : 1735050696011,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isAssigned",
+      "lastUpdateTs" : 1735050696011,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "modelNumber",
+      "lastUpdateTs" : 1735050675189,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "serialNumber",
+      "lastUpdateTs" : 1735050675189,
+      "longValue" : null,
+      "strValue" : "w"
     } ],
     "SHARED_SCOPE" : [ ]
   }
