@@ -12270,7 +12270,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value ? value : 0;"
+                "postFuncBody" : "return value ? value : \"No info\";"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
