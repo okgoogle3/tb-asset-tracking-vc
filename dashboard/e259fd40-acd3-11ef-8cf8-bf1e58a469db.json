@@ -17356,7 +17356,7 @@
         "hideToolbar" : false,
         "showFilters" : true,
         "showUpdateDashboardImage" : true,
-        "dashboardCss" : ""
+        "dashboardCss" : ".tb-widget-header {\n    align-items: center;\n}"
       }
     },
     "customerId" : null,
