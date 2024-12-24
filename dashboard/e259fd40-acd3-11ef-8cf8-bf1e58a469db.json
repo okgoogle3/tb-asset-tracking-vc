@@ -14825,10 +14825,19 @@
             "padding" : "8px",
             "settings" : {
               "cardHtml" : "<div class=\"user-layout\" style=\"background-color: #fff\">\n    <div class=\"noZonesContainer\">\n        <span class=\"noZonesText\">No zones added. Please, add zone to location to start using assets tracking</span>\n        <button mat-raised-button color=\"primary\" class=\"btn\">+ Add zone</button>\n    </div>\n</div>",
-              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+              "cardCss" : ".tb-markdown-view div,\n.tb-markdown-view p {\n    line-height: normal;\n}\n.mat-content {\n    background-color: #fff !important;\n}\n.user-layout {\n    width: 100%;\n    height: 100%;\n    padding: 0px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n.header-state {\n    height: 80px;\n    padding: 0px;\n}\n.table {\n    flex-grow: 1;\n    padding: 0px;\n}\n\n.user-layout-overflow {\n    height: 100%;\n    overflow: auto;\n}\n\n.noZonesContainer {\n    height: 100%;\n    width: 360px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    gap: 15px;\n}\n\n.noZonesText {\n    font-size: 16px;\n    font-weight: 400;\n    line-height: 24px;\n    text-align: center;\n    color: #344054;\n}\n\n.btn {\n    width: 140px;\n}\n"
             },
             "title" : "HTML Card",
-            "dropShadow" : true
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "borderRadius" : "12px",
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
@@ -16606,19 +16615,26 @@
             "main" : {
               "widgets" : {
                 "d44f1ac6-96e7-ae9a-f928-4a007f2876ee" : {
-                  "sizeX" : 16,
-                  "sizeY" : 9,
+                  "sizeX" : 24,
+                  "sizeY" : 14,
                   "row" : 0,
                   "col" : 0
                 }
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "#FFFFFF00",
                 "columns" : 24,
-                "margin" : 10,
+                "margin" : 0,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
