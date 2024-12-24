@@ -15250,10 +15250,10 @@
             "main" : {
               "widgets" : {
                 "2d01f63a-8ba7-fb56-4bff-62d958cbec36" : {
-                  "sizeX" : 24,
+                  "sizeX" : 26,
                   "sizeY" : 14,
                   "row" : 2,
-                  "col" : 12
+                  "col" : 10
                 },
                 "b1097721-e068-ae26-3f73-521e3873a5fd" : {
                   "sizeX" : 12,
@@ -15262,7 +15262,7 @@
                   "col" : 0
                 },
                 "3dbfa7ea-049c-f538-acf6-0cf689bae3bf" : {
-                  "sizeX" : 12,
+                  "sizeX" : 10,
                   "sizeY" : 14,
                   "row" : 2,
                   "col" : 0
