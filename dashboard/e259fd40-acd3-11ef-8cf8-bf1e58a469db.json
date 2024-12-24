@@ -1921,7 +1921,7 @@
                 "name" : "Delete",
                 "icon" : "delete_outline",
                 "useShowWidgetActionFunction" : true,
-                "showWidgetActionFunction" : "if(localStorage.getItem(\"role\") === \"Admin\" && widgetContext.currentUser.sub != data.Email){\n    return true;\n} return false;",
+                "showWidgetActionFunction" : "return (localStorage.getItem(\"role\") === \"Admin\" && widgetContext.currentUser.sub != data.Email);",
                 "type" : "custom",
                 "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nlet userService = $injector.get(widgetContext.servicesMap.get('userService'));\n\nopenDeleteUserDialog();\n\nfunction openDeleteUserDialog() {\n    let title = `Delete user`;\n    let content = `Are you sure you want to delete the ${additionalParams.entity['First name']} ${additionalParams.entity['Last name']} user?`;\n    dialogs.confirm(title, content, 'Cancel', 'Delete')\n        .pipe(\n            widgetContext.rxjs.switchMap((data) => {\n                if (data) {\n                    return deleteUser(); \n                } else {\n                    return widgetContext.rxjs.of(null);\n                }\n            })\n        )\n        .subscribe();\n}\n\nfunction deleteUser() {\n    return userService.deleteUser(entityId.id)\n        .pipe(\n            widgetContext.rxjs.tap(() => {\n                widgetContext.showSuccessToast(`${entityName} device was deleted successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n                widgetContext.updateAliases();\n            }\n        ));\n}",
                 "openInSeparateDialog" : false,
