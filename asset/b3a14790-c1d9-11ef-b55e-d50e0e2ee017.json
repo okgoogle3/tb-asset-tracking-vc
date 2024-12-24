@@ -42,9 +42,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[[46.76718970706926,31.955838187559113],[46.77104680257069,31.95615604572746],[46.771070692102334,31.95293338482197],[46.767213596600904,31.952615526653624]]",
+      "jsonValue" : "[[46.767130015995384,31.95582746930379],[46.770987111496815,31.95614532747214],[46.771070692102334,31.95293338482197],[46.767213596600904,31.952615526653624]]",
       "key" : "perimeter",
-      "lastUpdateTs" : 1735035744612,
+      "lastUpdateTs" : 1735043604113,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,15 +52,15 @@
       "doubleValue" : null,
       "jsonValue" : "[46.771070692102334,31.95293338482197]",
       "key" : "pointA",
-      "lastUpdateTs" : 1735035744612,
+      "lastUpdateTs" : 1735043604113,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[46.77104680257069,31.95615604572746]",
+      "jsonValue" : "[46.770987111496815,31.95614532747214]",
       "key" : "pointB",
-      "lastUpdateTs" : 1735035744612,
+      "lastUpdateTs" : 1735043604113,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,15 +68,15 @@
       "doubleValue" : null,
       "jsonValue" : "[46.767213596600904,31.952615526653624]",
       "key" : "pointC",
-      "lastUpdateTs" : 1735035744612,
+      "lastUpdateTs" : 1735043604113,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[46.76718970706926, 31.955838187559113], [46.77104680257069, 31.95615604572746], [46.771070692102334, 31.95293338482197], [46.767213596600904, 31.952615526653624]]\"}",
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[46.767130015995384, 31.95582746930379], [46.770987111496815, 31.95614532747214], [46.771070692102334, 31.95293338482197], [46.767213596600904, 31.952615526653624]]\"}",
       "key" : "polygon",
-      "lastUpdateTs" : 1735035744670,
+      "lastUpdateTs" : 1735043604179,
       "longValue" : null,
       "strValue" : null
     } ]
