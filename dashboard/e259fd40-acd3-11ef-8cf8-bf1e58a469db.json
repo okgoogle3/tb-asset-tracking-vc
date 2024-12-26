@@ -10830,20 +10830,6 @@
               "type" : "entity",
               "entityAliasId" : "eaa11b8a-34e9-0254-699d-3e69daeb37e1",
               "dataKeys" : [ {
-                "name" : "latitude",
-                "type" : "attribute",
-                "label" : "latitude",
-                "color" : "#607d8b",
-                "settings" : { },
-                "_hash" : 0.5845255411438863
-              }, {
-                "name" : "longitude",
-                "type" : "attribute",
-                "label" : "longitude",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.9959582727580714
-              }, {
                 "name" : "active",
                 "type" : "attribute",
                 "label" : "active",
@@ -10871,6 +10857,20 @@
                 "color" : "#ffeb3b",
                 "settings" : { },
                 "_hash" : 0.14625792391032078
+              }, {
+                "name" : "latitude",
+                "type" : "timeseries",
+                "label" : "latitude",
+                "color" : "#009688",
+                "settings" : { },
+                "_hash" : 0.5134421494614818
+              }, {
+                "name" : "longitude",
+                "type" : "timeseries",
+                "label" : "longitude",
+                "color" : "#009688",
+                "settings" : { },
+                "_hash" : 1.16355067611984E-4
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
