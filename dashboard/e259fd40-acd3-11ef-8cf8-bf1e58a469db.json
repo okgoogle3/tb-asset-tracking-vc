@@ -9609,6 +9609,20 @@
                 "color" : "#e91e63",
                 "settings" : { },
                 "_hash" : 0.8930409275318973
+              }, {
+                "name" : "createdTime",
+                "type" : "entityField",
+                "label" : "Created time",
+                "color" : "#795548",
+                "settings" : { },
+                "_hash" : 0.9639081056883618
+              }, {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#ff5722",
+                "settings" : { },
+                "_hash" : 0.5380651186529859
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -9700,10 +9714,10 @@
               "showPolygonLabel" : false,
               "usePolygonLabelFunction" : false,
               "polygonLabel" : "${entityName}",
-              "showPolygonTooltip" : false,
+              "showPolygonTooltip" : true,
               "showPolygonTooltipAction" : "click",
               "autoClosePolygonTooltip" : true,
-              "usePolygonTooltipFunction" : false,
+              "usePolygonTooltipFunction" : true,
               "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
               "polygonColor" : "#3388ff",
               "polygonOpacity" : 0.2,
@@ -9751,7 +9765,8 @@
               "markerImage" : "tb-image:TWFwIGJ1bGxldCAoMykucG5n:TWFwIGJ1bGxldCAoMykucG5n:SU1BR0U=;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ/SURBVHgBzZlNTBNREMdnXksRa7R48GI0EKsnE2pMBPRAjRfUaOpNbx78uBjbiwfjF34lGg+2iRe/Em96K2oiNTFSDhIwMSnRg4kkosaDHnRRKtjCPmeeu2uh27K7IPSXvPTt7Cv8mZn3NSB4ZElnIoqotyBglB4jKCAEkhqDoFF/RFIDlEO6LrITmWQWPIBuBoeiiVBhqR5HxIQlxjkj1LJTOp4nsSNOv+RIIAsrBuU5EpWA+eGeU6G+2QY07Dwel/XQTeKiMH9EBEIssKFVK74bHKo2sKrA4O74dcqxLuougfmHUgRjgXBbqDg8+LTSINsQq5A2yDS9jcLCkKv7hdu1bFKb+ULYjS4ulb0LKI6JKIfYUBZiDit9xGChQWiyC/c0gcFdiYP0cQUWC4Q2f3jL6OTwy4F/JgNaeJuEkL1kaILFRaN8bDbz0cpBH+pdNSCO4Ql6znxQHmTv+YR8DzUEebGRvag8yN6DObB1YxhO7O+E5cEGWEGN+2ybC7Slql1LCZSIHTAHtrHAA51KHIvk/rY5CqQNIq4++VRC4e0Fl2xsXg0XD+2DtatWWsI+ff2m3q0h24/8OIxSY9vpO2l48/4zuAV13C6E0KPgARanvCQBRsdIyJdvqs+N+2zjPof6Eo31whRORfykswU8wJ5j72w+cqHquFe3zyqPegElRv1ulxb2CHuOQ8phLLWV8uLNMPRTY5YbE6fU5kigwBY/bzEqNA4xJwRjCiy1WdzPWGJWGBOn1OaQkN/tyfjm4z548PwldF8+VvYuduqGWljTM95xKvC7UeMPciNQQI0j1AXHBUf3dFRMfPZq2sazPJa/w991ieanm5eG4DzMnOicS0f2dpTZysYZcGhvPeqbZnME3QppmYEcuJjJ/cZM3L9jS5mtEjyZrj3IgFuklB/Ig3ofonB9QP1Iic+zl0NXDQ5v/2uXnjMRkBM+6cuBB87Q9qVCJv+ucyonjZ2E+2zj/gsSd/pu2suvAEEXfnXcomP+dw8XcQtehHmd23z4767CXr1GOeklrBaUf/meVLM68tetb20wShie4bWOPVooTsLvwqTqm4cHTyB00535ofJgKEbXzIL8DjUEVR6aufKgFmqtO0lLjUxB7XDPLItYO4k/ILrcLtr/Bco9rtuYj9a1c+LtwEQg3P6bRHbCYiJlYjyT6jMfp92Li8MDA/XrWxspQ9tgEaDzXyqfSV2dZrMbGNwZX+jSB5PLP0ltmmm0Pc3U1SOf0T0t4J6QkOXikd2rqgXMZbuOJ6Vxu/pfcFjHepIVC6NV64OFd4OZwLr2D5Jr0Oh9p6kA1bHxZL4n2VVt0KwVVpo4OV+4/aEA2QiIEZgH2Gt147jv57PZC+uuiuiqREJVCAp7B6LrOg5tBpjy/4KkXaGyEq4ElrKMLvy6ulNji3Ez5GamgcYHYfrpOTrTZX1SDI15/DfEH/SlvwFdkLHMAAAAAElFTkSuQmCC",
               "polygonStrokeColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";",
               "polygonColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";",
-              "markerImageFunction" : "var type = data['Type'];\nvar isAlarm = data['alertActivity'];\nvar isActive = data['status'];\n\nlet index;\n\nif (type == 'Tool'){\n    index = 0;\n} else if(type == \"Box\"){\n    index = 3;\n} else if(type == \"Worker\"){\n    index = 6;\n} else if(type == \"Loader\"){\n    index = 9;\n}\nif(isAlarm == \"true\"){\n    index += 1;\n} else {\n    if(isActive != \"true\"){\n        index += 2;\n    }\n}\n\nreturn {\n    url: images[index],\n    size: 40\n}"
+              "markerImageFunction" : "var type = data['Type'];\nvar isAlarm = data['alertActivity'];\nvar isActive = data['status'];\n\nlet index;\n\nif (type == 'Tool'){\n    index = 0;\n} else if(type == \"Box\"){\n    index = 3;\n} else if(type == \"Worker\"){\n    index = 6;\n} else if(type == \"Loader\"){\n    index = 9;\n}\nif(isAlarm == \"true\"){\n    index += 1;\n} else {\n    if(isActive != \"true\"){\n        index += 2;\n    }\n}\n\nreturn {\n    url: images[index],\n    size: 40\n}",
+              "polygonTooltipFunction" : "let createdTime = data[\"Created time\"];\n\nif(createdTime){\n    createdTime = moment(createdTime).format(\"DD.MM.yyyy HH:mm\")\n}\n\nreturn `<div>\n            <span style=\"font-size: 22px;\n                        font-weight: 600;\n                        color: #0C111D;\n                        text-align:right;\n                        line-height: 32px;\">${data.entityName}</span>\n            \n            <div style=\"display: flex;justify-content:space-between;margin-top:5px;gap: 10px;\">\n                <span style=\"color:#344054;\">Created time</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${createdTime}</span>\n            </div>\n        </div>`"
             },
             "title" : "Map with photo",
             "dropShadow" : false,
