@@ -5769,7 +5769,7 @@
               "defaultCenterPosition" : "0,0",
               "disableScrollZooming" : false,
               "disableZoomControl" : false,
-              "fitMapBounds" : true,
+              "fitMapBounds" : false,
               "useDefaultCenterPosition" : false,
               "mapPageSize" : 16384,
               "markerOffsetX" : 0.5,
