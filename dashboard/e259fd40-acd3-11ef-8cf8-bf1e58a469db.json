@@ -15829,7 +15829,7 @@
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "#FFFFFF",
                 "columns" : 24,
                 "margin" : 0,
                 "outerMargin" : true,
@@ -15860,7 +15860,7 @@
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#F2F4F7",
+                "backgroundColor" : "#FFFFFF",
                 "columns" : 24,
                 "margin" : 0,
                 "outerMargin" : true,
@@ -15922,7 +15922,7 @@
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "#FFFFFF",
                 "columns" : 24,
                 "margin" : 0,
                 "outerMargin" : true,
@@ -15953,7 +15953,7 @@
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "#FFFFFF",
                 "columns" : 24,
                 "margin" : 0,
                 "outerMargin" : true,
