@@ -7927,10 +7927,10 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "status",
-                "type" : "timeseries",
+                "name" : "active",
+                "type" : "attribute",
                 "label" : "Status",
-                "color" : "#3f51b5",
+                "color" : "#9e9e9e",
                 "settings" : {
                   "customTitle" : "",
                   "columnWidth" : "0px",
@@ -7943,8 +7943,8 @@
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible"
                 },
-                "_hash" : 0.2740107772726601,
-                "aggregationType" : "NONE",
+                "_hash" : 0.14236229648296517,
+                "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
                 "funcBody" : null,
