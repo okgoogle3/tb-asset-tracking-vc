@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"384745f0-c444-11ef-ab5a-5fc560f62ac3\"},\"name\":\"test device\"}",
       "key" : "assignedDevice",
-      "lastUpdateTs" : 1735298591592,
+      "lastUpdateTs" : 1735298591744,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -36,7 +36,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1735298591592,
+      "lastUpdateTs" : 1735298591744,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1735298591432,
+      "lastUpdateTs" : 1735298591744,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1735298591432,
+      "lastUpdateTs" : 1735298591744,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,7 +60,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1735298591432,
+      "lastUpdateTs" : 1735298591744,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1735298591592,
+      "lastUpdateTs" : 1735298591744,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -84,7 +84,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1735298591592,
+      "lastUpdateTs" : 1735298591744,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -92,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1735298591592,
+      "lastUpdateTs" : 1735298591744,
       "longValue" : null,
       "strValue" : "test"
     } ]
