@@ -16,7 +16,7 @@
       "id" : "92fb3530-c44c-11ef-ab5a-5fc560f62ac3"
     },
     "label" : null,
-    "name" : "Artemii Alert Profile 2",
+    "name" : "Artemii Alert Profile",
     "ownerId" : null,
     "type" : "Alarm config"
   },
@@ -26,7 +26,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"description\":null,\"isActive\":true,\"phone\":false,\"email\":false,\"application\":false}",
       "key" : "alarmConfig",
-      "lastUpdateTs" : 1735301893925,
+      "lastUpdateTs" : 1735301926805,
       "longValue" : null,
       "strValue" : null
     } ]
