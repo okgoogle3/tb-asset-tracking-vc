@@ -6519,7 +6519,7 @@
                 "settings" : {
                   "customTitle" : "",
                   "columnWidth" : "0px",
-                  "useCellStyleFunction" : true,
+                  "useCellStyleFunction" : false,
                   "cellStyleFunction" : "// return {\n//     \"width\": \"100px\",\n//     \"overflow\": \"hidden\",\n//     \"white-space\": \"nowrap\",\n//     \"text-overflow\": \"ellipsis\"\n// }",
                   "useCellContentFunction" : false,
                   "useCellContentFunctionOnExport" : true,
