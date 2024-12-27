@@ -1,0 +1,26 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "92fb3530-c44c-11ef-ab5a-5fc560f62ac3"
+    },
+    "label" : null,
+    "name" : "Artemii Alert Profile 2",
+    "ownerId" : null,
+    "type" : "Alarm config"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
