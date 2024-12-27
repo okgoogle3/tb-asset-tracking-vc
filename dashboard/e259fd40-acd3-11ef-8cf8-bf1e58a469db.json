@@ -12139,10 +12139,16 @@
               "dataKeys" : [ {
                 "name" : "count",
                 "type" : "count",
-                "label" : "count",
+                "label" : "Assets inside",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.9187513491236103
+                "_hash" : 0.9187513491236103,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
