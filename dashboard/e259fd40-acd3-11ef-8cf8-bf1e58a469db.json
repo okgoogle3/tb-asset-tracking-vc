@@ -10091,7 +10091,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "return `\n    <div *ngIf=\"ctx && ctx.stateController\" class=\"stateBlock\">\n        <tb-dashboard-state class=\"mainState\" *ngIf=\"ctx.stateController.getStateParams().stateId=='monitoring'\" [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"monitoringMap\">\n        </tb-dashboard-state>\n    </div>\n`;",
-              "markdownTextFunction" : "let type = data[0].Type;\n\nlet currentState = \"test\";\n\nif(type == \"Shape\"){\n    currentState = \"allAssetsShapeZoneMap\";\n} else if(type == \"Image plan\"){\n    currentState = \"allAssetsImageZoneMap\";\n} else if(type == \"Image on map\"){\n    currentState = \"allAssetsImageOnMapZoneMap\";\n} else {\n    currentState = \"allAssetsMap\";\n}\n\nconsole.log(\"init\", currentState)\n\nreturn `\n    <div *ngIf=\"ctx && ctx.stateController\" class=\"stateBlock\">\n        <tb-dashboard-state class=\"mainState\" [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"${currentState}\">\n        </tb-dashboard-state>\n    </div>\n`;",
+              "markdownTextFunction" : "let type = data[0].Type;\n\nlet currentState = \"test\";\n\nif(type == \"Shape\"){\n    currentState = \"allAssetsShapeZoneMap\";\n} else if(type == \"Image plan\"){\n    currentState = \"allAssetsImageZoneMap\";\n} else if(type == \"Image on map\"){\n    currentState = \"allAssetsImageOnMapZoneMap\";\n} else {\n    currentState = \"allAssetsMap\";\n}\n\nreturn `\n    <div *ngIf=\"ctx && ctx.stateController\" class=\"stateBlock\">\n        <tb-dashboard-state class=\"mainState\" [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"${currentState}\">\n        </tb-dashboard-state>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".stateBlock {\n    height: 100%;\n    width: 100%;\n    padding: 0px;\n}\n\n.mainState {\n    height: 100%;\n    width: 100%;\n    padding: 0px;\n}"
             },
@@ -10125,22 +10125,7 @@
           "sizeX" : 5,
           "sizeY" : 3.5,
           "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
-              "dataKeys" : [ {
-                "name" : "type",
-                "type" : "entityField",
-                "label" : "Type",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.7003339545422091
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
+            "datasources" : [ ],
             "timewindow" : {
               "displayValue" : "",
               "selectedTab" : 0,
