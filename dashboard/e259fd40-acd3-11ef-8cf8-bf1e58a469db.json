@@ -12133,22 +12133,16 @@
           "sizeY" : 1.5,
           "config" : {
             "datasources" : [ {
-              "type" : "entity",
+              "type" : "entityCount",
               "name" : "",
-              "entityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
+              "entityAliasId" : "e98fed76-25d1-9b7a-286c-2386690d996f",
               "dataKeys" : [ {
-                "name" : "assetsCount",
-                "type" : "attribute",
-                "label" : "Assets inside",
-                "color" : "#2196f3",
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.8597431826445967,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.9187513491236103
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -12192,8 +12186,7 @@
             "settings" : {
               "iconColor" : "#0044b3",
               "iconBackground" : "#e9f9ff",
-              "icon" : "link",
-              "displayTimeUpdated" : true
+              "icon" : "link"
             },
             "title" : "Simple wide card",
             "dropShadow" : false,
