@@ -36,7 +36,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1735298591744,
+      "lastUpdateTs" : 1735298606937,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -64,11 +64,11 @@
       "longValue" : null,
       "strValue" : ""
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isAssigned",
-      "lastUpdateTs" : 1735298478854,
+      "lastUpdateTs" : 1735298607118,
       "longValue" : null,
       "strValue" : null
     }, {
