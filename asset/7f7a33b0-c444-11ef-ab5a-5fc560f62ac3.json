@@ -68,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1735298590642,
+      "lastUpdateTs" : 1735298591432,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -92,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1735298590642,
+      "lastUpdateTs" : 1735298591432,
       "longValue" : null,
       "strValue" : "test"
     } ]
