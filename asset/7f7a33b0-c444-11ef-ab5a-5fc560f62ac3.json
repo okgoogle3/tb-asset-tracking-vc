@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1735298606937,
+      "lastUpdateTs" : 1735298611048,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -36,7 +36,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1735298606937,
+      "lastUpdateTs" : 1735298611048,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1735298606937,
+      "lastUpdateTs" : 1735298690519,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1735298606937,
+      "lastUpdateTs" : 1735298611048,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,15 +60,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1735298606937,
+      "lastUpdateTs" : 1735298611048,
       "longValue" : null,
       "strValue" : ""
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isAssigned",
-      "lastUpdateTs" : 1735298607118,
+      "lastUpdateTs" : 1735298611378,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -76,7 +76,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1735298606937,
+      "lastUpdateTs" : 1735298611048,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -84,7 +84,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1735298606937,
+      "lastUpdateTs" : 1735298611048,
       "longValue" : null,
       "strValue" : "test"
     } ]
