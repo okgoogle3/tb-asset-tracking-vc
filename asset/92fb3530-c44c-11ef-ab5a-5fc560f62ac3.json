@@ -24,9 +24,9 @@
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"description\":null,\"isActive\":false,\"phone\":false,\"email\":false,\"application\":false}",
+      "jsonValue" : "{\"description\":null,\"isActive\":true,\"phone\":false,\"email\":false,\"application\":false}",
       "key" : "alarmConfig",
-      "lastUpdateTs" : 1735301863449,
+      "lastUpdateTs" : 1735301893925,
       "longValue" : null,
       "strValue" : null
     } ]
