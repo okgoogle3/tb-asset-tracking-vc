@@ -53,10 +53,6 @@
       "type" : "Attributes Updated"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 11,
-      "type" : "REST API request"
-    }, {
-      "fromIndex" : 2,
       "toIndex" : 15,
       "type" : "Entity Deleted"
     }, {
