@@ -363,7 +363,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var msgNew = {\n    status: metadata.active,\n    isAssigned: true,\n    info : {\n        id: msg.from.id,\n        name:metadata.relatedEntityName\n    }\n};\n\n\nreturn {msg: msgNew, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};"
+        "tbelScript" : "var msgNew = {\n    status: metadata.active,\n    isAssigned: true\n};\n\n\nreturn {msg: msgNew, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
