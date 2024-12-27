@@ -53,7 +53,7 @@
       "type" : "Attributes Updated"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 15,
+      "toIndex" : 10,
       "type" : "Entity Deleted"
     }, {
       "fromIndex" : 6,
@@ -69,43 +69,27 @@
       "type" : "True"
     }, {
       "fromIndex" : 10,
-      "toIndex" : 12,
-      "type" : "AssetToZone"
+      "toIndex" : 16,
+      "type" : "Success"
     }, {
       "fromIndex" : 11,
-      "toIndex" : 10,
-      "type" : "Success"
+      "toIndex" : 12,
+      "type" : "Failure"
     }, {
-      "fromIndex" : 12,
-      "toIndex" : 14,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 14,
+      "fromIndex" : 11,
       "toIndex" : 13,
       "type" : "Success"
     }, {
+      "fromIndex" : 13,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
       "fromIndex" : 15,
-      "toIndex" : 21,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 16,
-      "toIndex" : 17,
-      "type" : "Failure"
-    }, {
-      "fromIndex" : 16,
-      "toIndex" : 18,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 18,
-      "toIndex" : 20,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 20,
-      "toIndex" : 19,
+      "toIndex" : 14,
       "type" : "True"
     }, {
-      "fromIndex" : 21,
-      "toIndex" : 16,
+      "fromIndex" : 16,
+      "toIndex" : 11,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
@@ -339,134 +323,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 380,
-        "layoutY" : 553
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType === 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);",
-        "tbelScript" : "return msg.type;"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69961631-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "relation type switch",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 378,
-        "layoutY" : 479
-      },
-      "configuration" : {
-        "serviceIdMetaDataAttribute" : "serviceId",
-        "requestIdMetaDataAttribute" : "requestUUID"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69961632-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "rest call reply",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.rest.TbSendRestApiCallReplyNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 377,
-        "layoutY" : 627
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: \"RELATION_DELETED\"};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69961633-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "RELATION_DELETED",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 377,
-        "layoutY" : 783
-      },
-      "configuration" : {
-        "scope" : "SERVER_SCOPE",
-        "notifyDevice" : false,
-        "sendAttributesUpdatedNotification" : false,
-        "updateAttributesOnlyOnValueChange" : true
-      },
-      "configurationVersion" : 2,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69961634-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "Save Attributes",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 373,
-        "layoutY" : 704
-      },
-      "configuration" : {
-        "outputValueKey" : "assetsCount",
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "TO",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "AssetToZone",
-            "entityTypes" : [ ]
-          } ]
-        },
-        "outMsgType" : "POST_ATTRIBUTES_REQUEST"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69961635-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "assetsCount",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.analytics.relation.TbRelationsCountNode"
     }, {
       "additionalInfo" : {
         "description" : "",
