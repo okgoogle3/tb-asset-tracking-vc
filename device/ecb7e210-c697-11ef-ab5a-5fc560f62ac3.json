@@ -18,7 +18,7 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "bfb09ea0-a7e4-11ef-98fa-d9f628e02cb7"
+      "id" : "464cd5f0-b2da-11ef-8c91-7baf5304b8d0"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -30,7 +30,7 @@
     "name" : "Artemii Device",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "temporaryDevice"
+    "type" : "Tag"
   },
   "credentials" : {
     "credentialsId" : "tMFRqcEDHkonaiEeCA1n",
