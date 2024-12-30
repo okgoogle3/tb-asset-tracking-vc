@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : null
+      "description" : ""
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -34,33 +34,33 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[[50.500305153528124,30.500991012573248],[50.501,30.501],[50.501,30.499],[50.500305153528124,30.498991012573246]]",
+      "jsonValue" : "[[50.50083403353438,30.50106704235077],[50.50113771504226,30.500514507293705],[50.500673666172624,30.49987077713013],[50.500369984664744,30.500423312187195]]",
       "key" : "perimeter",
-      "lastUpdateTs" : 1735562889356,
+      "lastUpdateTs" : 1735562928582,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[50.501,30.499]",
+      "jsonValue" : "[50.500673666172624,30.49987077713013]",
       "key" : "pointA",
-      "lastUpdateTs" : 1735562889356,
+      "lastUpdateTs" : 1735562928582,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[50.501,30.501]",
+      "jsonValue" : "[50.50113771504226,30.500514507293705]",
       "key" : "pointB",
-      "lastUpdateTs" : 1735562889356,
+      "lastUpdateTs" : 1735562928582,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[50.500305153528124,30.498991012573246]",
+      "jsonValue" : "[50.500369984664744,30.500423312187195]",
       "key" : "pointC",
-      "lastUpdateTs" : 1735562889356,
+      "lastUpdateTs" : 1735562928582,
       "longValue" : null,
       "strValue" : null
     }, {
