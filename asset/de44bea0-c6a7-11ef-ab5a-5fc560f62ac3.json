@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -20,9 +20,33 @@
     "label" : null,
     "name" : "Artemii Zone",
     "ownerId" : null,
-    "type" : "Temporary asset"
+    "type" : "Shape"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1735561024101,
+      "longValue" : null,
+      "strValue" : "#1E4C03"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[50.49968072276118,30.50214529037476],[50.499677310548506,30.499956607818607],[50.499400920504186,30.499956607818607],[50.49938727157121,30.50212919712067]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1735561014220,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[50.49968072276118, 30.50214529037476], [50.499677310548506, 30.499956607818607], [50.499400920504186, 30.499956607818607], [50.49938727157121, 30.50212919712067]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1735561014228,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
