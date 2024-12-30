@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : "regwg"
+      "description" : "Description"
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -28,31 +28,31 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "address",
-      "lastUpdateTs" : 1735559333015,
+      "lastUpdateTs" : 1735559355989,
       "longValue" : null,
-      "strValue" : "rfgesrg"
+      "strValue" : "1"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "city",
-      "lastUpdateTs" : 1735559333015,
+      "lastUpdateTs" : 1735559355989,
       "longValue" : null,
-      "strValue" : "rfegrfg"
+      "strValue" : "2"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "country",
-      "lastUpdateTs" : 1735559333015,
+      "lastUpdateTs" : 1735559355989,
       "longValue" : null,
-      "strValue" : "rgfewgrer"
+      "strValue" : "Ukraine"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1735559333015,
+      "lastUpdateTs" : 1735559355989,
       "longValue" : null,
       "strValue" : "regwg"
     }, {
@@ -60,7 +60,7 @@
       "doubleValue" : 50.5,
       "jsonValue" : null,
       "key" : "latitude",
-      "lastUpdateTs" : 1735559333015,
+      "lastUpdateTs" : 1735559355989,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,7 +68,7 @@
       "doubleValue" : 30.5,
       "jsonValue" : null,
       "key" : "longitude",
-      "lastUpdateTs" : 1735559333015,
+      "lastUpdateTs" : 1735559355989,
       "longValue" : null,
       "strValue" : null
     }, {
