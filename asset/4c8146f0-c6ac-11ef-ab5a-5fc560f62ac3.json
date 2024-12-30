@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1735563038474,
+      "lastUpdateTs" : 1735563051271,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -42,9 +42,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[[50.50083403353438,30.50106704235077],[50.50113771504226,30.500514507293705],[50.500673666172624,30.49987077713013],[50.500369984664744,30.500423312187195]]",
+      "jsonValue" : "[[50.5008835123659,30.500667393207554],[50.5004945284407,30.500340163707737],[50.50078797275125,30.501067042350773]]",
       "key" : "perimeter",
-      "lastUpdateTs" : 1735563049494,
+      "lastUpdateTs" : 1735563086207,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -74,9 +74,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[50.50083403353438, 30.50106704235077], [50.50113771504226, 30.500514507293705], [50.500673666172624, 30.49987077713013], [50.500369984664744, 30.500423312187195]]\"}",
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[50.5008835123659, 30.500667393207554], [50.5004945284407, 30.500340163707737], [50.50078797275125, 30.501067042350773]]\"}",
       "key" : "polygon",
-      "lastUpdateTs" : 1735563049536,
+      "lastUpdateTs" : 1735563086233,
       "longValue" : null,
       "strValue" : null
     } ]
