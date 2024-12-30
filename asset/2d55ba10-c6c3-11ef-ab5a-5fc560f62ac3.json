@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : null
+      "description" : ""
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -34,9 +34,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[[50.500683902593934,30.50038039684296],[50.49976261579113,30.502279400825504]]",
+      "jsonValue" : "[[50.50040410627987,30.498728156089786],[50.49942139389627,30.50089538097382]]",
       "key" : "perimeter",
-      "lastUpdateTs" : 1735572824875,
+      "lastUpdateTs" : 1735572881722,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -66,9 +66,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[50.500683902593934, 30.50038039684296], [50.49976261579113, 30.502279400825504]]\"}",
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[50.50040410627987, 30.498728156089786], [50.49942139389627, 30.50089538097382]]\"}",
       "key" : "polygon",
-      "lastUpdateTs" : 1735572824901,
+      "lastUpdateTs" : 1735572881725,
       "longValue" : null,
       "strValue" : null
     } ]
