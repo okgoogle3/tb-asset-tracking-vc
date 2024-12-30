@@ -26,7 +26,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "connectivity",
-      "lastUpdateTs" : 1735553470591,
+      "lastUpdateTs" : 1735553480445,
       "longValue" : null,
       "strValue" : "RFID (MQQT)"
     }, {
@@ -34,7 +34,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1735553470591,
+      "lastUpdateTs" : 1735553480445,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -42,23 +42,23 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "firmware",
-      "lastUpdateTs" : 1735553470591,
+      "lastUpdateTs" : 1735553480445,
       "longValue" : null,
       "strValue" : ""
     }, {
       "booleanValue" : null,
-      "doubleValue" : 0.1,
+      "doubleValue" : null,
       "jsonValue" : null,
       "key" : "frequency",
-      "lastUpdateTs" : 1735553470591,
-      "longValue" : null,
+      "lastUpdateTs" : 1735553480445,
+      "longValue" : -10,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "type",
-      "lastUpdateTs" : 1735553470591,
+      "lastUpdateTs" : 1735553480445,
       "longValue" : null,
       "strValue" : "Tag"
     } ]
