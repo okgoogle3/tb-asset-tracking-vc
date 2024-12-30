@@ -28,23 +28,23 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "address",
-      "lastUpdateTs" : 1735559355989,
-      "longValue" : null,
-      "strValue" : "1"
+      "lastUpdateTs" : 1735559369271,
+      "longValue" : 1,
+      "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "city",
-      "lastUpdateTs" : 1735559355989,
-      "longValue" : null,
-      "strValue" : "2"
+      "lastUpdateTs" : 1735559369271,
+      "longValue" : 2,
+      "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "country",
-      "lastUpdateTs" : 1735559355989,
+      "lastUpdateTs" : 1735559369271,
       "longValue" : null,
       "strValue" : "Ukraine"
     }, {
@@ -52,15 +52,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1735559355989,
+      "lastUpdateTs" : 1735559369271,
       "longValue" : null,
-      "strValue" : "regwg"
+      "strValue" : "Description"
     }, {
       "booleanValue" : null,
       "doubleValue" : 50.5,
       "jsonValue" : null,
       "key" : "latitude",
-      "lastUpdateTs" : 1735559355989,
+      "lastUpdateTs" : 1735559369271,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,7 +68,7 @@
       "doubleValue" : 30.5,
       "jsonValue" : null,
       "key" : "longitude",
-      "lastUpdateTs" : 1735559355989,
+      "lastUpdateTs" : 1735559369271,
       "longValue" : null,
       "strValue" : null
     }, {
