@@ -16,7 +16,7 @@
       "id" : "9c9d01d0-c6aa-11ef-ab5a-5fc560f62ac3"
     },
     "label" : null,
-    "name" : "Artemii Geo 1",
+    "name" : "Artemii Geo",
     "ownerId" : null,
     "type" : "Geofence"
   },
@@ -26,7 +26,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "color",
-      "lastUpdateTs" : 1735562154620,
+      "lastUpdateTs" : 1735562217414,
       "longValue" : null,
       "strValue" : "#0086C9"
     }, {
