@@ -8213,7 +8213,7 @@
               "lineHeight" : "32px"
             },
             "titleColor" : "#0C111D",
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "titleTooltip" : "",
             "borderRadius" : "12px",
             "widgetStyle" : {
