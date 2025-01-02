@@ -12250,163 +12250,6 @@
           "col" : 0,
           "id" : "a4836a32-c7c5-320d-673f-fca8d9d92a4d"
         },
-        "3dbfa7ea-049c-f538-acf6-0cf689bae3bf" : {
-          "typeFullFqn" : "system.cards.markdown_card",
-          "type" : "latest",
-          "sizeX" : 5,
-          "sizeY" : 3.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
-              "dataKeys" : [ {
-                "name" : "description",
-                "type" : "attribute",
-                "label" : "description",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.040296769152111445
-              }, {
-                "name" : "type",
-                "type" : "entityField",
-                "label" : "Type",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.6159163857011458
-              }, {
-                "name" : "modelNumber",
-                "type" : "attribute",
-                "label" : "modelNumber",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.15634939073533616
-              }, {
-                "name" : "serialNumber",
-                "type" : "attribute",
-                "label" : "serialNumber",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.24502295771475624
-              }, {
-                "name" : "image",
-                "type" : "attribute",
-                "label" : "image",
-                "color" : "#607d8b",
-                "settings" : { },
-                "_hash" : 0.5689268815729243
-              }, {
-                "name" : "status",
-                "type" : "attribute",
-                "label" : "status",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.8998395231211911
-              }, {
-                "name" : "assignedDevice",
-                "type" : "attribute",
-                "label" : "assignedDevice",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.9850295764344927
-              }, {
-                "name" : "rssi",
-                "type" : "timeseries",
-                "label" : "rssi",
-                "color" : "#3f51b5",
-                "settings" : { },
-                "_hash" : 0.5495984729223733
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1728983985678,
-                  "endTimeMs" : 1729070385678
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "16px",
-            "settings" : {
-              "useMarkdownTextFunction" : true,
-              "markdownTextPattern" : "<div class=\"dashboard-header-container\">\n    <div class=\"title\">Overview</div>\n    <button id=\"addNewUser\" class=\"create-asset-button\" *ngIf=\"localStorage.getItem('role'\n    ) === 'Admin'\">+ New user</button>\n</div>",
-              "markdownTextFunction" : "let assignedDevice = \"No Data\";\n\nif(data[0].assignedDevice && JSON.parse(data[0].assignedDevice)){\n    assignedDevice = JSON.parse(data[0].assignedDevice).name;\n} \n\nlet imageBlock = `<img style=\"width: 100%\" [src]=\"'/api/images/tenant/Device Image Container.png' | image | async\" />`;\nlet statusBlock = `<span class=\"inactive\">INACTIVE</span>`;\n\nif(data[0].image){\n    imageBlock = `<img style=\"width: 90%\" src=\"${data[0].image}\"/>`;    \n}\n\nif(data[0].status == \"true\" || data[0].status == true){\n    statusBlock = `<span class=\"active\">ACTIVE</span>`\n}\n\nlet signal1 = `<svg width=\"26\" height=\"16\" viewBox=\"0 0 26 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                <rect x=\"0.5\" y=\"12\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#B42318\"/>\n                <rect x=\"7.5\" y=\"8\" width=\"4\" height=\"8\" rx=\"1\" fill=\"#FEE4E2\"/>\n                <rect x=\"14.5\" y=\"4\" width=\"4\" height=\"12\" rx=\"1\" fill=\"#FEE4E2\"/>\n                <rect x=\"21.5\" width=\"4\" height=\"16\" rx=\"1\" fill=\"#FEE4E2\"/>\n            </svg>`; \n\nlet signal2 = `<svg width=\"26\" height=\"16\" viewBox=\"0 0 26 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                <rect x=\"0.5\" y=\"12\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#DC6803\"/>\n                <rect x=\"7.5\" y=\"8\" width=\"4\" height=\"8\" rx=\"1\" fill=\"#DC6803\"/>\n                <rect x=\"14.5\" y=\"4\" width=\"4\" height=\"12\" rx=\"1\" fill=\"#FEF0C7\"/>\n                <rect x=\"21.5\" width=\"4\" height=\"16\" rx=\"1\" fill=\"#FEF0C7\"/>\n            </svg>`;\n\nlet signal3 = `<svg width=\"26\" height=\"16\" viewBox=\"0 0 26 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                <rect x=\"0.5\" y=\"12\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"7.5\" y=\"8\" width=\"4\" height=\"8\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"14.5\" y=\"4\" width=\"4\" height=\"12\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"21.5\" width=\"4\" height=\"16\" rx=\"1\" fill=\"#DCFAE6\"/>\n            </svg>`;\n\nlet signal4 = `<svg width=\"26\" height=\"16\" viewBox=\"0 0 26 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                <rect x=\"0.5\" y=\"12\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"7.5\" y=\"8\" width=\"4\" height=\"8\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"14.5\" y=\"4\" width=\"4\" height=\"12\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"21.5\" width=\"4\" height=\"16\" rx=\"1\" fill=\"#067647\"/>\n            </svg>`;\n            \nlet noSignal = `<div style=\"display: flex; align-items:center; gap: 2px;\">\n                <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path d=\"M8.00001 1.33301C4.31334 1.33301 1.33334 4.31301 1.33334 7.99967C1.33334 11.6863 4.31334 14.6663 8.00001 14.6663C11.6867 14.6663 14.6667 11.6863 14.6667 7.99967C14.6667 4.31301 11.6867 1.33301 8.00001 1.33301ZM8.00001 13.333C5.06001 13.333 2.66668 10.9397 2.66668 7.99967C2.66668 5.05967 5.06001 2.66634 8.00001 2.66634C10.94 2.66634 13.3333 5.05967 13.3333 7.99967C13.3333 10.9397 10.94 13.333 8.00001 13.333ZM10.3933 4.66634L8.00001 7.05967L5.60668 4.66634L4.66668 5.60634L7.06001 7.99967L4.66668 10.393L5.60668 11.333L8.00001 8.93967L10.3933 11.333L11.3333 10.393L8.94001 7.99967L11.3333 5.60634L10.3933 4.66634Z\" fill=\"#667085\"/>\n                </svg> \n                <span style=\"font-weight: 500; color: #667085;\">No signal</span>\n            </div>`;\n\nlet signalSvg;\n\nif(data[0].rssi && data[0].rssi <= -110){\n    signalSvg = signal1;\n} else if(data[0].rssi && data[0].rssi > -110 && data[0].rssi <= -90){\n    signalSvg = signal2;\n} else if(data[0].rssi && data[0].rssi > -90 && data[0].rssi <= -70){\n    signalSvg = signal3;\n} else if(data[0].rssi && data[0].rssi >= -70){\n    signalSvg = signal4;\n} else {\n    signalSvg = noSignal;   \n}\n\nreturn `<div class=\"mainDiv\">\n            <div class=\"imageBlock\">` + imageBlock + `</div>\n            <div class=\"infoBlock\">\n                <div class=\"row between\">\n                    <span class=\"key\">Working status</span>` \n                    + statusBlock + \n                `</div>\n                <div class=\"row between\">\n                    <span class=\"key\">Assigned device</span>\n                    <b>${assignedDevice}</b>\n                </div>\n                <div class=\"row between\">\n                    <span class=\"key\">Signal</span>\n                    ` + signalSvg + `\n                </div>\n            </div>\n            <div class=\"descriptionBlock\">\n                <span class=\"title\">Description</span>\n                <div class=\"row\">\n                    <div class=\"childRow\">Type: <span class=\"customB\">${data[0].Type}</span></div>\n                    <div class=\"childRow\">MN: <span class=\"customB\">${data[0].modelNumber}</span></div>\n                    <div class=\"childRow\">SN: <span class=\"customB\">${data[0].serialNumber}</span></div>\n                </div>\n                <span class=\"text\">${data[0].description}</span>\n            </div>\n        </div>`;",
-              "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ".mainDiv {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    padding: 0;\n    gap: 15px;\n}\n\n.imageBlock {\n    /*padding: 20px;*/\n    /*height: 150px;*/\n    width: 100% !important;\n    height: auto;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.infoBlock {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    padding: 0;\n}\n\n.row {\n    width: 100%;\n    display: flex;\n    justify-content: start;\n    align-items: center;\n    padding: 2px 0px;\n    gap: 20px;\n}\n\n.childRow {\n    gap: 5px;\n}\n\n.between {\n    justify-content: space-between;\n}\n\n.key {\n    font-size: 14px;\n    font-weight: 400;\n    line-height: 20px;\n    text-align: left;\n    color: #344054;\n}\n\n.descriptionBlock {\n    height: auto;\n    color: #344054;\n    display: flex;\n    flex-direction: column;\n}\n\n.deviceBlock {\n    height: auto;\n    color: #344054;\n    display: flex;\n    flex-direction: column;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 24px;\n    font-weight: 600;\n    line-height: 32px;\n    text-align: left;\n}\n\n.text {\n    padding: 10px 0px;    \n}\n\n.customB {\n    font-size: 16px;\n    font-weight: 600;\n    line-height: 24px;\n    letter-spacing: 0.01em;\n    text-align: left;\n    color: #344054;\n}\n\n.inactive {\n    color: #475467;\n    background-color: #EAECF0;\n    border-radius: 4px;\n    padding: 5px;\n    font-size: 12px;\n    font-weight: 600;\n    line-height: 16px;\n    text-align: left;   \n}\n\n.active {\n    color: #026AA2;\n    background-color: #E0F2FE;\n    border-radius: 4px;\n    padding: 5px;\n    font-size: 12px;\n    font-weight: 600;\n    line-height: 16px;\n    text-align: left;\n}\n"
-            },
-            "title" : "Markdown/HTML Card",
-            "showTitleIcon" : false,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : {
-              "border" : "1px solid #D0D5DD",
-              "margin-right" : "5px",
-              "margin-top" : "5px"
-            },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "showLegend" : false,
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "enableDataExport" : false,
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "actions" : {
-              "elementClick" : [ {
-                "name" : "addNewProfile",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "customPretty",
-                "customHtml" : "<div class=\"form-wrapper\">\n    <div class=\"form-header-panel\" style=\"width: 100%\">\n        <div class=\"title\">New alert profile</div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <mat-stepper linear labelPosition=\"bottom\" #stepper>\n        <mat-step [stepControl]=\"alarmInfoFormGroup\">\n            <form [formGroup]=\"alarmInfoFormGroup\">\n                <ng-template matStepLabel>Info</ng-template>\n                <div class=\"row\" style=\"justify-content:space-between;padding:10px;\">\n                    <span class=\"sub-title\">Info</span>\n                    <div>\n                        <span>Rule status: <b>Active</b></span>\n                        <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"isActive\"></mat-slide-toggle>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Name</mat-label>\n                            <input type=\"string\" matInput formControlName=\"name\" placeholder=\"Enter name\">\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Description</mat-label>\n                            <textarea matInput\n                                formControlName=\"description\"\n                                cdkTextareaAutosize\n                                #autosize=\"cdkTextareaAutosize\"\n                                cdkAutosizeMinRows=\"3\"\n                                cdkAutosizeMaxRows=\"5\"></textarea>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned devices</mat-label>\n                            <mat-select formControlName=\"devices\" multiple required>\n                                <mat-option *ngFor=\"let device of devices\" [value]=\"device\">{{device.name}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"btn-container\">\n                    <button mat-flat-button matStepperNext color=\"primary\" [disabled]=\"alarmInfoFormGroup.invalid\">Next</button>\n                </div>\n            </form>\n        </mat-step>\n        <mat-step [stepControl]=\"alarmUsersFormGroup\">\n            <form [formGroup]=\"alarmUsersFormGroup\">\n                <ng-template matStepLabel>Assigned users</ng-template>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned users</mat-label>\n                            <mat-select formControlName=\"users\" multiple required>\n                                <mat-option *ngFor=\"let user  of users\" [value]=\"user\">{{user.email}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via phone</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"phone\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via email</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"email\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification in application</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"application\"></mat-slide-toggle>\n                </div>\n                <div class=\"buttons-container\" style=\"margin-top:40px;\">\n                    <button mat-button matStepperPrevious>Back</button>\n                    <button mat-flat-button matStepperNext color=\"primary\" (click)=\"save()\" [disabled]=\"alarmUsersFormGroup.invalid\">Done</button>\n                </div>\n            </form>\n        </mat-step>\n    </mat-stepper>\n</div>",
-                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.first-step-buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.first-step-buttons-container button:not(:last-child) {\n    margin-right: 8px;\n}\n\n.buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n}\n\n.menu-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.row {\n    display: flex;\n    width: 100%;\n    gap: 20px;\n}\n\n.row .input-wrapper {\n    flex: 1;\n}\n\ninput, mat-form-field, tb-phone-input  {\n    width: 100%;\n}\n\n.tb-default .mat-stepper-horizontal, .tb-default .mat-stepper-vertical {\n    background-color: transparent;\n}\n\n.btn-container {\n    display: flex;\n    justify-content: flex-end;\n    margin-top: 48px;\n}\n\n.sub-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.toggle {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    padding: 10px;\n    align-items: center;\n    height: 60px;\n    border-bottom: 1px solid #D0D5DD;\n}\n",
-                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));  \nlet attributeService = $injector.get(widgetContext.servicesMap.get(\"attributeService\"));\nlet assetService = $injector.get(widgetContext.servicesMap.get(\"assetService\"));\nlet deviceService = $injector.get(widgetContext.servicesMap.get(\"deviceService\"));\nlet userService = $injector.get(widgetContext.servicesMap.get(\"userService\"));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get(\"entityRelationService\"));\n\nopendeviceConfigDialog();\n\nfunction opendeviceConfigDialog() {\n    customDialog.customDialog(htmlTemplate, CreateDeviceConfigDialogController).subscribe();\n}\n\nfunction CreateDeviceConfigDialogController(instance) {\n    let vm = instance;\n    \n    vm.devices = [];\n    vm.users = [];\n    \n    deviceService.getTenantDevices(widgetContext.pageLink(10000,0)).subscribe(devices => {\n        if(devices && devices.data && devices.data.length){\n            devices.data.forEach(x=>{\n                vm.devices.push(x);\n            });\n        }\n    });\n    \n    userService.getAllUserInfos(true, widgetContext.pageLink(10000,0)).subscribe(users => {\n        if(users && users.data && users.data.length){\n            users.data.forEach(x=>{\n                vm.users.push(x);\n            });\n        }\n    });\n    \n    vm.alarmInfoFormGroup = vm.fb.group({\n        name: [null, [vm.validators.required]],\n        description: [null],\n        isActive: false,\n        devices: [null]\n    });\n    \n    vm.alarmUsersFormGroup = vm.fb.group({\n        users: [null],\n        phone: false,\n        email: false,\n        application: false\n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        let {name, description, isActive, devices} = vm.alarmInfoFormGroup.value;\n        let {users, phone, email, application} = vm.alarmUsersFormGroup.value;\n\n        let payload = {\n            name,\n            type: \"alertProfile\"\n        };\n        \n        let config = {\n            description: description,\n            isActive: isActive,\n            phone: phone,\n            email: email,\n            application: application\n        }\n        \n        assetService.saveAsset(payload).subscribe(response => {\n            attributeService.saveEntityAttributes(response.id, \"SERVER_SCOPE\", [{key: \"alarmConfig\", value: config}]).subscribe(()=>{\n                devices.forEach(x=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: x.id,\n                        type: 'AlarmConfigToDevice',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                })\n                users.forEach(x=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: x.id,\n                        type: 'AlarmConfigToInformingUser',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                })\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n                widgetContext.showSuccessToast(`Device config was created successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n            })\n        });\n    };\n}\n",
-                "customResources" : [ ],
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "cca37572-e27f-4169-1d65-e0fdb4de2b52"
-              } ]
-            },
-            "borderRadius" : "12px"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "3dbfa7ea-049c-f538-acf6-0cf689bae3bf"
-        },
         "e74c05f9-2bcd-1be7-85bd-7e3dbfafce9c" : {
           "typeFullFqn" : "tenant.simpe_card",
           "type" : "latest",
@@ -15634,12 +15477,6 @@
                   "row" : 0,
                   "col" : 0
                 },
-                "3dbfa7ea-049c-f538-acf6-0cf689bae3bf" : {
-                  "sizeX" : 10,
-                  "sizeY" : 14,
-                  "row" : 2,
-                  "col" : 0
-                },
                 "e74c05f9-2bcd-1be7-85bd-7e3dbfafce9c" : {
                   "sizeX" : 8,
                   "sizeY" : 2,
@@ -15660,8 +15497,8 @@
                 },
                 "4f4f0382-5aa8-b2c9-9925-007bbb741df2" : {
                   "sizeX" : 10,
-                  "sizeY" : 10,
-                  "row" : 16,
+                  "sizeY" : 14,
+                  "row" : 2,
                   "col" : 0
                 }
               },
