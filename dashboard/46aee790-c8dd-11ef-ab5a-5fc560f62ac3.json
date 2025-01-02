@@ -474,15 +474,15 @@
               "widgets" : {
                 "a16266ea-f24f-97ff-8686-d3bc5c6bf9a3" : {
                   "sizeX" : 23,
-                  "sizeY" : 8,
+                  "sizeY" : 4,
                   "row" : 0,
                   "col" : 0
                 },
                 "efae2bec-c398-5741-2e27-c99d5e938b15" : {
                   "sizeX" : 23,
-                  "sizeY" : 1,
+                  "sizeY" : 5,
                   "mobileHeight" : null,
-                  "row" : 8,
+                  "row" : 4,
                   "col" : 0
                 }
               },
