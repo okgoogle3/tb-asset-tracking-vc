@@ -18,11 +18,67 @@
       "id" : "12d6a6b0-c126-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "Mykolaiv Alumina Plant",
+    "name" : "Mykolaiv Aluminium Plant",
     "ownerId" : null,
     "type" : "Location"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1734955474088,
+      "longValue" : null,
+      "strValue" : "471, Zhovtnevyi ave"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "city",
+      "lastUpdateTs" : 1734955474088,
+      "longValue" : null,
+      "strValue" : "Halytsynove"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "country",
+      "lastUpdateTs" : 1734955474088,
+      "longValue" : null,
+      "strValue" : "Ukraine"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1734955474088,
+      "longValue" : null,
+      "strValue" : " Mykolaiv Alumina Plant Type of business and enterprise Legal form limited liability company Industry non-ferrous metallurgy Founded on 6 June 1977 Headquarters Halytsynove Mykolaiv Alumina Plant (Mykolaiv Alumina Plant LLC) is the largest non-ferrous metallurgy enterprise in Ukraine and one of the largest in Europe, equipped with modern facilities. The company covers many times Ukraine's needs for alumina and aluminium hydroxide, so it is important for Ukrainian exports and thus foreign currency inflows into the country's economy."
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 46.7766463443434,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1734955474088,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 31.95855158325312,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1734955474088,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "zonesCount",
+      "lastUpdateTs" : 1735291451742,
+      "longValue" : 4,
+      "strValue" : null
+    } ]
   }
 }
