@@ -5415,7 +5415,7 @@
                 "limit" : 25000
               }
             },
-            "showTitle" : true,
+            "showTitle" : false,
             "backgroundColor" : "#FFFFFF",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
