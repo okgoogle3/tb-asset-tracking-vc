@@ -26,9 +26,25 @@
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
+      "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"44ef5840-c6a3-11ef-ab5a-5fc560f62ac3\"},\"name\":\"Artemii Device\"}",
+      "key" : "assignedDevice",
+      "lastUpdateTs" : 1735822524895,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"name\":\"Artemii Location\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"90fe0470-c6a3-11ef-ab5a-5fc560f62ac3\"}}",
+      "key" : "assignedLocation",
+      "lastUpdateTs" : 1735822524895,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1735573260705,
+      "lastUpdateTs" : 1735822524895,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -36,23 +52,23 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1735560335873,
+      "lastUpdateTs" : 1735822524895,
       "longValue" : null,
       "strValue" : ""
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1735560335873,
+      "lastUpdateTs" : 1735822524895,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1735560335873,
+      "lastUpdateTs" : 1735822524895,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,7 +76,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1735573260705,
+      "lastUpdateTs" : 1735822524895,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -68,7 +84,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1735573260705,
+      "lastUpdateTs" : 1735822524895,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -76,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1735573260705,
+      "lastUpdateTs" : 1735822524895,
       "longValue" : null,
       "strValue" : ""
     } ]
