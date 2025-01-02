@@ -15040,6 +15040,126 @@
           "row" : 0,
           "col" : 0,
           "id" : "3539c159-71cd-834b-e180-69472a25c5dd"
+        },
+        "4f4f0382-5aa8-b2c9-9925-007bbb741df2" : {
+          "typeFullFqn" : "tenant.asset_details_widget",
+          "type" : "latest",
+          "sizeX" : 6.5,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
+              "dataKeys" : [ {
+                "name" : "status",
+                "type" : "attribute",
+                "label" : "status",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.14982233626390862
+              }, {
+                "name" : "assignedDevice",
+                "type" : "attribute",
+                "label" : "assignedDevice",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.13214193160430776
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.8320640442148772
+              }, {
+                "name" : "rssi",
+                "type" : "timeseries",
+                "label" : "rssi",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.48413760175413345
+              }, {
+                "name" : "modelNumber",
+                "type" : "attribute",
+                "label" : "modelNumber",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.7394937368762158
+              }, {
+                "name" : "description",
+                "type" : "attribute",
+                "label" : "description",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.9098404861654932
+              }, {
+                "name" : "serialNumber",
+                "type" : "attribute",
+                "label" : "serialNumber",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.7242853552139741
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1735740572735,
+                  "endTimeMs" : 1735826972735
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "16px",
+            "settings" : { },
+            "title" : "Attributes card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD",
+              "margin-right" : "5px",
+              "margin-top" : "5px"
+            },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "12px",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "4f4f0382-5aa8-b2c9-9925-007bbb741df2"
         }
       },
       "states" : {
@@ -15537,6 +15657,12 @@
                   "sizeY" : 2,
                   "row" : 0,
                   "col" : 12
+                },
+                "4f4f0382-5aa8-b2c9-9925-007bbb741df2" : {
+                  "sizeX" : 10,
+                  "sizeY" : 10,
+                  "row" : 16,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
