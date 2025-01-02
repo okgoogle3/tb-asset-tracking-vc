@@ -1377,7 +1377,7 @@
                     "showLine" : true,
                     "step" : false,
                     "stepType" : "start",
-                    "smooth" : false,
+                    "smooth" : true,
                     "lineType" : "solid",
                     "lineWidth" : 2,
                     "showPoints" : false,
@@ -1431,6 +1431,7 @@
                       }
                     }
                   },
+                  "tooltipValueFormatter" : null,
                   "comparisonSettings" : {
                     "showValuesForComparison" : false,
                     "comparisonValuesLabel" : "",
@@ -1439,7 +1440,11 @@
                 },
                 "_hash" : 0.2647090218056891,
                 "units" : "°C",
-                "decimals" : 0
+                "decimals" : 0,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
