@@ -1451,15 +1451,28 @@
               "hideAggInterval" : false,
               "hideTimezone" : false,
               "selectedTab" : 1,
+              "realtime" : {
+                "realtimeType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
               "history" : {
                 "historyType" : 0,
-                "timewindowMs" : 2592000000,
                 "interval" : 7200000,
+                "timewindowMs" : 86400000,
                 "fixedTimewindow" : {
                   "startTimeMs" : 1727599353857,
                   "endTimeMs" : 1727685753857
                 },
-                "quickInterval" : "CURRENT_DAY"
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "AVG",
