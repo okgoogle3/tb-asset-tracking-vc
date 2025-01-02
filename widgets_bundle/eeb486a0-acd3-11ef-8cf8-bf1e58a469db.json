@@ -17,7 +17,7 @@
     "scada" : false,
     "title" : "A_Template"
   },
-  "fqns" : [ "navigation_side_bar2", "tab_navigation", "information_card", "description_widget", "map_with_custom_navigation_route", "broadcast_map", "broadcast_image_map", "broadcast_geo_map_floor_plan_layer", "threshold_table", "zone_selector", "header_location_zone_selector", "filtration_tab2", "simpe_card", "simple_wide_card", "alarm_card", "test_alarm_per_multiple_entities", "alarm_wide_card", "alarm_simple_card_", "geo_map_testing_several_" ],
+  "fqns" : [ "navigation_side_bar2", "tab_navigation", "information_card", "description_widget", "map_with_custom_navigation_route", "broadcast_map", "broadcast_image_map", "broadcast_geo_map_floor_plan_layer", "threshold_table", "zone_selector", "header_location_zone_selector", "filtration_tab2", "simpe_card", "simple_wide_card", "alarm_card", "test_alarm_per_multiple_entities", "alarm_wide_card", "alarm_simple_card_", "geo_map_testing_several_", "asset_details_widget" ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
