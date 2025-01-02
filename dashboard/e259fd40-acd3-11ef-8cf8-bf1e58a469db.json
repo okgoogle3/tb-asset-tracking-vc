@@ -14943,6 +14943,13 @@
                 "color" : "#8bc34a",
                 "settings" : { },
                 "_hash" : 0.7242853552139741
+              }, {
+                "name" : "image",
+                "type" : "attribute",
+                "label" : "image",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.35287170018047176
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
