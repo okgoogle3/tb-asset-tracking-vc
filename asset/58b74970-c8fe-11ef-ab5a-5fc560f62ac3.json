@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "16d7cfa0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "58b74970-c8fe-11ef-ab5a-5fc560f62ac3"
+    },
+    "label" : null,
+    "name" : "dima",
+    "ownerId" : null,
+    "type" : "Worker"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
