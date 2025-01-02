@@ -2903,7 +2903,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "// if(data.length == 0 && ctx.stateController.getStateParams().subState == 'general'){\n//     return `<div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='general'}\" fxLayout=\"column\">\n//                 <tb-dashboard-state class=\"table\" [ctx]=\"ctx\" stateId=\"noZonesState\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n//             </div>`;\n// } else \n\nlet html = `<div class=\"user-layout\" fxLayout=\"column\">\n                <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='zones'\" [ctx]=\"ctx\" stateId=\"locationDetailsZones\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n                <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"locationDetailsAlerts\" [syncParentStateParams]=\"true\"></tb-dashboard-state>`;\n\nif(data.length == 0){\n    html += `<tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"noZonesState\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n            </div>`;\n} else {\n    html += `<tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"locationDetailsGeneral\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n            </div>`;\n}\n\nreturn html;",
+              "markdownTextFunction" : "let html = `<div class=\"user-layout\" fxLayout=\"column\">\n                <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='zones'\" [ctx]=\"ctx\" stateId=\"locationDetailsZones\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n                <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"locationDetailsAlerts\" [syncParentStateParams]=\"true\"></tb-dashboard-state>`;\n\nif(data.length == 0){\n    html += `<tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"noZonesState\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n            </div>`;\n} else {\n    html += `<tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"locationDetailsGeneral\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n            </div>`;\n}\n\nreturn html;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".tb-markdown-view div,\n.tb-markdown-view p {\n    line-height: normal;\n}\n.mat-content {\n    background-color: #fff !important;\n}\n.user-layout {\n    width: 100%;\n    height: 100%;\n    padding: 0px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n.header-state {\n    height: 80px;\n    padding: 0px;\n}\n.table {\n    flex-grow: 1;\n    padding: 0px;\n}\n\n.user-layout-overflow {\n    height: 100%;\n    overflow: auto;\n}"
             },
@@ -5331,12 +5331,12 @@
                 "limit" : 25000
               }
             },
-            "showTitle" : false,
+            "showTitle" : true,
             "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : { },
-            "title" : "Attributes card",
+            "title" : "Location map",
             "useDashboardTimewindow" : true,
             "displayTimewindow" : true,
             "dropShadow" : false,
@@ -5358,6 +5358,19 @@
                 "openInPopover" : false,
                 "id" : "48612793-a003-3107-7f79-df4e6c6a6478"
               } ]
+            },
+            "titleFont" : {
+              "size" : 24,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "600",
+              "style" : null
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
             }
           },
           "row" : 0,
