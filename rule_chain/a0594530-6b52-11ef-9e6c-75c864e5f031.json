@@ -84,6 +84,10 @@
       "toIndex" : 13,
       "type" : "Success"
     }, {
+      "fromIndex" : 7,
+      "toIndex" : 30,
+      "type" : "Success"
+    }, {
       "fromIndex" : 9,
       "toIndex" : 10,
       "type" : "Success"
@@ -885,6 +889,29 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1424,
+        "layoutY" : 201
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "522425e0-c9e1-11ef-ab5a-5fc560f62ac3"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "96f94d80-c9e1-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "Calculate idle and movement ms",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },
