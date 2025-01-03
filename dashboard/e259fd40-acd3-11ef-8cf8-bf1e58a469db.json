@@ -4563,7 +4563,7 @@
             "actions" : {
               "actionCellButton" : [ {
                 "name" : "Edit",
-                "icon" : "edit",
+                "icon" : "mdi:pencil-outline",
                 "useShowWidgetActionFunction" : true,
                 "showWidgetActionFunction" : "return localStorage.getItem(\"role\") === \"Admin\";",
                 "type" : "customPretty",
