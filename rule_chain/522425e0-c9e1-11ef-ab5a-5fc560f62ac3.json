@@ -34,7 +34,7 @@
       "type" : "True"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 0,
+      "toIndex" : 6,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 5,
@@ -192,6 +192,35 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 912,
+        "layoutY" : 587
+      },
+      "configuration" : {
+        "inputValueKey" : "movement",
+        "outputValueKey" : "movementChangeDetected",
+        "useCache" : true,
+        "addPeriodBetweenMsgs" : false,
+        "periodValueKey" : "periodInMs",
+        "round" : null,
+        "tellFailureIfDeltaIsNegative" : false,
+        "excludeZeroDeltas" : true
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2e58ad11-c9e2-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "movementChangeDetected",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.CalculateDeltaNode"
     } ],
     "ruleChainConnections" : null
   },
