@@ -14179,7 +14179,19 @@
               "border" : "1px solid #D0D5DD"
             },
             "displayTimewindow" : false,
-            "actions" : { },
+            "actions" : {
+              "rowClick" : [ {
+                "name" : "Asset event list",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "console.log(entityId)",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "cf2c6f46-dabe-2abf-deaa-20db3c25d0ba"
+              } ]
+            },
             "configMode" : "advanced",
             "alarmFilterConfig" : {
               "statusList" : [ "ACTIVE" ],
