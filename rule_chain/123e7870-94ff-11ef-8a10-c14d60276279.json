@@ -233,8 +233,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 626,
-        "layoutY" : 750
+        "layoutX" : 681,
+        "layoutY" : 686
       },
       "configuration" : {
         "inputValueKey" : "movement",
