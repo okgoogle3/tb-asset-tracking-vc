@@ -206,7 +206,7 @@
             "main" : {
               "widgets" : {
                 "f53c7a2e-4266-fa7b-922d-9293eba04372" : {
-                  "sizeX" : 17,
+                  "sizeX" : 16,
                   "sizeY" : 11,
                   "row" : 0,
                   "col" : 0
@@ -232,6 +232,15 @@
             "type" : "entityType",
             "resolveMultiple" : true,
             "entityType" : "DEVICE"
+          }
+        },
+        "2db6b892-b1b2-206b-402f-197cd7c0c91e" : {
+          "id" : "2db6b892-b1b2-206b-402f-197cd7c0c91e",
+          "alias" : "Dashboards",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "DASHBOARD"
           }
         }
       },
