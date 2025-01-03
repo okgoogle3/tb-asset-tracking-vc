@@ -14741,7 +14741,7 @@
               "usePolygonColorFunction" : true,
               "polygonStrokeColor" : "#3388ff",
               "polygonStrokeOpacity" : 1,
-              "polygonStrokeWeight" : 3,
+              "polygonStrokeWeight" : 0,
               "usePolygonStrokeColorFunction" : true,
               "showCircle" : false,
               "circleKeyName" : "perimeter",
