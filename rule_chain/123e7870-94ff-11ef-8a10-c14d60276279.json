@@ -267,10 +267,10 @@
       },
       "configuration" : {
         "msgCount" : 1,
-        "periodInSeconds" : 2,
+        "periodInSeconds" : 1,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = { movement: false };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var msg = { movement: true };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "originatorId" : null,
         "originatorType" : "RULE_NODE"
       },
