@@ -48,9 +48,21 @@
       "toIndex" : 6,
       "type" : "Post attributes"
     }, {
+      "fromIndex" : 7,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
       "fromIndex" : 8,
       "toIndex" : 7,
       "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 9,
+      "type" : "True"
     } ],
     "firstNodeIndex" : 0,
     "nodes" : [ {
@@ -233,14 +245,14 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 681,
-        "layoutY" : 686
+        "layoutX" : 484,
+        "layoutY" : 669
       },
       "configuration" : {
         "inputValueKey" : "movement",
-        "outputValueKey" : "delta",
+        "outputValueKey" : "movementChangeDetected",
         "useCache" : true,
-        "addPeriodBetweenMsgs" : true,
+        "addPeriodBetweenMsgs" : false,
         "periodValueKey" : "periodInMs",
         "round" : null,
         "tellFailureIfDeltaIsNegative" : false,
@@ -254,7 +266,7 @@
         "entityType" : "RULE_NODE",
         "id" : "16431600-c9df-11ef-ab5a-5fc560f62ac3"
       },
-      "name" : "1",
+      "name" : "movementChangeDetected",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -262,8 +274,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 338,
-        "layoutY" : 687
+        "layoutX" : 141,
+        "layoutY" : 668
       },
       "configuration" : {
         "msgCount" : 1,
@@ -287,6 +299,83 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1108,
+        "layoutY" : 676
+      },
+      "configuration" : {
+        "inputValueKey" : "movementChangeDetected",
+        "outputValueKey" : "delta",
+        "useCache" : true,
+        "addPeriodBetweenMsgs" : true,
+        "periodValueKey" : "periodInMs",
+        "round" : null,
+        "tellFailureIfDeltaIsNegative" : false,
+        "excludeZeroDeltas" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d3f94240-c9e0-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "Calculate period",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.CalculateDeltaNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 785,
+        "layoutY" : 674
+      },
+      "configuration" : {
+        "messageNames" : [ "movementChangeDetected" ],
+        "metadataNames" : [ ],
+        "checkAllKeys" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d3f94241-c9e0-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "movementChangeDetected",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1426,
+        "layoutY" : 674
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "var keyName = msg.movementChangeDetected > 0 ? \"idlePeriodMs\" : \"movementPeriodMs\";\nvar newMsg = {};\nnewMsg[keyName] = msg.periodInMs;\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d3f96950-c9e0-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "Create telemetry msg",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
