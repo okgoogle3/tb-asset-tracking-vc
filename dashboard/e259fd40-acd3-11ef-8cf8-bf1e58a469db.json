@@ -14427,7 +14427,19 @@
               "border" : "1px solid #D0D5DD"
             },
             "displayTimewindow" : false,
-            "actions" : { },
+            "actions" : {
+              "rowClick" : [ {
+                "name" : "Asset events",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet controller = widgetContext.$scope.ctx.stateController;\nlet states = controller.stateObject.length;\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\n\nlet selectedEntity = {};\n\nentityRelationService.findByToAndType(entityId, \"DeviceToAsset\").subscribe(assets=>{\n    if(assets && assets.length){\n        selectedEntity = {\n            entityId: assets[0].from,\n            entityName: null\n        }    \n        \n        let newParams = {\n            stateId: 'assetDetails',\n            prevState: 'assets',\n            subState: 'eventHistory',\n            statesArray: [\n                {\n                    stateId: 'assets', \n                    name: \"Assets\"\n                },\n                {\n                    stateId: 'assetDetails', \n                    name: entityLabel||entityName\n                }\n            ],\n            selectedEntity: selectedEntity\n        };\n        \n        history.pushState({}, '');\n        \n        widgetContext.updateAliases();\n        controller.updateState('default', newParams);\n    }\n})\n\n",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "a4440a87-ead7-da01-7405-9e9c4d7c7659"
+              } ]
+            },
             "configMode" : "advanced",
             "alarmFilterConfig" : {
               "statusList" : [ "ACTIVE" ],
