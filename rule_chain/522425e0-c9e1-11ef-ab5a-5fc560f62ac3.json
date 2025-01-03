@@ -72,7 +72,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var keyName = msg.movementChangeDetected > 0 ? \"idlePeriodMs\" : \"movementPeriodMs\";\nvar newMsg = {};\nnewMsg[keyName] = msg.periodInMs;\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var periodSuffix = \"PeriodMs\";\nvar movementKey = \"movement\" + periodSuffix;\nvar idleKey = \"idle\" + periodSuffix;\nvar changeDetected = msg.movementChangeDetected;\nvar outputKeyName;\n\nif (changeDetected == 1) {\n    outputKeyName = movementKey;\n} else if (changeDetected == -1) {\n    outputKeyName = idleKey;\n} else if (changeDetected == 0) {\n    outputKeyName = msg.movement ? movementKey : idleKey;\n}\n\nvar newMsg = {};\nnewMsg[outputKeyName] = msg.periodInMs;\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
