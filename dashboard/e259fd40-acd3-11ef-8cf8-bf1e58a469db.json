@@ -7081,13 +7081,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              }, {
-                "name" : "address",
-                "type" : "attribute",
-                "label" : "address",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.4327399176122424
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -7145,7 +7138,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "const widgetData = data[0];\nconst locationData = data[1] ? data[1] : {};\n\nconst entityName = widgetData.entityName;\nconst locationEntityName = locationData.entityName;\n\nreturn `\n    <div class=\"header-container\">\n        <div class=\"path\">\n            <span class=\"path-locations-label\" id=\"locations\" style=\"cursor: pointer\">Locations</span>\n            <span class=\"path-locations-label\">/</span>\n            <span class=\"path-locations-label\" id=\"zones\" style=\"cursor: pointer\">${locationEntityName}</span>\n            <span class=\"path-locations-label\">/</span>\n            <span class=\"path-location-name\">${entityName}</span>\n        </div>\n        <div class=\"title-location-name\">\n            ${entityName}\n        </div>\n        <div class=\"location-params\">\n            <div>\n                <span class=\"param\">${locationEntityName}</span>\n            </div>\n        </div>\n    </div>\n`;",
+              "markdownTextFunction" : "const widgetData = data[0];\nconst locationData = data[1] ? data[1] : {};\n\nconst entityName = widgetData.entityName;\nconst locationEntityName = locationData.entityName;\n\nreturn `\n    <div class=\"header-container\">\n        <div class=\"path\">\n            <span class=\"path-locations-label\" id=\"locations\" style=\"cursor: pointer\">Locations</span>\n            <span class=\"path-locations-label\">/</span>\n            <span class=\"path-locations-label\" id=\"zones\" style=\"cursor: pointer\">${locationEntityName}</span>\n            <span class=\"path-locations-label\">/</span>\n            <span class=\"path-location-name\">${entityName}</span>\n        </div>\n        <div class=\"title-location-name\">\n            ${entityName}\n        </div>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".header-container {\n    background-color: transparent;\n    padding-left: 10px;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n}\n\n.path {\n    margin-bottom: 10px;\n}\n\n.path span:not(:last-child) {\n    margin-right: 6px;\n}\n\n.path-location-label {\n    color: #667085;\n    font-size: 14px;\n    line-height: 20px;\n}\n\n.path-location-name  {\n    color: #0C111D;\n    font-size: 14px;\n    font-weight: 500;\n    line-height: 20px;\n}\n\n.header-container {\n    background-color: transparent;\n}\n\n.path-locations-label {\n    color: #667085;\n    font-size: 14px;\n    line-height: 20px;\n}\n\n.path-location-name  {\n    color: #0C111D;\n    font-size: 14px;\n    font-weight: 500;\n    line-height: 20px;\n}\n\n.title-location-name {\n    color: #0C111D;\n    font-size: 36px;\n    font-weight: 600;\n    line-height: 44px;\n    margin-bottom: 4px;\n}\n\n.location-params{\n    display: flex;\n    gap: 12px;\n}\n\n.param {\n    color: #344054;\n    line-height: 24px;\n}"
             },
@@ -16281,30 +16274,30 @@
                 "cde0bc43-e61f-4061-d1b3-bb8420d48879" : {
                   "sizeX" : 72,
                   "sizeY" : 2,
-                  "row" : 5,
+                  "row" : 4,
                   "col" : 0
                 },
                 "4d794955-6f33-d103-5d0c-c052b7a2faa3" : {
                   "sizeX" : 72,
                   "sizeY" : 26,
-                  "row" : 7,
+                  "row" : 6,
                   "col" : 0
                 },
                 "febb0450-1f77-590e-0459-31cb583f257c" : {
                   "sizeX" : 52,
-                  "sizeY" : 5,
+                  "sizeY" : 4,
                   "row" : 0,
                   "col" : 0
                 },
                 "a4836a32-c7c5-320d-673f-fca8d9d92a4d" : {
                   "sizeX" : 9,
-                  "sizeY" : 3,
+                  "sizeY" : 2,
                   "row" : 1,
                   "col" : 52
                 },
                 "9e48bad8-2cf2-0ef0-93ab-92f4d1883de2" : {
                   "sizeX" : 9,
-                  "sizeY" : 3,
+                  "sizeY" : 2,
                   "row" : 1,
                   "col" : 62
                 }
