@@ -32,13 +32,17 @@
       "fromIndex" : 2,
       "toIndex" : 1,
       "type" : "True"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 0,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 5,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 52,
-        "layoutY" : 281
+        "layoutX" : 53,
+        "layoutY" : 303
       },
       "configuration" : {
         "inputValueKey" : "movement",
@@ -66,8 +70,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 52,
-        "layoutY" : 428
+        "layoutX" : 53,
+        "layoutY" : 452
       },
       "configuration" : {
         "inputValueKey" : "movementChangeDetected",
@@ -95,8 +99,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 56,
-        "layoutY" : 355
+        "layoutX" : 57,
+        "layoutY" : 377
       },
       "configuration" : {
         "messageNames" : [ "movementChangeDetected" ],
@@ -119,8 +123,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 55,
-        "layoutY" : 503
+        "layoutX" : 54,
+        "layoutY" : 529
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -143,8 +147,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 53,
-        "layoutY" : 580
+        "layoutX" : 58,
+        "layoutY" : 728
       },
       "configuration" : {
         "defaultTTL" : 0,
@@ -167,8 +171,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 52,
-        "layoutY" : 224
+        "layoutX" : 53,
+        "layoutY" : 228
       },
       "configuration" : {
         "scriptLang" : "TBEL",
