@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "ac9364a5-c9e1-11ef-ab5a-5fc560f62ac3"
+      "id" : "ea410910-c9e1-11ef-ab5a-5fc560f62ac3"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -33,12 +33,12 @@
       "toIndex" : 1,
       "type" : "True"
     } ],
-    "firstNodeIndex" : 0,
+    "firstNodeIndex" : 5,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 52,
-        "layoutY" : 231
+        "layoutY" : 281
       },
       "configuration" : {
         "inputValueKey" : "movement",
@@ -67,7 +67,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 52,
-        "layoutY" : 378
+        "layoutY" : 428
       },
       "configuration" : {
         "inputValueKey" : "movementChangeDetected",
@@ -96,7 +96,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 56,
-        "layoutY" : 305
+        "layoutY" : 355
       },
       "configuration" : {
         "messageNames" : [ "movementChangeDetected" ],
@@ -120,7 +120,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 55,
-        "layoutY" : 453
+        "layoutY" : 503
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -144,7 +144,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 53,
-        "layoutY" : 530
+        "layoutY" : 580
       },
       "configuration" : {
         "defaultTTL" : 0,
@@ -164,6 +164,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 52,
+        "layoutY" : 224
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "msg.movement = msg.movement ? 1 : 0;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ea410910-c9e1-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "Movement to int",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
