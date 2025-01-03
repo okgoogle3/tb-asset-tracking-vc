@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"81a5fb50-c139-11ef-b55e-d50e0e2ee017\"},\"name\":\"Demo Device 18\"}",
       "key" : "assignedDevice",
-      "lastUpdateTs" : 1735896770070,
+      "lastUpdateTs" : 1735896799056,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -36,7 +36,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017\"}}",
       "key" : "assignedLocation",
-      "lastUpdateTs" : 1735896770070,
+      "lastUpdateTs" : 1735896799056,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1735896770070,
+      "lastUpdateTs" : 1735896806110,
       "longValue" : null,
       "strValue" : "Demo Asset 18"
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1735896770070,
+      "lastUpdateTs" : 1735896799056,
       "longValue" : null,
       "strValue" : "wevewvewvewv"
     }, {
@@ -60,7 +60,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"704b4f90-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1734966425990,\"insideTs\":null,\"leftTs\":null}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1735896797037,
+      "lastUpdateTs" : 1735896805050,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1735896770070,
+      "lastUpdateTs" : 1735896799056,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -76,17 +76,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1735896770070,
+      "lastUpdateTs" : 1735896799056,
       "longValue" : null,
       "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "image",
-      "lastUpdateTs" : 1735896770070,
-      "longValue" : null,
-      "strValue" : ""
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -108,7 +100,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1735896770070,
+      "lastUpdateTs" : 1735896806110,
       "longValue" : null,
       "strValue" : "Demo Asset 18"
     }, {
@@ -116,7 +108,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1735896770070,
+      "lastUpdateTs" : 1735896806110,
       "longValue" : null,
       "strValue" : "Demo Asset 18"
     }, {
