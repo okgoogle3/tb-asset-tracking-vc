@@ -199,7 +199,7 @@
         "layoutY" : 293
       },
       "configuration" : {
-        "inputValueKey" : "movement",
+        "inputValueKey" : "movementInt",
         "outputValueKey" : "delta",
         "useCache" : true,
         "addPeriodBetweenMsgs" : false,
