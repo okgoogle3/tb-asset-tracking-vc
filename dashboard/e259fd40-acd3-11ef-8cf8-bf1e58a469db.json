@@ -14776,7 +14776,7 @@
               "usePolygonTooltipFunction" : true,
               "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
               "polygonColor" : "#3388ff",
-              "polygonOpacity" : 0.1,
+              "polygonOpacity" : 0.15,
               "usePolygonColorFunction" : true,
               "polygonStrokeColor" : "#3388ff",
               "polygonStrokeWeight" : 1,
