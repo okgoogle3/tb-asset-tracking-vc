@@ -45,7 +45,7 @@
         "layoutY" : 303
       },
       "configuration" : {
-        "inputValueKey" : "movement",
+        "inputValueKey" : "movementInt",
         "outputValueKey" : "movementChangeDetected",
         "useCache" : true,
         "addPeriodBetweenMsgs" : false,
