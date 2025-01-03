@@ -48,7 +48,7 @@
         "periodValueKey" : "periodInMs",
         "round" : null,
         "tellFailureIfDeltaIsNegative" : false,
-        "excludeZeroDeltas" : true
+        "excludeZeroDeltas" : false
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
