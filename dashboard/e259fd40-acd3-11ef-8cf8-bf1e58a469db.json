@@ -5349,7 +5349,7 @@
             "noDataDisplayMessage" : "",
             "actions" : {
               "elementClick" : [ {
-                "name" : "Select zone",
+                "name" : "select",
                 "icon" : "more_horiz",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
@@ -5358,6 +5358,16 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "48612793-a003-3107-7f79-df4e6c6a6478"
+              }, {
+                "name" : "navigate",
+                "icon" : "arrow_forward",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "console.log(entityId)",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "540a0435-5216-2241-52db-412cc7cc1a0d"
               } ]
             },
             "titleFont" : {
