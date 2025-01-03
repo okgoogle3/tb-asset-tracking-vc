@@ -177,7 +177,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "msg.movement = msg.movement ? 2 : -2;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "msg.movementInt = msg.movement ? 1 : 0;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
