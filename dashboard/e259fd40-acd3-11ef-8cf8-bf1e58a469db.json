@@ -14740,8 +14740,7 @@
               "polygonOpacity" : 0.2,
               "usePolygonColorFunction" : true,
               "polygonStrokeColor" : "#3388ff",
-              "polygonStrokeOpacity" : 1,
-              "polygonStrokeWeight" : 0,
+              "polygonStrokeWeight" : 1,
               "usePolygonStrokeColorFunction" : true,
               "showCircle" : false,
               "circleKeyName" : "perimeter",
@@ -14783,7 +14782,8 @@
               "markerImageFunction" : "var type = data['Type'];\nvar isAlarm = data['alertActivity'];\nvar isActive = data['status'];\n\nlet index;\n\nif (type == 'Tool'){\n    index = 0;\n} else if(type == \"Box\"){\n    index = 3;\n} else if(type == \"Worker\"){\n    index = 6;\n} else if(type == \"Loader\"){\n    index = 9;\n}\nif(isAlarm == \"true\"){\n    index += 1;\n} else {\n    if(isActive != \"true\"){\n        index += 2;\n    }\n}\n\nreturn {\n    url: images[index],\n    size: 40\n}",
               "polygonTooltipFunction" : "let createdTime = data[\"Created time\"];\n\nif(createdTime){\n    createdTime = moment(createdTime).format(\"DD.MM.yyyy HH:mm\")\n}\n\nreturn `<div>\n            <span style=\"font-size: 22px;\n                        font-weight: 600;\n                        color: #0C111D;\n                        text-align:right;\n                        line-height: 32px;\">${data.entityName}</span>\n            \n            <div style=\"display: flex;justify-content:space-between;margin-top:5px;gap: 10px;\">\n                <span style=\"color:#344054;\">Created time</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${createdTime}</span>\n            </div>\n        </div>`",
               "polygonStrokeColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";",
-              "polygonColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";"
+              "polygonColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";",
+              "polygonStrokeOpacity" : 0.4
             },
             "title" : "Geo Map Testing (several)",
             "dropShadow" : false,
