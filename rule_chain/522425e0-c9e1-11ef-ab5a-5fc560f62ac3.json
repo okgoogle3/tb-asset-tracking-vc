@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "ae099470-c9e2-11ef-ab5a-5fc560f62ac3"
+      "id" : "ea410910-c9e1-11ef-ab5a-5fc560f62ac3"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -32,17 +32,13 @@
       "fromIndex" : 3,
       "toIndex" : 0,
       "type" : "Success"
-    }, {
-      "fromIndex" : 4,
-      "toIndex" : 3,
-      "type" : "True"
     } ],
-    "firstNodeIndex" : 4,
+    "firstNodeIndex" : 3,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 265,
-        "layoutY" : 372
+        "layoutX" : 52,
+        "layoutY" : 304
       },
       "configuration" : {
         "inputValueKey" : "movementInt",
@@ -70,8 +66,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 266,
-        "layoutY" : 450
+        "layoutX" : 55,
+        "layoutY" : 378
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -94,8 +90,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 269,
-        "layoutY" : 530
+        "layoutX" : 53,
+        "layoutY" : 453
       },
       "configuration" : {
         "defaultTTL" : 0,
@@ -118,8 +114,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 265,
-        "layoutY" : 297
+        "layoutX" : 52,
+        "layoutY" : 229
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -139,30 +135,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 609,
-        "layoutY" : 210
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return msg.temperature > 20;",
-        "tbelScript" : "return metadata.deviceName === \"Demo Device 25\";"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "ae099470-c9e2-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "1",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     } ],
     "ruleChainConnections" : null
   },
