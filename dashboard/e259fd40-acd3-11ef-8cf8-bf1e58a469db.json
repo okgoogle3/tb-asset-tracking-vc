@@ -7366,7 +7366,7 @@
               "elementClick" : [ ],
               "actionCellButton" : [ {
                 "name" : "Edit",
-                "icon" : "mode_edit_outline",
+                "icon" : "mdi:pencil-outline",
                 "useShowWidgetActionFunction" : true,
                 "showWidgetActionFunction" : "return localStorage.getItem(\"role\") === \"Admin\";",
                 "type" : "customPretty",
