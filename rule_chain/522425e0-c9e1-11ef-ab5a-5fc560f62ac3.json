@@ -22,26 +22,18 @@
   "metaData" : {
     "connections" : [ {
       "fromIndex" : 0,
-      "toIndex" : 2,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 3,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 2,
       "toIndex" : 1,
-      "type" : "True"
+      "type" : "Success"
     }, {
-      "fromIndex" : 5,
+      "fromIndex" : 3,
       "toIndex" : 0,
       "type" : "Success"
     }, {
-      "fromIndex" : 6,
-      "toIndex" : 5,
+      "fromIndex" : 4,
+      "toIndex" : 3,
       "type" : "True"
     } ],
-    "firstNodeIndex" : 6,
+    "firstNodeIndex" : 4,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
@@ -52,7 +44,7 @@
         "inputValueKey" : "movementInt",
         "outputValueKey" : "movementChangeDetected",
         "useCache" : true,
-        "addPeriodBetweenMsgs" : false,
+        "addPeriodBetweenMsgs" : true,
         "periodValueKey" : "periodInMs",
         "round" : null,
         "tellFailureIfDeltaIsNegative" : false,
@@ -74,61 +66,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 265,
-        "layoutY" : 521
-      },
-      "configuration" : {
-        "inputValueKey" : "movementChangeDetected",
-        "outputValueKey" : "delta",
-        "useCache" : true,
-        "addPeriodBetweenMsgs" : true,
-        "periodValueKey" : "periodInMs",
-        "round" : null,
-        "tellFailureIfDeltaIsNegative" : false,
-        "excludeZeroDeltas" : false
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "ac9364a7-c9e1-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "Calculate period",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.CalculateDeltaNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 269,
-        "layoutY" : 446
-      },
-      "configuration" : {
-        "messageNames" : [ "movementChangeDetected" ],
-        "metadataNames" : [ ],
-        "checkAllKeys" : true
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "ac938bb8-c9e1-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "movementChangeDetected",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 266,
-        "layoutY" : 598
+        "layoutY" : 450
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -151,8 +90,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 58,
-        "layoutY" : 728
+        "layoutX" : 267,
+        "layoutY" : 679
       },
       "configuration" : {
         "defaultTTL" : 0,
