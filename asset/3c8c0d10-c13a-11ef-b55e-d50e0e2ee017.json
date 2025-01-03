@@ -60,7 +60,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"704b4f90-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1734966425990,\"insideTs\":null,\"leftTs\":null}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1735896768994,
+      "lastUpdateTs" : 1735896797037,
       "longValue" : null,
       "strValue" : null
     }, {
