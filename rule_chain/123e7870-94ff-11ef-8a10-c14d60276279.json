@@ -243,7 +243,7 @@
         "addPeriodBetweenMsgs" : true,
         "periodValueKey" : "periodInMs",
         "round" : null,
-        "tellFailureIfDeltaIsNegative" : true,
+        "tellFailureIfDeltaIsNegative" : false,
         "excludeZeroDeltas" : false
       },
       "configurationVersion" : 1,
