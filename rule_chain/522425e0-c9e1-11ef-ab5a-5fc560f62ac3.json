@@ -25,6 +25,10 @@
       "toIndex" : 1,
       "type" : "Success"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
       "fromIndex" : 3,
       "toIndex" : 0,
       "type" : "Success"
@@ -90,8 +94,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 267,
-        "layoutY" : 679
+        "layoutX" : 269,
+        "layoutY" : 530
       },
       "configuration" : {
         "defaultTTL" : 0,
