@@ -1526,7 +1526,7 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : null,
+                  "units" : "°C",
                   "decimals" : 0,
                   "show" : true,
                   "label" : "",
