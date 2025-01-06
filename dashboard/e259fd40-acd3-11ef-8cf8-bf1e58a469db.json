@@ -1726,7 +1726,7 @@
             "showTitleIcon" : false,
             "titleIcon" : "schedule",
             "iconColor" : "#667085",
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "displayTimewindow" : true,
             "titleFont" : {
               "size" : 24,
@@ -15267,7 +15267,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value ? value/1000 : value;"
+                "postFuncBody" : "return value ? value/1000/60 : value;"
               }, {
                 "name" : "movementPeriodMs",
                 "type" : "timeseries",
@@ -15349,7 +15349,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value ? value/1000 : value;"
+                "postFuncBody" : "return value ? value/1000/60 : value;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -15363,12 +15363,29 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "timewindowMs" : 60000,
+                "interval" : 3600000,
+                "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
-                "interval" : 1000
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1736083687437,
+                  "endTimeMs" : 1736170087437
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
-                "type" : "AVG",
+                "type" : "SUM",
                 "limit" : 25000
               },
               "timezone" : null
@@ -15617,7 +15634,7 @@
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
             "iconColor" : "#1F6BDD",
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "displayTimewindow" : true,
             "titleFont" : {
               "size" : 24,
@@ -16035,7 +16052,7 @@
             "showTitleIcon" : false,
             "titleIcon" : "schedule",
             "iconColor" : "#667085",
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "displayTimewindow" : true,
             "titleFont" : {
               "size" : 24,
