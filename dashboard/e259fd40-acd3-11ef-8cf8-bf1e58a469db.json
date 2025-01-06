@@ -15594,128 +15594,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "e85df203-279a-3499-9c8d-50fffdb1d10a"
-        },
-        "09c87191-f0bb-5c2f-0c29-d01bd0ef53c2" : {
-          "typeFullFqn" : "system.charts.timeseries_bars_flot",
-          "type" : "timeseries",
-          "sizeX" : 8,
-          "sizeY" : 5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
-              "dataKeys" : [ {
-                "name" : "idlePeriodMs",
-                "type" : "timeseries",
-                "label" : "Temperature",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.909620593604298,
-                "units" : "°C",
-                "decimals" : 0
-              }, {
-                "name" : "movementPeriodMs",
-                "type" : "timeseries",
-                "label" : "movementPeriodMs",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.007477780652095589,
-                "decimals" : 0
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              },
-              "latestDataKeys" : [ ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              },
-              "aggregation" : {
-                "limit" : 200,
-                "type" : "AVG"
-              }
-            },
-            "showTitle" : true,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "stack" : true,
-              "fontSize" : 10,
-              "fontColor" : "#545454",
-              "showTooltip" : true,
-              "tooltipIndividual" : false,
-              "tooltipCumulative" : false,
-              "hideZeros" : false,
-              "grid" : {
-                "verticalLines" : true,
-                "horizontalLines" : true,
-                "outlineWidth" : 1,
-                "color" : "#545454",
-                "backgroundColor" : null,
-                "tickColor" : "#DDDDDD"
-              },
-              "xaxis" : {
-                "title" : null,
-                "showLabels" : true,
-                "color" : "#545454"
-              },
-              "yaxis" : {
-                "min" : null,
-                "max" : null,
-                "title" : null,
-                "showLabels" : true,
-                "color" : "#545454",
-                "tickSize" : null,
-                "tickDecimals" : 0,
-                "ticksFormatter" : ""
-              },
-              "defaultBarWidth" : 600,
-              "barAlignment" : "left",
-              "comparisonEnabled" : false,
-              "xaxisSecond" : {
-                "axisPosition" : "top",
-                "title" : null,
-                "showLabels" : true
-              },
-              "showLegend" : true,
-              "legendConfig" : {
-                "direction" : "column",
-                "position" : "bottom",
-                "sortDataKeys" : false,
-                "showMin" : false,
-                "showMax" : false,
-                "showAvg" : true,
-                "showTotal" : false,
-                "showLatest" : false
-              },
-              "customLegendEnabled" : false
-            },
-            "title" : "Timeseries Bar Chart",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "mobileHeight" : null,
-            "widgetStyle" : { },
-            "useDashboardTimewindow" : true,
-            "actions" : { },
-            "configMode" : "basic",
-            "showTitleIcon" : false,
-            "titleIcon" : "thermostat",
-            "iconColor" : "#1F6BDD",
-            "displayTimewindow" : true,
-            "titleFont" : null,
-            "titleColor" : null,
-            "enableDataExport" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "09c87191-f0bb-5c2f-0c29-d01bd0ef53c2"
         }
       },
       "states" : {
@@ -16250,13 +16128,6 @@
                   "sizeY" : 7,
                   "mobileHeight" : null,
                   "row" : 8,
-                  "col" : 0
-                },
-                "09c87191-f0bb-5c2f-0c29-d01bd0ef53c2" : {
-                  "sizeX" : 21,
-                  "sizeY" : 5,
-                  "mobileHeight" : null,
-                  "row" : 15,
                   "col" : 0
                 }
               },
@@ -18119,7 +17990,7 @@
         "realtime" : {
           "realtimeType" : 0,
           "interval" : 7200000,
-          "timewindowMs" : 2592000000,
+          "timewindowMs" : 86400000,
           "quickInterval" : "CURRENT_DAY",
           "hideInterval" : false,
           "hideLastInterval" : false,
