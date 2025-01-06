@@ -1345,7 +1345,7 @@
             "enableDataExport" : false,
             "titleTooltip" : "",
             "borderRadius" : "12px",
-            "widgetCss" : ".tb-widget-header {\n    padding: 20px;\n}\n\nmat-cell:not(:last-child), mat-header-cell {\n    padding: 0 20px!important;\n}\n\n.tb-widget-title {\n    padding: 0!important;\n}",
+            "widgetCss" : "/*.tb-widget-header {*/\n/*    padding: 20px;*/\n/*}*/\n\n/*mat-cell:not(:last-child), mat-header-cell {*/\n/*    padding: 0 20px!important;*/\n/*}*/\n\n/*.tb-widget-title {*/\n/*    padding: 0!important;*/\n/*}*/",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
           },
