@@ -1278,12 +1278,12 @@
                 "limit" : 2000
               }
             },
-            "showTitle" : true,
+            "showTitle" : false,
             "backgroundColor" : "rgb(255, 255, 255)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0",
             "settings" : {
-              "enableSearch" : true,
+              "enableSearch" : false,
               "enableSelectColumnDisplay" : false,
               "enableStickyHeader" : false,
               "enableStickyAction" : true,
