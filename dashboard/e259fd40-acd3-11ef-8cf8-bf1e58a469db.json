@@ -1467,7 +1467,7 @@
               },
               "history" : {
                 "historyType" : 0,
-                "interval" : 7200000,
+                "interval" : 3600000,
                 "timewindowMs" : 86400000,
                 "fixedTimewindow" : {
                   "startTimeMs" : 1727599353857,
@@ -15704,7 +15704,7 @@
                     "showLine" : true,
                     "step" : false,
                     "stepType" : "start",
-                    "smooth" : false,
+                    "smooth" : true,
                     "lineType" : "solid",
                     "lineWidth" : 2,
                     "showPoints" : false,
@@ -15758,6 +15758,7 @@
                       }
                     }
                   },
+                  "tooltipValueFormatter" : null,
                   "comparisonSettings" : {
                     "showValuesForComparison" : false,
                     "comparisonValuesLabel" : "",
@@ -15793,7 +15794,7 @@
               },
               "history" : {
                 "historyType" : 0,
-                "interval" : 7200000,
+                "interval" : 3600000,
                 "timewindowMs" : 86400000,
                 "fixedTimewindow" : {
                   "startTimeMs" : 1727599353857,
