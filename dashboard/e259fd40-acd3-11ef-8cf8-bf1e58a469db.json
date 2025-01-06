@@ -15188,6 +15188,7 @@
                       }
                     }
                   },
+                  "tooltipValueFormatter" : null,
                   "comparisonSettings" : {
                     "showValuesForComparison" : false,
                     "comparisonValuesLabel" : "",
@@ -15246,7 +15247,7 @@
                   "barSettings" : {
                     "showBorder" : false,
                     "borderWidth" : 2,
-                    "borderRadius" : 0,
+                    "borderRadius" : 8,
                     "showLabel" : false,
                     "labelPosition" : "top",
                     "labelFont" : {
@@ -15269,6 +15270,7 @@
                       }
                     }
                   },
+                  "tooltipValueFormatter" : null,
                   "comparisonSettings" : {
                     "showValuesForComparison" : false,
                     "comparisonValuesLabel" : "",
