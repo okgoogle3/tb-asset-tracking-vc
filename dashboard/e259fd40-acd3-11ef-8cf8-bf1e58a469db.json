@@ -16163,7 +16163,9 @@
             "title" : "Events list",
             "dropShadow" : false,
             "enableFullscreen" : false,
-            "titleStyle" : null,
+            "titleStyle" : {
+              "padding" : "10px"
+            },
             "mobileHeight" : null,
             "configMode" : "advanced",
             "actions" : { },
@@ -16173,10 +16175,10 @@
             "useDashboardTimewindow" : false,
             "displayTimewindow" : false,
             "titleFont" : {
-              "size" : 16,
+              "size" : 20,
               "sizeUnit" : "px",
               "family" : "Roboto",
-              "weight" : "500",
+              "weight" : "600",
               "style" : "normal",
               "lineHeight" : "24px"
             },
@@ -16348,7 +16350,7 @@
             "mobileHeight" : null,
             "widgetStyle" : {
               "border" : "1px solid #D0D5DD",
-              "padding-left" : "5px"
+              "margin-left" : "5px"
             },
             "useDashboardTimewindow" : true,
             "showLegend" : false,
