@@ -39,7 +39,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {\n    msg: {\n        alertTelemetry: {\n            type: msg.type,\n            latitude: msg.latitude,\n            longitude: msg.longitude\n        }\n    },\n    metadata: metadata,\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};"
+        "tbelScript" : "return {\n    msg: {\n        alertTelemetry: {\n            type: msg.type,\n            latitude: metadata.latitude,\n            longitude: metadata.longitude\n        }\n    },\n    metadata: metadata,\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
