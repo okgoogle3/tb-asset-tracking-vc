@@ -193,7 +193,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var areaAlarmRules = metadata.ss_areaAlarmRules !=null ? JSON.parse(metadata.ss_areaAlarmRules) : {};\nvar alarmRule = areaAlarmRules[metadata.areaId];\n\n\nif(alarmRule == null){\n       return {\n        msg: {},\n        metadata: {},\n        msgType: \"NOT_ALARM\"\n    };\n}\n\n\nvar alarmName = metadata.area + (metadata.status == \"inside\" ? \" in \": \" out \") + alarmRule.name;\n    return {\n        msg: {\"alarmName\" : alarmName},\n        metadata: {\n            ts: metadata.ts,\n            create: alarmRule.status == metadata.status,\n            status: metadata.status,\n            area: metadata.area,\n            areaName : metadata.areaName,\n            latitude: metadata.latitude,\n            longitude: metadata.longitude\n        },\n        msgType: \"ALARM\"\n    };\n    "
+        "tbelScript" : "var areaAlarmRules = metadata.ss_areaAlarmRules != null ?\n    JSON.parse(metadata.ss_areaAlarmRules) : {};\nvar alarmRule = areaAlarmRules[metadata.areaId];\n\n\nif (alarmRule == null) {\n    return {\n        msg: {},\n        metadata: {},\n        msgType: \"NOT_ALARM\"\n    };\n}\n\n\nvar alarmName = metadata.area + (metadata.status ==\n    \"inside\" ? \" in \" : \" out \") + alarmRule.name;\nmetadata.create = alarmRule.status == metadata.status;\nreturn {\n    msg: {\n        \"alarmName\": alarmName\n    },\n    metadata: metadata,\n    msgType: \"ALARM\"\n};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
