@@ -76,10 +76,6 @@
       "toIndex" : 28,
       "type" : "Alarm Created"
     }, {
-      "fromIndex" : 5,
-      "toIndex" : 31,
-      "type" : "Alarm Created"
-    }, {
       "fromIndex" : 6,
       "toIndex" : 17,
       "type" : "Success"
