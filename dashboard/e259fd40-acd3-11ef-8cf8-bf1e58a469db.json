@@ -16116,6 +16116,13 @@
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.6092483419171109
+              }, {
+                "name" : "message",
+                "type" : "timeseries",
+                "label" : "message",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.10192959549818337
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -16385,6 +16392,122 @@
           "row" : 0,
           "col" : 0,
           "id" : "31aa9291-cf44-95fd-e2f3-5060d4bbdc4e"
+        },
+        "cf68d10c-1405-7d9f-ca5b-68f94804d854" : {
+          "typeFullFqn" : "tenant.test",
+          "type" : "timeseries",
+          "sizeX" : 10,
+          "sizeY" : 6.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
+              "dataKeys" : [ {
+                "name" : "latitude",
+                "type" : "timeseries",
+                "label" : "latitude",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.006244065715799385
+              }, {
+                "name" : "longitude",
+                "type" : "timeseries",
+                "label" : "longitude",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5624797037547689
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "history" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 500
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "mapProvider" : "OpenStreetMap.Mapnik",
+              "latKeyName" : "latitude",
+              "lngKeyName" : "longitude",
+              "showLabel" : true,
+              "label" : "${entityName}",
+              "showTooltip" : true,
+              "tooltipColor" : "#fff",
+              "tooltipFontColor" : "#000",
+              "tooltipOpacity" : 1,
+              "tooltipPattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>End Time:</b> ${maxTime}<br/><b>Start Time:</b> ${minTime}",
+              "strokeWeight" : 2,
+              "strokeOpacity" : 1,
+              "pointSize" : 10,
+              "markerImageSize" : 34,
+              "rotationAngle" : 180,
+              "provider" : "openstreet-map",
+              "normalizationStep" : 1000,
+              "decoratorSymbol" : "arrowHead",
+              "decoratorSymbolSize" : 10,
+              "decoratorCustomColor" : "#000",
+              "decoratorOffset" : "20px",
+              "endDecoratorOffset" : "20px",
+              "decoratorRepeat" : "20px",
+              "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "polygonOpacity" : 0.5,
+              "polygonStrokeOpacity" : 1,
+              "polygonStrokeWeight" : 1,
+              "pointTooltipOnRightPanel" : true,
+              "autocloseTooltip" : true,
+              "useCustomProvider" : false,
+              "useLabelFunction" : false,
+              "useTooltipFunction" : false,
+              "useMarkerImageFunction" : false,
+              "useColorFunction" : false,
+              "usePolylineDecorator" : false,
+              "useDecoratorCustomColor" : false,
+              "showPoints" : false,
+              "showPolygon" : false
+            },
+            "title" : "Test",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileHeight" : null,
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD",
+              "padding-left" : "5px"
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "legendConfig" : {
+              "position" : "bottom",
+              "showMin" : false,
+              "showMax" : false,
+              "showAvg" : false,
+              "showTotal" : false
+            },
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "borderRadius" : "12px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "cf68d10c-1405-7d9f-ca5b-68f94804d854"
         }
       },
       "states" : {
@@ -16817,10 +16940,10 @@
             "main" : {
               "widgets" : {
                 "4432961d-d810-6bdc-eee0-1b654633ff81" : {
-                  "sizeX" : 15,
+                  "sizeX" : 6,
                   "sizeY" : 11,
                   "row" : 0,
-                  "col" : 9
+                  "col" : 18
                 },
                 "31aa9291-cf44-95fd-e2f3-5060d4bbdc4e" : {
                   "sizeX" : 9,
@@ -16828,6 +16951,13 @@
                   "mobileHeight" : null,
                   "row" : 0,
                   "col" : 0
+                },
+                "cf68d10c-1405-7d9f-ca5b-68f94804d854" : {
+                  "sizeX" : 9,
+                  "sizeY" : 11,
+                  "mobileHeight" : null,
+                  "row" : 0,
+                  "col" : 9
                 }
               },
               "gridSettings" : {
