@@ -7,7 +7,10 @@
     "configuration" : null,
     "debugMode" : false,
     "externalId" : null,
-    "firstRuleNodeId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "8b804e70-ccea-11ef-ab5a-5fc560f62ac3"
+    },
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "eb0573a0-ccd8-11ef-ab5a-5fc560f62ac3"
@@ -21,13 +24,17 @@
       "fromIndex" : 0,
       "toIndex" : 1,
       "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 0,
+      "type" : "Success"
     } ],
-    "firstNodeIndex" : null,
+    "firstNodeIndex" : 2,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 181,
-        "layoutY" : 318
+        "layoutX" : 54,
+        "layoutY" : 303
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -50,8 +57,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 225,
-        "layoutY" : 389
+        "layoutX" : 52,
+        "layoutY" : 379
       },
       "configuration" : {
         "defaultTTL" : 0,
@@ -71,6 +78,40 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 54,
+        "layoutY" : 229
+      },
+      "configuration" : {
+        "originatorSource" : "RELATED",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : null,
+        "entityNamePattern" : null,
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "TO",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "DeviceToAsset",
+            "entityTypes" : [ ]
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "8b804e70-ccea-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "DeviceToAsset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     } ],
     "ruleChainConnections" : null
   },
