@@ -16435,78 +16435,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "cf68d10c-1405-7d9f-ca5b-68f94804d854"
-        },
-        "8bafed14-0018-323d-6ca9-a76face12b81" : {
-          "typeFullFqn" : "system.cards.timeseries_table",
-          "type" : "timeseries",
-          "sizeX" : 8,
-          "sizeY" : 6.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
-              "filterId" : null,
-              "dataKeys" : [ {
-                "name" : "message",
-                "type" : "timeseries",
-                "label" : "message",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.271356699184081,
-                "decimals" : 0
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              },
-              "latestDataKeys" : [ ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000
-              },
-              "aggregation" : {
-                "type" : "NONE",
-                "limit" : 200
-              }
-            },
-            "showTitle" : true,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "showTimestamp" : true,
-              "displayPagination" : true,
-              "defaultPageSize" : 10,
-              "enableSearch" : true,
-              "enableSelectColumnDisplay" : true
-            },
-            "title" : "Timeseries table",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400,
-              "padding" : "5px 10px 5px 10px"
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "widgetStyle" : { },
-            "actions" : { },
-            "showTitleIcon" : false,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "displayTimewindow" : true,
-            "configMode" : "basic",
-            "titleFont" : null,
-            "titleColor" : null,
-            "titleIcon" : null,
-            "enableDataExport" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "8bafed14-0018-323d-6ca9-a76face12b81"
         }
       },
       "states" : {
@@ -16946,17 +16874,11 @@
                   "col" : 0
                 },
                 "cf68d10c-1405-7d9f-ca5b-68f94804d854" : {
-                  "sizeX" : 9,
+                  "sizeX" : 17,
                   "sizeY" : 11,
                   "mobileHeight" : null,
                   "row" : 0,
                   "col" : 7
-                },
-                "8bafed14-0018-323d-6ca9-a76face12b81" : {
-                  "sizeX" : 8,
-                  "sizeY" : 11,
-                  "row" : 0,
-                  "col" : 16
                 }
               },
               "gridSettings" : {
