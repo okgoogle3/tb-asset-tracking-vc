@@ -16530,10 +16530,10 @@
             "main" : {
               "widgets" : {
                 "4432961d-d810-6bdc-eee0-1b654633ff81" : {
-                  "sizeX" : 24,
+                  "sizeX" : 15,
                   "sizeY" : 11,
                   "row" : 0,
-                  "col" : 0
+                  "col" : 9
                 }
               },
               "gridSettings" : {
