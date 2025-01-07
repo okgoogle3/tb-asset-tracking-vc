@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -20,9 +20,25 @@
     "label" : null,
     "name" : "Equipment warehouse",
     "ownerId" : null,
-    "type" : "Temporary asset"
+    "type" : "Shape"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.755557480932524,37.579330803893946],[48.75630104880612,37.5754308686775],[48.75569452458508,37.57516398646781],[48.75495625271866,37.579065268096684]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1736250589969,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.755557480932524, 37.579330803893946], [48.75630104880612, 37.5754308686775], [48.75569452458508, 37.57516398646781], [48.75495625271866, 37.579065268096684]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1736250589997,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
