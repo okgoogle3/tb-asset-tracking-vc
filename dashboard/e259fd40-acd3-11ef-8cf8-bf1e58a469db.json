@@ -16158,7 +16158,7 @@
                 "color" : "#ffc107",
                 "settings" : {
                   "useCellStyleFunction" : true,
-                  "cellStyleFunction" : "return {\n    \"height\": \"80px\"\n}",
+                  "cellStyleFunction" : "return {\n    \"height\": \"80px\",\n    \"border\": \"none\"\n}",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : true,
                   "cellContentFunction" : "let result;\n\nif(rowData.message && JSON.parse(rowData.message)){\n    result = `<img src=\"/api/images/public/tNSMFQAEEsYbs4jk2B7H1OHAH1qLT0tn\" alt=\"eventMarker.png\" />`;\n}\n\nif(rowData.alertTelemetry && JSON.parse(rowData.alertTelemetry)){\n    result = `<img src=\"/api/images/public/48OGvOIHIOVAH85HNctnNbf8CMQI1kWx\" alt=\"alarmMarker.png\" />`;\n}\n\nreturn result;",
@@ -16179,8 +16179,8 @@
                 "label" : " ",
                 "color" : "#f44336",
                 "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "return {\n    \"height\": \"80px\",\n    \"border\": \"none\"\n}",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : true,
                   "cellContentFunction" : "let result;\n\nif(rowData.message && JSON.parse(rowData.message)){\n    result = JSON.parse(rowData.message).assetName + \" \" + JSON.parse(rowData.message).status + \" \" + JSON.parse(rowData.message).areaName;\n}\n\nif(rowData.alertTelemetry && JSON.parse(rowData.alertTelemetry)){\n    result = JSON.parse(rowData.alertTelemetry).type;\n}\n\nreturn result;",
