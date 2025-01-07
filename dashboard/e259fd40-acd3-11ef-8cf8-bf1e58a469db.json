@@ -16353,7 +16353,8 @@
             "titleColor" : "rgba(0, 0, 0, 0.87)",
             "titleTooltip" : "",
             "widgetStyle" : {
-              "border" : "1px solid #D0D5DD"
+              "border" : "1px solid #D0D5DD",
+              "margin-right" : "5px"
             },
             "widgetCss" : "",
             "pageSize" : 1024,
