@@ -32,6 +32,10 @@
       "toIndex" : 11,
       "type" : "Created"
     }, {
+      "fromIndex" : 0,
+      "toIndex" : 11,
+      "type" : "Updated"
+    }, {
       "fromIndex" : 1,
       "toIndex" : 3,
       "type" : "Cleared"
@@ -373,8 +377,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 653,
-        "layoutY" : 353
+        "layoutX" : 669,
+        "layoutY" : 304
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
