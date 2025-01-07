@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "9a2ce680-ccdc-11ef-ab5a-5fc560f62ac3"
+      "id" : "30201670-ccde-11ef-ab5a-5fc560f62ac3"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -24,8 +24,12 @@
       "fromIndex" : 0,
       "toIndex" : 1,
       "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 0,
+      "type" : "True"
     } ],
-    "firstNodeIndex" : 0,
+    "firstNodeIndex" : 2,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
@@ -74,6 +78,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 445,
+        "layoutY" : 178
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return msg.temperature > 20;",
+        "tbelScript" : "return msg.type != \"Temperature is high\";"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "30201670-ccde-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "q",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     } ],
     "ruleChainConnections" : null
   },
