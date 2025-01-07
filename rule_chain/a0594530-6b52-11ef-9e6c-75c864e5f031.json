@@ -12,7 +12,7 @@
     },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "75d35395-bdec-11ef-b55e-d50e0e2ee017"
+      "id" : "1577df10-cd06-11ef-ab5a-5fc560f62ac3"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -151,8 +151,12 @@
       "fromIndex" : 29,
       "toIndex" : 26,
       "type" : "Success"
+    }, {
+      "fromIndex" : 32,
+      "toIndex" : 5,
+      "type" : "Success"
     } ],
-    "firstNodeIndex" : 5,
+    "firstNodeIndex" : 32,
     "nodes" : [ {
       "additionalInfo" : {
         "layoutX" : 824,
@@ -939,6 +943,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 54,
+        "layoutY" : 231
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "metadata.latitude = msg.latitude;\nmetadata.longitude = msg.longitude;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1577df10-cd06-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "Put coordinates into metadata",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
