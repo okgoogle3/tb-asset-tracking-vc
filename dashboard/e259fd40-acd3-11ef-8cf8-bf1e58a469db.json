@@ -16204,7 +16204,7 @@
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "// console.log(rowData)\n\nlet result;\n\nif(rowData.message && JSON.parse(rowData.message)){\n    result = JSON.parse(rowData.message).assetName + \" \" + JSON.parse(rowData.message).status + \" \" + JSON.parse(rowData.message).areaName;\n}\n\n    console.log(rowData.alertTelemetry)\nif(rowData.alertTelemetry && JSON.parse(rowData.alertTelemetry)){\n    result = JSON.parse(rowData.alertTelemetry).type;\n    console.log(result)\n}\n\nreturn result;",
+                  "cellContentFunction" : "let result;\n\nif(rowData.message && JSON.parse(rowData.message)){\n    result = JSON.parse(rowData.message).assetName + \" \" + JSON.parse(rowData.message).status + \" \" + JSON.parse(rowData.message).areaName;\n}\n\nif(rowData.alertTelemetry && JSON.parse(rowData.alertTelemetry)){\n    result = JSON.parse(rowData.alertTelemetry).type;\n}\n\nreturn result;",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible"
