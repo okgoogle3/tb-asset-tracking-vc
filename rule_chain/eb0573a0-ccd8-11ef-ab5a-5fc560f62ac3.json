@@ -24,6 +24,10 @@
       "fromIndex" : 0,
       "toIndex" : 1,
       "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 0,
     "nodes" : [ {
@@ -84,6 +88,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 53,
+        "layoutY" : 379
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "skipLatestPersistence" : false,
+        "useServerTs" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ac0513a0-ccdc-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "Save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     } ],
     "ruleChainConnections" : null
   },
