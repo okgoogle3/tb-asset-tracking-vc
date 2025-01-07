@@ -76,6 +76,10 @@
       "toIndex" : 28,
       "type" : "Alarm Created"
     }, {
+      "fromIndex" : 5,
+      "toIndex" : 31,
+      "type" : "Alarm Created"
+    }, {
       "fromIndex" : 6,
       "toIndex" : 17,
       "type" : "Success"
@@ -908,6 +912,29 @@
         "id" : "96f94d80-c9e1-11ef-ab5a-5fc560f62ac3"
       },
       "name" : "Calculate idle and movement ms",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 303,
+        "layoutY" : 203
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "eb0573a0-ccd8-11ef-ab5a-5fc560f62ac3"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "204b7e50-ccda-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "Write Alert Telemetry",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
