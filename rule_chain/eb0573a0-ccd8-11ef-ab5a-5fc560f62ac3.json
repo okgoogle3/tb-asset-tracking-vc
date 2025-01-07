@@ -7,10 +7,7 @@
     "configuration" : null,
     "debugMode" : false,
     "externalId" : null,
-    "firstRuleNodeId" : {
-      "entityType" : "RULE_NODE",
-      "id" : "30201670-ccde-11ef-ab5a-5fc560f62ac3"
-    },
+    "firstRuleNodeId" : null,
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "eb0573a0-ccd8-11ef-ab5a-5fc560f62ac3"
@@ -24,12 +21,8 @@
       "fromIndex" : 0,
       "toIndex" : 1,
       "type" : "Success"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 0,
-      "type" : "True"
     } ],
-    "firstNodeIndex" : 2,
+    "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
@@ -78,30 +71,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 94,
-        "layoutY" : 224
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return msg.temperature > 20;",
-        "tbelScript" : "return msg.type != \"Temperature is high\" && msg.type != \"Temperature is low\" && msg.type != \"Battery level is low\" && msg.type != \"Battery level is high\" && msg.type != \"Temperature is equal\";"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "30201670-ccde-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "q",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     } ],
     "ruleChainConnections" : null
   },
