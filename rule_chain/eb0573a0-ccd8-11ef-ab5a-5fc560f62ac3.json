@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "6b031410-ccdc-11ef-ab5a-5fc560f62ac3"
+      "id" : "9a2ce680-ccdc-11ef-ab5a-5fc560f62ac3"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -24,51 +24,13 @@
       "fromIndex" : 0,
       "toIndex" : 1,
       "type" : "Success"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 2,
-      "type" : "Success"
     } ],
     "firstNodeIndex" : 0,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 52,
-        "layoutY" : 229
-      },
-      "configuration" : {
-        "originatorSource" : "RELATED",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : null,
-        "entityNamePattern" : null,
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "TO",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "DeviceToAsset",
-            "entityTypes" : [ ]
-          } ]
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "6b031410-ccdc-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "To Asset",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 53,
-        "layoutY" : 304
+        "layoutY" : 232
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -91,8 +53,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 53,
-        "layoutY" : 379
+        "layoutX" : 52,
+        "layoutY" : 307
       },
       "configuration" : {
         "defaultTTL" : 0,
