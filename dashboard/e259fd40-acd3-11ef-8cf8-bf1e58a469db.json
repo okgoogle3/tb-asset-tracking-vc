@@ -16242,6 +16242,13 @@
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.5624797037547689
+              }, {
+                "name" : "alertTelemetry",
+                "type" : "timeseries",
+                "label" : "alertTelemetry",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.655393401685533
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
