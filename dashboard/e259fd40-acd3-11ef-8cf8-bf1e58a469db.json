@@ -16308,7 +16308,7 @@
             "enableDataExport" : false,
             "titleTooltip" : "",
             "borderRadius" : "12px",
-            "widgetCss" : "",
+            "widgetCss" : ".mat-mdc-row .mat-mdc-cell {\n  border-bottom: 1px solid transparent;\n  border-top: 1px solid transparent;\n  cursor: pointer;\n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
           },
