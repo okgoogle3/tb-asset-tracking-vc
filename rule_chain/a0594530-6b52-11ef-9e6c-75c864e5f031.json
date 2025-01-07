@@ -77,7 +77,7 @@
       "type" : "Alarm Created"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 32,
+      "toIndex" : 31,
       "type" : "Alarm Created"
     }, {
       "fromIndex" : 6,
@@ -150,10 +150,6 @@
     }, {
       "fromIndex" : 29,
       "toIndex" : 26,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 32,
-      "toIndex" : 31,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 5,
@@ -923,8 +919,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 275,
-        "layoutY" : 148
+        "layoutX" : 304,
+        "layoutY" : 202
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -943,40 +939,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 275,
-        "layoutY" : 226
-      },
-      "configuration" : {
-        "originatorSource" : "RELATED",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : null,
-        "entityNamePattern" : null,
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "TO",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "DeviceToAsset",
-            "entityTypes" : [ ]
-          } ]
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "c7613510-ccdd-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "DeviceToAsset",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     } ],
     "ruleChainConnections" : null
   },
