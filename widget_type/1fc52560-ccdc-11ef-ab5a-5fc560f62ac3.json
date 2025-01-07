@@ -11,7 +11,7 @@
       "sizeX" : 8,
       "sizeY" : 5,
       "resources" : [ ],
-      "templateHtml" : "<div class=\"mainDiv\">\n    \n</div>",
+      "templateHtml" : "<div class=\"mainDiv\">\n    <div class=\"eventsBlock\">\n        \n    </div>\n    <div class=\"pagination\">\n        \n    </div>\n</div>",
       "templateCss" : ".mainDiv {\n    width: 100%;\n    height: 100%;\n}",
       "controllerScript" : "self.onInit = function() {\n};\n\nself.onDataUpdated = function() {\n}\n\nself.onLatestDataUpdated = function() {\n}\n\nself.typeParameters = function() {\n    return {\n        hasAdditionalLatestDataKeys: true,\n    };\n}\n",
       "settingsSchema" : "{}",
