@@ -18845,7 +18845,7 @@
         "realtime" : {
           "realtimeType" : 0,
           "interval" : 600000,
-          "timewindowMs" : 7200000,
+          "timewindowMs" : 1800000,
           "quickInterval" : "CURRENT_DAY",
           "hideInterval" : false,
           "hideLastInterval" : false,
