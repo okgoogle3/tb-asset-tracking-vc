@@ -87,7 +87,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return msg.temperature > 20;",
-        "tbelScript" : "return msg.type != \"Temperature is high\" && msg.type != \"Temperature is low\";"
+        "tbelScript" : "return msg.type != \"Temperature is high\" && msg.type != \"Temperature is low\" && msg.type != \"Battery level is low\";"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
