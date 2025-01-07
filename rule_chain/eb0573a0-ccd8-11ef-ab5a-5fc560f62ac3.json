@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "2b30ccd0-ccda-11ef-ab5a-5fc560f62ac3"
+      "id" : "6b031410-ccdc-11ef-ab5a-5fc560f62ac3"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -20,41 +20,13 @@
     "type" : "CORE"
   },
   "metaData" : {
-    "connections" : [ {
-      "fromIndex" : 0,
-      "toIndex" : 1,
-      "type" : "Success"
-    } ],
+    "connections" : null,
     "firstNodeIndex" : 0,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 51,
-        "layoutY" : 228
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "2b30ccd0-ccda-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "q",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 56,
-        "layoutY" : 384
+        "layoutX" : 52,
+        "layoutY" : 229
       },
       "configuration" : {
         "originatorSource" : "RELATED",
