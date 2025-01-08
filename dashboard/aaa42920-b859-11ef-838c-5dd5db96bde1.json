@@ -74,7 +74,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "3a260884-91b7-deef-3d4f-0340c66abbf3",
+              "entityAliasId" : "c1353552-e84b-5a6c-8ea2-5627ff3a661f",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
@@ -154,6 +154,15 @@
             "type" : "entityType",
             "resolveMultiple" : true,
             "entityType" : "DASHBOARD"
+          }
+        },
+        "c1353552-e84b-5a6c-8ea2-5627ff3a661f" : {
+          "id" : "c1353552-e84b-5a6c-8ea2-5627ff3a661f",
+          "alias" : "Assets",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "ASSET"
           }
         }
       },
