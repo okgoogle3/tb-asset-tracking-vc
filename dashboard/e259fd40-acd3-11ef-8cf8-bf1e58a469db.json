@@ -16293,7 +16293,7 @@
                 "limit" : 200
               }
             },
-            "showTitle" : true,
+            "showTitle" : false,
             "backgroundColor" : "rgb(255, 255, 255)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
@@ -16301,8 +16301,8 @@
               "enableSearch" : false,
               "enableSelectColumnDisplay" : false,
               "enableStickyHeader" : false,
-              "enableStickyAction" : true,
-              "showCellActionsMenu" : true,
+              "enableStickyAction" : false,
+              "showCellActionsMenu" : false,
               "reserveSpaceForHiddenAction" : "true",
               "showTimestamp" : false,
               "dateFormat" : {
@@ -16314,7 +16314,7 @@
               "defaultPageSize" : 10,
               "hideEmptyLines" : false,
               "disableStickyHeader" : false,
-              "useRowStyleFunction" : true,
+              "useRowStyleFunction" : false,
               "rowStyleFunction" : "return {\n    border: \"none\"\n}"
             },
             "title" : "Events",
@@ -16407,7 +16407,7 @@
             "padding" : "0px",
             "settings" : {
               "cardHtml" : "<div class=\"card\">\n    <span class=\"title\">Events</span>\n    <div class=\"time\" id=\"changeTimeRange\">\n        <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path d=\"M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM8 14C4.685 14 2 11.315 2 8C2 4.685 4.685 2 8 2C11.315 2 14 4.685 14 8C14 11.315 11.315 14 8 14ZM8.375 4.25H7.25V8.75L11.1875 11.1125L11.75 10.19L8.375 8.1875V4.25Z\" fill=\"#026AA2\"/>\n        </svg>\n        <span>Time range</span>\n    </div>\n</div>",
-              "cardCss" : ".card {\n    display: flex;\n    justify-content: space-between;\n}\n\n.time {\n    display: flex;\n    align-items: center;\n    color: #026AA2;\n    font-size: 16px;\n    font-weight: 500;\n    line-height: 24px;\n    letter-spacing: 0.01em;\n    text-align: left;\n    gap: 5px;\n    cursor: pointer;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n"
+              "cardCss" : ".card {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 100%;\n    width: 100%;\n}\n\n.time {\n    display: flex;\n    align-items: center;\n    color: #026AA2;\n    font-size: 16px;\n    font-weight: 500;\n    line-height: 24px;\n    letter-spacing: 0.01em;\n    text-align: left;\n    gap: 5px;\n    cursor: pointer;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n"
             },
             "title" : "HTML Value Card",
             "dropShadow" : false,
@@ -16881,14 +16881,14 @@
                 },
                 "dc6828c0-c2fa-8206-4293-88ca6cd66da9" : {
                   "sizeX" : 7,
-                  "sizeY" : 11,
-                  "row" : 0,
+                  "sizeY" : 10,
+                  "row" : 1,
                   "col" : 0
                 },
                 "fb8c7728-cdc2-623e-8a14-348059a2478a" : {
                   "sizeX" : 7,
-                  "sizeY" : 3,
-                  "row" : 11,
+                  "sizeY" : 1,
+                  "row" : 0,
                   "col" : 0
                 }
               },
