@@ -16209,28 +16209,6 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "739bc678-e392-fd6a-072e-1feb5b2295cc",
-              "dataKeys" : [ ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              },
-              "latestDataKeys" : [ {
-                "name" : "perimeter",
-                "type" : "attribute",
-                "label" : "perimeter",
-                "color" : "#3f51b5",
-                "settings" : { },
-                "_hash" : 0.32148994601703995
-              }, {
-                "name" : "color",
-                "type" : "attribute",
-                "label" : "color",
-                "color" : "#e91e63",
-                "settings" : { },
-                "_hash" : 0.4393660605945713
-              } ]
-            }, {
-              "type" : "entity",
               "name" : "",
               "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
               "dataKeys" : [ {
@@ -16286,6 +16264,28 @@
                 "color" : "#9c27b0",
                 "settings" : { },
                 "_hash" : 0.8325816366798175
+              } ]
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "739bc678-e392-fd6a-072e-1feb5b2295cc",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.32148994601703995
+              }, {
+                "name" : "color",
+                "type" : "attribute",
+                "label" : "color",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.4393660605945713
               } ]
             } ],
             "timewindow" : {
