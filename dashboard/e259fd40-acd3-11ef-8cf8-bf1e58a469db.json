@@ -15989,9 +15989,32 @@
               } ]
             } ],
             "timewindow" : {
-              "history" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "realtime" : {
+                "realtimeType" : 0,
                 "interval" : 1000,
-                "timewindowMs" : 60000
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 5000,
+                "timewindowMs" : 600000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1736235072479,
+                  "endTimeMs" : 1736321472479
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "NONE",
@@ -16120,7 +16143,7 @@
               "border" : "1px solid #D0D5DD",
               "margin-left" : "5px"
             },
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "showLegend" : false,
             "actions" : { },
             "legendConfig" : {
@@ -16224,9 +16247,32 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
               "realtime" : {
+                "realtimeType" : 0,
                 "interval" : 1000,
-                "timewindowMs" : 60000
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 5000,
+                "timewindowMs" : 600000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1736235058892,
+                  "endTimeMs" : 1736321458892
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "NONE",
@@ -16263,7 +16309,7 @@
             "titleStyle" : {
               "padding-top" : "10px"
             },
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "showLegend" : false,
             "widgetStyle" : {
               "border" : "1px solid #D0D5DD",
