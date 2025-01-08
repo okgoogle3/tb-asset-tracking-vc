@@ -16268,7 +16268,7 @@
             }, {
               "type" : "entity",
               "entityAliasId" : "739bc678-e392-fd6a-072e-1feb5b2295cc",
-              "dataKeys" : [ ],
+              "dataKeys" : null,
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
