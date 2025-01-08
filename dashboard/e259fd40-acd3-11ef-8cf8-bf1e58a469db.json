@@ -801,12 +801,13 @@
                 "name" : "Telemetry",
                 "action" : "telemetry"
               }, {
-                "name" : "Event history",
+                "name" : "Route history",
                 "action" : "eventHistory"
               }, {
                 "name" : "Alerts",
                 "action" : "alerts"
-              } ]
+              } ],
+              "showDescription" : false
             },
             "title" : "HTML Card",
             "dropShadow" : false,
