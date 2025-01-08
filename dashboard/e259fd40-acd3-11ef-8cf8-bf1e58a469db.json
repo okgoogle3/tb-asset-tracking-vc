@@ -18541,16 +18541,16 @@
             "main" : {
               "widgets" : {
                 "1d795ed9-281b-2d68-e179-8a74356969f8" : {
-                  "sizeX" : 8,
+                  "sizeX" : 7,
                   "sizeY" : 9,
                   "row" : 0,
                   "col" : 0
                 },
                 "af8616ee-1a5a-8d99-7921-6ac8deab49bb" : {
-                  "sizeX" : 16,
+                  "sizeX" : 17,
                   "sizeY" : 9,
                   "row" : 0,
-                  "col" : 8
+                  "col" : 7
                 }
               },
               "gridSettings" : {
