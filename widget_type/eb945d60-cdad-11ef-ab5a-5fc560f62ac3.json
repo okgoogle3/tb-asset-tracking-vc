@@ -11,7 +11,7 @@
       "sizeX" : 7.5,
       "sizeY" : 3,
       "resources" : [ ],
-      "templateHtml" : "<div *ngIf=\"form\">\n    <span>Time range</span>\n    <form [formGroup]=\"form\">\n        <mat-form-field appearance=\"outline\">\n            <mat-label class=\"label\">Date from</mat-label>\n            <input matInput formControlName=\"dateFrom\"/>\n        </mat-form-field>\n    </form>\n</div> ",
+      "templateHtml" : "<div *ngIf=\"form\">\n    <span>Time range</span>\n    <form [formGroup]=\"form\">\n        <mat-form-field appearance=\"outline\">\n            <mat-label class=\"label\">Date from</mat-label>\n            <input matInput formControlName=\"dateFrom\"/>\n        </mat-form-field>\n        <mat-form-field appearance=\"outline\">\n            <mat-label class=\"label\">Date to</mat-label>\n            <input matInput formControlName=\"dateTo\"/>\n        </mat-form-field>\n    </form>\n</div> ",
       "templateCss" : "",
       "controllerScript" : "self.onInit = function() {\n    self.ctx.$scope.form = self.ctx.$scope.fb.group({\n        dateFrom: [null],\n        dateTo: [null],\n        timeFrom: [null],\n        timeTo: [null],\n    });\n}\n\nself.actionSources = function() {\n    return {\n        'elementClick': {\n            name: 'widget-action.element-click',\n            multiple: true\n        }\n    };\n}\n\nself.onDestroy = function() {\n}\n",
       "settingsSchema" : "",
