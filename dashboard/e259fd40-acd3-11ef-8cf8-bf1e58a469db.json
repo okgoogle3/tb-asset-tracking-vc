@@ -16268,7 +16268,7 @@
             }, {
               "type" : "entity",
               "entityAliasId" : "739bc678-e392-fd6a-072e-1feb5b2295cc",
-              "dataKeys" : null,
+              "dataKeys" : [ ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
@@ -17050,10 +17050,10 @@
             "main" : {
               "widgets" : {
                 "2d01f63a-8ba7-fb56-4bff-62d958cbec36" : {
-                  "sizeX" : 26,
+                  "sizeX" : 24,
                   "sizeY" : 14,
                   "row" : 2,
-                  "col" : 10
+                  "col" : 12
                 },
                 "b1097721-e068-ae26-3f73-521e3873a5fd" : {
                   "sizeX" : 12,
@@ -17080,7 +17080,7 @@
                   "col" : 12
                 },
                 "4f4f0382-5aa8-b2c9-9925-007bbb741df2" : {
-                  "sizeX" : 10,
+                  "sizeX" : 12,
                   "sizeY" : 14,
                   "row" : 2,
                   "col" : 0
