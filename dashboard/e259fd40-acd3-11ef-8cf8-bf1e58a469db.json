@@ -16048,7 +16048,7 @@
                   "cellStyleFunction" : "return {\n    \"height\": \"60px\",\n    \"border\": \"none\"\n}",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "let result;\n\nif(rowData.message && JSON.parse(rowData.message)){\n    result = `<div style=\"display: flex;align-items:center;gap: 15px;\">\n                <img src=\"/api/images/public/tNSMFQAEEsYbs4jk2B7H1OHAH1qLT0tn\" alt=\"eventMarker.png\" />\n                <div style=\"display: flex; flex-direction: column;\">\n                    <span style=\"font-size: 14px;font-weight: 400;line-height: 20px;text-align: left;color:#667085;\">\n                        ${moment(rowData.Timestamp).format(\"DD.MM.yyyy HH:mm\")}\n                    </span>\n                    <span style=\"font-size: 16px;font-weight: 400;line-height: 24px;text-align: left;color: #0C111D\">\n                        ${JSON.parse(rowData.message).assetName + \" \" + JSON.parse(rowData.message).status + \" \" + JSON.parse(rowData.message).areaName}\n                    </span>\n                </div>\n            </div>`; \n}\n\nif(rowData.alertTelemetry && JSON.parse(rowData.alertTelemetry)){\n    result = `<div style=\"display: flex;align-items:center;gap: 15px;\">\n                <img src=\"/api/images/public/48OGvOIHIOVAH85HNctnNbf8CMQI1kWx\" alt=\"alarmMarker.png\" />\n                <div style=\"display: flex; flex-direction: column;\">\n                    <span style=\"font-size: 14px;font-weight: 400;line-height: 20px;text-align: left;color:#667085;\">\n                        ${moment(rowData.Timestamp).format(\"DD.MM.yyyy HH:mm\")}\n                    </span>\n                    <span style=\"font-size: 16px;font-weight: 500;line-height: 24px;letter-spacing: 0.01em;color: #B42318\">${JSON.parse(rowData.alertTelemetry).type}</span>\n                </div>\n            </div>`;\n}\n\nreturn result;",
+                  "cellContentFunction" : "let result;\n\nif(rowData.message && JSON.parse(rowData.message)){\n    result = `<div style=\"display: flex;align-items:center;gap: 15px;\">\n                <img src=\"/api/images/public/tNSMFQAEEsYbs4jk2B7H1OHAH1qLT0tn\" alt=\"eventMarker.png\" />\n                <div style=\"display: flex; flex-direction: column;\">\n                    <span style=\"font-size: 14px;font-weight: 400;line-height: 20px;text-align: left;color:#667085;\">\n                        ${moment(rowData.Timestamp).format(\"DD.MM.yyyy HH:mm\")}\n                    </span>\n                    <span style=\"font-size: 16px;font-weight: 400;line-height: 24px;text-align: left;color: #0C111D\">\n                        ${JSON.parse(rowData.message).assetName + \" \" + JSON.parse(rowData.message).status + \" \" + JSON.parse(rowData.message).areaName}\n                    </span>\n                </div>\n            </div>`; \n}\n\nif(rowData.alertTelemetry && JSON.parse(rowData.alertTelemetry) && JSON.parse(rowData.alertTelemetry).type){\n    result = `<div style=\"display: flex;align-items:center;gap: 15px;\">\n                <img src=\"/api/images/public/48OGvOIHIOVAH85HNctnNbf8CMQI1kWx\" alt=\"alarmMarker.png\" />\n                <div style=\"display: flex; flex-direction: column;\">\n                    <span style=\"font-size: 14px;font-weight: 400;line-height: 20px;text-align: left;color:#667085;\">\n                        ${moment(rowData.Timestamp).format(\"DD.MM.yyyy HH:mm\")}\n                    </span>\n                    <span style=\"font-size: 16px;font-weight: 500;line-height: 24px;letter-spacing: 0.01em;color: #B42318\">${JSON.parse(rowData.alertTelemetry).type}</span>\n                </div>\n            </div>`;\n}\n\nreturn result;",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible"
@@ -19038,28 +19038,16 @@
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
-        "selectedTab" : 0,
-        "realtime" : {
-          "realtimeType" : 0,
-          "interval" : 30000,
-          "timewindowMs" : 300000,
-          "quickInterval" : "CURRENT_DAY",
-          "hideInterval" : false,
-          "hideLastInterval" : false,
-          "hideQuickInterval" : false
-        },
+        "selectedTab" : 1,
         "history" : {
-          "historyType" : 0,
-          "interval" : 1000,
-          "timewindowMs" : 60000,
+          "historyType" : 1,
           "fixedTimewindow" : {
-            "startTimeMs" : 1726407296027,
-            "endTimeMs" : 1726493696027
+            "startTimeMs" : 1736249400000,
+            "endTimeMs" : 1736249640000
           },
-          "quickInterval" : "CURRENT_DAY",
+          "interval" : 1000,
           "hideInterval" : false,
           "hideLastInterval" : false,
-          "hideFixedInterval" : false,
           "hideQuickInterval" : false
         },
         "aggregation" : {
