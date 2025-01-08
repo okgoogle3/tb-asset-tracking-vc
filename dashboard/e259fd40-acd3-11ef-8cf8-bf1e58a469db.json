@@ -16152,38 +16152,16 @@
               "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "icon",
-                "type" : "timeseries",
-                "label" : " ",
-                "color" : "#ffc107",
-                "settings" : {
-                  "useCellStyleFunction" : true,
-                  "cellStyleFunction" : "return {\n    \"height\": \"80px\",\n    \"border\": \"none\"\n}",
-                  "useCellContentFunction" : true,
-                  "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "let result;\n\nif(rowData.message && JSON.parse(rowData.message)){\n    result = `<img src=\"/api/images/public/tNSMFQAEEsYbs4jk2B7H1OHAH1qLT0tn\" alt=\"eventMarker.png\" />`;\n}\n\nif(rowData.alertTelemetry && JSON.parse(rowData.alertTelemetry)){\n    result = `<img src=\"/api/images/public/48OGvOIHIOVAH85HNctnNbf8CMQI1kWx\" alt=\"alarmMarker.png\" />`;\n}\n\nreturn result;",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled",
-                  "columnExportOption" : "onlyVisible"
-                },
-                "_hash" : 0.7408988829883678,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
                 "name" : "result",
                 "type" : "timeseries",
                 "label" : " ",
                 "color" : "#f44336",
                 "settings" : {
                   "useCellStyleFunction" : true,
-                  "cellStyleFunction" : "return {\n    \"height\": \"80px\",\n    \"border\": \"none\"\n}",
+                  "cellStyleFunction" : "return {\n    \"height\": \"60px\",\n    \"border\": \"none\"\n}",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "let result;\n\nif(rowData.message && JSON.parse(rowData.message)){\n    result = JSON.parse(rowData.message).assetName + \" \" + JSON.parse(rowData.message).status + \" \" + JSON.parse(rowData.message).areaName;\n}\n\nif(rowData.alertTelemetry && JSON.parse(rowData.alertTelemetry)){\n    result = \n    // `<div>\n    \n    //         </div>`\n    \n    JSON.parse(rowData.alertTelemetry).type;\n}\n\nreturn result;",
+                  "cellContentFunction" : "let result;\n\nif(rowData.message && JSON.parse(rowData.message)){\n    result = `<div style=\"display: flex;align-items:center;gap: 15px;\">\n                <img src=\"/api/images/public/tNSMFQAEEsYbs4jk2B7H1OHAH1qLT0tn\" alt=\"eventMarker.png\" />\n                <span style=\"font-size: 16px;font-weight: 400;line-height: 24px;text-align: left;color: #0C111D\">${JSON.parse(rowData.message).assetName + \" \" + JSON.parse(rowData.message).status + \" \" + JSON.parse(rowData.message).areaName}</span>\n            </div>`; \n}\n\nif(rowData.alertTelemetry && JSON.parse(rowData.alertTelemetry)){\n    result = `<div style=\"display: flex;align-items:center;gap: 15px;\">\n                <img src=\"/api/images/public/48OGvOIHIOVAH85HNctnNbf8CMQI1kWx\" alt=\"alarmMarker.png\" />\n                <span style=\"font-size: 16px;font-weight: 500;line-height: 24px;letter-spacing: 0.01em;color: #B42318\">${JSON.parse(rowData.alertTelemetry).type}</span>\n            </div>`;\n}\n\nreturn result;",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible"
