@@ -92,6 +92,10 @@
       "toIndex" : 30,
       "type" : "Success"
     }, {
+      "fromIndex" : 7,
+      "toIndex" : 33,
+      "type" : "Success"
+    }, {
       "fromIndex" : 9,
       "toIndex" : 10,
       "type" : "Success"
@@ -967,6 +971,29 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1750,
+        "layoutY" : 203
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "9c8cbfb6-cdb1-11ef-ab5a-5fc560f62ac3"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b05a2d20-cdb1-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "Asset Last Activity Ts",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },
