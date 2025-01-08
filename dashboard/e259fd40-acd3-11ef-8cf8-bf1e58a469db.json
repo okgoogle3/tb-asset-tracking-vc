@@ -16038,7 +16038,7 @@
               "dataKeys" : [ {
                 "name" : "result",
                 "type" : "timeseries",
-                "label" : " ",
+                "label" : "Status",
                 "color" : "#f44336",
                 "settings" : {
                   "useCellStyleFunction" : true,
@@ -16189,7 +16189,7 @@
             "titleIcon" : null,
             "enableDataExport" : false,
             "titleTooltip" : "",
-            "borderRadius" : "12px",
+            "borderRadius" : "0",
             "widgetCss" : "::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {\n    background-color: #fff; \n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
