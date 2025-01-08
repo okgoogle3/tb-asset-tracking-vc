@@ -16556,10 +16556,7 @@
             "titleTooltip" : "",
             "dropShadow" : false,
             "enableFullscreen" : true,
-            "widgetStyle" : {
-              "margin-top" : "5px",
-              "margin-left" : "5px"
-            },
+            "widgetStyle" : { },
             "titleStyle" : {
               "padding" : "8px"
             },
