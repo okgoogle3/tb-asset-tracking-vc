@@ -16478,7 +16478,7 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "rgba(255, 255, 255, 0)",
+            "backgroundColor" : "#FFFFFF",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
@@ -16495,7 +16495,9 @@
             "titleTooltip" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
@@ -16506,7 +16508,8 @@
             "enableDataExport" : false,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "12px"
           },
           "row" : 0,
           "col" : 0,
@@ -18349,7 +18352,7 @@
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#F2F4F7",
+                "backgroundColor" : "#FFFFFF",
                 "columns" : 24,
                 "margin" : 0,
                 "outerMargin" : true,
