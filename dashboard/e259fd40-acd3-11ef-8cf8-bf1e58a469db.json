@@ -18349,9 +18349,9 @@
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#FFFFFF00",
+                "backgroundColor" : "#F2F4F7",
                 "columns" : 24,
-                "margin" : 10,
+                "margin" : 0,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
                 "minColumns" : 24,
