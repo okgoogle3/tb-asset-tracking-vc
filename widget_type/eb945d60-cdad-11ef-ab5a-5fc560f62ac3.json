@@ -1,0 +1,33 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "custom_time_range",
+    "name" : "Custom time-range",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "static",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "<div *ngIf=\"form\">\n    <span>Time range</span>\n    <form [formGroup]=\"form\">\n        <mat-form-field appearance=\"outline\">\n            <mat-label class=\"label\">Date from</mat-label>\n            <input matInput formControlName=\"dateFrom\"/>\n        </mat-form-field>\n    </form>\n</div> ",
+      "templateCss" : "",
+      "controllerScript" : "self.onInit = function() {\n    self.ctx.$scope.form = self.ctx.$scope.fb.group({\n        dateFrom: [null],\n        dateTo: [null],\n        timeFrom: [null],\n        timeTo: [null],\n    });\n}\n\nself.actionSources = function() {\n    return {\n        'elementClick': {\n            name: 'widget-action.element-click',\n            multiple: true\n        }\n    };\n}\n\nself.onDestroy = function() {\n}\n",
+      "settingsSchema" : "",
+      "dataKeySettingsSchema" : "",
+      "settingsDirective" : "tb-html-card-widget-settings",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"static\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":false,\"backgroundColor\":\"rgb(255, 255, 255)\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{\"cardHtml\":\"<div class='card'>HTML code here</div>\",\"cardCss\":\".card {\\n    font-weight: bold;\\n    font-size: 32px;\\n    color: #999;\\n    width: 100%;\\n    height: 100%;\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n}\"},\"title\":\"HTML Card\",\"dropShadow\":true}"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "eb945d60-cdad-11ef-ab5a-5fc560f62ac3"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
