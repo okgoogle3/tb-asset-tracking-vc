@@ -16265,6 +16265,28 @@
                 "settings" : { },
                 "_hash" : 0.8325816366798175
               } ]
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "739bc678-e392-fd6a-072e-1feb5b2295cc",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.32148994601703995
+              }, {
+                "name" : "color",
+                "type" : "attribute",
+                "label" : "color",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.4393660605945713
+              } ]
             } ],
             "timewindow" : {
               "hideAggregation" : false,
@@ -16364,28 +16386,20 @@
               "usePointAsAnchor" : false,
               "pointAsAnchorFunction" : null,
               "pointTooltipOnRightPanel" : true,
-              "showPolygon" : false,
+              "showPolygon" : true,
               "polygonKeyName" : "perimeter",
               "editablePolygon" : false,
               "showPolygonLabel" : false,
-              "usePolygonLabelFunction" : false,
-              "polygonLabel" : "${entityName}",
-              "polygonLabelFunction" : null,
               "showPolygonTooltip" : false,
-              "showPolygonTooltipAction" : "click",
-              "autoClosePolygonTooltip" : true,
-              "usePolygonTooltipFunction" : false,
-              "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-              "polygonTooltipFunction" : null,
               "polygonColor" : "#3388ff",
               "polygonOpacity" : 0.5,
-              "usePolygonColorFunction" : false,
-              "polygonColorFunction" : null,
+              "usePolygonColorFunction" : true,
+              "polygonColorFunction" : "return data.color;",
               "polygonStrokeColor" : "#3388ff",
               "polygonStrokeOpacity" : 1,
               "polygonStrokeWeight" : 1,
-              "usePolygonStrokeColorFunction" : false,
-              "polygonStrokeColorFunction" : null,
+              "usePolygonStrokeColorFunction" : true,
+              "polygonStrokeColorFunction" : "return data.color;",
               "showCircle" : false,
               "circleKeyName" : "perimeter",
               "editableCircle" : false,
@@ -18883,6 +18897,44 @@
             "fetchLastLevelOnly" : false,
             "filters" : [ {
               "relationType" : "GeofenceToZone",
+              "entityTypes" : [ "ASSET" ]
+            } ]
+          }
+        },
+        "2b943f93-2ef7-7bdf-a7e6-b5f58063974a" : {
+          "id" : "2b943f93-2ef7-7bdf-a7e6-b5f58063974a",
+          "alias" : "Asset location",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedEntity",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "TO",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ {
+              "relationType" : "LocationToAsset",
+              "entityTypes" : [ "ASSET" ]
+            } ]
+          }
+        },
+        "739bc678-e392-fd6a-072e-1feb5b2295cc" : {
+          "id" : "739bc678-e392-fd6a-072e-1feb5b2295cc",
+          "alias" : "Asset location zones",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedEntity",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "TO",
+            "maxLevel" : 2,
+            "fetchLastLevelOnly" : true,
+            "filters" : [ {
+              "relationType" : "ZoneToLocation",
               "entityTypes" : [ "ASSET" ]
             } ]
           }
