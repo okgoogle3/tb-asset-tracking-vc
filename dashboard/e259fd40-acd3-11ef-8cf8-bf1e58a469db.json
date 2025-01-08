@@ -14939,6 +14939,13 @@
                 "color" : "#3f51b5",
                 "settings" : { },
                 "_hash" : 0.35287170018047176
+              }, {
+                "name" : "department",
+                "type" : "attribute",
+                "label" : "department",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.6328387077830193
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
