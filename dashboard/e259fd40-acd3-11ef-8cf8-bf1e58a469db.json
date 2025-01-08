@@ -16411,7 +16411,7 @@
             },
             "title" : "HTML Value Card",
             "dropShadow" : false,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "widgetStyle" : { },
             "titleStyle" : {
               "fontSize" : "16px",
@@ -16432,7 +16432,11 @@
                 "id" : "d7109d1a-3ad4-ee9e-4912-b8ee7e69bd06"
               } ]
             },
-            "displayTimewindow" : true
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
