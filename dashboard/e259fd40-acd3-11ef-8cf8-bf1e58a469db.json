@@ -14946,6 +14946,13 @@
                 "color" : "#e91e63",
                 "settings" : { },
                 "_hash" : 0.6328387077830193
+              }, {
+                "name" : "lastActivityTime",
+                "type" : "attribute",
+                "label" : "lastActivityTime",
+                "color" : "#ffeb3b",
+                "settings" : { },
+                "_hash" : 0.824122300070957
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
