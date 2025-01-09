@@ -12879,9 +12879,32 @@
           "sizeY" : 2,
           "config" : {
             "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
               "realtime" : {
+                "realtimeType" : 0,
                 "interval" : 1000,
-                "timewindowMs" : 86400000
+                "timewindowMs" : 777600000000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1736344185727,
+                  "endTimeMs" : 1736430585727
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "NONE",
@@ -12921,7 +12944,7 @@
               "fontWeight" : 400,
               "padding" : "5px 10px 5px 10px"
             },
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "showLegend" : false,
             "alarmSource" : {
               "type" : "entity",
@@ -13012,7 +13035,7 @@
             "widgetStyle" : {
               "border" : "1px solid #D0D5DD"
             },
-            "displayTimewindow" : true,
+            "displayTimewindow" : false,
             "actions" : { },
             "configMode" : "advanced",
             "alarmFilterConfig" : {
