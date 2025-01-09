@@ -2625,6 +2625,9 @@
               }, {
                 "name" : "Alerts",
                 "action" : "alerts"
+              }, {
+                "name" : "Assets",
+                "action" : "assets"
               } ],
               "showDescription" : true
             },
