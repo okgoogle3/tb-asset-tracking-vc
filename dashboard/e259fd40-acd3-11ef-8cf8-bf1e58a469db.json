@@ -16966,7 +16966,17 @@
             "actions" : {
               "elementClick" : [ ],
               "actionCellButton" : [ ],
-              "headerButton" : [ ],
+              "headerButton" : [ {
+                "name" : "Filters",
+                "icon" : "filter_list",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "console.log(\"HELLO\")",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "24095203-6b4b-0ab4-b3f9-743a3ad1fa16"
+              } ],
               "rowClick" : [ ]
             },
             "showTitleIcon" : false,
