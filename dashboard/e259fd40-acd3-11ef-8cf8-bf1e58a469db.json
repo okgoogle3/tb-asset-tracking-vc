@@ -18923,8 +18923,8 @@
             }
           }
         },
-        "locationDetailsAssets" : {
-          "name" : "locationDetailsAssets",
+        "zoneDetailsAssets" : {
+          "name" : "zoneDetailsAssets",
           "root" : false,
           "layouts" : {
             "main" : {
