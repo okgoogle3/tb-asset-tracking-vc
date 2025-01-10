@@ -6079,8 +6079,11 @@
                 "name" : "General",
                 "action" : "general"
               }, {
-                "action" : "geofences",
-                "name" : "Geofences"
+                "name" : "Assets",
+                "action" : "assets"
+              }, {
+                "name" : "Geofences",
+                "action" : "geofences"
               }, {
                 "name" : "Alerts",
                 "action" : "alerts"
@@ -6143,6 +6146,16 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "e0f216cd-e983-31e8-ae34-846bfbde6899"
+              }, {
+                "name" : "assets",
+                "icon" : "web_asset",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"assets\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "c67a4ebe-4a49-2500-28cd-d9753f398946"
               } ]
             }
           },
@@ -6195,7 +6208,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='general'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"zoneDetailsGeneral\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='geofences'\" [ctx]=\"ctx\" stateId=\"zoneDetailsGeofences\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"zoneDetailsAlerts\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
+              "markdownTextFunction" : "return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='general'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"zoneDetailsGeneral\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='geofences'\" [ctx]=\"ctx\" stateId=\"zoneDetailsGeofences\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"zoneDetailsAlerts\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='assets'\" [ctx]=\"ctx\" stateId=\"zoneDetailsAssets\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".tb-markdown-view div,\n.tb-markdown-view p {\n    line-height: normal;\n}\n.mat-content {\n    background-color: #fff !important;\n}\n.user-layout {\n    width: 100%;\n    height: 100%;\n    padding: 0px;\n}\n.header-state {\n    height: 80px;\n    padding: 0px;\n}\n.table {\n    flex-grow: 1;\n    padding: 0px;\n}\n\n.user-layout-overflow {\n    /*min-height: 1000px;*/\n    height: 100%;\n    overflow: auto;\n}"
             },
