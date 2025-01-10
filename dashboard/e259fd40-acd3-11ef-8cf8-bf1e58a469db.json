@@ -16874,7 +16874,7 @@
               }, {
                 "name" : "lastActivityTime",
                 "type" : "attribute",
-                "label" : "lastActivityTime",
+                "label" : "Last activity time",
                 "color" : "#9c27b0",
                 "settings" : {
                   "customTitle" : "",
