@@ -19431,19 +19431,21 @@
         },
         "0d4c8f48-3caa-2286-2500-95e8facb235f" : {
           "id" : "0d4c8f48-3caa-2286-2500-95e8facb235f",
-          "alias" : "Current zone assets",
+          "alias" : "Selected zone assets",
           "filter" : {
-            "type" : "assetSearchQuery",
+            "type" : "relationsQuery",
             "resolveMultiple" : true,
             "rootStateEntity" : true,
-            "stateEntityParamName" : null,
+            "stateEntityParamName" : "selectedZone",
             "defaultStateEntity" : null,
             "rootEntity" : null,
             "direction" : "FROM",
-            "maxLevel" : 1,
+            "maxLevel" : 3,
             "fetchLastLevelOnly" : false,
-            "relationType" : "ZoneToAsset",
-            "assetTypes" : [ "Box", "Tool", "Worker" ]
+            "filters" : [ {
+              "relationType" : "ZoneToAsset",
+              "entityTypes" : [ "ASSET" ]
+            } ]
           }
         }
       },
