@@ -16872,6 +16872,30 @@
                 "settings" : { },
                 "_hash" : 0.6580331725852475
               }, {
+                "name" : "lastActivityTime",
+                "type" : "attribute",
+                "label" : "lastActivityTime",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "return moment(value).format('DD.MM.YYYY HH:mm');",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.748746481778003,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
                 "name" : "assignedDevice",
                 "type" : "attribute",
                 "label" : "Assigned device",
@@ -16950,6 +16974,30 @@
                   "columnExportOption" : "onlyVisible"
                 },
                 "_hash" : 0.17264621491492993,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "alertActivity",
+                "type" : "attribute",
+                "label" : "Alerts activity",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "if(value && value=='true'){\n    return `<div style=\"border-radius: 4px;\n    height: fit-content;\n    font-size: 12px;\n    font-weight: 600;\n    padding: 4px 8px;\n    width: fit-content;\n    background-color: #FEE4E2;\n    color: #B42318;\">\n        ALERT</div>`;  \n} else {\n    return `<div style=\"border-radius: 4px;\n    height: fit-content;\n    font-size: 12px;\n    font-weight: 600;\n    padding: 4px 8px;\n    width: fit-content;\n    background-color: #EAECF0;\n    color: #475467;\">\n        NO ALERTS</div>`;  \n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.25877106148760554,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
