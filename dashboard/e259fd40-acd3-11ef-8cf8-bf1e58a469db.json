@@ -19428,6 +19428,25 @@
               "entityTypes" : [ "ASSET" ]
             } ]
           }
+        },
+        "0d4c8f48-3caa-2286-2500-95e8facb235f" : {
+          "id" : "0d4c8f48-3caa-2286-2500-95e8facb235f",
+          "alias" : "Current zone assets",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedZone",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ {
+              "relationType" : "ZoneToAsset",
+              "entityTypes" : [ "ASSET" ]
+            } ]
+          }
         }
       },
       "filters" : {
