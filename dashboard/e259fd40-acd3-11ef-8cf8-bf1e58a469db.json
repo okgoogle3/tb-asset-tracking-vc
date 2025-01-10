@@ -19439,7 +19439,7 @@
             "stateEntityParamName" : "selectedZone",
             "defaultStateEntity" : null,
             "rootEntity" : null,
-            "direction" : "FROM",
+            "direction" : "TO",
             "maxLevel" : 1,
             "fetchLastLevelOnly" : false,
             "filters" : [ {
