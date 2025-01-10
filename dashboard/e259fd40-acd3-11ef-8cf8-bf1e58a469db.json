@@ -19678,7 +19678,7 @@
                 "value" : {
                   "defaultValue" : ""
                 },
-                "ignoreCase" : false,
+                "ignoreCase" : true,
                 "type" : "STRING"
               },
               "userInfo" : {
