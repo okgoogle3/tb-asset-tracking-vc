@@ -19439,11 +19439,11 @@
             "stateEntityParamName" : "selectedZone",
             "defaultStateEntity" : null,
             "rootEntity" : null,
-            "direction" : "TO",
+            "direction" : "FROM",
             "maxLevel" : 1,
             "fetchLastLevelOnly" : false,
             "filters" : [ {
-              "relationType" : "ZoneToAsset",
+              "relationType" : " ZoneToAsset",
               "entityTypes" : [ "ASSET" ]
             } ]
           }
