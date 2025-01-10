@@ -2625,9 +2625,6 @@
               }, {
                 "name" : "Alerts",
                 "action" : "alerts"
-              }, {
-                "name" : "Assets",
-                "action" : "assets"
               } ],
               "showDescription" : true
             },
@@ -2673,16 +2670,6 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "8482a379-fa7e-5770-2331-929714d07c8c"
-              }, {
-                "name" : "assets",
-                "icon" : "flag",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"assets\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "1ec3af88-976e-6f95-f024-02b5377fe502"
               }, {
                 "name" : "Show description",
                 "icon" : "more_horiz",
