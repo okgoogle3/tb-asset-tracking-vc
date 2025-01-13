@@ -45,23 +45,23 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 23,
+      "toIndex" : 21,
       "type" : "Relation Added or Updated"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 24,
+      "toIndex" : 22,
       "type" : "Relation Deleted"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 27,
+      "toIndex" : 25,
       "type" : "Activity Event"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 27,
+      "toIndex" : 25,
       "type" : "Inactivity Event"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 29,
+      "toIndex" : 27,
       "type" : "Inactivity Event"
     }, {
       "fromIndex" : 5,
@@ -69,19 +69,19 @@
       "type" : "Success"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 28,
+      "toIndex" : 26,
       "type" : "Alarm Cleared"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 28,
+      "toIndex" : 26,
       "type" : "Alarm Created"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 31,
+      "toIndex" : 29,
       "type" : "Alarm Created"
     }, {
       "fromIndex" : 6,
-      "toIndex" : 17,
+      "toIndex" : 15,
       "type" : "Success"
     }, {
       "fromIndex" : 7,
@@ -89,11 +89,11 @@
       "type" : "Success"
     }, {
       "fromIndex" : 7,
-      "toIndex" : 30,
+      "toIndex" : 28,
       "type" : "Success"
     }, {
       "fromIndex" : 7,
-      "toIndex" : 33,
+      "toIndex" : 31,
       "type" : "Success"
     }, {
       "fromIndex" : 9,
@@ -105,62 +105,62 @@
       "type" : "Success"
     }, {
       "fromIndex" : 12,
-      "toIndex" : 25,
+      "toIndex" : 23,
       "type" : "Success"
     }, {
       "fromIndex" : 13,
       "toIndex" : 8,
       "type" : "False"
     }, {
-      "fromIndex" : 17,
+      "fromIndex" : 15,
       "toIndex" : 7,
       "type" : "Success"
     }, {
+      "fromIndex" : 16,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
       "fromIndex" : 18,
-      "toIndex" : 19,
+      "toIndex" : 20,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 17,
       "type" : "Success"
     }, {
       "fromIndex" : 20,
-      "toIndex" : 22,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 21,
       "toIndex" : 19,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 22,
-      "toIndex" : 21,
       "type" : "True"
     }, {
-      "fromIndex" : 23,
+      "fromIndex" : 21,
       "toIndex" : 11,
       "type" : "DeviceToAsset"
     }, {
-      "fromIndex" : 23,
-      "toIndex" : 20,
-      "type" : "AlarmConfigToDevice"
-    }, {
-      "fromIndex" : 24,
-      "toIndex" : 9,
-      "type" : "DeviceToAsset"
-    }, {
-      "fromIndex" : 24,
+      "fromIndex" : 21,
       "toIndex" : 18,
       "type" : "AlarmConfigToDevice"
     }, {
+      "fromIndex" : 22,
+      "toIndex" : 9,
+      "type" : "DeviceToAsset"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 16,
+      "type" : "AlarmConfigToDevice"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 24,
+      "type" : "Success"
+    }, {
       "fromIndex" : 27,
-      "toIndex" : 26,
+      "toIndex" : 24,
       "type" : "Success"
     }, {
-      "fromIndex" : 29,
-      "toIndex" : 26,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 32,
+      "fromIndex" : 30,
       "toIndex" : 5,
       "type" : "Success"
     } ],
-    "firstNodeIndex" : 32,
+    "firstNodeIndex" : 30,
     "nodes" : [ {
       "additionalInfo" : {
         "layoutX" : 824,
@@ -519,61 +519,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1351,
-        "layoutY" : 550
-      },
-      "configuration" : {
-        "deleteForSingleEntity" : true,
-        "direction" : "TO",
-        "entityType" : "ASSET",
-        "entityNamePattern" : "${assetName}",
-        "relationType" : "AssetToZone"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "75d3a1b2-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "delete relation  from Zone to Asset",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbDeleteRelationNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1665,
-        "layoutY" : 551
-      },
-      "configuration" : {
-        "direction" : "TO",
-        "entityType" : "ASSET",
-        "entityNamePattern" : "${assetName}",
-        "entityTypePattern" : "Asset",
-        "relationType" : "AssetToZone",
-        "createEntityIfNotExists" : false,
-        "removeCurrentRelations" : false,
-        "changeOriginatorToRelatedEntity" : false
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "75d3a1b3-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "create new relation from Zone to Asset",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
     }, {
       "additionalInfo" : {
         "description" : "",
