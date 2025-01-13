@@ -373,7 +373,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "\nvar msgNew = {\n    isAssigned: false,\n    info : {\n        id: null,\n        name:null\n    },\n      assignedLocation: \"\"\n};\n\n\nreturn {msg: msgNew, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};"
+        "tbelScript" : "var msgNew = {\n    isAssigned: false,\n    info: {\n        id: null,\n        name: null\n    },\n    assignedLocation: \"\"\n};\n\nreturn {\n    msg: msgNew,\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
