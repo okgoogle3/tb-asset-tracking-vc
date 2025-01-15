@@ -16874,7 +16874,7 @@
               }, {
                 "name" : "lastActivityTime",
                 "type" : "attribute",
-                "label" : "Last activity time",
+                "label" : "Last activity",
                 "color" : "#9c27b0",
                 "settings" : {
                   "customTitle" : "",
@@ -16920,6 +16920,19 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
+                "name" : "department",
+                "type" : "attribute",
+                "label" : "Department",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.601522070658042,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
                 "name" : "rssi",
                 "type" : "timeseries",
                 "label" : "Device signal",
@@ -16942,19 +16955,6 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : false,
-                "postFuncBody" : null
-              }, {
-                "name" : "department",
-                "type" : "attribute",
-                "label" : "Department",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.601522070658042,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
                 "name" : "status",
