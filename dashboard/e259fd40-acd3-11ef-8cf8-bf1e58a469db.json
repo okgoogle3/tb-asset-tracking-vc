@@ -19655,7 +19655,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Demo Asset 2",
+                  "defaultValue" : "",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
