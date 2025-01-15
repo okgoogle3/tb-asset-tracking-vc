@@ -19644,7 +19644,7 @@
         },
         "16675d00-61cc-2cf6-6d4d-6ce5eaf697bc" : {
           "id" : "16675d00-61cc-2cf6-6d4d-6ce5eaf697bc",
-          "filter" : "Zone asset filters",
+          "filter" : "Zone assets filter",
           "keyFilters" : [ {
             "key" : {
               "type" : "ENTITY_FIELD",
