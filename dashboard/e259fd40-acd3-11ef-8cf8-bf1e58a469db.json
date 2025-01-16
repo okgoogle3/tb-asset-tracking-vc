@@ -14857,7 +14857,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : null,
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet states = controller.stateObject.length;\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\nlet newParams = {\n    stateId: 'assetDetails',\n    prevState: 'assets',\n    subState: 'general',\n    statesArray: [\n        {\n            stateId: 'assets', \n            name: \"Assets\"\n        },\n        {\n            stateId: 'assetDetails', \n            name: entityLabel||entityName\n        }\n    ],\n    selectedEntity: {\n        entityName,\n        entityId,\n        entityLabel\n    }\n};\n\nhistory.pushState({}, '');\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', newParams);",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "03a2bc10-dd0f-ca5c-750a-d29d88362ec0"
