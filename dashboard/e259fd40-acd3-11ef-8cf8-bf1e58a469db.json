@@ -5820,6 +5820,19 @@
                 "color" : "#8bc34a",
                 "settings" : { },
                 "_hash" : 0.07559757078595486
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.29385069785115037,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
