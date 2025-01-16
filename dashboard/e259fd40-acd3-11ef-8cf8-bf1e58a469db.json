@@ -20714,7 +20714,7 @@
             "defaultStateEntity" : null,
             "rootEntity" : null,
             "direction" : "FROM",
-            "maxLevel" : 3,
+            "maxLevel" : 1,
             "fetchLastLevelOnly" : false,
             "filters" : [ {
               "relationType" : "ZoneToAsset",
