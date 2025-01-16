@@ -18107,7 +18107,7 @@
               "autoClosePolygonTooltip" : true,
               "usePolygonTooltipFunction" : true,
               "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-              "polygonTooltipFunction" : "if (data.Type === \"Geofence\") {\n    return `<div>\n                <span style=\"font-size: 22px;\n                            font-weight: 600;\n                            color: #0C111D;\n                            text-align:right;\n                            line-height: 32px;\">${data.entityName}</span>\n                \n                <div style=\"display: flex;justify-content:space-between;margin-top:5px;\">\n                    <span style=\"color:#344054;\">Type</span>\n                    <span style=\"color:#0C111D;font-weight:600;text-align:right;\">Geofence</span>\n                </div>\n                \n            </div>`    \n}\n\nreturn `<div>\n            <span style=\"font-size: 22px;\n                        font-weight: 600;\n                        color: #0C111D;\n                        text-align:right;\n                        line-height: 32px;\">${data.entityName}</span>\n            \n            <div style=\"display: flex;justify-content:space-between;margin-top:5px;\">\n                <span style=\"color:#344054;\">Type</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">Zone</span>\n            </div>\n            <div style=\"display:flex;justify-content:center;margin-top:5px;\"><link-act name='zoneDetails'>Details</link-act></div>\n        </div>`",
+              "polygonTooltipFunction" : "if (data.Type === \"Geofence\") {\n    return `<div>\n                <span style=\"font-size: 22px;\n                            font-weight: 600;\n                            color: #0C111D;\n                            text-align:right;\n                            line-height: 32px;\">${data.entityName}</span>\n                \n                <div style=\"display: flex;justify-content:space-between;margin-top:5px;\">\n                    <span style=\"color:#344054;\">Type</span>\n                    <span style=\"color:#0C111D;font-weight:600;text-align:right;\">Geofence</span>\n                </div>\n                \n            </div>`;    \n}",
               "polygonColor" : "#3388ff",
               "polygonOpacity" : 0.15,
               "usePolygonColorFunction" : true,
@@ -18174,16 +18174,6 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "75e9a5ac-21c9-79bb-1cdc-8092491b0baa"
-              }, {
-                "name" : "zoneDetails",
-                "icon" : "map",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet states = controller.stateObject.length;\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\n\nlet newParams = {\n    stateId: 'zoneDetails',\n    prevState: 'locationsDetails',\n    subState: 'general',\n    statesArray: [\n        {\n            stateId: 'locations', \n            name: \"Locations\"\n        },\n    ],\n    selectedLocation: controller.getStateParams().selectedEntity,\n    selectedZone: {\n        entityName,\n        entityId,\n        entityLabel\n    }\n};\n\nhistory.pushState({}, '');\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', newParams);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "6cf6b9e7-7a05-2748-e494-ee55f482e84f"
               } ]
             },
             "displayTimewindow" : true,
