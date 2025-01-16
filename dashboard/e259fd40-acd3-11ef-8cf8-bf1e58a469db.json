@@ -7300,7 +7300,7 @@
               } ],
               "rowClick" : [ {
                 "name" : "Select zone",
-                "icon" : "more_horiz",
+                "icon" : "arrow_forward",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
