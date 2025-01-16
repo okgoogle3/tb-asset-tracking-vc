@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "0ab79020-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -20,9 +20,33 @@
     "label" : null,
     "name" : "Test image zone",
     "ownerId" : null,
-    "type" : "Temporary asset"
+    "type" : "Image plan"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "image",
+      "lastUpdateTs" : 1737031691234,
+      "longValue" : null,
+      "strValue" : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAABSCAMAAADUxz4sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADDUExURQAAAGAgAGAwEGArC2AwEGAtDWArEGAuDmQsEGMrDmMtEGMrDmItEGIsD2IrEGItD2IsEGIrD2ItDmIsD2ItDmIsD2IsD2ItD2MsD2MsD2MsD2IsD2ItD2IsD2IsD2IsD2IsD2UrD2gpDmsoDm4nDXElDXQkDHciDHohC3wgC38eCoIdCoUcCYgaCYsZCI4XCJEWCJQVB5cTB5oSBp0RBqAPBaMOBaYMBKkLBKsKA64IA7EHArQGArcEAboDAb0BAMAAAH7SoGMAAAAgdFJOUwAIEBggKDA4QEhQWGBocHiAh4+Xn6evt7/Hz9ff5+/3v+H4wgAAAAlwSFlzAAAXEQAAFxEByibzPwAAA9ZJREFUaEPVm9tW6kAMhluQraCcBKQIaABRERURlIoCvv9T7T9toHKockfy3ezV6bD896wkk2SmTiyp06LneXRAap5Xyh6LnL1JFpry+4NzXU6JqH04qcjPlFA7FWF/ka4H89u9l4nvL74Ph+/7w4ebQEwzL+J+wz0P5nbHhxT9k0kvEOQlRWAsqWDJHz/kdyr4GrSh6SotEmPIXWNSbya/UcNiwAtadEXlLsqY0BrKfFVMOpBWS4jObdjMu6psJWLGJl+NW/c8XvbnMlUfQ8iriNQNzvCqJ9NU8gqB5yJ2jTQ89E5LRNwNO+uOAJ+C8lu91hLyCO3bMbJKdPMlM9SygK82Nl01g//PVCYoZo4YWRTJgotE8Uleq2aMVHI9kywSdbQbesgd0hkRHcA+OpZ3ypm2iM5ENnOBuCiv1IMI2Yw89ciGj4Ys4KlR6QFLV72NroNNdWXtHF7eZdwAM1j7MsicIrzIsAn6USrjEb3IqAn8laP+Q3mhri76le7SUeGkDzJmhJWjwl4MOSnzhSKblbvYSW3kABE3RP8g/Rh5uoyYATEmB+k5okcZMQOMvQzpyF+MZF4RU1QckI6t9FNG7IANNcmpV1ueDXFPlHHS5qI6g8y3wN0Xc14a1Hnn3PIylcCEvHGIQRrwKs+GQAbmcXPXXGz8/v4kuuTWkS/PhphxYK8RKW1L/wqqaadBpL5ft4M2pGMztSi9A+l1i3lAaDAoNAy66RzlqVMhepNnQ6BOqjslopE8GyLYkgomE4EJn4hliZ7l2RBIv0rc+urLsyGGnPSiqu7KsyFQV2dN9jKW3Qx7HaRVDwkJ+0BGzIBKowrpGaJ7GTHDM3up4ySIWrrP17e5JTqBdE7AjGXsCyRfQYMdJZ6xTemdyzsGxt6xZTG90NQBqg1TySNCI8n9u7yhA19mQHQRKneS2FDNnPiGZ74Zkc59akOOCidtinCHW6ZtO44aOSnTMLTsWPSlkzJI2ltGrJ0tvSSyA5A+GgkySF+aa5dMzdzlmcJcNm6z8w0qC6ftSLw43f2JC081cCcGu9HGrTXAtwXVn8yMIPJHYFwCk9HekeG4uPMyNV9eV30247eQ7O5SHtyN1Rxmpm2iRszle7cG7U9aM4IR1rx5JFK3SFxCe1dlu33+AGlXfJMkhgRySGop7Px+YPun+u+fhWWxrdK9sqLpg++tU2m3h0aEHyZ1XtRsrYtxlxVdraqLeNwSzyTqjxTkkp9vT/w5FVHtz4/BAo6KKLRD7uTfg7D649fl/T/ddM84Tiqhkd9vxVekcpXwC8iD0qwWYhbccf4DII8hvQudkDoAAAAASUVORK5CYII="
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "perimeter",
+      "lastUpdateTs" : 1737031691234,
+      "longValue" : null,
+      "strValue" : "[[48.75240396498977, 37.580495923679514], [48.75240396498977, 37.57849592367952], [48.75040396498977, 37.57849592367952], [48.75040396498977, 37.580495923679514]]"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75240396498977, 37.580495923679514], [48.75240396498977, 37.57849592367952], [48.75040396498977, 37.57849592367952], [48.75040396498977, 37.580495923679514]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1737031686618,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
