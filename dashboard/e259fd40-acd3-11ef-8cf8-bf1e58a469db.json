@@ -19495,7 +19495,7 @@
                 "backgroundSizeMode" : "100%",
                 "minColumns" : 24,
                 "viewFormat" : "grid",
-                "autoFillHeight" : false,
+                "autoFillHeight" : true,
                 "rowHeight" : 70,
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
