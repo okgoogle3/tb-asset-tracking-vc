@@ -45,19 +45,19 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 21,
+      "toIndex" : 19,
       "type" : "Relation Added or Updated"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 22,
+      "toIndex" : 20,
       "type" : "Relation Deleted"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 25,
+      "toIndex" : 23,
       "type" : "Activity Event"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 25,
+      "toIndex" : 23,
       "type" : "Inactivity Event"
     }, {
       "fromIndex" : 5,
@@ -65,31 +65,31 @@
       "type" : "Success"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 26,
+      "toIndex" : 24,
       "type" : "Alarm Cleared"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 26,
+      "toIndex" : 24,
       "type" : "Alarm Created"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 28,
+      "toIndex" : 26,
       "type" : "Alarm Created"
     }, {
       "fromIndex" : 6,
-      "toIndex" : 15,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 7,
       "toIndex" : 13,
       "type" : "Success"
     }, {
       "fromIndex" : 7,
-      "toIndex" : 27,
+      "toIndex" : 8,
       "type" : "Success"
     }, {
       "fromIndex" : 7,
-      "toIndex" : 30,
+      "toIndex" : 25,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 28,
       "type" : "Success"
     }, {
       "fromIndex" : 9,
@@ -101,58 +101,54 @@
       "type" : "Success"
     }, {
       "fromIndex" : 12,
-      "toIndex" : 23,
+      "toIndex" : 21,
       "type" : "Success"
     }, {
       "fromIndex" : 13,
-      "toIndex" : 8,
-      "type" : "False"
-    }, {
-      "fromIndex" : 15,
       "toIndex" : 7,
       "type" : "Success"
     }, {
+      "fromIndex" : 14,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
       "fromIndex" : 16,
-      "toIndex" : 17,
+      "toIndex" : 18,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 15,
       "type" : "Success"
     }, {
       "fromIndex" : 18,
-      "toIndex" : 20,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 19,
       "toIndex" : 17,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 20,
-      "toIndex" : 19,
       "type" : "True"
     }, {
-      "fromIndex" : 21,
+      "fromIndex" : 19,
       "toIndex" : 11,
       "type" : "DeviceToAsset"
     }, {
-      "fromIndex" : 21,
-      "toIndex" : 18,
-      "type" : "AlarmConfigToDevice"
-    }, {
-      "fromIndex" : 22,
-      "toIndex" : 9,
-      "type" : "DeviceToAsset"
-    }, {
-      "fromIndex" : 22,
+      "fromIndex" : 19,
       "toIndex" : 16,
       "type" : "AlarmConfigToDevice"
     }, {
-      "fromIndex" : 25,
-      "toIndex" : 24,
+      "fromIndex" : 20,
+      "toIndex" : 9,
+      "type" : "DeviceToAsset"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 14,
+      "type" : "AlarmConfigToDevice"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 22,
       "type" : "Success"
     }, {
-      "fromIndex" : 29,
+      "fromIndex" : 27,
       "toIndex" : 5,
       "type" : "Success"
     } ],
-    "firstNodeIndex" : 29,
+    "firstNodeIndex" : 27,
     "nodes" : [ {
       "additionalInfo" : {
         "layoutX" : 824,
@@ -464,53 +460,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1422,
-        "layoutY" : 393
-      },
-      "configuration" : {
-        "messageNames" : [ "zoneName" ],
-        "metadataNames" : [ ],
-        "checkAllKeys" : true
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "75d3a1b0-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "hasZoneName",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1748,
-        "layoutY" : 396
-      },
-      "configuration" : {
-        "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "cf65c7a0-94ff-11ef-8a10-c14d60276279"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "75d3a1b1-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "Geofence Rule Chain",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     }, {
       "additionalInfo" : {
         "description" : "",
@@ -975,54 +924,6 @@
         "id" : "2a355d31-d1b9-11ef-ab5a-5fc560f62ac3"
       },
       "name" : "TODO refactor",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1422,
-        "layoutY" : 450
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "948fed30-d1b9-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "TODO check if needed",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1751,
-        "layoutY" : 452
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "9a0e2d30-d1b9-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "TODO check if needed",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
