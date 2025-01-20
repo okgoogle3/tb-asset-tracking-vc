@@ -263,7 +263,7 @@
       },
       "configuration" : {
         "messageNames" : [ ],
-        "metadataNames" : [ "ss_geofenceThresolds", "ss_zoneThresolds", "ss_areaAlarmRules" ],
+        "metadataNames" : [ "ss_areaAlarmRules" ],
         "checkAllKeys" : false
       },
       "configurationVersion" : 0,
@@ -274,7 +274,7 @@
         "entityType" : "RULE_NODE",
         "id" : "69872213-bdec-11ef-b55e-d50e0e2ee017"
       },
-      "name" : "check for alarmSettings",
+      "name" : "check for areaAlarmRules",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -393,30 +393,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 47,
-        "layoutY" : 371
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "9ac07820-d1b7-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "TODO refactor",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
         "description" : "",
