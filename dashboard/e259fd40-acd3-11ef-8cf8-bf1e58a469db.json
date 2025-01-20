@@ -18238,9 +18238,9 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "",
-              "markdownTextFunction" : "return `\n    <div class=\"widget-container\">\n        <div class=\"map-container\">Map</div>\n        <div class=\"panel-container\">\n            <div class=\"total-assets-container\"></div>\n            <button mat-button color=\"primary\">\n                <span>Show assets</span>\n                <mat-icon color=\"primary\">keyboard_arrow_up</mat-icon>\n            </button> \n        </div>\n    </div>\n`;",
+              "markdownTextFunction" : "let isOpen = false;\n\nfunction toggle() {\n    isOpen = !isOpen;\n}\n\nreturn `\n    <div class=\"widget-container\">\n        <div class=\"map-container\">Map</div>\n        <div class=\"panel-container\">\n            <div class=\"total-assets-container\"></div>\n            <button mat-button color=\"primary\" (click)=\"toggle()>\n                <mat-icon color=\"primary\">keyboard_arrow_up</mat-icon>\n                <span>Show assets</span>\n            </button>\n        </div>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ".widget-container {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n}\n\n.map-container {\n    width: 100%;\n    height: 95%;\n}\n\n.panel-container {\n    width: 100%;\n    padding: 20px;\n    position: absolute;\n    bottom: 0;\n    display: flex;\n    justify-content: space-between;\n}"
+              "markdownCss" : ".widget-container {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n}\n\n.map-container {\n    width: 100%;\n    height: 95%;\n}\n\n.panel-container {\n    width: 100%;\n    padding: 20px;\n    position: absolute;\n    bottom: 0;\n    display: flex;\n    justify-content: space-between;\n}\n\nbutton.mat-button {\n    display: flex;\n    flex-direction: row-reverse;\n    align-items: center;\n}"
             },
             "title" : "Markdown/HTML Card",
             "showTitleIcon" : false,
