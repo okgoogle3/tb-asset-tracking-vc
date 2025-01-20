@@ -615,7 +615,7 @@
         "entityType" : "RULE_NODE",
         "id" : "75d3efd0-bdec-11ef-b55e-d50e0e2ee017"
       },
-      "name" : "check alarmSettings",
+      "name" : "check alarmConfig",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
