@@ -15,7 +15,7 @@
       "entityType" : "RULE_CHAIN",
       "id" : "804acd40-b184-11ef-8cf8-bf1e58a469db"
     },
-    "name" : "Tag device generator rule chain",
+    "name" : "Tag device generator rule chain (To delete?)",
     "root" : false,
     "type" : "CORE"
   },
