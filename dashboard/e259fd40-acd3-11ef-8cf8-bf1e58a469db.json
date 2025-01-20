@@ -18272,7 +18272,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\n\nparams.showAssets = {\n    status: true\n};\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\n\nparams.showAllAssets = {\n    status: true\n};\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "fa277f60-e7b4-40d8-4896-cda3329c2672"
@@ -20845,6 +20845,16 @@
               "relationType" : "ZoneToAsset",
               "entityTypes" : [ "ASSET" ]
             } ]
+          }
+        },
+        "ac9b4c25-12f6-36be-001e-91d59c70b861" : {
+          "id" : "ac9b4c25-12f6-36be-001e-91d59c70b861",
+          "alias" : "Show all assets",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "showAllAssets",
+            "defaultStateEntity" : null
           }
         }
       },
