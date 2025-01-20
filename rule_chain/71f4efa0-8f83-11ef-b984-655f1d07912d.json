@@ -420,8 +420,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 352,
-        "layoutY" : 479
+        "layoutX" : 347,
+        "layoutY" : 509
       },
       "configuration" : {
         "scriptLang" : "TBEL",
