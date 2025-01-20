@@ -89,8 +89,21 @@
               }
             } ],
             "displayTimewindow" : false,
-            "configMode" : "basic",
-            "actions" : { },
+            "configMode" : "advanced",
+            "actions" : {
+              "rowClick" : [ {
+                "name" : "1",
+                "icon" : "filter_list",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : null,
+                "openRightLayout" : false,
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "id" : "84f65103-3219-ee8a-7e4c-cce3669ef80a"
+              } ]
+            },
             "showTitleIcon" : false,
             "titleIcon" : "list",
             "iconColor" : null,
