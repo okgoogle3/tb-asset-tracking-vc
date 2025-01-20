@@ -18308,7 +18308,7 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "eaa11b8a-34e9-0254-699d-3e69daeb37e1",
+              "entityAliasId" : "9bc1e366-e9b3-fe10-0879-4daa13fbb8cc",
               "filterId" : "836b55e8-d2af-b9fa-9a21-565629143be6",
               "dataKeys" : [ {
                 "name" : "type",
@@ -18411,7 +18411,7 @@
             }, {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "5810245c-0625-6ec2-eec3-9b268decce58",
+              "entityAliasId" : "7a253fe4-49e1-f36e-0e96-1cb97b81349d",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "createdTime",
@@ -18507,7 +18507,7 @@
               }
             }, {
               "type" : "entity",
-              "entityAliasId" : "7f47d34d-0568-597d-b010-f3970d50fc62",
+              "entityAliasId" : "50f5bac7-8298-7d81-d3b4-b8e9b4800af2",
               "dataKeys" : [ {
                 "name" : "color",
                 "type" : "attribute",
@@ -21790,6 +21790,26 @@
             "resolveMultiple" : false,
             "stateEntityParamName" : "showAllAssets",
             "defaultStateEntity" : null
+          }
+        },
+        "7a253fe4-49e1-f36e-0e96-1cb97b81349d" : {
+          "id" : "7a253fe4-49e1-f36e-0e96-1cb97b81349d",
+          "alias" : "All zones",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Image on map", "Image plan", "Shape" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "50f5bac7-8298-7d81-d3b4-b8e9b4800af2" : {
+          "id" : "50f5bac7-8298-7d81-d3b4-b8e9b4800af2",
+          "alias" : "All geofences",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Geofence" ],
+            "assetNameFilter" : ""
           }
         }
       },
