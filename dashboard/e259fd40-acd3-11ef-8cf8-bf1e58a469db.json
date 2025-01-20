@@ -18198,7 +18198,11 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "dataKeys" : [ ]
+              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -18238,9 +18242,9 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "",
-              "markdownTextFunction" : "let isOpen = false;\n\nfunction toggle() {\n    isOpen = !isOpen;\n}\n\nreturn `\n    <div class=\"widget-container\">\n        <div class=\"map-container\">Map</div>\n        <div class=\"panel-container\">\n            <div class=\"total-assets-container\">\n                <mat-icon color=\"primary\">keyboard_arrow_up</mat-icon>\n            </div>\n            <button mat-button color=\"primary\">\n                <mat-icon color=\"primary\">keyboard_arrow_up</mat-icon>\n                <span>Show assets</span>\n            </button>\n        </div>\n    </div>\n`;",
+              "markdownTextFunction" : "let isOpen = false;\n\nfunction toggle() {\n    isOpen = !isOpen;\n}\n\nreturn `\n    <div class=\"widget-container\">\n        <div class=\"map-container\">Map</div>\n        <div class=\"panel-container\">\n            <div class=\"total-assets-container\">\n                <mat-icon class=\"icon build\">build</mat-icon>\n                <span class=\"total-assets-label\">Total assets</span>\n                <span class=\"total-assets-counter\">2457</span>\n            </div>\n            <button mat-button color=\"primary\">\n                <mat-icon color=\"primary\" class=\"icon\">keyboard_arrow_up</mat-icon>\n                <span>Show assets</span>\n            </button>\n        </div>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ".widget-container {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n}\n\n.map-container {\n    width: 100%;\n    height: 100%;\n}\n\n.panel-container {\n    width: 100%;\n    padding: 20px;\n    position: absolute;\n    bottom: 0;\n    display: flex;\n    justify-content: space-between;\n    background-color: #FCFCFD;\n    border-top: 1px solid #D0D5DD;\n}\n\nbutton.mat-button {\n    display: flex;\n    flex-direction: row-reverse;\n    align-items: center;\n}"
+              "markdownCss" : ".widget-container {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n}\n\n.map-container {\n    width: 100%;\n    height: 100%;\n}\n\n.panel-container {\n    width: 100%;\n    padding: 20px;\n    position: absolute;\n    bottom: 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    background-color: #FCFCFD;\n    border-top: 1px solid #D0D5DD;\n}\n\nbutton.mat-button {\n    display: flex;\n    flex-direction: row-reverse;\n    align-items: center;\n}\n\n.icon {\n    width: 20px;\n    height: 20px;\n    font-size: 20px;\n}\n\n.icon.build {\n    color: #344054;\n    margin-right: 8px;\n}\n\n.total-assets-container {\n    display: flex;\n    align-items: center;\n}\n\n.total-assets-label {\n    color: #344054;\n    line-height: 24px;\n    margin-right: 8px;\n}\n\n.total-assets-counter {\n    color: #0C111D;\n    font-weight: 600;\n    line-height: 24px;\n    letter-spacing: 0.16px;\n}"
             },
             "title" : "Markdown/HTML Card",
             "showTitleIcon" : false,
@@ -18258,7 +18262,22 @@
             "enableDataExport" : false,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "showAll",
+                "icon" : "expand_less",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "console.log(\"HAHAHA\");",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "fa277f60-e7b4-40d8-4896-cda3329c2672"
+              } ]
+            }
           },
           "row" : 0,
           "col" : 0,
