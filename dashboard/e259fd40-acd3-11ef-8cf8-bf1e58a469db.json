@@ -14231,7 +14231,7 @@
               "enableSelection" : false,
               "enableSearch" : true,
               "enableSelectColumnDisplay" : false,
-              "enableFilter" : false,
+              "enableFilter" : true,
               "enableStickyHeader" : false,
               "enableStickyAction" : false,
               "showCellActionsMenu" : true,
