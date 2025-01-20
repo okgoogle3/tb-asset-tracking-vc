@@ -91,7 +91,8 @@
             "displayTimewindow" : false,
             "configMode" : "advanced",
             "actions" : {
-              "rowClick" : [ {
+              "rowClick" : [ ],
+              "actionCellButton" : [ {
                 "name" : "1",
                 "icon" : "filter_list",
                 "useShowWidgetActionFunction" : null,
