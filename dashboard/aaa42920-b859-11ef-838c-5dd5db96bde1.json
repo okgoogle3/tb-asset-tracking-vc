@@ -92,7 +92,8 @@
             "configMode" : "advanced",
             "actions" : {
               "rowClick" : [ ],
-              "actionCellButton" : [ {
+              "actionCellButton" : [ ],
+              "headerButton" : [ {
                 "name" : "1",
                 "icon" : "filter_list",
                 "useShowWidgetActionFunction" : null,
