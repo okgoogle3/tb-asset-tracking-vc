@@ -60,10 +60,6 @@
       "toIndex" : 25,
       "type" : "Inactivity Event"
     }, {
-      "fromIndex" : 1,
-      "toIndex" : 27,
-      "type" : "Inactivity Event"
-    }, {
       "fromIndex" : 5,
       "toIndex" : 1,
       "type" : "Success"
@@ -77,7 +73,7 @@
       "type" : "Alarm Created"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 29,
+      "toIndex" : 28,
       "type" : "Alarm Created"
     }, {
       "fromIndex" : 6,
@@ -89,11 +85,11 @@
       "type" : "Success"
     }, {
       "fromIndex" : 7,
-      "toIndex" : 28,
+      "toIndex" : 27,
       "type" : "Success"
     }, {
       "fromIndex" : 7,
-      "toIndex" : 31,
+      "toIndex" : 30,
       "type" : "Success"
     }, {
       "fromIndex" : 9,
@@ -152,15 +148,11 @@
       "toIndex" : 24,
       "type" : "Success"
     }, {
-      "fromIndex" : 27,
-      "toIndex" : 24,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 30,
+      "fromIndex" : 29,
       "toIndex" : 5,
       "type" : "Success"
     } ],
-    "firstNodeIndex" : 30,
+    "firstNodeIndex" : 29,
     "nodes" : [ {
       "additionalInfo" : {
         "layoutX" : 824,
@@ -825,30 +817,6 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 493,
-        "layoutY" : 25
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: {rssi:0}, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\"};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "75d3efd7-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "set rssi",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 1424,
         "layoutY" : 201
       },
@@ -939,30 +907,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 494,
-        "layoutY" : 78
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "9e030380-d1b8-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "TODO check if needed",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
         "description" : "",
