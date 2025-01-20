@@ -6136,6 +6136,16 @@
                 "openInPopover" : false,
                 "id" : "58228898-f266-3c3f-a7d1-31b35e56c474"
               }, {
+                "name" : "assets",
+                "icon" : "web_asset",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nconst aliasController = widgetContext.dashboard.aliasController;\n        \nif (aliasController.origFilters) {\n    const id = Object.keys(aliasController.origFilters).find((filterId) => \n        aliasController.origFilters[filterId].filter === \"Zone assets filter\"\n    );\n    \n    const filtersCopy = Object.assign({}, aliasController.origFilters);\n    const condition = filtersCopy[id];\n    if(condition && condition.keyFilters.length && condition.keyFilters[0].predicates.length){\n        condition.keyFilters[0].predicates[0].keyFilterPredicate.value.defaultValue = \"\";\n        aliasController.updateUserFilter(condition);\n        widgetContext.updateAliases();\n    }\n}\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"assets\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "c67a4ebe-4a49-2500-28cd-d9753f398946"
+              }, {
                 "name" : "geofences",
                 "icon" : "domain",
                 "useShowWidgetActionFunction" : null,
@@ -6168,16 +6178,6 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "e0f216cd-e983-31e8-ae34-846bfbde6899"
-              }, {
-                "name" : "assets",
-                "icon" : "web_asset",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"assets\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "c67a4ebe-4a49-2500-28cd-d9753f398946"
               } ]
             }
           },
