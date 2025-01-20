@@ -889,7 +889,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "return {\n    msg: {\n        t: msg.temperature.contains(\"1\")\n    },\n    metadata: metadata,\n    msgType: msgType\n};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
