@@ -18272,7 +18272,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "console.log(\"HAHAHA\");",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\n\nparams.showAssets = {\n    status: true\n};\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "fa277f60-e7b4-40d8-4896-cda3329c2672"
