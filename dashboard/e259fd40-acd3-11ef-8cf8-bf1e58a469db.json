@@ -19092,7 +19092,27 @@
             "configMode" : "advanced",
             "actions" : {
               "elementClick" : [ ],
-              "actionCellButton" : [ ],
+              "actionCellButton" : [ {
+                "name" : "Route history",
+                "icon" : "route",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "console.log(\"Navigate to route history\")",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "f5f24319-326d-18d3-df85-7c36879c711c"
+              }, {
+                "name" : "Asset location",
+                "icon" : "my_location",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "console.log(\"Asset location action\")",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "2a465318-c34a-aacb-1b8c-10c39a49c91f"
+              } ],
               "headerButton" : [ ],
               "rowClick" : [ ]
             },
