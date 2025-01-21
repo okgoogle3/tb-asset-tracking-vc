@@ -30,8 +30,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 262,
-        "layoutY" : 380
+        "layoutX" : 258,
+        "layoutY" : 356
       },
       "configuration" : {
         "scriptLang" : "TBEL",
