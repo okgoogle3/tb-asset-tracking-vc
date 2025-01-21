@@ -86,7 +86,7 @@
         "layoutY" : 464
       },
       "configuration" : {
-        "inputValueKey" : "a",
+        "inputValueKey" : "Volume",
         "outputValueKey" : "delta",
         "useCache" : true,
         "addPeriodBetweenMsgs" : false,
