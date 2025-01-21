@@ -36,7 +36,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var res = [];\nfor (var i = 0; i < 1000; i++) {\n    res.push({msg: {a: i}, metadata: metadata, msgType: msgType});\n}\nreturn res;"
+        "tbelScript" : "var firstTs = 1734696446000;\nvar lastTs = 1736294846000;\nvar hours = (lastTs - firstTs) / 3600000;\n\nvar first = 2038.339;\nvar last = 2063.885;\nvar diff = last - diff;\nvar step = diff / hours;\n\nvar res = [];\nfor (var i = 0; i < hours; i++) {\n    res.push({\n        msg: {\n            Volume: first + i * step\n        },\n        metadata: {\n            ts: firstTs + i * 3600000\n        },\n        msgType: msgType\n    });\n}\nreturn res;"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
