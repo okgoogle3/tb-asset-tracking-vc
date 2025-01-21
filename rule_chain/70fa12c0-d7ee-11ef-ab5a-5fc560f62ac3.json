@@ -17,9 +17,65 @@
     "type" : "CORE"
   },
   "metaData" : {
-    "connections" : null,
+    "connections" : [ {
+      "fromIndex" : 1,
+      "toIndex" : 0,
+      "type" : "Success"
+    } ],
     "firstNodeIndex" : null,
-    "nodes" : [ ],
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 262,
+        "layoutY" : 380
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "var list = [0, 1, 2];\nforeach (i : list) {\n    return {msg: {a: i}, metadata: metadata, msgType: msgType};\n}"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "8f0ee100-d7ee-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "Loop",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 210,
+        "layoutY" : 242
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 1,
+        "originatorId" : null,
+        "originatorType" : "RULE_NODE",
+        "scriptLang" : "TBEL",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "8f0f0810-d7ee-11ef-ab5a-5fc560f62ac3"
+      },
+      "name" : "1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    } ],
     "ruleChainConnections" : null
   },
   "attributes" : {
