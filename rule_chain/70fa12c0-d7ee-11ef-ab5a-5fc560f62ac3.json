@@ -36,7 +36,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "for (var i = 0; i < 1000; i++) {\n    return {msg: {a: i}, metadata: metadata, msgType: msgType};\n}"
+        "tbelScript" : "var res = [];\nfor (var i = 0; i < 1000; i++) {\n    res.push({msg: {a: i}, metadata: metadata, msgType: msgType});\n}\nreturn res;"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
