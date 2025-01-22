@@ -176,7 +176,14 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "b10fa1c3-1381-769f-94cd-201d2d70ba7b" : {
+                  "sizeX" : 6,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
