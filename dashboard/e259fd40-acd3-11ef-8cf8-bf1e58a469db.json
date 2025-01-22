@@ -18921,7 +18921,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "console.log(\"Asset location action\")",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet broadcastService = $injector.get(widgetContext.servicesMap.get('broadcastService'));",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "2a465318-c34a-aacb-1b8c-10c39a49c91f"
