@@ -88,7 +88,7 @@
                 }
               },
               "appearance" : {
-                "type" : "outlined",
+                "type" : "basic",
                 "showLabel" : true,
                 "label" : "Button",
                 "showIcon" : true,
@@ -633,29 +633,29 @@
             "main" : {
               "widgets" : {
                 "b10fa1c3-1381-769f-94cd-201d2d70ba7b" : {
-                  "sizeX" : 6,
-                  "sizeY" : 3,
-                  "row" : 0,
-                  "col" : 0
+                  "sizeX" : 2,
+                  "sizeY" : 1,
+                  "row" : 4,
+                  "col" : 5
                 },
                 "f1631a74-930a-8861-ceed-f78f2bc53414" : {
                   "sizeX" : 8,
                   "sizeY" : 3,
                   "resizable" : false,
                   "row" : 0,
-                  "col" : 7
+                  "col" : 15
                 },
                 "fd1495b2-6728-d12d-0883-bf5bb25f189e" : {
                   "sizeX" : 8,
                   "sizeY" : 3,
                   "row" : 3,
-                  "col" : 7
+                  "col" : 16
                 },
                 "79c4815b-7f7e-3f69-e416-10150a78f75f" : {
                   "sizeX" : 5,
                   "sizeY" : 2,
                   "row" : 6,
-                  "col" : 7
+                  "col" : 17
                 },
                 "33a112e2-ae8c-aef6-9539-c2ac69832e1a" : {
                   "sizeX" : 4,
