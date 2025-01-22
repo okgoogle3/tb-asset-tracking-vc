@@ -21,6 +21,30 @@
     "type" : "Geofence"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1737529965981,
+      "longValue" : null,
+      "strValue" : "#0086C9"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.7518916453723,37.578821182250984],[48.75100741923701,37.579904794693]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1737529969918,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.7518916453723, 37.578821182250984], [48.75100741923701, 37.579904794693]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1737529969931,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
