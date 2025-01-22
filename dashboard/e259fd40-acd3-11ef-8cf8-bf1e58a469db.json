@@ -20124,10 +20124,10 @@
             "main" : {
               "widgets" : {
                 "14112472-70a5-6b89-2c0b-e359d1e6f540" : {
-                  "sizeX" : 1,
+                  "sizeX" : 24,
                   "sizeY" : 10,
                   "row" : 0,
-                  "col" : 23
+                  "col" : 0
                 }
               },
               "gridSettings" : {
