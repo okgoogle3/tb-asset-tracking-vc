@@ -16766,29 +16766,12 @@
                 "settings" : { },
                 "_hash" : 0.6580331725852475
               }, {
-                "name" : "lastActivityTime",
-                "type" : "attribute",
-                "label" : "Last activity",
-                "color" : "#9c27b0",
-                "settings" : {
-                  "customTitle" : "",
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : true,
-                  "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "return moment(value).format('DD.MM.YYYY HH:mm');",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled",
-                  "columnExportOption" : "onlyVisible"
-                },
-                "_hash" : 0.748746481778003,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.6240940882444408
               }, {
                 "name" : "assignedDevice",
                 "type" : "attribute",
@@ -16814,12 +16797,23 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "department",
+                "name" : "lastActivityTime",
                 "type" : "attribute",
-                "label" : "Department",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.601522070658042,
+                "label" : "Last activity",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "return moment(value).format('DD.MM.YYYY HH:mm');",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.748746481778003,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
@@ -16849,6 +16843,19 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : false,
+                "postFuncBody" : null
+              }, {
+                "name" : "department",
+                "type" : "attribute",
+                "label" : "Department",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.601522070658042,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
                 "name" : "status",
@@ -18647,13 +18654,6 @@
               "entityAliasId" : "9bc1e366-e9b3-fe10-0879-4daa13fbb8cc",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "createdTime",
-                "type" : "entityField",
-                "label" : "Created time",
-                "color" : "#673ab7",
-                "settings" : { },
-                "_hash" : 0.3037724761166729
-              }, {
                 "name" : "name",
                 "type" : "entityField",
                 "label" : "Name",
