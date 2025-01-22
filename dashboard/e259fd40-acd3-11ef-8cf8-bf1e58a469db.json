@@ -18535,9 +18535,7 @@
             },
             "useDashboardTimewindow" : true,
             "showLegend" : false,
-            "widgetStyle" : {
-              "border" : "1px solid #D0D5DD"
-            },
+            "widgetStyle" : null,
             "actions" : {
               "tooltipAction" : [ {
                 "name" : "assetDetails",
