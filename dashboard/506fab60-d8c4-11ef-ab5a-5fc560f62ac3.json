@@ -144,6 +144,50 @@
           "row" : 0,
           "col" : 0,
           "id" : "b10fa1c3-1381-769f-94cd-201d2d70ba7b"
+        },
+        "f1631a74-930a-8861-ceed-f78f2bc53414" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : { },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "advanced",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f1631a74-930a-8861-ceed-f78f2bc53414"
         }
       },
       "states" : {
@@ -158,6 +202,13 @@
                   "sizeY" : 3,
                   "row" : 0,
                   "col" : 0
+                },
+                "f1631a74-930a-8861-ceed-f78f2bc53414" : {
+                  "sizeX" : 8,
+                  "sizeY" : 3,
+                  "resizable" : false,
+                  "row" : 0,
+                  "col" : 7
                 }
               },
               "gridSettings" : {
