@@ -376,15 +376,25 @@
             "datasources" : [ {
               "type" : "alarmCount",
               "name" : "",
+              "entityAliasId" : "47bf448d-37b2-e6f8-6f59-769850d73a49",
               "dataKeys" : [ {
                 "name" : "count",
                 "type" : "count",
-                "label" : "count",
+                "label" : "count 2",
+                "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.7915593182508784
+                "_hash" : 0.28651083733427485,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "console.log(value)\nreturn value;"
               } ],
               "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
+                "statusList" : [ "ACTIVE" ],
+                "assignedToCurrentUser" : false,
+                "assigneeId" : null
               }
             } ],
             "timewindow" : {
@@ -484,7 +494,8 @@
               "chevronSize" : 24,
               "chevronSizeUnit" : "px",
               "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "column"
+              "layout" : "column",
+              "autoScale" : true
             },
             "title" : "Alarm count",
             "dropShadow" : true,
@@ -499,7 +510,7 @@
             "showLegend" : false,
             "widgetStyle" : { },
             "actions" : { },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "0px",
@@ -611,7 +622,20 @@
           }
         }
       },
-      "entityAliases" : { },
+      "entityAliases" : {
+        "47bf448d-37b2-e6f8-6f59-769850d73a49" : {
+          "id" : "47bf448d-37b2-e6f8-6f59-769850d73a49",
+          "alias" : "test",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
+            }
+          }
+        }
+      },
       "filters" : { },
       "timewindow" : {
         "displayValue" : "",
