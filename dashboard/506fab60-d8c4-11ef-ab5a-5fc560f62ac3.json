@@ -833,6 +833,12 @@
                   "sizeY" : 3,
                   "row" : 0,
                   "col" : 0
+                },
+                "e8f36785-62c9-b4a7-2fed-f74c07d072bc" : {
+                  "sizeX" : 3,
+                  "sizeY" : 1,
+                  "row" : 1,
+                  "col" : 10
                 }
               },
               "gridSettings" : {
