@@ -21061,7 +21061,7 @@
             "main" : {
               "widgets" : {
                 "4c68c996-e2ca-86ac-58ec-6b7e77f52551" : {
-                  "sizeX" : 5,
+                  "sizeX" : 4,
                   "sizeY" : 1,
                   "row" : 0,
                   "col" : 0
@@ -21080,10 +21080,10 @@
                   "col" : 7
                 },
                 "5e155723-47bd-41d5-c381-1e80515eab60" : {
-                  "sizeX" : 2,
+                  "sizeX" : 3,
                   "sizeY" : 1,
                   "row" : 0,
-                  "col" : 5
+                  "col" : 4
                 }
               },
               "gridSettings" : {
