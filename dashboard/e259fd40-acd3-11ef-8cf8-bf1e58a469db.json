@@ -19230,8 +19230,7 @@
             "borderRadius" : "4px",
             "configMode" : "advanced",
             "actions" : {
-              "click" : [ ],
-              "headerButton" : [ {
+              "click" : [ {
                 "name" : "onClick",
                 "icon" : "more_horiz",
                 "useShowWidgetActionFunction" : null,
@@ -19244,7 +19243,8 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "413cff86-7318-50b6-0312-ccc60fca93bb"
-              } ]
+              } ],
+              "headerButton" : [ ]
             }
           },
           "row" : 0,
