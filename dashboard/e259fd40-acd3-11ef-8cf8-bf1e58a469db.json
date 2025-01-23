@@ -19123,7 +19123,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "7d114988-efe4-86e6-7546-b6b816cb8f3a",
+              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
               "dataKeys" : [ {
                 "name" : "rssi",
                 "type" : "timeseries",
@@ -21919,18 +21919,6 @@
             "resolveMultiple" : true,
             "assetTypes" : [ "Geofence" ],
             "assetNameFilter" : ""
-          }
-        },
-        "7d114988-efe4-86e6-7546-b6b816cb8f3a" : {
-          "id" : "7d114988-efe4-86e6-7546-b6b816cb8f3a",
-          "alias" : "asset",
-          "filter" : {
-            "type" : "singleEntity",
-            "resolveMultiple" : false,
-            "singleEntity" : {
-              "entityType" : "ASSET",
-              "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
-            }
           }
         }
       },
