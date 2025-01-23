@@ -16811,7 +16811,7 @@
             "widgetStyle" : {
               "border" : "1px solid #D0D5DD"
             },
-            "widgetCss" : ".tb-widget-header {\n    padding: 20px;\n}\n\nmat-cell:not(:last-child), mat-header-cell {\n    padding: 0 20px!important;\n}\n\n.tb-widget-title {\n    padding: 0!important;\n}",
+            "widgetCss" : ".tb-widget-header {\n    padding: 20px;\n}\n\nmat-cell, mat-header-cell {\n    padding: 0 20px!important;\n}\n\n.tb-widget-title {\n    padding: 0!important;\n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "borderRadius" : "12px"
@@ -22080,7 +22080,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Demo Asset 2, Demo Asset 4, Demo Asset 5",
+                  "defaultValue" : "",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
