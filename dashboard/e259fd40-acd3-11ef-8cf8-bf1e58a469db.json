@@ -19240,13 +19240,14 @@
                 "id" : "9843c6fa-2c96-8b1d-b641-123e07bb04d2",
                 "name" : "onClick",
                 "icon" : "more_horiz",
-                "type" : "updateDashboardState",
+                "type" : "custom",
                 "targetDashboardStateId" : "test2",
                 "setEntityId" : false,
                 "stateEntityParamName" : "test2",
                 "openRightLayout" : false,
                 "openInSeparateDialog" : false,
-                "openInPopover" : false
+                "openInPopover" : false,
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"location\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);"
               } ]
             }
           },
@@ -19381,13 +19382,14 @@
                 "id" : "9843c6fa-2c96-8b1d-b641-123e07bb04d2",
                 "name" : "onClick",
                 "icon" : "more_horiz",
-                "type" : "updateDashboardState",
+                "type" : "custom",
                 "targetDashboardStateId" : "default",
                 "setEntityId" : false,
                 "stateEntityParamName" : "test2",
                 "openRightLayout" : false,
                 "openInSeparateDialog" : false,
-                "openInPopover" : false
+                "openInPopover" : false,
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"device\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);"
               } ]
             }
           },
