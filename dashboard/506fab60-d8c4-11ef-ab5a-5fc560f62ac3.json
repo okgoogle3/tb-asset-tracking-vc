@@ -1109,7 +1109,7 @@
                 "dataToValue" : {
                   "type" : "NONE",
                   "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                  "compareToValue" : "test2"
+                  "compareToValue" : "default"
                 }
               },
               "disabledState" : {
@@ -1175,7 +1175,7 @@
                 "name" : "onClick",
                 "icon" : "more_horiz",
                 "type" : "updateDashboardState",
-                "targetDashboardStateId" : "test2",
+                "targetDashboardStateId" : "default",
                 "setEntityId" : false,
                 "stateEntityParamName" : "test2",
                 "openRightLayout" : false,
