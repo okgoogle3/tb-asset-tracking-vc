@@ -827,7 +827,7 @@
                 "dataToValue" : {
                   "type" : "NONE",
                   "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                  "compareToValue" : "test2"
+                  "compareToValue" : "default"
                 }
               },
               "disabledState" : {
