@@ -1046,6 +1046,147 @@
           "row" : 0,
           "col" : 0,
           "id" : "4866ec20-e059-115c-7ddb-616e49d50f97"
+        },
+        "843e5400-9a64-8cbd-f925-c70d2dbfb7be" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1737530050584,
+                  "endTimeMs" : 1737616450584
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "GET_DASHBOARD_STATE",
+                "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
+                "getAttribute" : {
+                  "scope" : null,
+                  "key" : "state"
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                  "compareToValue" : "test2"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "basic",
+                "showLabel" : true,
+                "label" : "State 1",
+                "showIcon" : true,
+                "icon" : "mdi:pencil-outline",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "9843c6fa-2c96-8b1d-b641-123e07bb04d2",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "test2",
+                "setEntityId" : false,
+                "stateEntityParamName" : "test2",
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "843e5400-9a64-8cbd-f925-c70d2dbfb7be"
         }
       },
       "states" : {
@@ -1117,6 +1258,12 @@
             "main" : {
               "widgets" : {
                 "e8f36785-62c9-b4a7-2fed-f74c07d072bc" : {
+                  "sizeX" : 3,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 3
+                },
+                "843e5400-9a64-8cbd-f925-c70d2dbfb7be" : {
                   "sizeX" : 3,
                   "sizeY" : 1,
                   "row" : 0,
