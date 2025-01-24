@@ -22098,7 +22098,7 @@
         },
         "76273e09-d42b-99fa-0261-d135886f0653" : {
           "id" : "76273e09-d42b-99fa-0261-d135886f0653",
-          "filter" : "Monitoring assets",
+          "filter" : "Monitoring locations",
           "keyFilters" : [ {
             "key" : {
               "type" : "ENTITY_FIELD",
