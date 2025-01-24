@@ -22222,7 +22222,7 @@
                   "defaultValue" : "",
                   "dynamicValue" : null
                 },
-                "ignoreCase" : false,
+                "ignoreCase" : true,
                 "type" : "STRING"
               },
               "userInfo" : {
