@@ -18,7 +18,7 @@
       "id" : "704fe370-bdec-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "Press-Forcing Facilities Production ",
+    "name" : "Press-Forcing Facilities Production",
     "ownerId" : null,
     "type" : "Shape"
   },
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1733400595487,
+      "lastUpdateTs" : 1736249518652,
       "longValue" : null,
       "strValue" : "Technical capacities of foundry allows castings producing of carbon, alloyed, high-alloyed steel grades; of grey, high-strength, bearing and special cast iron; of bronzed alloys.\n\nCastings are made for machines of own production, as well as for other companies manufacturing special-purpose equipment: hydrotechnical, power-generating, ship-building, handling, mining, and metallurgical production.\n\nThere is a fleet of centrifugal casting machines for non-ferrous castings producing. Modern kneading-and-mixing machinery, manufactured by FAT and GUT companies (Germany), usage of new materials while making casting molds as per “Furan-process” provides possibility of the castings obtaining of the following weight (in tons)\n\nUsage of computer systems of engineering analysis (CAE) by MAGMASoft (Germany) allows to develop technological procedures of castings producing having guaranteed high quality."
     }, {
