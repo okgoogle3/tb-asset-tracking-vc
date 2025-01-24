@@ -104,7 +104,7 @@
         "layoutY" : 277
       },
       "configuration" : {
-        "metadataDurationConfigKey" : "zoneThresolds",
+        "metadataDurationConfigKey" : "ss_zoneThresolds",
         "fetchPerimeterInfoFromMessageMetadata" : false,
         "perimeterKeyName" : "polygon",
         "latitudeKeyName" : "latitude",
