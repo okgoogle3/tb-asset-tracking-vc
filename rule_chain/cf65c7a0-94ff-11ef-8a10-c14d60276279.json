@@ -118,7 +118,7 @@
         "layoutY" : 250
       },
       "configuration" : {
-        "metadataDurationConfigKey" : "geofenceThresolds",
+        "metadataDurationConfigKey" : "ss_geofenceThresolds",
         "fetchPerimeterInfoFromMessageMetadata" : false,
         "perimeterKeyName" : "polygon",
         "latitudeKeyName" : "latitude",
