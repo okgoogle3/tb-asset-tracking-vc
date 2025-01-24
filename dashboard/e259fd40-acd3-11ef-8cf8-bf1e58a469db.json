@@ -22109,7 +22109,8 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "image zone (test), Equipment warehouse, example, Heat Treatment Facilities Production, Mechanical Assembly Production, Press-Forcing Facilities Production , Foundry Production, Steelmaking Production , Metalworks Production , 2ewf, Electrical repair workshop, test for image, Repair and construction workshops"
+                  "defaultValue" : "",
+                  "dynamicValue" : null
                 },
                 "ignoreCase" : false,
                 "type" : "STRING"
