@@ -22110,7 +22110,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Steelmaking Production ",
+                  "defaultValue" : "",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -22139,7 +22139,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Demo Asset 2, Demo Asset 3, Demo Asset 4, Demo Asset 5",
+                  "defaultValue" : "",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -22168,7 +22168,8 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Control room, Raw material , Packaging Area"
+                  "defaultValue" : "",
+                  "dynamicValue" : null
                 },
                 "ignoreCase" : false,
                 "type" : "STRING"
