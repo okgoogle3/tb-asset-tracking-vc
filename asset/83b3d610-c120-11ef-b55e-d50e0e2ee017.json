@@ -1,7 +1,9 @@
 {
   "entityType" : "ASSET",
   "entity" : {
-    "additionalInfo" : null,
+    "additionalInfo" : {
+      "description" : ""
+    },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
       "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
@@ -16,7 +18,7 @@
       "id" : "83b3d610-c120-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "Raw material ",
+    "name" : "Raw material",
     "ownerId" : null,
     "type" : "Geofence"
   },
@@ -26,9 +28,25 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "color",
-      "lastUpdateTs" : 1734953086477,
+      "lastUpdateTs" : 1734953094242,
       "longValue" : null,
-      "strValue" : "#0086C9"
+      "strValue" : "#0B1E27"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.753182756463644,37.57403879740976],[48.75305808473532,37.573979788208796],[48.75293606529735,37.574585973636886],[48.75305808473532,37.57464632395603]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1734953139013,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.753182756463644, 37.57403879740976], [48.75305808473532, 37.573979788208796], [48.75293606529735, 37.574585973636886], [48.75305808473532, 37.57464632395603]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1734953139025,
+      "longValue" : null,
+      "strValue" : null
     } ]
   }
 }
