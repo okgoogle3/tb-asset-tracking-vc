@@ -132,7 +132,7 @@
                 "_hash" : 0.5008441077416634,
                 "funcBody" : null
               }, {
-                "name" : "artem",
+                "name" : "details",
                 "type" : "alarm",
                 "label" : "artem",
                 "color" : "#8bc34a",
@@ -149,6 +149,30 @@
                   "columnExportOption" : "onlyVisible"
                 },
                 "_hash" : 0.31998682647854193,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "details",
+                "type" : "alarm",
+                "label" : "details",
+                "color" : "#3f51b5",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "console.log(value)",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.15972452797542092,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
