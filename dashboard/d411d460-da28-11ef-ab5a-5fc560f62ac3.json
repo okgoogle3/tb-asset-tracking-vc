@@ -1,7 +1,10 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : null,
+    "title" : "demo test",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -55,7 +58,7 @@
             "alarmSource" : {
               "type" : "device",
               "name" : "",
-              "deviceId" : "71a4ea60-b39f-11ef-838c-5dd5db96bde1",
+              "deviceId" : "25003f00-b30b-11ef-8c91-7baf5304b8d0",
               "entityAliasId" : null,
               "dataKeys" : [ {
                 "name" : "createdTime",
@@ -128,6 +131,30 @@
                 "settings" : { },
                 "_hash" : 0.5008441077416634,
                 "funcBody" : null
+              }, {
+                "name" : "artem",
+                "type" : "alarm",
+                "label" : "artem",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "return alarm['details'];",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.31998682647854193,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -142,7 +169,7 @@
             "widgetStyle" : { },
             "displayTimewindow" : true,
             "actions" : { },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "alarmFilterConfig" : {
               "statusList" : [ ],
               "severityList" : [ ],
@@ -231,18 +258,16 @@
         "toolbarAlwaysOpen" : true
       }
     },
+    "name" : "demo test",
+    "resources" : null,
+    "assignedCustomers" : null,
     "customerId" : null,
     "externalId" : null,
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "d411d460-da28-11ef-ab5a-5fc560f62ac3"
     },
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
-    "name" : "demo test",
-    "ownerId" : null,
-    "title" : "demo test"
+    "ownerId" : null
   },
   "attributes" : {
     "SERVER_SCOPE" : [ ]
