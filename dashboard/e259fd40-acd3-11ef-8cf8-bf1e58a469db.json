@@ -22150,7 +22150,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "",
+                  "defaultValue" : "Demo Asset 10, цумауцм, Demo Asset 18, Demo Asset 19, Demo Asset 20, Demo Asset 21, Demo Asset 22, Demo Asset 23, Demo Asset 24, Demo Asset 25, Demo Asset 1, Demo Asset 8, Demo Asset 12, Demo Asset 13, Demo Asset 14, Demo Asset 15, Demo Asset 16, Demo Asset 17, Demo Asset 11, Demo Asset 2, Demo Asset 3, Demo Asset 4, Demo Asset 5, Demo Asset 6, Demo Asset 7",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
