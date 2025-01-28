@@ -171,10 +171,12 @@
             "actions" : { },
             "configMode" : "advanced",
             "alarmFilterConfig" : {
-              "statusList" : [ ],
+              "statusList" : [ "ACTIVE", "CLEARED" ],
               "severityList" : [ ],
-              "typeList" : [ ],
-              "searchPropagatedAlarms" : false
+              "typeList" : null,
+              "searchPropagatedAlarms" : false,
+              "assignedToCurrentUser" : false,
+              "assigneeId" : null
             },
             "datasources" : [ ],
             "titleFont" : null,
@@ -194,8 +196,8 @@
             "main" : {
               "widgets" : {
                 "ff1a25b2-195f-863d-3c0f-10e6b54292ab" : {
-                  "sizeX" : 17,
-                  "sizeY" : 8,
+                  "sizeX" : 24,
+                  "sizeY" : 16,
                   "row" : 0,
                   "col" : 0
                 }
