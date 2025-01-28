@@ -18104,7 +18104,7 @@
             }, {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "7a253fe4-49e1-f36e-0e96-1cb97b81349d",
+              "entityAliasId" : "9bb16d86-eae3-296d-ec58-fba3c3dea68a",
               "filterId" : "8ab23e1b-9f68-5369-eada-7d11898c7b83",
               "dataKeys" : [ {
                 "name" : "createdTime",
@@ -18200,7 +18200,7 @@
               }
             }, {
               "type" : "entity",
-              "entityAliasId" : "50f5bac7-8298-7d81-d3b4-b8e9b4800af2",
+              "entityAliasId" : "8f7a1f81-c6b0-37ae-f40f-482b478138a2",
               "filterId" : "ed97279a-8f5f-8d15-f5ef-0baa4a9bdff2",
               "dataKeys" : [ {
                 "name" : "color",
@@ -21930,6 +21930,28 @@
             "resolveMultiple" : true,
             "assetTypes" : [ "Geofence" ],
             "assetNameFilter" : ""
+          }
+        },
+        "9bb16d86-eae3-296d-ec58-fba3c3dea68a" : {
+          "id" : "9bb16d86-eae3-296d-ec58-fba3c3dea68a",
+          "alias" : "Some zone to delete",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "ASSET",
+            "entityList" : [ "7071ea60-bdec-11ef-b55e-d50e0e2ee017" ]
+          }
+        },
+        "8f7a1f81-c6b0-37ae-f40f-482b478138a2" : {
+          "id" : "8f7a1f81-c6b0-37ae-f40f-482b478138a2",
+          "alias" : "Some geofence to delete",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "ASSET",
+              "id" : "d3cbae70-c120-11ef-b55e-d50e0e2ee017"
+            }
           }
         }
       },
