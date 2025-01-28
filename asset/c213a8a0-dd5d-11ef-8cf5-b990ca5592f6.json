@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "efewfewf"
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "c213a8a0-dd5d-11ef-8cf5-b990ca5592f6"
+    },
+    "label" : null,
+    "name" : "ewfefwefef",
+    "ownerId" : null,
+    "type" : "Temporary asset"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
