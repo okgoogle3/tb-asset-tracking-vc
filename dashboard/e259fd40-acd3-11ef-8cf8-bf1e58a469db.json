@@ -19087,274 +19087,6 @@
           "col" : 0,
           "id" : "3e90eefb-9d68-bd10-f477-9df1f1064bf6"
         },
-        "7ea5e5a8-6cb1-c5c2-b89d-e64a787d5ac0" : {
-          "typeFullFqn" : "system.alarm_count",
-          "type" : "latest",
-          "sizeX" : 3.5,
-          "sizeY" : 1.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
-              "dataKeys" : [ {
-                "name" : "batteryLevel",
-                "type" : "timeseries",
-                "label" : "batteryLevel",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.011895237201083875,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if(typeof value == \"number\"){\n    if(value > 100 || value < 0) {\n        return \"No info\";\n    } else {\n        return `${Number(value.toFixed(0))}%`;\n    }\n} else {\n    return \"No info\";\n}\n"
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1738075087285,
-                  "endTimeMs" : 1738161487285
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "14px",
-            "settings" : {
-              "layout" : "column",
-              "autoScale" : false,
-              "showLabel" : true,
-              "label" : "Battery level",
-              "labelFont" : {
-                "family" : "Roboto",
-                "size" : 14,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "400",
-                "lineHeight" : "20px"
-              },
-              "labelColor" : {
-                "type" : "constant",
-                "color" : "#344054",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
-                "gradient" : {
-                  "advancedMode" : false,
-                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
-                  "gradientAdvanced" : [ {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(0, 255, 0, 1)"
-                  }, {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(255, 0, 0, 1)"
-                  } ],
-                  "minValue" : 0,
-                  "maxValue" : 100
-                },
-                "rangeList" : {
-                  "advancedMode" : false,
-                  "range" : [ ],
-                  "rangeAdvanced" : [ ]
-                }
-              },
-              "showIcon" : true,
-              "iconSize" : 24,
-              "iconSizeUnit" : "px",
-              "icon" : "battery_4_bar",
-              "iconColor" : {
-                "type" : "constant",
-                "color" : "#026AA2",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
-                "gradient" : {
-                  "advancedMode" : false,
-                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
-                  "gradientAdvanced" : [ {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(0, 255, 0, 1)"
-                  }, {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(255, 0, 0, 1)"
-                  } ],
-                  "minValue" : 0,
-                  "maxValue" : 100
-                },
-                "rangeList" : {
-                  "advancedMode" : false,
-                  "range" : [ ],
-                  "rangeAdvanced" : [ ]
-                }
-              },
-              "showIconBackground" : true,
-              "iconBackgroundSize" : 48,
-              "iconBackgroundSizeUnit" : "px",
-              "iconBackgroundColor" : {
-                "color" : "#E0F2FE",
-                "type" : "constant",
-                "rangeList" : {
-                  "range" : [ {
-                    "from" : 0,
-                    "to" : 0,
-                    "color" : "rgba(0, 105, 92, 1)"
-                  }, {
-                    "from" : 1,
-                    "to" : null,
-                    "color" : "rgba(209, 39, 48, 1)"
-                  } ],
-                  "advancedMode" : false
-                },
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
-                "gradient" : {
-                  "advancedMode" : false,
-                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
-                  "gradientAdvanced" : [ {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(0, 255, 0, 1)"
-                  }, {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(255, 0, 0, 1)"
-                  } ],
-                  "minValue" : 0,
-                  "maxValue" : 100
-                }
-              },
-              "valueFont" : {
-                "family" : "Roboto",
-                "size" : 28,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "600",
-                "lineHeight" : "36px"
-              },
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "#0C111D",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
-                "gradient" : {
-                  "advancedMode" : false,
-                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
-                  "gradientAdvanced" : [ {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(0, 255, 0, 1)"
-                  }, {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(255, 0, 0, 1)"
-                  } ],
-                  "minValue" : 0,
-                  "maxValue" : 100
-                },
-                "rangeList" : {
-                  "advancedMode" : false,
-                  "range" : [ ],
-                  "rangeAdvanced" : [ ]
-                }
-              },
-              "showChevron" : false
-            },
-            "title" : "Alarm count",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "units" : "",
-            "decimals" : null,
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "widgetStyle" : {
-              "border" : "1px solid #D0D5DD",
-              "margin-left" : "5px",
-              "margin-right" : "5px",
-              "margin-bottom" : "5px"
-            },
-            "actions" : { },
-            "configMode" : "advanced",
-            "displayTimewindow" : true,
-            "margin" : "0px",
-            "borderRadius" : "12px",
-            "widgetCss" : ".tb-count-icon-background-panel > div {\n    border-radius: 50%!important;\n}",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleFont" : {
-              "size" : 12,
-              "sizeUnit" : "px",
-              "family" : null,
-              "weight" : null,
-              "style" : null,
-              "lineHeight" : "1"
-            },
-            "titleIcon" : "",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "14px",
-            "timewindowStyle" : {
-              "showIcon" : true,
-              "iconSize" : "14px",
-              "icon" : "query_builder",
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : null,
-                "weight" : null,
-                "style" : null,
-                "lineHeight" : "1"
-              },
-              "color" : null
-            },
-            "titleColor" : "rgba(0, 0, 0, 0.54)",
-            "enableDataExport" : false
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "7ea5e5a8-6cb1-c5c2-b89d-e64a787d5ac0"
-        },
         "0d1e511a-8960-45ea-e42c-eaba885af598" : {
           "typeFullFqn" : "system.alarm_count",
           "type" : "latest",
@@ -19722,7 +19454,7 @@
               "showIcon" : true,
               "iconSize" : 24,
               "iconSizeUnit" : "px",
-              "icon" : "location_on",
+              "icon" : "thermostat",
               "iconColor" : {
                 "type" : "constant",
                 "color" : "#026AA2",
@@ -19883,6 +19615,273 @@
           "row" : 0,
           "col" : 0,
           "id" : "2298ba1c-1dca-d296-cf34-cc84c552a00d"
+        },
+        "5a3716fa-ffba-cd84-b512-81f55a7d5634" : {
+          "typeFullFqn" : "system.alarm_count",
+          "type" : "latest",
+          "sizeX" : 3.5,
+          "sizeY" : 1.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
+              "dataKeys" : [ {
+                "name" : "batteryLevel",
+                "type" : "timeseries",
+                "label" : "batteryLevel",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.3012723243769815,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(typeof value == \"number\"){\n    if(value > 100 || value < 0) {\n        return \"No info\";\n    } else {\n        return `${Number(value.toFixed(0))}%`;\n    }\n} else {\n    return \"No info\";\n}\n"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1738075087285,
+                  "endTimeMs" : 1738161487285
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "layout" : "column",
+              "autoScale" : false,
+              "showLabel" : true,
+              "label" : "Battery level",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 14,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "20px"
+              },
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "#344054",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                }
+              },
+              "showIcon" : true,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "battery_4_bar",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "#026AA2",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                }
+              },
+              "showIconBackground" : true,
+              "iconBackgroundSize" : 48,
+              "iconBackgroundSizeUnit" : "px",
+              "iconBackgroundColor" : {
+                "color" : "#E0F2FE",
+                "type" : "constant",
+                "rangeList" : {
+                  "range" : [ {
+                    "from" : 0,
+                    "to" : 0,
+                    "color" : "rgba(0, 105, 92, 1)"
+                  }, {
+                    "from" : 1,
+                    "to" : null,
+                    "color" : "rgba(209, 39, 48, 1)"
+                  } ],
+                  "advancedMode" : false
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                }
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "600",
+                "lineHeight" : "28px"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "#0C111D",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                }
+              },
+              "showChevron" : false
+            },
+            "title" : "Alarm count",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "",
+            "decimals" : null,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD",
+              "margin-left" : "5px",
+              "margin-bottom" : "5px"
+            },
+            "actions" : { },
+            "configMode" : "advanced",
+            "displayTimewindow" : true,
+            "margin" : "0px",
+            "borderRadius" : "12px",
+            "widgetCss" : ".tb-count-icon-background-panel > div {\n    border-radius: 50%!important;\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "14px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : null,
+                "weight" : null,
+                "style" : null,
+                "lineHeight" : "1"
+              },
+              "color" : null
+            },
+            "titleColor" : "rgba(0, 0, 0, 0.54)",
+            "enableDataExport" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "5a3716fa-ffba-cd84-b512-81f55a7d5634"
         }
       },
       "states" : {
@@ -20357,12 +20356,6 @@
                   "row" : 2,
                   "col" : 0
                 },
-                "7ea5e5a8-6cb1-c5c2-b89d-e64a787d5ac0" : {
-                  "sizeX" : 8,
-                  "sizeY" : 2,
-                  "row" : 0,
-                  "col" : 28
-                },
                 "0d1e511a-8960-45ea-e42c-eaba885af598" : {
                   "sizeX" : 12,
                   "sizeY" : 2,
@@ -20374,6 +20367,12 @@
                   "sizeY" : 2,
                   "row" : 0,
                   "col" : 20
+                },
+                "5a3716fa-ffba-cd84-b512-81f55a7d5634" : {
+                  "sizeX" : 8,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 28
                 }
               },
               "gridSettings" : {
