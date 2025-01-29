@@ -19405,11 +19405,11 @@
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "valueFont" : {
-                "family" : "Roboto",
-                "size" : 20,
+                "size" : 24,
                 "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "600",
                 "style" : "normal",
-                "weight" : "400",
                 "lineHeight" : "24px"
               },
               "valueColor" : {
