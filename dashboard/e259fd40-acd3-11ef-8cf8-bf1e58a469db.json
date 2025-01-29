@@ -19628,7 +19628,7 @@
               "showChevron" : false
             },
             "title" : "Alarm count",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
@@ -19649,7 +19649,7 @@
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "12px",
-            "widgetCss" : "",
+            "widgetCss" : ".tb-count-icon-background-panel > div {\n    border-radius: 50%!important;\n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "showTitleIcon" : false,
