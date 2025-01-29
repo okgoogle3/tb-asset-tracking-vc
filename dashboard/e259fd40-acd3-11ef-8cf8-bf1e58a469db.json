@@ -19448,7 +19448,7 @@
                   "blur" : 3
                 }
               },
-              "padding" : "12px"
+              "padding" : "0"
             },
             "title" : "Label & value card",
             "dropShadow" : false,
