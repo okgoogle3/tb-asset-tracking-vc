@@ -11752,130 +11752,6 @@
           "col" : 0,
           "id" : "b1097721-e068-ae26-3f73-521e3873a5fd"
         },
-        "a4836a32-c7c5-320d-673f-fca8d9d92a4d" : {
-          "typeFullFqn" : "tenant.simple_wide_card",
-          "type" : "latest",
-          "sizeX" : 4.5,
-          "sizeY" : 1.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entityCount",
-              "name" : "",
-              "entityAliasId" : "e98fed76-25d1-9b7a-286c-2386690d996f",
-              "dataKeys" : [ {
-                "name" : "count",
-                "type" : "count",
-                "label" : "Assets inside",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.9187513491236103,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1733754360207,
-                  "endTimeMs" : 1733840760207
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#FFFFFF",
-            "color" : "#384250",
-            "padding" : "12px",
-            "settings" : {
-              "iconColor" : "#0044b3",
-              "iconBackground" : "#e9f9ff",
-              "icon" : "link"
-            },
-            "title" : "Simple wide card",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : false,
-            "widgetStyle" : {
-              "border" : "1px solid #D0D5DD"
-            },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "borderRadius" : "12px",
-            "actions" : {
-              "headerButton" : [ ],
-              "elementClick" : [ {
-                "name" : "navigate",
-                "icon" : "arrow_forward",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "default",
-                "setEntityId" : true,
-                "stateEntityParamName" : null,
-                "openRightLayout" : false,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "59053a80-1d82-d085-cb1e-852cbf6916fa"
-              }, {
-                "name" : "edit",
-                "icon" : "mode_edit",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : null,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "5da0c79e-a924-6ac2-976c-d5dec0e1e1c7"
-              }, {
-                "name" : "delete",
-                "icon" : "delete",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : null,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "23ce0371-e90d-8c5a-996f-06bfbf5b63ce"
-              } ]
-            },
-            "units" : null,
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "a4836a32-c7c5-320d-673f-fca8d9d92a4d"
-        },
         "e74c05f9-2bcd-1be7-85bd-7e3dbfafce9c" : {
           "typeFullFqn" : "tenant.simpe_card",
           "type" : "latest",
@@ -20802,12 +20678,6 @@
                   "row" : 0,
                   "col" : 0
                 },
-                "a4836a32-c7c5-320d-673f-fca8d9d92a4d" : {
-                  "sizeX" : 9,
-                  "sizeY" : 3,
-                  "row" : 1,
-                  "col" : 52
-                },
                 "9e48bad8-2cf2-0ef0-93ab-92f4d1883de2" : {
                   "sizeX" : 9,
                   "sizeY" : 3,
@@ -20818,7 +20688,7 @@
                   "sizeX" : 9,
                   "sizeY" : 3,
                   "row" : 1,
-                  "col" : 42
+                  "col" : 52
                 }
               },
               "gridSettings" : {
