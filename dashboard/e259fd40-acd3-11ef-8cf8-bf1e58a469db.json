@@ -11425,6 +11425,13 @@
                 "color" : "#00bcd4",
                 "settings" : { },
                 "_hash" : 0.22727880588649518
+              }, {
+                "name" : "alertTypes",
+                "type" : "attribute",
+                "label" : "alertTypes",
+                "color" : "#9e9e9e",
+                "settings" : { },
+                "_hash" : 0.6400263138970947
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
