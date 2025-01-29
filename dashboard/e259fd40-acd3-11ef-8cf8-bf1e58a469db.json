@@ -19789,12 +19789,12 @@
                 }
               },
               "valueFont" : {
-                "family" : "Roboto",
-                "size" : 24,
+                "size" : 20,
                 "sizeUnit" : "px",
-                "style" : "normal",
+                "family" : "Roboto",
                 "weight" : "600",
-                "lineHeight" : "32px"
+                "style" : "normal",
+                "lineHeight" : "28px"
               },
               "valueColor" : {
                 "type" : "constant",
