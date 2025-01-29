@@ -19682,7 +19682,7 @@
             "padding" : "0",
             "settings" : {
               "layout" : "column",
-              "autoScale" : false,
+              "autoScale" : true,
               "showLabel" : true,
               "label" : "Name of zone",
               "labelFont" : {
@@ -19789,11 +19789,11 @@
                 }
               },
               "valueFont" : {
+                "family" : "Roboto",
                 "size" : 24,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "600",
                 "style" : "normal",
+                "weight" : "600",
                 "lineHeight" : "32px"
               },
               "valueColor" : {
