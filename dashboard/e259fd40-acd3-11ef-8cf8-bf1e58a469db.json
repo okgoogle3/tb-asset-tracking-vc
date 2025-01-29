@@ -19305,16 +19305,17 @@
           "sizeY" : 1,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "9b5a8290-b3d9-11ef-838c-5dd5db96bde1",
+              "deviceId" : null,
+              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
               "dataKeys" : [ {
-                "name" : "temperature",
-                "type" : "timeseries",
-                "label" : "Temperature",
+                "name" : "assignedAssetsCount",
+                "type" : "attribute",
+                "label" : "assignedAssetsCount",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.20022584264387233
+                "_hash" : 0.358390097345497
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -19352,24 +19353,25 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "backgroundColor" : "#FFFFFF",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
+            "padding" : "12px",
             "settings" : {
-              "autoScale" : true,
+              "autoScale" : false,
               "showLabel" : true,
               "label" : "Assets",
               "labelFont" : {
+                "family" : "Roboto",
                 "size" : 14,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
                 "style" : "normal",
+                "weight" : "400",
                 "lineHeight" : "18px"
               },
               "labelColor" : {
                 "type" : "constant",
                 "color" : "#344054",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
                 "gradient" : {
                   "advancedMode" : false,
                   "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
@@ -19391,8 +19393,7 @@
                   "advancedMode" : false,
                   "range" : [ ],
                   "rangeAdvanced" : [ ]
-                },
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                }
               },
               "showIcon" : true,
               "iconSize" : 24,
@@ -19428,21 +19429,23 @@
               "padding" : "12px"
             },
             "title" : "Label & value card",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
             },
-            "units" : "°C",
+            "units" : "",
             "decimals" : 0,
             "useDashboardTimewindow" : true,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
             "actions" : { },
             "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
-            "borderRadius" : "0px",
+            "borderRadius" : "12px",
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
@@ -20133,10 +20136,10 @@
                   "col" : 60
                 },
                 "b8c87c9a-752c-a44c-d289-dc2cca575308" : {
-                  "sizeX" : 13,
+                  "sizeX" : 9,
                   "sizeY" : 3,
                   "row" : 1,
-                  "col" : 36
+                  "col" : 40
                 }
               },
               "gridSettings" : {
