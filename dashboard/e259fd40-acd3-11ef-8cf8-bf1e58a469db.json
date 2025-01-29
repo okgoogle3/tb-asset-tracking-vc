@@ -11752,134 +11752,6 @@
           "col" : 0,
           "id" : "b1097721-e068-ae26-3f73-521e3873a5fd"
         },
-        "e74c05f9-2bcd-1be7-85bd-7e3dbfafce9c" : {
-          "typeFullFqn" : "tenant.simpe_card",
-          "type" : "latest",
-          "sizeX" : 7,
-          "sizeY" : 3.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
-              "dataKeys" : [ {
-                "name" : "temperature",
-                "type" : "timeseries",
-                "label" : "Temperature",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.35282506128065716,
-                "aggregationType" : "NONE",
-                "units" : "°C",
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value ? value : \"No info\";"
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1733730928716,
-                  "endTimeMs" : 1733817328716
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#FFFFFF",
-            "color" : "#384250",
-            "padding" : "14px",
-            "settings" : {
-              "iconColor" : "#0044b3",
-              "iconBackground" : "#e9f9ff",
-              "icon" : "thermostat",
-              "title" : "Temperature"
-            },
-            "title" : "Simpe card",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : false,
-            "widgetStyle" : {
-              "border" : "1px solid #D0D5DD",
-              "margin-left" : "5px",
-              "margin-right" : "5px",
-              "margin-bottom" : "5px"
-            },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "borderRadius" : "12px",
-            "actions" : {
-              "headerButton" : [ ],
-              "elementClick" : [ {
-                "name" : "navigate",
-                "icon" : "arrow_forward",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "default",
-                "setEntityId" : true,
-                "stateEntityParamName" : null,
-                "openRightLayout" : false,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "59053a80-1d82-d085-cb1e-852cbf6916fa"
-              }, {
-                "name" : "edit",
-                "icon" : "mode_edit",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : null,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "5da0c79e-a924-6ac2-976c-d5dec0e1e1c7"
-              }, {
-                "name" : "delete",
-                "icon" : "delete",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : null,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "23ce0371-e90d-8c5a-996f-06bfbf5b63ce"
-              } ]
-            },
-            "units" : null,
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "e74c05f9-2bcd-1be7-85bd-7e3dbfafce9c"
-        },
         "0c6af3ee-7aa0-da06-cc52-4ceb55e4ab26" : {
           "typeFullFqn" : "tenant.simpe_card",
           "type" : "latest",
@@ -19530,13 +19402,13 @@
               "layout" : "column",
               "autoScale" : false,
               "showLabel" : true,
-              "label" : "Total",
+              "label" : "Temperature",
               "labelFont" : {
+                "family" : "Roboto",
                 "size" : 16,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
                 "style" : "normal",
+                "weight" : "400",
                 "lineHeight" : "24px"
               },
               "labelColor" : {
@@ -19551,6 +19423,7 @@
               "iconColor" : {
                 "type" : "constant",
                 "color" : "#026AA2",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
                 "gradient" : {
                   "advancedMode" : false,
                   "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
@@ -19572,15 +19445,27 @@
                   "advancedMode" : false,
                   "range" : [ ],
                   "rangeAdvanced" : [ ]
-                },
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                }
               },
               "showIconBackground" : true,
               "iconBackgroundSize" : 40,
               "iconBackgroundSizeUnit" : "px",
               "iconBackgroundColor" : {
-                "type" : "constant",
                 "color" : "#E0F2FE",
+                "type" : "constant",
+                "rangeList" : {
+                  "range" : [ {
+                    "from" : 0,
+                    "to" : 0,
+                    "color" : "rgba(0, 105, 92, 1)"
+                  }, {
+                    "from" : 1,
+                    "to" : null,
+                    "color" : "rgba(209, 39, 48, 1)"
+                  } ],
+                  "advancedMode" : false
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
                 "gradient" : {
                   "advancedMode" : false,
                   "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
@@ -19597,27 +19482,14 @@
                   } ],
                   "minValue" : 0,
                   "maxValue" : 100
-                },
-                "rangeList" : {
-                  "range" : [ {
-                    "from" : 0,
-                    "to" : 0,
-                    "color" : "rgba(0, 105, 92, 1)"
-                  }, {
-                    "from" : 1,
-                    "to" : null,
-                    "color" : "rgba(209, 39, 48, 1)"
-                  } ],
-                  "advancedMode" : false
-                },
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                }
               },
               "valueFont" : {
+                "family" : "Roboto",
                 "size" : 28,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "600",
                 "style" : "normal",
+                "weight" : "600",
                 "lineHeight" : "36px"
               },
               "valueColor" : {
@@ -20154,12 +20026,6 @@
                   "row" : 0,
                   "col" : 0
                 },
-                "e74c05f9-2bcd-1be7-85bd-7e3dbfafce9c" : {
-                  "sizeX" : 8,
-                  "sizeY" : 2,
-                  "row" : 0,
-                  "col" : 20
-                },
                 "0c6af3ee-7aa0-da06-cc52-4ceb55e4ab26" : {
                   "sizeX" : 8,
                   "sizeY" : 2,
@@ -20179,10 +20045,10 @@
                   "col" : 0
                 },
                 "8dfc5ffa-3ea2-2772-ce7f-7f2b7e34b396" : {
-                  "sizeX" : 5,
+                  "sizeX" : 8,
                   "sizeY" : 2,
-                  "row" : 15,
-                  "col" : 0
+                  "row" : 0,
+                  "col" : 20
                 }
               },
               "gridSettings" : {
