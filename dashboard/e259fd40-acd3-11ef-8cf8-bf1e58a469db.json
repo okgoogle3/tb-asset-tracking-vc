@@ -19396,7 +19396,7 @@
                 }
               },
               "showIcon" : true,
-              "iconSize" : 24,
+              "iconSize" : 20,
               "iconSizeUnit" : "px",
               "icon" : "link",
               "iconColor" : {
@@ -19468,7 +19468,7 @@
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "12px",
-            "widgetCss" : "tb-icon {\n  display: inline-flex; /* Ensures it behaves like an inline element but allows flex properties */\n  justify-content: center; /* Centers the icon inside the circle */\n  align-items: center; /* Centers the icon vertically */\n  border-radius: 50%; /* Makes the background circular */\n  width: 40px!important; /* Set width and height to define the size of the circle */\n  height: 40px!important;\n  font-size: 24px; /* Adjust icon size if needed */\n  background-color: #E9F9FF;\n}\n\n.tb-label-value-card-row {\n\tgap: 0!important;\n}\n\n.tb-label-value-card-icon-label {\n\tgap: 0!important;\n\tflex: 2!important;\n    width: 100%!important;\n}\n\n.tb-label-value-card-value {\n\tflex: 1;\n    text-align: right;\n}",
+            "widgetCss" : "tb-icon {\n  display: inline-flex; /* Ensures it behaves like an inline element but allows flex properties */\n  justify-content: center; /* Centers the icon inside the circle */\n  align-items: center; /* Centers the icon vertically */\n  border-radius: 50%; /* Makes the background circular */\n  width: 30px!important; /* Set width and height to define the size of the circle */\n  height: 30px!important;\n  background-color: #E9F9FF;\n}\n\n.tb-label-value-card-row {\n\tgap: 0!important;\n}\n\n.tb-label-value-card-icon-label {\n\tgap: 0!important;\n\tflex: 2!important;\n    width: 100%!important;\n}\n\n.tb-label-value-card-value {\n\tflex: 1;\n    text-align: right;\n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "showTitleIcon" : false,
