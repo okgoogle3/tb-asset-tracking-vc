@@ -19639,7 +19639,10 @@
             "useDashboardTimewindow" : true,
             "showLegend" : false,
             "widgetStyle" : {
-              "border" : "1px solid #D0D5DD"
+              "border" : "1px solid #D0D5DD",
+              "margin-left" : "5px",
+              "margin-right" : "5px",
+              "margin-bottom" : "5px"
             },
             "actions" : { },
             "configMode" : "advanced",
