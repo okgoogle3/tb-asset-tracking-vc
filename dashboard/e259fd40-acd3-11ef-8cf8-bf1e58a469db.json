@@ -19398,18 +19398,40 @@
               "showIcon" : true,
               "iconSize" : 24,
               "iconSizeUnit" : "px",
-              "icon" : "thermostat",
+              "icon" : "link",
               "iconColor" : {
                 "type" : "constant",
-                "color" : "var(--tb-primary-500)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                "color" : "#0044B3",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                }
               },
               "valueFont" : {
+                "family" : "Roboto",
                 "size" : 24,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "600",
                 "style" : "normal",
+                "weight" : "600",
                 "lineHeight" : "24px"
               },
               "valueColor" : {
