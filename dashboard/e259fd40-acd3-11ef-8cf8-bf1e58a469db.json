@@ -19468,7 +19468,7 @@
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "12px",
-            "widgetCss" : "",
+            "widgetCss" : "/*tb-icon {*/\n/*    padding: 10px;*/\n/*    background-color: black;*/\n/*}*/",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "showTitleIcon" : false,
