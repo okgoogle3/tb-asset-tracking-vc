@@ -19390,14 +19390,14 @@
               "type" : "entity",
               "name" : "",
               "deviceId" : null,
-              "entityAliasId" : "e98fed76-25d1-9b7a-286c-2386690d996f",
+              "entityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
               "dataKeys" : [ {
-                "name" : "count",
+                "name" : "assetsCount",
                 "type" : "attribute",
-                "label" : "count",
+                "label" : "assetsCount",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.6212903321707748
+                "_hash" : 0.35110565566202356
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
