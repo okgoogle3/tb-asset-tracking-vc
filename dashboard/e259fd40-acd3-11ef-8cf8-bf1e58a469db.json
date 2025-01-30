@@ -20054,9 +20054,9 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "const entityName = data[0].entityName;\n\nconsole.log(\"DATA\", data);\n\nreturn `\n    <div class=\"location-item active\">\n        entityName\n    </div>\n`;",
+              "markdownTextFunction" : "const entityName = data[0].entityName;\n\nconsole.log(\"DATA\", data);\n\nreturn `\n    <div class=\"location-item active\">\n        <span class=\"zone-name\">${entityName}</span>\n        <mat-icon>done</mat-icon>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ".location-item {\n    margin-top: 5px;\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 10px;\n    border-radius: 8px;\n    cursor: pointer;\n}\n\n.active {\n    background-color: #E0F2FE;\n    color: #026AA2;\n}"
+              "markdownCss" : ".location-item {\n    margin-top: 5px;\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 10px;\n    border-radius: 8px;\n    cursor: pointer;\n}\n\n.active {\n    background-color: #E0F2FE;\n    color: #026AA2;\n}\n\n.zone-name {\n    font-size: 14px;\n    font-weight: 400;\n    line-height: 24px;\n    letter-spacing: 0.01em;\n    text-align: left;\n    color: #0C111D;\n}"
             },
             "title" : "Markdown/HTML Card",
             "showTitleIcon" : false,
