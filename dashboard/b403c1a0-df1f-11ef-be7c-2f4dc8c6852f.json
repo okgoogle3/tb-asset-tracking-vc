@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "Devices",
+    "title" : "Devices dashboard",
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
@@ -73,7 +73,7 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "name" : "Devices",
+    "name" : "Devices dashboard",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,
