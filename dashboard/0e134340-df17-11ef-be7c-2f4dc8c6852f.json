@@ -881,12 +881,85 @@
           "row" : 0,
           "col" : 0,
           "id" : "f2b8585c-58c1-a14e-c7f7-8ef11b6d21a0"
+        },
+        "d1726d38-16cc-971e-4136-66e0b16176cb" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1738163557109,
+                  "endTimeMs" : 1738249957109
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
+              "markdownTextFunction" : "return \"<tb-dashboard-state stateId='monitoring' [ctx]='ctx'></tb-dashboard-state>\";",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d1726d38-16cc-971e-4136-66e0b16176cb"
         }
       },
       "states" : {
         "monitoring" : {
           "name" : "monitoring",
-          "root" : true,
+          "root" : false,
           "layouts" : {
             "main" : {
               "widgets" : {
@@ -976,6 +1049,37 @@
               }
             }
           }
+        },
+        "monitoringWrapper" : {
+          "name" : "monitoringWrapper",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "d1726d38-16cc-971e-4136-66e0b16176cb" : {
+                  "sizeX" : 24,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 0,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
         }
       },
       "entityAliases" : {
@@ -1034,7 +1138,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Demo Asset 1, Demo Asset 8, Demo Asset 12, Demo Asset 13, Demo Asset 14, Demo Asset 15, Demo Asset 16, Demo Asset 17, Demo Asset 11, Demo Asset 2, Demo Asset 3, Demo Asset 4, Demo Asset 5, Demo Asset 7",
+                  "defaultValue" : "Demo Asset 10, Demo Asset 9, цумауцм, Demo Asset 18, Demo Asset 19, Demo Asset 20, Demo Asset 21, Demo Asset 22, Demo Asset 23, Demo Asset 24, Demo Asset 25, Demo Asset 1, Demo Asset 8, Demo Asset 12, Demo Asset 13, Demo Asset 14, Demo Asset 15, Demo Asset 16, Demo Asset 17, Demo Asset 11, Demo Asset 2, Demo Asset 3, Demo Asset 4, Demo Asset 5, Demo Asset 6, Demo Asset 7",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -1063,7 +1167,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Press-Forcing Facilities Production, Foundry Production, Steelmaking Production, Metalworks Production",
+                  "defaultValue" : "image zone (test), Equipment warehouse, Heat Treatment Facilities Production, Mechanical Assembly Production, Press-Forcing Facilities Production, Foundry Production, Steelmaking Production, Metalworks Production",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -1092,7 +1196,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Heat-treating equipment, Handling equipment, Automated process control systems room, Castings producing of carbon, Castings producing of alloyed, Castings producing of special cast iron, Control room, Raw material, Packaging Area, Manual arc welding, Metal-arc inert gas welding, Tungsten inert gas arc welding",
+                  "defaultValue" : "High-speed burners, Hazardous materials area, Dangerous area 1, Heat-treating equipment, Handling equipment, Automated process control systems room, Castings producing of carbon, Castings producing of alloyed, Castings producing of special cast iron, Control room, Raw material, Packaging Area, Manual arc welding, Metal-arc inert gas welding, Tungsten inert gas arc welding",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
