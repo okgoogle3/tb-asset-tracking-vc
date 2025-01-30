@@ -20054,7 +20054,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "console.log(\"DATA\", data);\n\nreturn `\n    <div>Hello</div>\n    <div>Hello</div>\n    <div>Hello</div>\n    <div>Hello</div>\n    <div>Hello</div>\n    <div>Hello</div>\n    <div>Hello</div>\n    <div>Hello</div>\n`;",
+              "markdownTextFunction" : "const entityName = data[0].entityName;\n\nconsole.log(\"DATA\", data);\n\nreturn entityName;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
             },
