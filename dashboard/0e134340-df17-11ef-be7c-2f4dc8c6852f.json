@@ -7,14 +7,140 @@
     "mobileOrder" : null,
     "configuration" : {
       "description" : "",
-      "widgets" : { },
+      "widgets" : {
+        "16bc634f-a14b-c262-675c-3031d2cb6863" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
+              "filterId" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.46511246306141363
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "1908e24f-a816-21c9-0161-08fc4a0c3f26",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1737290696698,
+                  "endTimeMs" : 1737377096698
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "",
+              "markdownTextFunction" : "let controller = ctx.stateController;\nlet params = controller.getStateParams();\n\nconst assetsNumber = ctx.datasources.length;\n\nif (!params || !params.showAssets){\n    return `\n        <div class=\"widget-container\">\n            <tb-dashboard-state class=\"map-container\"\n                [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"monitoringNewMap\">\n            </tb-dashboard-state>\n            <div class=\"panel-container\">\n                <div class=\"panel-control\">\n                    <div class=\"total-assets-container\">\n                        <mat-icon class=\"icon build\">build</mat-icon>\n                        <span class=\"total-assets-label\">Total assets</span>\n                        <span class=\"total-assets-counter\">${assetsNumber}</span>\n                    </div>\n                    <button mat-button color=\"primary\" id=\"showAssets\">\n                        <mat-icon color=\"primary\" class=\"icon\">keyboard_arrow_up</mat-icon>\n                        <span>Show assets</span>\n                    </button>\n                </div>\n            </div>\n            \n        </div>\n    `;\n}\n\nreturn `\n        <div class=\"widget-container\">\n            <tb-dashboard-state class=\"map-container\"\n                [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"monitoringNewMap\">\n            </tb-dashboard-state>\n            <div class=\"panel-container extended\">\n                <div class=\"panel-control\">\n                    <div class=\"total-assets-container\">\n                        <mat-icon class=\"icon build\">build</mat-icon>\n                        <span class=\"total-assets-label\">Total assets</span>\n                        <span class=\"total-assets-counter\">${assetsNumber}</span>\n                    </div>\n                    <button mat-button color=\"primary\" id=\"hideAssets\">\n                        <mat-icon color=\"primary\" class=\"icon\">keyboard_arrow_down</mat-icon>\n                        <span>Hide assets</span>\n                    </button>\n                </div>\n                <div class=\"assets-table\">\n                    <tb-dashboard-state\n                        [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"monitoringAssetsList\">\n                    </tb-dashboard-state>\n                </div>\n            </div>\n        </div>\n    `;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".widget-container {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n}\n\n.map-container {\n    width: 100%;\n    height: 100%;\n}\n\n.panel-container {\n    width: 100%;\n    position: absolute;\n    bottom: 0;\n    background-color: #FFFFFF;\n    border-top: 1px solid #D0D5DD;\n    z-index: 999;\n}\n\n.panel-container.extended {\n    height: 50%;\n}\n\n.panel-control {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 20px;\n}\n\n.extended .panel-control {\n    padding-bottom: 0;\n}\n\nbutton.mat-button {\n    display: flex;\n    flex-direction: row-reverse;\n    align-items: center;\n}\n\n.icon {\n    width: 20px;\n    height: 20px;\n    font-size: 20px;\n}\n\n.icon.build {\n    color: #344054;\n    margin-right: 8px;\n}\n\n.total-assets-container {\n    display: flex;\n    align-items: center;\n}\n\n.total-assets-label {\n    color: #344054;\n    line-height: 24px;\n    margin-right: 8px;\n}\n\n.total-assets-counter {\n    color: #0C111D;\n    font-weight: 600;\n    line-height: 24px;\n    letter-spacing: 0.16px;\n}\n\n.all-assets-container {\n    height: 70%!important;\n}\n\n.assets-table {\n    height: calc(100% - 56px);\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "showAssets",
+                "icon" : "expand_less",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\n\nparams.showAssets = true;\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "fa277f60-e7b4-40d8-4896-cda3329c2672"
+              }, {
+                "name" : "hideAssets",
+                "icon" : "keyboard_arrow_down",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\n\nparams.showAssets = false;\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "ab44b459-2309-4387-8494-c8027d195d08"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "16bc634f-a14b-c262-675c-3031d2cb6863"
+        }
+      },
       "states" : {
         "monitoring" : {
           "name" : "monitoring",
           "root" : true,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "16bc634f-a14b-c262-675c-3031d2cb6863" : {
+                  "sizeX" : 24,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
@@ -61,8 +187,59 @@
           }
         }
       },
-      "entityAliases" : { },
-      "filters" : { },
+      "entityAliases" : {
+        "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16" : {
+          "id" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
+          "alias" : "Assets",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Box", "Loader", "Tool", "Worker" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "1908e24f-a816-21c9-0161-08fc4a0c3f26" : {
+          "id" : "1908e24f-a816-21c9-0161-08fc4a0c3f26",
+          "alias" : "Show all assets",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "showAllAssets",
+            "defaultStateEntity" : null
+          }
+        }
+      },
+      "filters" : {
+        "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8" : {
+          "id" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
+          "filter" : "Monitoring assets",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "name"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "IN",
+                "value" : {
+                  "defaultValue" : "",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : false,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        }
+      },
       "timewindow" : {
         "displayValue" : "",
         "hideAggregation" : false,
