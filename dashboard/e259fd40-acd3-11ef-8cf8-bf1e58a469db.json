@@ -19909,7 +19909,7 @@
             }, {
               "type" : "entity",
               "entityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
-              "dataKeys" : null,
+              "dataKeys" : [ ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
