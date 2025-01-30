@@ -19894,6 +19894,13 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
+              "dataKeys" : null,
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
               "entityAliasId" : "b9739349-ece2-3d5f-e374-9303879a5423",
               "dataKeys" : [ {
                 "name" : "name",
@@ -19903,13 +19910,6 @@
                 "settings" : { },
                 "_hash" : 0.6150456115811924
               } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            }, {
-              "type" : "entity",
-              "entityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
-              "dataKeys" : null,
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
