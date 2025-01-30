@@ -927,7 +927,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "return '<tb-dashboard-state [ctx]=\"ctx stateId=\"monitoring\"></tb-dashboard-state>';",
+              "markdownTextFunction" : "console.log(\"HELLO\");\nreturn '<tb-dashboard-state [ctx]=\"ctx stateId=\"monitoring\"></tb-dashboard-state>';",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
             },
