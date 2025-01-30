@@ -20054,9 +20054,9 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "const entityName = data[0].entityName;\n\nconsole.log(\"DATA\", data);\n\nreturn entityName;",
+              "markdownTextFunction" : "const entityName = data[0].entityName;\n\nconsole.log(\"DATA\", data);\n\nreturn `\n    <div class=\"location-item active\">\n        entityName\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ""
+              "markdownCss" : ".location-item {\n    margin-top: 5px;\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 10px;\n    border-radius: 8px;\n    cursor: pointer;\n}\n\n.active {\n    background-color: #E0F2FE;\n    color: #026AA2;\n}"
             },
             "title" : "Markdown/HTML Card",
             "showTitleIcon" : false,
