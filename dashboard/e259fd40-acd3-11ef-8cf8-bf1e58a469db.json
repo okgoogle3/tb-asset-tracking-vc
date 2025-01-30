@@ -20055,7 +20055,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "console.log(data)\n\nreturn `Hello`",
+              "markdownTextFunction" : "console.log(data);\n\nreturn `Hello`",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
             },
