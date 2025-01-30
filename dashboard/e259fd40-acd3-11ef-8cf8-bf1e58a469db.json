@@ -19962,7 +19962,7 @@
               "markdownTextPattern" : "return ``",
               "markdownTextFunction" : "const entityIdString = `{entityType: '${data[0].entityType}', id: '${data[0].entityId}'}`;\n\nlet zonesHtml = \"\";\n\ndata.map(element => `{entityType: '${element.entityType}', id: '${element.entityId}'}`).forEach(id => {\n    zonesHtml+='<tb-dashboard-state [ctx]=\"ctx\" [entityId]=\"'+id+'\" stateId=\"locationSelectorItem\" class=\"row\"></tb-dashboard-state>';\n});\n\nreturn `\n    <div class=\"container\">\n        ${zonesHtml}\n    </div>\n`;\n",
               "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ".container {\n    height: 100%;\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    padding: 0;\n    padding-top: 10px;\n}\n\n.row {\n    margin-top: 4px;\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-radius: 8px;\n    cursor: pointer;\n}"
+              "markdownCss" : ".container {\n    height: 100%;\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    padding: 0;\n    padding-top: 10px;\n}\n\n.row {\n    margin-top: 4px;\n    height: 48px;\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-radius: 8px;\n    cursor: pointer;\n}"
             },
             "title" : "Location map",
             "showTitleIcon" : false,
