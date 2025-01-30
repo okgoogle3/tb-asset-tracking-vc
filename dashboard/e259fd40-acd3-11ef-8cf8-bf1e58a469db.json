@@ -21152,8 +21152,8 @@
                 "ef6e2fa6-23ee-8864-ae27-eaf4400db313" : {
                   "sizeX" : 5,
                   "sizeY" : 10,
-                  "row" : 15,
-                  "col" : 6
+                  "row" : 10,
+                  "col" : 0
                 },
                 "640d1ffb-3a26-aa4d-7845-253179645c2b" : {
                   "sizeX" : 19,
@@ -21163,8 +21163,8 @@
                 },
                 "5e64bd38-bd69-cd74-ef01-15a8e5bf1e28" : {
                   "sizeX" : 5,
-                  "sizeY" : 8,
-                  "row" : 10,
+                  "sizeY" : 10,
+                  "row" : 0,
                   "col" : 0
                 }
               },
