@@ -105,7 +105,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\n\nparams.showAssets = true;\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\n\nparams.showAssets = true;\n\nwidgetContext.updateAliases();\ncontroller.updateState('monitoringWrapper', params);",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "fa277f60-e7b4-40d8-4896-cda3329c2672"
@@ -115,7 +115,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\n\nparams.showAssets = false;\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\n\nparams.showAssets = false;\n\nwidgetContext.updateAliases();\ncontroller.updateState('monitoringWrapper', params);",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "ab44b459-2309-4387-8494-c8027d195d08"
