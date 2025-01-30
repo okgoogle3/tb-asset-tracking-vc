@@ -19960,7 +19960,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "return ``",
-              "markdownTextFunction" : "return `\n    <div class=\"container\">\n        Hello\n        <tb-dashboard-state style=\"width: 100%; height: 100px;\" [ctx]=\"ctx\" stateId=\"locationSelectorItem\">\n            </tb-dashboard-state>\n    </div>\n`",
+              "markdownTextFunction" : "return `\n    <div class=\"container\">\n        <tb-dashboard-state style=\"width: 100%; height: 100px;\" [ctx]=\"ctx\" stateId=\"locationSelectorItem\">\n            </tb-dashboard-state>\n    </div>\n`",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".container {\n    height: 100%;\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    padding-top: 10px;\n    background-color: lightblue;\n}\n\n.row {\n    margin-top: 5px;\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 10px;\n    border-radius: 8px;\n    cursor: pointer;\n}"
             },
@@ -20001,7 +20001,21 @@
           "sizeX" : 5,
           "sizeY" : 3.5,
           "config" : {
-            "datasources" : [ ],
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "b9739349-ece2-3d5f-e374-9303879a5423",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6150456115811924
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
             "timewindow" : {
               "displayValue" : "",
               "selectedTab" : 0,
@@ -22229,9 +22243,16 @@
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
-                "margin" : 10,
+                "margin" : 0,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
