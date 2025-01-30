@@ -927,7 +927,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "let controller = ctx.stateController;\nlet params = controller.getStateParams();\n\nconst params;\n\nif (params.filtersFormGroupValue) {\n    delete params.filtersFormGroupValue;\n}\n\ncontroller.updateState('monitoringWrapper', params);\n\n\nreturn `\n    <div style=\"height: 100%; width: 100%;\">\n        <tb-dashboard-state\n            style=\"height: 100%; width: 100%;\"\n            [ctx]=\"ctx\"\n            [stateId]=\"'monitoring'\"\n        >\n        </tb-dashboard-state>\n    </div>\n`;",
+              "markdownTextFunction" : "let controller = ctx.stateController;\nlet params = controller.getStateParams();\n\nif (params.filtersFormGroupValue) {\n    delete params.filtersFormGroupValue;\n}\n\ncontroller.updateState('monitoringWrapper', params);\n\n\nreturn `\n    <div style=\"height: 100%; width: 100%;\">\n        <tb-dashboard-state\n            style=\"height: 100%; width: 100%;\"\n            [ctx]=\"ctx\"\n            [stateId]=\"'monitoring'\"\n        >\n        </tb-dashboard-state>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
             },
