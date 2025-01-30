@@ -19960,7 +19960,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "return ``",
-              "markdownTextFunction" : "const zonesOptions = [];\n\nconsole.log(data);\n\nreturn ``;",
+              "markdownTextFunction" : "const zonesOptions = data.map(element => ({\n    label: element.Name,\n    value: element.entityId\n}));\n\nconsole.log(zonesOptions);\n\nreturn ``;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
             },
