@@ -19960,7 +19960,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "return ``",
-              "markdownTextFunction" : "return ``",
+              "markdownTextFunction" : "const zonesOptions = [];\n\nconsole.log(data);\n\nreturn ``;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
             },
