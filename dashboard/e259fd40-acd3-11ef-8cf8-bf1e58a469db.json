@@ -19960,7 +19960,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "return ``",
-              "markdownTextFunction" : "const entityIdString = `{entityType: '${data[0].entityType}', id: '${data[0].entityId}'}`;\n\nconst zoneIds = data.map(element => `{entityType: '${element.entityType}', id: '${element.entityId}'}`);\n\nconst zonesHtml = zoneIds.map(zoneId => `\n    <tb-dashboard-state style=\"width: 100%; height: 100px;\" [ctx]=\"ctx\" stateId=\"locationSelectorItem\" [entityId]=\"${zoneId}\"></tb-dashboard-state>\n`).join(\"\");\n\nconsole.log(zonesHtml)\n\nreturn `\n    <div class=\"container\">` + zonesHtml + `\n    </div>\n`;\n\n// <div class=\"container\">\n//         <tb-dashboard-state style=\"width: 100%; height: 100px;\" [ctx]=\"ctx\" stateId=\"locationSelectorItem\" [entityId]=\"${entityIdString}\">\n//         </tb-dashboard-state>\n//     </div>",
+              "markdownTextFunction" : "const entityIdString = `{entityType: '${data[0].entityType}', id: '${data[0].entityId}'}`;\n\nlet zonesHtml = \"\";\n\nconst zoneIds = data.map(element => `{entityType: '${element.entityType}', id: '${element.entityId}'}`).forEach(id => {\n    zonesHtml+='<tb-dashboard-state [ctx]=\"ctx\" [entityId]=\"'+id+'\" stateId=\"locationSelectorItem\" style=\"width: 100%; height: 100px\"></tb-dashboard-state>';\n})\n\nconsole.log(zonesHtml)\n\nreturn `\n    <div class=\"container\">` + zonesHtml + `\n    </div>\n`;\n\n// <div class=\"container\">\n//         <tb-dashboard-state style=\"width: 100%; height: 100px;\" [ctx]=\"ctx\" stateId=\"locationSelectorItem\" [entityId]=\"${entityIdString}\">\n//         </tb-dashboard-state>\n//     </div>",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".container {\n    height: 100%;\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    padding: 0;\n    padding-top: 10px;\n}\n\n.row {\n    margin-top: 5px;\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 10px;\n    border-radius: 8px;\n    cursor: pointer;\n}"
             },
@@ -21152,8 +21152,8 @@
                 "ef6e2fa6-23ee-8864-ae27-eaf4400db313" : {
                   "sizeX" : 5,
                   "sizeY" : 10,
-                  "row" : 0,
-                  "col" : 0
+                  "row" : 15,
+                  "col" : 6
                 },
                 "640d1ffb-3a26-aa4d-7845-253179645c2b" : {
                   "sizeX" : 19,
@@ -21163,7 +21163,7 @@
                 },
                 "5e64bd38-bd69-cd74-ef01-15a8e5bf1e28" : {
                   "sizeX" : 5,
-                  "sizeY" : 3,
+                  "sizeY" : 8,
                   "row" : 10,
                   "col" : 0
                 }
