@@ -295,7 +295,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\n\nlet newParams = {\n    stateId: 'alertsRuleDetails',\n    prevState: 'alertsRules',\n    subState: 'device',\n    mode: params['mode'],\n    enabled: params['enabled'],\n    statesArray: [\n        {\n            stateId: 'alertsRules', \n            name: \"Alerts Rules\"\n        },\n        {\n            stateId: 'alertsRuleDetails', \n            name: entityLabel||entityName\n        }\n    ],\n    selectedEntity: {\n        entityName,\n        entityId,\n        entityLabel\n    }\n}\n\nhistory.pushState({}, '');\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', newParams)",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\n\nlet newParams = {\n    stateId: 'alertsRuleDetails',\n    prevState: 'alertsRules',\n    subState: 'device',\n    mode: params['mode'],\n    enabled: params['enabled'],\n    statesArray: [\n        {\n            stateId: 'alertsRules', \n            name: \"Alerts Rules\"\n        },\n        {\n            stateId: 'alertsRuleDetails', \n            name: entityLabel||entityName\n        }\n    ],\n    selectedEntity: {\n        entityName,\n        entityId,\n        entityLabel\n    }\n}\n\nhistory.pushState({}, '');\n\nwidgetContext.updateAliases();\ncontroller.updateState('alertsRules', newParams)",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "684aa427-bcf4-43d2-6bb3-bba6f2367793"
@@ -329,8 +329,8 @@
         }
       },
       "states" : {
-        "alertRules" : {
-          "name" : "alertRules",
+        "alertsRules" : {
+          "name" : "alertsRules",
           "root" : true,
           "layouts" : {
             "main" : {
