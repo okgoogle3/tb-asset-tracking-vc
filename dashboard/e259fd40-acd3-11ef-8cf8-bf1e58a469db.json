@@ -19975,7 +19975,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "let params = widgetContext.stateController.getStateParams();\n\nconsole.log(entityName);\n\nparams.selectedZone = {\n    entityId,\n    entityName\n};\n\nwidgetContext.stateController.updateState('default', params);",
+                "customFunction" : "let params = widgetContext.stateController.getStateParams();\n\nconsole.log(entityName);\n\nparams.selectedZone = {\n    entityId,\n    entityName\n};\n\nwidgetContext.stateController.updateState('default', params);\nwidgetContext.updateAliases();",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "8514ac36-3727-ecd4-d1aa-061e39de9fd0"
