@@ -7,27 +7,352 @@
     "mobileOrder" : null,
     "configuration" : {
       "description" : "",
-      "widgets" : { },
+      "widgets" : {
+        "351718ed-edc8-f0a5-622e-e9fcba0af74e" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1728905890633,
+                  "endTimeMs" : 1728992290633
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "entitiesTitle" : "Users list",
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : false,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "showCellActionsMenu" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
+              "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "-createdTime",
+              "useRowStyleFunction" : false,
+              "rowStyleFunction" : ""
+            },
+            "title" : "Users list",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : null,
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "7aecb38a-02a5-ca4b-04cc-1901060899ce",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "type" : "entityField",
+                "label" : "Created time",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.5969749156019732
+              }, {
+                "name" : "firstName",
+                "type" : "entityField",
+                "label" : "First name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9065245475329717
+              }, {
+                "name" : "lastName",
+                "type" : "entityField",
+                "label" : "Last name",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5974005994559766
+              }, {
+                "name" : "email",
+                "type" : "entityField",
+                "label" : "Email",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.21191886381467429
+              }, {
+                "name" : "phone",
+                "type" : "entityField",
+                "label" : "Phone",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.7978638871281301
+              }, {
+                "name" : "role",
+                "type" : "attribute",
+                "label" : "Role",
+                "color" : "#607d8b",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "let textColor, backgroundColor;\n\nif (value === \"Admin\") {\n    textColor = \"#7839EE\";\n    backgroundColor = \"#ECE9FE\";\n} else {\n    textColor = \"#0E9384\";\n    backgroundColor = \"#CCFBEF\";\n}\n\nreturn `\n    <span style=\"padding: 4px 8px; border-radius: 4px; color:${textColor}; background-color: ${backgroundColor}; text-transform: uppercase; font-size: 12px; font-weight: 600; line-height: 16px\">${value}</span>\n`",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.135844927641932,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "assignedAlertsCount",
+                "type" : "attribute",
+                "label" : "Assigned alerts",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.9170656058763949,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "advanced",
+            "actions" : {
+              "actionCellButton" : [ {
+                "name" : "Edit",
+                "icon" : "mdi:pencil-outline",
+                "useShowWidgetActionFunction" : true,
+                "showWidgetActionFunction" : "return localStorage.getItem(\"role\") === \"Admin\";\n",
+                "type" : "customPretty",
+                "customHtml" : "<form class=\"form-wrapper\" [formGroup]=\"userForm\">\n    <div class=\"form-header-panel\">\n        <div class=\"title\">\n            Edit user\n        </div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <div class=\"row\">\n        <div class=\"input-wrapper\">\n            <mat-form-field appearance=\"outline\">\n                <mat-label>First name</mat-label>\n                <input type=\"string\" matInput formControlName=\"firstName\" placeholder=\"First name\">\n            </mat-form-field>\n        </div>\n        <div class=\"input-wrapper\">\n            <mat-form-field appearance=\"outline\">\n                <mat-label>Last name</mat-label>\n                <input type=\"string\" matInput formControlName=\"lastName\" placeholder=\"Last name\">\n            </mat-form-field>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"input-wrapper\">\n            <mat-form-field appearance=\"outline\">\n                <mat-label>Email</mat-label>\n                <input type=\"string\" matInput formControlName=\"email\" placeholder=\"Email\">\n            </mat-form-field>\n        </div>\n        <div class=\"input-wrapper\">\n            <mat-form-field appearance=\"outline\">\n                <mat-select formControlName=\"role\">\n                    <mat-option *ngFor=\"let userRole of userRoleOptions\" [value]=\"userRole\">{{userRole.label}}</mat-option>\n                </mat-select>\n                <mat-label>User role</mat-label>\n            </mat-form-field>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"input-wrapper\">\n            <tb-phone-input [enableFlagsSelect]=\"true\" appearance=\"outline\" formControlName=\"phone\"></tb-phone-input>\n        </div>\n    </div>\n    \n    <div class=\"btn-container\">\n        <button mat-flat-button type=\"button\"\n            (click)=\"cancel()\">Cancel</button>\n        <button mat-button mat-raised-button color=\"primary\"\n            [disabled]=\"!userForm.dirty || userForm.invalid\" (click)=\"saveUser()\">Save</button>\n    </div>\n</form>",
+                "customCss" : "/*.mat-horizontal-stepper-header {*/\n/*    padding: 0!important;*/\n/*    margin-bottom: 24px!important;*/\n/*}*/\n\n.mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.first-step-buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.first-step-buttons-container button:not(:last-child) {\n    margin-right: 8px;\n}\n\n.buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n}\n\n.row {\n    display: flex;\n    width: 100%;\n    gap: 20px;\n}\n\n.row .input-wrapper {\n    flex: 1;\n}\n\ninput, mat-form-field, tb-phone-input  {\n    width: 100%;\n}\n\n.tb-default .mat-stepper-horizontal, .tb-default .mat-stepper-vertical {\n    background-color: transparent;\n}\n\n.btn-container {\n    display: flex;\n    justify-content: flex-end;\n    margin-top: 48px;\n}",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));  \nlet attributeService = $injector.get(widgetContext.servicesMap.get(\"attributeService\"));\nlet userService = $injector.get(widgetContext.servicesMap.get(\"userService\"));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get(\"entityGroupService\"));\n\nopenUserDialog();\n\nfunction openUserDialog() {\n    customDialog.customDialog(htmlTemplate, CreateUserDialogController).subscribe();\n}\n\nfunction CreateUserDialogController(instance) {\n    let vm = instance;\n    \n    vm.userRoleOptions = [];\n    \n    vm.userForm = vm.fb.group({\n        firstName: [additionalParams.entity[\"First name\"]],\n        lastName: [additionalParams.entity[\"Last name\"]],\n        email: [additionalParams.entity.Email, [vm.validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/), vm.validators.required]],\n        phone: [additionalParams.entity.Phone, [widgetContext.$scope.validators.required]],\n        role: [null, [vm.validators.required]]\n    });\n    \n    const pageLink = widgetContext.pageLink(100);\n    \n    entityGroupService.getEntityGroups(pageLink, \"USER\").subscribe(response => {\n        response.data.forEach((item) => {\n            if (item.name === \"Tenant Users\") {\n                const role = {\n                    label: \"Viewer\",\n                    id: item.id.id\n                };\n                vm.userRoleOptions.push(role);\n                \n                vm.userForm.get(\"role\").setValue(role);\n            } else if (item.name === \"Tenant Administrators\") {\n                vm.userRoleOptions.push({\n                    label: \"Admin\",\n                    id: item.id.id\n                });\n            }\n        });\n        \n        const role = additionalParams.entity.Role;\n            \n        if (role) {\n            vm.userForm.get(\"role\").setValue(\n                vm.userRoleOptions.find(element => element.label === role)\n            );\n        }\n    });\n    \n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.saveUser = function() {\n        let {email, firstName, lastName, phone, role}  = vm.userForm.value;\n        \n        const userPayload = {\n            id: entityId,\n            email,\n            firstName,\n            lastName,\n            phone,\n            authority: \"TENANT_ADMIN\",\n            tenantId: {\n                entityType: \"TENANT\", \n                id: widgetContext.currentUser.tenantId\n            },\n            additionalInfo: {\n                role: role.label\n            }\n        };\n                    \n        const attributes = [{\n            key: \"role\",\n            value: role.label\n        }];\n        \n        const requests = [\n            attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributes),\n            userService.saveUser(userPayload, false)\n        ];\n        \n        if(role.label != additionalParams.entity.Role){\n            requests.push(entityGroupService.removeEntityFromEntityGroup(vm.userRoleOptions.find(x=>x.label == additionalParams.entity.Role).id, entityId.id));\n            requests.push(entityGroupService.addEntityToEntityGroup(role.id, entityId.id));\n        }\n        \n        widgetContext.rxjs.forkJoin(requests).subscribe(()=>{\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n            widgetContext.showSuccessToast(`User was updated successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n        });\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "464eaa7f-0292-d613-8b50-6d3e1a695b36"
+              }, {
+                "name" : "Delete",
+                "icon" : "delete_outline",
+                "useShowWidgetActionFunction" : true,
+                "showWidgetActionFunction" : "return (localStorage.getItem(\"role\") === \"Admin\" && widgetContext.currentUser.sub != data.Email);",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nlet userService = $injector.get(widgetContext.servicesMap.get('userService'));\n\nopenDeleteUserDialog();\n\nfunction openDeleteUserDialog() {\n    let title = `Delete user`;\n    let content = `Are you sure you want to delete the ${additionalParams.entity['First name']} ${additionalParams.entity['Last name']} user?`;\n    dialogs.confirm(title, content, 'Cancel', 'Delete')\n        .pipe(\n            widgetContext.rxjs.switchMap((data) => {\n                if (data) {\n                    return deleteUser(); \n                } else {\n                    return widgetContext.rxjs.of(null);\n                }\n            })\n        )\n        .subscribe();\n}\n\nfunction deleteUser() {\n    return userService.deleteUser(entityId.id)\n        .pipe(\n            widgetContext.rxjs.tap(() => {\n                widgetContext.showSuccessToast(`${entityName} user was deleted successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n                widgetContext.updateAliases();\n            }\n        ));\n}",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "ad859c75-6898-01b2-bdb8-686253628d12"
+              } ]
+            },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : {
+              "size" : 24,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : "600",
+              "style" : null,
+              "lineHeight" : "32px"
+            },
+            "titleColor" : null,
+            "enableDataExport" : false,
+            "titleTooltip" : "",
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
+            "widgetCss" : ".tb-widget-header {\n    padding: 20px;\n}\n\nmat-cell:not(:last-child), mat-header-cell {\n    padding: 0 20px!important;\n}\n\n.tb-widget-title {\n    padding: 0!important;\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "12px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "351718ed-edc8-f0a5-622e-e9fcba0af74e"
+        },
+        "e0daad2a-8201-dec2-e3c5-a170ebdadc3d" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1728983985678,
+                  "endTimeMs" : 1729070385678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "<div class=\"dashboard-header-container\">\n    <div class=\"title\">Overview</div>\n    <button id=\"addNewUser\" class=\"create-asset-button\" *ngIf=\"localStorage.getItem('role'\n    ) === 'Admin'\">+ New user</button>\n</div>",
+              "markdownTextFunction" : "const showButton = localStorage.getItem(\"role\") === \"Admin\";\n\nreturn `\n<div class=\"dashboard-header-container\">\n    <div class=\"title\">Overview</div>\n    <button id=\"addNewUser\" class=\"create-asset-button\" *ngIf=\"${showButton}\">+ New user</button>\n</div>\n`",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".dashboard-header-container {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    justify-content: space-between;\n    padding: 0;\n    align-items: center;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 36px;\n    font-style: normal;\n    font-weight: 600;\n    line-height: 44px;\n}\n\n.create-asset-button {\n    display: flex;\n    padding: 8px 16px 8px 12px;\n    justify-content: center;\n    align-items: center;\n    background-color: var(--tb-primary-500);\n    color: #F5FBFF;\n    outline: none;\n    border-radius: 4px;\n    border: none;\n    cursor: pointer;\n    font-size: 16px;\n    font-weight: 600;\n    line-height: 24px;\n    letter-spacing: 0.16px;\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "background-color" : "transparent",
+              "padding" : "0!important"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "addNewUser",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form class=\"form-wrapper\" [formGroup]=\"userForm\">\n    <div class=\"form-header-panel\">\n        <div class=\"title\">\n            Create user\n        </div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <div class=\"row\">\n        <div class=\"input-wrapper\">\n            <mat-form-field appearance=\"outline\">\n                <mat-label>First name</mat-label>\n                <input type=\"string\" matInput formControlName=\"firstName\" placeholder=\"First name\">\n            </mat-form-field>\n        </div>\n        <div class=\"input-wrapper\">\n            <mat-form-field appearance=\"outline\">\n                <mat-label>Last name</mat-label>\n                <input type=\"string\" matInput formControlName=\"lastName\" placeholder=\"Last name\">\n            </mat-form-field>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"input-wrapper\">\n            <mat-form-field appearance=\"outline\">\n                <mat-label>Email</mat-label>\n                <input type=\"string\" matInput formControlName=\"email\" placeholder=\"Email\">\n            </mat-form-field>\n        </div>\n        <div class=\"input-wrapper\">\n            <mat-form-field appearance=\"outline\">\n                <mat-select formControlName=\"role\">\n                    <mat-option *ngFor=\"let userRole of userRoleOptions\" [value]=\"userRole\">{{userRole.label}}</mat-option>\n                </mat-select>\n                <mat-label>User role</mat-label>\n            </mat-form-field>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"input-wrapper\">\n            <tb-phone-input type=\"number\" [enableFlagsSelect]=\"true\" appearance=\"outline\" formControlName=\"phone\"></tb-phone-input>\n        </div>\n    </div>\n    <div class=\"btn-container\">\n        <button mat-flat-button type=\"button\"\n            (click)=\"cancel()\">Cancel</button>\n        <button mat-button mat-raised-button color=\"primary\"\n            [disabled]=\"!userForm.dirty || userForm.invalid\" (click)=\"saveUser()\">Save</button>\n    </div>\n</form>",
+                "customCss" : "/*.mat-horizontal-stepper-header {*/\n/*    padding: 0!important;*/\n/*    margin-bottom: 24px!important;*/\n/*}*/\n\n.mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.first-step-buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.first-step-buttons-container button:not(:last-child) {\n    margin-right: 8px;\n}\n\n.buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n}\n\n.row {\n    display: flex;\n    width: 100%;\n    gap: 20px;\n}\n\n.row .input-wrapper {\n    flex: 1;\n}\n\ninput, mat-form-field, tb-phone-input  {\n    width: 100%;\n}\n\n.tb-default .mat-stepper-horizontal, .tb-default .mat-stepper-vertical {\n    background-color: transparent;\n}\n\n.btn-container {\n    display: flex;\n    justify-content: flex-end;\n    margin-top: 48px;\n}",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));  \nlet attributeService = $injector.get(widgetContext.servicesMap.get(\"attributeService\"));\nlet userService = $injector.get(widgetContext.servicesMap.get(\"userService\"));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get(\"entityGroupService\"));\n\nopenUserDialog();\n\nfunction openUserDialog() {\n    customDialog.customDialog(htmlTemplate, CreateUserDialogController).subscribe();\n}\n\nfunction CreateUserDialogController(instance) {\n    let vm = instance;\n    \n    vm.userRoleOptions = [];\n    \n    vm.userForm = vm.fb.group({\n        firstName: [\"\"],\n        lastName: [\"\"],\n        email: [\"\", [vm.validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/), vm.validators.required]],\n        phone: [\"\", [vm.validators.required]],\n        role: [\"\", [vm.validators.required]]\n    });\n    \n    const pageLink = widgetContext.pageLink(100);\n    \n    entityGroupService.getEntityGroups(pageLink, \"USER\").subscribe(response => {\n        response.data.filter((item) => {\n            if (item.name === \"Tenant Users\") {\n                const role = {\n                    label: \"Viewer\",\n                    id: item.id.id\n                };\n                vm.userRoleOptions.push(role);\n                \n                vm.userForm.get(\"role\").setValue(role);\n            } else if (item.name === \"Tenant Administrators\") {\n                vm.userRoleOptions.push({\n                    label: \"Admin\",\n                    id: item.id.id\n                });\n            }\n        });\n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.saveUser = function() {\n        let {email, firstName, lastName, phone, role}  = vm.userForm.value;\n        \n        const userPayload = {\n            email,\n            firstName,\n            lastName,\n            phone,\n            authority: \"TENANT_ADMIN\",\n            tenantId: {\n                entityType: \"TENANT\", \n                id: widgetContext.currentUser.tenantId\n            },\n            additionalInfo: {\n                role: role.label\n            }\n        };\n        \n        userService.saveUser(userPayload, false, role.id)\n            .pipe(\n                widgetContext.rxjs.switchMap((response) => {\n                    const attributes = [{\n                        key: \"role\",\n                        value: role.label\n                    }];\n                    \n                    return attributeService.saveEntityAttributes(response.id, \"SERVER_SCOPE\", attributes);\n                })\n            )\n            .subscribe(() => {\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n                widgetContext.showSuccessToast(`${firstName} ${lastName} user was created successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n            });\n    }\n}",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "cca37572-e27f-4169-1d65-e0fdb4de2b52"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e0daad2a-8201-dec2-e3c5-a170ebdadc3d"
+        }
+      },
       "states" : {
         "default" : {
           "name" : "Users dashboard",
           "root" : true,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "351718ed-edc8-f0a5-622e-e9fcba0af74e" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "e0daad2a-8201-dec2-e3c5-a170ebdadc3d" : {
+                  "sizeX" : 24,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
         }
       },
-      "entityAliases" : { },
+      "entityAliases" : {
+        "7aecb38a-02a5-ca4b-04cc-1901060899ce" : {
+          "id" : "7aecb38a-02a5-ca4b-04cc-1901060899ce",
+          "alias" : "Users",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "USER"
+          }
+        }
+      },
       "filters" : { },
       "timewindow" : {
         "displayValue" : "",
