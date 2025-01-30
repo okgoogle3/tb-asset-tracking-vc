@@ -19952,7 +19952,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "console.log(\"HELLO\");\n\nconst {entityName, entityId} = data[0];\n\nlet params = ctx.stateController.getStateParams();\n\nlet active = false;\n\nif (params && params.selectedZone) {\n    active = params.selectedZone.entityId.id === entityId;\n}\n\n\nif (active) {\n    return `\n        <div class=\"location-item active\">\n            <span class=\"zone-name active\">${entityName}</span>\n            <mat-icon>done</mat-icon>\n        </div>\n    `;\n}\n\nreturn `\n    <div class=\"location-item\" id=\"select\">\n        <span class=\"zone-name\">${entityName}</span>\n    </div>\n`;",
+              "markdownTextFunction" : "const {entityName, entityId} = data[0];\n\nlet params = ctx.stateController.getStateParams();\n\nlet active = false;\n\nif (params && params.selectedZone) {\n    active = params.selectedZone.entityId.id === entityId;\n}\n\n\nif (active) {\n    return `\n        <div class=\"location-item active\">\n            <span class=\"zone-name active\">${entityName}</span>\n            <mat-icon>done</mat-icon>\n        </div>\n    `;\n}\n\nreturn `\n    <div class=\"location-item\" id=\"select\">\n        <span class=\"zone-name\">${entityName}</span>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".location-item {\n    margin-top: 5px;\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 10px;\n    border-radius: 8px;\n    cursor: pointer;\n}\n\n.active {\n    background-color: #E0F2FE;\n    color: #026AA2;\n}\n\n.zone-name {\n    font-size: 14px;\n    font-weight: 400;\n    line-height: 24px;\n    letter-spacing: 0.01em;\n    text-align: left;\n    color: #0C111D;\n}\n\n.zone-name.active {\n    color: #026AA2;\n}"
             },
@@ -19982,7 +19982,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "let params = widgetContext.stateController.getStateParams();\n\nconsole.log(entityName);\n\nparams.selectedZone = {\n    entityId,\n    entityName\n};\n\nwidgetContext.stateController.updateState('default', params);\nwidgetContext.updateAliases();",
+                "customFunction" : "let params = widgetContext.stateController.getStateParams();\n\nconsole.log(entityName);\n\ndelete params.selectedZone;\n\nwidgetContext.stateController.updateState('default', params);\nwidgetContext.updateAliases();\n\nsetTimeout(function() {\n    params.selectedZone = {\n        entityId,\n        entityName\n    };\n    \n    widgetContext.stateController.updateState('default', params);\n    widgetContext.updateAliases();\n\n}, 1000);",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "8514ac36-3727-ecd4-d1aa-061e39de9fd0"
