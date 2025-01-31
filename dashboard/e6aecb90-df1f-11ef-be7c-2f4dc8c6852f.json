@@ -402,6 +402,122 @@
           "row" : 0,
           "col" : 0,
           "id" : "b7a9535c-d808-89ba-cd60-4a7e3ffc4dde"
+        },
+        "945bb80a-477c-462b-9280-8b15c7068613" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "896ed68e-843a-654a-c187-ccfc03d06f0a",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6060072178593432
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1728983985678,
+                  "endTimeMs" : 1729070385678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "<div class=\"dashboard-header-container\">\n    <div class=\"title\">Overview</div>\n    <button id=\"addNewUser\" class=\"create-asset-button\" *ngIf=\"localStorage.getItem('role'\n    ) === 'Admin'\">+ New user</button>\n</div>",
+              "markdownTextFunction" : "const showButton = localStorage.getItem(\"role\") === \"Admin\";\n// \nreturn `\n<div class=\"dashboard-header-container\">\n    <div class=\"path\">\n          <span class=\"path-assets-label\" id=\"alertRules\" style=\"cursor: pointer\">Alerts profiles</span>\n          <span class=\"path-assets-label\">/</span>\n          <span class=\"path-entity-name\">${data[0].entityName}</span>\n    </div>\n    <div class=\"header\">\n        <div class=\"title\">${data[0].entityName}</div>\n    </div>    \n</div>`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n}\n\n.path {\n    margin-bottom: 20px;\n}\n\n.path span:not(:last-child) {\n    margin-right: 6px;\n}\n\n.path-assets-label {\n    color: #667085;\n    font-size: 14px;\n    line-height: 20px;\n}\n\n.path-entity-name  {\n    color: #0C111D;\n    font-size: 14px;\n    font-weight: 500;\n    line-height: 20px;\n}\n\n.dashboard-header-container {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    padding: 8px 0;\n    align-items: flex-start;\n    flex-direction: column;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 36px;\n    font-style: normal;\n    font-weight: 600;\n    line-height: 44px;\n}\n\n.create-asset-button {\n    display: flex;\n    padding: 8px 16px 8px 12px;\n    justify-content: center;\n    align-items: center;\n    background-color: var(--tb-primary-500);\n    color: #F5FBFF;\n    outline: none;\n    border-radius: 4px;\n    border: none;\n    cursor: pointer;\n    font-size: 16px;\n    font-weight: 600;\n    line-height: 24px;\n    letter-spacing: 0.16px;\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "background-color" : "transparent",
+              "padding" : "0!important"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "addNewProfile",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"form-wrapper\">\n    <div class=\"form-header-panel\" style=\"width: 100%\">\n        <div class=\"title\">New alert profile</div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <mat-stepper linear labelPosition=\"bottom\" #stepper>\n        <mat-step [stepControl]=\"alarmInfoFormGroup\">\n            <form [formGroup]=\"alarmInfoFormGroup\">\n                <ng-template matStepLabel>Info</ng-template>\n                <div class=\"row\" style=\"justify-content:space-between;padding:10px;\">\n                    <span class=\"sub-title\">Info</span>\n                    <div>\n                        <span>Rule status: <b>Active</b></span>\n                        <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"isActive\"></mat-slide-toggle>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Name</mat-label>\n                            <input type=\"string\" matInput formControlName=\"name\" placeholder=\"Enter name\">\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Description</mat-label>\n                            <textarea matInput\n                                formControlName=\"description\"\n                                cdkTextareaAutosize\n                                #autosize=\"cdkTextareaAutosize\"\n                                cdkAutosizeMinRows=\"3\"\n                                cdkAutosizeMaxRows=\"5\"></textarea>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned devices</mat-label>\n                            <mat-select formControlName=\"devices\" multiple required>\n                                <mat-option *ngFor=\"let device of devices\" [value]=\"device\">{{device.name}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"btn-container\">\n                    <button mat-flat-button matStepperNext color=\"primary\" [disabled]=\"alarmInfoFormGroup.invalid\">Next</button>\n                </div>\n            </form>\n        </mat-step>\n        <mat-step [stepControl]=\"alarmUsersFormGroup\">\n            <form [formGroup]=\"alarmUsersFormGroup\">\n                <ng-template matStepLabel>Assigned users</ng-template>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned users</mat-label>\n                            <mat-select formControlName=\"users\" multiple required>\n                                <mat-option *ngFor=\"let user  of users\" [value]=\"user\">{{user.email}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via phone</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"phone\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via email</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"email\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification in application</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"application\"></mat-slide-toggle>\n                </div>\n                <div class=\"buttons-container\" style=\"margin-top:40px;\">\n                    <button mat-button matStepperPrevious>Back</button>\n                    <button mat-flat-button matStepperNext color=\"primary\" (click)=\"save()\" [disabled]=\"alarmUsersFormGroup.invalid\">Done</button>\n                </div>\n            </form>\n        </mat-step>\n    </mat-stepper>\n</div>",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.first-step-buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.first-step-buttons-container button:not(:last-child) {\n    margin-right: 8px;\n}\n\n.buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n}\n\n.menu-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.row {\n    display: flex;\n    width: 100%;\n    gap: 20px;\n}\n\n.row .input-wrapper {\n    flex: 1;\n}\n\ninput, mat-form-field, tb-phone-input  {\n    width: 100%;\n}\n\n.tb-default .mat-stepper-horizontal, .tb-default .mat-stepper-vertical {\n    background-color: transparent;\n}\n\n.btn-container {\n    display: flex;\n    justify-content: flex-end;\n    margin-top: 48px;\n}\n\n.sub-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.toggle {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    padding: 10px;\n    align-items: center;\n    height: 60px;\n    border-bottom: 1px solid #D0D5DD;\n}\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));  \nlet attributeService = $injector.get(widgetContext.servicesMap.get(\"attributeService\"));\nlet assetService = $injector.get(widgetContext.servicesMap.get(\"assetService\"));\nlet deviceService = $injector.get(widgetContext.servicesMap.get(\"deviceService\"));\nlet userService = $injector.get(widgetContext.servicesMap.get(\"userService\"));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get(\"entityRelationService\"));\n\nopendeviceConfigDialog();\n\nfunction opendeviceConfigDialog() {\n    customDialog.customDialog(htmlTemplate, CreateDeviceConfigDialogController).subscribe();\n}\n\nfunction CreateDeviceConfigDialogController(instance) {\n    let vm = instance;\n    \n    vm.devices = [];\n    vm.users = [];\n    \n    deviceService.getTenantDevices(widgetContext.pageLink(10000,0)).subscribe(devices => {\n        if(devices && devices.data && devices.data.length){\n            devices.data.forEach(x=>{\n                vm.devices.push(x);\n            });\n        }\n    });\n    \n    userService.getAllUserInfos(true, widgetContext.pageLink(10000,0)).subscribe(users => {\n        if(users && users.data && users.data.length){\n            users.data.forEach(x=>{\n                vm.users.push(x);\n            });\n        }\n    });\n    \n    vm.alarmInfoFormGroup = vm.fb.group({\n        name: [null, [vm.validators.required]],\n        description: [null],\n        isActive: false,\n        devices: [null]\n    });\n    \n    vm.alarmUsersFormGroup = vm.fb.group({\n        users: [null],\n        phone: false,\n        email: false,\n        application: false\n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        let {name, description, isActive, devices} = vm.alarmInfoFormGroup.value;\n        let {users, phone, email, application} = vm.alarmUsersFormGroup.value;\n\n        let payload = {\n            name,\n            type: \"alertProfile\"\n        };\n        \n        let config = {\n            description: description,\n            isActive: isActive,\n            phone: phone,\n            email: email,\n            application: application\n        }\n        \n        assetService.saveAsset(payload).subscribe(response => {\n            attributeService.saveEntityAttributes(response.id, \"SERVER_SCOPE\", [{key: \"alarmConfig\", value: config}]).subscribe(()=>{\n                devices.forEach(x=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: x.id,\n                        type: 'AlarmConfigToDevice',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                })\n                users.forEach(x=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: x.id,\n                        type: 'AlarmConfigToInformingUser',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                })\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n                widgetContext.showSuccessToast(`Device config was created successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n            })\n        });\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "cca37572-e27f-4169-1d65-e0fdb4de2b52"
+              }, {
+                "name" : "alertRules",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet statesArray = params['statesArray'];\nlet prevState = statesArray[statesArray.length-2].stateId;\n\nlet newParams = {\n    stateId: prevState,\n    mode: params['mode'],\n    enabled: params['enabled']\n}\n\nwidgetContext.stateController.navigatePrevState(0);\nwidgetContext.$scope.ctx.stateController.updateState('default', newParams);\n",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "d3bdeff1-3770-0e92-8047-17df3272cbca"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "945bb80a-477c-462b-9280-8b15c7068613"
         }
       },
       "states" : {
@@ -478,14 +594,28 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "945bb80a-477c-462b-9280-8b15c7068613" : {
+                  "sizeX" : 36,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
+                "columns" : 36,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
@@ -500,6 +630,16 @@
             "resolveMultiple" : true,
             "assetTypes" : [ "Alarm config" ],
             "assetNameFilter" : ""
+          }
+        },
+        "896ed68e-843a-654a-c187-ccfc03d06f0a" : {
+          "id" : "896ed68e-843a-654a-c187-ccfc03d06f0a",
+          "alias" : "Selected entity",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "selectedEntity",
+            "defaultStateEntity" : null
           }
         }
       },
