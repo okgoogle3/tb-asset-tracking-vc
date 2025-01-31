@@ -518,6 +518,302 @@
           "row" : 0,
           "col" : 0,
           "id" : "945bb80a-477c-462b-9280-8b15c7068613"
+        },
+        "52b54bcb-6542-9ed8-2709-a671171d637a" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "896ed68e-843a-654a-c187-ccfc03d06f0a",
+              "dataKeys" : [ {
+                "name" : "alarmConfig",
+                "type" : "attribute",
+                "label" : "description",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6218276400598723,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value) {\n    let obj = JSON.parse(value);\n    return obj && obj['description'] ? obj['description'] : '';\n}\nreturn value;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "b7c1524d-3c02-3d93-5983-05abb0a3ef7c",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.2283767087976727
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.27794897937989615
+              }, {
+                "name" : "assignedLocation",
+                "type" : "attribute",
+                "label" : "assignedLocation",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.5727036027891015
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1728983985678,
+                  "endTimeMs" : 1729070385678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "16px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "<div class=\"dashboard-header-container\">\n    <div class=\"title\">Overview</div>\n    <button id=\"addNewUser\" class=\"create-asset-button\" *ngIf=\"localStorage.getItem('role'\n    ) === 'Admin'\">+ New user</button>\n</div>",
+              "markdownTextFunction" : "setTimeout(function() {\n    ctx.showId = function(id){\n        console.log(id);\n    }\n}, 0);\n\nlet devicesBlock = ``;\n\nconsole.log(data);\nconsole.log(ctx);\n\n\ndata.forEach(x=>{\n    if(x.entityType == \"DEVICE\"){\n        devicesBlock += `<div style=\"display: flex;justify-content:space-between;\">\n                            <span id=\"select\" (click)=\"showId('hello')\" style=\"color: #0C111D\">${x.entityName} - ${x.Type}</span>\n                            <span style=\"color: #344054\">${x.assignedLocation}</span>\n                        </div>`;\n    }\n});\n\nreturn `<div class=\"mainDiv\">\n            <div class=\"descriptionBlock\">\n                <span class=\"title\">Description</span>\n                <span class=\"text\">${data[0].description}</span>\n            </div>\n            <div class=\"mt10\">\n                <span class=\"title\">Assigned devices</span>\n                <div class=\"deviceBlock mt10\">` + devicesBlock + `</div>\n            </div>\n        </div>`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".mainDiv {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    padding: 0;\n}\n\n.mt10 {\n    margin-top: 10px;\n}\n\n.descriptionBlock {\n    height: auto;\n    color: #344054;\n    display: flex;\n    flex-direction: column;\n    border-bottom: 1px solid #D0D5DD;\n}\n\n.deviceBlock {\n    font-size: 16px;\n    height: auto;\n    display: flex;\n    flex-direction: column;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 24px;\n    font-weight: 600;\n    line-height: 32px;\n    text-align: left;\n}\n\n.text {\n    padding: 10px 0px;    \n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "addNewProfile",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"form-wrapper\">\n    <div class=\"form-header-panel\" style=\"width: 100%\">\n        <div class=\"title\">New alert profile</div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <mat-stepper linear labelPosition=\"bottom\" #stepper>\n        <mat-step [stepControl]=\"alarmInfoFormGroup\">\n            <form [formGroup]=\"alarmInfoFormGroup\">\n                <ng-template matStepLabel>Info</ng-template>\n                <div class=\"row\" style=\"justify-content:space-between;padding:10px;\">\n                    <span class=\"sub-title\">Info</span>\n                    <div>\n                        <span>Rule status: <b>Active</b></span>\n                        <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"isActive\"></mat-slide-toggle>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Name</mat-label>\n                            <input type=\"string\" matInput formControlName=\"name\" placeholder=\"Enter name\">\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Description</mat-label>\n                            <textarea matInput\n                                formControlName=\"description\"\n                                cdkTextareaAutosize\n                                #autosize=\"cdkTextareaAutosize\"\n                                cdkAutosizeMinRows=\"3\"\n                                cdkAutosizeMaxRows=\"5\"></textarea>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned devices</mat-label>\n                            <mat-select formControlName=\"devices\" multiple required>\n                                <mat-option *ngFor=\"let device of devices\" [value]=\"device\">{{device.name}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"btn-container\">\n                    <button mat-flat-button matStepperNext color=\"primary\" [disabled]=\"alarmInfoFormGroup.invalid\">Next</button>\n                </div>\n            </form>\n        </mat-step>\n        <mat-step [stepControl]=\"alarmUsersFormGroup\">\n            <form [formGroup]=\"alarmUsersFormGroup\">\n                <ng-template matStepLabel>Assigned users</ng-template>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned users</mat-label>\n                            <mat-select formControlName=\"users\" multiple required>\n                                <mat-option *ngFor=\"let user  of users\" [value]=\"user\">{{user.email}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via phone</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"phone\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via email</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"email\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification in application</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"application\"></mat-slide-toggle>\n                </div>\n                <div class=\"buttons-container\" style=\"margin-top:40px;\">\n                    <button mat-button matStepperPrevious>Back</button>\n                    <button mat-flat-button matStepperNext color=\"primary\" (click)=\"save()\" [disabled]=\"alarmUsersFormGroup.invalid\">Done</button>\n                </div>\n            </form>\n        </mat-step>\n    </mat-stepper>\n</div>",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.first-step-buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.first-step-buttons-container button:not(:last-child) {\n    margin-right: 8px;\n}\n\n.buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n}\n\n.menu-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.row {\n    display: flex;\n    width: 100%;\n    gap: 20px;\n}\n\n.row .input-wrapper {\n    flex: 1;\n}\n\ninput, mat-form-field, tb-phone-input  {\n    width: 100%;\n}\n\n.tb-default .mat-stepper-horizontal, .tb-default .mat-stepper-vertical {\n    background-color: transparent;\n}\n\n.btn-container {\n    display: flex;\n    justify-content: flex-end;\n    margin-top: 48px;\n}\n\n.sub-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.toggle {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    padding: 10px;\n    align-items: center;\n    height: 60px;\n    border-bottom: 1px solid #D0D5DD;\n}\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));  \nlet attributeService = $injector.get(widgetContext.servicesMap.get(\"attributeService\"));\nlet assetService = $injector.get(widgetContext.servicesMap.get(\"assetService\"));\nlet deviceService = $injector.get(widgetContext.servicesMap.get(\"deviceService\"));\nlet userService = $injector.get(widgetContext.servicesMap.get(\"userService\"));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get(\"entityRelationService\"));\n\nopendeviceConfigDialog();\n\nfunction opendeviceConfigDialog() {\n    customDialog.customDialog(htmlTemplate, CreateDeviceConfigDialogController).subscribe();\n}\n\nfunction CreateDeviceConfigDialogController(instance) {\n    let vm = instance;\n    \n    vm.devices = [];\n    vm.users = [];\n    \n    deviceService.getTenantDevices(widgetContext.pageLink(10000,0)).subscribe(devices => {\n        if(devices && devices.data && devices.data.length){\n            devices.data.forEach(x=>{\n                vm.devices.push(x);\n            });\n        }\n    });\n    \n    userService.getAllUserInfos(true, widgetContext.pageLink(10000,0)).subscribe(users => {\n        if(users && users.data && users.data.length){\n            users.data.forEach(x=>{\n                vm.users.push(x);\n            });\n        }\n    });\n    \n    vm.alarmInfoFormGroup = vm.fb.group({\n        name: [null, [vm.validators.required]],\n        description: [null],\n        isActive: false,\n        devices: [null]\n    });\n    \n    vm.alarmUsersFormGroup = vm.fb.group({\n        users: [null],\n        phone: false,\n        email: false,\n        application: false\n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        let {name, description, isActive, devices} = vm.alarmInfoFormGroup.value;\n        let {users, phone, email, application} = vm.alarmUsersFormGroup.value;\n\n        let payload = {\n            name,\n            type: \"alertProfile\"\n        };\n        \n        let config = {\n            description: description,\n            isActive: isActive,\n            phone: phone,\n            email: email,\n            application: application\n        }\n        \n        assetService.saveAsset(payload).subscribe(response => {\n            attributeService.saveEntityAttributes(response.id, \"SERVER_SCOPE\", [{key: \"alarmConfig\", value: config}]).subscribe(()=>{\n                devices.forEach(x=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: x.id,\n                        type: 'AlarmConfigToDevice',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                })\n                users.forEach(x=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: x.id,\n                        type: 'AlarmConfigToInformingUser',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                })\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n                widgetContext.showSuccessToast(`Device config was created successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n            })\n        });\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "cca37572-e27f-4169-1d65-e0fdb4de2b52"
+              }, {
+                "name" : "select",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "console.log($event, widgetContext, entityId, entityName, additionalParams, entityLabel)",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "3a15277d-342e-d961-5171-74cc2330bb22"
+              } ]
+            },
+            "borderRadius" : "12px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "52b54bcb-6542-9ed8-2709-a671171d637a"
+        },
+        "7754d4a0-6bee-5c14-462b-b937c9d7dab6" : {
+          "typeFullFqn" : "tenant.tab_navigation",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(255, 255, 255, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "5px",
+            "settings" : {
+              "menuItems" : [ {
+                "name" : "Device thresholds rules",
+                "action" : "device"
+              }, {
+                "name" : "Location thresholds rules",
+                "action" : "location"
+              } ]
+            },
+            "title" : "HTML Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "device",
+                "icon" : "info",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"device\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "58228898-f266-3c3f-a7d1-31b35e56c474"
+              }, {
+                "name" : "location",
+                "icon" : "domain",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"location\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "946f7d9e-4b4b-a976-fc39-1a60bc027fbe"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7754d4a0-6bee-5c14-462b-b937c9d7dab6"
+        },
+        "046e3022-3af4-0cc1-c61f-5ea423b2fd6f" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1726995514591,
+                  "endTimeMs" : 1727081914591
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(255, 255, 255, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
+              "markdownTextFunction" : "return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='device' || ctx.stateController.getStateParams().subState=='general'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='device' || ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"deviceThresholdAlarms\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='location'\" [ctx]=\"ctx\" stateId=\"locationThresholdAlarms\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-markdown-view div,\n.tb-markdown-view p {\n    line-height: normal;\n}\n.mat-content {\n    background-color: #fff !important;\n}\n.user-layout {\n    width: 100%;\n    height: 100%;\n    padding: 0px;\n}\n.table {\n    flex-grow: 1;\n    padding: 0px;\n}\n\n.user-layout-overflow {\n    /*min-height: 1000px;*/\n    height: 100%;\n    /*overflow: auto;*/\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "046e3022-3af4-0cc1-c61f-5ea423b2fd6f"
         }
       },
       "states" : {
@@ -600,6 +896,24 @@
                   "sizeY" : 2,
                   "row" : 0,
                   "col" : 0
+                },
+                "52b54bcb-6542-9ed8-2709-a671171d637a" : {
+                  "sizeX" : 11,
+                  "sizeY" : 13,
+                  "row" : 2,
+                  "col" : 0
+                },
+                "7754d4a0-6bee-5c14-462b-b937c9d7dab6" : {
+                  "sizeX" : 25,
+                  "sizeY" : 1,
+                  "row" : 2,
+                  "col" : 11
+                },
+                "046e3022-3af4-0cc1-c61f-5ea423b2fd6f" : {
+                  "sizeX" : 25,
+                  "sizeY" : 12,
+                  "row" : 3,
+                  "col" : 11
                 }
               },
               "gridSettings" : {
@@ -640,6 +954,25 @@
             "resolveMultiple" : false,
             "stateEntityParamName" : "selectedEntity",
             "defaultStateEntity" : null
+          }
+        },
+        "b7c1524d-3c02-3d93-5983-05abb0a3ef7c" : {
+          "id" : "b7c1524d-3c02-3d93-5983-05abb0a3ef7c",
+          "alias" : "Alert rule devices",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedEntity",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ {
+              "relationType" : null,
+              "entityTypes" : [ "DEVICE" ]
+            } ]
           }
         }
       },
