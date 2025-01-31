@@ -845,7 +845,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "const obj = { name: \"Alice\", age: 25, city: \"Wonderland\" };\n\n// Convert the object to a JSON string\nconst jsonString = JSON.stringify(obj);\n\n// Encode the JSON string in Base64\nconst base64Encoded = btoa(jsonString);\n\nconsole.log(base64Encoded)",
+                "customFunction" : "console.log(widgetContext);\n\nconst obj = { name: \"Alice\", age: 25, city: \"Wonderland\" };\n\n// Convert the object to a JSON string\nconst jsonString = JSON.stringify(obj);\n\n// Encode the JSON string in Base64\nconst base64Encoded = btoa(jsonString);\n\nconsole.log(base64Encoded)",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "aab374a9-2141-6fc1-6abf-2f478061ff8d"
