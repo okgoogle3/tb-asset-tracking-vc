@@ -4364,6 +4364,663 @@
           "row" : 0,
           "col" : 0,
           "id" : "a5941c10-938c-b9e3-bbcd-fe4013687198"
+        },
+        "a318aeff-abe9-ecde-9ad1-9a5364b40268" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "f9e4438c-85d7-dc29-f53e-7bb248b981df",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1736242008690,
+                  "endTimeMs" : 1736328408690
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class=\"card\">\n    <span class=\"cardTitle\">Events</span>\n</div>",
+              "cardCss" : ".card {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 100%;\n    width: 100%;\n}\n\n.time {\n    display: flex;\n    align-items: center;\n    color: #026AA2;\n    font-size: 16px;\n    font-weight: 500;\n    line-height: 24px;\n    letter-spacing: 0.01em;\n    text-align: left;\n    gap: 5px;\n    cursor: pointer;\n}\n\n.cardTitle {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n    padding: 10px 15px;\n}\n"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "changeTimeRange",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"myCard\" *ngIf=\"!(isLoading$ | async)\">\n    <div class=\"form-header-panel\" style=\"padding: 10px 15px\">\n        <div class=\"title\">Time range</div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <form [formGroup]=\"form\" class=\"myForm\">\n        <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">\n            <tb-datetime-period required appearance=\"outline\" formControlName=\"date\"></tb-datetime-period>\n        </div>\n        <div mat-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"end center\" style=\"padding: 0px;\">\n            <button mat-button mat-stroked-button color=\"primary\" (click)=\"cancel()\">\n                Cancel\n            </button>\n            <button mat-button mat-raised-button color=\"primary\" (click)=\"save()\" [disabled]=\"(isLoading$ | async) || form.invalid || !form.dirty\">\n                Apply\n            </button>\n        </div>\n    </form>\n</div> ",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.myCard {\n    padding: 10px;\n    height: 100%;\n    overflow: auto;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.myForm {\n    padding: 15px;\n}",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\n\nopenEditEntityDialog();\n\nfunction openEditEntityDialog() {\n    customDialog.customDialog(htmlTemplate, EditEntityDialogController).subscribe();\n}\n\nfunction EditEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.form = vm.fb.group({\n        date: [widgetContext.dashboard.dashboardTimewindow.history.fixedTimewindow ? widgetContext.dashboard.dashboardTimewindow.history.fixedTimewindow : null]\n    });\n\n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n\n    vm.save = function() {\n        widgetContext.dashboard.onUpdateTimewindow(vm.form.value.date.startTimeMs, vm.form.value.date.endTimeMs, 0);\n        vm.dialogRef.close(null);\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "d7109d1a-3ad4-ee9e-4912-b8ee7e69bd06"
+              } ]
+            },
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a318aeff-abe9-ecde-9ad1-9a5364b40268"
+        },
+        "0515bb85-82b7-73b7-d345-719e8c302eeb" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1737465922628,
+                  "endTimeMs" : 1737552322628
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "basic",
+                "showLabel" : true,
+                "label" : "Time range",
+                "showIcon" : true,
+                "icon" : "schedule",
+                "iconSize" : 20,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"myCard\" *ngIf=\"!(isLoading$ | async)\">\n    <div class=\"form-header-panel\" style=\"padding: 10px 15px\">\n        <div class=\"title\">Time range</div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <form [formGroup]=\"form\" class=\"myForm\">\n        <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">\n            <tb-datetime-period required appearance=\"outline\" formControlName=\"date\"></tb-datetime-period>\n        </div>\n        <div mat-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"end center\" style=\"padding: 0px;\">\n            <button mat-button mat-stroked-button color=\"primary\" (click)=\"cancel()\">\n                Cancel\n            </button>\n            <button mat-button mat-raised-button color=\"primary\" (click)=\"save()\" [disabled]=\"(isLoading$ | async) || form.invalid || !form.dirty\">\n                Apply\n            </button>\n        </div>\n    </form>\n</div> ",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.myCard {\n    padding: 10px;\n    height: 100%;\n    overflow: auto;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.myForm {\n    padding: 15px;\n}",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\n\nopenEditEntityDialog();\n\nfunction openEditEntityDialog() {\n    customDialog.customDialog(htmlTemplate, EditEntityDialogController).subscribe();\n}\n\nfunction EditEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.form = vm.fb.group({\n        date: [widgetContext.dashboard.dashboardTimewindow.history.fixedTimewindow ? widgetContext.dashboard.dashboardTimewindow.history.fixedTimewindow : null]\n    });\n\n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n\n    vm.save = function() {\n        widgetContext.dashboard.onUpdateTimewindow(vm.form.value.date.startTimeMs, vm.form.value.date.endTimeMs, 0);\n        vm.dialogRef.close(null);\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "413cff86-7318-50b6-0312-ccc60fca93bb"
+              } ],
+              "headerButton" : [ ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "0515bb85-82b7-73b7-d345-719e8c302eeb"
+        },
+        "144d1dfb-84bc-fbb4-7528-876f70384646" : {
+          "typeFullFqn" : "system.cards.timeseries_table",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 6.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "f9e4438c-85d7-dc29-f53e-7bb248b981df",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "result",
+                "type" : "timeseries",
+                "label" : "Status",
+                "color" : "#f44336",
+                "settings" : {
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "return {\n    \"height\": \"60px\",\n    \"border\": \"none\"\n}",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "let result;\n\nif(rowData.message && JSON.parse(rowData.message) && JSON.parse(rowData.message).assetName){\n    result = `<div style=\"display: flex;align-items:center;gap: 15px;\">\n                <img src=\"/api/images/public/tNSMFQAEEsYbs4jk2B7H1OHAH1qLT0tn\" alt=\"eventMarker.png\" />\n                <div style=\"display: flex; flex-direction: column;\">\n                    <span style=\"font-size: 14px;font-weight: 400;line-height: 20px;text-align: left;color:#667085;\">\n                        ${moment(rowData.Timestamp).format(\"DD.MM.yyyy HH:mm\")}\n                    </span>\n                    <span style=\"font-size: 16px;font-weight: 400;line-height: 24px;text-align: left;color: #0C111D\">\n                        ${JSON.parse(rowData.message).assetName + \" \" + JSON.parse(rowData.message).status + \" \" + JSON.parse(rowData.message).areaName}\n                    </span>\n                </div>\n            </div>`; \n}\n\nif(rowData.alertTelemetry && JSON.parse(rowData.alertTelemetry) && JSON.parse(rowData.alertTelemetry).type){\n    result = `<div style=\"display: flex;align-items:center;gap: 15px;\">\n                <img src=\"/api/images/public/48OGvOIHIOVAH85HNctnNbf8CMQI1kWx\" alt=\"alarmMarker.png\" />\n                <div style=\"display: flex; flex-direction: column;\">\n                    <span style=\"font-size: 14px;font-weight: 400;line-height: 20px;text-align: left;color:#667085;\">\n                        ${moment(rowData.Timestamp).format(\"DD.MM.yyyy HH:mm\")}\n                    </span>\n                    <span style=\"font-size: 16px;font-weight: 500;line-height: 24px;letter-spacing: 0.01em;color: #B42318\">${JSON.parse(rowData.alertTelemetry).type}</span>\n                </div>\n            </div>`;\n}\n\nreturn result ? result : \"\";",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.6876388653865013,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "message",
+                "type" : "timeseries",
+                "label" : "message",
+                "color" : "#2196f3",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "",
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.4668002226948087,
+                "decimals" : 0,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "alertTelemetry",
+                "type" : "timeseries",
+                "label" : "alertTelemetry",
+                "color" : "#4caf50",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "",
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.4161949460841523,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "realtime" : {
+                "realtimeType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 5000,
+                "timewindowMs" : 600000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1736235058892,
+                  "endTimeMs" : 1736321458892
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "enableSearch" : false,
+              "enableSelectColumnDisplay" : false,
+              "enableStickyHeader" : false,
+              "enableStickyAction" : false,
+              "showCellActionsMenu" : false,
+              "reserveSpaceForHiddenAction" : "true",
+              "showTimestamp" : false,
+              "dateFormat" : {
+                "format" : "yyyy-MM-dd HH:mm:ss"
+              },
+              "timestampExportOption" : "onlyVisible",
+              "displayPagination" : true,
+              "useEntityLabel" : false,
+              "defaultPageSize" : 10,
+              "hideEmptyLines" : true,
+              "disableStickyHeader" : false,
+              "useRowStyleFunction" : false,
+              "rowStyleFunction" : "return {\n    border: \"none\"\n}"
+            },
+            "title" : "Events",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "padding-top" : "10px"
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "displayTimewindow" : false,
+            "configMode" : "advanced",
+            "titleFont" : {
+              "size" : 20,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "600",
+              "style" : null
+            },
+            "titleColor" : null,
+            "titleIcon" : null,
+            "enableDataExport" : false,
+            "titleTooltip" : "",
+            "borderRadius" : "0",
+            "widgetCss" : "::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {\n    background-color: #fff; \n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "144d1dfb-84bc-fbb4-7528-876f70384646"
+        },
+        "221f57ec-4a23-cd9d-722b-c6b89755dd30" : {
+          "typeFullFqn" : "tenant.test",
+          "type" : "timeseries",
+          "sizeX" : 10,
+          "sizeY" : 6.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "f9e4438c-85d7-dc29-f53e-7bb248b981df",
+              "dataKeys" : [ {
+                "name" : "latitude",
+                "type" : "timeseries",
+                "label" : "latitude",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.006244065715799385
+              }, {
+                "name" : "longitude",
+                "type" : "timeseries",
+                "label" : "longitude",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5624797037547689
+              }, {
+                "name" : "alertTelemetry",
+                "type" : "timeseries",
+                "label" : "alertTelemetry",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.9355184043546441
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.06285936591790264
+              }, {
+                "name" : "status",
+                "type" : "attribute",
+                "label" : "status",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.7595887966113428
+              }, {
+                "name" : "alertActivity",
+                "type" : "attribute",
+                "label" : "alertActivity",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.33793240319597295
+              }, {
+                "name" : "movement",
+                "type" : "timeseries",
+                "label" : "movement",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.8325816366798175
+              } ]
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "851e222b-288e-ec60-253a-f71a6f49c0fc",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.32148994601703995
+              }, {
+                "name" : "color",
+                "type" : "attribute",
+                "label" : "color",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.4393660605945713
+              } ]
+            } ],
+            "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "realtime" : {
+                "realtimeType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 5000,
+                "timewindowMs" : 600000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1736235072479,
+                  "endTimeMs" : 1736321472479
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 500
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "provider" : "openstreet-map",
+              "gmApiKey" : "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
+              "gmDefaultMapType" : "roadmap",
+              "mapProvider" : "CartoDB.Positron",
+              "useCustomProvider" : false,
+              "customProviderTileUrl" : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "mapProviderHere" : "HERE.normalDay",
+              "credentials" : {
+                "useV3" : true,
+                "app_id" : "AhM6TzD9ThyK78CT3ptx",
+                "app_code" : "p6NPiITB3Vv0GMUFnkLOOg",
+                "apiKey" : "kVXykxAfZ6LS4EbCTO02soFVfjA7HoBzNVVH9u7nzoE"
+              },
+              "mapImageUrl" : "tb-image;/api/images/system/label_widget_system_widget_background.svg",
+              "imageEntityAlias" : "",
+              "imageUrlAttribute" : "",
+              "tmApiKey" : "84d6d83e0e51e481e50454ccbe8986b",
+              "tmDefaultMapType" : "roadmap",
+              "normalizationStep" : 1000,
+              "latKeyName" : "latitude",
+              "lngKeyName" : "longitude",
+              "showTooltip" : false,
+              "tooltipColor" : "#fff",
+              "tooltipFontColor" : "#000",
+              "tooltipOpacity" : 1,
+              "useTooltipFunction" : false,
+              "tooltipPattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}",
+              "tooltipFunction" : null,
+              "autocloseTooltip" : true,
+              "rotationAngle" : 0,
+              "showLabel" : false,
+              "useLabelFunction" : false,
+              "label" : "${entityName}",
+              "labelFunction" : null,
+              "useMarkerImageFunction" : true,
+              "markerImage" : null,
+              "markerImageSize" : 34,
+              "markerImageFunction" : "var type = data['Type'];\nvar isAlarm = data['alertActivity'];\nvar isActive = data['status'];\nvar isMovement = data['movement'];\n\nlet index;\n\nif (type == 'Tool'){\n    index = 0;\n} else if(type == \"Box\"){\n    index = 4;\n} else if(type == \"Worker\"){\n    index = 8;\n} else if(type == \"Loader\"){\n    index = 12;\n}\nif(isAlarm == \"true\"){\n    index += 1;\n} else {\n    if(isActive != \"true\"){\n        index += 2;\n    } else if(isMovement == \"true\"){\n        index += 3;\n    }\n}\n\nreturn {\n    url: images[index],\n    size: 28\n}",
+              "markerImages" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg", "tb-image;/api/images/tenant/boxOnline.svg", "tb-image;/api/images/tenant/boxAlarm.svg", "tb-image;/api/images/tenant/Map bullet.svg", "tb-image;/api/images/tenant/Map bullet-1.svg", "tb-image;/api/images/tenant/workerOnline.svg", "tb-image;/api/images/tenant/workerAlarm.svg", "tb-image;/api/images/tenant/workerOffline.svg", "tb-image;/api/images/tenant/Map bullet-2.svg", "tb-image;/api/images/tenant/loaderOnline.svg", "tb-image;/api/images/tenant/loaderAlarm.svg", "tb-image;/api/images/tenant/loaderOffline.svg", "tb-image;/api/images/tenant/Map bullet (2).svg" ],
+              "strokeWeight" : 2,
+              "strokeOpacity" : 1,
+              "useColorFunction" : false,
+              "color" : "#026AA2",
+              "colorFunction" : null,
+              "usePolylineDecorator" : false,
+              "decoratorSymbol" : "arrowHead",
+              "decoratorSymbolSize" : 10,
+              "useDecoratorCustomColor" : false,
+              "decoratorCustomColor" : "#000",
+              "decoratorOffset" : "20px",
+              "endDecoratorOffset" : "20px",
+              "decoratorRepeat" : "20px",
+              "showPoints" : false,
+              "pointColor" : null,
+              "useColorPointFunction" : false,
+              "colorPointFunction" : null,
+              "pointSize" : 10,
+              "usePointAsAnchor" : false,
+              "pointAsAnchorFunction" : null,
+              "pointTooltipOnRightPanel" : true,
+              "showPolygon" : true,
+              "polygonKeyName" : "perimeter",
+              "editablePolygon" : false,
+              "showPolygonLabel" : false,
+              "showPolygonTooltip" : false,
+              "polygonColor" : "#3388ff",
+              "polygonOpacity" : 0.5,
+              "usePolygonColorFunction" : true,
+              "polygonColorFunction" : "return data.color;",
+              "polygonStrokeColor" : "#3388ff",
+              "polygonStrokeOpacity" : 1,
+              "polygonStrokeWeight" : 1,
+              "usePolygonStrokeColorFunction" : true,
+              "polygonStrokeColorFunction" : "return data.color;",
+              "showCircle" : false,
+              "circleKeyName" : "perimeter",
+              "editableCircle" : false,
+              "showCircleLabel" : false,
+              "useCircleLabelFunction" : false,
+              "circleLabel" : "${entityName}",
+              "circleLabelFunction" : null,
+              "showCircleTooltip" : false,
+              "showCircleTooltipAction" : "click",
+              "autoCloseCircleTooltip" : true,
+              "useCircleTooltipFunction" : false,
+              "circleTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "circleTooltipFunction" : null,
+              "circleFillColor" : "#3388ff",
+              "circleFillColorOpacity" : 0.2,
+              "useCircleFillColorFunction" : false,
+              "circleFillColorFunction" : null,
+              "circleStrokeColor" : "#3388ff",
+              "circleStrokeOpacity" : 1,
+              "circleStrokeWeight" : 3,
+              "useCircleStrokeColorFunction" : false,
+              "circleStrokeColorFunction" : null
+            },
+            "title" : "Test",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileHeight" : null,
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD",
+              "margin-left" : "5px"
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "legendConfig" : {
+              "position" : "bottom",
+              "showMin" : false,
+              "showMax" : false,
+              "showAvg" : false,
+              "showTotal" : false
+            },
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "borderRadius" : "12px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "221f57ec-4a23-cd9d-722b-c6b89755dd30"
         }
       },
       "states" : {
@@ -4741,6 +5398,56 @@
               }
             }
           }
+        },
+        "assetEventHistoryWidgets" : {
+          "name" : "assetEventHistoryWidgets",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "a318aeff-abe9-ecde-9ad1-9a5364b40268" : {
+                  "sizeX" : 4,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "0515bb85-82b7-73b7-d345-719e8c302eeb" : {
+                  "sizeX" : 3,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 4
+                },
+                "144d1dfb-84bc-fbb4-7528-876f70384646" : {
+                  "sizeX" : 7,
+                  "sizeY" : 10,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "221f57ec-4a23-cd9d-722b-c6b89755dd30" : {
+                  "sizeX" : 17,
+                  "sizeY" : 11,
+                  "mobileHeight" : null,
+                  "row" : 0,
+                  "col" : 7
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#FFFFFF",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
         }
       },
       "entityAliases" : {
@@ -4817,6 +5524,25 @@
             "fetchLastLevelOnly" : true,
             "filters" : [ {
               "relationType" : "GeofenceToZone",
+              "entityTypes" : [ "ASSET" ]
+            } ]
+          }
+        },
+        "851e222b-288e-ec60-253a-f71a6f49c0fc" : {
+          "id" : "851e222b-288e-ec60-253a-f71a6f49c0fc",
+          "alias" : "Asset location zones",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedEntity",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "TO",
+            "maxLevel" : 2,
+            "fetchLastLevelOnly" : true,
+            "filters" : [ {
+              "relationType" : "ZoneToLocation",
               "entityTypes" : [ "ASSET" ]
             } ]
           }
