@@ -4617,6 +4617,23 @@
               }
             }
           }
+        },
+        "assetDetailsEventHistory" : {
+          "name" : "assetDetailsEventHistory",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
         }
       },
       "entityAliases" : {
