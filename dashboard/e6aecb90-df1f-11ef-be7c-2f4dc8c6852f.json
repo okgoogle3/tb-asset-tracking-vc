@@ -331,7 +331,7 @@
       "states" : {
         "alertsRules" : {
           "name" : "alertsRules",
-          "root" : true,
+          "root" : false,
           "layouts" : {
             "main" : {
               "widgets" : {
@@ -362,6 +362,40 @@
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "alertsRulesDetails" : {
+          "name" : "alertsRulesDetails",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "default" : {
+          "name" : "default",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
               }
             }
           }
