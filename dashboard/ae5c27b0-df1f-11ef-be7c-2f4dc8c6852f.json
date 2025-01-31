@@ -2268,7 +2268,7 @@
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "#FFFFFF",
                 "columns" : 24,
                 "margin" : 0,
                 "outerMargin" : true,
