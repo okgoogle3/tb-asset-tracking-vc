@@ -479,6 +479,318 @@
           "row" : 0,
           "col" : 0,
           "id" : "6a1cdc22-ab9c-6d35-0fba-7641225f85a0"
+        },
+        "422dea38-a73f-32a4-ee98-26c57a30d46b" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "f9e4438c-85d7-dc29-f53e-7bb248b981df",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.7573626345227258,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "modelNumber",
+                "type" : "attribute",
+                "label" : "modelNumber",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5855198420885239
+              }, {
+                "name" : "serialNumber",
+                "type" : "attribute",
+                "label" : "serialNumber",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.8006272733065871
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "type",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.9735432925066065,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1726559918694,
+                  "endTimeMs" : 1726646318694
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
+              "markdownTextFunction" : "const widgetData = data[0];\n\nconst entityName = widgetData.entityName;\n\nconst items = [\n    {\n        label: \"Type\",\n        value: widgetData.modelNumber\n    }\n];\n\nreturn `\n    <div class=\"header-container\">\n        <div class=\"path\">\n            <span class=\"path-assets-label\" id=\"assets\" style=\"cursor: pointer\">Assets</span>\n            <span class=\"path-assets-label\">/</span>\n            <span class=\"path-entity-name\">${entityName}</span>\n        </div>\n        <div class=\"title-entity-name\">\n            ${entityName}\n        </div>\n    </div>`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".header-container {\n    overflow: hidden;\n    background-color: transparent;\n    padding-left: 10px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    height: 100%;\n}\n\n.path {\n    margin-bottom: 0px;\n}\n\n.path span:not(:last-child) {\n    margin-right: 6px;\n}\n\n.path-assets-label {\n    color: #667085;\n    font-size: 14px;\n    line-height: 20px;\n}\n\n.path-entity-name  {\n    color: #0C111D;\n    font-size: 14px;\n    font-weight: 500;\n    line-height: 20px;\n}\n\n.title-entity-name {\n    color: #0C111D;\n    font-size: 36px;\n    font-weight: 600;\n    line-height: 44px;\n    margin-bottom: 0px;\n}\n\n.header-container {\n    background-color: transparent;\n}\n"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "background-color" : "transparent"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "assets",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet statesArray = params['statesArray'];\nlet prevState = statesArray[statesArray.length-2].stateId;\n\nlet newParams = {\n    stateId: prevState,\n    mode: params['mode'],\n    enabled: params['enabled']\n}\n\nwidgetContext.stateController.navigatePrevState(0);\nwidgetContext.$scope.ctx.stateController.updateState('default', newParams);\n",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "094f2d99-3619-7e7b-f649-9288217eebe6"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "422dea38-a73f-32a4-ee98-26c57a30d46b"
+        },
+        "6cbeacfc-d833-c6f1-8803-8d0d09517938" : {
+          "typeFullFqn" : "tenant.tab_navigation",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(255, 255, 255, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0 10px",
+            "settings" : {
+              "menuItems" : [ {
+                "name" : "General",
+                "action" : "general"
+              }, {
+                "name" : "Telemetry",
+                "action" : "telemetry"
+              }, {
+                "name" : "Route history",
+                "action" : "eventHistory"
+              }, {
+                "name" : "Alerts",
+                "action" : "alerts"
+              } ],
+              "showDescription" : false
+            },
+            "title" : "HTML Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "general",
+                "icon" : "info",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"general\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "c04f30f5-18fa-0b32-b397-11f4febda4b1"
+              }, {
+                "name" : "telemetry",
+                "icon" : "show_chart",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"telemetry\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "529badfd-1e2f-62f7-80c3-44802645da2d"
+              }, {
+                "name" : "eventHistory",
+                "icon" : "event",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<!--=======================================================================-->\n<!--=====  There are two example templates: for edit and add entity   =====-->\n<!--=======================================================================-->\n<!--========================  Edit entity example  ========================-->\n<!--=======================================================================-->\n<!-- -->\n<!--<form #editEntityForm=\"ngForm\" [formGroup]=\"editEntityFormGroup\"-->\n<!--      (ngSubmit)=\"save()\"  class=\"edit-entity-form\">-->\n<!--    <mat-toolbar fxLayout=\"row\" color=\"primary\">-->\n<!--        <h2>Edit {{entityType.toLowerCase()}} {{entityName}}</h2>-->\n<!--        <span fxFlex></span>-->\n<!--        <button mat-icon-button (click)=\"cancel()\" type=\"button\">-->\n<!--            <mat-icon class=\"material-icons\">close</mat-icon>-->\n<!--        </button>-->\n<!--    </mat-toolbar>-->\n<!--    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">-->\n<!--    </mat-progress-bar>-->\n<!--    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>-->\n<!--    <div mat-dialog-content fxLayout=\"column\">-->\n<!--        <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--            <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                <mat-label>Entity Name</mat-label>-->\n<!--                <input matInput formControlName=\"entityName\" required readonly=\"\">-->\n<!--            </mat-form-field>-->\n<!--            <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                <mat-label>Entity Label</mat-label>-->\n<!--                <input matInput formControlName=\"entityLabel\">-->\n<!--            </mat-form-field>-->\n<!--        </div>-->\n<!--        <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--            <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                <mat-label>Entity Type</mat-label>-->\n<!--                <input matInput formControlName=\"entityType\" readonly>-->\n<!--            </mat-form-field>-->\n<!--            <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                <mat-label>Type</mat-label>-->\n<!--                <input matInput formControlName=\"type\" readonly>-->\n<!--            </mat-form-field>-->\n<!--        </div>-->\n<!--        <div formGroupName=\"attributes\" fxLayout=\"column\">-->\n<!--            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--                <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                    <mat-label>Latitude</mat-label>-->\n<!--                    <input type=\"number\" step=\"any\" matInput formControlName=\"latitude\">-->\n<!--                </mat-form-field>-->\n<!--                <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                    <mat-label>Longitude</mat-label>-->\n<!--                    <input type=\"number\" step=\"any\" matInput formControlName=\"longitude\">-->\n<!--                </mat-form-field>-->\n<!--            </div>-->\n<!--            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--                <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                    <mat-label>Address</mat-label>-->\n<!--                    <input matInput formControlName=\"address\">-->\n<!--                </mat-form-field>-->\n<!--                <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                    <mat-label>Owner</mat-label>-->\n<!--                    <input matInput formControlName=\"owner\">-->\n<!--                </mat-form-field>-->\n<!--            </div>-->\n<!--            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--                <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                    <mat-label>Integer Value</mat-label>-->\n<!--                    <input type=\"number\" step=\"1\" matInput formControlName=\"number\">-->\n<!--                    <mat-error *ngIf=\"editEntityFormGroup.get('attributes.number').hasError('pattern')\">-->\n<!--                        Invalid integer value.-->\n<!--                    </mat-error>-->\n<!--                </mat-form-field>-->\n<!--                <div class=\"boolean-value-input\" fxLayout=\"column\" fxLayoutAlign=\"center start\" fxFlex>-->\n<!--                    <label class=\"checkbox-label\">Boolean Value</label>-->\n<!--                    <mat-checkbox formControlName=\"booleanValue\" style=\"margin-bottom: 40px;\">-->\n<!--                        {{ (editEntityFormGroup.get('attributes.booleanValue').value ? \"value.true\" : \"value.false\") | translate }}-->\n<!--                    </mat-checkbox>-->\n<!--                </div>-->\n<!--            </div>-->\n<!--        </div>-->\n<!--        <div class=\"relations-list old-relations\">-->\n<!--            <div class=\"mat-body-1\" style=\"padding-bottom: 10px; color: rgba(0,0,0,0.57);\">Relations</div>-->\n<!--            <div class=\"body\" [fxShow]=\"oldRelations().length\">-->\n<!--                <div class=\"row\" fxLayout=\"row\" fxLayoutAlign=\"start center\" formArrayName=\"oldRelations\" -->\n<!--                     *ngFor=\"let relation of oldRelations().controls; let i = index;\">-->\n<!--                    <div [formGroupName]=\"i\" class=\"mat-elevation-z2\" fxFlex fxLayout=\"row\" style=\"padding: 5px 0 5px 5px;\">-->\n<!--                        <div fxFlex fxLayout=\"column\">-->\n<!--                            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--                                <mat-form-field class=\"mat-block\" style=\"min-width: 100px;\">-->\n<!--                                    <mat-label>Direction</mat-label>-->\n<!--                                    <mat-select formControlName=\"direction\" name=\"direction\">-->\n<!--                                        <mat-option *ngFor=\"let direction of entitySearchDirection | keyvalue\" [value]=\"direction.value\">-->\n<!--                                            {{ (\"relation.search-direction.\" + direction.value) | translate}}-->\n<!--                                        </mat-option>-->\n<!--                                    </mat-select>-->\n<!--                                    <mat-error *ngIf=\"relation.get('direction').hasError('required')\">-->\n<!--                                        Relation direction is required.-->\n<!--                                    </mat-error>-->\n<!--                                </mat-form-field>-->\n<!--                                <tb-relation-type-autocomplete-->\n<!--                                        fxFlex class=\"mat-block\"-->\n<!--                                        formControlName=\"relationType\"-->\n<!--                                        required=\"true\">-->\n<!--                                </tb-relation-type-autocomplete>-->\n<!--                            </div>-->\n<!--                            <div fxLayout=\"row\" fxLayout.xs=\"column\">-->\n<!--                                <tb-entity-select-->\n<!--                                        fxFlex class=\"mat-block\"-->\n<!--                                        required=\"true\"-->\n<!--                                        formControlName=\"relatedEntity\">-->\n<!--                                </tb-entity-select>-->\n<!--                            </div>-->\n<!--                        </div>-->\n<!--                        <div fxLayout=\"column\" fxLayoutAlign=\"center center\">-->\n<!--                            <button mat-icon-button color=\"primary\"-->\n<!--                                    aria-label=\"Remove\"-->\n<!--                                    type=\"button\"-->\n<!--                                    (click)=\"removeOldRelation(i, relation.value)\"-->\n<!--                                    matTooltip=\"Remove relation\"-->\n<!--                                    matTooltipPosition=\"above\">-->\n<!--                                <mat-icon>close</mat-icon>-->\n<!--                            </button>-->\n<!--                        </div>-->\n<!--                    </div>-->\n<!--                </div>-->\n<!--            </div>-->\n<!--        </div>-->\n<!--        <div class=\"relations-list\">-->\n<!--            <div class=\"mat-body-1\" style=\"padding-bottom: 10px; color: rgba(0,0,0,0.57);\">New Relations</div>-->\n<!--            <div class=\"body\" [fxShow]=\"relations().length\">-->\n<!--                <div class=\"row\" fxLayout=\"row\" fxLayoutAlign=\"start center\" formArrayName=\"relations\" *ngFor=\"let relation of relations().controls; let i = index;\">-->\n<!--                    <div [formGroupName]=\"i\" class=\"mat-elevation-z2\" fxFlex fxLayout=\"row\" style=\"padding: 5px 0 5px 5px;\">-->\n<!--                        <div fxFlex fxLayout=\"column\">-->\n<!--                            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--                                <mat-form-field class=\"mat-block\" style=\"min-width: 100px;\">-->\n<!--                                    <mat-label>Direction</mat-label>-->\n<!--                                    <mat-select formControlName=\"direction\" name=\"direction\">-->\n<!--                                        <mat-option *ngFor=\"let direction of entitySearchDirection | keyvalue\" [value]=\"direction.value\">-->\n<!--                                            {{ (\"relation.search-direction.\" + direction.value) | translate}}-->\n<!--                                        </mat-option>-->\n<!--                                    </mat-select>-->\n<!--                                    <mat-error *ngIf=\"relation.get('direction').hasError('required')\">-->\n<!--                                        Relation direction is required.-->\n<!--                                    </mat-error>-->\n<!--                                </mat-form-field>-->\n<!--                                <tb-relation-type-autocomplete-->\n<!--                                        fxFlex class=\"mat-block\"-->\n<!--                                        formControlName=\"relationType\"-->\n<!--                                        [required]=\"true\">-->\n<!--                                </tb-relation-type-autocomplete>-->\n<!--                            </div>-->\n<!--                            <div fxLayout=\"row\" fxLayout.xs=\"column\">-->\n<!--                                <tb-entity-select-->\n<!--                                        fxFlex class=\"mat-block\"-->\n<!--                                        [required]=\"true\"-->\n<!--                                        formControlName=\"relatedEntity\">-->\n<!--                                </tb-entity-select>-->\n<!--                            </div>-->\n<!--                        </div>-->\n<!--                        <div fxLayout=\"column\" fxLayoutAlign=\"center center\">-->\n<!--                            <button mat-icon-button color=\"primary\"-->\n<!--                                    aria-label=\"Remove\"-->\n<!--                                    type=\"button\"-->\n<!--                                    (click)=\"removeRelation(i)\"-->\n<!--                                    matTooltip=\"Remove relation\"-->\n<!--                                    matTooltipPosition=\"above\">-->\n<!--                                <mat-icon>close</mat-icon>-->\n<!--                            </button>-->\n<!--                        </div>-->\n<!--                    </div>-->\n<!--                </div>-->\n<!--            </div>-->\n<!--            <div>-->\n<!--                <button mat-raised-button color=\"primary\"-->\n<!--                        type=\"button\"-->\n<!--                        (click)=\"addRelation()\"-->\n<!--                        matTooltip=\"Add Relation\"-->\n<!--                        matTooltipPosition=\"above\">-->\n<!--                    Add-->\n<!--                </button>-->\n<!--            </div>-->\n<!--        </div>-->\n<!--    </div>-->\n<!--    <div mat-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"end center\">-->\n<!--        <button mat-button color=\"primary\"-->\n<!--                type=\"button\"-->\n<!--                [disabled]=\"(isLoading$ | async)\"-->\n<!--                (click)=\"cancel()\" cdkFocusInitial>-->\n<!--            Cancel-->\n<!--        </button>-->\n<!--        <button mat-button mat-raised-button color=\"primary\"-->\n<!--                type=\"submit\"-->\n<!--                [disabled]=\"(isLoading$ | async) || editEntityForm.invalid || !editEntityForm.dirty\">-->\n<!--            Save-->\n<!--        </button>-->\n<!--    </div>-->\n<!--</form>-->\n<!---->\n<!--========================================================================-->\n<!--=========================  Add entity example  =========================-->\n<!--========================================================================-->\n<!---->\n<!--<form #addEntityForm=\"ngForm\" [formGroup]=\"addEntityFormGroup\"-->\n<!--      (ngSubmit)=\"save()\" class=\"add-entity-form\">-->\n<!--    <mat-toolbar fxLayout=\"row\" color=\"primary\">-->\n<!--        <h2>Add entity</h2>-->\n<!--        <span fxFlex></span>-->\n<!--        <button mat-icon-button (click)=\"cancel()\" type=\"button\">-->\n<!--            <mat-icon class=\"material-icons\">close</mat-icon>-->\n<!--        </button>-->\n<!--    </mat-toolbar>-->\n<!--    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">-->\n<!--    </mat-progress-bar>-->\n<!--    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>-->\n<!--    <div mat-dialog-content fxLayout=\"column\">-->\n<!--        <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--            <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                <mat-label>Entity Name</mat-label>-->\n<!--                <input matInput formControlName=\"entityName\" required>-->\n<!--                <mat-error *ngIf=\"addEntityFormGroup.get('entityName').hasError('required')\">-->\n<!--                    Entity name is required.-->\n<!--                </mat-error>-->\n<!--            </mat-form-field>-->\n<!--            <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                <mat-label>Entity Label</mat-label>-->\n<!--                <input matInput formControlName=\"entityLabel\" >-->\n<!--            </mat-form-field>-->\n<!--        </div>-->\n<!--        <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--            <tb-entity-type-select-->\n<!--                    class=\"mat-block\"-->\n<!--                    formControlName=\"entityType\"-->\n<!--                    [showLabel]=\"true\"-->\n<!--                    [allowedEntityTypes]=\"allowedEntityTypes\"-->\n<!--            ></tb-entity-type-select>-->\n<!--            <tb-entity-subtype-autocomplete-->\n<!--                    fxFlex *ngIf=\"addEntityFormGroup.get('entityType').value == 'ASSET'\"-->\n<!--                    class=\"mat-block\"-->\n<!--                    formControlName=\"type\"-->\n<!--                    [required]=\"true\"-->\n<!--                    [entityType]=\"'ASSET'\"-->\n<!--            ></tb-entity-subtype-autocomplete>-->\n<!--            <tb-entity-subtype-autocomplete-->\n<!--                    fxFlex *ngIf=\"addEntityFormGroup.get('entityType').value != 'ASSET'\"-->\n<!--                    class=\"mat-block\"-->\n<!--                    formControlName=\"type\"-->\n<!--                    [required]=\"true\"-->\n<!--                    [entityType]=\"'DEVICE'\"-->\n<!--            ></tb-entity-subtype-autocomplete>-->\n<!--        </div>-->\n<!--        <div formGroupName=\"attributes\" fxLayout=\"column\">-->\n<!--            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--                <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                    <mat-label>Latitude</mat-label>-->\n<!--                    <input type=\"number\" step=\"any\" matInput formControlName=\"latitude\">-->\n<!--                </mat-form-field>-->\n<!--                <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                    <mat-label>Longitude</mat-label>-->\n<!--                    <input type=\"number\" step=\"any\" matInput formControlName=\"longitude\">-->\n<!--                </mat-form-field>-->\n<!--            </div>-->\n<!--            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--                <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                    <mat-label>Address</mat-label>-->\n<!--                    <input matInput formControlName=\"address\">-->\n<!--                </mat-form-field>-->\n<!--                <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                    <mat-label>Owner</mat-label>-->\n<!--                    <input matInput formControlName=\"owner\">-->\n<!--                </mat-form-field>-->\n<!--            </div>-->\n<!--            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--                <mat-form-field fxFlex class=\"mat-block\">-->\n<!--                    <mat-label>Integer Value</mat-label>-->\n<!--                    <input type=\"number\" step=\"1\" matInput formControlName=\"number\">-->\n<!--                    <mat-error *ngIf=\"addEntityFormGroup.get('attributes.number').hasError('pattern')\">-->\n<!--                        Invalid integer value.-->\n<!--                    </mat-error>-->\n<!--                </mat-form-field>-->\n<!--                <div class=\"boolean-value-input\" fxLayout=\"column\" fxLayoutAlign=\"center start\" fxFlex>-->\n<!--                    <label class=\"checkbox-label\">Boolean Value</label>-->\n<!--                    <mat-checkbox formControlName=\"booleanValue\" style=\"margin-bottom: 40px;\">-->\n<!--                        {{ (addEntityFormGroup.get('attributes.booleanValue').value ? \"value.true\" : \"value.false\") | translate }}-->\n<!--                    </mat-checkbox>-->\n<!--                </div>-->\n<!--            </div>-->\n<!--        </div>-->\n<!--        <div class=\"relations-list\">-->\n<!--            <div class=\"mat-body-1\" style=\"padding-bottom: 10px; color: rgba(0,0,0,0.57);\">Relations</div>-->\n<!--            <div class=\"body\" [fxShow]=\"relations().length\">-->\n<!--                <div class=\"row\" fxLayout=\"row\" fxLayoutAlign=\"start center\" formArrayName=\"relations\" *ngFor=\"let relation of relations().controls; let i = index;\">-->\n<!--                    <div [formGroupName]=\"i\" class=\"mat-elevation-z2\" fxFlex fxLayout=\"row\" style=\"padding: 5px 0 5px 5px;\">-->\n<!--                        <div fxFlex fxLayout=\"column\">-->\n<!--                            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">-->\n<!--                                <mat-form-field class=\"mat-block\" style=\"min-width: 100px;\">-->\n<!--                                    <mat-label>Direction</mat-label>-->\n<!--                                    <mat-select formControlName=\"direction\" name=\"direction\">-->\n<!--                                        <mat-option *ngFor=\"let direction of entitySearchDirection | keyvalue\" [value]=\"direction.value\">-->\n<!--                                            {{ (\"relation.search-direction.\" + direction.value) | translate}}-->\n<!--                                        </mat-option>-->\n<!--                                    </mat-select>-->\n<!--                                    <mat-error *ngIf=\"relation.get('direction').hasError('required')\">-->\n<!--                                        Relation direction is required.-->\n<!--                                    </mat-error>-->\n<!--                                </mat-form-field>-->\n<!--                                <tb-relation-type-autocomplete-->\n<!--                                        fxFlex class=\"mat-block\"-->\n<!--                                        formControlName=\"relationType\"-->\n<!--                                        [required]=\"true\">-->\n<!--                                </tb-relation-type-autocomplete>-->\n<!--                            </div>-->\n<!--                            <div fxLayout=\"row\" fxLayout.xs=\"column\">-->\n<!--                                <tb-entity-select-->\n<!--                                        fxFlex class=\"mat-block\"-->\n<!--                                        [required]=\"true\"-->\n<!--                                        formControlName=\"relatedEntity\">-->\n<!--                                </tb-entity-select>-->\n<!--                            </div>-->\n<!--                        </div>-->\n<!--                        <div fxLayout=\"column\" fxLayoutAlign=\"center center\">-->\n<!--                            <button mat-icon-button color=\"primary\"-->\n<!--                                    aria-label=\"Remove\"-->\n<!--                                    type=\"button\"-->\n<!--                                    (click)=\"removeRelation(i)\"-->\n<!--                                    matTooltip=\"Remove relation\"-->\n<!--                                    matTooltipPosition=\"above\">-->\n<!--                                <mat-icon>close</mat-icon>-->\n<!--                            </button>-->\n<!--                        </div>-->\n<!--                    </div>-->\n<!--                </div>-->\n<!--            </div>-->\n<!--            <div>-->\n<!--                <button mat-raised-button color=\"primary\"-->\n<!--                        type=\"button\"-->\n<!--                        (click)=\"addRelation()\"-->\n<!--                        matTooltip=\"Add Relation\"-->\n<!--                        matTooltipPosition=\"above\">-->\n<!--                    Add-->\n<!--                </button>-->\n<!--            </div>-->\n<!--        </div>-->\n<!--    </div>-->\n<!--    <div mat-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"end center\">-->\n<!--        <button mat-button color=\"primary\"-->\n<!--                type=\"button\"-->\n<!--                [disabled]=\"(isLoading$ | async)\"-->\n<!--                (click)=\"cancel()\" cdkFocusInitial>-->\n<!--            Cancel-->\n<!--        </button>-->\n<!--        <button mat-button mat-raised-button color=\"primary\"-->\n<!--                type=\"submit\"-->\n<!--                [disabled]=\"(isLoading$ | async) || addEntityForm.invalid || !addEntityForm.dirty\">-->\n<!--            Create-->\n<!--        </button>-->\n<!--    </div>-->\n<!--</form>-->\n",
+                "customCss" : "/*=======================================================================*/\n/*==========  There are two examples: for edit and add entity  ==========*/\n/*=======================================================================*/\n/*========================  Edit entity example  ========================*/\n/*=======================================================================*/\n/*\n.edit-entity-form .boolean-value-input {\n    padding-left: 5px;\n}\n\n.edit-entity-form .boolean-value-input .checkbox-label {\n    color: rgba(0,0,0,0.54);\n    font-size: 12px;\n}\n\n.relations-list .header {\n    padding-right: 5px;\n    padding-bottom: 5px;\n    padding-left: 5px;\n}\n\n.relations-list .header .cell {\n    padding-right: 5px;\n    padding-left: 5px;\n    font-size: 12px;\n    font-weight: 700;\n    color: rgba(0, 0, 0, .54);\n    white-space: nowrap;\n}\n\n.relations-list .mat-form-field-infix {\n    width: auto !important;\n}\n\n.relations-list .body {\n    padding-right: 5px;\n    padding-bottom: 15px;\n    padding-left: 5px;\n}\n\n.relations-list .body .row {\n    padding-top: 5px;\n}\n\n.relations-list .body .cell {\n    padding-right: 5px;\n    padding-left: 5px;\n}\n\n.relations-list .body .md-button {\n    margin: 0;\n}\n*/\n/*========================================================================*/\n/*=========================  Add entity example  =========================*/\n/*========================================================================*/\n/*\n.add-entity-form .boolean-value-input {\n    padding-left: 5px;\n}\n\n.add-entity-form .boolean-value-input .checkbox-label {\n    color: rgba(0,0,0,0.54);\n    font-size: 12px;\n}\n\n.relations-list .header {\n    padding-right: 5px;\n    padding-bottom: 5px;\n    padding-left: 5px;\n}\n\n.relations-list .header .cell {\n    padding-right: 5px;\n    padding-left: 5px;\n    font-size: 12px;\n    font-weight: 700;\n    color: rgba(0, 0, 0, .54);\n    white-space: nowrap;\n}\n\n.relations-list .mat-form-field-infix {\n    width: auto !important;\n}\n\n.relations-list .body {\n    padding-right: 5px;\n    padding-bottom: 15px;\n    padding-left: 5px;\n}\n\n.relations-list .body .row {\n    padding-top: 5px;\n}\n\n.relations-list .body .cell {\n    padding-right: 5px;\n    padding-left: 5px;\n}\n\n.relations-list .body .md-button {\n    margin: 0;\n}\n*/\n",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"eventHistory\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9ff4688b-bae2-1d05-f669-6fba2fb61548"
+              }, {
+                "name" : "alerts",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"alerts\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "a5f0e3ec-304a-7e35-9d7d-942563980422"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6cbeacfc-d833-c6f1-8803-8d0d09517938"
+        },
+        "7a5f7174-4eec-f34d-2a3c-8be08101c2d7" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1726995514591,
+                  "endTimeMs" : 1727081914591
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(255, 255, 255, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
+              "markdownTextFunction" : "return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='telemetry'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table overview\" *ngIf=\"ctx.stateController.getStateParams().subState=='overview'\" [ctx]=\"ctx\" stateId=\"building_overview_substate\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"assetDetailsGeneral\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='telemetry'\" [ctx]=\"ctx\" stateId=\"assetDetailsTelemetry\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='eventHistory'\" [ctx]=\"ctx\" stateId=\"assetDetailsEventHistory\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"assetDetailsAlerts\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-markdown-view div,\n.tb-markdown-view p {\n    line-height: normal;\n}\n.mat-content {\n    background-color: #fff !important;\n}\n.user-layout {\n    width: 100%;\n    height: 100%;\n    padding: 0px;\n}\n.header-state {\n    height: 80px;\n    padding: 0px;\n}\n.table {\n    flex-grow: 1;\n    padding: 0px;\n}\n\n.user-layout-overflow {\n    min-height: 900px;\n    height: 100%;\n    overflow: auto;\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7a5f7174-4eec-f34d-2a3c-8be08101c2d7"
         }
       },
       "states" : {
@@ -542,14 +854,40 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "422dea38-a73f-32a4-ee98-26c57a30d46b" : {
+                  "sizeX" : 70,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "6cbeacfc-d833-c6f1-8803-8d0d09517938" : {
+                  "sizeX" : 70,
+                  "sizeY" : 2,
+                  "row" : 3,
+                  "col" : 0
+                },
+                "7a5f7174-4eec-f34d-2a3c-8be08101c2d7" : {
+                  "sizeX" : 70,
+                  "sizeY" : 28,
+                  "row" : 5,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
+                "columns" : 70,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
@@ -564,6 +902,16 @@
             "resolveMultiple" : true,
             "assetTypes" : [ "Box", "Loader", "Tool", "Worker" ],
             "assetNameFilter" : ""
+          }
+        },
+        "f9e4438c-85d7-dc29-f53e-7bb248b981df" : {
+          "id" : "f9e4438c-85d7-dc29-f53e-7bb248b981df",
+          "alias" : "Selected entity",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "selectedEntity",
+            "defaultStateEntity" : null
           }
         }
       },
