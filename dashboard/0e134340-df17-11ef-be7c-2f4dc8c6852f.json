@@ -845,7 +845,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "console.log(widgetContext);\n\nconst obj = { name: \"Alice\", age: 25, city: \"Wonderland\" };\n\n// Convert the object to a JSON string\nconst jsonString = JSON.stringify(obj);\n\n// Encode the JSON string in Base64\nconst base64Encoded = btoa(jsonString);\n\nconsole.log(base64Encoded)",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\ndashboardService.getTenantDashboards(pageLink).subscribe(data => console.log(data));\nconst obj = { name: \"Alice\", age: 25, city: \"Wonderland\" };\n\n// Convert the object to a JSON string\nconst jsonString = JSON.stringify(obj);\n\n// Encode the JSON string in Base64\nconst base64Encoded = btoa(jsonString);\n\nconsole.log(base64Encoded)",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "aab374a9-2141-6fc1-6abf-2f478061ff8d"
