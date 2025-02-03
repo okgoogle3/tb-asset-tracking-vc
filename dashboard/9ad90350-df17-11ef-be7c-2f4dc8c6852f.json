@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "Asset Tracking dashboard (backup)",
+    "title" : "Asset Tracking dashboard",
     "image" : "tb-image;/api/images/tenant/workerOnline.svg",
     "mobileHide" : false,
     "mobileOrder" : null,
@@ -21812,7 +21812,7 @@
         "dashboardCss" : ".tb-widget-header {\n    align-items: center;\n}\n\n.tb-widget-actions {\n    margin: 0px;    \n}"
       }
     },
-    "name" : "Asset Tracking dashboard (backup)",
+    "name" : "Asset Tracking dashboard",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,
