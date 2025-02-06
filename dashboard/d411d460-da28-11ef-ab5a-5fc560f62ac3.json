@@ -8,184 +8,170 @@
     "configuration" : {
       "description" : "",
       "widgets" : {
-        "ff1a25b2-195f-863d-3c0f-10e6b54292ab" : {
-          "typeFullFqn" : "system.alarm_widgets.alarms_table",
-          "type" : "alarm",
-          "sizeX" : 10.5,
-          "sizeY" : 6.5,
+        "140d279e-907a-74d9-7e93-38504abad558" : {
+          "typeFullFqn" : "system.maps_v2.openstreetmap",
+          "type" : "latest",
+          "sizeX" : 8.5,
+          "sizeY" : 6,
           "config" : {
-            "timewindow" : {
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 86400000
-              },
-              "aggregation" : {
-                "type" : "NONE",
-                "limit" : 200
-              }
-            },
-            "showTitle" : true,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "4px",
-            "settings" : {
-              "enableSelection" : true,
-              "enableSearch" : true,
-              "displayDetails" : true,
-              "allowAcknowledgment" : true,
-              "allowClear" : true,
-              "allowAssign" : true,
-              "displayActivity" : true,
-              "displayPagination" : true,
-              "defaultPageSize" : 10,
-              "defaultSortOrder" : "-createdTime",
-              "enableSelectColumnDisplay" : true,
-              "enableStickyAction" : false,
-              "enableFilter" : true,
-              "entitiesTitle" : null,
-              "alarmsTitle" : "Alarms"
-            },
-            "title" : "Alarms table",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400,
-              "padding" : "5px 10px 5px 10px"
-            },
-            "useDashboardTimewindow" : false,
-            "showLegend" : false,
-            "alarmSource" : {
-              "type" : "device",
+            "datasources" : [ {
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "25003f00-b30b-11ef-8c91-7baf5304b8d0",
-              "entityAliasId" : null,
+              "entityAliasId" : "8c5ad531-4f8d-37a1-155e-2a866c27ea80",
+              "filterId" : null,
               "dataKeys" : [ {
-                "name" : "createdTime",
-                "type" : "alarm",
-                "label" : "Created time",
+                "name" : "latitude",
+                "type" : "timeseries",
+                "label" : "latitude",
                 "color" : "#2196f3",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.021092237451093787,
-                "funcBody" : null
-              }, {
-                "name" : "originator",
-                "type" : "alarm",
-                "label" : "Originator",
-                "color" : "#4caf50",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.2780007688856758,
-                "funcBody" : null
-              }, {
-                "name" : "type",
-                "type" : "alarm",
-                "label" : "Type",
-                "color" : "#f44336",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.7323586880398418,
-                "funcBody" : null
-              }, {
-                "name" : "severity",
-                "type" : "alarm",
-                "label" : "Severity",
-                "color" : "#ffc107",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : false
-                },
-                "_hash" : 0.09927019860088193,
-                "funcBody" : null
-              }, {
-                "name" : "status",
-                "type" : "alarm",
-                "label" : "Status",
-                "color" : "#607d8b",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.6588418951443418,
-                "funcBody" : null
-              }, {
-                "name" : "assignee",
-                "type" : "alarm",
-                "label" : "Assignee",
-                "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.5008441077416634,
-                "funcBody" : null
+                "_hash" : 0.566981075268671
               }, {
-                "name" : "details",
-                "type" : "alarm",
-                "label" : "details",
-                "color" : "#3f51b5",
-                "settings" : {
-                  "customTitle" : "",
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : true,
-                  "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "console.log(value)\n\nreturn value ? value : \"No data\"",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled",
-                  "columnExportOption" : "onlyVisible"
-                },
-                "_hash" : 0.15972452797542092,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "name" : "longitude",
+                "type" : "timeseries",
+                "label" : "longitude",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.6665619914191506
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1738749019959,
+                  "endTimeMs" : 1738835419959
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
             },
-            "alarmsPollingInterval" : 5,
-            "showTitleIcon" : false,
-            "titleIcon" : "warning",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "provider" : "openstreet-map",
+              "mapProvider" : "OpenStreetMap.Mapnik",
+              "useCustomProvider" : false,
+              "customProviderTileUrl" : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "latKeyName" : "latitude",
+              "lngKeyName" : "longitude",
+              "xPosKeyName" : "xPos",
+              "yPosKeyName" : "yPos",
+              "defaultCenterPosition" : "0,0",
+              "disableScrollZooming" : false,
+              "disableDoubleClickZooming" : false,
+              "disableZoomControl" : false,
+              "fitMapBounds" : true,
+              "useDefaultCenterPosition" : false,
+              "mapPageSize" : 16384,
+              "markerOffsetX" : 0.5,
+              "markerOffsetY" : 1,
+              "posFunction" : "return {x: origXPos, y: origYPos};",
+              "draggableMarker" : false,
+              "showLabel" : true,
+              "useLabelFunction" : false,
+              "label" : "${entityName}",
+              "showTooltip" : true,
+              "showTooltipAction" : "click",
+              "autocloseTooltip" : true,
+              "useTooltipFunction" : false,
+              "tooltipPattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See advanced settings for details</small>",
+              "tooltipOffsetX" : 0,
+              "tooltipOffsetY" : -1,
+              "color" : "#fe7569",
+              "useColorFunction" : true,
+              "colorFunction" : "var type = dsData[dsIndex]['Type'];\nif (type == 'colorpin') {\n\tvar temperature = dsData[dsIndex]['temperature'];\n\tif (typeof temperature !== undefined) {\n\t    var percent = (temperature + 60)/120 * 100;\n\t    return tinycolor.mix('blue', 'red', percent).toHexString();\n\t}\n\treturn 'blue';\n}\n",
+              "useMarkerImageFunction" : true,
+              "markerImageSize" : 34,
+              "markerImageFunction" : "var type = dsData[dsIndex]['Type'];\nif (type == 'thermometer') {\n\tvar res = {\n\t    url: images[0],\n\t    size: 40\n\t}\n\tvar temperature = dsData[dsIndex]['temperature'];\n\tif (typeof temperature !== undefined) {\n\t    var percent = (temperature + 60)/120;\n\t    var index = Math.min(3, Math.floor(4 * percent));\n\t    res.url = images[index];\n\t}\n\treturn res;\n}",
+              "markerImages" : [ "tb-image;/api/images/system/map_marker_image_0.png", "tb-image;/api/images/system/map_marker_image_1.png", "tb-image;/api/images/system/map_marker_image_2.png", "tb-image;/api/images/system/map_marker_image_3.png" ],
+              "showPolygon" : false,
+              "polygonKeyName" : "perimeter",
+              "editablePolygon" : false,
+              "showPolygonLabel" : false,
+              "usePolygonLabelFunction" : false,
+              "polygonLabel" : "${entityName}",
+              "showPolygonTooltip" : false,
+              "showPolygonTooltipAction" : "click",
+              "autoClosePolygonTooltip" : true,
+              "usePolygonTooltipFunction" : false,
+              "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "polygonColor" : "#3388ff",
+              "polygonOpacity" : 0.2,
+              "usePolygonColorFunction" : false,
+              "polygonStrokeColor" : "#3388ff",
+              "polygonStrokeOpacity" : 1,
+              "polygonStrokeWeight" : 3,
+              "usePolygonStrokeColorFunction" : false,
+              "showCircle" : false,
+              "circleKeyName" : "perimeter",
+              "editableCircle" : false,
+              "showCircleLabel" : false,
+              "useCircleLabelFunction" : false,
+              "circleLabel" : "${entityName}",
+              "showCircleTooltip" : false,
+              "showCircleTooltipAction" : "click",
+              "autoCloseCircleTooltip" : true,
+              "useCircleTooltipFunction" : false,
+              "circleTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "circleFillColor" : "#3388ff",
+              "circleFillColorOpacity" : 0.2,
+              "useCircleFillColorFunction" : false,
+              "circleStrokeColor" : "#3388ff",
+              "circleStrokeOpacity" : 1,
+              "circleStrokeWeight" : 3,
+              "useCircleStrokeColorFunction" : false,
+              "useClusterMarkers" : false,
+              "zoomOnClick" : true,
+              "maxClusterRadius" : 80,
+              "animate" : true,
+              "spiderfyOnMaxZoom" : false,
+              "showCoverageOnHover" : true,
+              "chunkedLoading" : false,
+              "removeOutsideVisibleBounds" : true,
+              "useIconCreateFunction" : false
+            },
+            "title" : "OpenStreet Map",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
             "widgetStyle" : { },
-            "displayTimewindow" : true,
             "actions" : { },
-            "configMode" : "advanced",
-            "alarmFilterConfig" : {
-              "statusList" : [ "ACTIVE", "CLEARED" ],
-              "severityList" : [ ],
-              "typeList" : null,
-              "searchPropagatedAlarms" : false,
-              "assignedToCurrentUser" : false,
-              "assigneeId" : null
-            },
-            "datasources" : [ ],
-            "titleFont" : null,
-            "titleColor" : null,
-            "enableDataExport" : true
+            "displayTimewindow" : true
           },
           "row" : 0,
           "col" : 0,
-          "id" : "ff1a25b2-195f-863d-3c0f-10e6b54292ab"
+          "id" : "140d279e-907a-74d9-7e93-38504abad558"
         }
       },
       "states" : {
@@ -195,9 +181,9 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "ff1a25b2-195f-863d-3c0f-10e6b54292ab" : {
+                "140d279e-907a-74d9-7e93-38504abad558" : {
                   "sizeX" : 24,
-                  "sizeY" : 16,
+                  "sizeY" : 12,
                   "row" : 0,
                   "col" : 0
                 }
@@ -214,7 +200,20 @@
           }
         }
       },
-      "entityAliases" : { },
+      "entityAliases" : {
+        "8c5ad531-4f8d-37a1-155e-2a866c27ea80" : {
+          "id" : "8c5ad531-4f8d-37a1-155e-2a866c27ea80",
+          "alias" : "r",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "ASSET",
+              "id" : "6703c920-c13a-11ef-b55e-d50e0e2ee017"
+            }
+          }
+        }
+      },
       "filters" : { },
       "timewindow" : {
         "displayValue" : "",
