@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -20,9 +20,25 @@
     "label" : null,
     "name" : "forbiden zone",
     "ownerId" : null,
-    "type" : "Temporary asset"
+    "type" : "Shape"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.753260396741105,37.58188962936402],[48.75365651421091,37.57498025894166],[48.75053128935054,37.57718700568025],[48.75053128935054,37.57918700568025]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1739283092209,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.753260396741105, 37.58188962936402], [48.75365651421091, 37.57498025894166], [48.75053128935054, 37.57718700568025], [48.75053128935054, 37.57918700568025]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1739283092279,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
