@@ -26,7 +26,7 @@
       "entityType" : "DEVICE",
       "id" : "729d8c90-c445-11ef-ab5a-5fc560f62ac3"
     },
-    "label" : "1",
+    "label" : "",
     "name" : "test device 2",
     "ownerId" : null,
     "softwareId" : null,
@@ -123,9 +123,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "test",
-      "lastUpdateTs" : 1739435666948,
+      "lastUpdateTs" : 1739436002153,
       "longValue" : null,
-      "strValue" : "1233"
+      "strValue" : "1233123"
     } ],
     "SHARED_SCOPE" : [ ]
   }
