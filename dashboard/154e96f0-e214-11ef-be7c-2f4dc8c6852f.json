@@ -7565,7 +7565,10 @@
                   },
                   "hovered" : null,
                   "pressed" : null,
-                  "activated" : null,
+                  "activated" : {
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF00"
+                  },
                   "disabled" : null
                 }
               }
