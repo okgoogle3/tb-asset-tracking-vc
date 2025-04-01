@@ -7503,15 +7503,9 @@
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
                 "defaultValue" : false,
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
-                },
                 "getAttribute" : {
-                  "scope" : null,
-                  "key" : "state"
+                  "key" : "state",
+                  "scope" : null
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -7522,8 +7516,14 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "dataToValueFunction" : "return data.params.subState == \"general\" ? true : false;",
-                  "compareToValue" : true
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "return data.params.subState == \"general\" ? true : false;"
+                },
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
                 }
               },
               "disabledState" : {
@@ -7547,8 +7547,7 @@
                 }
               },
               "appearance" : {
-                "type" : "outlined",
-                "autoScale" : true,
+                "type" : "underlined",
                 "showLabel" : true,
                 "label" : "General",
                 "showIcon" : false,
@@ -7557,6 +7556,7 @@
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
                 "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
                 "customStyle" : {
                   "enabled" : null,
                   "hovered" : null,
@@ -7585,7 +7585,7 @@
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
-            "borderRadius" : "4px",
+            "borderRadius" : "0px",
             "configMode" : "advanced",
             "actions" : {
               "click" : [ {
@@ -7801,15 +7801,9 @@
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
                 "defaultValue" : false,
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
-                },
                 "getAttribute" : {
-                  "scope" : null,
-                  "key" : "state"
+                  "key" : "state",
+                  "scope" : null
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -7820,8 +7814,14 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "dataToValueFunction" : "return data.params.subState == \"alerts\" ? true : false;",
-                  "compareToValue" : true
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "return data.params.subState == \"alerts\" ? true : false;"
+                },
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
                 }
               },
               "disabledState" : {
@@ -7845,7 +7845,7 @@
                 }
               },
               "appearance" : {
-                "type" : "outlined",
+                "type" : "underlined",
                 "showLabel" : true,
                 "label" : "Alerts",
                 "showIcon" : false,
@@ -7883,7 +7883,7 @@
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
-            "borderRadius" : "4px",
+            "borderRadius" : "0px",
             "configMode" : "advanced",
             "actions" : {
               "click" : [ {
