@@ -7943,7 +7943,8 @@
                 "autoScale" : true,
                 "customStyle" : {
                   "enabled" : {
-                    "overrideMainColor" : false,
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054",
                     "overrideBackgroundColor" : false,
                     "overrideDropShadow" : false
                   },
