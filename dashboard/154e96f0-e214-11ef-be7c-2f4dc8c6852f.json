@@ -676,109 +676,6 @@
           "col" : 0,
           "id" : "d2fe1070-e7e2-25be-318f-078517f101a2"
         },
-        "871dc678-7df8-eedf-019f-655070a40c43" : {
-          "typeFullFqn" : "tenant.tab_navigation",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 1,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgba(255, 255, 255, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "menuItems" : [ {
-                "name" : "General",
-                "action" : "general"
-              }, {
-                "name" : "Zones",
-                "action" : "zones"
-              }, {
-                "name" : "Alerts",
-                "action" : "alerts"
-              } ],
-              "showDescription" : true
-            },
-            "title" : "HTML Card",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : false,
-            "widgetStyle" : {
-              "margin-left" : "10px",
-              "padding-top" : "0px"
-            },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "actions" : {
-              "elementClick" : [ {
-                "name" : "general",
-                "icon" : "info",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"general\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "58228898-f266-3c3f-a7d1-31b35e56c474"
-              }, {
-                "name" : "zones",
-                "icon" : "domain",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"zones\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "946f7d9e-4b4b-a976-fc39-1a60bc027fbe"
-              }, {
-                "name" : "alerts",
-                "icon" : "notifications",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"alerts\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "8482a379-fa7e-5770-2331-929714d07c8c"
-              }, {
-                "name" : "Show description",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "customPretty",
-                "customHtml" : "<div class=\"mainBlock\">\n    <div class=\"header\">\n        Description\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </div>\n    <div class=\"desc-body\">\n        {{description}}\n    </div>\n</div>    ",
-                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n    padding-top: 16px!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.mainBlock {\n    width: 600px;\n    display: flex;\n    flex-direction: column;\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    overflow: auto;\n}\n\n.header {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n    color: #0C111D;\n}\n\n.desc-body {\n    font-size: 16px;\n    font-weight: 400;\n    line-height: 24px;\n    color: #344054;\n}",
-                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet params = widgetContext.stateController.getStateParams();\nlet description;\n\nattributeService.getEntityAttributes(params.selectedEntity.entityId, 'SERVER_SCOPE', [\"description\"]).subscribe(res=>{\n    if(res[0] && res[0].value){\n        description = res[0].value;\n    }\n    openAddEntityDialog();\n})\n\n\nfunction openAddEntityDialog() {\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.description = description ? description : \"No description\";\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n}\n",
-                "customResources" : [ ],
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "e5ebfc5f-4a5d-8bd9-642e-b508a06edb1c"
-              } ]
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "871dc678-7df8-eedf-019f-655070a40c43"
-        },
         "fa43e55c-4f0a-7eb0-c74c-d6fc002f398c" : {
           "typeFullFqn" : "system.cards.markdown_card",
           "type" : "latest",
@@ -8204,12 +8101,6 @@
                   "sizeY" : 5,
                   "row" : 0,
                   "col" : 0
-                },
-                "871dc678-7df8-eedf-019f-655070a40c43" : {
-                  "sizeX" : 20,
-                  "sizeY" : 2,
-                  "row" : 5,
-                  "col" : 35
                 },
                 "fa43e55c-4f0a-7eb0-c74c-d6fc002f398c" : {
                   "sizeX" : 70,
