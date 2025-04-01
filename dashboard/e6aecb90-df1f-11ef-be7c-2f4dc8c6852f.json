@@ -738,7 +738,8 @@
             "enableDataExport" : false,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "margin" : "0px 10px 10px 0px"
           },
           "row" : 0,
           "col" : 0,
