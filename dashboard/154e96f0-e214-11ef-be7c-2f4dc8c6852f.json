@@ -8042,15 +8042,9 @@
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
                 "defaultValue" : false,
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
-                },
                 "getAttribute" : {
-                  "scope" : null,
-                  "key" : "state"
+                  "key" : "state",
+                  "scope" : null
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -8061,8 +8055,14 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "dataToValueFunction" : "return data.params.subState == \"assets\" ? true : false;",
-                  "compareToValue" : true
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "return data.params.subState == \"assets\" ? true : false;"
+                },
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
                 }
               },
               "disabledState" : {
@@ -8098,7 +8098,8 @@
                 "autoScale" : true,
                 "customStyle" : {
                   "enabled" : {
-                    "overrideMainColor" : false,
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054",
                     "overrideBackgroundColor" : false,
                     "overrideDropShadow" : false
                   },
@@ -8197,15 +8198,9 @@
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
                 "defaultValue" : false,
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
-                },
                 "getAttribute" : {
-                  "scope" : null,
-                  "key" : "state"
+                  "key" : "state",
+                  "scope" : null
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -8216,8 +8211,14 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "dataToValueFunction" : "return data.params.subState == \"geofences\" ? true : false;",
-                  "compareToValue" : true
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "return data.params.subState == \"geofences\" ? true : false;"
+                },
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
                 }
               },
               "disabledState" : {
@@ -8253,7 +8254,8 @@
                 "autoScale" : true,
                 "customStyle" : {
                   "enabled" : {
-                    "overrideMainColor" : false,
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054",
                     "overrideBackgroundColor" : false,
                     "overrideDropShadow" : false
                   },
@@ -8352,15 +8354,9 @@
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
                 "defaultValue" : false,
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
-                },
                 "getAttribute" : {
-                  "scope" : null,
-                  "key" : "state"
+                  "key" : "state",
+                  "scope" : null
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -8371,8 +8367,14 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "dataToValueFunction" : "return data.params.subState == \"alerts\" ? true : false;",
-                  "compareToValue" : true
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "return data.params.subState == \"alerts\" ? true : false;"
+                },
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
                 }
               },
               "disabledState" : {
@@ -8408,7 +8410,8 @@
                 "autoScale" : true,
                 "customStyle" : {
                   "enabled" : {
-                    "overrideMainColor" : false,
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054",
                     "overrideBackgroundColor" : false,
                     "overrideDropShadow" : false
                   },
