@@ -661,7 +661,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='telemetry'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table overview\" *ngIf=\"ctx.stateController.getStateParams().subState=='overview'\" [ctx]=\"ctx\" stateId=\"building_overview_substate\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"assetDetailsGeneral\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='telemetry'\" [ctx]=\"ctx\" stateId=\"assetDetailsTelemetry\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='eventHistory'\" [ctx]=\"ctx\" stateId=\"assetDetailsEventHistory\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"assetDetailsAlerts\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
+              "markdownTextFunction" : "return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='telemetry'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"assetDetailsGeneral\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='telemetry'\" [ctx]=\"ctx\" stateId=\"assetDetailsTelemetry\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='eventHistory'\" [ctx]=\"ctx\" stateId=\"assetDetailsEventHistory\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"assetDetailsAlerts\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".tb-markdown-view div,\n.tb-markdown-view p {\n    line-height: normal;\n}\n.mat-content {\n    background-color: #fff !important;\n}\n.user-layout {\n    width: 100%;\n    height: 100%;\n    padding: 0px;\n}\n.header-state {\n    height: 80px;\n    padding: 0px;\n}\n.table {\n    flex-grow: 1;\n    padding: 0px;\n}\n\n.user-layout-overflow {\n    min-height: 900px;\n    height: 100%;\n    overflow: auto;\n}"
             },
@@ -5526,9 +5526,15 @@
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
                 "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
                 "getAttribute" : {
-                  "key" : "state",
-                  "scope" : null
+                  "scope" : null,
+                  "key" : "state"
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -5539,14 +5545,8 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "compareToValue" : true,
-                  "dataToValueFunction" : "return data.params.subState == \"general\" ? true : false;"
-                },
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
+                  "dataToValueFunction" : "return data.params.subState == \"eventHistory\" ? true : false;",
+                  "compareToValue" : true
                 }
               },
               "disabledState" : {
@@ -5571,6 +5571,7 @@
               },
               "appearance" : {
                 "type" : "basic",
+                "autoScale" : true,
                 "showLabel" : true,
                 "label" : "Track history",
                 "showIcon" : false,
@@ -5579,7 +5580,6 @@
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
                 "backgroundColor" : "#FFFFFF",
-                "autoScale" : true,
                 "customStyle" : {
                   "enabled" : {
                     "overrideMainColor" : true,
@@ -5625,7 +5625,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"general\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"eventHistory\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "9eec16b4-cebc-42f3-a69f-9c239d2ba031"
