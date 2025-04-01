@@ -7522,7 +7522,7 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "dataToValueFunction" : "// console.log(data)\n// /* Should return boolean value */\n\n// if() {\n//     return\n// }\n\nreturn data.params.subState == \"general\" ? true : false;",
+                  "dataToValueFunction" : "return data.params.subState == \"general\" ? true : false;",
                   "compareToValue" : true
                 }
               },
@@ -7548,6 +7548,7 @@
               },
               "appearance" : {
                 "type" : "outlined",
+                "autoScale" : true,
                 "showLabel" : true,
                 "label" : "General",
                 "showIcon" : false,
@@ -7556,7 +7557,6 @@
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
                 "backgroundColor" : "#FFFFFF",
-                "autoScale" : true,
                 "customStyle" : {
                   "enabled" : null,
                   "hovered" : null,
@@ -7636,11 +7636,17 @@
             "padding" : "0px",
             "settings" : {
               "activatedState" : {
-                "action" : "DO_NOTHING",
+                "action" : "GET_DASHBOARD_STATE_OBJECT",
                 "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
                 "getAttribute" : {
-                  "key" : "state",
-                  "scope" : null
+                  "scope" : null,
+                  "key" : "state"
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -7650,9 +7656,9 @@
                   "typeList" : null
                 },
                 "dataToValue" : {
-                  "type" : "NONE",
-                  "compareToValue" : true,
-                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                  "type" : "FUNCTION",
+                  "dataToValueFunction" : "return data.params.subState == \"zones\" ? true : false;",
+                  "compareToValue" : true
                 }
               },
               "disabledState" : {
