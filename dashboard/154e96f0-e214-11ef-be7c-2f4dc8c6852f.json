@@ -7909,6 +7909,157 @@
           "row" : 0,
           "col" : 0,
           "id" : "8de402e6-2f7e-4b40-59d4-89657945ecfc"
+        },
+        "8ca9ec5c-d44f-d499-17fa-ee53f7118b3b" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1743412387241,
+                  "endTimeMs" : 1743498787241
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "5px 10px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
+                "getAttribute" : {
+                  "scope" : null,
+                  "key" : "state"
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "FUNCTION",
+                  "dataToValueFunction" : "return data.params.subState == \"alerts\" ? true : false;",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "basic",
+                "autoScale" : false,
+                "showLabel" : true,
+                "label" : "View description",
+                "showIcon" : true,
+                "icon" : "info",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "0px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "alerts",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"mainBlock\">\n    <div class=\"header\">\n        Description\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </div>\n    <div class=\"desc-body\">\n        {{description}}\n    </div>\n</div>    ",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n    padding-top: 16px!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.mainBlock {\n    width: 600px;\n    display: flex;\n    flex-direction: column;\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    overflow: auto;\n}\n\n.header {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n    color: #0C111D;\n}\n\n.desc-body {\n    font-size: 16px;\n    font-weight: 400;\n    line-height: 24px;\n    color: #344054;\n}",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet params = widgetContext.stateController.getStateParams();\nlet description;\n\nattributeService.getEntityAttributes(params.selectedEntity.entityId, 'SERVER_SCOPE', [\"description\"]).subscribe(res=>{\n    if(res[0] && res[0].value){\n        description = res[0].value;\n    }\n    openAddEntityDialog();\n})\n\n\nfunction openAddEntityDialog() {\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.description = description ? description : \"No description\";\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "73554f52-d21c-6055-c532-4f5c827e0d7d"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8ca9ec5c-d44f-d499-17fa-ee53f7118b3b"
         }
       },
       "states" : {
@@ -8055,7 +8206,7 @@
                   "col" : 0
                 },
                 "871dc678-7df8-eedf-019f-655070a40c43" : {
-                  "sizeX" : 35,
+                  "sizeX" : 20,
                   "sizeY" : 2,
                   "row" : 5,
                   "col" : 35
@@ -8095,6 +8246,12 @@
                   "sizeY" : 2,
                   "row" : 5,
                   "col" : 16
+                },
+                "8ca9ec5c-d44f-d499-17fa-ee53f7118b3b" : {
+                  "sizeX" : 8,
+                  "sizeY" : 2,
+                  "row" : 5,
+                  "col" : 62
                 }
               },
               "gridSettings" : {
