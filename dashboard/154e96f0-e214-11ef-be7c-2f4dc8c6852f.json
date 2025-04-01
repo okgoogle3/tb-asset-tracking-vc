@@ -7498,7 +7498,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF01",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "5px",
+            "padding" : "5px 0",
             "settings" : {
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
@@ -7653,7 +7653,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF01",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "5px",
+            "padding" : "5px 0",
             "settings" : {
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
@@ -7803,7 +7803,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF01",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "5px",
+            "padding" : "5px 0",
             "settings" : {
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
@@ -8058,7 +8058,7 @@
                   "sizeX" : 35,
                   "sizeY" : 2,
                   "row" : 5,
-                  "col" : 0
+                  "col" : 35
                 },
                 "fa43e55c-4f0a-7eb0-c74c-d6fc002f398c" : {
                   "sizeX" : 70,
@@ -8082,19 +8082,19 @@
                   "sizeX" : 8,
                   "sizeY" : 2,
                   "row" : 5,
-                  "col" : 35
+                  "col" : 0
                 },
                 "17047e1e-6e41-5f1b-d78b-62f16d6639ff" : {
                   "sizeX" : 8,
                   "sizeY" : 2,
                   "row" : 5,
-                  "col" : 43
+                  "col" : 8
                 },
                 "8de402e6-2f7e-4b40-59d4-89657945ecfc" : {
                   "sizeX" : 8,
                   "sizeY" : 2,
                   "row" : 5,
-                  "col" : 51
+                  "col" : 16
                 }
               },
               "gridSettings" : {
