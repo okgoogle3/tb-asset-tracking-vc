@@ -669,79 +669,6 @@
           "col" : 0,
           "id" : "52b54bcb-6542-9ed8-2709-a671171d637a"
         },
-        "7754d4a0-6bee-5c14-462b-b937c9d7dab6" : {
-          "typeFullFqn" : "tenant.tab_navigation",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 1,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgba(255, 255, 255, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "5px",
-            "settings" : {
-              "menuItems" : [ {
-                "name" : "Device thresholds rules",
-                "action" : "device"
-              }, {
-                "name" : "Location thresholds rules",
-                "action" : "location"
-              } ]
-            },
-            "title" : "HTML Card",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : false,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "actions" : {
-              "elementClick" : [ {
-                "name" : "device",
-                "icon" : "info",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"device\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "58228898-f266-3c3f-a7d1-31b35e56c474"
-              }, {
-                "name" : "location",
-                "icon" : "domain",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"location\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "946f7d9e-4b4b-a976-fc39-1a60bc027fbe"
-              } ]
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "7754d4a0-6bee-5c14-462b-b937c9d7dab6"
-        },
         "046e3022-3af4-0cc1-c61f-5ea423b2fd6f" : {
           "typeFullFqn" : "system.cards.markdown_card",
           "type" : "latest",
@@ -1051,6 +978,318 @@
           "row" : 0,
           "col" : 0,
           "id" : "c0c69069-0d5f-ead1-23ae-10f1157c96b0"
+        },
+        "1cc81097-9ed3-fa90-b004-24fd82e8628b" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1743412387241,
+                  "endTimeMs" : 1743498787241
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "",
+            "settings" : {
+              "activatedState" : {
+                "action" : "GET_DASHBOARD_STATE_OBJECT",
+                "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
+                "getAttribute" : {
+                  "scope" : null,
+                  "key" : "state"
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "FUNCTION",
+                  "dataToValueFunction" : "return data.params.subState == \"device\" ? true : false;",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "basic",
+                "showLabel" : true,
+                "label" : "Device thresholds rules",
+                "showIcon" : false,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054",
+                    "overrideBackgroundColor" : false,
+                    "overrideDropShadow" : false
+                  },
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : {
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF00"
+                  },
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "0px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "general",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"device\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9eec16b4-cebc-42f3-a69f-9c239d2ba031"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "1cc81097-9ed3-fa90-b004-24fd82e8628b"
+        },
+        "267f210a-b5b3-938e-e828-2ca839c9aacd" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1743412387241,
+                  "endTimeMs" : 1743498787241
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "",
+            "settings" : {
+              "activatedState" : {
+                "action" : "GET_DASHBOARD_STATE_OBJECT",
+                "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
+                "getAttribute" : {
+                  "scope" : null,
+                  "key" : "state"
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "FUNCTION",
+                  "dataToValueFunction" : "return data.params.subState == \"location\" ? true : false;",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "basic",
+                "showLabel" : true,
+                "label" : "Location thresholds rules",
+                "showIcon" : false,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054",
+                    "overrideBackgroundColor" : false,
+                    "overrideDropShadow" : false
+                  },
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : {
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF00"
+                  },
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "0px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "location",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"location\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9eec16b4-cebc-42f3-a69f-9c239d2ba031"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "267f210a-b5b3-938e-e828-2ca839c9aacd"
         }
       },
       "states" : {
@@ -1140,17 +1379,23 @@
                   "row" : 2,
                   "col" : 0
                 },
-                "7754d4a0-6bee-5c14-462b-b937c9d7dab6" : {
-                  "sizeX" : 9,
-                  "sizeY" : 1,
-                  "row" : 2,
-                  "col" : 11
-                },
                 "046e3022-3af4-0cc1-c61f-5ea423b2fd6f" : {
                   "sizeX" : 25,
                   "sizeY" : 12,
                   "row" : 3,
                   "col" : 11
+                },
+                "1cc81097-9ed3-fa90-b004-24fd82e8628b" : {
+                  "sizeX" : 4,
+                  "sizeY" : 1,
+                  "row" : 2,
+                  "col" : 11
+                },
+                "267f210a-b5b3-938e-e828-2ca839c9aacd" : {
+                  "sizeX" : 4,
+                  "sizeY" : 1,
+                  "row" : 2,
+                  "col" : 15
                 }
               },
               "gridSettings" : {
@@ -1317,7 +1562,14 @@
         "showEntitiesSelect" : true,
         "showDashboardTimewindow" : true,
         "showDashboardExport" : true,
-        "toolbarAlwaysOpen" : true
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "dashboardCss" : ".tb-active-state {\n    border-bottom: 2px solid var(--tb-primary-500) !important;\n}"
       }
     },
     "name" : "Alert rules dashboard",
