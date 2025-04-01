@@ -1023,7 +1023,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF01",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "",
+            "padding" : "0px",
             "settings" : {
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
@@ -1179,7 +1179,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF01",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "",
+            "padding" : "0px",
             "settings" : {
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
