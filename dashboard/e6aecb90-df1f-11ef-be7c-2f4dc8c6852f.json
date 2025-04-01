@@ -514,7 +514,7 @@
                 "id" : "d3bdeff1-3770-0e92-8047-17df3272cbca"
               } ]
             },
-            "margin" : "0px 10px 10px 10px"
+            "margin" : "0px 10px 0px 10px"
           },
           "row" : 0,
           "col" : 0,
@@ -1377,13 +1377,13 @@
                 },
                 "52b54bcb-6542-9ed8-2709-a671171d637a" : {
                   "sizeX" : 11,
-                  "sizeY" : 13,
+                  "sizeY" : 15,
                   "row" : 2,
                   "col" : 0
                 },
                 "046e3022-3af4-0cc1-c61f-5ea423b2fd6f" : {
                   "sizeX" : 25,
-                  "sizeY" : 12,
+                  "sizeY" : 14,
                   "row" : 3,
                   "col" : 11
                 },
