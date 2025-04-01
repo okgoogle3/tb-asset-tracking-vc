@@ -5896,7 +5896,7 @@
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
                 "columns" : 70,
-                "margin" : 10,
+                "margin" : 0,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
                 "minColumns" : 24,
