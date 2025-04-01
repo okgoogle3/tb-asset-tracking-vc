@@ -9657,7 +9657,7 @@
         "hideToolbar" : false,
         "showFilters" : true,
         "showUpdateDashboardImage" : true,
-        "dashboardCss" : ".tb-widget-header {\n    align-items: center;\n}\n\n.tb-widget-actions {\n    margin: 0px;    \n}\n\n.tb-widget-button mdc-button mat-mdc-button tb-basic mat-unthemed mat-mdc-button-base cdk-focused cdk-mouse-focused tb-active-state {\n    border-bottom: 1px solid black;\n}"
+        "dashboardCss" : ".tb-widget-header {\n    align-items: center;\n}\n\n.tb-widget-actions {\n    margin: 0px;    \n}\n\n.tb-widget-button .mdc-button .mat-mdc-button .tb-basic .mat-unthemed .mat-mdc-button-base .cdk-focused .cdk-mouse-focused .tb-active-state {\n    border-bottom: 1px solid black;\n}"
       }
     },
     "name" : "Locations dashboard",
