@@ -2594,123 +2594,6 @@
           "col" : 0,
           "id" : "f1f1fe55-0e58-7de2-74f7-2d0bfd35dd4a"
         },
-        "cde0bc43-e61f-4061-d1b3-bb8420d48879" : {
-          "typeFullFqn" : "tenant.tab_navigation",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 1,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgba(255, 255, 255, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "menuItems" : [ {
-                "name" : "General",
-                "action" : "general"
-              }, {
-                "name" : "Assets",
-                "action" : "assets"
-              }, {
-                "name" : "Geofences",
-                "action" : "geofences"
-              }, {
-                "name" : "Alerts",
-                "action" : "alerts"
-              } ],
-              "showDescription" : true
-            },
-            "title" : "HTML Card",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : false,
-            "widgetStyle" : {
-              "background-color" : "transparent",
-              "margin-right" : "10px",
-              "margin-left" : "10px"
-            },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "actions" : {
-              "elementClick" : [ {
-                "name" : "general",
-                "icon" : "info",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"general\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "58228898-f266-3c3f-a7d1-31b35e56c474"
-              }, {
-                "name" : "assets",
-                "icon" : "web_asset",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nconst aliasController = widgetContext.dashboard.aliasController;\n        \nif (aliasController.origFilters) {\n    const id = Object.keys(aliasController.origFilters).find((filterId) => \n        aliasController.origFilters[filterId].filter === \"Zone assets filter\"\n    );\n    \n    const filtersCopy = Object.assign({}, aliasController.origFilters);\n    const condition = filtersCopy[id];\n    if(condition && condition.keyFilters.length && condition.keyFilters[0].predicates.length){\n        condition.keyFilters[0].predicates[0].keyFilterPredicate.value.defaultValue = \"\";\n        aliasController.updateUserFilter(condition);\n        widgetContext.updateAliases();\n    }\n}\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"assets\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "c67a4ebe-4a49-2500-28cd-d9753f398946"
-              }, {
-                "name" : "geofences",
-                "icon" : "domain",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"geofences\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "946f7d9e-4b4b-a976-fc39-1a60bc027fbe"
-              }, {
-                "name" : "alerts",
-                "icon" : "notifications",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"alerts\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "8482a379-fa7e-5770-2331-929714d07c8c"
-              }, {
-                "name" : "Show description",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "customPretty",
-                "customHtml" : "<div class=\"mainBlock\">\n    <div class=\"header\">\n        Description\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </div>\n    <div class=\"desc-body\">\n        {{description}}\n    </div>\n</div>    ",
-                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n    padding-top: 16px!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.mainBlock {\n    width: 600px;\n    display: flex;\n    flex-direction: column;\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    overflow: auto;\n}\n\n.header {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n    color: #0C111D;\n}\n\n.desc-body {\n    font-size: 16px;\n    font-weight: 400;\n    line-height: 24px;\n    color: #344054;\n}",
-                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet params = widgetContext.stateController.getStateParams();\n\nlet description;\n\nattributeService.getEntityAttributes(params.selectedZone.entityId, 'SERVER_SCOPE', [\"description\"]).subscribe(res=>{\n    \n    openAddEntityDialog();\n    \n    if(res[0] && res[0].value){\n        description = res[0].value;\n    }\n})\n\n\nfunction openAddEntityDialog() {\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.description = description ? description : \"No description\";\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n}\n",
-                "customResources" : [ ],
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "e0f216cd-e983-31e8-ae34-846bfbde6899"
-              } ]
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "cde0bc43-e61f-4061-d1b3-bb8420d48879"
-        },
         "4d794955-6f33-d103-5d0c-c052b7a2faa3" : {
           "typeFullFqn" : "system.cards.markdown_card",
           "type" : "latest",
@@ -7901,7 +7784,7 @@
                 "showLabel" : true,
                 "label" : "View description",
                 "showIcon" : true,
-                "icon" : "info",
+                "icon" : "info_outline",
                 "iconSize" : 24,
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
@@ -8159,9 +8042,15 @@
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
                 "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
                 "getAttribute" : {
-                  "key" : "state",
-                  "scope" : null
+                  "scope" : null,
+                  "key" : "state"
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -8172,14 +8061,8 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "compareToValue" : true,
-                  "dataToValueFunction" : "return data.params.subState == \"general\" ? true : false;"
-                },
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
+                  "dataToValueFunction" : "return data.params.subState == \"assets\" ? true : false;",
+                  "compareToValue" : true
                 }
               },
               "disabledState" : {
@@ -8314,9 +8197,15 @@
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
                 "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
                 "getAttribute" : {
-                  "key" : "state",
-                  "scope" : null
+                  "scope" : null,
+                  "key" : "state"
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -8327,14 +8216,8 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "compareToValue" : true,
-                  "dataToValueFunction" : "return data.params.subState == \"general\" ? true : false;"
-                },
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
+                  "dataToValueFunction" : "return data.params.subState == \"geofences\" ? true : false;",
+                  "compareToValue" : true
                 }
               },
               "disabledState" : {
@@ -8469,9 +8352,15 @@
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
                 "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
                 "getAttribute" : {
-                  "key" : "state",
-                  "scope" : null
+                  "scope" : null,
+                  "key" : "state"
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -8482,14 +8371,8 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "compareToValue" : true,
-                  "dataToValueFunction" : "return data.params.subState == \"general\" ? true : false;"
-                },
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
+                  "dataToValueFunction" : "return data.params.subState == \"alerts\" ? true : false;",
+                  "compareToValue" : true
                 }
               },
               "disabledState" : {
@@ -8577,6 +8460,157 @@
           "row" : 0,
           "col" : 0,
           "id" : "931df039-1379-fa49-60a2-50c5b16e4023"
+        },
+        "36ab2d74-cbd6-9b04-c713-9556218cc25f" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1743412387241,
+                  "endTimeMs" : 1743498787241
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "5px 10px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "FUNCTION",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "return data.params.subState == \"alerts\" ? true : false;"
+                },
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "basic",
+                "showLabel" : true,
+                "label" : "View description",
+                "showIcon" : true,
+                "icon" : "info_outline",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : false,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : ".tb-widget-button-content {\n    justify-content: flex-end !important;\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "0px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "alerts",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"mainBlock\">\n    <div class=\"header\">\n        Description\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </div>\n    <div class=\"desc-body\">\n        {{description}}\n    </div>\n</div>    ",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n    padding-top: 16px!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.mainBlock {\n    width: 600px;\n    display: flex;\n    flex-direction: column;\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    overflow: auto;\n}\n\n.header {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n    color: #0C111D;\n}\n\n.desc-body {\n    font-size: 16px;\n    font-weight: 400;\n    line-height: 24px;\n    color: #344054;\n}",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet params = widgetContext.stateController.getStateParams();\nlet description;\n\nattributeService.getEntityAttributes(params.selectedEntity.entityId, 'SERVER_SCOPE', [\"description\"]).subscribe(res=>{\n    if(res[0] && res[0].value){\n        description = res[0].value;\n    }\n    openAddEntityDialog();\n})\n\n\nfunction openAddEntityDialog() {\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.description = description ? description : \"No description\";\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "73554f52-d21c-6055-c532-4f5c827e0d7d"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "36ab2d74-cbd6-9b04-c713-9556218cc25f"
         }
       },
       "states" : {
@@ -9229,12 +9263,6 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "cde0bc43-e61f-4061-d1b3-bb8420d48879" : {
-                  "sizeX" : 14,
-                  "sizeY" : 2,
-                  "row" : 5,
-                  "col" : 56
-                },
                 "4d794955-6f33-d103-5d0c-c052b7a2faa3" : {
                   "sizeX" : 72,
                   "sizeY" : 26,
@@ -9282,6 +9310,12 @@
                   "sizeY" : 2,
                   "row" : 5,
                   "col" : 24
+                },
+                "36ab2d74-cbd6-9b04-c713-9556218cc25f" : {
+                  "sizeX" : 9,
+                  "sizeY" : 2,
+                  "row" : 5,
+                  "col" : 63
                 }
               },
               "gridSettings" : {
