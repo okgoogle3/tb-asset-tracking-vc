@@ -7932,7 +7932,7 @@
             "showLegend" : false,
             "useDashboardTimewindow" : true,
             "displayTimewindow" : true,
-            "widgetCss" : "",
+            "widgetCss" : ".tb-widget-button-content {\n    justify-content: flex-end;\n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "borderRadius" : "0px",
