@@ -7558,7 +7558,11 @@
                 "backgroundColor" : "#FFFFFF",
                 "autoScale" : true,
                 "customStyle" : {
-                  "enabled" : null,
+                  "enabled" : {
+                    "overrideMainColor" : false,
+                    "overrideBackgroundColor" : false,
+                    "overrideDropShadow" : false
+                  },
                   "hovered" : null,
                   "pressed" : null,
                   "activated" : null,
@@ -7695,7 +7699,7 @@
                 }
               },
               "appearance" : {
-                "type" : "underlined",
+                "type" : "basic",
                 "showLabel" : true,
                 "label" : "Zones",
                 "showIcon" : false,
@@ -7845,7 +7849,7 @@
                 }
               },
               "appearance" : {
-                "type" : "underlined",
+                "type" : "basic",
                 "showLabel" : true,
                 "label" : "Alerts",
                 "showIcon" : false,
