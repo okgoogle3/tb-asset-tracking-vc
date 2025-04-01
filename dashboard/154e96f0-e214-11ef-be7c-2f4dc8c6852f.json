@@ -7722,7 +7722,9 @@
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "box-shadow" : "none"
+            },
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
