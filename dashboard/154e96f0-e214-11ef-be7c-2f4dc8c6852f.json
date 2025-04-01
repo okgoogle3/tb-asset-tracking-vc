@@ -7853,15 +7853,9 @@
               "activatedState" : {
                 "action" : "DO_NOTHING",
                 "defaultValue" : false,
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
-                },
                 "getAttribute" : {
-                  "scope" : null,
-                  "key" : "state"
+                  "key" : "state",
+                  "scope" : null
                 },
                 "getTimeSeries" : {
                   "key" : "state"
@@ -7872,8 +7866,14 @@
                 },
                 "dataToValue" : {
                   "type" : "FUNCTION",
-                  "dataToValueFunction" : "return data.params.subState == \"alerts\" ? true : false;",
-                  "compareToValue" : true
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "return data.params.subState == \"alerts\" ? true : false;"
+                },
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
                 }
               },
               "disabledState" : {
@@ -7898,7 +7898,6 @@
               },
               "appearance" : {
                 "type" : "basic",
-                "autoScale" : false,
                 "showLabel" : true,
                 "label" : "View description",
                 "showIcon" : true,
@@ -7907,6 +7906,7 @@
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
                 "backgroundColor" : "#FFFFFF",
+                "autoScale" : false,
                 "customStyle" : {
                   "enabled" : null,
                   "hovered" : null,
@@ -8139,10 +8139,10 @@
                   "col" : 16
                 },
                 "8ca9ec5c-d44f-d499-17fa-ee53f7118b3b" : {
-                  "sizeX" : 8,
+                  "sizeX" : 13,
                   "sizeY" : 2,
                   "row" : 5,
-                  "col" : 62
+                  "col" : 57
                 }
               },
               "gridSettings" : {
