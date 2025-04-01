@@ -567,9 +567,9 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "#fff",
+            "backgroundColor" : "#FFFFFF00",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
+            "padding" : "5px 0px",
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
@@ -584,9 +584,7 @@
             "titleTooltip" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
-            "widgetStyle" : {
-              "background-color" : "transparent"
-            },
+            "widgetStyle" : { },
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
