@@ -569,7 +569,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF00",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "5px 0px",
+            "padding" : "",
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
@@ -608,7 +608,8 @@
                 "openInPopover" : false,
                 "id" : "094f2d99-3619-7e7b-f649-9288217eebe6"
               } ]
-            }
+            },
+            "margin" : "5px 0px"
           },
           "row" : 0,
           "col" : 0,
@@ -655,7 +656,7 @@
             "showTitle" : false,
             "backgroundColor" : "rgba(255, 255, 255, 0)",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
+            "padding" : "5px 5px 0px 5px",
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
@@ -681,7 +682,8 @@
             "enableDataExport" : false,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "margin" : "5px 0px"
           },
           "row" : 0,
           "col" : 0,
