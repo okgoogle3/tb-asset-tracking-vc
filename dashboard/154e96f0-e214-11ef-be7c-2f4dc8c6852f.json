@@ -7909,7 +7909,11 @@
                 "autoScale" : false,
                 "customStyle" : {
                   "enabled" : null,
-                  "hovered" : null,
+                  "hovered" : {
+                    "overrideMainColor" : false,
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF00"
+                  },
                   "pressed" : null,
                   "activated" : null,
                   "disabled" : null
