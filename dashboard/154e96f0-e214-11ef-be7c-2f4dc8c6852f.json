@@ -7498,7 +7498,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF01",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
+            "padding" : "5px",
             "settings" : {
               "activatedState" : {
                 "action" : "GET_DASHBOARD_STATE_OBJECT",
