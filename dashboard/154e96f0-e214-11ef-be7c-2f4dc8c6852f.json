@@ -9660,7 +9660,7 @@
         "hideToolbar" : false,
         "showFilters" : true,
         "showUpdateDashboardImage" : true,
-        "dashboardCss" : ".tb-widget-header {\n    align-items: center;\n}\n\n.tb-widget-actions {\n    margin: 0px;    \n}\n\n.tb-active-state {\n    border-bottom: 2px solid var(--tb-primary-500) !important;\n}"
+        "dashboardCss" : ".tb-widget-header {\n    align-items: center;\n}\n\n.tb-widget-actions {\n    margin: 0px;    \n}\n\n.tb-active-state {\n    border-bottom: 2px solid var(--tb-primary-500) !important;\n    background-color: #FFFFF00;\n}"
       }
     },
     "name" : "Locations dashboard",
