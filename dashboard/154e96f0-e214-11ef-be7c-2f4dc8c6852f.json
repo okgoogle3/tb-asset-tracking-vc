@@ -7339,7 +7339,8 @@
                 "autoScale" : true,
                 "customStyle" : {
                   "enabled" : {
-                    "overrideMainColor" : false,
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054",
                     "overrideBackgroundColor" : false,
                     "overrideDropShadow" : false
                   },
@@ -7493,7 +7494,10 @@
                 "backgroundColor" : "#FFFFFF00",
                 "autoScale" : false,
                 "customStyle" : {
-                  "enabled" : null,
+                  "enabled" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054"
+                  },
                   "hovered" : null,
                   "pressed" : null,
                   "activated" : null,
@@ -7643,7 +7647,10 @@
                 "backgroundColor" : "#FFFFFF",
                 "autoScale" : false,
                 "customStyle" : {
-                  "enabled" : null,
+                  "enabled" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054"
+                  },
                   "hovered" : null,
                   "pressed" : null,
                   "activated" : null,
