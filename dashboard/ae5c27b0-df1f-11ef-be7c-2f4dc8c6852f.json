@@ -6356,7 +6356,7 @@
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
-        "selectedTab" : 1,
+        "selectedTab" : 0,
         "realtime" : {
           "realtimeType" : 0,
           "interval" : 1000,
