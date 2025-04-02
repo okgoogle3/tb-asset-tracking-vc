@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "tes"
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "0d968e80-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "d6b6e080-0f8d-11f0-a328-efa2e09fc93f"
+    },
+    "label" : null,
+    "name" : "tes",
+    "ownerId" : null,
+    "type" : "Location"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
