@@ -55,22 +55,18 @@
               "polygons" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
-                "polygonKey" : {
-                  "name" : "perimeter",
-                  "label" : "perimeter",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "9939b416-8e7a-4c1f-0366-dd5452a6f4f6",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "color",
                   "type" : "attribute",
+                  "label" : "color",
+                  "color" : "#2196f3",
                   "settings" : { },
-                  "color" : "#2196f3"
-                },
-                "fillColor" : {
-                  "type" : "constant",
-                  "color" : "rgba(51,136,255,0.2)"
-                },
-                "strokeColor" : {
-                  "type" : "constant",
-                  "color" : "#3388ff"
-                },
-                "strokeWeight" : 3,
+                  "_hash" : 0.8343943467253823
+                } ],
                 "label" : {
                   "show" : false,
                   "type" : "pattern",
@@ -88,12 +84,32 @@
                 "click" : {
                   "type" : "doNothing"
                 },
+                "groups" : null,
                 "edit" : {
                   "enabledActions" : [ ],
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 },
-                "dsEntityAliasId" : "9939b416-8e7a-4c1f-0366-dd5452a6f4f6"
+                "fillColor" : {
+                  "type" : "function",
+                  "color" : "rgba(51,136,255,0.2)",
+                  "range" : null,
+                  "colorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C915\";"
+                },
+                "strokeColor" : {
+                  "type" : "function",
+                  "color" : "#3388ff",
+                  "range" : null,
+                  "colorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C920\";"
+                },
+                "strokeWeight" : 3,
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                }
               } ],
               "circles" : [ ],
               "additionalDataSources" : [ ],
@@ -237,7 +253,7 @@
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "assistant_navigation",
