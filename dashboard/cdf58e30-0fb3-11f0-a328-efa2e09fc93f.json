@@ -45,63 +45,6 @@
                 "layerType" : "Esri.WorldImagery",
                 "referenceLayer" : "openstreetmap_hybrid"
               } ],
-              "imageSource" : null,
-              "markers" : [ ],
-              "polygons" : [ {
-                "dsType" : "entity",
-                "dsLabel" : "",
-                "polygonKey" : {
-                  "name" : "perimeter",
-                  "label" : "perimeter",
-                  "type" : "attribute",
-                  "settings" : { },
-                  "color" : "#2196f3"
-                },
-                "fillColor" : {
-                  "type" : "constant",
-                  "color" : "rgba(51,136,255,0.2)"
-                },
-                "strokeColor" : {
-                  "type" : "constant",
-                  "color" : "#3388ff"
-                },
-                "strokeWeight" : 3,
-                "label" : {
-                  "show" : false,
-                  "type" : "pattern",
-                  "pattern" : "${entityName}"
-                },
-                "tooltip" : {
-                  "show" : false,
-                  "trigger" : "click",
-                  "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-                  "offsetX" : 0,
-                  "offsetY" : -1
-                },
-                "click" : {
-                  "type" : "doNothing"
-                },
-                "edit" : {
-                  "enabledActions" : [ ],
-                  "attributeScope" : "SERVER_SCOPE",
-                  "snappable" : false
-                },
-                "dsEntityAliasId" : "8b39f63b-15b3-133e-fd8c-6550499542f7"
-              } ],
-              "circles" : [ ],
-              "additionalDataSources" : [ ],
-              "controlsPosition" : "topleft",
-              "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
-              "scales" : [ ],
-              "dragModeButton" : false,
-              "fitMapBounds" : true,
-              "useDefaultCenterPosition" : false,
-              "defaultCenterPosition" : "0,0",
-              "defaultZoomLevel" : null,
-              "mapPageSize" : 16384,
-              "mapActionButtons" : [ ],
               "trips" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
@@ -202,6 +145,63 @@
                   "offsetY" : -1
                 }
               } ],
+              "markers" : [ ],
+              "polygons" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                },
+                "fillColor" : {
+                  "type" : "constant",
+                  "color" : "rgba(51,136,255,0.2)"
+                },
+                "strokeColor" : {
+                  "type" : "constant",
+                  "color" : "#3388ff"
+                },
+                "strokeWeight" : 3,
+                "label" : {
+                  "show" : false,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "tooltip" : {
+                  "show" : false,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "dsEntityAliasId" : "8b39f63b-15b3-133e-fd8c-6550499542f7"
+              } ],
+              "circles" : [ ],
+              "additionalDataSources" : [ ],
+              "controlsPosition" : "topleft",
+              "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
+              "scales" : [ ],
+              "dragModeButton" : false,
+              "fitMapBounds" : true,
+              "useDefaultCenterPosition" : false,
+              "defaultCenterPosition" : "0,0",
+              "defaultZoomLevel" : null,
+              "minZoomLevel" : 16,
+              "mapPageSize" : 16384,
+              "mapActionButtons" : [ ],
               "tripTimeline" : {
                 "showTimelineControl" : true,
                 "timeStep" : 1000,
@@ -225,7 +225,8 @@
                   "blur" : 3
                 }
               },
-              "padding" : "8px"
+              "padding" : "8px",
+              "imageSource" : null
             },
             "title" : "test trip map",
             "dropShadow" : true,
@@ -237,7 +238,7 @@
             "showTitleIcon" : false,
             "titleIcon" : "assistant_navigation",
             "iconColor" : "#1F6BDD",
-            "useDashboardTimewindow" : false,
+            "useDashboardTimewindow" : true,
             "displayTimewindow" : true,
             "titleFont" : {
               "size" : null,
