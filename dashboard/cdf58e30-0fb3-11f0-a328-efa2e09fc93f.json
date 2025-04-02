@@ -64,6 +64,13 @@
                 "color" : "#607d8b",
                 "settings" : { },
                 "_hash" : 0.8849441028003096
+              }, {
+                "name" : "image",
+                "type" : "attribute",
+                "label" : "image",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.9143370907895871
               } ]
             } ],
             "timewindow" : {
