@@ -13,7 +13,7 @@
       "resources" : [ ],
       "templateHtml" : "<tb-map-widget \n    [ctx]=\"ctx\">\n</tb-map-widget>",
       "templateCss" : "",
-      "controllerScript" : "self.onInit = function() {\n    self.ctx.$scope.mapWidget.onInit();\n    \n    console.log(self.ctx.$scope.mapWidget)\n    \n    \n    setTimeout(function() {\n        console.log(self.ctx.subscriptions)\n        \n    }, 5000);\n    \n};\n\nself.onDataUpdated = function(){\n    console.log(\"onDataUpdated\")\n    console.log(self.ctx)\n}\n\nself.typeParameters = function() {\n    return {\n        trip: true,\n        hideDataTab: true,\n        hideDataSettings: true,\n        previewWidth: '80%',\n        embedTitlePanel: true,\n        embedActionsPanel: true,\n        datasourcesOptional: true,\n        additionalWidgetActionTypes: ['placeMapItem']\n    };\n}",
+      "controllerScript" : "self.onInit = function() {\n    self.ctx.$scope.mapWidget.onInit();\n    \n    console.log(self.ctx.$scope.mapWidget)\n    \n    \n    setTimeout(function() {\n        console.log(self.ctx.subscriptions)\n        \n    }, 5000);\n    \n};\n\nself.onDataUpdated = function(){\n    console.log(\"onDataUpdated\")\n    console.log(self.ctx.subscriptions)\n}\n\nself.typeParameters = function() {\n    return {\n        trip: true,\n        hideDataTab: true,\n        hideDataSettings: true,\n        previewWidth: '80%',\n        embedTitlePanel: true,\n        embedActionsPanel: true,\n        datasourcesOptional: true,\n        additionalWidgetActionTypes: ['placeMapItem']\n    };\n}",
       "settingsForm" : [ ],
       "dataKeySettingsForm" : [ ],
       "latestDataKeySettingsForm" : [ ],
