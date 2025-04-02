@@ -6356,7 +6356,7 @@
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
-        "selectedTab" : 0,
+        "selectedTab" : 1,
         "realtime" : {
           "realtimeType" : 0,
           "interval" : 1000,
@@ -6368,11 +6368,11 @@
         },
         "history" : {
           "historyType" : 1,
-          "interval" : 3378000,
-          "timewindowMs" : 60000,
+          "interval" : 1000,
+          "timewindowMs" : 300000,
           "fixedTimewindow" : {
-            "startTimeMs" : 1736562420000,
-            "endTimeMs" : 1738251263541
+            "startTimeMs" : 1743458340000,
+            "endTimeMs" : 1743458400000
           },
           "quickInterval" : "CURRENT_DAY",
           "hideInterval" : false,
