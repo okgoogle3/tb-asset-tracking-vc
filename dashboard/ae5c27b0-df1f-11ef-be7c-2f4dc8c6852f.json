@@ -6356,20 +6356,32 @@
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
-        "selectedTab" : 1,
-        "history" : {
-          "historyType" : 1,
-          "fixedTimewindow" : {
-            "startTimeMs" : 1736562420000,
-            "endTimeMs" : 1738251263541
-          },
-          "interval" : 3378000,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 300000,
+          "quickInterval" : "CURRENT_DAY",
           "hideInterval" : false,
           "hideLastInterval" : false,
           "hideQuickInterval" : false
         },
+        "history" : {
+          "historyType" : 1,
+          "interval" : 3378000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1736562420000,
+            "endTimeMs" : 1738251263541
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
         "aggregation" : {
-          "type" : "AVG",
+          "type" : "NONE",
           "limit" : 25000
         },
         "timezone" : null
