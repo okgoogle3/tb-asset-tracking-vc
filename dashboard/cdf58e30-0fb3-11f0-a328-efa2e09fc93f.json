@@ -964,7 +964,7 @@
             "main" : {
               "widgets" : {
                 "cbb91de2-4392-0251-682a-ebb3903c3ec7" : {
-                  "sizeX" : 8,
+                  "sizeX" : 10,
                   "sizeY" : 11,
                   "mobileHeight" : null,
                   "row" : 0,
@@ -992,13 +992,13 @@
                   "sizeX" : 7,
                   "sizeY" : 6,
                   "row" : 0,
-                  "col" : 15
+                  "col" : 17
                 },
                 "02f6ac6e-2cfd-ac2b-d651-4ac00fab1983" : {
                   "sizeX" : 7,
                   "sizeY" : 5,
                   "row" : 6,
-                  "col" : 15
+                  "col" : 17
                 }
               },
               "gridSettings" : {
