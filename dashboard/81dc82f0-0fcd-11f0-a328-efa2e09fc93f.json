@@ -1,0 +1,1247 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "Monitoring dashboard",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "16bc634f-a14b-c262-675c-3031d2cb6863" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
+              "filterId" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.46511246306141363
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1737290696698,
+                  "endTimeMs" : 1737377096698
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "",
+              "markdownTextFunction" : "let controller = ctx.stateController;\nlet params = controller.getStateParams();\n\nconst assetsNumber = ctx.datasources.length;\n\nctx.isPanelExtended = false;\n\nctx.toggle = function(){\n    ctx.isPanelExtended = !ctx.isPanelExtended;\n    ctx.detectChanges();\n};\n\nreturn `\n    <div class=\"widget-container\">\n        <tb-dashboard-state class=\"map-container\" [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"monitoringMap\">\n        </tb-dashboard-state>\n        <div class=\"panel-container\" [class.extended]=\"ctx.isPanelExtended\">\n            <mat-expansion-panel class=\"bottom-panel\" (opened)=\"ctx.toggle()\" (closed)=\"ctx.toggle()\" hideToggle>\n                <mat-expansion-panel-header id=\"expansion-panel-header\" expandedHeight=\"48px\" collapsedHeight=\"48px\"\n                >\n                    <mat-panel-title>\n                        <mat-icon class=\"icon build\">build</mat-icon>\n                        <span class=\"total-assets-label\">Total assets</span>\n                        <span class=\"total-assets-counter\">${assetsNumber}</span>\n                    </mat-panel-title>\n                    <button mat-button color=\"primary\" id=\"showAssets\">\n                        <mat-icon color=\"primary\" class=\"icon\" [ngClass]=\"{'rotate-icon': ctx.isPanelExtended}\">keyboard_arrow_up</mat-icon>\n                        <span class=\"button-text\">{{ctx.isPanelExtended ? 'Hide assets' : 'Open assets'}}</span>\n                    </button>\n                </mat-expansion-panel-header>\n                <div class=\"assets-table\">\n                    <tb-dashboard-state [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"monitoringAssetsList\">\n                    </tb-dashboard-state>\n                </div>\n            </mat-expansion-panel>\n        </div>\n    </div>\n`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".widget-container {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    padding: 0;\n}\n\n.map-container {\n    flex: 1;\n}\n\n/*mat-expansion-panel {*/\n/*    height: 100%;*/\n/*}*/\n\n/*::ng-deep .mat-expansion-panel-content {*/\n/*    height: 100%;*/\n/*}*/\n\n/*::ng-deep.mat-expansion-panel-body {*/\n/*    height: 100%;*/\n/*}*/\n\n/*.panel-container.extended {*/\n/*    flex: 1;*/\n/*}*/\n\n.assets-table {\n    /*height: calc(100% - 48px);*/\n    height: 45vh;\n    overflow-y: auto;\n}\n\n::ng-deep .mat-expansion-panel .mat-expansion-panel-body {\n  padding: 0 !important;\n}\n\n::ng-deep mat-expansion-panel-header {\n    padding: 0 20px!important;\n}\n\n.total-assets-counter {\n    color: #0C111D;\n    font-weight: 600;\n    line-height: 24px;\n    letter-spacing: 0.16px;\n}\n\n.total-assets-label {\n    color: #344054;\n    line-height: 24px;\n    margin-right: 8px;\n}\n\n.icon.build {\n    color: #344054;\n    margin-right: 8px;\n    width: 20px;\n    height: 20px;\n    font-size: 20px;\n}\n\n::ng-deep .mat-content {\n    margin-right: 0!important;\n    overflow: none;\n}\n\n.mat-expansion-panel-header .mat-icon {\n  transition: transform 0.3s ease-in-out;\n}\n\n.rotate-icon {\n  transform: rotate(180deg);\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "16bc634f-a14b-c262-675c-3031d2cb6863"
+        },
+        "f12c32e0-c737-7f5b-040d-54b18f976928" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1726407829645,
+                  "endTimeMs" : 1726494229645
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "entitiesTitle" : "Assets list",
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : false,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "showCellActionsMenu" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
+              "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "-createdTime",
+              "useRowStyleFunction" : false,
+              "rowStyleFunction" : ""
+            },
+            "title" : "Entities table",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : null,
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
+              "filterId" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6580331725852475
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.6240940882444408
+              }, {
+                "name" : "assignedDevice",
+                "type" : "attribute",
+                "label" : "Assigned device",
+                "color" : "#ffc107",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "if (value) {\n    try {\n        const obj = JSON.parse(value);\n        return obj.name;\n    } catch(err) {\n        return value\n    }\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.8478137172581828,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "lastActivityTime",
+                "type" : "attribute",
+                "label" : "Last activity",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "return moment(value).format('DD.MM.YYYY HH:mm');",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.748746481778003,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "rssi",
+                "type" : "timeseries",
+                "label" : "Device signal",
+                "color" : "#cddc39",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "let signal1 = `<svg width=\"26\" height=\"16\" viewBox=\"0 0 26 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                <rect x=\"0.5\" y=\"12\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#B42318\"/>\n                <rect x=\"7.5\" y=\"8\" width=\"4\" height=\"8\" rx=\"1\" fill=\"#FEE4E2\"/>\n                <rect x=\"14.5\" y=\"4\" width=\"4\" height=\"12\" rx=\"1\" fill=\"#FEE4E2\"/>\n                <rect x=\"21.5\" width=\"4\" height=\"16\" rx=\"1\" fill=\"#FEE4E2\"/>\n            </svg>`; \n\nlet signal2 = `<svg width=\"26\" height=\"16\" viewBox=\"0 0 26 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                <rect x=\"0.5\" y=\"12\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#DC6803\"/>\n                <rect x=\"7.5\" y=\"8\" width=\"4\" height=\"8\" rx=\"1\" fill=\"#DC6803\"/>\n                <rect x=\"14.5\" y=\"4\" width=\"4\" height=\"12\" rx=\"1\" fill=\"#FEF0C7\"/>\n                <rect x=\"21.5\" width=\"4\" height=\"16\" rx=\"1\" fill=\"#FEF0C7\"/>\n            </svg>`;\n\nlet signal3 = `<svg width=\"26\" height=\"16\" viewBox=\"0 0 26 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                <rect x=\"0.5\" y=\"12\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"7.5\" y=\"8\" width=\"4\" height=\"8\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"14.5\" y=\"4\" width=\"4\" height=\"12\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"21.5\" width=\"4\" height=\"16\" rx=\"1\" fill=\"#DCFAE6\"/>\n            </svg>`;\n\nlet signal4 = `<svg width=\"26\" height=\"16\" viewBox=\"0 0 26 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                <rect x=\"0.5\" y=\"12\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"7.5\" y=\"8\" width=\"4\" height=\"8\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"14.5\" y=\"4\" width=\"4\" height=\"12\" rx=\"1\" fill=\"#067647\"/>\n                <rect x=\"21.5\" width=\"4\" height=\"16\" rx=\"1\" fill=\"#067647\"/>\n            </svg>`;\n            \nlet noSignal = `<div style=\"display: flex; align-items:center; gap: 2px;\">\n                <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path d=\"M8.00001 1.33301C4.31334 1.33301 1.33334 4.31301 1.33334 7.99967C1.33334 11.6863 4.31334 14.6663 8.00001 14.6663C11.6867 14.6663 14.6667 11.6863 14.6667 7.99967C14.6667 4.31301 11.6867 1.33301 8.00001 1.33301ZM8.00001 13.333C5.06001 13.333 2.66668 10.9397 2.66668 7.99967C2.66668 5.05967 5.06001 2.66634 8.00001 2.66634C10.94 2.66634 13.3333 5.05967 13.3333 7.99967C13.3333 10.9397 10.94 13.333 8.00001 13.333ZM10.3933 4.66634L8.00001 7.05967L5.60668 4.66634L4.66668 5.60634L7.06001 7.99967L4.66668 10.393L5.60668 11.333L8.00001 8.93967L10.3933 11.333L11.3333 10.393L8.94001 7.99967L11.3333 5.60634L10.3933 4.66634Z\" fill=\"#667085\"/>\n                </svg> \n                <span style=\"font-weight: 500; color: #667085;\">No signal</span>\n            </div>`;\n\nif(entity.Status == \"false\"){\n    return noSignal;\n}\n\nif(value && value <= -110){\n    return signal1;\n} else if(value && value > -110 && value <= -90){\n    return signal2;\n} else if(value && value > -90 && value <= -70){\n    return signal3;\n} else if(value && value >= -70){\n    return signal4;\n} else {\n    return noSignal;   \n}\n",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.5950776823874497,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : false,
+                "postFuncBody" : null
+              }, {
+                "name" : "department",
+                "type" : "attribute",
+                "label" : "Department",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.601522070658042,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "status",
+                "type" : "attribute",
+                "label" : "Status",
+                "color" : "#cddc39",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "if(value && value=='true'){\n    return `<div style=\"border-radius: 4px;\n    height: fit-content;\n    font-size: 12px;\n    font-weight: 600;\n    padding: 4px 8px;\n    width: fit-content;\n    background-color: #E0F2FE;\n    color: #026AA2;\">\n        ACTIVE</div>`;  \n} else {\n    return `<div style=\"border-radius: 4px;\n    height: fit-content;\n    font-size: 12px;\n    font-weight: 600;\n    padding: 4px 8px;\n    width: fit-content;\n    background-color: #EAECF0;\n    color: #475467;\">\n        INACTIVE</div>`;  \n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.17264621491492993,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "alertActivity",
+                "type" : "attribute",
+                "label" : "Alerts activity",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "if(value && value=='true'){\n    return `<div style=\"border-radius: 4px;\n    height: fit-content;\n    font-size: 12px;\n    font-weight: 600;\n    padding: 4px 8px;\n    width: fit-content;\n    background-color: #FEE4E2;\n    color: #B42318;\">\n        ALERT</div>`;  \n} else {\n    return `<div style=\"border-radius: 4px;\n    height: fit-content;\n    font-size: 12px;\n    font-weight: 600;\n    padding: 4px 8px;\n    width: fit-content;\n    background-color: #EAECF0;\n    color: #475467;\">\n        NO ALERTS</div>`;  \n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.25877106148760554,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "advanced",
+            "actions" : {
+              "elementClick" : [ ],
+              "actionCellButton" : [ {
+                "name" : "Asset location",
+                "icon" : "gps_fixed",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet broadcastService = $injector.get(widgetContext.servicesMap.get('broadcastService'));\n\nbroadcastService.broadcast('assetCentered', entityId.id);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "27934770-04bb-8465-61d6-252a439701d5"
+              }, {
+                "name" : "Route history",
+                "icon" : "route",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst assetsDashboardName = \"Assets dashboard\";\n\ndashboardService.getTenantDashboards(pageLink).subscribe(response => {\n    const dashboardId = response.data.find(dashboard => dashboard.title === assetsDashboardName).id.id;\n    \n    const jsonStr = JSON.stringify([\n        {\n            id: \"default\",\n            params: {\n                stateId: \"assetDetails\",\n                prevState: \"assets\",\n                subState: \"eventHistory\",\n                statesArray: [\n                    {\n                        stateId: \"assets\",\n                        name: \"Assets\"\n                    },\n                    {\n                        stateId: \"assetDetails\",\n                        name: entityName\n                    }\n                ],\n                selectedEntity: {\n                    entityName,\n                    entityId,\n                    entityLabel\n                }\n            }\n        }\n    ]);\n    \n    const state = btoa(jsonStr);\n    \n    const queryParams = {\n        stateId: \"Assets\",\n        dashboardId,\n        hideDashboardToolbar: true,\n        state\n    };\n    \n    router.navigate(['/iframeView'], {queryParams});\n});",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "e16a78bb-f52b-b423-b1da-040a6ecb559c"
+              } ],
+              "headerButton" : [ {
+                "name" : "Filters",
+                "icon" : "filter_list",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form class=\"form-wrapper\" [formGroup]=\"filtersFormGroup\">\n    <div class=\"form-header-panel\">\n        <div class=\"title\">\n            Filters\n        </div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n\n    <div class=\"section-title\">\n        Location filters\n    </div>\n        \n    <div class=\"row\">\n        <div class=\"input-wrapper\">\n            <ng-container *ngTemplateOutlet=\"selectWithAllOptions; context: {\n                label: 'Location',\n                options: locationOptions,\n                formControlName: 'location',\n                allSelected: allLocationsSelected\n            }\"></ng-container>\n        </div>\n        <div class=\"input-wrapper\">\n            <ng-container *ngTemplateOutlet=\"selectWithAllOptions; context: {\n                label: 'Zone',\n                options: zoneOptions,\n                formControlName: 'zone',\n                allSelected: allZonesSelected\n            }\"></ng-container>\n        </div>\n    </div>\n    \n    <div class=\"section-title\">\n        Asset filters\n    </div>\n    <div>\n        \n        <div class=\"activity-status-label\">\n            Activity status\n        </div>\n        <div class=\"input-wrapper activity-status-container\" formGroupName=\"status\">\n            <mat-checkbox formControlName=\"active\" tabIndex=\"-1\" color=\"primary\">Active</mat-checkbox>\n            <mat-checkbox formControlName=\"inactive\" tabIndex=\"-1\" color=\"primary\">Inactive</mat-checkbox>\n        </div>\n    </div>\n    \n    <div class=\"row\">\n        <div class=\"input-wrapper\">\n            <ng-container *ngTemplateOutlet=\"selectWithAllOptions; context: {\n                label: 'Type',\n                options: assetTypes,\n                formControlName: 'type',\n                allSelected: allTypesSelected\n            }\"></ng-container>\n        </div>\n        <div class=\"input-wrapper\">\n            <ng-container *ngTemplateOutlet=\"selectWithAllOptions; context: {\n                label: 'Department',\n                options: departmentOptions,\n                formControlName: 'department',\n                allSelected: allDepartmentsSelected\n            }\"></ng-container>\n        </div>\n    </div>\n    \n    <div class=\"row half-row\">\n        <div class=\"input-wrapper\">\n             <ng-container *ngTemplateOutlet=\"selectWithAllOptions; context: {\n                label: 'Alert status',\n                options: alertStatusOptions,\n                formControlName: 'alertActivity',\n                allSelected: allAlertStatusesSelected\n            }\"></ng-container>\n        </div>\n    </div>\n    \n    <div class=\"buttons-container\">\n        <button mat-button (click)=\"cancel()\" tabindex=\"-1\">Cancel</button>\n        <button mat-flat-button color=\"primary\" (click)=\"applyFilters()\" [disabled]=\"filtersFormGroup.invalid\">Apply</button>\n    </div>\n    \n    <ng-template #selectWithAllOptions let-label=\"label\" let-options=\"options\" let-formControlName=\"formControlName\" let-allSelected=\"allSelected\">\n        <mat-form-field appearance=\"outline\">\n            <mat-select [formControlName]=\"formControlName\" multiple>\n                <div class=\"mat-mdc-option\" (click)=\"toggleAllSelection(formControlName, options)\">\n                    <mat-pseudo-checkbox class=\"mat-pseudo-checkbox mat-mdc-option-pseudo-checkbox mat-pseudo-checkbox-full ng-star-inserted\"\n                        [class.mat-pseudo-checkbox-checked]=\"allSelected\"\n                    >\n                    </mat-pseudo-checkbox>\n                    <span class=\"mdc-list-item__primary-text\" >All</span>\n                    <div mat-ripple=\"\" class=\"mat-ripple mat-mdc-option-ripple mat-mdc-focus-indicator\"></div>\n                </div>\n                <mat-option *ngFor=\"let option of options\" [value]=\"option.value\" (click)=\"onOptionSelected(formControlName, options)\">{{option.label}}</mat-option>    \n            </mat-select>\n            <mat-label>{{label}}</mat-label>\n        </mat-form-field>\n    </ng-template>\n</form>",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n    margin-top: 16px!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.buttons-container button:not(:last-child) {\n    margin-right: 8px;\n}\n\n.buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.row {\n    display: flex;\n    width: 100%;\n    gap: 20px;\n}\n\n.half-row {\n    width: calc(50% - 10px);\n}\n\n.row .input-wrapper {\n    flex: 1;\n}\n\ninput, mat-form-field, tb-phone-input  {\n    width: 100%;\n}\n\n.tb-default .mat-stepper-horizontal, .tb-default .mat-stepper-vertical {\n    background-color: transparent;\n}\n\n.toggle-label {\n    color: #344054;\n    line-height: 24px;\n    margin-right: 16px;\n}\n\n.activity-status-container {\n    margin: 0 0 16px -12px;\n}\n\n.activity-status-label {\n    color: #0C111D;\n    line-height: 24px;\n}\n\n.section-title {\n    color: #0C111D;\n    font-size: 18px;\n    font-weight: 600;\n    line-height: 28px;\n    margin-bottom: 12px;\n}",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet controller, params;\n\nopenAssetsFilterDialog();\n\nfunction openAssetsFilterDialog() {\n    customDialog.customDialog(htmlTemplate, AssetEditDialogController).subscribe();\n}\n\nfunction AssetEditDialogController(instance) {\n    const vm = instance;\n    const aliasController = widgetContext.dashboard.aliasController;\n    \n    controller = widgetContext.$scope.ctx.stateController;\n    params = controller.getStateParams();\n    \n    vm.allLocationsSelected = true;\n    vm.allZonesSelected = true;\n    vm.allTypesSelected = true;\n    vm.allDepartmentsSelected = true;\n    vm.allAlertStatusesSelected = true;\n    \n    const pageLink = widgetContext.pageLink(1073741824);\n    \n    let oldSelectedLocations = [];\n    \n    let hierarchyTree = {};\n    \n    vm.assetTypes = [\n        {\n            label: \"Loader\",\n            value: \"Loader\"\n        },\n        {\n            label: \"Box\",\n            value: \"Box\",\n        },\n        {\n            label: \"Worker\",\n            value: \"Worker\"\n        }, \n        {\n            label: \"Tool\",\n            value: \"Tool\"\n        }\n    ];\n    \n    vm.departmentOptions = [\n        {\n            label: \"Department 1\",\n            value: \"Department 1\"\n        },\n        {\n            label: \"Department 2\",\n            value: \"Department 2\"\n        },\n        {\n            label: \"Department 3\",\n            value: \"Department 3\"\n        }\n    ];\n    \n    vm.statusOptions = [\n        {\n            label: \"Active\",\n            value: \"true\"\n        },\n        {\n            label: \"Inactive\",\n            value: \"false\"\n        }\n    ];\n    \n    vm.alertStatusOptions = [\n        {\n            label: \"Assets with alerts\",\n            value: \"true\"\n        },\n        {\n            label: \"Assets without alerts\",\n            value: \"false\",\n        }\n    ];\n    \n    vm.locationOptions = [];\n    \n    vm.zoneOptions = [];\n    \n    function atLeastOneTrueValidator() {\n        return (formGroup) => {\n            const active = formGroup.get('active')?.value;\n            const inactive = formGroup.get('inactive')?.value;\n        \n            if (active !== true && inactive !== true) {\n              return { atLeastOneTrue: true };\n            }\n            \n            return null;\n        };\n    }\n    \n    vm.filtersFormGroup = vm.fb.group({\n        location: [[], [vm.validators.required]],\n        zone: [[], [vm.validators.required]],\n        type: [vm.assetTypes.map(option => option.value), [vm.validators.required]],\n        department: [vm.departmentOptions.map(option => option.value), [vm.validators.required]],\n        status: vm.fb.group({\n            active: [true, []],\n            inactive: [true, []]\n        }),\n        alertActivity: [vm.alertStatusOptions.map(option => option.value), [vm.validators.required]]\n    });\n    \n    vm.filtersFormGroup.get(\"location\").valueChanges.subscribe(locations => {\n        let currentZoneValue = vm.filtersFormGroup.get(\"zone\").value;\n        \n        let updatedZoneIds = [];\n        \n        if (locations && locations.length) {\n            const newZoneOptions = [];\n            \n            locations.forEach(locationId => {\n                hierarchyTree[locationId].zones.forEach(zone => {\n                    const zoneId = zone.id;\n                    newZoneOptions.push({\n                        label: zone.zoneName,\n                        value: zoneId\n                    });\n                    \n                    updatedZoneIds.push(zoneId);\n                });\n            });\n            vm.zoneOptions = newZoneOptions;\n        }\n        \n        const newZones = currentZoneValue.filter(zone => updatedZoneIds.includes(zone));\n        \n        const selectedLocations = locations.filter(location => !oldSelectedLocations.includes(location));\n        \n        if (selectedLocations && selectedLocations.length) {\n            hierarchyTree[selectedLocations[0]].zones.forEach(zone => {\n                newZones.push(zone.id);\n            });\n        }\n        \n        vm.filtersFormGroup.get(\"zone\").setValue(newZones);\n        \n        oldSelectedLocations = locations;\n    });\n    \n    const locationParams = {\n        entityFilter: {\n            type: \"assetType\",\n            assetType: \"Location\"\n        },\n        pageLink,\n        entityFields: [\n            {\n                type: \"ENTITY_FIELD\",\n                key: \"name\"\n            }\n        ]\n    };\n    \n    let zoneIds = [];\n    let zones = {};\n    \n    widgetContext.http.post(`/api/entitiesQuery/find`, locationParams)\n        .pipe(\n            widgetContext.rxjs.switchMap((locationsResponse) => {\n                hierarchyTree = {};\n                \n                const locationIds = [];\n                locationsResponse.data.forEach(locationElement => {\n                    const locationId = locationElement.entityId.id;\n                    const locationName = locationElement.latest.ENTITY_FIELD.name.value;\n                    locationIds.push(locationId);\n                    \n                    vm.locationOptions.push({\n                        label: locationName,\n                        value: locationId\n                    });\n                    \n                    hierarchyTree[locationId] = {\n                        locationName,\n                        locationId,\n                        zones: []\n                    };\n                });\n                \n                widgetContext.detectChanges();\n                \n                const zoneQueryParams = {\n                    entityFilter: {\n                        type: \"relationsQuery\",\n                        multiRoot: true,\n                        multiRootEntitiesType: \"ASSET\",\n                        direction: \"TO\",\n                        maxLevel: 1,\n                        multiRootEntityIds: locationIds,\n                        filters: [{\n                            relationType: \"ZoneToLocation\"\n                        }]\n                    },\n                    pageLink,\n                    entityFields: [\n                        {\n                            type: \"ENTITY_FIELD\",\n                            key: \"name\"\n                        }, {\n                            type: \"ENTITY_FIELD\",\n                            key: \"parentId\"\n                        }\n                    ]\n                };\n                \n                return widgetContext.http.post(`/api/entitiesQuery/find`, zoneQueryParams);\n            }),\n            widgetContext.rxjs.switchMap((zonesResponse) => {\n                zoneIds = [];\n                \n                zonesResponse.data.forEach((zoneElement) => {\n                    const zoneId = zoneElement.entityId.id;\n                    const zoneName = zoneElement.latest.ENTITY_FIELD.name.value;\n                    const locationId = zoneElement.latest.ENTITY_FIELD.parentId.value;\n                    zoneIds.push(zoneId);\n                    \n                    vm.zoneOptions.push({\n                        label: zoneName,\n                        value: zoneId\n                    });\n                    \n                    const zone = {\n                        zoneName,\n                        id: zoneId,\n                        assets: [],\n                        geofences: [],\n                        locationId\n                    };\n                    \n                    zones[zoneId] = zone;\n                });\n            \n                const assetQueryParams = {\n                    entityFilter: {\n                        type: \"relationsQuery\",\n                        multiRoot: true,\n                        multiRootEntitiesType: \"ASSET\",\n                        direction: \"FROM\",\n                        maxLevel: 1,\n                        multiRootEntityIds: zoneIds,\n                        filters: [{\n                            relationType: \"ZoneToAsset\"\n                        }]\n                    },\n                    pageLink,\n                    entityFields: [\n                        {\n                            type: \"ENTITY_FIELD\",\n                            key: \"name\"\n                        },\n                        {\n                            type: \"ENTITY_FIELD\",\n                            key: \"type\"\n                        },\n                        {\n                            type: \"ENTITY_FIELD\",\n                            key: \"parentId\"\n                        }\n                    ],\n                    latestValues: [\n                        {\n                            type: \"ATTRIBUTE\",\n                            key: \"status\"\n                        },\n                        {\n                            type: \"ATTRIBUTE\",\n                            key: \"alertActivity\"\n                        }\n                    ]\n                };\n                \n                return  widgetContext.http.post(`/api/entitiesQuery/find`, assetQueryParams);\n\n            }),\n            widgetContext.rxjs.switchMap((assetResponse) => {\n                assetResponse.data.forEach(assetElement => {\n                    const zoneId = assetElement.latest.ENTITY_FIELD.parentId.value;\n                    \n                    const asset = {\n                        name: assetElement.latest.ENTITY_FIELD.name.value,\n                        type: assetElement.latest.ENTITY_FIELD.type.value,\n                        status: assetElement.latest.ATTRIBUTE.status.value,\n                        alertActivity: assetElement.latest.ATTRIBUTE.alertActivity.value ? assetElement.latest.ATTRIBUTE.alertActivity.value : \"false\"\n                    };\n                    \n                    zones[zoneId].assets.push(asset);\n                });\n                \n                const geofenceQueryParams = {\n                    entityFilter: {\n                        type: \"relationsQuery\",\n                        multiRoot: true,\n                        multiRootEntitiesType: \"ASSET\",\n                        direction: \"TO\",\n                        maxLevel: 1,\n                        multiRootEntityIds: zoneIds,\n                        filters: [{\n                            relationType: \"GeofenceToZone\"\n                        }]\n                    },\n                    pageLink,\n                    entityFields: [\n                        {\n                            type: \"ENTITY_FIELD\",\n                            key: \"name\"\n                        }, {\n                            type: \"ENTITY_FIELD\",\n                            key: \"parentId\"\n                        }\n                    ]\n                };\n                \n                return  widgetContext.http.post(`/api/entitiesQuery/find`, geofenceQueryParams);\n            }),\n            widgetContext.rxjs.switchMap((geofenceResponse) => {\n                geofenceResponse.data.forEach(geofenceElement => {\n                    const zoneId = geofenceElement.latest.ENTITY_FIELD.parentId.value;\n                    const geofenceId = geofenceElement.entityId.id;\n                    const geofenceName = geofenceElement.latest.ENTITY_FIELD.name.value;\n                    \n                    const geofence = {\n                        geofenceName\n                    };\n                    \n                    zones[zoneId].geofences.push(geofence);\n                });\n                \n                Object.values(zones).forEach(zone => {\n                    hierarchyTree[zone.locationId].zones.push(zone);\n                });\n                \n                return widgetContext.rxjs.of(geofenceResponse);\n            })\n        )\n        .subscribe(() => {\n            if (params.filtersFormGroupValue) {\n                const formValue = params.filtersFormGroupValue;\n                vm.filtersFormGroup.patchValue(formValue);\n                vm.allLocationsSelected = vm.locationOptions.length === formValue.location.length;\n                vm.allZonesSelected = vm.zoneOptions.length === formValue.zone.length;\n                vm.allTypesSelected = vm.typeOptions === formValue.type.length;\n                vm.allDepartmentsSelected = vm.departmentOptions.length === formValue.department.length;\n                vm.allAlertStatusesSelected = vm.alertStatusOptions.length === formValue.alertActivity.length;\n            } else {\n                vm.filtersFormGroup.get(\"location\").setValue(vm.locationOptions.map(element => element.value));\n                \n                vm.filtersFormGroup.get(\"zone\").setValue(vm.zoneOptions.map(zone => zone.value));\n            }\n            \n        });\n        \n    vm.toggleAllSelection = function(controlName, options) {\n        const controlValue = vm.filtersFormGroup.get(controlName).value;\n        \n        const allSelected = controlValue ? controlValue.length === options.length : false;\n        \n        vm.filtersFormGroup.get(controlName).setValue(allSelected ? []: options.map(option => option.value));\n        \n        switch (controlName) {\n            case \"type\":\n                vm.allTypesSelected = !allSelected;\n                break;\n            case \"department\":\n                vm.allDepartmentsSelected = !allSelected;\n                break;\n            case \"alertActivity\": \n                vm.allAlertStatusesSelected = !allSelected;\n                break;\n            case \"location\":\n                vm.allLocationsSelected = !allSelected;\n                break;\n            default: \n                vm.allZonesSelected = !allSelected;\n                break;\n        }\n        \n        widgetContext.detectChanges();\n    };\n    \n    vm.onOptionSelected = function(controlName, options) {\n        const selectedValues = vm.filtersFormGroup.get(controlName).value;\n        \n        const allOptionsSelected = selectedValues.length === options.length;\n        \n        switch (controlName) {\n            case \"type\": \n                vm.allTypesSelected = allOptionsSelected;\n                break;\n            case \"department\":\n                vm.allDepartmentsSelected = allOptionsSelected;\n                break;\n            case \"alertActivity\":\n                vm.allAlertStatusesSelected = allOptionsSelected;\n                break;\n            case \"location\":\n                vm.allLocationsSelected = allOptionsSelected;\n                break;\n            default: \n                vm.allZonesSelected = allOptionsSelected;\n                break;\n        }\n        \n    };\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    function updateFilter(filterName, filterValue) {\n        const filterId = Object.keys(aliasController.origFilters).find((filterId) => \n            aliasController.origFilters[filterId].filter === filterName\n        );\n        \n        const filtersCopy = Object.assign({}, aliasController.origFilters);\n        const condition = filtersCopy[filterId];\n        if(condition && condition.keyFilters.length && condition.keyFilters[0].predicates.length){\n            condition.keyFilters[0].predicates[0].keyFilterPredicate.value.defaultValue = filterValue.length ? filterValue.join(\", \") : \"{}\";\n            aliasController.updateUserFilter(condition);\n            widgetContext.updateAliases();\n        }\n    }\n    \n    vm.applyFilters = function() {\n        const formValue = vm.filtersFormGroup.value;\n        \n        params.filtersFormGroupValue = formValue;\n        \n        widgetContext.updateAliases();\n        controller.updateState('default', params);\n        \n        const allAssets = [];\n        const allGeofences = [];\n        \n        formValue.zone.forEach(zoneId => {\n            const zone = zones[zoneId];\n            zone.assets.forEach(asset => allAssets.push(asset));\n            zone.geofences.forEach(geofence => allGeofences.push(geofence));\n        });\n        \n        \n        const filteredAssetNames = allAssets.filter(option => {\n            const hasSuitableType = formValue.type && formValue.type.length\n                ? formValue.type.includes(option.type)\n                : true;\n                \n            const hasSuitableDepartment = true;\n            \n            const statuses = [];\n            \n            if (formValue.status.active) {\n                statuses.push(\"true\");\n            }\n            \n            if (formValue.status.inactive) {\n                statuses.push(\"false\");\n            }\n            \n            const hasSuitableStatus = statuses.length\n                ? statuses.includes(option.status)\n                : true;\n                \n            const hasSuitableAlertActivity = formValue.alertActivity && formValue.alertActivity.length\n                ? formValue.alertActivity.includes(option.alertActivity)\n                : true;\n                \n            return hasSuitableType && hasSuitableStatus && hasSuitableDepartment && hasSuitableAlertActivity;\n        }).map(assetOption => assetOption.name);\n        \n        const filteredZoneNames = vm.zoneOptions.filter((option) => formValue.zone.includes(option.value)).map(zone => zone.label);\n        \n        const filteredGeofencesNames = allGeofences.map(geofence => geofence.geofenceName)\n        \n        if (aliasController.origFilters) {\n            updateFilter(\"Monitoring zones\", filteredZoneNames);\n            updateFilter(\"Monitoring assets\", filteredAssetNames);\n            updateFilter(\"Monitoring geofences\", filteredGeofencesNames);\n        }\n        \n        vm.dialogRef.close(null);\n    };\n}",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "24095203-6b4b-0ab4-b3f9-743a3ad1fa16"
+              } ],
+              "rowClick" : [ ]
+            },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : {
+              "size" : 24,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : "600",
+              "style" : null,
+              "lineHeight" : "32px"
+            },
+            "titleColor" : "#0C111D",
+            "enableDataExport" : false,
+            "titleTooltip" : "",
+            "widgetStyle" : null,
+            "widgetCss" : ".tb-widget-header {\n    padding: 0 20px;\n}\n\nmat-cell:not(:last-child), mat-header-cell {\n    padding: 0 20px!important;\n}\n\n.tb-widget-title {\n    padding: 0!important;\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "0"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f12c32e0-c737-7f5b-040d-54b18f976928"
+        },
+        "f2b8585c-58c1-a14e-c7f7-8ef11b6d21a0" : {
+          "typeFullFqn" : "tenant.geo_map_testing_several_",
+          "type" : "latest",
+          "sizeX" : 8.5,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
+              "filterId" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
+              "dataKeys" : [ {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#cddc39",
+                "settings" : { },
+                "_hash" : 0.2986455597564308,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#009688",
+                "settings" : { },
+                "_hash" : 0.41189426277742713,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "department",
+                "type" : "attribute",
+                "label" : "department",
+                "color" : "#795548",
+                "settings" : { },
+                "_hash" : 0.27332763419906514
+              }, {
+                "name" : "latitude",
+                "type" : "timeseries",
+                "label" : "latitude",
+                "color" : "#00bcd4",
+                "settings" : { },
+                "_hash" : 0.8691331850713611
+              }, {
+                "name" : "longitude",
+                "type" : "timeseries",
+                "label" : "longitude",
+                "color" : "#ff5722",
+                "settings" : { },
+                "_hash" : 0.24512399004648255
+              }, {
+                "name" : "status",
+                "type" : "attribute",
+                "label" : "status",
+                "color" : "#9e9e9e",
+                "settings" : { },
+                "_hash" : 0.2618113625200873
+              }, {
+                "name" : "assignedDevice",
+                "type" : "attribute",
+                "label" : "assignedDevice",
+                "color" : "#2962ff",
+                "settings" : { },
+                "_hash" : 0.6332042746227031,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n}\nreturn value;"
+              }, {
+                "name" : "assignedLocation",
+                "type" : "attribute",
+                "label" : "assignedLocation",
+                "color" : "#00c853",
+                "settings" : { },
+                "_hash" : 0.4523860899796448,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n}\nreturn value;"
+              }, {
+                "name" : "alertActivity",
+                "type" : "attribute",
+                "label" : "alertActivity",
+                "color" : "#d50000",
+                "settings" : { },
+                "_hash" : 0.38783824590758975
+              }, {
+                "name" : "movement",
+                "type" : "timeseries",
+                "label" : "movement",
+                "color" : "#ffab00",
+                "settings" : { },
+                "_hash" : 0.3946825464926953
+              }, {
+                "name" : "alertTypes",
+                "type" : "attribute",
+                "label" : "alertTypes",
+                "color" : "#64dd17",
+                "settings" : { },
+                "_hash" : 0.7942812312512741
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
+              "filterId" : "15f05a19-1a40-bf5e-e5e7-f2bdbc06e3d0",
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "type" : "entityField",
+                "label" : "Created time",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.16468545057873163
+              }, {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.39500308334874945
+              }, {
+                "name" : "color",
+                "type" : "attribute",
+                "label" : "color",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.8852982330038788,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.2377097665609258
+              }, {
+                "name" : "pointA",
+                "type" : "attribute",
+                "label" : "pointA",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.2668346884734354
+              }, {
+                "name" : "pointB",
+                "type" : "attribute",
+                "label" : "pointB",
+                "color" : "#ffeb3b",
+                "settings" : { },
+                "_hash" : 0.7033856867435795
+              }, {
+                "name" : "pointC",
+                "type" : "attribute",
+                "label" : "pointC",
+                "color" : "#03a9f4",
+                "settings" : { },
+                "_hash" : 0.7448655734509102
+              }, {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.9640001042101256,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "image",
+                "type" : "attribute",
+                "label" : "image",
+                "color" : "#673ab7",
+                "settings" : { },
+                "_hash" : 0.10882286156404875
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#455a64",
+                "settings" : { },
+                "_hash" : 0.6544727540997131,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "e8f88e04-f80c-2aa6-a69a-9bc1cc1ca096",
+              "filterId" : "0f60db3a-df12-283e-6705-1568188d4781",
+              "dataKeys" : [ {
+                "name" : "color",
+                "type" : "attribute",
+                "label" : "color",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.4619914914738976
+              }, {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.18662558188545608
+              }, {
+                "name" : "createdTime",
+                "type" : "entityField",
+                "label" : "Created time",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.21994590013835835,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.8234963254916086,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#aa00ff",
+                "settings" : { },
+                "_hash" : 0.7882385026256706,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1734611032667,
+                  "endTimeMs" : 1734697432667
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "provider" : "openstreet-map",
+              "gmApiKey" : "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
+              "gmDefaultMapType" : "roadmap",
+              "mapProvider" : "CartoDB.Positron",
+              "useCustomProvider" : false,
+              "mapProviderHere" : "HERE.normalDay",
+              "credentials" : {
+                "useV3" : true,
+                "app_id" : "AhM6TzD9ThyK78CT3ptx",
+                "app_code" : "p6NPiITB3Vv0GMUFnkLOOg",
+                "apiKey" : "kVXykxAfZ6LS4EbCTO02soFVfjA7HoBzNVVH9u7nzoE"
+              },
+              "mapImageUrl" : "tb-image;/api/images/system/label_widget_system_widget_background.svg",
+              "tmApiKey" : "84d6d83e0e51e481e50454ccbe8986b",
+              "tmDefaultMapType" : "roadmap",
+              "latKeyName" : "latitude",
+              "lngKeyName" : "longitude",
+              "xPosKeyName" : "xPos",
+              "yPosKeyName" : "yPos",
+              "defaultCenterPosition" : "0,0",
+              "disableScrollZooming" : false,
+              "disableZoomControl" : false,
+              "fitMapBounds" : false,
+              "useDefaultCenterPosition" : false,
+              "mapPageSize" : 16384,
+              "markerOffsetX" : 0.5,
+              "markerOffsetY" : 1,
+              "posFunction" : "return {x: origXPos, y: origYPos};",
+              "draggableMarker" : false,
+              "showLabel" : false,
+              "useLabelFunction" : false,
+              "label" : "${entityName}",
+              "showTooltip" : true,
+              "showTooltipAction" : "click",
+              "autocloseTooltip" : true,
+              "useTooltipFunction" : true,
+              "tooltipPattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}",
+              "tooltipOffsetX" : 0,
+              "tooltipOffsetY" : -1,
+              "color" : "#FE7569",
+              "useColorFunction" : false,
+              "useMarkerImageFunction" : true,
+              "markerImageSize" : 34,
+              "markerImages" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg", "tb-image;/api/images/tenant/boxOnline.svg", "tb-image;/api/images/tenant/boxAlarm.svg", "tb-image;/api/images/tenant/Map bullet.svg", "tb-image;/api/images/tenant/Map bullet-1.svg", "tb-image;/api/images/tenant/workerOnline.svg", "tb-image;/api/images/tenant/workerAlarm.svg", "tb-image;/api/images/tenant/workerOffline.svg", "tb-image;/api/images/tenant/Map bullet-2.svg", "tb-image;/api/images/tenant/loaderOnline.svg", "tb-image;/api/images/tenant/loaderAlarm.svg", "tb-image;/api/images/tenant/loaderOffline.svg", "tb-image;/api/images/tenant/Map bullet (2).svg" ],
+              "showPolygon" : true,
+              "polygonKeyName" : "perimeter",
+              "editablePolygon" : false,
+              "showPolygonLabel" : false,
+              "usePolygonLabelFunction" : false,
+              "polygonLabel" : "${entityName}",
+              "showPolygonTooltip" : true,
+              "showPolygonTooltipAction" : "click",
+              "autoClosePolygonTooltip" : true,
+              "usePolygonTooltipFunction" : true,
+              "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "polygonColor" : "#3388ff",
+              "polygonOpacity" : 0.15,
+              "usePolygonColorFunction" : true,
+              "polygonStrokeColor" : "#3388ff",
+              "polygonStrokeWeight" : 1,
+              "usePolygonStrokeColorFunction" : true,
+              "showCircle" : false,
+              "circleKeyName" : "perimeter",
+              "editableCircle" : false,
+              "showCircleLabel" : false,
+              "useCircleLabelFunction" : false,
+              "circleLabel" : "${entityName}",
+              "showCircleTooltip" : false,
+              "showCircleTooltipAction" : "click",
+              "autoCloseCircleTooltip" : true,
+              "useCircleTooltipFunction" : false,
+              "circleTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "circleFillColor" : "#3388ff",
+              "circleFillColorOpacity" : 0.2,
+              "useCircleFillColorFunction" : false,
+              "circleStrokeColor" : "#3388ff",
+              "circleStrokeOpacity" : 1,
+              "circleStrokeWeight" : 3,
+              "useCircleStrokeColorFunction" : false,
+              "useClusterMarkers" : false,
+              "zoomOnClick" : true,
+              "maxClusterRadius" : 80,
+              "animate" : true,
+              "spiderfyOnMaxZoom" : false,
+              "showCoverageOnHover" : true,
+              "chunkedLoading" : false,
+              "removeOutsideVisibleBounds" : true,
+              "snappable" : false,
+              "initDragMode" : false,
+              "hideAllControlButton" : false,
+              "hideDrawControlButton" : false,
+              "hideEditControlButton" : false,
+              "hideRemoveControlButton" : false,
+              "draggableImage" : false,
+              "imageAlias" : "Selected location zones",
+              "imageKey" : "image",
+              "aliasPolygonKey" : "perimeter",
+              "tooltipFunction" : "let deviceName = data[\"assignedDevice\"] ? data[\"assignedDevice\"].name : \"No Data\";\nlet locationName = data[\"assignedLocation\"] ? data[\"assignedLocation\"].name : \"No Data\";\nlet status = data[\"status\"];\nlet alertTypes = data.alertTypes;\n\nlet alertsHtml = \"\";\n\nif (alertTypes.length) {\n    alertTypesArr = JSON.parse(alertTypes);\n    alertTypesStr = alertTypesArr.join(\", \");\n    \n    if (alertTypesStr) {\n        alertsHtml = `\n            <div style=\"margin-top: 12px;\">\n                <div style=\"color:#344054;\">Active alerts</span>\n                <div style=\"color:#D92D20; font-weight:500; line-height: 24px;\">${alertTypesStr}</span>\n            </div>\n        `;\n    }\n}\n\nlet statusDiv = `<div style=\"border-radius: 4px;\n    height: fit-content;\n    font-size: 12px;\n    font-weight: 600;\n    padding: 4px 8px;\n    width: fit-content;\n    background-color: #EAECF0;\n    color: #475467;\">\n        INACTIVE</div>`;\n\nif(status == \"true\"){\n    statusDiv = `<div style=\"border-radius: 4px;\n    height: fit-content;\n    font-size: 12px;\n    font-weight: 600;\n    padding: 4px 8px;\n    width: fit-content;\n    background-color: #E0F2FE;\n    color: #026AA2;\">\n        ACTIVE</div>`;\n}\n\nreturn `<div>\n            <span style=\"font-size: 24px;\n                        font-weight: 600;\n                        color: #0C111D;\n                        text-align:right;\n                        line-height: 32px;\">${data.entityName}</span>\n            <div style=\"display: flex;justify-content:space-between;margin-top: 12px;\">\n                <span style=\"color:#344054;\">Status</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${statusDiv}</span>\n            </div>\n            <div style=\"display: flex;justify-content:space-between;margin-top: 12px;\">\n                <span style=\"color:#344054;\">Type</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${data.Type}</span>\n            </div>\n            <div style=\"display: flex;justify-content:space-between;margin-top: 12px;\">\n                <span style=\"color:#344054;\">Assigned device</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${deviceName}</span>\n            </div>\n            <div style=\"display: flex;justify-content:space-between;margin-top: 12px;\">\n                <span style=\"color:#344054;\">Assigned location</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${locationName}</span>\n            </div>\n            <div style=\"display: flex;justify-content:space-between;margin-top: 12px;\">\n                <span style=\"color:#344054;\">Department</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${data.department}</span>\n            </div>\n            <div style=\"display: flex;justify-content:space-between;margin-top: 12px;\">\n                <span style=\"color:#344054;\">Longitude, latitude</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${data.latitude}, ${data.longitude}</span>\n            </div>\n            ${alertsHtml}\n            <div style=\"display:flex;justify-content:space-around;margin-top: 12px;\">\n                <link-act name='assetDetails'>Details</link-act>\n                <link-act name='historyDetails'>History route</link-act>\n            </div>\n        </div>`;",
+              "markerImageFunction" : "var type = data['Type'];\nvar isAlarm = data['alertActivity'];\nvar isActive = data['status'];\nvar isMovement = data['movement'];\n\nlet index;\n\nif (type == 'Tool'){\n    index = 0;\n} else if(type == \"Box\"){\n    index = 4;\n} else if(type == \"Worker\"){\n    index = 8;\n} else if(type == \"Loader\"){\n    index = 12;\n}\nif(isAlarm == \"true\"){\n    index += 1;\n} else {\n    if(isActive != \"true\"){\n        index += 2;\n    } else if(isMovement == \"true\"){\n        index += 3;\n    }\n}\n\nreturn {\n    url: images[index],\n    size: 28\n}",
+              "polygonTooltipFunction" : "if (data.Type === \"Geofence\") {\n    return `<div>\n            <span style=\"font-size: 22px;\n                        font-weight: 600;\n                        color: #0C111D;\n                        text-align:right;\n                        line-height: 32px;\">${data.entityName}</span>\n            \n            <div style=\"display: flex;justify-content:space-between;margin-top:5px;gap: 10px;\">\n                <span style=\"color:#344054;\">Type</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">Geofence</span>\n            </div>\n        </div>`;\n}\n\nreturn `<div>\n            <span style=\"font-size: 22px;\n                        font-weight: 600;\n                        color: #0C111D;\n                        text-align:right;\n                        line-height: 32px;\">${data.entityName}</span>\n            \n            <div style=\"display: flex;justify-content:space-between;margin-top:5px;gap: 10px;\">\n                <span style=\"color:#344054;\">Type</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">Zone</span>\n            </div>\n            <div style=\"display:flex;justify-content:space-around;margin-top:5px;\"> \n                <link-act name='zoneDetails'>Details</link-act>\n            </div>\n        </div>`;",
+              "polygonStrokeColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";",
+              "polygonColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";",
+              "polygonStrokeOpacity" : 0.2
+            },
+            "title" : "Geo Map Testing (several)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : null,
+            "actions" : {
+              "tooltipAction" : [ {
+                "name" : "assetDetails",
+                "icon" : "visibility",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst assetsDashboardName = \"Assets dashboard\";\n\ndashboardService.getTenantDashboards(pageLink).subscribe(response => {\n    const dashboardId = response.data.find(dashboard => dashboard.title === assetsDashboardName).id.id;\n    \n    const jsonStr = JSON.stringify([\n        {\n            id: \"default\",\n            params: {\n                stateId: \"assetDetails\",\n                prevState: \"assets\",\n                subState: \"general\",\n                statesArray: [\n                    {\n                        stateId: \"assets\",\n                        name: \"Assets\"\n                    },\n                    {\n                        stateId: \"assetDetails\",\n                        name: entityName\n                    }\n                ],\n                selectedEntity: {\n                    entityName,\n                    entityId,\n                    entityLabel\n                }\n            }\n        }\n    ]);\n    \n    const state = btoa(jsonStr);\n    \n    const queryParams = {\n        stateId: \"Assets\",\n        dashboardId,\n        hideDashboardToolbar: true,\n        state\n    };\n    \n    router.navigate(['/iframeView'], {queryParams});\n});",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "aab374a9-2141-6fc1-6abf-2f478061ff8d"
+              }, {
+                "name" : "historyDetails",
+                "icon" : "history",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst assetsDashboardName = \"Assets dashboard\";\n\ndashboardService.getTenantDashboards(pageLink).subscribe(response => {\n    const dashboardId = response.data.find(dashboard => dashboard.title === assetsDashboardName).id.id;\n    \n    const jsonStr = JSON.stringify([\n        {\n            id: \"default\",\n            params: {\n                stateId: \"assetDetails\",\n                prevState: \"assets\",\n                subState: \"eventHistory\",\n                statesArray: [\n                    {\n                        stateId: \"assets\",\n                        name: \"Assets\"\n                    },\n                    {\n                        stateId: \"assetDetails\",\n                        name: entityName\n                    }\n                ],\n                selectedEntity: {\n                    entityName,\n                    entityId,\n                    entityLabel\n                }\n            }\n        }\n    ]);\n    \n    const state = btoa(jsonStr);\n    \n    const queryParams = {\n        stateId: \"Assets\",\n        dashboardId,\n        hideDashboardToolbar: true,\n        state\n    };\n    \n    router.navigate(['/iframeView'], {queryParams});\n});",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "03a2bc10-dd0f-ca5c-750a-d29d88362ec0"
+              }, {
+                "name" : "zoneDetails",
+                "icon" : "map",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst locationsDashboardName = \"Locations dashboard\";\n\nlet selectedLocation;\n\nconst locationQueryParams = {\n    entityFilter: {\n        type: \"relationsQuery\",\n        rootEntity: entityId,\n        direction: \"FROM\",\n        maxLevel: 1,\n        filters: [{\n            relationType: \"ZoneToLocation\",\n            entityTypes: [\"ASSET\"]\n        }]\n    },\n    pageLink,\n    entityFields: [\n        {\n            type: \"ENTITY_FIELD\",\n            key: \"name\"\n        },\n        {\n            type: \"ENTITY_FIELD\",\n            key: \"label\"\n        }\n    ]\n};\n\nwidgetContext.http.post(`/api/entitiesQuery/find`, locationQueryParams)\n    .pipe(\n        widgetContext.rxjs.switchMap((locationResponse) => {\n            const location = locationResponse.data[0];\n            selectedLocation = {\n                entityId: location.entityId,\n                entityName: location.latest.ENTITY_FIELD.name.value,\n                entityLabel: location.latest.ENTITY_FIELD.label.value\n            };\n            \n            return dashboardService.getTenantDashboards(pageLink);\n        })\n    )\n    .subscribe(dashboardResponse => {\n        const dashboardId = dashboardResponse.data.find(dashboard => dashboard.title === locationsDashboardName).id.id;\n    \n        const jsonStr = JSON.stringify([\n            {\n                id: \"default\",\n                params: {\n                    stateId: 'zoneDetails',\n                    prevState: 'locationsDetails',\n                    subState: 'general',\n                    statesArray: [\n                        {\n                            stateId: 'locations', \n                            name: \"Locations\"\n                        },\n                    ],\n                    selectedLocation,\n                    selectedZone: {\n                        entityName,\n                        entityId,\n                        entityLabel\n                    }\n                }\n            }\n        ]);\n        \n        const state = btoa(jsonStr);\n        \n        const queryParams = {\n            stateId: \"Locations\",\n            dashboardId,\n            hideDashboardToolbar: true,\n            state\n        };\n        \n        router.navigate(['/iframeView'], {queryParams});\n    });",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "3d6592df-3231-34f9-0d5d-d2017f53086a"
+              } ]
+            },
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "borderRadius" : "0",
+            "widgetCss" : ".leaflet-popup-content-wrapper, .leaflet-popup-tip {\n    border: 1px solid #D0D5DD;\n    box-shadow: none;\n    border-radius: 8px;\n}\n\n.leaflet-popup-content {\n    margin: 0px;\n    padding: 15px;\n}\n\n.leaflet-container a {\n    text-align: center;\n    font-size: 15px;\n    font-weight: 500;\n    color: #026AA2;\n    text-decoration: none;\n    line-height: 28px;\n    border-bottom: 0;\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f2b8585c-58c1-a14e-c7f7-8ef11b6d21a0"
+        },
+        "d1726d38-16cc-971e-4136-66e0b16176cb" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1738163557109,
+                  "endTimeMs" : 1738249957109
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
+              "markdownTextFunction" : "let controller = ctx.stateController;\nlet params = controller.getStateParams();\nlet $injector = ctx.$scope.$injector;\nlet userService = $injector.get(ctx.servicesMap.get('userService')); \n\nif (params.filtersFormGroupValue) {\n    delete params.filtersFormGroupValue;\n}\n\ncontroller.updateState('monitoringWrapper', params);\n\nif (!localStorage.getItem(\"role\")) {\n    userService.getUserInfo(ctx.currentUser.userId).subscribe(response => {\n        localStorage.setItem(\"role\", response.groups.some((element) => element.name === \"Tenant Administrators\") ? \"Admin\" : \"Viewer\");\n    });\n}\n\nreturn `\n    <div style=\"height: 100%; width: 100%; padding: 0\">\n        <tb-dashboard-state\n            style=\"height: 100%; width: 100%;\"\n            [ctx]=\"ctx\"\n            [stateId]=\"'monitoring'\"\n        >\n        </tb-dashboard-state>\n    </div>\n`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d1726d38-16cc-971e-4136-66e0b16176cb"
+        }
+      },
+      "states" : {
+        "monitoring" : {
+          "name" : "monitoring",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "16bc634f-a14b-c262-675c-3031d2cb6863" : {
+                  "sizeX" : 24,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 0,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "monitoringAssetsList" : {
+          "name" : "monitoringAssetsList",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "f12c32e0-c737-7f5b-040d-54b18f976928" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 0,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "monitoringMap" : {
+          "name" : "monitoringMap",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "f2b8585c-58c1-a14e-c7f7-8ef11b6d21a0" : {
+                  "sizeX" : 24,
+                  "sizeY" : 16,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 0,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "monitoringWrapper" : {
+          "name" : "monitoringWrapper",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "d1726d38-16cc-971e-4136-66e0b16176cb" : {
+                  "sizeX" : 24,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 0,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16" : {
+          "id" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
+          "alias" : "Assets",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Box", "Loader", "Tool", "Worker" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "1908e24f-a816-21c9-0161-08fc4a0c3f26" : {
+          "id" : "1908e24f-a816-21c9-0161-08fc4a0c3f26",
+          "alias" : "Show all assets",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "showAllAssets",
+            "defaultStateEntity" : null
+          }
+        },
+        "2d6edda9-58bc-49df-58e7-b2b356068898" : {
+          "id" : "2d6edda9-58bc-49df-58e7-b2b356068898",
+          "alias" : "All zones",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Image on map", "Image plan", "Shape" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "e8f88e04-f80c-2aa6-a69a-9bc1cc1ca096" : {
+          "id" : "e8f88e04-f80c-2aa6-a69a-9bc1cc1ca096",
+          "alias" : "All geofences",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Geofence" ],
+            "assetNameFilter" : ""
+          }
+        }
+      },
+      "filters" : {
+        "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8" : {
+          "id" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
+          "filter" : "Monitoring assets",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "name"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "IN",
+                "value" : {
+                  "defaultValue" : "",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : false,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "15f05a19-1a40-bf5e-e5e7-f2bdbc06e3d0" : {
+          "id" : "15f05a19-1a40-bf5e-e5e7-f2bdbc06e3d0",
+          "filter" : "Monitoring zones",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "name"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "IN",
+                "value" : {
+                  "defaultValue" : "",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : false,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "0f60db3a-df12-283e-6705-1568188d4781" : {
+          "id" : "0f60db3a-df12-283e-6705-1568188d4781",
+          "filter" : "Monitoring geofences",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "name"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "IN",
+                "value" : {
+                  "defaultValue" : "",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : false,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        }
+      },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1738161158667,
+            "endTimeMs" : 1738247558667
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "name" : "Monitoring dashboard",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "81dc82f0-0fcd-11f0-a328-efa2e09fc93f"
+    },
+    "ownerId" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
