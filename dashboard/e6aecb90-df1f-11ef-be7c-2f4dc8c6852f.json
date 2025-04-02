@@ -301,7 +301,7 @@
                 "id" : "684aa427-bcf4-43d2-6bb3-bba6f2367793"
               } ],
               "headerButton" : [ {
-                "name" : "New profile",
+                "name" : "New alert profile",
                 "buttonType" : "raised",
                 "showIcon" : true,
                 "icon" : "add",
