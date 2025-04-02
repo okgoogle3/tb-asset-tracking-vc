@@ -105,6 +105,32 @@
               "trips" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "017eea37-4c8c-dd6a-f498-a553cb1018eb",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : null,
+                "label" : {
+                  "show" : false,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}",
+                  "patternFunction" : null
+                },
+                "tooltip" : {
+                  "show" : false,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>End Time:</b> ${maxTime}<br/><b>Start Time:</b> ${minTime}",
+                  "patternFunction" : null,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "offsetX" : 0,
+                  "offsetY" : -0.5,
+                  "tagActions" : null
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "groups" : null,
                 "xKey" : {
                   "name" : "latitude",
                   "label" : "latitude",
@@ -119,7 +145,8 @@
                   "settings" : { },
                   "color" : "#2196f3"
                 },
-                "markerType" : "shape",
+                "showMarker" : true,
+                "markerType" : "image",
                 "markerShape" : {
                   "shape" : "tripMarkerShape2",
                   "size" : 34,
@@ -139,49 +166,12 @@
                 },
                 "markerImage" : {
                   "type" : "image",
-                  "image" : "/assets/markers/tripShape2.svg",
+                  "image" : "tb-image;/api/images/tenant/Map bullet-3.svg",
                   "imageSize" : 34
                 },
                 "markerOffsetX" : 0.5,
                 "markerOffsetY" : 0.5,
-                "positionFunction" : "return {x: origXPos, y: origYPos};",
-                "markerClustering" : {
-                  "enable" : false,
-                  "zoomOnClick" : true,
-                  "maxZoom" : null,
-                  "maxClusterRadius" : 80,
-                  "zoomAnimation" : true,
-                  "showCoverageOnHover" : true,
-                  "spiderfyOnMaxZoom" : false,
-                  "chunkedLoad" : false,
-                  "lazyLoad" : true,
-                  "useClusterMarkerColorFunction" : false,
-                  "clusterMarkerColorFunction" : null
-                },
-                "label" : {
-                  "show" : true,
-                  "type" : "pattern",
-                  "pattern" : "${entityName}"
-                },
-                "tooltip" : {
-                  "show" : true,
-                  "trigger" : "click",
-                  "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>End Time:</b> ${maxTime}<br/><b>Start Time:</b> ${minTime}",
-                  "offsetX" : 0,
-                  "offsetY" : -0.5
-                },
-                "click" : {
-                  "type" : "doNothing"
-                },
-                "edit" : {
-                  "enabledActions" : [ ],
-                  "attributeScope" : "SERVER_SCOPE",
-                  "snappable" : false
-                },
-                "showMarker" : true,
-                "rotateMarker" : true,
+                "rotateMarker" : false,
                 "offsetAngle" : 0,
                 "showPath" : true,
                 "pathStrokeWeight" : 4,
@@ -210,8 +200,7 @@
                   "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>End Time:</b> ${maxTime}<br/><b>Start Time:</b> ${minTime}",
                   "offsetX" : 0,
                   "offsetY" : -1
-                },
-                "dsEntityAliasId" : "017eea37-4c8c-dd6a-f498-a553cb1018eb"
+                }
               } ],
               "tripTimeline" : {
                 "showTimelineControl" : true,
