@@ -32,6 +32,11 @@
             "settings" : {
               "mapType" : "geoMap",
               "layers" : [ {
+                "label" : "Positron",
+                "provider" : "openstreet",
+                "layerType" : "CartoDB.Positron",
+                "referenceLayer" : null
+              }, {
                 "label" : "{i18n:widgets.maps.layer.roadmap}",
                 "provider" : "openstreet",
                 "layerType" : "OpenStreetMap.Mapnik"
@@ -44,11 +49,6 @@
                 "provider" : "openstreet",
                 "layerType" : "Esri.WorldImagery",
                 "referenceLayer" : "openstreetmap_hybrid"
-              }, {
-                "label" : "Positron",
-                "provider" : "openstreet",
-                "layerType" : "CartoDB.Positron",
-                "referenceLayer" : null
               } ],
               "imageSource" : null,
               "markers" : [ ],
