@@ -47,7 +47,49 @@
               } ],
               "imageSource" : null,
               "markers" : [ ],
-              "polygons" : [ ],
+              "polygons" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                },
+                "fillColor" : {
+                  "type" : "constant",
+                  "color" : "rgba(51,136,255,0.2)"
+                },
+                "strokeColor" : {
+                  "type" : "constant",
+                  "color" : "#3388ff"
+                },
+                "strokeWeight" : 3,
+                "label" : {
+                  "show" : false,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "tooltip" : {
+                  "show" : false,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "dsEntityAliasId" : "8b39f63b-15b3-133e-fd8c-6550499542f7"
+              } ],
               "circles" : [ ],
               "additionalDataSources" : [ ],
               "controlsPosition" : "topleft",
@@ -715,6 +757,16 @@
               "entityType" : "ASSET",
               "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
             }
+          }
+        },
+        "8b39f63b-15b3-133e-fd8c-6550499542f7" : {
+          "id" : "8b39f63b-15b3-133e-fd8c-6550499542f7",
+          "alias" : "all zones",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Shape", "Image on map", "Image plan" ],
+            "assetNameFilter" : ""
           }
         }
       },
