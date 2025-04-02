@@ -19,16 +19,52 @@
               "entityAliasId" : "9939b416-8e7a-4c1f-0366-dd5452a6f4f6",
               "filterId" : "cfee0b47-6913-ae0b-8b25-9d260cd951e9",
               "dataKeys" : [ {
-                "name" : "color",
+                "name" : "message",
                 "type" : "timeseries",
-                "label" : "color",
-                "color" : "#2196f3",
+                "label" : "message",
+                "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.8951117657526331
+                "_hash" : 0.9581701797606899
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
-              }
+              },
+              "latestDataKeys" : [ {
+                "name" : "color",
+                "type" : "attribute",
+                "label" : "color",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.4794705772045835
+              }, {
+                "name" : "pointA",
+                "type" : "attribute",
+                "label" : "pointA",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.7122335979801677
+              }, {
+                "name" : "pointB",
+                "type" : "attribute",
+                "label" : "pointB",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.8219517611458824
+              }, {
+                "name" : "pointC",
+                "type" : "attribute",
+                "label" : "pointC",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.12025290493198804
+              }, {
+                "name" : "polygon",
+                "type" : "attribute",
+                "label" : "polygon",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.8849441028003096
+              } ]
             } ],
             "timewindow" : {
               "history" : {
