@@ -3082,6 +3082,21 @@
                 "id" : "6f29200a-14d1-c032-fcea-8d1aa3081b85"
               } ],
               "headerButton" : [ {
+                "name" : "Add",
+                "buttonType" : "raised",
+                "showIcon" : true,
+                "icon" : "more_horiz",
+                "buttonColor" : "#FCFCFD",
+                "buttonFillColor" : "#026aa2",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : null,
+                "openRightLayout" : false,
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "id" : "035c5d1b-d7e6-4f97-0550-4384a2ba71c9"
+              }, {
                 "name" : "Map",
                 "icon" : "map",
                 "useShowWidgetActionFunction" : null,
