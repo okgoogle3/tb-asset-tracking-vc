@@ -1032,7 +1032,7 @@
                 "layerType" : "Esri.WorldImagery",
                 "referenceLayer" : "openstreetmap_hybrid"
               } ],
-              "imageSource" : null,
+              "trips" : [ ],
               "markers" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
@@ -1360,8 +1360,23 @@
               "useDefaultCenterPosition" : false,
               "defaultCenterPosition" : "0,0",
               "defaultZoomLevel" : null,
+              "minZoomLevel" : 16,
               "mapPageSize" : 16384,
               "mapActionButtons" : [ ],
+              "tripTimeline" : {
+                "showTimelineControl" : false,
+                "timeStep" : 1000,
+                "speedOptions" : [ 1, 5, 10, 15, 25 ],
+                "showTimestamp" : true,
+                "timestampFormat" : {
+                  "format" : "yyyy-MM-dd HH:mm:ss",
+                  "lastUpdateAgo" : false,
+                  "custom" : false,
+                  "auto" : false
+                },
+                "snapToRealLocation" : false,
+                "locationSnapFilter" : "return true;"
+              },
               "background" : {
                 "type" : "color",
                 "color" : "#fff",
@@ -1371,7 +1386,8 @@
                   "blur" : 3
                 }
               },
-              "padding" : "8px"
+              "padding" : "0px",
+              "imageSource" : null
             },
             "title" : "Simple custom map",
             "useDashboardTimewindow" : true,
