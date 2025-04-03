@@ -603,8 +603,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 309,
-        "layoutY" : 939
+        "layoutX" : 314,
+        "layoutY" : 940
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
@@ -720,7 +720,7 @@
       "configuration" : {
         "relationsQuery" : {
           "fetchLastLevelOnly" : false,
-          "direction" : "FROM",
+          "direction" : "TO",
           "maxLevel" : 1,
           "filters" : [ {
             "relationType" : "GeofenceToZone",
