@@ -100,9 +100,9 @@
       "toIndex" : 23,
       "type" : "Success"
     }, {
-      "fromIndex" : 20,
-      "toIndex" : 21,
-      "type" : "Success"
+      "fromIndex" : 22,
+      "toIndex" : 19,
+      "type" : "GeofenceToZone"
     }, {
       "fromIndex" : 23,
       "toIndex" : 20,
@@ -682,7 +682,7 @@
       "createdTime" : 0,
       "debugSettings" : {
         "allEnabled" : false,
-        "allEnabledUntil" : 0,
+        "allEnabledUntil" : 1743673571838,
         "failuresEnabled" : false
       },
       "externalId" : null,
