@@ -968,6 +968,13 @@
                 "color" : "#ffc107",
                 "settings" : { },
                 "_hash" : 0.3941675715634927
+              }, {
+                "name" : "polygon",
+                "type" : "attribute",
+                "label" : "polygon",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.47941423025170793
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
