@@ -941,12 +941,12 @@
               "entityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
               "filterId" : "fc0afcfa-e9da-c97b-cc59-9f8f8b82b263",
               "dataKeys" : [ {
-                "name" : "message",
+                "name" : "g",
                 "type" : "timeseries",
-                "label" : "message",
-                "color" : "#2196f3",
+                "label" : "g",
+                "color" : "#607d8b",
                 "settings" : { },
-                "_hash" : 0.37127147070171973
+                "_hash" : 0.05207093087248382
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
