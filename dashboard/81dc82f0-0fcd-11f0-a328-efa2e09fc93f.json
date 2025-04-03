@@ -1232,7 +1232,7 @@
               "mapActionButtons" : [ ],
               "trips" : [ ],
               "tripTimeline" : {
-                "showTimelineControl" : true,
+                "showTimelineControl" : false,
                 "timeStep" : 1000,
                 "speedOptions" : [ 1, 5, 10, 15, 25 ],
                 "showTimestamp" : true,
