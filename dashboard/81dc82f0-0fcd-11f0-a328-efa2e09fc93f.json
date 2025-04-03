@@ -1076,7 +1076,7 @@
                 "dsType" : "entity",
                 "dsLabel" : "",
                 "dsDeviceId" : null,
-                "dsEntityAliasId" : "a57f249e-acc4-6ef0-a666-ba31f00d76f0",
+                "dsEntityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
                 "dsFilterId" : "488a7459-5478-09be-3480-5722d86d3533",
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
@@ -1134,7 +1134,7 @@
                 "dsType" : "entity",
                 "dsLabel" : "",
                 "dsDeviceId" : null,
-                "dsEntityAliasId" : "901d3446-9009-d4f1-afe4-f9e356c29e0d",
+                "dsEntityAliasId" : "e8f88e04-f80c-2aa6-a69a-9bc1cc1ca096",
                 "dsFilterId" : null,
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
@@ -1458,28 +1458,6 @@
             "assetNameFilter" : ""
           }
         },
-        "a57f249e-acc4-6ef0-a666-ba31f00d76f0" : {
-          "id" : "a57f249e-acc4-6ef0-a666-ba31f00d76f0",
-          "alias" : "asset zones",
-          "filter" : {
-            "type" : "relationsQuery",
-            "resolveMultiple" : true,
-            "rootStateEntity" : false,
-            "stateEntityParamName" : null,
-            "defaultStateEntity" : null,
-            "rootEntity" : {
-              "entityType" : "ASSET",
-              "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
-            },
-            "direction" : "TO",
-            "maxLevel" : 2,
-            "fetchLastLevelOnly" : true,
-            "filters" : [ {
-              "relationType" : "ZoneToLocation",
-              "entityTypes" : [ ]
-            } ]
-          }
-        },
         "a36fd45c-a18b-d559-0d75-de0da7212ae5" : {
           "id" : "a36fd45c-a18b-d559-0d75-de0da7212ae5",
           "alias" : "Selected entity",
@@ -1488,40 +1466,6 @@
             "resolveMultiple" : false,
             "stateEntityParamName" : "selectedEntity",
             "defaultStateEntity" : null
-          }
-        },
-        "621624e0-ceb9-dcec-d62c-736a9d8d3874" : {
-          "id" : "621624e0-ceb9-dcec-d62c-736a9d8d3874",
-          "alias" : "Selected entity1",
-          "filter" : {
-            "type" : "singleEntity",
-            "resolveMultiple" : false,
-            "singleEntity" : {
-              "entityType" : "ASSET",
-              "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
-            }
-          }
-        },
-        "901d3446-9009-d4f1-afe4-f9e356c29e0d" : {
-          "id" : "901d3446-9009-d4f1-afe4-f9e356c29e0d",
-          "alias" : "asset geofences",
-          "filter" : {
-            "type" : "relationsQuery",
-            "resolveMultiple" : true,
-            "rootStateEntity" : false,
-            "stateEntityParamName" : null,
-            "defaultStateEntity" : null,
-            "rootEntity" : {
-              "entityType" : "ASSET",
-              "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
-            },
-            "direction" : "TO",
-            "maxLevel" : 3,
-            "fetchLastLevelOnly" : true,
-            "filters" : [ {
-              "relationType" : "GeofenceToZone",
-              "entityTypes" : [ ]
-            } ]
           }
         }
       },
