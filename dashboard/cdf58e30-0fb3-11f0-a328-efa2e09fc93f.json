@@ -18,14 +18,7 @@
               "type" : "entity",
               "entityAliasId" : "9939b416-8e7a-4c1f-0366-dd5452a6f4f6",
               "filterId" : "cfee0b47-6913-ae0b-8b25-9d260cd951e9",
-              "dataKeys" : [ {
-                "name" : "message",
-                "type" : "timeseries",
-                "label" : "message",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.9581701797606899
-              } ],
+              "dataKeys" : null,
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
