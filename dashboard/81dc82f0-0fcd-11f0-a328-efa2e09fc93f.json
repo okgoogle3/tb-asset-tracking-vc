@@ -1239,13 +1239,23 @@
                   "type" : "function",
                   "color" : "rgba(51,136,255,0.2)",
                   "range" : null,
-                  "colorFunction" : "if (data.color) {\n    return data.color + '15';     \n} else return \"#0086C915\";"
+                  "colorFunction" : {
+                    "body" : "return module.findFillColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
                 },
                 "strokeColor" : {
                   "type" : "function",
                   "color" : "#3388ff",
                   "range" : null,
-                  "colorFunction" : "if (data.color) {\n    return data.color + '20';     \n} else return \"#0086C920\";"
+                  "colorFunction" : {
+                    "body" : "module.findStrokedColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
                 },
                 "strokeWeight" : 2,
                 "polygonKey" : {
