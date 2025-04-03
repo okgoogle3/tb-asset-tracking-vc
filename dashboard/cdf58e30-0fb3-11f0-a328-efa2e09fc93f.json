@@ -18,7 +18,7 @@
               "type" : "entity",
               "entityAliasId" : "9939b416-8e7a-4c1f-0366-dd5452a6f4f6",
               "filterId" : "cfee0b47-6913-ae0b-8b25-9d260cd951e9",
-              "dataKeys" : null,
+              "dataKeys" : [ ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
