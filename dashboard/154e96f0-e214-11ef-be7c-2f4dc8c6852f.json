@@ -4756,6 +4756,19 @@
                 "_hash" : 0.021092237451093787,
                 "funcBody" : null
               }, {
+                "name" : "asset",
+                "type" : "attribute",
+                "label" : "Asset",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.48257200902623554,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
                 "name" : "originator",
                 "type" : "alarm",
                 "label" : "Device",
