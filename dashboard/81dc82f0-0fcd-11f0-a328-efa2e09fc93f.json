@@ -1202,10 +1202,10 @@
                   "col" : 0
                 },
                 "04f51100-c93d-b7d2-a8e0-522e0fc31bb0" : {
-                  "sizeX" : 8,
-                  "sizeY" : 6,
-                  "row" : 16,
-                  "col" : 16
+                  "sizeX" : 12,
+                  "sizeY" : 16,
+                  "row" : 0,
+                  "col" : 12
                 }
               },
               "gridSettings" : {
