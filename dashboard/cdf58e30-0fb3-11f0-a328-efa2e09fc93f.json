@@ -94,7 +94,7 @@
             "showTitle" : false,
             "backgroundColor" : "#FFFFFF",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
+            "padding" : "0px",
             "settings" : {
               "mapType" : "geoMap",
               "layers" : [ {
