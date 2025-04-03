@@ -988,7 +988,90 @@
                 "referenceLayer" : "openstreetmap_hybrid"
               } ],
               "imageSource" : null,
-              "markers" : [ ],
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
+                "dsFilterId" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
+                "additionalDataSources" : null,
+                "additionalDataKeys" : null,
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "offsetX" : 0,
+                  "offsetY" : -1
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "xKey" : {
+                  "name" : "latitude",
+                  "label" : "latitude",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                },
+                "yKey" : {
+                  "name" : "longitude",
+                  "label" : "longitude",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                },
+                "markerType" : "shape",
+                "markerShape" : {
+                  "shape" : "markerShape1",
+                  "size" : 34,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "markerIcon" : {
+                  "iconContainer" : "iconContainer1",
+                  "icon" : "mdi:lightbulb-on",
+                  "size" : 48,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "markerImage" : {
+                  "type" : "image",
+                  "image" : "/assets/markers/shape1.svg",
+                  "imageSize" : 34
+                },
+                "markerOffsetX" : 0.5,
+                "markerOffsetY" : 1,
+                "markerClustering" : {
+                  "enable" : false,
+                  "zoomOnClick" : true,
+                  "maxZoom" : null,
+                  "maxClusterRadius" : 80,
+                  "zoomAnimation" : true,
+                  "showCoverageOnHover" : true,
+                  "spiderfyOnMaxZoom" : false,
+                  "chunkedLoad" : false,
+                  "lazyLoad" : true,
+                  "useClusterMarkerColorFunction" : false,
+                  "clusterMarkerColorFunction" : null
+                }
+              } ],
               "polygons" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
@@ -1107,19 +1190,7 @@
                 }
               } ],
               "circles" : [ ],
-              "additionalDataSources" : [ {
-                "dsType" : "entity",
-                "dsLabel" : "",
-                "dataKeys" : [ {
-                  "name" : "type",
-                  "type" : "entityField",
-                  "label" : "Type",
-                  "color" : "#2196f3",
-                  "settings" : { },
-                  "_hash" : 0.2969262161118684
-                } ],
-                "dsEntityAliasId" : "a57f249e-acc4-6ef0-a666-ba31f00d76f0"
-              } ],
+              "additionalDataSources" : [ ],
               "controlsPosition" : "topleft",
               "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
               "scales" : [ ],
