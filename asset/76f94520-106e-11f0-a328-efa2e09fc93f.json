@@ -18,12 +18,20 @@
       "id" : "76f94520-106e-11f0-a328-efa2e09fc93f"
     },
     "label" : null,
-    "name" : "test for geo nameasdf",
+    "name" : "test for geo nam",
     "ownerId" : null,
     "type" : "Shape"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1743681348049,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : "[[46.77789616140908,31.957513071144646],[46.77789616140908,31.955513071144644],[46.77589616140909,31.955513071144644],[46.77589616140909,31.957513071144646]]",
