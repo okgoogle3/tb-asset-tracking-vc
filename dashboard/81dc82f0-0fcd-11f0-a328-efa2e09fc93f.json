@@ -1230,7 +1230,9 @@
                   "type" : "pattern",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
                   "offsetX" : 0,
-                  "offsetY" : -1
+                  "offsetY" : -1,
+                  "patternFunction" : null,
+                  "tagActions" : null
                 },
                 "click" : {
                   "type" : "doNothing"
@@ -1257,7 +1259,7 @@
                   "color" : "#3388ff",
                   "range" : null,
                   "colorFunction" : {
-                    "body" : "module.findStrokedColor(data);",
+                    "body" : "return module.findStrokedColor(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
