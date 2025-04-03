@@ -975,13 +975,6 @@
                 "color" : "#607d8b",
                 "settings" : { },
                 "_hash" : 0.47941423025170793
-              }, {
-                "name" : "color",
-                "type" : "attribute",
-                "label" : "color",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.31548240394109883
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1211,7 +1204,20 @@
                 "dsEntityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
                 "dsFilterId" : "15f05a19-1a40-bf5e-e5e7-f2bdbc06e3d0",
                 "additionalDataSources" : null,
-                "additionalDataKeys" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "color",
+                  "type" : "attribute",
+                  "label" : "color",
+                  "color" : "#8bc34a",
+                  "settings" : { },
+                  "_hash" : 0.48430765824232136,
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : null,
+                  "postFuncBody" : null
+                } ],
                 "label" : {
                   "show" : false,
                   "type" : "pattern",
@@ -1272,7 +1278,14 @@
                 "dsEntityAliasId" : "e8f88e04-f80c-2aa6-a69a-9bc1cc1ca096",
                 "dsFilterId" : "0f60db3a-df12-283e-6705-1568188d4781",
                 "additionalDataSources" : null,
-                "additionalDataKeys" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "color",
+                  "type" : "attribute",
+                  "label" : "color",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.08462021337484016
+                } ],
                 "label" : {
                   "show" : false,
                   "type" : "pattern",
