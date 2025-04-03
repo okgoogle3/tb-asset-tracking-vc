@@ -79,7 +79,7 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
-              "latestDataKeys" : [ ]
+              "latestDataKeys" : null
             } ],
             "timewindow" : {
               "history" : {
@@ -266,7 +266,59 @@
                 "dsEntityAliasId" : "017eea37-4c8c-dd6a-f498-a553cb1018eb",
                 "dsFilterId" : null,
                 "additionalDataSources" : null,
-                "additionalDataKeys" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "type",
+                  "type" : "entityField",
+                  "label" : "Type",
+                  "color" : "#ff9800",
+                  "settings" : { },
+                  "_hash" : 0.014281858037197726,
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : null,
+                  "postFuncBody" : null
+                }, {
+                  "name" : "status",
+                  "type" : "attribute",
+                  "label" : "status",
+                  "color" : "#ff9800",
+                  "settings" : { },
+                  "_hash" : 0.05284085009482453,
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : null,
+                  "postFuncBody" : null
+                }, {
+                  "name" : "alertActivity",
+                  "type" : "attribute",
+                  "label" : "alertActivity",
+                  "color" : "#ff9800",
+                  "settings" : { },
+                  "_hash" : 0.5877154582804114,
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : null,
+                  "postFuncBody" : null
+                }, {
+                  "name" : "movement",
+                  "type" : "timeseries",
+                  "label" : "movement",
+                  "color" : "#ff9800",
+                  "settings" : { },
+                  "_hash" : 0.631185797231117,
+                  "aggregationType" : "NONE",
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : null,
+                  "postFuncBody" : null
+                } ],
                 "label" : {
                   "show" : false,
                   "type" : "pattern",
@@ -324,7 +376,7 @@
                 "markerImage" : {
                   "type" : "function",
                   "imageFunction" : {
-                    "body" : "module.findImage(images, data);",
+                    "body" : "return module.findImage(images, data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
