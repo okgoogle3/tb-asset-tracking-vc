@@ -4758,7 +4758,7 @@
               }, {
                 "name" : "assignedAsset",
                 "type" : "attribute",
-                "label" : "assignedAsset",
+                "label" : "Assigned asset",
                 "color" : "#8bc34a",
                 "settings" : {
                   "customTitle" : "",
