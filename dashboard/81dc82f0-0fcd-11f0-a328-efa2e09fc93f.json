@@ -1312,14 +1312,28 @@
                   "snappable" : false
                 },
                 "fillColor" : {
-                  "type" : "constant",
-                  "color" : "rgba(51,136,255,0.2)"
+                  "type" : "function",
+                  "color" : "rgba(51,136,255,0.2)",
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findFillColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
                 },
                 "strokeColor" : {
-                  "type" : "constant",
-                  "color" : "#3388ff"
+                  "type" : "function",
+                  "color" : "#3388ff",
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findStrokedColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
                 },
-                "strokeWeight" : 3,
+                "strokeWeight" : 2,
                 "polygonKey" : {
                   "name" : "perimeter",
                   "label" : "perimeter",
