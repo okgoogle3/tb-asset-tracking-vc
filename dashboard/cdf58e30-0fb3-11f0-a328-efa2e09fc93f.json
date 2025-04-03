@@ -91,10 +91,10 @@
                 "limit" : 500
               }
             },
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
+            "padding" : "8px",
             "settings" : {
               "mapType" : "geoMap",
               "layers" : [ {
@@ -385,8 +385,8 @@
               "padding" : "8px"
             },
             "title" : "test trip map",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
             "titleStyle" : null,
             "mobileHeight" : null,
             "configMode" : "advanced",
@@ -406,7 +406,10 @@
             },
             "titleColor" : null,
             "titleTooltip" : "",
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD",
+              "margin-left" : "5px"
+            },
             "widgetCss" : "",
             "pageSize" : 1024,
             "units" : "",
@@ -429,7 +432,7 @@
               "displayTypePrefix" : true
             },
             "margin" : "0px",
-            "borderRadius" : "0px",
+            "borderRadius" : "12px",
             "iconSize" : "24px",
             "enableDataExport" : false
           },
