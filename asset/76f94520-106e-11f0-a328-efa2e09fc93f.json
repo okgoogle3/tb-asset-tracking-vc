@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : null
+      "description" : ""
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -18,7 +18,7 @@
       "id" : "76f94520-106e-11f0-a328-efa2e09fc93f"
     },
     "label" : null,
-    "name" : "test for geo name",
+    "name" : "test for geo nameasdf",
     "ownerId" : null,
     "type" : "Shape"
   },
