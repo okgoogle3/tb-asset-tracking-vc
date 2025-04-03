@@ -1118,14 +1118,19 @@
                   "patternFunction" : null
                 },
                 "tooltip" : {
-                  "show" : false,
+                  "show" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "patternFunction" : {
+                    "body" : "return module.createTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
                   "trigger" : "click",
                   "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
                   "offsetX" : 0,
                   "offsetY" : -1,
-                  "patternFunction" : null,
                   "tagActions" : null
                 },
                 "click" : {
@@ -1173,6 +1178,8 @@
                 },
                 "markerImage" : {
                   "type" : "function",
+                  "image" : "/assets/markers/shape1.svg",
+                  "imageSize" : 34,
                   "imageFunction" : {
                     "body" : "return module.findImage(images, data);",
                     "modules" : {
