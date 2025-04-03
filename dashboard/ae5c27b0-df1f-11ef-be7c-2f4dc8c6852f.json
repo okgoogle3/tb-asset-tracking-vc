@@ -5784,19 +5784,7 @@
                 }
               } ],
               "circles" : [ ],
-              "additionalDataSources" : [ {
-                "dsType" : "entity",
-                "dsLabel" : "",
-                "dataKeys" : [ {
-                  "name" : "type",
-                  "type" : "entityField",
-                  "label" : "Type",
-                  "color" : "#2196f3",
-                  "settings" : { },
-                  "_hash" : 0.2969262161118684
-                } ],
-                "dsEntityAliasId" : "2c4c8bcf-eb91-9673-7eb1-c13d1f6bfc67"
-              } ],
+              "additionalDataSources" : [ ],
               "controlsPosition" : "topleft",
               "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
               "scales" : [ ],
