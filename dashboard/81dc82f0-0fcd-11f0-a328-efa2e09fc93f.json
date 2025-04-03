@@ -1115,7 +1115,7 @@
                   "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
                   "patternFunction" : {
-                    "body" : "return module.createTooltip(data);",
+                    "body" : "return module.createAssetTooltip(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
@@ -1224,14 +1224,17 @@
                   "pattern" : "${entityName}"
                 },
                 "tooltip" : {
-                  "show" : false,
+                  "show" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "patternFunction" : {
+                    "body" : "return module.createZoneTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
                   "trigger" : "click",
                   "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-                  "offsetX" : 0,
-                  "offsetY" : -1,
-                  "patternFunction" : null,
                   "tagActions" : null
                 },
                 "click" : {
@@ -1294,13 +1297,18 @@
                   "pattern" : "${entityName}"
                 },
                 "tooltip" : {
-                  "show" : false,
+                  "show" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "patternFunction" : {
+                    "body" : "return module.createGeofenceTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
                   "trigger" : "click",
                   "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-                  "offsetX" : 0,
-                  "offsetY" : -1
+                  "tagActions" : null
                 },
                 "click" : {
                   "type" : "doNothing"
