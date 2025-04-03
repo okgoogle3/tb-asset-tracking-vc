@@ -5042,6 +5042,31 @@
                 "_hash" : 0.021092237451093787,
                 "funcBody" : null
               }, {
+                "name" : "assignedAsset",
+                "type" : "attribute",
+                "label" : "Assigned asset",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "return JSON.parse(value).name;",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible",
+                  "disableSorting" : false
+                },
+                "_hash" : 0.07593090250201606,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
                 "name" : "originator",
                 "type" : "alarm",
                 "label" : "Device",
