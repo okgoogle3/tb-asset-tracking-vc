@@ -1248,7 +1248,7 @@
                   "color" : "rgba(51,136,255,0.2)",
                   "range" : null,
                   "colorFunction" : {
-                    "body" : "console.log(module.findFillColor(data))\nreturn module.findFillColor(data);",
+                    "body" : "return module.findFillColor(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
