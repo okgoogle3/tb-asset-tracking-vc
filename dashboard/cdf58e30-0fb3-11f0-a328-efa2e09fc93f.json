@@ -275,13 +275,13 @@
                 },
                 "tooltip" : {
                   "show" : false,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>End Time:</b> ${maxTime}<br/><b>Start Time:</b> ${minTime}",
-                  "patternFunction" : null,
                   "trigger" : "click",
                   "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>End Time:</b> ${maxTime}<br/><b>Start Time:</b> ${minTime}",
                   "offsetX" : 0,
                   "offsetY" : -0.5,
+                  "patternFunction" : null,
                   "tagActions" : null
                 },
                 "click" : {
@@ -322,9 +322,14 @@
                   }
                 },
                 "markerImage" : {
-                  "type" : "image",
-                  "image" : "tb-image;/api/images/tenant/Map bullet-3.svg",
-                  "imageSize" : 34
+                  "type" : "function",
+                  "imageFunction" : {
+                    "body" : "module.findImage(images, data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "images" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg", "tb-image;/api/images/tenant/boxOnline.svg", "tb-image;/api/images/tenant/boxAlarm.svg", "tb-image;/api/images/tenant/Map bullet.svg", "tb-image;/api/images/tenant/Map bullet-1.svg", "tb-image;/api/images/tenant/workerOnline.svg", "tb-image;/api/images/tenant/workerAlarm.svg", "tb-image;/api/images/tenant/workerOffline.svg", "tb-image;/api/images/tenant/Map bullet-2.svg", "tb-image;/api/images/tenant/loaderOnline.svg", "tb-image;/api/images/tenant/loaderAlarm.svg", "tb-image;/api/images/tenant/loaderOffline.svg", "tb-image;/api/images/tenant/Map bullet (2).svg" ]
                 },
                 "markerOffsetX" : 0.5,
                 "markerOffsetY" : 0.5,
