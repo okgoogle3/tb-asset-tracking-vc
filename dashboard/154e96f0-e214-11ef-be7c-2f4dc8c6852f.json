@@ -2639,7 +2639,7 @@
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
-              "markdownTextFunction" : "return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='general'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"zoneDetailsGeneral\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='geofences'\" [ctx]=\"ctx\" stateId=\"zoneDetailsGeofences\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"zoneDetailsAlerts\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='assets'\" [ctx]=\"ctx\" stateId=\"zoneDetailsAssets\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
+              "markdownTextFunction" : "return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='general'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"zoneDetailsGeneral\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='geofences'\" [ctx]=\"ctx\" stateId=\"zoneDetailsGeofences\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='alerts'\" [ctx]=\"ctx\" stateId=\"zoneDetailsAlerts\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".tb-markdown-view div,\n.tb-markdown-view p {\n    line-height: normal;\n}\n.mat-content {\n    background-color: #fff !important;\n}\n.user-layout {\n    width: 100%;\n    height: 100%;\n    padding: 0px;\n}\n.header-state {\n    height: 80px;\n    padding: 0px;\n}\n.table {\n    flex-grow: 1;\n    padding: 0px;\n}\n\n.user-layout-overflow {\n    /*min-height: 1000px;*/\n    height: 100%;\n    overflow: auto;\n}"
             },
@@ -7942,162 +7942,6 @@
           "col" : 0,
           "id" : "981f95ec-bb62-e3e0-0df8-ea2c1b731b16"
         },
-        "08f47050-1d51-972d-eb66-96cfb4aff621" : {
-          "typeFullFqn" : "system.action_button",
-          "type" : "latest",
-          "sizeX" : 3,
-          "sizeY" : 1,
-          "config" : {
-            "datasources" : [ ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1743412387241,
-                  "endTimeMs" : 1743498787241
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#FFFFFF01",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "5px 0px",
-            "settings" : {
-              "activatedState" : {
-                "action" : "GET_DASHBOARD_STATE_OBJECT",
-                "defaultValue" : false,
-                "getAttribute" : {
-                  "key" : "state",
-                  "scope" : null
-                },
-                "getTimeSeries" : {
-                  "key" : "state"
-                },
-                "getAlarmStatus" : {
-                  "severityList" : null,
-                  "typeList" : null
-                },
-                "dataToValue" : {
-                  "type" : "FUNCTION",
-                  "compareToValue" : true,
-                  "dataToValueFunction" : "return data.params.subState == \"assets\" ? true : false;"
-                },
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
-                }
-              },
-              "disabledState" : {
-                "action" : "DO_NOTHING",
-                "defaultValue" : false,
-                "getAttribute" : {
-                  "key" : "state",
-                  "scope" : null
-                },
-                "getTimeSeries" : {
-                  "key" : "state"
-                },
-                "getAlarmStatus" : {
-                  "severityList" : null,
-                  "typeList" : null
-                },
-                "dataToValue" : {
-                  "type" : "NONE",
-                  "compareToValue" : true,
-                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                }
-              },
-              "appearance" : {
-                "type" : "basic",
-                "showLabel" : true,
-                "label" : "Assets",
-                "showIcon" : false,
-                "icon" : "home",
-                "iconSize" : 24,
-                "iconSizeUnit" : "px",
-                "mainColor" : "var(--tb-primary-500)",
-                "backgroundColor" : "#FFFFFF",
-                "autoScale" : true,
-                "customStyle" : {
-                  "enabled" : {
-                    "overrideMainColor" : true,
-                    "mainColor" : "#344054",
-                    "overrideBackgroundColor" : false,
-                    "overrideDropShadow" : false
-                  },
-                  "hovered" : null,
-                  "pressed" : null,
-                  "activated" : {
-                    "overrideBackgroundColor" : true,
-                    "backgroundColor" : "#FFFFFF00"
-                  },
-                  "disabled" : null
-                }
-              }
-            },
-            "title" : "Action button",
-            "showTitleIcon" : false,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "showLegend" : false,
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "borderRadius" : "0px",
-            "configMode" : "advanced",
-            "actions" : {
-              "click" : [ {
-                "name" : "general",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"assets\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "9eec16b4-cebc-42f3-a69f-9c239d2ba031"
-              } ]
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "08f47050-1d51-972d-eb66-96cfb4aff621"
-        },
         "ffde29cd-99d2-5c84-9f8d-9e0f8b2b9433" : {
           "typeFullFqn" : "system.action_button",
           "type" : "latest",
@@ -9236,23 +9080,17 @@
                   "row" : 5,
                   "col" : 0
                 },
-                "08f47050-1d51-972d-eb66-96cfb4aff621" : {
+                "ffde29cd-99d2-5c84-9f8d-9e0f8b2b9433" : {
                   "sizeX" : 8,
                   "sizeY" : 2,
                   "row" : 5,
                   "col" : 8
                 },
-                "ffde29cd-99d2-5c84-9f8d-9e0f8b2b9433" : {
-                  "sizeX" : 8,
-                  "sizeY" : 2,
-                  "row" : 5,
-                  "col" : 16
-                },
                 "931df039-1379-fa49-60a2-50c5b16e4023" : {
                   "sizeX" : 8,
                   "sizeY" : 2,
                   "row" : 5,
-                  "col" : 24
+                  "col" : 16
                 },
                 "36ab2d74-cbd6-9b04-c713-9556218cc25f" : {
                   "sizeX" : 9,
