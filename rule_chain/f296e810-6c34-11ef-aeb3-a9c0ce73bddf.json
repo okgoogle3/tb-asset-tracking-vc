@@ -60,6 +60,10 @@
       "toIndex" : 21,
       "type" : "Relation Added or Updated"
     }, {
+      "fromIndex" : 2,
+      "toIndex" : 25,
+      "type" : "Entity Updated"
+    }, {
       "fromIndex" : 6,
       "toIndex" : 2,
       "type" : "Success"
@@ -745,6 +749,34 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToRelatedNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 604,
+        "layoutY" : 633
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1743682210622,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "7eb772f0-1082-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "test",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
