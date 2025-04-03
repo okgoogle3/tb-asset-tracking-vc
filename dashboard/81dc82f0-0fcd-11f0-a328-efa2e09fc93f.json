@@ -1106,7 +1106,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
-                "dsFilterId" : "488a7459-5478-09be-3480-5722d86d3533",
+                "dsFilterId" : "15f05a19-1a40-bf5e-e5e7-f2bdbc06e3d0",
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "color",
@@ -1164,7 +1164,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "e8f88e04-f80c-2aa6-a69a-9bc1cc1ca096",
-                "dsFilterId" : null,
+                "dsFilterId" : "0f60db3a-df12-283e-6705-1568188d4781",
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "color",
