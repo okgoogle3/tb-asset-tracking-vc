@@ -997,7 +997,70 @@
                 "dsEntityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
                 "dsFilterId" : null,
                 "additionalDataSources" : null,
-                "additionalDataKeys" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "type",
+                  "type" : "entityField",
+                  "label" : "Type",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.2610913608613734
+                }, {
+                  "name" : "name",
+                  "type" : "entityField",
+                  "label" : "Name",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.9522780522231649
+                }, {
+                  "name" : "department",
+                  "type" : "attribute",
+                  "label" : "department",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.3214238082607592
+                }, {
+                  "name" : "status",
+                  "type" : "attribute",
+                  "label" : "status",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.6350425840346925
+                }, {
+                  "name" : "assignedDevice",
+                  "type" : "attribute",
+                  "label" : "assignedDevice",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.7744223716629415
+                }, {
+                  "name" : "assignedLocation",
+                  "type" : "attribute",
+                  "label" : "assignedLocation",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.2062066139956602
+                }, {
+                  "name" : "alertActivity",
+                  "type" : "attribute",
+                  "label" : "alertActivity",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.6079885324767176
+                }, {
+                  "name" : "movement",
+                  "type" : "timeseries",
+                  "label" : "movement",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.4173579135666259
+                }, {
+                  "name" : "alertTypes",
+                  "type" : "attribute",
+                  "label" : "alertTypes",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.6934486442792269
+                } ],
                 "label" : {
                   "show" : false,
                   "type" : "pattern",
@@ -1066,7 +1129,7 @@
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   },
-                  "images" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg" ]
+                  "images" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg", "tb-image;/api/images/tenant/boxOnline.svg", "tb-image;/api/images/tenant/boxAlarm.svg", "tb-image;/api/images/tenant/Map bullet.svg", "tb-image;/api/images/tenant/Map bullet-1.svg" ]
                 },
                 "markerOffsetX" : 0.5,
                 "markerOffsetY" : 1,
