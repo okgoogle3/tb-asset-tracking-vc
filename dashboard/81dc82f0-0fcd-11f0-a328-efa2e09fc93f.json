@@ -936,7 +936,43 @@
           "sizeX" : 8.5,
           "sizeY" : 6,
           "config" : {
-            "datasources" : [ ],
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
+              "filterId" : "fc0afcfa-e9da-c97b-cc59-9f8f8b82b263",
+              "dataKeys" : [ {
+                "name" : "pointA",
+                "type" : "attribute",
+                "label" : "pointA",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.46230411541254957
+              }, {
+                "name" : "pointB",
+                "type" : "attribute",
+                "label" : "pointB",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.7950305824700752
+              }, {
+                "name" : "pointC",
+                "type" : "attribute",
+                "label" : "pointC",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.5700414386536556
+              }, {
+                "name" : "image",
+                "type" : "attribute",
+                "label" : "image",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.3941675715634927
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
             "timewindow" : {
               "displayValue" : "",
               "selectedTab" : 0,
