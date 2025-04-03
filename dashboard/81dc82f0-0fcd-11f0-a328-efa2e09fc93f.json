@@ -938,19 +938,48 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "a36fd45c-a18b-d559-0d75-de0da7212ae5",
+              "entityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
+              "filterId" : "fc0afcfa-e9da-c97b-cc59-9f8f8b82b263",
               "dataKeys" : [ {
-                "name" : "alertTelemetry",
+                "name" : "message",
                 "type" : "timeseries",
-                "label" : "alertTelemetry",
-                "color" : "#3f51b5",
+                "label" : "message",
+                "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.08401140540174956
+                "_hash" : 0.37127147070171973
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
-              "latestDataKeys" : null
+              "latestDataKeys" : [ {
+                "name" : "color",
+                "type" : "attribute",
+                "label" : "color",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.01038395705152606
+              }, {
+                "name" : "pointA",
+                "type" : "attribute",
+                "label" : "pointA",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.8253746698188671
+              }, {
+                "name" : "pointB",
+                "type" : "attribute",
+                "label" : "pointB",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.7539429743215187
+              }, {
+                "name" : "pointC",
+                "type" : "attribute",
+                "label" : "pointC",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.35546759176631837
+              } ]
             } ],
             "timewindow" : {
               "history" : {
