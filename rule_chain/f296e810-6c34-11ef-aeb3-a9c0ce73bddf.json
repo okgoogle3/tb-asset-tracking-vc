@@ -100,6 +100,10 @@
       "toIndex" : 11,
       "type" : "Success"
     }, {
+      "fromIndex" : 19,
+      "toIndex" : 20,
+      "type" : "Success"
+    }, {
       "fromIndex" : 21,
       "toIndex" : 22,
       "type" : "GeofenceToZone"
@@ -786,8 +790,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 565,
-        "layoutY" : 783
+        "layoutX" : 557,
+        "layoutY" : 788
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
