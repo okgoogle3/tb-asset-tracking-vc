@@ -2,7 +2,7 @@
   "entityType" : "WIDGET_TYPE",
   "entity" : {
     "fqn" : "test_trip_map",
-    "name" : "test trip map",
+    "name" : "Route map widget",
     "deprecated" : false,
     "image" : "tb-image;/api/images/system/trip-map-widget.png",
     "description" : "Displays an entity's trip on various map providers, allowing scrolling and animated movement. Supports custom markers, marker tooltips, widget actions, polygons, and circles for enhanced spatial representation.",
