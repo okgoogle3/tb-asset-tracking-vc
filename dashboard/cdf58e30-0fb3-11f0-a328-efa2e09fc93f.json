@@ -72,6 +72,21 @@
                 "settings" : { },
                 "_hash" : 0.9143370907895871
               } ]
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "017eea37-4c8c-dd6a-f498-a553cb1018eb",
+              "dataKeys" : [ {
+                "name" : "alertTelemetry",
+                "type" : "timeseries",
+                "label" : "alertTelemetry",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.08401140540174956
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
               "history" : {
