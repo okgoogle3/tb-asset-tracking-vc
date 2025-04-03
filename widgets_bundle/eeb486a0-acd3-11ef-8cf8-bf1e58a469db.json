@@ -17,7 +17,7 @@
     "scada" : false,
     "title" : "A_Template"
   },
-  "fqns" : [ "navigation_side_bar2", "map_with_custom_navigation_route", "broadcast_map", "broadcast_image_map", "threshold_table", "zone_selector", "alarm_wide_card", "alarm_simple_card_", "geo_map_testing_several_", "test", "test_trip_map" ],
+  "fqns" : [ "navigation_side_bar2", "map_with_custom_navigation_route", "broadcast_map", "broadcast_image_map", "threshold_table", "zone_selector", "alarm_wide_card", "alarm_simple_card_", "geo_map_testing_several_", "test", "test_trip_map", "simple_custom_map" ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
