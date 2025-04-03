@@ -4756,12 +4756,24 @@
                 "_hash" : 0.021092237451093787,
                 "funcBody" : null
               }, {
-                "name" : "asset",
+                "name" : "assignedAsset",
                 "type" : "attribute",
-                "label" : "Asset",
+                "label" : "assignedAsset",
                 "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.48257200902623554,
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "return JSON.parse(value).name",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible",
+                  "disableSorting" : false
+                },
+                "_hash" : 0.8361136454604048,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
