@@ -938,57 +938,6 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "a57f249e-acc4-6ef0-a666-ba31f00d76f0",
-              "filterId" : "fc0afcfa-e9da-c97b-cc59-9f8f8b82b263",
-              "dataKeys" : [ ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              },
-              "latestDataKeys" : [ {
-                "name" : "color",
-                "type" : "attribute",
-                "label" : "color",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.4794705772045835
-              }, {
-                "name" : "pointA",
-                "type" : "attribute",
-                "label" : "pointA",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.7122335979801677
-              }, {
-                "name" : "pointB",
-                "type" : "attribute",
-                "label" : "pointB",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.8219517611458824
-              }, {
-                "name" : "pointC",
-                "type" : "attribute",
-                "label" : "pointC",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.12025290493198804
-              }, {
-                "name" : "polygon",
-                "type" : "attribute",
-                "label" : "polygon",
-                "color" : "#607d8b",
-                "settings" : { },
-                "_hash" : 0.8849441028003096
-              }, {
-                "name" : "image",
-                "type" : "attribute",
-                "label" : "image",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.9143370907895871
-              } ]
-            }, {
-              "type" : "entity",
               "entityAliasId" : "a36fd45c-a18b-d559-0d75-de0da7212ae5",
               "dataKeys" : [ {
                 "name" : "alertTelemetry",
