@@ -1006,13 +1006,13 @@
                 },
                 "tooltip" : {
                   "show" : false,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
-                  "patternFunction" : null,
                   "trigger" : "click",
                   "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
                   "offsetX" : 0,
                   "offsetY" : -1,
+                  "patternFunction" : null,
                   "tagActions" : null
                 },
                 "click" : {
@@ -1040,7 +1040,7 @@
                   "settings" : { },
                   "_hash" : 0.7179714383823466
                 },
-                "markerType" : "shape",
+                "markerType" : "image",
                 "markerShape" : {
                   "shape" : "markerShape1",
                   "size" : 34,
@@ -1059,9 +1059,14 @@
                   }
                 },
                 "markerImage" : {
-                  "type" : "image",
-                  "image" : "/assets/markers/shape1.svg",
-                  "imageSize" : 34
+                  "type" : "function",
+                  "imageFunction" : {
+                    "body" : "return module.findImage(images, data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "images" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg" ]
                 },
                 "markerOffsetX" : 0.5,
                 "markerOffsetY" : 1,
