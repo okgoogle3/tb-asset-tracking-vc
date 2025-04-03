@@ -5539,10 +5539,8 @@
             "titleColor" : "#0C111D",
             "enableDataExport" : false,
             "titleTooltip" : "",
-            "widgetStyle" : {
-              "border" : "1px solid #D0D5DD"
-            },
-            "widgetCss" : ".tb-widget-header {\n    padding: 20px;\n}\n\nmat-cell, mat-header-cell {\n    padding: 0 20px!important;\n}\n\n.tb-widget-title {\n    padding: 0!important;\n}",
+            "widgetStyle" : null,
+            "widgetCss" : ".tb-widget-header {\n    padding: 5px 20px;\n}\n\nmat-cell, mat-header-cell {\n    padding: 0 20px!important;\n}\n\n.tb-widget-title {\n    padding: 0!important;\n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "borderRadius" : "12px"
