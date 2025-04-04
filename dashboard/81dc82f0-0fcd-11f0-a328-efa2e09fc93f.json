@@ -570,7 +570,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
-                "dsFilterId" : null,
+                "dsFilterId" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "type",
@@ -656,18 +656,18 @@
                 },
                 "tooltip" : {
                   "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
                   "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
                   "patternFunction" : {
                     "body" : "return module.createAssetTooltip(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   },
-                  "trigger" : "click",
-                  "autoclose" : true,
-                  "offsetX" : 0,
-                  "offsetY" : -1,
                   "tagActions" : [ {
                     "name" : "assetDetails",
                     "type" : "custom",
