@@ -4758,7 +4758,7 @@
               }, {
                 "name" : "assignedAsset",
                 "type" : "attribute",
-                "label" : "Assigned asset",
+                "label" : "Asset",
                 "color" : "#8bc34a",
                 "settings" : {
                   "customTitle" : "",
@@ -4767,7 +4767,7 @@
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "return JSON.parse(value).name",
+                  "cellContentFunction" : "return value && JSON.parse(value) ? JSON.parse(value).name : value;",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible",
@@ -5044,7 +5044,7 @@
               }, {
                 "name" : "assignedAsset",
                 "type" : "attribute",
-                "label" : "Assigned asset",
+                "label" : "Asset",
                 "color" : "#8bc34a",
                 "settings" : {
                   "customTitle" : "",
@@ -5053,7 +5053,7 @@
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "return JSON.parse(value).name;",
+                  "cellContentFunction" : "return value && JSON.parse(value) ? JSON.parse(value).name : value;",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible",
