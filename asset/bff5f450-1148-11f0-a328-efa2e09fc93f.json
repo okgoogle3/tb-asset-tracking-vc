@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Special/Chemical Grade Alumina’s are commonly used in a range of application, such as ceramics, refractories, glass, pigments and fillers, electronics and batteries, and as abrasives and polishing agents. The production of these materials require calcination at higher temperatures than what is used to produce Smelter Grade Alumina (SGA), and often also the use of mineralizers. By adjusting calcination parameters, mainly calcination temperature and retention time some of the key properties can be controlled to meet required product quality specifications."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "bff5f450-1148-11f0-a328-efa2e09fc93f"
+    },
+    "label" : null,
+    "name" : "Special and Chemical Grade",
+    "ownerId" : null,
+    "type" : "Temporary asset"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
