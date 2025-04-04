@@ -56,6 +56,10 @@
       "toIndex" : 0,
       "type" : "Success"
     }, {
+      "fromIndex" : 10,
+      "toIndex" : 12,
+      "type" : "Success"
+    }, {
       "fromIndex" : 11,
       "toIndex" : 10,
       "type" : "Success"
@@ -394,8 +398,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 937,
-        "layoutY" : 821
+        "layoutX" : 934,
+        "layoutY" : 823
       },
       "configuration" : {
         "scriptLang" : "TBEL",
