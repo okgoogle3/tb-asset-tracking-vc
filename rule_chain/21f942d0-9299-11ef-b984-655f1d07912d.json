@@ -61,7 +61,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 13,
-      "toIndex" : 18,
+      "toIndex" : 19,
       "type" : "True"
     }, {
       "fromIndex" : 14,
@@ -83,13 +83,21 @@
       "fromIndex" : 18,
       "toIndex" : 7,
       "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 7,
+      "type" : "True"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 18,
+      "type" : "False"
     } ],
     "firstNodeIndex" : 13,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 387,
-        "layoutY" : 804
+        "layoutY" : 718
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -117,7 +125,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1222,
-        "layoutY" : 711
+        "layoutY" : 625
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -141,7 +149,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1218,
-        "layoutY" : 808
+        "layoutY" : 722
       },
       "configuration" : {
         "fromTemplate" : "info@testmail.org",
@@ -169,7 +177,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1496,
-        "layoutY" : 807
+        "layoutY" : 721
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -204,7 +212,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1496,
-        "layoutY" : 714
+        "layoutY" : 628
       },
       "configuration" : {
         "numbersToTemplate" : "${originatorPhone}",
@@ -229,7 +237,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 665,
-        "layoutY" : 811
+        "layoutY" : 725
       },
       "configuration" : {
         "dataMapping" : {
@@ -255,7 +263,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 666,
-        "layoutY" : 710
+        "layoutY" : 624
       },
       "configuration" : {
         "dataMapping" : {
@@ -280,8 +288,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 51,
-        "layoutY" : 543
+        "layoutX" : 362,
+        "layoutY" : 449
       },
       "configuration" : {
         "originatorSource" : "RELATED",
@@ -319,7 +327,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 58,
-        "layoutY" : 732
+        "layoutY" : 646
       },
       "configuration" : {
         "checkForSingleEntity" : false,
@@ -349,7 +357,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 60,
-        "layoutY" : 816
+        "layoutY" : 730
       },
       "configuration" : {
         "relationsQuery" : {
@@ -383,7 +391,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 937,
-        "layoutY" : 907
+        "layoutY" : 821
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -407,7 +415,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 664,
-        "layoutY" : 908
+        "layoutY" : 822
       },
       "configuration" : {
         "dataMapping" : {
@@ -433,7 +441,7 @@
       "additionalInfo" : {
         "description" : "rule node will be updated in 3.9 to satisfy requirements from ticket https://thingsboard-portal.atlassian.net/browse/PROD-4780",
         "layoutX" : 1215,
-        "layoutY" : 906
+        "layoutY" : 820
       },
       "configuration" : {
         "templateId" : {
@@ -489,7 +497,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 939,
-        "layoutY" : 713
+        "layoutY" : 627
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -513,7 +521,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 942,
-        "layoutY" : 810
+        "layoutY" : 724
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -537,7 +545,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 58,
-        "layoutY" : 647
+        "layoutY" : 561
       },
       "configuration" : {
         "messageNames" : [ ],
@@ -565,7 +573,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 347,
-        "layoutY" : 642
+        "layoutY" : 556
       },
       "configuration" : {
         "tellFailureIfAbsent" : true,
@@ -632,6 +640,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetRelatedAttributeNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 54,
+        "layoutY" : 349
+      },
+      "configuration" : {
+        "messageNames" : [ ],
+        "metadataNames" : [ "assetName" ],
+        "checkAllKeys" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ec44ce40-1130-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "assetName check",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
     } ],
     "ruleChainConnections" : null
   },
