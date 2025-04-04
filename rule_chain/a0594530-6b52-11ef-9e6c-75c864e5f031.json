@@ -157,10 +157,14 @@
       "type" : "Success"
     }, {
       "fromIndex" : 32,
-      "toIndex" : 31,
+      "toIndex" : 34,
       "type" : "Success"
     }, {
       "fromIndex" : 33,
+      "toIndex" : 34,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 34,
       "toIndex" : 31,
       "type" : "Success"
     } ],
@@ -377,8 +381,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 830,
-        "layoutY" : 693
+        "layoutX" : 836,
+        "layoutY" : 941
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -401,8 +405,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 829,
-        "layoutY" : 794
+        "layoutX" : 835,
+        "layoutY" : 1042
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
@@ -429,8 +433,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 355,
-        "layoutY" : 799
+        "layoutX" : 553,
+        "layoutY" : 1049
       },
       "configuration" : {
         "relationsQuery" : {
@@ -464,8 +468,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 357,
-        "layoutY" : 899
+        "layoutX" : 555,
+        "layoutY" : 1149
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -516,8 +520,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1228,
-        "layoutY" : 617
+        "layoutX" : 1234,
+        "layoutY" : 865
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -540,8 +544,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1649,
-        "layoutY" : 980
+        "layoutX" : 1787,
+        "layoutY" : 1233
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
@@ -568,8 +572,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 736,
-        "layoutY" : 983
+        "layoutX" : 874,
+        "layoutY" : 1236
       },
       "configuration" : {
         "relationsQuery" : {
@@ -603,8 +607,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1297,
-        "layoutY" : 980
+        "layoutX" : 1435,
+        "layoutY" : 1233
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -627,8 +631,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1017,
-        "layoutY" : 982
+        "layoutX" : 1155,
+        "layoutY" : 1235
       },
       "configuration" : {
         "messageNames" : [ "alarmConfig" ],
@@ -651,8 +655,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 362,
-        "layoutY" : 706
+        "layoutX" : 560,
+        "layoutY" : 956
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -675,8 +679,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 828,
-        "layoutY" : 609
+        "layoutX" : 834,
+        "layoutY" : 857
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -699,8 +703,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 354,
-        "layoutY" : 989
+        "layoutX" : 552,
+        "layoutY" : 1239
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
@@ -890,8 +894,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1230,
-        "layoutY" : 672
+        "layoutX" : 1236,
+        "layoutY" : 920
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -914,8 +918,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1297,
-        "layoutY" : 1037
+        "layoutX" : 1435,
+        "layoutY" : 1290
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -938,8 +942,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 368,
-        "layoutY" : 447
+        "layoutX" : 363,
+        "layoutY" : 674
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -961,8 +965,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 67,
-        "layoutY" : 446
+        "layoutX" : 31,
+        "layoutY" : 506
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -989,8 +993,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 68,
-        "layoutY" : 504
+        "layoutX" : 32,
+        "layoutY" : 564
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -1014,6 +1018,45 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 362,
+        "layoutY" : 558
+      },
+      "configuration" : {
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "TO",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "DeviceToAsset",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        },
+        "dataToFetch" : "FIELDS",
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "name" : "relatedEntityName"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c3aa4890-112e-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "get asset name",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetRelatedAttributeNode"
     } ],
     "ruleChainConnections" : null
   },
