@@ -53,7 +53,7 @@
       "type" : "True"
     }, {
       "fromIndex" : 9,
-      "toIndex" : 0,
+      "toIndex" : 16,
       "type" : "Success"
     }, {
       "fromIndex" : 11,
@@ -71,13 +71,17 @@
       "fromIndex" : 15,
       "toIndex" : 2,
       "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 0,
+      "type" : "True"
     } ],
     "firstNodeIndex" : 13,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 47,
-        "layoutY" : 741
+        "layoutX" : 387,
+        "layoutY" : 592
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -104,8 +108,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 882,
-        "layoutY" : 648
+        "layoutX" : 1222,
+        "layoutY" : 499
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -128,8 +132,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 878,
-        "layoutY" : 745
+        "layoutX" : 1218,
+        "layoutY" : 596
       },
       "configuration" : {
         "fromTemplate" : "info@testmail.org",
@@ -156,8 +160,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1156,
-        "layoutY" : 744
+        "layoutX" : 1496,
+        "layoutY" : 595
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -191,8 +195,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1156,
-        "layoutY" : 651
+        "layoutX" : 1496,
+        "layoutY" : 502
       },
       "configuration" : {
         "numbersToTemplate" : "${originatorPhone}",
@@ -216,8 +220,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 325,
-        "layoutY" : 748
+        "layoutX" : 665,
+        "layoutY" : 599
       },
       "configuration" : {
         "dataMapping" : {
@@ -242,8 +246,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 326,
-        "layoutY" : 647
+        "layoutX" : 666,
+        "layoutY" : 498
       },
       "configuration" : {
         "dataMapping" : {
@@ -370,8 +374,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 597,
-        "layoutY" : 844
+        "layoutX" : 937,
+        "layoutY" : 695
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -394,8 +398,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 324,
-        "layoutY" : 845
+        "layoutX" : 664,
+        "layoutY" : 696
       },
       "configuration" : {
         "dataMapping" : {
@@ -420,8 +424,8 @@
     }, {
       "additionalInfo" : {
         "description" : "rule node will be updated in 3.9 to satisfy requirements from ticket https://thingsboard-portal.atlassian.net/browse/PROD-4780",
-        "layoutX" : 875,
-        "layoutY" : 843
+        "layoutX" : 1215,
+        "layoutY" : 694
       },
       "configuration" : {
         "templateId" : {
@@ -476,8 +480,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 599,
-        "layoutY" : 650
+        "layoutX" : 939,
+        "layoutY" : 501
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -500,8 +504,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 602,
-        "layoutY" : 747
+        "layoutX" : 942,
+        "layoutY" : 598
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -521,6 +525,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 52,
+        "layoutY" : 593
+      },
+      "configuration" : {
+        "messageNames" : [ ],
+        "metadataNames" : [ "notificationSettings" ],
+        "checkAllKeys" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "8c9b0c10-112c-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "check for notificationSettings",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
     } ],
     "ruleChainConnections" : null
   },
