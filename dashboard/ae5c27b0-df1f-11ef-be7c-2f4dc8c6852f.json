@@ -4887,6 +4887,31 @@
                 "decimals" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "assignedAsset",
+                "type" : "attribute",
+                "label" : "Asset",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "return value && Object.parse(value) ? `<span>${Object.parse(value).name}</span>` : `<span>${value}</span>`;",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible",
+                  "disableSorting" : false
+                },
+                "_hash" : 0.01853124452288668,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
