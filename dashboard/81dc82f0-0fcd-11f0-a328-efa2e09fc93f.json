@@ -1054,6 +1054,13 @@
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.5221531559136516
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5367193333370448
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1151,6 +1158,13 @@
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.5221531559136516
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.7510553757982397
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
