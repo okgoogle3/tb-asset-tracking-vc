@@ -1544,7 +1544,7 @@
           }, {
             "key" : {
               "type" : "ENTITY_FIELD",
-              "key" : "title"
+              "key" : "type"
             },
             "valueType" : "STRING",
             "predicates" : [ {
