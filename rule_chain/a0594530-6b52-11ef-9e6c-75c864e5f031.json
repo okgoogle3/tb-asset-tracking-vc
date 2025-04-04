@@ -157,11 +157,11 @@
       "type" : "Success"
     }, {
       "fromIndex" : 32,
-      "toIndex" : 34,
+      "toIndex" : 31,
       "type" : "Success"
     }, {
       "fromIndex" : 33,
-      "toIndex" : 34,
+      "toIndex" : 31,
       "type" : "Success"
     }, {
       "fromIndex" : 34,
@@ -942,8 +942,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 357,
-        "layoutY" : 674
+        "layoutX" : 391,
+        "layoutY" : 574
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -1021,8 +1021,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 362,
-        "layoutY" : 558
+        "layoutX" : 396,
+        "layoutY" : 458
       },
       "configuration" : {
         "relationsQuery" : {
