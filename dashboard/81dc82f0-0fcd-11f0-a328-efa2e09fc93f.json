@@ -975,6 +975,103 @@
           "row" : 0,
           "col" : 0,
           "id" : "04f51100-c93d-b7d2-a8e0-522e0fc31bb0"
+        },
+        "a533aebf-e6fe-4ca1-41b5-003e347bab5e" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1743663332791,
+                  "endTimeMs" : 1743749732791
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "name",
+              "useRowStyleFunction" : false,
+              "entitiesTitle" : "Entities"
+            },
+            "title" : "Entities table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
+              "filterId" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5060119012780773
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : null,
+            "titleColor" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a533aebf-e6fe-4ca1-41b5-003e347bab5e"
         }
       },
       "states" : {
@@ -1078,10 +1175,16 @@
             "main" : {
               "widgets" : {
                 "d1726d38-16cc-971e-4136-66e0b16176cb" : {
-                  "sizeX" : 24,
+                  "sizeX" : 11,
                   "sizeY" : 11,
                   "row" : 0,
                   "col" : 0
+                },
+                "a533aebf-e6fe-4ca1-41b5-003e347bab5e" : {
+                  "sizeX" : 12,
+                  "sizeY" : 10,
+                  "row" : 1,
+                  "col" : 11
                 }
               },
               "gridSettings" : {
@@ -1169,7 +1272,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "",
+                  "defaultValue" : "Demo Asset 2, Demo Asset 4, Demo Asset 5, Demo Asset 6, Demo Asset 7",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -1198,7 +1301,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "",
+                  "defaultValue" : "Equipment warehouse, Steelmaking Production, Metalworks Production",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : true,
@@ -1250,7 +1353,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "",
+                  "defaultValue" : "Control room, Raw material, Packaging Area, Manual arc welding, Metal-arc inert gas welding, Tungsten inert gas arc welding",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -1279,7 +1382,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : ""
+                  "defaultValue" : "Equipment warehouse, Steelmaking Production, Metalworks Production"
                 },
                 "ignoreCase" : true,
                 "type" : "STRING"
@@ -1330,7 +1433,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : ""
+                  "defaultValue" : "Equipment warehouse, Steelmaking Production, Metalworks Production"
                 },
                 "ignoreCase" : true,
                 "type" : "STRING"
