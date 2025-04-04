@@ -400,7 +400,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.assetOriginatorName  + \" has \" + status + \" alarm\";\n\n\nmetadata.subject = \"subject msg\";\nmetadata.message = message;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + metadata.assetName  + \" has \" + status + \" alarm\";\n\n\nmetadata.subject = \"subject msg\";\nmetadata.message = message;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
