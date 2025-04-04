@@ -84,8 +84,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 387,
-        "layoutY" : 592
+        "layoutX" : 385,
+        "layoutY" : 699
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -112,8 +112,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1222,
-        "layoutY" : 499
+        "layoutX" : 1220,
+        "layoutY" : 606
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -136,8 +136,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1218,
-        "layoutY" : 596
+        "layoutX" : 1216,
+        "layoutY" : 703
       },
       "configuration" : {
         "fromTemplate" : "info@testmail.org",
@@ -164,8 +164,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1496,
-        "layoutY" : 595
+        "layoutX" : 1494,
+        "layoutY" : 702
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -199,8 +199,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1496,
-        "layoutY" : 502
+        "layoutX" : 1494,
+        "layoutY" : 609
       },
       "configuration" : {
         "numbersToTemplate" : "${originatorPhone}",
@@ -224,8 +224,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 665,
-        "layoutY" : 599
+        "layoutX" : 663,
+        "layoutY" : 706
       },
       "configuration" : {
         "dataMapping" : {
@@ -250,8 +250,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 666,
-        "layoutY" : 498
+        "layoutX" : 664,
+        "layoutY" : 605
       },
       "configuration" : {
         "dataMapping" : {
@@ -276,8 +276,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 51,
-        "layoutY" : 331
+        "layoutX" : 49,
+        "layoutY" : 438
       },
       "configuration" : {
         "originatorSource" : "RELATED",
@@ -314,8 +314,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 58,
-        "layoutY" : 520
+        "layoutX" : 56,
+        "layoutY" : 627
       },
       "configuration" : {
         "checkForSingleEntity" : false,
@@ -344,8 +344,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 60,
-        "layoutY" : 604
+        "layoutX" : 58,
+        "layoutY" : 711
       },
       "configuration" : {
         "relationsQuery" : {
@@ -378,8 +378,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 937,
-        "layoutY" : 695
+        "layoutX" : 935,
+        "layoutY" : 802
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -402,8 +402,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 664,
-        "layoutY" : 696
+        "layoutX" : 662,
+        "layoutY" : 803
       },
       "configuration" : {
         "dataMapping" : {
@@ -428,8 +428,8 @@
     }, {
       "additionalInfo" : {
         "description" : "rule node will be updated in 3.9 to satisfy requirements from ticket https://thingsboard-portal.atlassian.net/browse/PROD-4780",
-        "layoutX" : 1215,
-        "layoutY" : 694
+        "layoutX" : 1213,
+        "layoutY" : 801
       },
       "configuration" : {
         "templateId" : {
@@ -484,8 +484,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 939,
-        "layoutY" : 501
+        "layoutX" : 937,
+        "layoutY" : 608
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -508,8 +508,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 942,
-        "layoutY" : 598
+        "layoutX" : 940,
+        "layoutY" : 705
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -532,8 +532,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 58,
-        "layoutY" : 435
+        "layoutX" : 56,
+        "layoutY" : 542
       },
       "configuration" : {
         "messageNames" : [ ],
@@ -560,8 +560,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 347,
-        "layoutY" : 430
+        "layoutX" : 345,
+        "layoutY" : 537
       },
       "configuration" : {
         "tellFailureIfAbsent" : true,
