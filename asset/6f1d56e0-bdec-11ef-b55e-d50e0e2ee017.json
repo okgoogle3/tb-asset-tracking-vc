@@ -18,7 +18,7 @@
       "id" : "6f1d56e0-bdec-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "Heat Treatment Facilities Production ",
+    "name" : "Heat Treatment Facilities Production",
     "ownerId" : null,
     "type" : "Shape"
   },
@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1736249846024,
+      "lastUpdateTs" : 1743745207365,
       "longValue" : null,
       "strValue" : "Technical capabilities of heat treatment facilities allow to accomplish various types of heat treatment and to provide required physical and mechanical properties of products.\n\nAutomated Process Control Systems (APCS) accomplish full maintenance and stabilization of thermal mode in the furnace, according to the preset programs of heating, cooling and energy saving modes, providing differential temperature up to ±5°C.\n\nBig fleet of new heat-treatment furnaces and devices is equipped with:\n- efficient impulse heating and cooling systems on high-speed gas burners basis, equipped with electrical ignition, flame control and implemented in cooling air supply lance;\n- lining from modern ceramic fiber, low inertia, refractory and heat-insulating materials produced by such companies as Parok (Finland) and Keratech (Czech Republic);\n- high-speed burners with impulse system of gas burning."
     }, {
