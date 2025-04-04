@@ -77,12 +77,12 @@
       "type" : "Alarm Created"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 31,
+      "toIndex" : 32,
       "type" : "Alarm Cleared"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 31,
-      "type" : "Alarm Created"
+      "toIndex" : 33,
+      "type" : "Alarm Cleared"
     }, {
       "fromIndex" : 6,
       "toIndex" : 13,
@@ -154,6 +154,14 @@
     }, {
       "fromIndex" : 27,
       "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 32,
+      "toIndex" : 31,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 33,
+      "toIndex" : 31,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 27,
@@ -766,8 +774,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 75,
-        "layoutY" : 451
+        "layoutX" : 331,
+        "layoutY" : 24
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -812,8 +820,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 304,
-        "layoutY" : 202
+        "layoutX" : 516,
+        "layoutY" : 119
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -930,8 +938,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 72,
-        "layoutY" : 510
+        "layoutX" : 368,
+        "layoutY" : 447
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
@@ -950,6 +958,62 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 67,
+        "layoutY" : 446
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "metadata.alarmCreated = true;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "03b07870-112e-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "alarm created",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 68,
+        "layoutY" : 504
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "metadata.alarmCreated = false;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "03b07871-112e-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "alarm cleared",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
