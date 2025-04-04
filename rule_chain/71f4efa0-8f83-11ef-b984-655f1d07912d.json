@@ -335,8 +335,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 669,
-        "layoutY" : 304
+        "layoutX" : 650,
+        "layoutY" : 318
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
