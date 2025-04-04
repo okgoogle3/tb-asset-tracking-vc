@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -20,9 +20,41 @@
     "label" : null,
     "name" : "Special and Chemical Grade",
     "ownerId" : null,
-    "type" : "Temporary asset"
+    "type" : "Shape"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1743766505698,
+      "longValue" : null,
+      "strValue" : "#0E232D"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1743766460461,
+      "longValue" : null,
+      "strValue" : "Special/Chemical Grade Alumina’s are commonly used in a range of application, such as ceramics, refractories, glass, pigments and fillers, electronics and batteries, and as abrasives and polishing agents. The production of these materials require calcination at higher temperatures than what is used to produce Smelter Grade Alumina (SGA), and often also the use of mineralizers. By adjusting calcination parameters, mainly calcination temperature and retention time some of the key properties can be controlled to meet required product quality specifications."
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[46.78002023253455,31.951096058111],[46.78004962100481,31.949722762931703],[46.7799026784881,31.949143410386444],[46.77793360988702,31.948950289365108],[46.77791891507576,31.950902937089662]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1743766497384,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[46.78002023253455, 31.951096058111], [46.78004962100481, 31.949722762931703], [46.7799026784881, 31.949143410386444], [46.77793360988702, 31.948950289365108], [46.77791891507576, 31.950902937089662]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1743766497402,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
