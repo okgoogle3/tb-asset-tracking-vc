@@ -758,7 +758,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
-                "dsFilterId" : "fe897fb7-69e5-5559-3c84-befe98356e63",
+                "dsFilterId" : null,
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "color",
