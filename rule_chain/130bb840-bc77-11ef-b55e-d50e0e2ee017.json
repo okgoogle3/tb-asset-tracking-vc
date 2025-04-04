@@ -68,6 +68,10 @@
       "toIndex" : 10,
       "type" : "Success"
     }, {
+      "fromIndex" : 9,
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
       "fromIndex" : 11,
       "toIndex" : 3,
       "type" : "Success"
@@ -90,7 +94,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -114,7 +118,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -134,12 +138,15 @@
       "configuration" : {
         "scope" : "SERVER_SCOPE",
         "notifyDevice" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
         "sendAttributesUpdatedNotification" : false,
         "updateAttributesOnlyOnValueChange" : true
       },
-      "configurationVersion" : 2,
+      "configurationVersion" : 3,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -189,7 +196,7 @@
       },
       "configurationVersion" : 2,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -217,7 +224,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -241,7 +248,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -263,7 +270,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -287,7 +294,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -311,7 +318,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -345,7 +352,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -365,12 +372,15 @@
       "configuration" : {
         "scope" : "SERVER_SCOPE",
         "notifyDevice" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
         "sendAttributesUpdatedNotification" : false,
         "updateAttributesOnlyOnValueChange" : true
       },
-      "configurationVersion" : 2,
+      "configurationVersion" : 3,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -394,7 +404,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -418,7 +428,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -429,6 +439,29 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 774,
+        "layoutY" : 1107
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "21f942d0-9299-11ef-b984-655f1d07912d"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5e5ca080-112b-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "Notification rule chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },
