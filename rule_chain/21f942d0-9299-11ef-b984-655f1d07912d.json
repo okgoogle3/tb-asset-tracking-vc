@@ -36,14 +36,6 @@
       "toIndex" : 11,
       "type" : "web"
     }, {
-      "fromIndex" : 1,
-      "toIndex" : 4,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 3,
-      "type" : "Success"
-    }, {
       "fromIndex" : 5,
       "toIndex" : 15,
       "type" : "Success"
@@ -62,10 +54,6 @@
     }, {
       "fromIndex" : 9,
       "toIndex" : 0,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 10,
-      "toIndex" : 12,
       "type" : "Success"
     }, {
       "fromIndex" : 11,
