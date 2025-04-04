@@ -45,7 +45,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 7,
-      "toIndex" : 17,
+      "toIndex" : 16,
       "type" : "Success"
     }, {
       "fromIndex" : 8,
@@ -72,12 +72,12 @@
       "toIndex" : 2,
       "type" : "Success"
     }, {
-      "fromIndex" : 17,
+      "fromIndex" : 16,
       "toIndex" : 8,
       "type" : "True"
     }, {
-      "fromIndex" : 17,
-      "toIndex" : 16,
+      "fromIndex" : 16,
+      "toIndex" : 17,
       "type" : "False"
     } ],
     "firstNodeIndex" : 13,
@@ -532,45 +532,6 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 375,
-        "layoutY" : 433
-      },
-      "configuration" : {
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "TO",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "AlarmConfigToDevice",
-            "entityTypes" : [ "ASSET" ]
-          } ]
-        },
-        "dataToFetch" : "ATTRIBUTES",
-        "fetchTo" : "DATA",
-        "dataMapping" : {
-          "alarmConfig" : "alarmConfig"
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugSettings" : {
-        "allEnabled" : false,
-        "allEnabledUntil" : 1743755636770,
-        "failuresEnabled" : false
-      },
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "741c7d30-112d-11f0-a328-efa2e09fc93f"
-      },
-      "name" : "get alarm config",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetRelatedAttributeNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 58,
         "layoutY" : 435
       },
@@ -596,6 +557,38 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 347,
+        "layoutY" : 430
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "alarmConfig" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1743755777335,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c7e50180-112d-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "fetch alarmConfig",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
     } ],
     "ruleChainConnections" : null
   },
