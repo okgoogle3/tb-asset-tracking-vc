@@ -4785,7 +4785,7 @@
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : false,
-                  "cellContentFunction" : "// let temp = value;\n\n// console.log(temp)\n// console.log(Object.parse(temp))\n\n// if(value){\n//     // console.log(\"value\", value);\n//     // return value;\n//     if(Object.parse(value)){\n//         return Object.parse(value);\n//         console.log(\"Object.parse(value)\", Object.parse(value));\n//     }\n// }\n\nreturn value && JSON.parse(value) ? \n        `<span>${JSON.parse(value).name}</span>` : \n        `<span>${value}</span>`;",
+                  "cellContentFunction" : "return value && JSON.parse(value) ? JSON.parse(value).name : value;",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible",
