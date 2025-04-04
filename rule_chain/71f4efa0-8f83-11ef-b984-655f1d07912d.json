@@ -29,7 +29,7 @@
       "type" : "Created"
     }, {
       "fromIndex" : 0,
-      "toIndex" : 11,
+      "toIndex" : 10,
       "type" : "Created"
     }, {
       "fromIndex" : 1,
@@ -41,7 +41,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 10,
+      "toIndex" : 9,
       "type" : "Success"
     }, {
       "fromIndex" : 3,
@@ -49,7 +49,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 3,
-      "toIndex" : 10,
+      "toIndex" : 9,
       "type" : "Success"
     }, {
       "fromIndex" : 4,
@@ -70,10 +70,6 @@
     }, {
       "fromIndex" : 8,
       "toIndex" : 7,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 9,
-      "toIndex" : 5,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 8,
@@ -309,40 +305,6 @@
         "id" : "69872214-bdec-11ef-b55e-d50e0e2ee017"
       },
       "name" : "to device",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1425,
-        "layoutY" : 641
-      },
-      "configuration" : {
-        "originatorSource" : "RELATED",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : null,
-        "entityNamePattern" : null,
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "TO",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "DeviceToAsset",
-            "entityTypes" : [ "ASSET" ]
-          } ]
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugSettings" : null,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69872215-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "to asset",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
