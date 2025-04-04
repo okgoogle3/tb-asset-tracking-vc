@@ -1037,7 +1037,7 @@
         "dataToFetch" : "FIELDS",
         "fetchTo" : "METADATA",
         "dataMapping" : {
-          "name" : "relatedEntityName"
+          "name" : "assetOriginatorName"
         }
       },
       "configurationVersion" : 1,
