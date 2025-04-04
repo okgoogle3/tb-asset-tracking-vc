@@ -126,7 +126,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.assetOriginatorName  + \" has \" + status + \" alarm\";\nmsg.message = message;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + metadata.assetName  + \" has \" + status + \" alarm\";\nmsg.message = message;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -394,7 +394,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 934,
+        "layoutX" : 942,
         "layoutY" : 823
       },
       "configuration" : {
@@ -534,7 +534,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.assetOriginatorName  + \" has \" + status + \" alarm\";\nmsg.message = message;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + metadata.assetName  + \" has \" + status + \" alarm\";\nmsg.message = message;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
