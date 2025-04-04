@@ -76,8 +76,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 45,
-        "layoutY" : 593
+        "layoutX" : 47,
+        "layoutY" : 741
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -104,8 +104,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 880,
-        "layoutY" : 500
+        "layoutX" : 882,
+        "layoutY" : 648
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -128,8 +128,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 876,
-        "layoutY" : 597
+        "layoutX" : 878,
+        "layoutY" : 745
       },
       "configuration" : {
         "fromTemplate" : "info@testmail.org",
@@ -156,8 +156,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1154,
-        "layoutY" : 596
+        "layoutX" : 1156,
+        "layoutY" : 744
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -191,8 +191,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1154,
-        "layoutY" : 503
+        "layoutX" : 1156,
+        "layoutY" : 651
       },
       "configuration" : {
         "numbersToTemplate" : "${originatorPhone}",
@@ -216,8 +216,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 323,
-        "layoutY" : 600
+        "layoutX" : 325,
+        "layoutY" : 748
       },
       "configuration" : {
         "dataMapping" : {
@@ -242,8 +242,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 324,
-        "layoutY" : 499
+        "layoutX" : 326,
+        "layoutY" : 647
       },
       "configuration" : {
         "dataMapping" : {
@@ -370,8 +370,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 595,
-        "layoutY" : 696
+        "layoutX" : 597,
+        "layoutY" : 844
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -394,8 +394,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 322,
-        "layoutY" : 697
+        "layoutX" : 324,
+        "layoutY" : 845
       },
       "configuration" : {
         "dataMapping" : {
@@ -420,8 +420,8 @@
     }, {
       "additionalInfo" : {
         "description" : "rule node will be updated in 3.9 to satisfy requirements from ticket https://thingsboard-portal.atlassian.net/browse/PROD-4780",
-        "layoutX" : 873,
-        "layoutY" : 695
+        "layoutX" : 875,
+        "layoutY" : 843
       },
       "configuration" : {
         "templateId" : {
@@ -476,8 +476,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 597,
-        "layoutY" : 502
+        "layoutX" : 599,
+        "layoutY" : 650
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -500,8 +500,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 600,
-        "layoutY" : 599
+        "layoutX" : 602,
+        "layoutY" : 747
       },
       "configuration" : {
         "scriptLang" : "TBEL",
