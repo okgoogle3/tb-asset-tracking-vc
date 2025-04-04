@@ -1175,16 +1175,16 @@
             "main" : {
               "widgets" : {
                 "d1726d38-16cc-971e-4136-66e0b16176cb" : {
-                  "sizeX" : 11,
+                  "sizeX" : 16,
                   "sizeY" : 11,
                   "row" : 0,
                   "col" : 0
                 },
                 "a533aebf-e6fe-4ca1-41b5-003e347bab5e" : {
-                  "sizeX" : 12,
-                  "sizeY" : 10,
-                  "row" : 1,
-                  "col" : 11
+                  "sizeX" : 8,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 16
                 }
               },
               "gridSettings" : {
