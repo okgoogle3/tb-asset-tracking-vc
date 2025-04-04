@@ -281,7 +281,7 @@
           "direction" : "TO",
           "maxLevel" : 1,
           "filters" : [ {
-            "relationType" : "AlarmConfigToAsset",
+            "relationType" : "AlarmConfigToDevice",
             "entityTypes" : [ "ASSET" ]
           } ]
         }
