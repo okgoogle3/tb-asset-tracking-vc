@@ -471,7 +471,7 @@
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
-              "filterId" : "fc0afcfa-e9da-c97b-cc59-9f8f8b82b263",
+              "filterId" : "15f05a19-1a40-bf5e-e5e7-f2bdbc06e3d0",
               "dataKeys" : [ {
                 "name" : "pointA",
                 "type" : "attribute",
@@ -758,7 +758,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
-                "dsFilterId" : "15f05a19-1a40-bf5e-e5e7-f2bdbc06e3d0",
+                "dsFilterId" : "fe897fb7-69e5-5559-3c84-befe98356e63",
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "color",
@@ -781,16 +781,18 @@
                 },
                 "tooltip" : {
                   "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
                   "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
                   "patternFunction" : {
                     "body" : "return module.createZoneTooltip(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   },
-                  "trigger" : "click",
-                  "autoclose" : true,
                   "tagActions" : [ {
                     "name" : "zoneDetails",
                     "type" : "custom",
