@@ -4899,7 +4899,7 @@
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "return value && Object.parse(value) ? `<span>${Object.parse(value).name}</span>` : `<span>${value}</span>`;",
+                  "cellContentFunction" : "console.log(Object.parse(value))\n\nreturn value && Object.parse(value) ? \n        `<span>${Object.parse(value).name}</span>` : \n        `<span>${value}</span>`;",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible",
