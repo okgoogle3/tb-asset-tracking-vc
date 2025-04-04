@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Our refinery concept has been developed through continuous R&D and covers the entire Bayer process, offering everything from pre-feasibility to EPC project implementation of process islands. We design a completely customized solution based on your specific needs that will minimize both upfront capital investment and lifetime operating costs. Our integrated refinery solutions are ideal for both greenfield projects and the expansion and optimization of existing brownfield operations.\n\nIntegrated process design approach    \nCombination of technologies tailored to suit your specific ore composition    \nOptimal integration of all process islands and equipment    \nOptimization of closed circuit based on an in-depth understanding of the process    \nAlumina refinery offering    \nTest work and concept studies for alumina characterization and project scoping    \nPre-feasibility studies    \nBasic and detail engineering    \nProject implementation    \nExpansion studies, upgrade studies, and implementation"
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "29c904d0-1149-11f0-a328-efa2e09fc93f"
+    },
+    "label" : null,
+    "name" : "Alumina Refinery",
+    "ownerId" : null,
+    "type" : "Temporary asset"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
