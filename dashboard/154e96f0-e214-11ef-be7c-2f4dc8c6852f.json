@@ -3635,7 +3635,11 @@
               } ],
               "headerButton" : [ {
                 "name" : "Create Zone",
+                "buttonType" : "raised",
+                "showIcon" : true,
                 "icon" : "add",
+                "buttonColor" : "#FFFFFF",
+                "buttonFillColor" : "#026aa2",
                 "useShowWidgetActionFunction" : true,
                 "showWidgetActionFunction" : "return localStorage.getItem(\"role\") === \"Admin\";",
                 "type" : "customPretty",
