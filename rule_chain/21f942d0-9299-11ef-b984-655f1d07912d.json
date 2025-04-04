@@ -98,7 +98,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType === 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);",
-        "tbelScript" : "var result = [];\nvar notificationSettings = JSON.parse(metadata.notificationSettings);\nif (notificationSettings.sms === true) {\n    result.add(\"sms\");\n}\nif (notificationSettings.email === true) {\n    result.add(\"email\");\n}\nif (notificationSettings.web === true) {\n    result.add(\"web\");\n}\nif(result.isEmpty()){\n    return \"nothing\";\n}\nreturn result;"
+        "tbelScript" : "var result = [];\nvar alarmConfig = JSON.parse(metadata.ss_alarmConfig);\nif (alarmConfig.phone === true) {\n    result.add(\"sms\");\n}\nif (alarmConfig.email === true) {\n    result.add(\"email\");\n}\nif (alarmConfig.application === true) {\n    result.add(\"web\");\n}\nif(result.isEmpty()){\n    return \"nothing\";\n}\nreturn result;"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
