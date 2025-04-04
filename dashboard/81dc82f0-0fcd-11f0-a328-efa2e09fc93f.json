@@ -852,6 +852,13 @@
                   "color" : "#9c27b0",
                   "settings" : { },
                   "_hash" : 0.08462021337484016
+                }, {
+                  "name" : "relatedZoneName",
+                  "type" : "attribute",
+                  "label" : "relatedZoneName",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.7833931251690398
                 } ],
                 "label" : {
                   "show" : false,
@@ -860,16 +867,18 @@
                 },
                 "tooltip" : {
                   "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
                   "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
                   "patternFunction" : {
                     "body" : "return module.createGeofenceTooltip(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   },
-                  "trigger" : "click",
-                  "autoclose" : true,
                   "tagActions" : null
                 },
                 "click" : {
