@@ -61,7 +61,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 13,
-      "toIndex" : 7,
+      "toIndex" : 18,
       "type" : "True"
     }, {
       "fromIndex" : 14,
@@ -79,6 +79,10 @@
       "fromIndex" : 16,
       "toIndex" : 17,
       "type" : "False"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 7,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 13,
     "nodes" : [ {
@@ -118,7 +122,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.originatorName  + \" has \" + status + \" alarm\";\nmsg.message = message;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.assetOriginatorName  + \" has \" + status + \" alarm\";\nmsg.message = message;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -384,7 +388,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.originatorName  + \" has \" + status + \" alarm\";\n\n\nmetadata.subject = \"subject msg\";\nmetadata.message = message;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.assetOriginatorName  + \" has \" + status + \" alarm\";\n\n\nmetadata.subject = \"subject msg\";\nmetadata.message = message;\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -514,7 +518,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.originatorName  + \" has \" + status + \" alarm\";\nmsg.message = message;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var status =  metadata.create== true ? \"raised\" : \"cleared\";\nvar message = \"Asset \" + msg.assetOriginatorName  + \" has \" + status + \" alarm\";\nmsg.message = message;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -589,6 +593,45 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 53,
+        "layoutY" : 341
+      },
+      "configuration" : {
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "TO",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "DeviceToAsset",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        },
+        "dataToFetch" : "FIELDS",
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "name" : "assetOriginatorName"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1743756451411,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "59acb030-112f-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "get asset name",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetRelatedAttributeNode"
     } ],
     "ruleChainConnections" : null
   },
