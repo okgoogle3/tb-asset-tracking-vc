@@ -67,7 +67,88 @@
                 "referenceLayer" : "openstreetmap_hybrid"
               } ],
               "imageSource" : null,
-              "markers" : [ ],
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "xKey" : {
+                  "name" : "latitude",
+                  "type" : "timeseries",
+                  "label" : "latitude",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.8037255883532841
+                },
+                "yKey" : {
+                  "name" : "longitude",
+                  "type" : "timeseries",
+                  "label" : "longitude",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.7970175138778199
+                },
+                "markerType" : "shape",
+                "markerShape" : {
+                  "shape" : "markerShape1",
+                  "size" : 34,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "markerIcon" : {
+                  "iconContainer" : "iconContainer1",
+                  "icon" : "mdi:lightbulb-on",
+                  "size" : 48,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "markerImage" : {
+                  "type" : "image",
+                  "image" : "/assets/markers/shape1.svg",
+                  "imageSize" : 34
+                },
+                "markerOffsetX" : 0.5,
+                "markerOffsetY" : 1,
+                "positionFunction" : "return {x: origXPos, y: origYPos};",
+                "markerClustering" : {
+                  "enable" : false,
+                  "zoomOnClick" : true,
+                  "maxZoom" : null,
+                  "maxClusterRadius" : 80,
+                  "zoomAnimation" : true,
+                  "showCoverageOnHover" : true,
+                  "spiderfyOnMaxZoom" : false,
+                  "chunkedLoad" : false,
+                  "lazyLoad" : true,
+                  "useClusterMarkerColorFunction" : false,
+                  "clusterMarkerColorFunction" : null
+                },
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "offsetX" : 0,
+                  "offsetY" : -1
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "dsEntityAliasId" : "22a9e93a-9636-d31c-5de5-0b5920372440"
+              } ],
               "polygons" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
@@ -307,6 +388,16 @@
             "type" : "assetType",
             "resolveMultiple" : true,
             "assetTypes" : [ "Shape", "Image on map" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "22a9e93a-9636-d31c-5de5-0b5920372440" : {
+          "id" : "22a9e93a-9636-d31c-5de5-0b5920372440",
+          "alias" : "assets",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Box", "Loader", "Worker" ],
             "assetNameFilter" : ""
           }
         }
