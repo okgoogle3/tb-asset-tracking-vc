@@ -1,0 +1,44 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "bfb09ea0-a7e4-11ef-98fa-d9f628e02cb7"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "7e4f7500-1385-11f0-a328-efa2e09fc93f"
+    },
+    "label" : null,
+    "name" : "кер",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "temporaryDevice"
+  },
+  "credentials" : {
+    "credentialsId" : "GuXITQ6gpY4oHQAHnuUV",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ],
+    "SHARED_SCOPE" : [ ]
+  }
+}
