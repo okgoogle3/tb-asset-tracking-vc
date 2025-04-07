@@ -17,7 +17,7 @@
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "1aa07915-6bdd-fb36-aeba-4cb36062a656",
-              "filterId" : "03f55dc2-cf75-e232-5460-98766076039b",
+              "filterId" : null,
               "dataKeys" : [ {
                 "name" : "pointA",
                 "type" : "attribute",
