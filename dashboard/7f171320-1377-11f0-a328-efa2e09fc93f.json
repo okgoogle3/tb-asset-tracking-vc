@@ -116,7 +116,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "b10ba376-2107-3bf3-e9f3-5d9df2a691c0",
-                "dsFilterId" : "3c92b3b1-9637-fc8a-95ef-fc941bb26e7f",
+                "dsFilterId" : null,
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "type",
@@ -304,7 +304,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "1aa07915-6bdd-fb36-aeba-4cb36062a656",
-                "dsFilterId" : "7e7abbba-28f1-5277-d6be-e827a4603f65",
+                "dsFilterId" : null,
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "color",
@@ -391,7 +391,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "69d8f85b-6baf-9d6d-7869-a130ff342ebd",
-                "dsFilterId" : "ffd939b8-bc6b-ce66-cfbe-5b12ec8e49d8",
+                "dsFilterId" : null,
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "color",
