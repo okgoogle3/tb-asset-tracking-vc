@@ -1202,16 +1202,6 @@
             "assetNameFilter" : ""
           }
         },
-        "1908e24f-a816-21c9-0161-08fc4a0c3f26" : {
-          "id" : "1908e24f-a816-21c9-0161-08fc4a0c3f26",
-          "alias" : "Show all assets",
-          "filter" : {
-            "type" : "stateEntity",
-            "resolveMultiple" : false,
-            "stateEntityParamName" : "showAllAssets",
-            "defaultStateEntity" : null
-          }
-        },
         "2d6edda9-58bc-49df-58e7-b2b356068898" : {
           "id" : "2d6edda9-58bc-49df-58e7-b2b356068898",
           "alias" : "All zones",
