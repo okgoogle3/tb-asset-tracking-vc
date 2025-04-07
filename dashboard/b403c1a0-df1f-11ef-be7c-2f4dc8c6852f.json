@@ -585,7 +585,7 @@
                 "layerType" : "Esri.WorldImagery",
                 "referenceLayer" : "openstreetmap_hybrid"
               } ],
-              "imageSource" : null,
+              "trips" : [ ],
               "markers" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
@@ -738,8 +738,23 @@
               "useDefaultCenterPosition" : false,
               "defaultCenterPosition" : "0,0",
               "defaultZoomLevel" : null,
+              "minZoomLevel" : 16,
               "mapPageSize" : 16384,
               "mapActionButtons" : [ ],
+              "tripTimeline" : {
+                "showTimelineControl" : false,
+                "timeStep" : 1000,
+                "speedOptions" : [ 1, 5, 10, 15, 25 ],
+                "showTimestamp" : true,
+                "timestampFormat" : {
+                  "format" : "yyyy-MM-dd HH:mm:ss",
+                  "lastUpdateAgo" : false,
+                  "custom" : false,
+                  "auto" : false
+                },
+                "snapToRealLocation" : false,
+                "locationSnapFilter" : "return true;"
+              },
               "background" : {
                 "type" : "color",
                 "color" : "#fff",
@@ -749,7 +764,8 @@
                   "blur" : 3
                 }
               },
-              "padding" : "8px"
+              "padding" : "0px",
+              "imageSource" : null
             },
             "title" : "Map",
             "useDashboardTimewindow" : true,
@@ -770,7 +786,7 @@
             "titleFont" : null,
             "titleColor" : null,
             "margin" : "0px",
-            "borderRadius" : "0px",
+            "borderRadius" : "12px",
             "iconSize" : "24px",
             "titleIcon" : "map",
             "iconColor" : "#1F6BDD",
@@ -863,7 +879,7 @@
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "#FFFFFF",
                 "columns" : 24,
                 "margin" : 0,
                 "outerMargin" : true,
