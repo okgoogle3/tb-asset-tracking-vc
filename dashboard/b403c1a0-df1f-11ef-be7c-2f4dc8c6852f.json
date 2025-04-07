@@ -559,6 +559,57 @@
               }
             }
           }
+        },
+        "deviceImageOnMap" : {
+          "name" : "deviceImageOnMap",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "deviceImageMap" : {
+          "name" : "deviceImageMap",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "deviceShapeMap" : {
+          "name" : "deviceShapeMap",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
         }
       },
       "entityAliases" : {
