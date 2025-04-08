@@ -160,11 +160,7 @@
                 },
                 "fillImage" : {
                   "type" : "function",
-                  "image" : "/assets/widget-preview-empty.svg",
-                  "opacity" : 1,
-                  "angle" : 0,
-                  "scale" : 1,
-                  "imageFunction" : "console.log(data);\n\nif(data.image){\n    return {\n        url: data.image,\n        opacity: 1,\n        angle: 20,\n        scale: 0\n    }\n}\n",
+                  "imageFunction" : "console.log(data);\n\nif(data.image){\n    return {\n        url: data.image,\n        opacity: data.image ? 1 : 0,\n        angle: 20,\n        scale: 0\n    }\n}\n",
                   "images" : null
                 },
                 "strokeColor" : {
