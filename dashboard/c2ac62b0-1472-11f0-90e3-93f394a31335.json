@@ -291,8 +291,8 @@
           "col" : 0,
           "id" : "c9a0c0a0-cf6d-8bf9-d9ad-659de04c8cf8"
         },
-        "5c75d580-a394-5dcd-6de8-0d77c3285d08" : {
-          "typeFullFqn" : "system.input_widgets.update_server_location_attribute",
+        "5015bfd2-47a4-de1a-a5e0-f89999f89e20" : {
+          "typeFullFqn" : "system.input_widgets.update_multiple_attributes",
           "type" : "latest",
           "sizeX" : 7.5,
           "sizeY" : 3,
@@ -302,19 +302,19 @@
               "name" : "",
               "entityAliasId" : "311ab8f4-b0fe-6f61-7028-8c777ddf6617",
               "dataKeys" : [ {
-                "name" : "scale",
-                "type" : "attribute",
-                "label" : "scale",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.7399012238123381
-              }, {
                 "name" : "rotate",
                 "type" : "attribute",
                 "label" : "rotate",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5997912895126425
+              }, {
+                "name" : "scale",
+                "type" : "attribute",
+                "label" : "scale",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.9069263624089221
+                "_hash" : 0.29532539299071114
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -337,8 +337,8 @@
                 "interval" : 1000,
                 "timewindowMs" : 60000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1744028060708,
-                  "endTimeMs" : 1744114460708
+                  "startTimeMs" : 1744028114199,
+                  "endTimeMs" : 1744114514199
                 },
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
@@ -356,23 +356,17 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "widgetTitle" : "",
-              "showResultMessage" : true,
-              "latKeyName" : "latitude",
-              "lngKeyName" : "longitude",
-              "showGetLocation" : true,
-              "enableHighAccuracy" : false,
-              "showLabel" : true,
-              "latLabel" : "",
-              "lngLabel" : "",
-              "inputFieldsAlignment" : "column",
-              "isLatRequired" : true,
-              "isLngRequired" : true,
-              "requiredErrorMessage" : ""
+              "groupTitle" : "${entityName}",
+              "showActionButtons" : true,
+              "fieldsAlignment" : "row",
+              "fieldsInRow" : 2,
+              "columnGap" : 10,
+              "rowGap" : 5
             },
-            "title" : "Update server location attribute",
+            "title" : "Update Multiple Attributes",
             "dropShadow" : true,
             "enableFullscreen" : false,
+            "enableDataExport" : false,
             "widgetStyle" : { },
             "titleStyle" : {
               "fontSize" : "16px",
@@ -385,7 +379,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "5c75d580-a394-5dcd-6de8-0d77c3285d08"
+          "id" : "5015bfd2-47a4-de1a-a5e0-f89999f89e20"
         }
       },
       "states" : {
@@ -407,9 +401,9 @@
                   "row" : 0,
                   "col" : 18
                 },
-                "5c75d580-a394-5dcd-6de8-0d77c3285d08" : {
+                "5015bfd2-47a4-de1a-a5e0-f89999f89e20" : {
                   "sizeX" : 7,
-                  "sizeY" : 5,
+                  "sizeY" : 8,
                   "row" : 3,
                   "col" : 18
                 }
