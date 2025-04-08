@@ -6080,7 +6080,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "console.log(value);\n\nreturn value || 0;"
+                "postFuncBody" : "console.log(value);\n\nreturn value || \"0\";"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
