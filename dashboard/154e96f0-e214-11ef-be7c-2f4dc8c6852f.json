@@ -6074,7 +6074,13 @@
                 "label" : "assetsCount",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.35110565566202356
+                "_hash" : 0.35110565566202356,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value || 0;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
