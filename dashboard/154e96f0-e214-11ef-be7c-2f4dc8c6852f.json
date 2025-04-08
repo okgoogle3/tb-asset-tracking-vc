@@ -5828,7 +5828,7 @@
             },
             "title" : "Map with photo",
             "dropShadow" : false,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
@@ -5840,7 +5840,7 @@
             "displayTimewindow" : true,
             "showTitleIcon" : false,
             "titleTooltip" : "",
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "borderRadius" : "12px",
             "widgetCss" : "",
             "pageSize" : 1024,
