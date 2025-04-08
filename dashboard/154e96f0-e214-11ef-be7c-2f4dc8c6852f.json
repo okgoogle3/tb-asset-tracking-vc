@@ -6080,13 +6080,7 @@
                 "label" : "assetsCount",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.35110565566202356,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value) {\n    return value;\n}\n\nreturn 0;"
+                "_hash" : 0.6982730985100256
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
