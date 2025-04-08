@@ -6080,7 +6080,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "console.log(value);\n\nif (value) {\n    return value;\n}\n\nreturn 0;"
+                "postFuncBody" : "return 150"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
