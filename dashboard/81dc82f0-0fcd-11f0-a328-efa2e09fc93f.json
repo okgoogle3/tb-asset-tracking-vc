@@ -929,7 +929,7 @@
               "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
               "scales" : [ ],
               "dragModeButton" : false,
-              "fitMapBounds" : true,
+              "fitMapBounds" : false,
               "useDefaultCenterPosition" : false,
               "defaultCenterPosition" : "0,0",
               "defaultZoomLevel" : null,
