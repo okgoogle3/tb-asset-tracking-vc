@@ -140,7 +140,7 @@
                 },
                 "fillImage" : {
                   "type" : "function",
-                  "imageFunction" : "console.log(data)\n\nreturn {\n      url: data.image,\n      opacity: 0,\n      angle: data.rotate,\n      scale: data.scale\n}",
+                  "imageFunction" : "console.log(data)\n\nreturn {\n      url: data.image,\n      opacity: 1,\n      angle: data.rotate,\n      scale: data.scale\n}",
                   "images" : null
                 },
                 "strokeColor" : {
