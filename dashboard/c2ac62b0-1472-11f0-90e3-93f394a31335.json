@@ -140,7 +140,7 @@
                 },
                 "fillImage" : {
                   "type" : "function",
-                  "imageFunction" : "console.log(data)\n\nreturn {\n      url: data.image,\n      opacity: 1,\n      angle: data.rotate,\n      scale: data.scale\n}",
+                  "imageFunction" : "console.log(data)\n\nfunction computeScaleFactor(base64Image, polygon, callback) {\n    const img = new Image();\n    \n    img.onload = () => {\n        const imageWidth = img.width;\n        const imageHeight = img.height;\n\n        // Extract lat/lon ranges from polygon\n        const lats = polygon.map(point => point[0]);\n        const lons = polygon.map(point => point[1]);\n\n        const minLat = Math.min(...lats);\n        const maxLat = Math.max(...lats);\n        const minLon = Math.min(...lons);\n        const maxLon = Math.max(...lons);\n\n        const polygonWidth = maxLon - minLon;\n        const polygonHeight = maxLat - minLat;\n\n        // We assume lat is Y axis and lon is X axis (in degrees)\n        // To fit polygon into image, calculate how much we need to scale it down\n        const scaleX = imageWidth / polygonWidth;\n        const scaleY = imageHeight / polygonHeight;\n\n        // To fit *entire* polygon inside image, take the smaller scale\n        const scaleFactor = Math.min(scaleX, scaleY);\n        console.log(\"scaleFactor\",scaleFactor)\n        callback(scaleFactor, imageWidth, imageHeight);\n    };\n    \n    img.src = base64Image;\n}\n\nconsole.log(computeScaleFactor(data.image, JSON.parse(data.perimeter)));\n\nreturn {\n      url: data.image,\n      opacity: 1,\n      angle: data.rotate,\n      scale: data.scale\n}",
                   "images" : null
                 },
                 "strokeColor" : {
