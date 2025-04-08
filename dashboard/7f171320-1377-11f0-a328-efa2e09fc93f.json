@@ -97,16 +97,18 @@
                 },
                 "tooltip" : {
                   "show" : false,
+                  "trigger" : "click",
+                  "autoclose" : true,
                   "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
                   "patternFunction" : {
                     "body" : "return module.createZoneTooltip(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   },
-                  "trigger" : "click",
-                  "autoclose" : true,
                   "tagActions" : [ {
                     "name" : "zoneDetails",
                     "type" : "custom",
@@ -124,7 +126,7 @@
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 },
-                "fillType" : "color",
+                "fillType" : "image",
                 "fillColor" : {
                   "type" : "function",
                   "color" : "rgba(51,136,255,0.2)",
@@ -150,11 +152,9 @@
                   "angle" : 45
                 },
                 "fillImage" : {
-                  "type" : "image",
-                  "image" : "/assets/widget-preview-empty.svg",
-                  "opacity" : 1,
-                  "angle" : 0,
-                  "scale" : 1
+                  "type" : "function",
+                  "imageFunction" : "return {\n  url: \"string\",\n  opacity: 1,\n  angle: 0,\n  scale: 0\n}",
+                  "images" : null
                 },
                 "strokeColor" : {
                   "type" : "function",
