@@ -591,8 +591,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 317,
-        "layoutY" : 782
+        "layoutX" : 70,
+        "layoutY" : 783
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -619,8 +619,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 311,
-        "layoutY" : 863
+        "layoutX" : 64,
+        "layoutY" : 864
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
@@ -651,8 +651,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 318,
-        "layoutY" : 507
+        "layoutX" : 71,
+        "layoutY" : 508
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -679,8 +679,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 319,
-        "layoutY" : 610
+        "layoutX" : 72,
+        "layoutY" : 611
       },
       "configuration" : {
         "dataMapping" : {
@@ -706,8 +706,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 317,
-        "layoutY" : 702
+        "layoutX" : 70,
+        "layoutY" : 703
       },
       "configuration" : {
         "relationsQuery" : {
@@ -740,8 +740,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 554,
-        "layoutY" : 698
+        "layoutX" : 376,
+        "layoutY" : 691
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -768,8 +768,8 @@
     }, {
       "additionalInfo" : {
         "description" : "asset profile msg also can be pushed here, so we filter it",
-        "layoutX" : 558,
-        "layoutY" : 517
+        "layoutX" : 380,
+        "layoutY" : 510
       },
       "configuration" : {
         "originatorTypes" : [ "ASSET" ]
@@ -790,8 +790,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 557,
-        "layoutY" : 788
+        "layoutX" : 379,
+        "layoutY" : 781
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
@@ -822,8 +822,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 555,
-        "layoutY" : 610
+        "layoutX" : 377,
+        "layoutY" : 603
       },
       "configuration" : {
         "relationsQuery" : {
