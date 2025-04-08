@@ -53,16 +53,16 @@
       "type" : "Attributes Updated"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 10,
-      "type" : "Entity Deleted"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 21,
+      "toIndex" : 13,
       "type" : "Relation Added or Updated"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 25,
+      "toIndex" : 17,
       "type" : "Entity Updated"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 20,
+      "type" : "Entity Deleted"
     }, {
       "fromIndex" : 6,
       "toIndex" : 2,
@@ -76,56 +76,32 @@
       "toIndex" : 7,
       "type" : "True"
     }, {
-      "fromIndex" : 10,
-      "toIndex" : 16,
-      "type" : "Success"
-    }, {
       "fromIndex" : 11,
       "toIndex" : 12,
-      "type" : "Failure"
-    }, {
-      "fromIndex" : 11,
-      "toIndex" : 13,
       "type" : "Success"
     }, {
       "fromIndex" : 13,
+      "toIndex" : 14,
+      "type" : "GeofenceToZone"
+    }, {
+      "fromIndex" : 14,
       "toIndex" : 15,
       "type" : "Success"
     }, {
       "fromIndex" : 15,
-      "toIndex" : 14,
-      "type" : "True"
-    }, {
-      "fromIndex" : 16,
       "toIndex" : 11,
       "type" : "Success"
     }, {
-      "fromIndex" : 19,
-      "toIndex" : 20,
+      "fromIndex" : 16,
+      "toIndex" : 18,
       "type" : "Success"
     }, {
-      "fromIndex" : 21,
-      "toIndex" : 22,
-      "type" : "GeofenceToZone"
-    }, {
-      "fromIndex" : 22,
-      "toIndex" : 23,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 23,
+      "fromIndex" : 17,
       "toIndex" : 19,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 24,
-      "toIndex" : 26,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 25,
-      "toIndex" : 27,
       "type" : "True"
     }, {
-      "fromIndex" : 27,
-      "toIndex" : 24,
+      "fromIndex" : 19,
+      "toIndex" : 16,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
@@ -371,182 +347,6 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 817,
-        "layoutY" : 591
-      },
-      "configuration" : {
-        "searchEntityGroupForTenantOnly" : true,
-        "groupType" : "ASSET",
-        "groupName" : "configuration assets"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugSettings" : null,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69961636-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "duplicate to configuration assets group",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 829,
-        "layoutY" : 765
-      },
-      "configuration" : {
-        "tellFailureIfAbsent" : true,
-        "fetchTo" : "METADATA",
-        "clientAttributeNames" : [ ],
-        "sharedAttributeNames" : [ ],
-        "serverAttributeNames" : [ "alarmConfig" ],
-        "latestTsKeyNames" : [ ],
-        "getLatestValueWithTs" : false
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugSettings" : null,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69961637-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "get alarmConfig",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1115,
-        "layoutY" : 765
-      },
-      "configuration" : {
-        "version" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugSettings" : null,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69961638-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "ack",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.flow.TbAckNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 825,
-        "layoutY" : 853
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var configUpdated = false;\nvar alarmConfig = JSON.parse(metadata.ss_alarmConfig);\n\nif (alarmConfig.locationThresholds != null) {\n    var locationThresholdsToRemove = [];\n    foreach(locationThreshold: alarmConfig.locationThresholds) {\n        if (locationThreshold.eventType.contains(\"Zone\")) {\n            var zonesToRemove = [];\n            foreach(zone : locationThreshold.zones) {\n                if (zone.id.id == msg.id.id) {\n                 zonesToRemove.push(zone);\n                     configUpdated = true;\n                }\n            }\n                 foreach(remove : zonesToRemove){\n                locationThreshold.zones.remove(remove);\n          }\n\n        } else if (locationThreshold.eventType.contains(\"Geofence\")) {\n              if(locationThreshold.zones.id.id == msg.id.id){\n                  locationThresholdsToRemove.push(locationThreshold);\n                  configUpdated = true;\n              } else {\n                  var geofencesToRemove = [];\n                  foreach(geofence: locationThreshold.geofences){\n                      if(geofence.id.id == msg.id.id){\n                         geofencesToRemove.push(geofence);\n                         configUpdated = true; \n                      }\n                  }\n                  foreach(remove: geofencesToRemove){\n                      locationThreshold.geofences.remove(remove);\n                  }\n              }\n          }\n          if(locationThreshold.zones.isEmpty() || (locationThreshold.eventType.contains(\"Geofence\") && locationThreshold.geofences.isEmpty())){\n              locationThresholdsToRemove.push(locationThreshold);\n          } \n      \n          \n    }\n \n   \n    foreach(remove : locationThresholdsToRemove){\n        alarmConfig.locationThresholds.remove(remove);\n    }\n}\nreturn {\n    msg: {alarmConfig:alarmConfig},\n    metadata: {\n        configUpdated : configUpdated\n    },\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugSettings" : {
-        "allEnabled" : false,
-        "allEnabledUntil" : 1744104727898,
-        "failuresEnabled" : false
-      },
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69961639-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "remove  deleted zone/geofences from alarmConfig",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 825,
-        "layoutY" : 1016
-      },
-      "configuration" : {
-        "scope" : "SERVER_SCOPE",
-        "notifyDevice" : false,
-        "processingSettings" : {
-          "type" : "ON_EVERY_MESSAGE"
-        },
-        "sendAttributesUpdatedNotification" : false,
-        "updateAttributesOnlyOnValueChange" : true
-      },
-      "configurationVersion" : 3,
-      "createdTime" : 0,
-      "debugSettings" : null,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69963d40-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "save attribute",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 829,
-        "layoutY" : 938
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return msg.temperature > 20;",
-        "tbelScript" : "return metadata.configUpdated == \"true\";"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugSettings" : null,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "69963d41-bdec-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "configUpdated?",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 822,
-        "layoutY" : 675
-      },
-      "configuration" : {
-        "version" : 0
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugSettings" : null,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "04c70240-be10-11ef-b55e-d50e0e2ee017"
-      },
-      "name" : "SequentialByOriginator",
-      "queueName" : "SequentialByOriginator",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.flow.TbCheckpointNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 824,
         "layoutY" : 39
       },
@@ -562,30 +362,6 @@
       "id" : {
         "entityType" : "RULE_NODE",
         "id" : "7a7636d0-d1b8-11ef-ab5a-5fc560f62ac3"
-      },
-      "name" : "TODO refactor",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 601,
-        "layoutY" : 851
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugSettings" : null,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "7a7636d1-d1b8-11ef-ab5a-5fc560f62ac3"
       },
       "name" : "TODO refactor",
       "queueName" : null,
@@ -857,6 +633,29 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToRelatedNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 824,
+        "layoutY" : 581
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "56597200-145a-11f0-a328-efa2e09fc93f"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9a18bcd0-145a-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "Remove zone/geofence from alarm config",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },
