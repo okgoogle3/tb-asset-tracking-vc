@@ -470,8 +470,8 @@
       "createdTime" : 0,
       "debugSettings" : {
         "allEnabled" : false,
-        "allEnabledUntil" : 0,
-        "failuresEnabled" : false
+        "allEnabledUntil" : 1744103653703,
+        "failuresEnabled" : true
       },
       "externalId" : null,
       "id" : {
