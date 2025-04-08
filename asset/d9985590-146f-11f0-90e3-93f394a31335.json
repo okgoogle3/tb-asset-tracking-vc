@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "d9985590-146f-11f0-90e3-93f394a31335"
+    },
+    "label" : null,
+    "name" : "test nah",
+    "ownerId" : null,
+    "type" : "Shape"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
