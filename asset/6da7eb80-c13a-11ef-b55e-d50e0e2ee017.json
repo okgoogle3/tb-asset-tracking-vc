@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017\"}}",
       "key" : "assignedLocation",
-      "lastUpdateTs" : 1736503659608,
+      "lastUpdateTs" : 1736503666351,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1736503659608,
+      "lastUpdateTs" : 1736503666351,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -56,11 +56,11 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1736503659608,
+      "lastUpdateTs" : 1736503666351,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1736503659608,
+      "lastUpdateTs" : 1736503666351,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -88,11 +88,11 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isAssigned",
-      "lastUpdateTs" : 1736503659627,
+      "lastUpdateTs" : 1736503666372,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -120,13 +120,13 @@
       "longValue" : null,
       "strValue" : "Demo Asset 25"
     }, {
-      "booleanValue" : null,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "status",
-      "lastUpdateTs" : 1736503659627,
+      "lastUpdateTs" : 1736503666372,
       "longValue" : null,
-      "strValue" : "true"
+      "strValue" : null
     } ]
   }
 }
