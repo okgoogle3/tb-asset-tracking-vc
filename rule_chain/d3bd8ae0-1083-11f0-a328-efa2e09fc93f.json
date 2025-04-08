@@ -50,7 +50,7 @@
       "type" : "Attributes Updated"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 10,
+      "toIndex" : 19,
       "type" : "Entity Deleted"
     }, {
       "fromIndex" : 6,
@@ -625,6 +625,29 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 741,
+        "layoutY" : 593
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "56597200-145a-11f0-a328-efa2e09fc93f"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6464dfb0-145a-11f0-a328-efa2e09fc93f"
+      },
+      "name" : "Remove zone/geofence from alarm config",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },
