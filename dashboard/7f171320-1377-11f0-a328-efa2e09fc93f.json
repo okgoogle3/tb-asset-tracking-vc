@@ -96,19 +96,17 @@
                   "pattern" : "${entityName}"
                 },
                 "tooltip" : {
-                  "show" : true,
-                  "trigger" : "click",
-                  "autoclose" : true,
+                  "show" : false,
                   "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-                  "offsetX" : 0,
-                  "offsetY" : -1,
                   "patternFunction" : {
                     "body" : "return module.createZoneTooltip(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   },
+                  "trigger" : "click",
+                  "autoclose" : true,
                   "tagActions" : [ {
                     "name" : "zoneDetails",
                     "type" : "custom",
@@ -126,6 +124,7 @@
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 },
+                "fillType" : "color",
                 "fillColor" : {
                   "type" : "function",
                   "color" : "rgba(51,136,255,0.2)",
@@ -136,6 +135,26 @@
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   }
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
                 },
                 "strokeColor" : {
                   "type" : "function",
@@ -163,7 +182,7 @@
               "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
               "scales" : [ ],
               "dragModeButton" : false,
-              "fitMapBounds" : true,
+              "fitMapBounds" : false,
               "useDefaultCenterPosition" : false,
               "defaultCenterPosition" : "0,0",
               "defaultZoomLevel" : null,
