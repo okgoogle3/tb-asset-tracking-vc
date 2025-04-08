@@ -6086,7 +6086,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return 15;"
+                "postFuncBody" : "return value;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
