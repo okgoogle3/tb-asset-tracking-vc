@@ -570,7 +570,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
-                "dsFilterId" : null,
+                "dsFilterId" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "type",
@@ -758,7 +758,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
-                "dsFilterId" : null,
+                "dsFilterId" : "9d8553cf-0fa5-9617-0845-b0d98dce891c",
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "color",
@@ -810,6 +810,7 @@
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 },
+                "fillType" : "color",
                 "fillColor" : {
                   "type" : "function",
                   "color" : "rgba(51,136,255,0.2)",
@@ -820,6 +821,26 @@
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   }
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
                 },
                 "strokeColor" : {
                   "type" : "function",
@@ -845,7 +866,7 @@
                 "dsLabel" : "",
                 "dsDeviceId" : null,
                 "dsEntityAliasId" : "e8f88e04-f80c-2aa6-a69a-9bc1cc1ca096",
-                "dsFilterId" : null,
+                "dsFilterId" : "0f60db3a-df12-283e-6705-1568188d4781",
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
                   "name" : "color",
@@ -892,6 +913,7 @@
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 },
+                "fillType" : "color",
                 "fillColor" : {
                   "type" : "function",
                   "color" : "rgba(51,136,255,0.2)",
@@ -902,6 +924,26 @@
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   }
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
                 },
                 "strokeColor" : {
                   "type" : "function",
