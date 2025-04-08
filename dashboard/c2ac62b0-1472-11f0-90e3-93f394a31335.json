@@ -116,7 +116,7 @@
                 },
                 "groups" : null,
                 "edit" : {
-                  "enabledActions" : [ ],
+                  "enabledActions" : [ "add", "edit", "move", "remove" ],
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 },
@@ -140,6 +140,10 @@
                 },
                 "fillImage" : {
                   "type" : "function",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1,
                   "imageFunction" : "return {\n      url: data.image,\n      opacity: 0,\n      angle: data.rotate,\n      scale: data.scale\n}",
                   "images" : null
                 },
