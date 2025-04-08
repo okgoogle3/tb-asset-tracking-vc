@@ -182,7 +182,7 @@
               "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
               "scales" : [ ],
               "dragModeButton" : false,
-              "fitMapBounds" : false,
+              "fitMapBounds" : true,
               "useDefaultCenterPosition" : false,
               "defaultCenterPosition" : "0,0",
               "defaultZoomLevel" : null,
