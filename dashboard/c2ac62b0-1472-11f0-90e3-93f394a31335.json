@@ -474,7 +474,7 @@
               "valueColor" : "rgba(0, 0, 0, 0.87)",
               "tickMin" : 0,
               "tickMax" : 360,
-              "showTicks" : true,
+              "showTicks" : false,
               "ticksFont" : {
                 "family" : "Roboto",
                 "size" : 11,
@@ -484,8 +484,8 @@
                 "lineHeight" : "16px"
               },
               "ticksColor" : "rgba(0,0,0,0.54)",
-              "showTickMarks" : true,
-              "tickMarksCount" : 11,
+              "showTickMarks" : false,
+              "tickMarksCount" : 2,
               "tickMarksColor" : "var(--tb-primary-500)",
               "mainColor" : "var(--tb-primary-500)",
               "backgroundColor" : "var(--tb-primary-100)",
