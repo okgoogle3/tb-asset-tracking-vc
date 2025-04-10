@@ -8526,18 +8526,18 @@
                 "limit" : 25000
               }
             },
-            "showTitle" : false,
+            "showTitle" : true,
             "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "20px",
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextPattern" : "",
-              "markdownTextFunction" : "return `\n    <div class=\"zone-selector-container\">Hello</div>\n`;",
+              "markdownTextFunction" : "return `\n    <div class=\"zone-selector-container\">\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ".zone-selector-container {\n    width: 100%;\n    height: 100%;\n    background-color: lightblue;\n}"
+              "markdownCss" : ".zone-selector-container {\n    width: 100%;\n    height: 100%;\n    background-color: lightblue;\n    padding: 0;\n}\n\n.title {\n    color: var(--Color-Text-primary, #0C111D);\n    font-size: 24px;\n    font-style: normal;\n    font-weight: 600;\n    line-height: 32px; \n}"
             },
-            "title" : "Markdown/HTML Card",
+            "title" : "Location map",
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
@@ -8556,7 +8556,15 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
-            "displayTimewindow" : true
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 24,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : "bold",
+              "style" : null,
+              "lineHeight" : "32px"
+            }
           },
           "row" : 0,
           "col" : 0,
