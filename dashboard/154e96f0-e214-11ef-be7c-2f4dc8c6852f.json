@@ -8549,7 +8549,7 @@
               "markdownTextPattern" : "",
               "markdownTextFunction" : "console.log(\"Data\", data);\nconsole.log(\"ctx\", ctx);\n\nreturn `\n    <div class=\"zone-selector-container\">\n    </div>\n`;",
               "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ".zone-selector-container {\n    width: 100%;\n    height: 100%;\n    background-color: lightblue;\n    padding: 0;\n}\n\n.title {\n    color: var(--Color-Text-primary, #0C111D);\n    font-size: 24px;\n    font-style: normal;\n    font-weight: 600;\n    line-height: 32px; \n}"
+              "markdownCss" : ".zone-selector-container {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n}\n\n.title {\n    color: var(--Color-Text-primary, #0C111D);\n    font-size: 24px;\n    font-style: normal;\n    font-weight: 600;\n    line-height: 32px; \n}"
             },
             "title" : "Location map",
             "showTitleIcon" : false,
