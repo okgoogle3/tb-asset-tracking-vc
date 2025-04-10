@@ -8500,6 +8500,27 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "800ad818-a735-be35-83c4-1db3a6389560",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.599985744142487
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.15614159773852443
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
