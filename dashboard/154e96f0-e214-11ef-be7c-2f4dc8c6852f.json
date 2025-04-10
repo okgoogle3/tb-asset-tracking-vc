@@ -8485,17 +8485,29 @@
               "dataKeys" : [ {
                 "name" : "name",
                 "type" : "entityField",
-                "label" : "Name 2",
+                "label" : "Name",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.09612460022786695
+                "_hash" : 0.32411670267419546,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "type",
                 "type" : "entityField",
-                "label" : "Type 2",
+                "label" : "Type",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.623678260703422
+                "_hash" : 0.8607371908577754,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
