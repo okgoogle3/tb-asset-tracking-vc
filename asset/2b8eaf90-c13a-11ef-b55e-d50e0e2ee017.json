@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "16d7cfa0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "22c73b20-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -18,9 +18,9 @@
       "id" : "2b8eaf90-c13a-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "Worker 16",
+    "name" : "Tool 16",
     "ownerId" : null,
-    "type" : "Worker"
+    "type" : "Tool"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -36,7 +36,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017\"}}",
       "key" : "assignedLocation",
-      "lastUpdateTs" : 1734964105540,
+      "lastUpdateTs" : 1744303919856,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1734964105540,
+      "lastUpdateTs" : 1744303919856,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -60,15 +60,15 @@
       "doubleValue" : null,
       "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_698e7510-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744303895016,
+      "lastUpdateTs" : 1744305002449,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"70593240-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744303906665,\"insideTs\":null,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"70593240-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"LEFT\",\"enterTs\":1744304987147,\"insideTs\":null,\"leftTs\":1744305092147},{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"706407b0-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"ENTERED\",\"enterTs\":1744305092147,\"insideTs\":null,\"leftTs\":null}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744303918841,
+      "lastUpdateTs" : 1744305095316,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -76,7 +76,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1734964105540,
+      "lastUpdateTs" : 1744303919856,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -84,7 +84,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1734964105540,
+      "lastUpdateTs" : 1744303919856,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -116,8 +116,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744303918839,
-      "longValue" : 1744303918665,
+      "lastUpdateTs" : 1744305095315,
+      "longValue" : 1744305095147,
       "strValue" : null
     }, {
       "booleanValue" : null,
