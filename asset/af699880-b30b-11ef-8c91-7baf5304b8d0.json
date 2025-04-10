@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"53accb20-b30b-11ef-8c91-7baf5304b8d0\"},\"name\":\"Demo Device 4\"}",
       "key" : "assignedDevice",
-      "lastUpdateTs" : 1744304044011,
+      "lastUpdateTs" : 1744304049624,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1744304044011,
+      "lastUpdateTs" : 1744304049624,
       "longValue" : null,
       "strValue" : "Demo Asset 4"
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1744304044011,
+      "lastUpdateTs" : 1744304049624,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -84,7 +84,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"6f1d56e0-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744298512223,\"insideTs\":null,\"leftTs\":null}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744304047926,
+      "lastUpdateTs" : 1744304056929,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -92,15 +92,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1744304044011,
+      "lastUpdateTs" : 1744304049624,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1744304044011,
+      "lastUpdateTs" : 1744304049624,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -132,8 +132,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744304047923,
-      "longValue" : 1744304047657,
+      "lastUpdateTs" : 1744304056928,
+      "longValue" : 1744304056657,
       "strValue" : null
     }, {
       "booleanValue" : null,
