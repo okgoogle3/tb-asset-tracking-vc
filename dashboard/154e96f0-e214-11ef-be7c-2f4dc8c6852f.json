@@ -8545,13 +8545,11 @@
             "dropShadow" : false,
             "enableFullscreen" : false,
             "widgetStyle" : { },
-            "titleStyle" : {
-              "padding" : 0
-            },
+            "titleStyle" : null,
             "showLegend" : false,
             "enableDataExport" : false,
             "borderRadius" : "12px",
-            "widgetCss" : "",
+            "widgetCss" : ".tb-widget-title {\n    padding: 0!important;\n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
