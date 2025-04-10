@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "16d7cfa0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "22c73b20-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -20,7 +20,7 @@
     "label" : null,
     "name" : "Tool 14",
     "ownerId" : null,
-    "type" : "Worker"
+    "type" : "Tool"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -68,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"7071ea60-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744298512223,\"insideTs\":null,\"leftTs\":null}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744303942864,
+      "lastUpdateTs" : 1744304095888,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -116,8 +116,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744303942862,
-      "longValue" : 1744303942664,
+      "lastUpdateTs" : 1744304095887,
+      "longValue" : 1744304095664,
       "strValue" : null
     }, {
       "booleanValue" : null,
