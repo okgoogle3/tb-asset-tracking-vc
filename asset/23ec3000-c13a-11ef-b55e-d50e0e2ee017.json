@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "22c73b20-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "16d7cfa0-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -18,9 +18,9 @@
       "id" : "23ec3000-c13a-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "Tool 15",
+    "name" : "Worker 15",
     "ownerId" : null,
-    "type" : "Tool"
+    "type" : "Worker"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -66,9 +66,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"7071ea60-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744303747664,\"insideTs\":null,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744304101861,
+      "lastUpdateTs" : 1744304828337,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -92,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1744304102873,
+      "lastUpdateTs" : 1744305048777,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -116,15 +116,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744304101860,
-      "longValue" : 1744304101664,
+      "lastUpdateTs" : 1744305047381,
+      "longValue" : 1744305047147,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1744304102873,
+      "lastUpdateTs" : 1744305048777,
       "longValue" : null,
       "strValue" : "Demo Asset 15"
     }, {
@@ -132,7 +132,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1744304102873,
+      "lastUpdateTs" : 1744305048777,
       "longValue" : null,
       "strValue" : "Demo Asset 15"
     }, {
