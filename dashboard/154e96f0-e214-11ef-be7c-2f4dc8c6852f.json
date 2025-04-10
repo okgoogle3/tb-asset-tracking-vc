@@ -8483,7 +8483,21 @@
               "type" : "entity",
               "name" : "",
               "entityAliasId" : "800ad818-a735-be35-83c4-1db3a6389560",
-              "dataKeys" : [ ],
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.10645194742207509
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.7708199040944035
+              } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
