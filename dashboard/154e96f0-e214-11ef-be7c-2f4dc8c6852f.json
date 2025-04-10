@@ -8504,7 +8504,21 @@
             }, {
               "type" : "entity",
               "entityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
-              "dataKeys" : [ ],
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name 2",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.09612460022786695
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type 2",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.623678260703422
+              } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
