@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "16d7cfa0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "22c73b20-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -18,9 +18,9 @@
       "id" : "903e5130-b30b-11ef-8c91-7baf5304b8d0"
     },
     "label" : null,
-    "name" : "Worker 1",
+    "name" : "Tool 1",
     "ownerId" : null,
-    "type" : "Worker"
+    "type" : "Tool"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -36,15 +36,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "alertTypes",
-      "lastUpdateTs" : 1744304005893,
+      "lastUpdateTs" : 1744305434450,
       "longValue" : null,
-      "strValue" : "[\"Temperature\",\"Zone out\",\"Geofence out\"]"
+      "strValue" : "[\"Battery level\",\"Idle\",\"Zone out\",\"Geofence out\"]"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"25003f00-b30b-11ef-8c91-7baf5304b8d0\"},\"name\":\"Demo Device 1\"}",
       "key" : "assignedDevice",
-      "lastUpdateTs" : 1744303730332,
+      "lastUpdateTs" : 1744304011714,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017\"}}",
       "key" : "assignedLocation",
-      "lastUpdateTs" : 1744303730332,
+      "lastUpdateTs" : 1744304011714,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1744303730332,
+      "lastUpdateTs" : 1744304011714,
       "longValue" : null,
       "strValue" : "Demo Asset 1"
     }, {
@@ -76,7 +76,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1744303730332,
+      "lastUpdateTs" : 1744304011714,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -106,9 +106,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"704b4f90-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744300182361,\"insideTs\":null,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"706407b0-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744304615166,\"insideTs\":null,\"leftTs\":null}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744304008808,
+      "lastUpdateTs" : 1744305434444,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -116,7 +116,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1744303730332,
+      "lastUpdateTs" : 1744304011714,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -124,7 +124,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1744303730332,
+      "lastUpdateTs" : 1744304011714,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -156,8 +156,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744304008806,
-      "longValue" : 1744304008657,
+      "lastUpdateTs" : 1744305434442,
+      "longValue" : 1744305434145,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -180,7 +180,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1744303730332,
+      "lastUpdateTs" : 1744304011714,
       "longValue" : null,
       "strValue" : "Demo Asset 1"
     }, {
@@ -196,7 +196,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1744303730332,
+      "lastUpdateTs" : 1744304011714,
       "longValue" : null,
       "strValue" : "Demo Asset 1"
     }, {
