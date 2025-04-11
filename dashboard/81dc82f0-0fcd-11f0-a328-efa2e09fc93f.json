@@ -1230,7 +1230,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Press-Forcing Facilities Production, Foundry Production, Steelmaking Production, Metalworks Production",
+                  "defaultValue" : "",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : true,
@@ -1282,7 +1282,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "High-speed burners, Hazardous materials area, Dangerous area 1, Castings producing of carbon, Castings producing of alloyed, Castings producing of special cast iron, Control room, Raw material, Packaging Area, Manual arc welding, Metal-arc inert gas welding, Tungsten inert gas arc welding, test for geo name geo, geofence name, test for geo name geo 2, Working room 1, Storage room, Control Room",
+                  "defaultValue" : "",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -1311,7 +1311,8 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Press-Forcing Facilities Production, Foundry Production, Steelmaking Production, Metalworks Production"
+                  "defaultValue" : "",
+                  "dynamicValue" : null
                 },
                 "ignoreCase" : true,
                 "type" : "STRING"
@@ -1362,7 +1363,8 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Equipment warehouse, Heat Treatment Facilities Production, Mechanical Assembly Production, Press-Forcing Facilities Production, Foundry Production, Steelmaking Production, Metalworks Production, example, test for geo nam, Electrical repair workshop, Special and Chemical Grade, test for image, Repair and construction workshops"
+                  "defaultValue" : "",
+                  "dynamicValue" : null
                 },
                 "ignoreCase" : true,
                 "type" : "STRING"
