@@ -1256,7 +1256,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value ? `${value}°C` : \"No info\";"
+                "postFuncBody" : "return value ? `${Math.round(value)}°C` : \"No info\";"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
