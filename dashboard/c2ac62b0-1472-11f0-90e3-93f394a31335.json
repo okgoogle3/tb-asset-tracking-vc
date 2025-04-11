@@ -140,12 +140,7 @@
                 },
                 "fillImage" : {
                   "type" : "function",
-                  "image" : "/assets/widget-preview-empty.svg",
-                  "preserveAspectRatio" : true,
-                  "opacity" : 1,
-                  "angle" : 0,
-                  "scale" : 1,
-                  "imageFunction" : "return {\n    url: data.image,\n    preserveAspectRatio: false,\n    opacity: 1,\n    angle: data.rotate\n}",
+                  "imageFunction" : "return {\n    url: data.image,\n    preserveAspectRatio: true,\n    opacity: 1,\n    angle: data.rotate\n}",
                   "images" : null
                 },
                 "strokeColor" : {
