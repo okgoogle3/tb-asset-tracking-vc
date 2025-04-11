@@ -118,7 +118,7 @@
                 "edit" : {
                   "enabledActions" : [ "add", "edit", "move", "remove" ],
                   "attributeScope" : "SERVER_SCOPE",
-                  "snappable" : false
+                  "snappable" : true
                 },
                 "fillType" : "image",
                 "fillColor" : {
@@ -140,6 +140,11 @@
                 },
                 "fillImage" : {
                   "type" : "function",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "preserveAspectRatio" : true,
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1,
                   "imageFunction" : "return {\n    url: data.image,\n    preserveAspectRatio: false,\n    opacity: 1,\n    angle: data.rotate\n}",
                   "images" : null
                 },
