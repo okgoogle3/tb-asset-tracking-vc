@@ -18,7 +18,7 @@
       "id" : "2b8eaf90-c13a-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "Tool 16",
+    "name" : "Carbon Induction foundry machine",
     "ownerId" : null,
     "type" : "Tool"
   },
@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"53dcf160-c139-11ef-b55e-d50e0e2ee017\"},\"name\":\"Demo Device 16\"}",
       "key" : "assignedDevice",
-      "lastUpdateTs" : 1744303919856,
+      "lastUpdateTs" : 1744633631704,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -36,7 +36,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017\"}}",
       "key" : "assignedLocation",
-      "lastUpdateTs" : 1744303919856,
+      "lastUpdateTs" : 1744305098433,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1744303919856,
+      "lastUpdateTs" : 1744633631704,
       "longValue" : null,
       "strValue" : "Demo Asset 16"
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1744303919856,
+      "lastUpdateTs" : 1744305098433,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -60,15 +60,15 @@
       "doubleValue" : null,
       "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_698e7510-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744305002449,
+      "lastUpdateTs" : 1744586996283,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"70593240-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"LEFT\",\"enterTs\":1744304987147,\"insideTs\":null,\"leftTs\":1744305092147},{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"706407b0-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"ENTERED\",\"enterTs\":1744305092147,\"insideTs\":null,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"70593240-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744617596034,\"insideTs\":null,\"leftTs\":null}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744305095316,
+      "lastUpdateTs" : 1744633196260,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -76,7 +76,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1744303919856,
+      "lastUpdateTs" : 1744305098433,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -84,7 +84,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1744303919856,
+      "lastUpdateTs" : 1744305098433,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -92,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1744303919856,
+      "lastUpdateTs" : 1744633631704,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -116,15 +116,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744305095315,
-      "longValue" : 1744305095147,
+      "lastUpdateTs" : 1744633196258,
+      "longValue" : 1744633196034,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1744303919856,
+      "lastUpdateTs" : 1744633631704,
       "longValue" : null,
       "strValue" : "Demo Asset 16"
     }, {
@@ -132,7 +132,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1744303919856,
+      "lastUpdateTs" : 1744633631704,
       "longValue" : null,
       "strValue" : "Demo Asset 16"
     }, {
