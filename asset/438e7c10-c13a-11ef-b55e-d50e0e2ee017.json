@@ -18,7 +18,7 @@
       "id" : "438e7c10-c13a-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "Tool 19",
+    "name" : "Hazardous monitoring equipment",
     "ownerId" : null,
     "type" : "Tool"
   },
@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "alertActivity",
-      "lastUpdateTs" : 1735126332162,
+      "lastUpdateTs" : 1744582851109,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -36,15 +36,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "alertTypes",
-      "lastUpdateTs" : 1744304110976,
+      "lastUpdateTs" : 1744632651190,
       "longValue" : null,
-      "strValue" : "[\"Moving\"]"
+      "strValue" : "[\"Idle\"]"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"87ba12b0-c139-11ef-b55e-d50e0e2ee017\"},\"name\":\"Demo Device 19\"}",
       "key" : "assignedDevice",
-      "lastUpdateTs" : 1744303904989,
+      "lastUpdateTs" : 1744304111953,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017\"}}",
       "key" : "assignedLocation",
-      "lastUpdateTs" : 1744303904989,
+      "lastUpdateTs" : 1744304111953,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,7 +60,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1744303904989,
+      "lastUpdateTs" : 1744304111953,
       "longValue" : null,
       "strValue" : "Demo Asset 19"
     }, {
@@ -68,23 +68,23 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1744303904989,
+      "lastUpdateTs" : 1744304111953,
       "longValue" : null,
       "strValue" : ""
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"703dbb00-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"LEFT\",\"enterTs\":1744304107665,\"insideTs\":null,\"leftTs\":1744304110665}]}",
+      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"703dbb00-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"LEFT\",\"enterTs\":1744633196039,\"insideTs\":null,\"leftTs\":1744633796039}]}",
       "key" : "geofenceState_698e7510-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744304111076,
+      "lastUpdateTs" : 1744633796306,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"6f1d56e0-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744304071665,\"insideTs\":null,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"6f1d56e0-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744624796039,\"insideTs\":null,\"leftTs\":null}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744304110990,
+      "lastUpdateTs" : 1744633796211,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -92,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1744303904989,
+      "lastUpdateTs" : 1744304111953,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -100,7 +100,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1744303904989,
+      "lastUpdateTs" : 1744304111953,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -132,15 +132,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744304110990,
-      "longValue" : 1744304110665,
+      "lastUpdateTs" : 1744633796208,
+      "longValue" : 1744633796039,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1744303904989,
+      "lastUpdateTs" : 1744304111953,
       "longValue" : null,
       "strValue" : "Demo Asset 19"
     }, {
