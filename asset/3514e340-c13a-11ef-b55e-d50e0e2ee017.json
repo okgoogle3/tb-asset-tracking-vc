@@ -18,7 +18,7 @@
       "id" : "3514e340-c13a-11ef-b55e-d50e0e2ee017"
     },
     "label" : null,
-    "name" : "Tool 17",
+    "name" : "Heat-sensitive Equipment 2",
     "ownerId" : null,
     "type" : "Tool"
   },
@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"7b6b4920-c139-11ef-b55e-d50e0e2ee017\"},\"name\":\"Demo Device 17\"}",
       "key" : "assignedDevice",
-      "lastUpdateTs" : 1744305186759,
+      "lastUpdateTs" : 1744627447921,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -36,7 +36,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017\"}}",
       "key" : "assignedLocation",
-      "lastUpdateTs" : 1744305186759,
+      "lastUpdateTs" : 1744627447921,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1744305186759,
+      "lastUpdateTs" : 1744633675851,
       "longValue" : null,
       "strValue" : "Demo Asset 17"
     }, {
@@ -52,23 +52,23 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1744305186759,
+      "lastUpdateTs" : 1744627447921,
       "longValue" : null,
       "strValue" : ""
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"718cc5a0-c120-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"LEFT\",\"enterTs\":1744626596034,\"insideTs\":null,\"leftTs\":1744627196034}]}",
+      "jsonValue" : "{\"geofenceStates\":[]}",
       "key" : "geofenceState_698e7510-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744627196402,
+      "lastUpdateTs" : 1744629596278,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"706407b0-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744621796034,\"insideTs\":null,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"704b4f90-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744628996034,\"insideTs\":null,\"leftTs\":null}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744627196306,
+      "lastUpdateTs" : 1744633196233,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -76,7 +76,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1744305186759,
+      "lastUpdateTs" : 1744627447921,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -84,7 +84,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1744305186759,
+      "lastUpdateTs" : 1744627447921,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -92,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1744627447921,
+      "lastUpdateTs" : 1744633675851,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -116,15 +116,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744627196302,
-      "longValue" : 1744627196034,
+      "lastUpdateTs" : 1744633196232,
+      "longValue" : 1744633196034,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1744627447921,
+      "lastUpdateTs" : 1744633675851,
       "longValue" : null,
       "strValue" : "Demo Asset 17"
     }, {
@@ -132,7 +132,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1744627447921,
+      "lastUpdateTs" : 1744633675851,
       "longValue" : null,
       "strValue" : "Demo Asset 17"
     }, {
