@@ -16,11 +16,19 @@
       "id" : "141fded0-1926-11f0-9ede-7f3b1ed43f2e"
     },
     "label" : null,
-    "name" : "Heat Treatment Alert Config",
+    "name" : "Heat Treatment Worker Alert Config",
     "ownerId" : null,
     "type" : "Alarm config"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"description\":null,\"isActive\":true,\"phone\":false,\"email\":false,\"application\":false,\"locationThresholds\":[{\"eventType\":\"Geofence In\",\"locations\":{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017\"}},\"zones\":{\"name\":\"Heat Treatment Facilities Production\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f1d56e0-bdec-11ef-b55e-d50e0e2ee017\"}},\"geofences\":[{\"name\":\"Hazardous materials area\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"703dbb00-bdec-11ef-b55e-d50e0e2ee017\"}}],\"duration\":60,\"index\":\"b2bed015-562d-1c1c-3729-38e3019ff71d\"}]}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1744631225755,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
