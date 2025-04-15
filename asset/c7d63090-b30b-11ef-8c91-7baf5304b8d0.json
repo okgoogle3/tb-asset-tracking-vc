@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"6693f740-b30b-11ef-8c91-7baf5304b8d0\"},\"name\":\"Demo Device 7\"}",
       "key" : "assignedDevice",
-      "lastUpdateTs" : 1744700041410,
+      "lastUpdateTs" : 1744700063393,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"23cd6230-b238-11ef-8c91-7baf5304b8d0\"}}",
       "key" : "assignedLocation",
-      "lastUpdateTs" : 1744700041410,
+      "lastUpdateTs" : 1744700063393,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1744700041410,
+      "lastUpdateTs" : 1744700063393,
       "longValue" : null,
       "strValue" : "Demo Asset 7"
     }, {
@@ -76,7 +76,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1744700041410,
+      "lastUpdateTs" : 1744700063393,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -108,7 +108,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"6f1d56e0-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1744298828905,\"insideTs\":null,\"leftTs\":null}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744700060756,
+      "lastUpdateTs" : 1744700105786,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -116,7 +116,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1744700041410,
+      "lastUpdateTs" : 1744700063393,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -124,7 +124,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1744700041410,
+      "lastUpdateTs" : 1744700063393,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -132,7 +132,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1744700063393,
+      "lastUpdateTs" : 1744700107466,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -156,8 +156,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744700060755,
-      "longValue" : 1744700060624,
+      "lastUpdateTs" : 1744700105785,
+      "longValue" : 1744700105624,
       "strValue" : null
     }, {
       "booleanValue" : null,
