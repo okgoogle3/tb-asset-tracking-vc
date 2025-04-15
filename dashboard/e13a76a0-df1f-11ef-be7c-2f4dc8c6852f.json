@@ -126,7 +126,7 @@
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
                   "useCellContentFunctionOnExport" : true,
-                  "cellContentFunction" : "let textColor, backgroundColor;\n\nconsole.log(value)\n\nif (value === \"Admin\") {\n    textColor = \"#7839EE\";\n    backgroundColor = \"#ECE9FE\";\n} else {\n    textColor = \"#0E9384\";\n    backgroundColor = \"#CCFBEF\";\n}\n\nreturn `\n    <span style=\"padding: 4px 8px; border-radius: 4px; color:${textColor}; background-color: ${backgroundColor}; text-transform: uppercase; font-size: 12px; font-weight: 600; line-height: 16px\">${value}</span>\n`",
+                  "cellContentFunction" : "let textColor, backgroundColor;\n\nif (value === \"Admin\") {\n    textColor = \"#7839EE\";\n    backgroundColor = \"#ECE9FE\";\n} else {\n    textColor = \"#0E9384\";\n    backgroundColor = \"#CCFBEF\";\n}\n\nreturn `\n    <span style=\"padding: 4px 8px; border-radius: 4px; color:${textColor}; background-color: ${backgroundColor}; text-transform: uppercase; font-size: 12px; font-weight: 600; line-height: 16px\">${value}</span>\n`",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible",
