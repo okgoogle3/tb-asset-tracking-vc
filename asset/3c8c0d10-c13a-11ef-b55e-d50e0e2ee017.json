@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"81a5fb50-c139-11ef-b55e-d50e0e2ee017\"},\"name\":\"Demo Device 18\"}",
       "key" : "assignedDevice",
-      "lastUpdateTs" : 1744303894482,
+      "lastUpdateTs" : 1744718045472,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -36,7 +36,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1744303894482,
+      "lastUpdateTs" : 1744718045472,
       "longValue" : null,
       "strValue" : "Demo Asset 18"
     }, {
@@ -44,15 +44,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1744303894482,
+      "lastUpdateTs" : 1744718045472,
       "longValue" : null,
       "strValue" : ""
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"704b4f90-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"INSIDE\",\"enterTs\":1734966425990,\"insideTs\":null,\"leftTs\":null}]}",
+      "jsonValue" : "{\"geofenceStates\":[{\"geofenceId\":{\"entityType\":\"ASSET\",\"id\":\"704b4f90-bdec-11ef-b55e-d50e0e2ee017\"},\"geofenceStateStatus\":\"LEFT\",\"enterTs\":1734966425990,\"insideTs\":null,\"leftTs\":1744718045626}]}",
       "key" : "geofenceState_7600cc30-bdec-11ef-b55e-d50e0e2ee017",
-      "lastUpdateTs" : 1744718042825,
+      "lastUpdateTs" : 1744718054928,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,15 +60,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1744303894482,
+      "lastUpdateTs" : 1744718045472,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1744303894482,
+      "lastUpdateTs" : 1744718045472,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -100,15 +100,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744718042824,
-      "longValue" : 1744718042626,
+      "lastUpdateTs" : 1744718054928,
+      "longValue" : 1744718054626,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1744303894482,
+      "lastUpdateTs" : 1744718045472,
       "longValue" : null,
       "strValue" : "Demo Asset 18"
     }, {
