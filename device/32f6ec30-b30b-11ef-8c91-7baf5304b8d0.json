@@ -1,0 +1,379 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "464cd5f0-b2da-11ef-8c91-7baf5304b8d0"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "32f6ec30-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "32f6ec30-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Demo Device 3",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Tag"
+  },
+  "credentials" : {
+    "credentialsId" : "yve3LgiQnNPh5nFsR66W",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "a61cc450-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "32f6ec30-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "DeviceToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 82345
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "3e367d30-1928-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "32f6ec30-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 27731469
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1735131967690,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm",
+      "lastUpdateTs" : 1734518537431,
+      "longValue" : null,
+      "strValue" : "{\"id\":{\"entityType\":\"ALARM\",\"id\":\"1f7b76c6-dd66-4f18-abcf-eef30b991a9d\"},\"createdTime\":1734518537369,\"tenantId\":{\"entityType\":\"TENANT\",\"id\":\"964a19f0-a5bf-11ef-aeb9-2d6dbc59e038\"},\"type\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"originator\":{\"entityType\":\"DEVICE\",\"id\":\"32f6ec30-b30b-11ef-8c91-7baf5304b8d0\"},\"severity\":\"CRITICAL\",\"acknowledged\":false,\"cleared\":false,\"startTs\":1734518537144,\"endTs\":1734518537144,\"ackTs\":0,\"clearTs\":0,\"assignTs\":0,\"propagate\":false,\"propagateToOwner\":false,\"propagateToOwnerHierarchy\":false,\"propagateToTenant\":false,\"propagateRelationTypes\":[],\"originatorName\":\"Demo Device 3\",\"originatorLabel\":\"Demo Device 3\",\"name\":\"HEAT TREATMENT FACILITIES PRODUCTION\",\"status\":\"ACTIVE_UNACK\",\"details\":{\"status\":\"inside\",\"area\":\"zone\"}}"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alertActivity",
+      "lastUpdateTs" : 1734518537431,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alertTypes",
+      "lastUpdateTs" : 1734518537431,
+      "longValue" : null,
+      "strValue" : "[\"Zone in\"]"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"704b4f90-bdec-11ef-b55e-d50e0e2ee017\":{\"name\":\"Mechanical Assembly Production\",\"status\":\"outside\"}}",
+      "key" : "areaAlarmRules",
+      "lastUpdateTs" : 1744632131452,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"zone\":{\"inside\":[\"HEAT TREATMENT FACILITIES PRODUCTION\"],\"outside\":[\"zone out Mechanical Assembly Production\"]},\"geofence\":{\"inside\":[],\"outside\":[]}}",
+      "key" : "areaAlarms",
+      "lastUpdateTs" : 1744632401395,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAlarmProfile",
+      "lastUpdateTs" : 1744632108238,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAsset",
+      "lastUpdateTs" : 1744304032138,
+      "longValue" : null,
+      "strValue" : "{\"name\":\"Worker 3\",\"id\":{\"id\":\"a61cc450-b30b-11ef-8c91-7baf5304b8d0\",\"entityType\":\"ASSET\"}}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "configPreset",
+      "lastUpdateTs" : 1733404629630,
+      "longValue" : null,
+      "strValue" : "Default config"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectivity",
+      "lastUpdateTs" : 1733404629630,
+      "longValue" : null,
+      "strValue" : "RFID (MQTT)"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733404629630,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdBatteryLevel",
+      "lastUpdateTs" : 1734520362819,
+      "longValue" : 50,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1734520564453,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdTemperature",
+      "lastUpdateTs" : 1734520349249,
+      "longValue" : 55,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1734520564453,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{}",
+      "key" : "geofenceThresolds",
+      "lastUpdateTs" : 1733819133227,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "hasRelatedAsset",
+      "lastUpdateTs" : 1733404808502,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "idleEnabled",
+      "lastUpdateTs" : 1734520564453,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "idleTimeSec",
+      "lastUpdateTs" : 1734520378608,
+      "longValue" : 12,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1735127542904,
+      "longValue" : 1735127542902,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"id\":\"32f6ec30-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 3\"}",
+      "key" : "info",
+      "lastUpdateTs" : 1733913763978,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isAssigned",
+      "lastUpdateTs" : 1733913763978,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1744878190670,
+      "longValue" : 1744878188624,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1744637052706,
+      "longValue" : 1744637052706,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1744637050600,
+      "longValue" : 1744637050600,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdBatteryLevel",
+      "lastUpdateTs" : 1734520362819,
+      "longValue" : 40,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1734520564453,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdTemperature",
+      "lastUpdateTs" : 1734520349249,
+      "longValue" : 40,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1734520564453,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "modelNumber",
+      "lastUpdateTs" : 1733404629630,
+      "longValue" : null,
+      "strValue" : "Demo Device 3"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "movementEnabled",
+      "lastUpdateTs" : 1734520564453,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "movementTimeSec",
+      "lastUpdateTs" : 1734520383658,
+      "longValue" : 12,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "serialNumber",
+      "lastUpdateTs" : 1733404629630,
+      "longValue" : null,
+      "strValue" : "Demo Device 3"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdBatteryLevel",
+      "lastUpdateTs" : 1734520362819,
+      "longValue" : 90,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1734520564453,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdTemperature",
+      "lastUpdateTs" : 1734520349249,
+      "longValue" : 90,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1734520564453,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"704b4f90-bdec-11ef-b55e-d50e0e2ee017\":{\"minOutsideDuration\":180}}",
+      "key" : "zoneThresolds",
+      "lastUpdateTs" : 1744632131452,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

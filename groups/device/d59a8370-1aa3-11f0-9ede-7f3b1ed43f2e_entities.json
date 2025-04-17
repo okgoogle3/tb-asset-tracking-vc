@@ -1,0 +1,64 @@
+[ {
+  "entityType" : "DEVICE",
+  "id" : "25003f00-b30b-11ef-8c91-7baf5304b8d0"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "30c8fe30-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "32f6ec30-b30b-11ef-8c91-7baf5304b8d0"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "3582679c-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "3b0fe9d0-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "3f801530-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "44520fa0-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "4a409da0-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "53accb20-b30b-11ef-8c91-7baf5304b8d0"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "53dcf160-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "592788b0-b30b-11ef-8c91-7baf5304b8d0"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "5ea52c70-b30b-11ef-8c91-7baf5304b8d0"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "6693f740-b30b-11ef-8c91-7baf5304b8d0"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "6eb51cb0-b30b-11ef-8c91-7baf5304b8d0"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "75fb7280-b30b-11ef-8c91-7baf5304b8d0"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "7b6b4920-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "81a5fb50-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "87ba12b0-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "8ca58890-c139-11ef-b55e-d50e0e2ee017"
+}, {
+  "entityType" : "DEVICE",
+  "id" : "91b9bc20-c139-11ef-b55e-d50e0e2ee017"
+} ]

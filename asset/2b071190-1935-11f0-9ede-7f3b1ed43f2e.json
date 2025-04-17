@@ -1,0 +1,62 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "2b071190-1935-11f0-9ede-7f3b1ed43f2e"
+    },
+    "label" : null,
+    "name" : "Steel crane Alert Config",
+    "ownerId" : null,
+    "type" : "Alarm config"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "2b071190-1935-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "91b9bc20-c139-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 27734449
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "2b071190-1935-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "96a1fdf0-a5bf-11ef-aeb9-2d6dbc59e038"
+    },
+    "type" : "AlarmConfigToInformingUser",
+    "typeGroup" : "COMMON",
+    "version" : 27734450
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"description\":null,\"isActive\":true,\"phone\":false,\"email\":false,\"application\":false,\"deviceThresholds\":[{\"type\":\"Temperature\",\"status\":false,\"upperThreshold\":null,\"lowerThreshold\":null,\"equalThreshold\":null},{\"type\":\"Battery level\",\"status\":false,\"upperThreshold\":null,\"lowerThreshold\":null,\"equalThreshold\":null},{\"type\":\"Movement\",\"status\":false,\"durationThreshold\":null},{\"type\":\"Idle\",\"status\":true,\"durationThreshold\":600}]}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1744637674361,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

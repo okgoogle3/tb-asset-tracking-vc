@@ -1,0 +1,1513 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "Alert rules dashboard",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "8d764269-bea8-4a56-4955-51902dc5455d" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1728905890633,
+                  "endTimeMs" : 1728992290633
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "entitiesTitle" : "Alert profiles",
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : false,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "showCellActionsMenu" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
+              "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "-createdTime",
+              "useRowStyleFunction" : false,
+              "rowStyleFunction" : ""
+            },
+            "title" : "Alert profiles",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : null,
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "58e13e7d-6f23-49a4-1b87-615cbd5feb1b",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "type" : "entityField",
+                "label" : "Created time",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.5275432390005235
+              }, {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6249327454721019
+              }, {
+                "name" : "alarmConfig",
+                "type" : "attribute",
+                "label" : "Status",
+                "color" : "#4caf50",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "if(value == true || value=='true'){\n    return `<div style=\"border-radius: 4px;\n    height: fit-content;\n    font-size: 12px;\n    font-weight: 600;\n    padding: 4px 8px;\n    width: fit-content;\n    background-color: #E0F2FE;\n    color: #026AA2;\">\n        ACTIVE</div>`;  \n} else {\n    return `<div style=\"border-radius: 4px;\n    height: fit-content;\n    font-size: 12px;\n    font-weight: 600;\n    padding: 4px 8px;\n    width: fit-content;\n    background-color: #EAECF0;\n    color: #475467;\">\n        INACTIVE</div>`;  \n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.4894796110496351,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value){\n    if(JSON.parse(value)){\n        if(JSON.parse(value).isActive){\n            return JSON.parse(value).isActive;\n        }\n    }\n}\nreturn value;"
+              }, {
+                "name" : "alarmConfig",
+                "type" : "attribute",
+                "label" : "Description",
+                "color" : "#f44336",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "return {\n    \"width\": \"100px\",\n    \"overflow\": \"hidden\",\n    \"white-space\": \"nowrap\",\n    \"text-overflow\": \"ellipsis\"\n}",
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : false,
+                  "cellContentFunction" : "let valueLength = value.length;\n\nfunction getFirst50Characters(inputString) {\n    return inputString.substring(0, 50);\n}\n\nif(value && valueLength>50){\n    \n    return `<span title=\"${value}\">\n                ${getFirst50Characters(value)}...\n            </span>`;\n}\nreturn value;",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.3313585960492851,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value) {\n    let obj = JSON.parse(value);\n    return obj && obj['description'] ? obj['description'] : '';\n}\nreturn value;"
+              }, {
+                "name" : "alarmConfig",
+                "type" : "attribute",
+                "label" : "alarmConfig",
+                "color" : "#607d8b",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "",
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.3411172351536005,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "advanced",
+            "actions" : {
+              "actionCellButton" : [ {
+                "name" : "Edit",
+                "icon" : "mdi:pencil-outline",
+                "useShowWidgetActionFunction" : true,
+                "showWidgetActionFunction" : "return localStorage.getItem(\"role\") === \"Admin\";",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"form-wrapper\">\n    <div class=\"form-header-panel\" style=\"width: 100%\">\n        <div class=\"title\">Edit alert profile</div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <mat-stepper linear labelPosition=\"bottom\" #stepper>\n        <mat-step [stepControl]=\"alarmInfoFormGroup\">\n            <form [formGroup]=\"alarmInfoFormGroup\">\n                <ng-template matStepLabel>Info</ng-template>\n                <div class=\"row\" style=\"justify-content:space-between;padding:10px;\">\n                    <span class=\"sub-title\">Info</span>\n                    <div>\n                        <span>Profile status: <b>{{alarmInfoFormGroup.value.isActive ? \"Active\" : \"Inactive\"}}</b></span>\n                        <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"isActive\"></mat-slide-toggle>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Name</mat-label>\n                            <input type=\"string\" matInput formControlName=\"name\" placeholder=\"Enter name\" required>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Description</mat-label>\n                            <textarea matInput\n                                formControlName=\"description\"\n                                cdkTextareaAutosize\n                                #autosize=\"cdkTextareaAutosize\"\n                                cdkAutosizeMinRows=\"3\"\n                                cdkAutosizeMaxRows=\"5\"></textarea>\n                        </mat-form-field>\n                    </div>\n                </div>\n                \n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned devices</mat-label>\n                            <mat-chip-grid #chipGrid\n                                           aria-label=\"Device selection\">\n                                <mat-chip-row\n                                        *ngFor=\"let device of selectedDevices\"\n                                        (removed)=\"removeDevice(device)\"\n                                >\n                                    {{device.name}}\n                                    <button matChipRemove\n                                            [attr.aria-label]=\"'remove ' + device\">\n                                        <mat-icon>cancel</mat-icon>\n                                    </button>\n                                </mat-chip-row>\n                            </mat-chip-grid>\n                            <input placeholder=\"New Device...\"\n                                   id=\"deviceInput\"\n                                   formControlName=\"devices\"\n                                   [matChipInputFor]=\"chipGrid\"\n                                   [matAutocomplete]=\"auto\"\n                                   [matChipInputSeparatorKeyCodes]=\"separatorKeysCodes\"/>\n                            <mat-autocomplete\n                                    #auto=\"matAutocomplete\"\n                                    (optionSelected)=\"deviceSelected($event)\">\n                                <mat-option\n                                        *ngFor=\"let device of filteredDevices$ | async\"\n                                        [value]=\"device.id\">\n                                    {{device.name}}\n                                </mat-option>\n                            </mat-autocomplete>\n                        </mat-form-field>\n                    </div>\n                </div>\n                \n                <div class=\"btn-container\">\n                    <button mat-flat-button matStepperNext color=\"primary\" [disabled]=\"alarmInfoFormGroup.invalid\">Next</button>\n                </div>\n            </form>\n        </mat-step>\n        <mat-step [stepControl]=\"alarmUsersFormGroup\">\n            <form [formGroup]=\"alarmUsersFormGroup\" class=\"pd5\">\n                <ng-template matStepLabel>Assigned users</ng-template>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned users</mat-label>\n                            <mat-select [compareWith]=\"compareFn\" formControlName=\"users\" multiple required>\n                                <mat-option *ngFor=\"let user  of users\" [value]=\"user\">{{user.email}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via phone</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"phone\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via email</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"email\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification in application</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"application\"></mat-slide-toggle>\n                </div>\n                <div class=\"buttons-container\" style=\"margin-top:40px;\">\n                    <button mat-button matStepperPrevious>Back</button>\n                    <button mat-flat-button matStepperNext color=\"primary\" (click)=\"save()\" [disabled]=\"alarmUsersFormGroup.invalid\">Save</button>\n                </div>\n            </form>\n        </mat-step>\n    </mat-stepper>\n</div>",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.first-step-buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.first-step-buttons-container button:not(:last-child) {\n    margin-right: 8px;\n}\n\n.buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n}\n\n.menu-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.row {\n    display: flex;\n    width: 100%;\n    gap: 20px;\n}\n\n.row .input-wrapper {\n    flex: 1;\n}\n\ninput, mat-form-field, tb-phone-input  {\n    width: 100%;\n}\n\n.tb-default .mat-stepper-horizontal, .tb-default .mat-stepper-vertical {\n    background-color: transparent;\n}\n\n.btn-container {\n    display: flex;\n    justify-content: flex-end;\n    margin-top: 48px;\n}\n\n.sub-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.toggle {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    padding: 10px;\n    align-items: center;\n    height: 60px;\n    border-bottom: 1px solid #D0D5DD;\n}\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));  \nlet attributeService = $injector.get(widgetContext.servicesMap.get(\"attributeService\"));\nlet assetService = $injector.get(widgetContext.servicesMap.get(\"assetService\"));\nlet deviceService = $injector.get(widgetContext.servicesMap.get(\"deviceService\"));\nlet userService = $injector.get(widgetContext.servicesMap.get(\"userService\"));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get(\"entityRelationService\"));\n\nopendeviceConfigDialog();\n\nfunction opendeviceConfigDialog() {\n    customDialog.customDialog(htmlTemplate, CreateDeviceConfigDialogController).subscribe();\n}\n\nfunction CreateDeviceConfigDialogController(instance) {\n    let vm = instance;\n    \n    let initialConfig;\n    \n    if(additionalParams.entity.alarmConfig && JSON.parse(additionalParams.entity.alarmConfig)){\n        initialConfig = JSON.parse(additionalParams.entity.alarmConfig);\n    }\n    \n    const pageLink = widgetContext.pageLink(1073741824);\n    \n    vm.allDevices = [];\n    vm.users = [];\n    \n    vm.separatorKeysCodes = [188, 13];\n    vm.selectedDevices = [];\n\n    let initialDevices;\n\n    const queryParams = {\n        entityFilter: {\n            type: \"entityType\",\n            entityType: \"DEVICE\",\n        },\n        entityFields: [\n            {\n                type: \"ENTITY_FIELD\",\n                key: \"name\"\n            }\n        ],\n        latestValues: [\n            {\n                type: \"ATTRIBUTE\",\n                key: \"assignedAlarmProfile\"\n            }\n        ],\n        pageLink\n    };\n    \n    const requests = [\n        deviceService.getTenantDevices(widgetContext.pageLink(10000,0)),\n        widgetContext.http.post(`/api/entitiesQuery/find`, queryParams),\n        entityRelationService.findByFromAndType(entityId, \"AlarmConfigToDevice\")\n    ];\n    \n    widgetContext.rxjs.forkJoin(requests).subscribe(data=>{\n        let allDevices = data[0];\n        let busyDevices = [];\n        let relatedDevices = data[2].length ? data[2].map(relation => {\n            const deviceTo = relation.to;\n            return {\n                id: deviceTo,\n                name: allDevices.data.find(searchDevice => searchDevice.id.id === deviceTo.id)?.name\n            };\n        }) : [];\n        \n        data[1].data.forEach(device => {\n            if(device.latest.ATTRIBUTE.assignedAlarmProfile.value == \"true\"){\n                busyDevices.push({\n                    id: device.entityId,\n                    name: device.latest.ENTITY_FIELD.name.value\n                });\n            }\n        });\n        \n        vm.selectedDevices = relatedDevices;\n        \n        initialDevices = relatedDevices;\n        \n        const devicesToDel = deleteObjectsById(busyDevices, relatedDevices);\n        \n        vm.allDevices = deleteObjectsById(allDevices.data, devicesToDel);\n        \n        vm.updateFilteredDevices(null);\n            \n        widgetContext.detectChanges();\n    });\n    \n    vm.updateFilteredDevices = function(filterValue) {\n        const selectedDeviceNames = vm.selectedDevices.map(device => device.name);\n\n        let filteredDevices;\n\n        if (filterValue && typeof filterValue === \"string\") {\n            filteredDevices = vm.allDevices.filter((device) =>\n                device.name.toLowerCase().includes(filterValue.toLowerCase()) && !selectedDeviceNames.includes(device.name)\n            );\n            \n        } else {\n            filteredDevices = vm.allDevices.filter(device => !selectedDeviceNames.includes(device.name));\n        }\n        vm.filteredDevices$ = widgetContext.rxjs.of(filteredDevices);\n    };\n    \n    vm.deviceSelected = function(event) {\n        const index = vm.allDevices.map(device => device.name).indexOf(event.option.viewValue);\n        if (index >= 0) {\n            vm.selectedDevices.push(vm.allDevices[index]);\n        }\n\n        let deviceInput = $(\"#deviceInput\");\n        if (deviceInput) {\n            deviceInput[0].value = \"\";\n        }\n        vm.alarmInfoFormGroup.get(\"devices\").setValue(null);\n    };\n    \n    vm.removeDevice = function (device) {\n        const index = vm.selectedDevices.indexOf(device);\n\n        if (index >= 0) {\n            vm.selectedDevices.splice(index, 1);\n        }\n        vm.alarmInfoFormGroup.get(\"devices\").setValue(null);\n\n        vm.alarmInfoFormGroup.markAsDirty();\n    };\n    \n    getRuleInfo();\n    \n    function getRuleInfo(){\n        attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE').subscribe((data)=>{\n            data.forEach(x=>{\n                if(x.key == \"alarmConfig\"){\n                    vm.alarmInfoFormGroup.patchValue({\n                        description: x.value.description,\n                        isActive: x.value.isActive\n                    });\n                    vm.alarmUsersFormGroup.patchValue({\n                        phone: x.value.phone,\n                        application: x.value.application,\n                        email: x.value.email\n                    });\n                }\n            });\n        });\n    }\n    \n    userService.getAllUserInfos(true, widgetContext.pageLink(10000,0)).subscribe(users => {\n        if(users && users.data && users.data.length){\n            users.data.forEach(x=>{\n                vm.users.push(x);\n            });\n        }\n        entityRelationService.findByFromAndType(entityId, \"AlarmConfigToInformingUser\").subscribe(res=>{\n            if(res && res.length){\n                vm.alarmUsersFormGroup.patchValue({\n                    users: res.map(x => ({id: x.to}))\n                });\n            }\n        });\n    });\n    \n    vm.compareFn = function(c1, c2) {\n        return c1 && c2 ? c1.id.id === c2.id.id : c1 === c2;\n    };\n    \n    vm.alarmInfoFormGroup = vm.fb.group({\n        name: [entityName, [vm.validators.maxLength(40)]],\n        description: [null],\n        isActive: false,\n        devices: [null]\n    });\n    \n    vm.alarmUsersFormGroup = vm.fb.group({\n        users: [null],\n        phone: false,\n        email: false,\n        application: false\n    });\n    vm.alarmInfoFormGroup.get(\"devices\").valueChanges.subscribe(value => {\n        vm.updateFilteredDevices(value);\n    });\n    \n    function deleteObjectsById(mainArray, idsToRemove) {\n        const idsToDelete = new Set(idsToRemove.map(item => item.id.id));\n    \n        return mainArray.filter(item => !idsToDelete.has(item.id.id));\n    }\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        let {name, description, isActive} = vm.alarmInfoFormGroup.value;\n        let {users, phone, email, application} = vm.alarmUsersFormGroup.value;\n\n        let payload = {\n            id: entityId,\n            name: name.trim(),\n            type: \"Alarm config\"\n        };\n        \n        initialConfig.description = description;\n        initialConfig.isActive = isActive;\n        initialConfig.phone = phone;\n        initialConfig.email = email;\n        initialConfig.application = application;\n        \n        entityRelationService.deleteRelations(entityId).pipe(\n            widgetContext.rxjs.switchMap(() => {\n                if(initialDevices && initialDevices.length) {\n                    let requests = [];\n                    \n                    initialDevices.forEach(device=>{\n                        requests.push(attributeService.saveEntityAttributes(device.id, 'SERVER_SCOPE', [{ key: \"assignedAlarmProfile\", value: false }]));\n                    });\n                    \n                    return widgetContext.rxjs.forkJoin(requests);\n                } else return widgetContext.rxjs.of([]);\n            })    \n        ).subscribe(()=>{\n            assetService.saveAsset(payload).pipe(\n                widgetContext.rxjs.switchMap(alertProfile => \n                    attributeService.saveEntityAttributes(alertProfile.id, \"SERVER_SCOPE\", [{ key: \"alarmConfig\", value: initialConfig }]).pipe(\n                        widgetContext.rxjs.switchMap(() => {\n                            const deviceRelations = vm.selectedDevices.map(device => \n                                entityRelationService.saveRelation({\n                                    from: alertProfile.id,\n                                    to: device.id,\n                                    type: 'AlarmConfigToDevice',\n                                    typeGroup: 'COMMON'\n                                }).pipe(\n                                    widgetContext.rxjs.switchMap(() => \n                                        attributeService.saveEntityAttributes(device.id, 'SERVER_SCOPE', [{ key: \"assignedAlarmProfile\", value: true }])\n                                    )\n                                )\n                            );\n                \n                            const userRelations = users.map(user =>\n                                entityRelationService.saveRelation({\n                                    from: alertProfile.id,\n                                    to: user.id,\n                                    type: 'AlarmConfigToInformingUser',\n                                    typeGroup: 'COMMON'\n                                })\n                            );\n                \n                            return widgetContext.rxjs.forkJoin([...deviceRelations, ...userRelations]);\n                        })\n                    )\n                )\n            ).subscribe(()=>{\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n                widgetContext.showSuccessToast(`Alert rule was updated successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n            });\n        });\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "464eaa7f-0292-d613-8b50-6d3e1a695b36"
+              }, {
+                "name" : "Delete",
+                "icon" : "delete_outline",
+                "useShowWidgetActionFunction" : true,
+                "showWidgetActionFunction" : "return localStorage.getItem(\"role\") === \"Admin\";",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenDeleteUserDialog();\n\nfunction openDeleteUserDialog() {\n    let title = `Delete alert rule`;\n    let content = `Are you sure you want to delete the alert rule?`;\n    dialogs.confirm(title, content, 'Cancel', 'Delete')\n        .pipe(\n            widgetContext.rxjs.switchMap((data) => {\n                if (data) {\n                    deleteAlarmConfig(); \n                } else {\n                    return widgetContext.rxjs.of(null);\n                }\n            })\n        )\n        .subscribe();\n}\n\nfunction deleteAlarmConfig() {\n    entityRelationService.findByFromAndType(entityId, \"AlarmConfigToDevice\")\n        .pipe(\n            widgetContext.rxjs.switchMap((devices) => {\n                let requests = [assetService.deleteAsset(entityId.id)];\n                if(devices && devices.length){\n                    devices.forEach(x=>{\n                        requests.push(attributeService.saveEntityAttributes(x.to, 'SERVER_SCOPE', [{key: \"assignedAlarmProfile\", value: false}]));\n                    })\n                }\n                return widgetContext.rxjs.forkJoin(requests);    \n            })\n        ).subscribe(()=>{\n            widgetContext.showSuccessToast(`${entityName} was deleted successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n            widgetContext.updateAliases();\n        });\n}",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "ad859c75-6898-01b2-bdb8-686253628d12"
+              } ],
+              "rowClick" : [ {
+                "name" : "Profile details",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\n\nlet newParams = {\n    stateId: 'alertsRuleDetails',\n    prevState: 'alertsRules',\n    subState: 'device',\n    mode: params['mode'],\n    enabled: params['enabled'],\n    statesArray: [\n        {\n            stateId: 'alertsRules', \n            name: \"Alerts Rules\"\n        },\n        {\n            stateId: 'alertsRuleDetails', \n            name: entityLabel||entityName\n        }\n    ],\n    selectedEntity: {\n        entityName,\n        entityId,\n        entityLabel\n    }\n}\n\nhistory.pushState({}, '');\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', newParams)",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "684aa427-bcf4-43d2-6bb3-bba6f2367793"
+              } ],
+              "headerButton" : [ {
+                "name" : "New alert profile",
+                "buttonType" : "raised",
+                "showIcon" : true,
+                "icon" : "add",
+                "buttonColor" : "#FCFCFD",
+                "buttonFillColor" : "var(--tb-primary-500)",
+                "useShowWidgetActionFunction" : true,
+                "showWidgetActionFunction" : "return localStorage.getItem(\"role\") === \"Admin\";",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"form-wrapper\">\n    <div class=\"form-header-panel\" style=\"width: 100%\">\n        <div class=\"title\">New alert profile</div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <mat-stepper linear labelPosition=\"bottom\" #stepper>\n        <mat-step [stepControl]=\"alarmInfoFormGroup\">\n            <form [formGroup]=\"alarmInfoFormGroup\">\n                <ng-template matStepLabel>Info</ng-template>\n                <div class=\"row\" style=\"justify-content:space-between;padding:10px;\">\n                    <span class=\"sub-title\">Info</span>\n                    <div>\n                        <span>Profile status: <b>{{alarmInfoFormGroup.value.isActive ? \"Active\" : \"Inactive\"}}</b></span>\n                        <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"isActive\"></mat-slide-toggle>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Name</mat-label>\n                            <input type=\"string\" matInput formControlName=\"name\" placeholder=\"Enter name\">\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Description</mat-label>\n                            <textarea matInput\n                                formControlName=\"description\"\n                                cdkTextareaAutosize\n                                #autosize=\"cdkTextareaAutosize\"\n                                cdkAutosizeMinRows=\"3\"\n                                cdkAutosizeMaxRows=\"5\"></textarea>\n                        </mat-form-field>\n                    </div>\n                </div>\n\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned devices</mat-label>\n                            <mat-chip-grid #chipGrid\n                                           aria-label=\"Device selection\">\n                                <mat-chip-row\n                                        *ngFor=\"let device of selectedDevices\"\n                                        (removed)=\"removeDevice(device)\"\n                                >\n                                    {{device.name}}\n                                    <button matChipRemove\n                                            [attr.aria-label]=\"'remove ' + device\">\n                                        <mat-icon>cancel</mat-icon>\n                                    </button>\n                                </mat-chip-row>\n                            </mat-chip-grid>\n                            <input placeholder=\"New Device...\"\n                                   id=\"deviceInput\"\n                                   formControlName=\"devices\"\n                                   [matChipInputFor]=\"chipGrid\"\n                                   [matAutocomplete]=\"auto\"\n                                   [matChipInputSeparatorKeyCodes]=\"separatorKeysCodes\"/>\n                            <mat-autocomplete\n                                    #auto=\"matAutocomplete\"\n                                    (optionSelected)=\"deviceSelected($event)\">\n                                <mat-option\n                                        *ngFor=\"let device of filteredDevices$ | async\"\n                                        [value]=\"device.id\">\n                                    {{device.name}}\n                                </mat-option>\n                            </mat-autocomplete>\n                        </mat-form-field>\n                    </div>\n                </div>\n                \n                <div class=\"btn-container\">\n                    <button mat-flat-button matStepperNext color=\"primary\" [disabled]=\"alarmInfoFormGroup.invalid\">Next</button>\n                </div>\n            </form>\n        </mat-step>\n        <mat-step [stepControl]=\"alarmUsersFormGroup\">\n            <form [formGroup]=\"alarmUsersFormGroup\" class=\"pd5\">\n                <ng-template matStepLabel>Assigned users</ng-template>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned users</mat-label>\n                            <mat-select formControlName=\"users\" multiple required>\n                                <mat-option *ngFor=\"let user  of users\" [value]=\"user\">{{user.email}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via phone</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"phone\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via email</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"email\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification in application</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"application\"></mat-slide-toggle>\n                </div>\n                <div class=\"buttons-container\" style=\"margin-top:40px;\">\n                    <button mat-button matStepperPrevious>Back</button>\n                    <button mat-flat-button matStepperNext color=\"primary\" (click)=\"save()\" [disabled]=\"alarmUsersFormGroup.invalid\">Save</button>\n                </div>\n            </form>\n        </mat-step>\n    </mat-stepper>\n</div>",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.pd5 {\n    padding: 5px;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.first-step-buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.first-step-buttons-container button:not(:last-child) {\n    margin-right: 8px;\n}\n\n.buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n}\n\n.menu-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.row {\n    display: flex;\n    width: 100%;\n    gap: 20px;\n}\n\n.row .input-wrapper {\n    flex: 1;\n}\n\ninput, mat-form-field, tb-phone-input  {\n    width: 100%;\n}\n\n.tb-default .mat-stepper-horizontal, .tb-default .mat-stepper-vertical {\n    background-color: transparent;\n}\n\n.btn-container {\n    display: flex;\n    justify-content: flex-end;\n    margin-top: 48px;\n}\n\n.sub-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.toggle {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    padding: 10px;\n    align-items: center;\n    height: 60px;\n    border-bottom: 1px solid #D0D5DD;\n}\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));  \nlet attributeService = $injector.get(widgetContext.servicesMap.get(\"attributeService\"));\nlet assetService = $injector.get(widgetContext.servicesMap.get(\"assetService\"));\nlet userService = $injector.get(widgetContext.servicesMap.get(\"userService\"));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get(\"entityRelationService\"));\n\nopendeviceConfigDialog();\n\nfunction opendeviceConfigDialog() {\n    customDialog.customDialog(htmlTemplate, CreateDeviceConfigDialogController).subscribe();\n}\n\nfunction CreateDeviceConfigDialogController(instance) {\n    let vm = instance;\n    const pageLink = widgetContext.pageLink(1073741824);\n    \n    vm.allDevices = [];\n    vm.users = [];\n    \n    vm.separatorKeysCodes = [188, 13];\n    vm.selectedDevices = [];\n\n    const queryParams = {\n        entityFilter: {\n            type: \"entityType\",\n            entityType: \"DEVICE\",\n        },\n        entityFields: [\n            {\n                type: \"ENTITY_FIELD\",\n                key: \"name\"\n            }\n        ],\n        latestValues: [\n            {\n                type: \"ATTRIBUTE\",\n                key: \"assignedAlarmProfile\"\n            }\n        ],\n        pageLink\n    };\n    \n    widgetContext.http.post(`/api/entitiesQuery/find`, queryParams)\n        .subscribe(response => {\n            response.data.forEach(device => {\n                if(device.latest.ATTRIBUTE.assignedAlarmProfile.value == \"\" || device.latest.ATTRIBUTE.assignedAlarmProfile.value == \"false\"){\n                    vm.allDevices.push({\n                        id: device.entityId,\n                        name: device.latest.ENTITY_FIELD.name.value\n                    });\n                }\n            });\n            vm.updateFilteredDevices(null);\n            \n            widgetContext.detectChanges();\n        });\n    \n    userService.getAllUserInfos(true, pageLink).subscribe(users => {\n        if(users && users.data && users.data.length){\n            users.data.forEach(x=>{\n                vm.users.push(x);\n            });\n        }\n    });\n    \n    vm.alarmInfoFormGroup = vm.fb.group({\n        name: [null, [vm.validators.required, vm.validators.maxLength(40)]],\n        description: [null],\n        isActive: false,\n        devices: [null]\n    });\n    \n    vm.alarmUsersFormGroup = vm.fb.group({\n        users: [null],\n        phone: false,\n        email: false,\n        application: false\n    });\n    \n    vm.alarmInfoFormGroup.get(\"devices\").valueChanges.subscribe(value => {\n        vm.updateFilteredDevices(value);\n    });\n    \n    vm.updateFilteredDevices = function(filterValue) {\n        const selectedDeviceNames = vm.selectedDevices.map(device => device.name);\n\n        let filteredDevices;\n\n        if (filterValue && typeof filterValue === \"string\") {\n            filteredDevices = vm.allDevices.filter((device) =>\n                device.name.toLowerCase().includes(filterValue.toLowerCase()) && !selectedDeviceNames.includes(device.name)\n            );\n            \n        } else {\n            filteredDevices = vm.allDevices.filter(device => !selectedDeviceNames.includes(device.name));\n        }\n        vm.filteredDevices$ = widgetContext.rxjs.of(filteredDevices);\n    };\n    \n    vm.deviceSelected = function(event) {\n        const index = vm.allDevices.map(device => device.name).indexOf(event.option.viewValue);\n        if (index >= 0) {\n            vm.selectedDevices.push(vm.allDevices[index]);\n        }\n\n        let deviceInput = $(\"#deviceInput\");\n        if (deviceInput) {\n            deviceInput[0].value = \"\";\n        }\n        vm.alarmInfoFormGroup.get(\"devices\").setValue(null);\n    };\n    \n    vm.removeDevice = function (device) {\n        const index = vm.selectedDevices.indexOf(device);\n\n        if (index >= 0) {\n            vm.selectedDevices.splice(index, 1);\n        }\n        vm.alarmInfoFormGroup.get(\"devices\").setValue(null);\n\n        vm.alarmInfoFormGroup.markAsDirty();\n    };\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        let {name, description, isActive} = vm.alarmInfoFormGroup.value;\n        let {users, phone, email, application} = vm.alarmUsersFormGroup.value;\n\n        let payload = {\n            name: name.trim(),\n            type: \"Alarm config\"\n        };\n        \n        let config = {\n            description: description,\n            isActive: isActive,\n            phone: phone,\n            email: email,\n            application: application\n        };\n        \n        assetService.saveAsset(payload).subscribe(response => {\n            attributeService.saveEntityAttributes(response.id, \"SERVER_SCOPE\", [{key: \"alarmConfig\", value: config}]).subscribe(()=>{\n                vm.selectedDevices.forEach(device=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: device.id,\n                        type: 'AlarmConfigToDevice',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                });\n                users.forEach(device=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: device.id,\n                        type: 'AlarmConfigToInformingUser',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                });\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n                widgetContext.showSuccessToast(`Alert rule was created successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n            });\n        });\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "8273c297-997b-18ea-4a32-ca45d9185064"
+              } ]
+            },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : {
+              "size" : 24,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : "600",
+              "style" : null,
+              "lineHeight" : "32px"
+            },
+            "titleColor" : null,
+            "enableDataExport" : false,
+            "titleTooltip" : "",
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
+            "widgetCss" : ".tb-widget-header {\n    padding: 20px;\n}\n\nmat-cell:not(:last-child), mat-header-cell {\n    padding: 0 20px!important;\n}\n\n.tb-widget-title {\n    padding: 0!important;\n}\n\n\ndiv.tb-widget .tb-widget-actions {\n    gap: 8px!important;\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "12px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8d764269-bea8-4a56-4955-51902dc5455d"
+        },
+        "b7a9535c-d808-89ba-cd60-4a7e3ffc4dde" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1726577981180,
+                  "endTimeMs" : 1726664381180
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "<div tb-toast toastTarget=\"radonLayout_ecafe254-fec5-11ed-be56-0242ac120002\" class=\"layout\" style=\"width: 100%; height: 100%; padding: 0;\" fxLayout=\"column\">\n    <div *ngIf=\"ctx && ctx.stateController\" class=\"stateBlock\">\n        <tb-dashboard-state [ctx]=\"ctx\"\n            [ngClass]=\"(ctx.stateController.getStateParams().enabled && ctx.stateController.getStateParams().enabled==true) ? 'navigationLarge':'navigationLargeHide'\"\n            [syncParentStateParams]=\"true\" stateId=\"menu\">\n        </tb-dashboard-state>\n        <div [ngClass]=\"(ctx.stateController.getStateParams().enabled && ctx.stateController.getStateParams().enabled==true) ? 'bodyWithSupport toggleShow':'bodyWithSupport toggleHide'\">\n            <tb-dashboard-state class=\"mainState\" *ngIf=\"ctx.stateController.getStateParams().stateId=='home'\"\n                [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"home\">\n            </tb-dashboard-state>\n            <tb-dashboard-state class=\"mainState\" *ngIf=\"ctx.stateController.getStateParams().stateId=='buildings'\"\n                [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"buildings\">\n            </tb-dashboard-state>\n            <tb-dashboard-state class=\"mainState\" *ngIf=\"ctx.stateController.getStateParams().stateId=='users'\"\n                [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"users\">\n            </tb-dashboard-state>\n            <tb-dashboard-state class=\"mainState\" *ngIf=\"ctx.stateController.getStateParams().stateId=='reports'\"\n                [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"reports\">\n            </tb-dashboard-state>\n            <tb-dashboard-state class=\"mainState\" *ngIf=\"ctx.stateController.getStateParams().stateId=='floors'\"\n                [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"floors\">\n            </tb-dashboard-state>\n            <tb-dashboard-state class=\"mainState\" *ngIf=\"ctx.stateController.getStateParams().stateId=='devices'\"\n                [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"devices\">\n            </tb-dashboard-state>\n        </div>\n    </div>        \n</div>",
+              "markdownTextFunction" : "let controller = ctx.stateController;\nlet params = controller.getStateParams();\nlet $injector = ctx.$scope.$injector;\nlet userService = $injector.get(ctx.servicesMap.get('userService')); \n\nif (!params.stateId) {\n    params.stateId = \"alertsRules\";\n    controller.updateState('default', params);\n}\n\nif (!localStorage.getItem(\"role\")) {\n    userService.getUserInfo(ctx.currentUser.userId).subscribe(response => {\n        localStorage.setItem(\"role\", response.groups.some((element) => element.name === \"Tenant Administrators\") ? \"Admin\" : \"Viewer\");\n    });\n}\n\nreturn `\n    <div tb-toast toastTarget=\"layout\" class=\"layout\" fxLayout=\"column\">\n        <div *ngIf=\"ctx && ctx.stateController\" class=\"stateBlock\">\n            <div [ngClass]=\"(ctx.stateController.getStateParams().enabled && ctx.stateController.getStateParams().enabled==true) ? 'bodyWithSupport toggleShow':'bodyWithSupport toggleHide'\">\n                <tb-dashboard-state class=\"mainState\" *ngIf=\"ctx.stateController.getStateParams().stateId=='alertsRules'\"\n                    [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"alertsRules\">\n                </tb-dashboard-state>\n                <tb-dashboard-state class=\"mainState\" *ngIf=\"ctx.stateController.getStateParams().stateId=='alertsRuleDetails'\"\n                    [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"alertsRuleDetails\">\n                </tb-dashboard-state>\n            </div>\n        </div>        \n    </div>\n`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".layout{\n    width: 100%; \n    height: 100%; \n    padding: 0;\n}\n\n.layout .navigationLarge{\n    flex-basis: 15%;\n    min-width: 150px;\n    /*transition: flex-basis .6s ease-in-out;*/\n}\n\n.layout .navigationLarge.hide{\n    flex-basis: 0;\n    min-width: 0;\n}\n\n.layout .navigationSmall{\n    display: none;\n}\n\n.layout .stateBlock{\n    display: flex;\n    flex-direction: row;\n    height:100%; \n    width: 100%;\n}\n\n.layout .bodyWithSupport{\n    display: flex;\n    flex-direction: row;\n    height:100%; \n    width: 100%;\n    /*transition: flex-basis .4s ease-in-out;*/\n}\n\n.layout .bodyWithSupport.toggleShow{\n    flex-basis: 100%;\n}\n\n.layout .bodyWithSupport.toggleHide{\n    flex-basis: 100%;\n}\n\n@media screen and (max-width: 1399px) {\n    .layout .navigationLarge{\n        flex-basis: 15%;\n    }\n    \n    .layout .support{\n        flex-basis: 19%;\n    }\n\n    .layout .toggled{\n        /*flex-basis: 85%;*/\n    }\n\n}\n\n@media screen and (max-width: 1100px) {\n    \n    .layout .navigationLarge{\n        display: none;   \n    }\n    \n    .layout .navigationSmall{\n        display: block;\n        width: 180px;\n        z-index: 10;\n        transition: width .4s ease-in-out;\n    }\n    \n    .layout .navigationSmall.hide{\n        width: 0;\n    }\n    \n    .layout .bodyWithSupport.toggleShow,\n    .layout .bodyWithSupport.toggleHide{\n        flex-basis: calc(100% - 180px);\n        left: 180px;\n    }\n}\n\n@media screen and (max-width: 600px) {\n    \n    /*.layout .navigation{*/\n    /*    flex-basis: 7%;*/\n    /*}*/\n    \n    /*.layout .stateBlock{*/\n    /*    flex-direction: column;*/\n    /*}*/\n}\n\n"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "actions" : {
+              "headerButton" : [ ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "b7a9535c-d808-89ba-cd60-4a7e3ffc4dde"
+        },
+        "945bb80a-477c-462b-9280-8b15c7068613" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "896ed68e-843a-654a-c187-ccfc03d06f0a",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6060072178593432
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1728983985678,
+                  "endTimeMs" : 1729070385678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "<div class=\"dashboard-header-container\">\n    <div class=\"title\">Overview</div>\n    <button id=\"addNewUser\" class=\"create-asset-button\" *ngIf=\"localStorage.getItem('role'\n    ) === 'Admin'\">+ New user</button>\n</div>",
+              "markdownTextFunction" : "const showButton = localStorage.getItem(\"role\") === \"Admin\";\n// \nreturn `\n<div class=\"dashboard-header-container\">\n    <div class=\"path\">\n          <span class=\"path-assets-label\" id=\"alertRules\" style=\"cursor: pointer\">Alerts profiles</span>\n          <span class=\"path-assets-label\">/</span>\n          <span class=\"path-entity-name\">${data[0].entityName}</span>\n    </div>\n    <div class=\"header\">\n        <div class=\"title\">${data[0].entityName}</div>\n    </div>    \n</div>`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n}\n\n.path {\n    margin-bottom: 20px;\n}\n\n.path span:not(:last-child) {\n    margin-right: 6px;\n}\n\n.path-assets-label {\n    color: #667085;\n    font-size: 14px;\n    line-height: 20px;\n}\n\n.path-entity-name  {\n    color: #0C111D;\n    font-size: 14px;\n    font-weight: 500;\n    line-height: 20px;\n}\n\n.dashboard-header-container {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    padding: 8px 0;\n    align-items: flex-start;\n    flex-direction: column;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 36px;\n    font-style: normal;\n    font-weight: 600;\n    line-height: 44px;\n}\n\n.create-asset-button {\n    display: flex;\n    padding: 8px 16px 8px 12px;\n    justify-content: center;\n    align-items: center;\n    background-color: var(--tb-primary-500);\n    color: #F5FBFF;\n    outline: none;\n    border-radius: 4px;\n    border: none;\n    cursor: pointer;\n    font-size: 16px;\n    font-weight: 600;\n    line-height: 24px;\n    letter-spacing: 0.16px;\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "background-color" : "transparent",
+              "padding" : "0!important"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "addNewProfile",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"form-wrapper\">\n    <div class=\"form-header-panel\" style=\"width: 100%\">\n        <div class=\"title\">New alert profile</div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <mat-stepper linear labelPosition=\"bottom\" #stepper>\n        <mat-step [stepControl]=\"alarmInfoFormGroup\">\n            <form [formGroup]=\"alarmInfoFormGroup\">\n                <ng-template matStepLabel>Info</ng-template>\n                <div class=\"row\" style=\"justify-content:space-between;padding:10px;\">\n                    <span class=\"sub-title\">Info</span>\n                    <div>\n                        <span>Rule status: <b>Active</b></span>\n                        <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"isActive\"></mat-slide-toggle>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Name</mat-label>\n                            <input type=\"string\" matInput formControlName=\"name\" placeholder=\"Enter name\">\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Description</mat-label>\n                            <textarea matInput\n                                formControlName=\"description\"\n                                cdkTextareaAutosize\n                                #autosize=\"cdkTextareaAutosize\"\n                                cdkAutosizeMinRows=\"3\"\n                                cdkAutosizeMaxRows=\"5\"></textarea>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned devices</mat-label>\n                            <mat-select formControlName=\"devices\" multiple required>\n                                <mat-option *ngFor=\"let device of devices\" [value]=\"device\">{{device.name}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"btn-container\">\n                    <button mat-flat-button matStepperNext color=\"primary\" [disabled]=\"alarmInfoFormGroup.invalid\">Next</button>\n                </div>\n            </form>\n        </mat-step>\n        <mat-step [stepControl]=\"alarmUsersFormGroup\">\n            <form [formGroup]=\"alarmUsersFormGroup\">\n                <ng-template matStepLabel>Assigned users</ng-template>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned users</mat-label>\n                            <mat-select formControlName=\"users\" multiple required>\n                                <mat-option *ngFor=\"let user  of users\" [value]=\"user\">{{user.email}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via phone</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"phone\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via email</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"email\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification in application</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"application\"></mat-slide-toggle>\n                </div>\n                <div class=\"buttons-container\" style=\"margin-top:40px;\">\n                    <button mat-button matStepperPrevious>Back</button>\n                    <button mat-flat-button matStepperNext color=\"primary\" (click)=\"save()\" [disabled]=\"alarmUsersFormGroup.invalid\">Done</button>\n                </div>\n            </form>\n        </mat-step>\n    </mat-stepper>\n</div>",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.first-step-buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.first-step-buttons-container button:not(:last-child) {\n    margin-right: 8px;\n}\n\n.buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n}\n\n.menu-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.row {\n    display: flex;\n    width: 100%;\n    gap: 20px;\n}\n\n.row .input-wrapper {\n    flex: 1;\n}\n\ninput, mat-form-field, tb-phone-input  {\n    width: 100%;\n}\n\n.tb-default .mat-stepper-horizontal, .tb-default .mat-stepper-vertical {\n    background-color: transparent;\n}\n\n.btn-container {\n    display: flex;\n    justify-content: flex-end;\n    margin-top: 48px;\n}\n\n.sub-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.toggle {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    padding: 10px;\n    align-items: center;\n    height: 60px;\n    border-bottom: 1px solid #D0D5DD;\n}\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));  \nlet attributeService = $injector.get(widgetContext.servicesMap.get(\"attributeService\"));\nlet assetService = $injector.get(widgetContext.servicesMap.get(\"assetService\"));\nlet deviceService = $injector.get(widgetContext.servicesMap.get(\"deviceService\"));\nlet userService = $injector.get(widgetContext.servicesMap.get(\"userService\"));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get(\"entityRelationService\"));\n\nopendeviceConfigDialog();\n\nfunction opendeviceConfigDialog() {\n    customDialog.customDialog(htmlTemplate, CreateDeviceConfigDialogController).subscribe();\n}\n\nfunction CreateDeviceConfigDialogController(instance) {\n    let vm = instance;\n    \n    vm.devices = [];\n    vm.users = [];\n    \n    deviceService.getTenantDevices(widgetContext.pageLink(10000,0)).subscribe(devices => {\n        if(devices && devices.data && devices.data.length){\n            devices.data.forEach(x=>{\n                vm.devices.push(x);\n            });\n        }\n    });\n    \n    userService.getAllUserInfos(true, widgetContext.pageLink(10000,0)).subscribe(users => {\n        if(users && users.data && users.data.length){\n            users.data.forEach(x=>{\n                vm.users.push(x);\n            });\n        }\n    });\n    \n    vm.alarmInfoFormGroup = vm.fb.group({\n        name: [null, [vm.validators.required]],\n        description: [null],\n        isActive: false,\n        devices: [null]\n    });\n    \n    vm.alarmUsersFormGroup = vm.fb.group({\n        users: [null],\n        phone: false,\n        email: false,\n        application: false\n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        let {name, description, isActive, devices} = vm.alarmInfoFormGroup.value;\n        let {users, phone, email, application} = vm.alarmUsersFormGroup.value;\n\n        let payload = {\n            name,\n            type: \"alertProfile\"\n        };\n        \n        let config = {\n            description: description,\n            isActive: isActive,\n            phone: phone,\n            email: email,\n            application: application\n        }\n        \n        assetService.saveAsset(payload).subscribe(response => {\n            attributeService.saveEntityAttributes(response.id, \"SERVER_SCOPE\", [{key: \"alarmConfig\", value: config}]).subscribe(()=>{\n                devices.forEach(x=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: x.id,\n                        type: 'AlarmConfigToDevice',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                })\n                users.forEach(x=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: x.id,\n                        type: 'AlarmConfigToInformingUser',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                })\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n                widgetContext.showSuccessToast(`Device config was created successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n            })\n        });\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "cca37572-e27f-4169-1d65-e0fdb4de2b52"
+              }, {
+                "name" : "alertRules",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet statesArray = params['statesArray'];\nlet prevState = statesArray[statesArray.length-2].stateId;\n\nlet newParams = {\n    stateId: prevState,\n    mode: params['mode'],\n    enabled: params['enabled']\n}\n\nwidgetContext.stateController.navigatePrevState(0);\nwidgetContext.$scope.ctx.stateController.updateState('default', newParams);\n",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "d3bdeff1-3770-0e92-8047-17df3272cbca"
+              } ]
+            },
+            "margin" : "0px 10px 0px 10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "945bb80a-477c-462b-9280-8b15c7068613"
+        },
+        "52b54bcb-6542-9ed8-2709-a671171d637a" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "896ed68e-843a-654a-c187-ccfc03d06f0a",
+              "dataKeys" : [ {
+                "name" : "alarmConfig",
+                "type" : "attribute",
+                "label" : "description",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6218276400598723,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value) {\n    let obj = JSON.parse(value);\n    return obj && obj['description'] ? obj['description'] : '';\n}\nreturn value;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "b7c1524d-3c02-3d93-5983-05abb0a3ef7c",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.2283767087976727
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.27794897937989615
+              }, {
+                "name" : "assignedLocation",
+                "type" : "attribute",
+                "label" : "assignedLocation",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.5727036027891015
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1728983985678,
+                  "endTimeMs" : 1729070385678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "16px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "<div class=\"dashboard-header-container\">\n    <div class=\"title\">Overview</div>\n    <button id=\"addNewUser\" class=\"create-asset-button\" *ngIf=\"localStorage.getItem('role'\n    ) === 'Admin'\">+ New user</button>\n</div>",
+              "markdownTextFunction" : "setTimeout(function() {\n    ctx.showId = function(id){\n        console.log(id);\n    }\n}, 0);\n\nlet devicesBlock = ``;\n\n\ndata.forEach(x=>{\n    if(x.entityType == \"DEVICE\"){\n        devicesBlock += `<div style=\"display: flex;justify-content:space-between;\">\n                            <span id=\"select\" (click)=\"showId('hello')\" style=\"color: #0C111D\">${x.entityName} - ${x.Type}</span>\n                            <span style=\"color: #344054\">${x.assignedLocation}</span>\n                        </div>`;\n    }\n});\n\nreturn `<div class=\"mainDiv\">\n            <div class=\"descriptionBlock\">\n                <span class=\"title\">Description</span>\n                <span class=\"text\">${data[0].description}</span>\n            </div>\n            <div class=\"mt10\">\n                <span class=\"title\">Assigned devices</span>\n                <div class=\"deviceBlock mt10\">` + devicesBlock + `</div>\n            </div>\n        </div>`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".mainDiv {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    padding: 0;\n}\n\n.mt10 {\n    margin-top: 10px;\n}\n\n.descriptionBlock {\n    height: auto;\n    color: #344054;\n    display: flex;\n    flex-direction: column;\n    border-bottom: 1px solid #D0D5DD;\n}\n\n.deviceBlock {\n    font-size: 16px;\n    height: auto;\n    display: flex;\n    flex-direction: column;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 24px;\n    font-weight: 600;\n    line-height: 32px;\n    text-align: left;\n}\n\n.text {\n    padding: 10px 0px;    \n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "addNewProfile",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"form-wrapper\">\n    <div class=\"form-header-panel\" style=\"width: 100%\">\n        <div class=\"title\">New alert profile</div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <mat-stepper linear labelPosition=\"bottom\" #stepper>\n        <mat-step [stepControl]=\"alarmInfoFormGroup\">\n            <form [formGroup]=\"alarmInfoFormGroup\">\n                <ng-template matStepLabel>Info</ng-template>\n                <div class=\"row\" style=\"justify-content:space-between;padding:10px;\">\n                    <span class=\"sub-title\">Info</span>\n                    <div>\n                        <span>Rule status: <b>Active</b></span>\n                        <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"isActive\"></mat-slide-toggle>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Name</mat-label>\n                            <input type=\"string\" matInput formControlName=\"name\" placeholder=\"Enter name\">\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Description</mat-label>\n                            <textarea matInput\n                                formControlName=\"description\"\n                                cdkTextareaAutosize\n                                #autosize=\"cdkTextareaAutosize\"\n                                cdkAutosizeMinRows=\"3\"\n                                cdkAutosizeMaxRows=\"5\"></textarea>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned devices</mat-label>\n                            <mat-select formControlName=\"devices\" multiple required>\n                                <mat-option *ngFor=\"let device of devices\" [value]=\"device\">{{device.name}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"btn-container\">\n                    <button mat-flat-button matStepperNext color=\"primary\" [disabled]=\"alarmInfoFormGroup.invalid\">Next</button>\n                </div>\n            </form>\n        </mat-step>\n        <mat-step [stepControl]=\"alarmUsersFormGroup\">\n            <form [formGroup]=\"alarmUsersFormGroup\">\n                <ng-template matStepLabel>Assigned users</ng-template>\n                <div class=\"row\">\n                    <div class=\"input-wrapper\">\n                        <mat-form-field appearance=\"outline\">\n                            <mat-label>Assigned users</mat-label>\n                            <mat-select formControlName=\"users\" multiple required>\n                                <mat-option *ngFor=\"let user  of users\" [value]=\"user\">{{user.email}}</mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via phone</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"phone\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification via email</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"email\"></mat-slide-toggle>\n                </div>\n                <div class=\"toggle\">\n                    <span>Notification in application</span>\n                    <mat-slide-toggle style=\"margin-left: 5px;\" formControlName=\"application\"></mat-slide-toggle>\n                </div>\n                <div class=\"buttons-container\" style=\"margin-top:40px;\">\n                    <button mat-button matStepperPrevious>Back</button>\n                    <button mat-flat-button matStepperNext color=\"primary\" (click)=\"save()\" [disabled]=\"alarmUsersFormGroup.invalid\">Done</button>\n                </div>\n            </form>\n        </mat-step>\n    </mat-stepper>\n</div>",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.first-step-buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.first-step-buttons-container button:not(:last-child) {\n    margin-right: 8px;\n}\n\n.buttons-container {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n}\n\n.menu-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.row {\n    display: flex;\n    width: 100%;\n    gap: 20px;\n}\n\n.row .input-wrapper {\n    flex: 1;\n}\n\ninput, mat-form-field, tb-phone-input  {\n    width: 100%;\n}\n\n.tb-default .mat-stepper-horizontal, .tb-default .mat-stepper-vertical {\n    background-color: transparent;\n}\n\n.btn-container {\n    display: flex;\n    justify-content: flex-end;\n    margin-top: 48px;\n}\n\n.sub-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.toggle {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    padding: 10px;\n    align-items: center;\n    height: 60px;\n    border-bottom: 1px solid #D0D5DD;\n}\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));  \nlet attributeService = $injector.get(widgetContext.servicesMap.get(\"attributeService\"));\nlet assetService = $injector.get(widgetContext.servicesMap.get(\"assetService\"));\nlet deviceService = $injector.get(widgetContext.servicesMap.get(\"deviceService\"));\nlet userService = $injector.get(widgetContext.servicesMap.get(\"userService\"));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get(\"entityRelationService\"));\n\nopendeviceConfigDialog();\n\nfunction opendeviceConfigDialog() {\n    customDialog.customDialog(htmlTemplate, CreateDeviceConfigDialogController).subscribe();\n}\n\nfunction CreateDeviceConfigDialogController(instance) {\n    let vm = instance;\n    \n    vm.devices = [];\n    vm.users = [];\n    \n    deviceService.getTenantDevices(widgetContext.pageLink(10000,0)).subscribe(devices => {\n        if(devices && devices.data && devices.data.length){\n            devices.data.forEach(x=>{\n                vm.devices.push(x);\n            });\n        }\n    });\n    \n    userService.getAllUserInfos(true, widgetContext.pageLink(10000,0)).subscribe(users => {\n        if(users && users.data && users.data.length){\n            users.data.forEach(x=>{\n                vm.users.push(x);\n            });\n        }\n    });\n    \n    vm.alarmInfoFormGroup = vm.fb.group({\n        name: [null, [vm.validators.required]],\n        description: [null],\n        isActive: false,\n        devices: [null]\n    });\n    \n    vm.alarmUsersFormGroup = vm.fb.group({\n        users: [null],\n        phone: false,\n        email: false,\n        application: false\n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        let {name, description, isActive, devices} = vm.alarmInfoFormGroup.value;\n        let {users, phone, email, application} = vm.alarmUsersFormGroup.value;\n\n        let payload = {\n            name,\n            type: \"alertProfile\"\n        };\n        \n        let config = {\n            description: description,\n            isActive: isActive,\n            phone: phone,\n            email: email,\n            application: application\n        }\n        \n        assetService.saveAsset(payload).subscribe(response => {\n            attributeService.saveEntityAttributes(response.id, \"SERVER_SCOPE\", [{key: \"alarmConfig\", value: config}]).subscribe(()=>{\n                devices.forEach(x=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: x.id,\n                        type: 'AlarmConfigToDevice',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                })\n                users.forEach(x=>{\n                    entityRelationService.saveRelation({\n                        from: response.id,\n                        to: x.id,\n                        type: 'AlarmConfigToInformingUser',\n                        typeGroup: 'COMMON'\n                    }).subscribe();\n                })\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n                widgetContext.showSuccessToast(`Device config was created successfully!`, 4000, \"bottom\", \"left\", \"layout\");\n            })\n        });\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "cca37572-e27f-4169-1d65-e0fdb4de2b52"
+              }, {
+                "name" : "select",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "console.log($event, widgetContext, entityId, entityName, additionalParams, entityLabel)",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "3a15277d-342e-d961-5171-74cc2330bb22"
+              } ]
+            },
+            "borderRadius" : "12px",
+            "margin" : "5px 10px 10px 10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "52b54bcb-6542-9ed8-2709-a671171d637a"
+        },
+        "046e3022-3af4-0cc1-c61f-5ea423b2fd6f" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1726995514591,
+                  "endTimeMs" : 1727081914591
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(255, 255, 255, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "### Markdown/HTML card\n - **Current entity**: ${entityName}.\n - **Current value**: ${Random}.",
+              "markdownTextFunction" : "return `\n    <div class=\"user-layout\" [ngClass]=\"{'user-layout-overflow': ctx.stateController.getStateParams().subState=='device' || ctx.stateController.getStateParams().subState=='general'}\" fxLayout=\"column\">\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='device' || ctx.stateController.getStateParams().subState=='general'\" [ctx]=\"ctx\" stateId=\"deviceThresholdAlarms\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n        <tb-dashboard-state class=\"table\" *ngIf=\"ctx.stateController.getStateParams().subState=='location'\" [ctx]=\"ctx\" stateId=\"locationThresholdAlarms\" [syncParentStateParams]=\"true\">\n        </tb-dashboard-state>\n    </div>\n`;",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-markdown-view div,\n.tb-markdown-view p {\n    line-height: normal;\n}\n.mat-content {\n    background-color: #fff !important;\n}\n.user-layout {\n    width: 100%;\n    height: 100%;\n    padding: 0px;\n}\n.table {\n    flex-grow: 1;\n    padding: 0px;\n}\n\n.user-layout-overflow {\n    /*min-height: 1000px;*/\n    height: 100%;\n    /*overflow: auto;*/\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "margin" : "5px 10px 10px 0px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "046e3022-3af4-0cc1-c61f-5ea423b2fd6f"
+        },
+        "e14b9bfa-9015-6132-a046-a24bd846a376" : {
+          "typeFullFqn" : "tenant.threshold_table",
+          "type" : "latest",
+          "sizeX" : 9,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "896ed68e-843a-654a-c187-ccfc03d06f0a",
+              "dataKeys" : [ {
+                "name" : "alarmConfig",
+                "type" : "attribute",
+                "label" : "alarmConfig",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5566324080112122
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1731322488385,
+                  "endTimeMs" : 1731408888385
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "type" : "Device thresholds"
+            },
+            "title" : "Device thresholds",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 24,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "600",
+              "style" : null
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "12px",
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "padding" : "10px 10px 10px 5px;"
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "edit",
+                "icon" : "edit",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form #editFormGroup=\"ngForm\" [formGroup]=\"editForm\" class=\"edit-entity-form\" style=\"width: 650px\">\n    <div class=\"form-header-panel\" style=\"width: 100%;margin-bottom: 12px;padding: 20px 10px 0px 20px;\">\n        <div class=\"title\">Change parameters</div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <span class=\"typeText\">{{type}}</span>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div mat-dialog-content fxLayout=\"column\" style=\"padding-top: 0px;\" *ngIf=\"!(isLoading$ | async)\">\n        <div *ngIf=\"type == 'Temperature' || type == 'Battery level'\" formGroupName=\"numberObject\">\n            <div class=\"mt20\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\" style=\"display:flex;align-items:center;\">\n                <span class=\"toggleText\">Rule status: <b>{{editForm.value.numberObject.status ? \"Active\" : \"Inactive\"}}</b></span>\n                <mat-slide-toggle style=\"margin-left:5px;\" formControlName=\"status\"></mat-slide-toggle>\n            </div>\n            <div class=\"mt20\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">\n                <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">\n                    <mat-label>Upper threshold</mat-label>\n                    <input *ngIf=\"type != 'Battery level'\" type=\"number\" matInput formControlName=\"upperThreshold\">\n                    <input *ngIf=\"type == 'Battery level'\" min=\"0\" type=\"number\" matInput formControlName=\"upperThreshold\">\n                    <mat-error *ngIf=\"editForm.get('numberObject.upperThreshold').hasError('min')\">\n                        Upper threshold should be greater than lower threshold.\n                    </mat-error>\n                </mat-form-field>\n                <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">\n                    <mat-label>Lower threshold</mat-label>\n                    <input type=\"number\" matInput formControlName=\"lowerThreshold\">\n                    <mat-error *ngIf=\"editForm.get('numberObject.upperThreshold').hasError('min')\">\n                        Lower threshold should be less than upper threshold.\n                    </mat-error>\n                </mat-form-field>\n                <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">\n                    <mat-label>Equal threshold</mat-label>\n                    <input type=\"number\" matInput formControlName=\"equalThreshold\">\n                </mat-form-field>\n            </div>\n        </div>\n        <div *ngIf=\"type == 'Movement' || type == 'Idle'\" formGroupName=\"durationObject\">\n            <div class=\"mt20\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\" style=\"display:flex;align-items:center;\">\n                <span class=\"toggleText\">Rule status: <b>{{editForm.value.numberObject.status ? \"Active\" : \"Inactive\"}}</b></span>\n                <mat-slide-toggle style=\"margin-left:5px;\" formControlName=\"status\"></mat-slide-toggle>\n            </div>\n            <div class=\"mt20\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">\n                <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">\n                    <mat-label>Create alert after, sec</mat-label>\n                    <input type=\"number\" step=\"1\" min=\"0\" matInput formControlName=\"durationThreshold\">\n                </mat-form-field>\n            </div>\n        </div>\n    </div>\n    <div mat-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"end center\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                type=\"button\" (click)=\"save()\"\n                [disabled]=\"(isLoading$ | async) || editFormGroup.invalid || !editFormGroup.dirty\">\n            Save\n        </button>\n    </div>\n</form>\n",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 678px;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.typeText {\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 28px;\n    text-align: left;\n    color: #344054;\n    padding: 5px 0px 0px 20px;\n}\n\n.mt20 {\n    margin-top: 20px;\n}\n\n.toggleText {\n    font-size: 16px;\n    font-weight: 500;\n    line-height: 24px;\n    letter-spacing: 0.01em;\n    text-align: left;\n    color: #344054;\n}\n\n/*.form-header-panel {*/\n    /*margin-bottom: 12px;*/\n    /*padding: 20px 10px 0px 20px;*/\n/*}*/\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet params = widgetContext.stateController.getStateParams();\n\nopenEditEntityDialog();\n\nfunction openEditEntityDialog() {\n    customDialog.customDialog(htmlTemplate, EditEntityDialogController).subscribe();\n}\n\nfunction EditEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.type = additionalParams.type;\n    \n    vm.editForm = vm.fb.group({\n        numberObject: vm.fb.group({\n            type: [null],\n            status: [null],\n            upperThreshold: [null],\n            lowerThreshold: [null],\n            equalThreshold: [null]\n        }),\n        durationObject: vm.fb.group({\n            type: [null],\n            status: [null],\n            durationThreshold: [null, [vm.validators.pattern(/^-?[0-9]+$/)]]\n        })\n    });\n    \n    vm.editForm.get(\"numberObject.lowerThreshold\").valueChanges.subscribe(lowerThreshold => {\n        const upperThresholdControl = vm.editForm.get(\"numberObject.upperThreshold\");\n        \n        if(lowerThreshold){\n            upperThresholdControl.setValidators([\n                vm.validators.min(lowerThreshold + 1)\n            ]);\n        } else {\n            upperThresholdControl.setValidators(null);\n        }\n        \n        upperThresholdControl.updateValueAndValidity();\n    });\n    \n    vm.editForm.get(\"numberObject.upperThreshold\").valueChanges.subscribe(upperThreshold => {\n        const lowerThresholdControl = vm.editForm.get(\"numberObject.lowerThreshold\");\n        \n        if(upperThreshold){\n            lowerThresholdControl.setValidators([\n                vm.validators.max(upperThreshold - 1)\n            ]);\n        } else {\n            lowerThresholdControl.setValidators(null);\n        }\n        \n        lowerThresholdControl.updateValueAndValidity();\n    });\n    \n    getEntityInfo();\n\n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n\n    vm.save = function() {\n        let values;\n        \n        if(vm.type == \"Temperature\" || vm.type == \"Battery level\"){\n            values = vm.editForm.value.numberObject; \n        } else {\n            values = vm.editForm.value.durationObject; \n        }\n        \n        const index = widgetContext.$scope.datasource.findIndex(x => x.type === values.type);\n        \n        if (index != -1) {\n            widgetContext.$scope.datasource[index] = values;\n        }\n        \n        attributeService.saveEntityAttributes(params.selectedEntity.entityId, \"SERVER_SCOPE\", [{key: \"alarmConfig\", value: widgetContext.$scope.alarmConfig}]).subscribe(()=>{\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n        });\n    };\n\n    function getEntityInfo() {\n        if(vm.type == \"Temperature\" || vm.type == \"Battery level\"){\n            vm.editForm.patchValue({\n                numberObject: additionalParams\n            });\n        } else {\n            vm.editForm.patchValue({\n                durationObject: additionalParams\n            });\n        }\n    }\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "f70debf6-263d-e159-608c-e13508190f79"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e14b9bfa-9015-6132-a046-a24bd846a376"
+        },
+        "c0c69069-0d5f-ead1-23ae-10f1157c96b0" : {
+          "typeFullFqn" : "tenant.threshold_table",
+          "type" : "latest",
+          "sizeX" : 9,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "896ed68e-843a-654a-c187-ccfc03d06f0a",
+              "dataKeys" : [ {
+                "name" : "alarmConfig",
+                "type" : "attribute",
+                "label" : "alarmConfig",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5566324080112122
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1731322488385,
+                  "endTimeMs" : 1731408888385
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "type" : "Location thresholds"
+            },
+            "title" : "Location thresholds",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 24,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "600",
+              "style" : null
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "12px",
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "headerButton" : [ {
+                "name" : "Add ",
+                "icon" : "add",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form #editFormGroup=\"ngForm\" [formGroup]=\"form\" style=\"width: 650px\">\n    <div class=\"form-header-panel\" style=\"width: 100%;padding: 20px 10px 0px 20px;\">\n        <div class=\"title\">New location threshold </div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <span class=\"typeText\">{{type}}</span>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div *ngIf=\"!(isLoading$ | async)\" mat-dialog-content fxLayout=\"column\" class=\"pt10\">\n        <div *ngIf=\"locations.length == 0\" class=\"warnBlock\">\n            <div class=\"myCustomIcon\">\n                 <mat-icon class=\"matIcon\">info_outline</mat-icon>\n            </div>\n            <div class=\"text\">\n                <span class=\"boldText\">Warning!</span>\n                <span class=\"simpleText\">You don’t have any location to assign new alert rule. Please, create location first.</span>\n            </div>\n        </div>\n        <div *ngIf=\"locations.length > 0\" class=\"mt20\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">\n            <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">\n                <mat-label>Event type</mat-label>\n                <mat-select formControlName=\"eventType\" required>\n                    <mat-option *ngFor=\"let type of eventTypes\" [value]=\"type\">\n                        {{type}}\n                    </mat-option>\n                </mat-select>\n            </mat-form-field>\n        </div>\n        <span *ngIf=\"!zonesEmpty && locations.length > 0\" class=\"sub-sub-title\">Select zones</span>\n        <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\" class=\"pt10\">\n            <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">\n                <mat-label>Locations</mat-label>\n                <mat-select (selectionChange)=\"select('location', $event)\" formControlName=\"locations\" required>\n                    <mat-option *ngFor=\"let location of locations\" [value]=\"location\">\n                        {{location.name}}\n                    </mat-option>\n                </mat-select>\n            </mat-form-field>\n            <mat-form-field *ngIf=\"!zonesEmpty\" fxFlex class=\"mat-block\" appearance=\"outline\">\n                <mat-label>Zones</mat-label>\n                <mat-select (selectionChange)=\"select('zone', $event)\" formControlName=\"zones\" [multiple]=\"isMultiple\" required>\n                    <mat-option *ngFor=\"let zone of zones\" [value]=\"zone\">\n                        {{zone.name}}\n                    </mat-option>\n                </mat-select>\n            </mat-form-field>\n            <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\" *ngIf=\"!zonesEmpty && form.value.eventType == 'Geofence In' || form.value.eventType == 'Geofence Out' && !geofencesEmpty \">\n                <mat-label>Geofences</mat-label>\n                <mat-select formControlName=\"geofences\" multiple required>\n                    <mat-option *ngFor=\"let geofence of geofences\" [value]=\"geofence\">\n                        {{geofence.name}}\n                    </mat-option>\n                </mat-select>\n            </mat-form-field>\n        </div>\n        <div *ngIf=\"zonesEmpty\" class=\"warnBlock\">\n            <div class=\"myCustomIcon\">\n                <mat-icon class=\"matIcon\">info_outline</mat-icon>\n            </div>\n            <div class=\"text\">\n                <span class=\"boldText\">Warning!</span>\n                <span class=\"simpleText\">You do not have any zones available for assignment. Please create or unassign a zones, if you need to assign them to new Alert rule</span>\n            </div>\n        </div>\n        <div *ngIf=\"geofencesEmpty\" class=\"warnBlock\">\n            <div class=\"myCustomIcon\">\n                <mat-icon class=\"matIcon\">info_outline</mat-icon>\n            </div>\n            <div class=\"text\">\n                <span class=\"boldText\">Warning!</span>\n                <span class=\"simpleText\">You do not have any geofences available for assignment. Please create or unassign a geofences, if you need to assign them to new Alert rule</span>\n            </div>\n        </div>\n        <span *ngIf=\"!geofencesEmpty && !zonesEmpty && locations.length > 0\" class=\"sub-sub-title\">Duration for zones</span>\n        <div *ngIf=\"!geofencesEmpty && !zonesEmpty && locations.length > 0\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\" class=\"pt10\">\n            <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">\n                <mat-label>Threshold, sec</mat-label>\n                <mat-hint>After this period the alarm will be triggered</mat-hint>\n                <input type=\"number\" min=\"0\" matInput formControlName=\"duration\" required>\n            </mat-form-field>\n        </div>\n    </div>\n    <div mat-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"end center\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                (click)=\"save()\"\n                [disabled]=\"(isLoading$ | async) || editFormGroup.invalid || !editFormGroup.dirty\">\n            Save\n        </button>\n    </div>\n</form>\n",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.pt10 {\n    padding-top: 10px;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 650px !important;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.typeText {\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 28px;\n    text-align: left;\n    color: #344054;\n    padding: 5px 0px 0px 20px;\n}\n\n.mt20 {\n    margin-top: 20px;\n}\n\n.toggleText {\n    font-size: 16px;\n    font-weight: 500;\n    line-height: 24px;\n    letter-spacing: 0.01em;\n    text-align: left;\n    color: #344054;\n}\n\n.boldText {\n    color: #0C111D;\n    font-size: 18px;\n    font-weight: 500;\n    line-height: 28px;\n    text-align: left;\n}\n\n.simpleText {\n    color: #344054;\n    font-size: 14px;\n    font-weight: 400;\n    line-height: 20px;\n    text-align: left;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.sub-sub-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.warnBlock {\n    background-color: #FEF3F2;\n    border: 1px solid #D92D20;\n    width: 100% !important;\n    height: auto !important;\n    display: flex;\n    border-radius: 8px;\n    padding: 15px;\n}\n\n.myCustomIcon {\n    background-color: #FEE4E2;\n    border-radius: 50%;\n    color: #D92D20;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 40px;\n    min-width: 40px;\n    height: 40px;\n    width: 40px;\n}\n\n.text {\n    display: flex;\n    flex-direction: column;\n    margin-left: 5px;\n}\n\n.matIcon {\n    justify-content: center;\n    align-items: center;\n    display: flex;\n    height: 20px;\n    width: 20px;\n}\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet utils = $injector.get(widgetContext.servicesMap.get('utils'));\nlet params = widgetContext.stateController.getStateParams();\n\nopenEditEntityDialog();\n\nfunction openEditEntityDialog() {\n    customDialog.customDialog(htmlTemplate, EditEntityDialogController).subscribe();\n}\n\nfunction EditEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.type = additionalParams.type;\n    vm.eventTypes = [\"Zone In\", \"Zone Out\", \"Geofence In\", \"Geofence Out\"];\n    vm.locations = [];\n    vm.zones = [];\n    vm.geofences = [];\n    vm.isMultiple = true;\n    vm.zonesEmpty = false;\n    vm.geofencesEmpty = false;\n\n    assetService.getTenantAssets(widgetContext.pageLink(1000,0), 'Location').subscribe(locations => {\n        if(locations && locations.data){\n            locations.data.forEach(x=>{\n                vm.locations.push({\n                    name: x.name,\n                    id: x.id\n                });\n            });\n        }\n    });\n    \n    vm.form = vm.fb.group({\n        eventType: [null],\n        locations: [{ value: null, disabled: true }],\n        zones: [{ value: null, disabled: true }],\n        geofences: [{ value: null, disabled: true }],\n        duration: [{ value: null, disabled: true }, [vm.validators.pattern(/^-?[0-9]+$/)]]\n    });\n    \n    vm.select = function(type, event){\n        selectedEntityId = event.value.id;\n        \n        if(type == 'location'){\n            vm.form.patchValue({\n                zones: ''\n            });\n        } else {\n            vm.form.patchValue({\n                geofences: ''\n            });\n        }\n        \n        let filters;\n        \n        if(type == 'location'){\n            filters = [{\n                \"relationType\": \"ZoneToLocation\",\n                \"entityTypes\": [\"ASSET\"]\n            }];\n        } else {\n            filters = [{\n                \"relationType\": \"GeofenceToZone\",\n                \"entityTypes\": [\"ASSET\"]\n            }];\n        }\n        \n        if(vm.form.value.eventType == \"Geofence In\" || vm.form.value.eventType == \"Geofence Out\" || type == \"location\"){\n            entityService.findEntityDataByQuery({\n                entityFilter: {\n                    \"type\": \"relationsQuery\",\n                    \"resolveMultiple\": true,\n                    \"rootStateEntity\": false,\n                    \"stateEntityParamName\": null,\n                    \"defaultStateEntity\": null,\n                    \"rootEntity\": selectedEntityId,\n                    \"direction\": \"TO\",\n                    \"maxLevel\": 1,\n                    \"filters\": filters,\n                    \"fetchLastLevelOnly\": false,\n                },\n                entityFields: [{\n                  \"type\": \"ENTITY_FIELD\",\n                  \"key\": \"name\"\n                }],\n                pageLink: {\n                    \"page\": 0,\n                    \"pageSize\": 10000,\n                    \"sortOrder\": {\n                        \"key\": {\n                            \"key\": \"name\",\n                            \"type\": \"ENTITY_FIELD\"\n                        },\n                        \"direction\": \"ASC\"\n                    }\n                }\n            }).subscribe(res=>{\n                if(res.data){\n                    if(type == 'location'){\n                        vm.zones = [];\n                        res.data.forEach(zone=>{\n                            if(zone.latest[\"ENTITY_FIELD\"][\"name\"]['value']){\n                                if(vm.form.value.eventType == \"Geofence In\" || vm.form.value.eventType == \"Geofence Out\"){\n                                    vm.zones.push({\n                                        name: zone.latest[\"ENTITY_FIELD\"][\"name\"]['value'],\n                                        id: zone.entityId\n                                    })\n                                } else {\n                                    if(!checkZoneOccupied(vm.form.value.eventType, zone.entityId.id)){\n                                        vm.zones.push({\n                                            name: zone.latest[\"ENTITY_FIELD\"][\"name\"]['value'],\n                                            id: zone.entityId\n                                        })\n                                    }\n                                } \n                            }\n                        });\n                        if(vm.zones.length == 0){\n                            vm.zonesEmpty = true;\n                        } else {\n                            vm.zonesEmpty = false;\n                        }\n                        widgetContext.detectChanges();\n                    } else {\n                        vm.geofences = [];\n                        res.data.forEach(x=>{\n                            if(x.latest[\"ENTITY_FIELD\"][\"name\"]['value']){\n                                if(vm.form.value.eventType == \"Geofence In\" || vm.form.value.eventType == \"Geofence Out\"){\n                                    if(!checkGeofenceOccupied(vm.form.value.eventType, x.entityId.id)){\n                                        vm.geofences.push({\n                                            name: x.latest[\"ENTITY_FIELD\"][\"name\"]['value'],\n                                            id: x.entityId\n                                        })\n                                    }\n                                }\n                            }\n                        });\n                        if(vm.geofences.length == 0){\n                            vm.geofencesEmpty = true;\n                        } else {\n                            vm.geofencesEmpty = false;\n                        }\n                        widgetContext.detectChanges();\n                    }\n                }\n                widgetContext.detectChanges();\n            });\n        }\n    };\n    \n    vm.form.get('eventType').valueChanges.subscribe((value) => {\n        vm.isMultiple = value != 'Geofence In' && value !== 'Geofence Out';\n        vm.form.patchValue({\n            locations: null,\n            zones: null,\n            geofences: null,\n            duration: null\n        });\n        vm.zonesEmpty = false;        \n        vm.geofencesEmpty = false;\n        \n        vm.form.get('locations').enable();\n        vm.form.get('zones').enable();\n        vm.form.get('geofences').enable();\n        vm.form.get('duration').enable();\n    });\n\n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    function checkZoneOccupied(eventType, zoneId){\n        return widgetContext.$scope.datasource.some(item => \n            item.eventType === eventType &&\n            Array.isArray(item.zones) && \n            item.zones.some(zone => zone.id && zone.id.id === zoneId));\n    }\n    \n    function checkGeofenceOccupied(eventType, geofenceId){\n        return widgetContext.$scope.datasource.some(item => \n            item.eventType === eventType &&\n            Array.isArray(item.geofences) && \n            item.geofences.some(geofence => geofence.id && geofence.id.id === geofenceId)\n        );\n    }\n\n    vm.save = function() {\n        let values = vm.form.value;\n        \n        values.index = utils.guid(); \n        \n        if(values.eventType){\n            widgetContext.$scope.datasource.push(values);\n        }\n        \n        widgetContext.$scope.alarmConfig.locationThresholds = widgetContext.$scope.datasource; \n        \n        attributeService.saveEntityAttributes(params.selectedEntity.entityId, \"SERVER_SCOPE\", [{key: \"alarmConfig\", value: widgetContext.$scope.alarmConfig}]).subscribe(()=>{\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n        });\n    };\n}\n\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9c375818-fcdf-bde0-afd9-751ad4bedae3"
+              } ],
+              "elementClick" : [ {
+                "name" : "edit",
+                "icon" : "edit",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form #editFormGroup=\"ngForm\" [formGroup]=\"form\" style=\"width: 650px\">\n    <div class=\"form-header-panel\" style=\"width: 100%;padding: 20px 10px 0px 20px;\">\n        <div class=\"title\">Edit location threshold </div>\n        <button mat-icon-button tabindex=\"-1\" (click)=\"cancel()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </div>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div *ngIf=\"!(isLoading$ | async)\" mat-dialog-content fxLayout=\"column\" class=\"pt10\">\n        <div *ngIf=\"locations.length == 0\" class=\"warnBlock\">\n            <div class=\"myCustomIcon\">\n                 <mat-icon class=\"matIcon\">info_outline</mat-icon>\n            </div>\n            <div class=\"text\">\n                <span class=\"boldText\">Warning!</span>\n                <span class=\"simpleText\">You don’t have any location to assign new alert rule. Please, create location first.</span>\n            </div>\n        </div>\n        <div *ngIf=\"locations.length > 0\" class=\"mt20\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">\n            <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">\n                <mat-label>Event type</mat-label>\n                <mat-select formControlName=\"eventType\" required>\n                    <mat-option *ngFor=\"let type of eventTypes\" [value]=\"type\">\n                        {{type}}\n                    </mat-option>\n                </mat-select>\n            </mat-form-field>\n        </div>\n        <span *ngIf=\"!zonesEmpty && locations.length > 0\" class=\"sub-sub-title\">Select zones</span>\n        <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\" class=\"pt10\">\n            <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">\n                <mat-label>Locations</mat-label>\n                <mat-select [compareWith]=\"compareFn\" (selectionChange)=\"select('location', $event, false)\" formControlName=\"locations\" required>\n                    <mat-option *ngFor=\"let location of locations\" [value]=\"location\">\n                        {{location.name}}\n                    </mat-option>\n                </mat-select>\n            </mat-form-field>\n            <mat-form-field *ngIf=\"!zonesEmpty\" fxFlex class=\"mat-block\" appearance=\"outline\">\n                <mat-label>Zones</mat-label>\n                <mat-select [compareWith]=\"compareFn\" (selectionChange)=\"select('zone', $event, false)\" formControlName=\"zones\" [multiple]=\"isMultiple\" required>\n                    <mat-option *ngFor=\"let zone of zones\" [value]=\"zone\">\n                        {{zone.name}}\n                    </mat-option>\n                </mat-select>\n            </mat-form-field>\n            <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\" *ngIf=\"!zonesEmpty && form.value.eventType == 'Geofence In' || form.value.eventType == 'Geofence Out' && !geofencesEmpty \">\n                <mat-label>Geofences</mat-label>\n                <mat-select [compareWith]=\"compareFn\" formControlName=\"geofences\" multiple required>\n                    <mat-option *ngFor=\"let geofence of geofences\" [value]=\"geofence\">\n                        {{geofence.name}}\n                    </mat-option>\n                </mat-select>\n            </mat-form-field>\n        </div>\n        <!---->\n        <!--<div *ngIf=\"form.value.zones\">-->\n        <!--    <span *ngIf=\"!zonesEmpty && locations.length > 0 && !geofencesEmpty\" class=\"sub-sub-title\">Duration for zones</span>-->\n        <!--    <div *ngIf=\"!zonesEmpty && locations.length > 0 && !geofencesEmpty\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\" class=\"pt10\">-->\n        <!--        <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">-->\n        <!--            <mat-label>Threshold, sec</mat-label>-->\n        <!--            <mat-hint>After this value the alarm will be triggered</mat-hint>-->\n        <!--            <input type=\"number\" min=\"0\" matInput formControlName=\"duration\" required>-->\n        <!--        </mat-form-field>-->\n        <!--    </div>-->\n        <!--</div>-->\n        <!--<div *ngIf=\"!form.value.zones\">-->\n            <span *ngIf=\"!zonesEmpty && locations.length > 0\" class=\"sub-sub-title\">Duration for zones</span>\n            <div *ngIf=\"!zonesEmpty && locations.length > 0\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\" class=\"pt10\">\n                <mat-form-field fxFlex class=\"mat-block\" appearance=\"outline\">\n                    <mat-label>Threshold, sec</mat-label>\n                    <mat-hint>After this period the alarm will be triggered</mat-hint>\n                    <input type=\"number\" min=\"0\" matInput formControlName=\"duration\" required>\n                </mat-form-field>\n            </div>\n        <!--</div>-->\n        <!---->\n        <div *ngIf=\"zonesEmpty\" class=\"warnBlock\">\n            <div class=\"myCustomIcon\">\n                <mat-icon class=\"matIcon\">info_outline</mat-icon>\n            </div>\n            <div class=\"text\">\n                <span class=\"boldText\">Warning!</span>\n                <span class=\"simpleText\">You do not have any zones available for assignment. Please create or unassign a zones, if you need to assign them to new Alert rule</span>\n            </div>\n        </div>\n        <div *ngIf=\"form.value.zones && geofencesEmpty && type.includes('Geofence')\" class=\"warnBlock\">\n            <div class=\"myCustomIcon\">\n                <mat-icon class=\"matIcon\">info_outline</mat-icon>\n            </div>\n            <div class=\"text\">\n                <span class=\"boldText\">Warning!</span>\n                <span class=\"simpleText\">You do not have any geofences available for assignment. Please create or unassign a geofences, if you need to assign them to new Alert rule</span>\n            </div>\n        </div>\n    </div>\n    <div mat-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"end center\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                (click)=\"save()\"\n                [disabled]=\"(isLoading$ | async) || editFormGroup.invalid || !editFormGroup.dirty\">\n            Save\n        </button>\n    </div>\n</form>\n",
+                "customCss" : ".mat-horizontal-content-container {\n    padding: 0!important;\n}\n\n.mat-mdc-dialog-container .mdc-dialog__surface {\n    box-shadow: none!important;\n    border-radius: 12px!important;\n}\n\n.pt10 {\n    padding-top: 10px;\n}\n\n.form-wrapper {\n    padding: 20px;\n    border-radius: 12px;\n    border: 1px solid #D0D5DD;\n    background: #FCFCFD;\n    min-width: 650px !important;\n}\n\n.form-header-panel {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    margin-bottom: 12px;\n}\n\n.typeText {\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 28px;\n    text-align: left;\n    color: #344054;\n    padding: 5px 0px 0px 20px;\n}\n\n.mt20 {\n    margin-top: 20px;\n}\n\n.toggleText {\n    font-size: 16px;\n    font-weight: 500;\n    line-height: 24px;\n    letter-spacing: 0.01em;\n    text-align: left;\n    color: #344054;\n}\n\n.boldText {\n    color: #0C111D;\n    font-size: 18px;\n    font-weight: 500;\n    line-height: 28px;\n    text-align: left;\n}\n\n.simpleText {\n    color: #344054;\n    font-size: 14px;\n    font-weight: 400;\n    line-height: 20px;\n    text-align: left;\n}\n\n.title {\n    color: #0C111D;\n    font-size: 28px;\n    font-weight: 600;\n    line-height: 36px;\n}\n\n.sub-sub-title {\n    color: #0C111D;\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 26px;\n    text-align: left;\n}\n\n.warnBlock {\n    background-color: #FEF3F2;\n    border: 1px solid #D92D20;\n    width: 100% !important;\n    height: auto !important;\n    display: flex;\n    border-radius: 8px;\n    padding: 15px;\n}\n\n.myCustomIcon {\n    background-color: #FEE4E2;\n    border-radius: 50%;\n    color: #D92D20;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 40px;\n    min-width: 40px;\n    height: 40px;\n    width: 40px;\n}\n\n.text {\n    display: flex;\n    flex-direction: column;\n    margin-left: 5px;\n}\n\n.matIcon {\n    justify-content: center;\n    align-items: center;\n    display: flex;\n    height: 20px;\n    width: 20px;\n}\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet utils = $injector.get(widgetContext.servicesMap.get('utils'));\nlet params = widgetContext.stateController.getStateParams();\n\nopenEditEntityDialog();\n\nfunction openEditEntityDialog() {\n    customDialog.customDialog(htmlTemplate, EditEntityDialogController).subscribe();\n}\n\nfunction EditEntityDialogController(instance) {\n    let vm = instance;\n    \n    vm.type = additionalParams.eventType;\n    vm.eventTypes = [\"Zone In\", \"Zone Out\", \"Geofence In\", \"Geofence Out\"];\n    vm.locations = [];\n    vm.zones = [];\n    vm.geofences = [];\n    vm.isMultiple = true;\n    vm.zonesEmpty = false;\n    vm.geofencesEmpty = false;\n    \n    assetService.getTenantAssets(widgetContext.pageLink(1000,0), 'Location').subscribe(locations => {\n        if(locations && locations.data){\n            locations.data.forEach(x=>{\n                vm.locations.push({\n                    name: x.name,\n                    id: x.id\n                });\n            });\n        }\n        getRuleInfo();\n    });\n    \n    vm.compareFn = function(c1, c2) {\n        return c1 && c2 ? c1.id.id === c2.id.id : c1 === c2;\n    }\n    \n    vm.select = function(type, event, auto){\n        if(event.value.length > 0){\n            selectedEntityId = event.value[0].id;\n        } else {\n            selectedEntityId = event.value.id;\n        }\n        \n        if(type == 'location'){\n            vm.form.patchValue({\n                zones: null,\n                geofences: null\n            })\n            if(!auto){\n                vm.form.patchValue({\n                    geofences: null\n                })  \n            }\n        } else if(type == \"getZones\"){\n            vm.form.patchValue({\n                locations: additionalParams.locations\n            })\n        } else {\n            vm.form.patchValue({\n                geofences: null\n            })\n        }\n        \n        let entityFilter = {\n            \"type\": \"relationsQuery\",\n            \"resolveMultiple\": true,\n            \"rootStateEntity\": false,\n            \"stateEntityParamName\": null,\n            \"defaultStateEntity\": null,\n            \"rootEntity\": selectedEntityId,\n            \"fetchLastLevelOnly\": false,\n            \"maxLevel\": 1,\n            \"direction\": \"TO\"\n        };\n        \n        if(type == 'location' || type == \"getZones\"){\n            entityFilter.filters = [{\n                \"relationType\": \"ZoneToLocation\",\n                \"entityTypes\": [\"ASSET\"]\n            }];\n        } else {\n            entityFilter.filters = [{\n                \"relationType\": \"GeofenceToZone\",\n                \"entityTypes\": [\"ASSET\"]\n            }];\n        }\n        \n        if(vm.form.value.eventType == \"Geofence In\" || vm.form.value.eventType == \"Geofence Out\" || type == \"location\" || type == \"getZones\" || type == \"getGeofences\"){\n            entityService.findEntityDataByQuery({\n                entityFilter: entityFilter,\n                entityFields: [{\n                  \"type\": \"ENTITY_FIELD\",\n                  \"key\": \"name\"\n                }],\n                pageLink: {\n                    \"page\": 0,\n                    \"pageSize\": 10000,\n                    \"sortOrder\": {\n                        \"key\": {\n                            \"key\": \"name\",\n                            \"type\": \"ENTITY_FIELD\"\n                        },\n                        \"direction\": \"ASC\"\n                    }\n                }\n            }).subscribe(res=>{\n                if(res.data){\n                    if(type == 'location' || type == \"getZones\"){\n                        vm.zones = [];\n                        res.data.forEach(x=>{\n                            if(x.latest[\"ENTITY_FIELD\"][\"name\"]['value']){\n                                if(vm.form.value.eventType == \"Geofence In\" || vm.form.value.eventType == \"Geofence Out\"){\n                                    vm.zones.push({\n                                        name: x.latest[\"ENTITY_FIELD\"][\"name\"]['value'],\n                                        id: x.entityId\n                                    })\n                                } else {\n                                    if(!checkZoneOccupied(vm.form.value.eventType, x.entityId.id, additionalParams.zones)){\n                                        vm.zones.push({\n                                            name: x.latest[\"ENTITY_FIELD\"][\"name\"]['value'],\n                                            id: x.entityId\n                                        })\n                                    }\n                                } \n                            }\n                        });\n                        if(vm.zones.length == 0){\n                            vm.zonesEmpty = true;\n                        } else {\n                            if(auto){\n                                vm.form.patchValue({\n                                    zones: additionalParams.zones\n                                })\n                                vm.select(\"getGeofences\", {value: additionalParams.zones}, true)\n                            }\n                            vm.zonesEmpty = false;\n                        }\n                        widgetContext.detectChanges();\n                    } else {\n                        vm.geofences = [];\n                        res.data.forEach(x=>{\n                            if(x.latest[\"ENTITY_FIELD\"][\"name\"]['value']){\n                                if(vm.form.value.eventType == \"Geofence In\" || vm.form.value.eventType == \"Geofence Out\"){\n                                    if(!checkGeofenceOccupied(vm.form.value.eventType, x.entityId.id, additionalParams.geofences)){\n                                        vm.geofences.push({\n                                            name: x.latest[\"ENTITY_FIELD\"][\"name\"]['value'],\n                                            id: x.entityId\n                                        })\n                                    }\n                                }\n                            }\n                        });\n                        if(vm.geofences.length == 0){\n                            vm.geofencesEmpty = true;\n                        } else {\n                            if(type == \"getGeofences\"){\n                                if(auto){\n                                    vm.form.patchValue({\n                                        geofences: additionalParams.geofences\n                                    })\n                                }\n                            }\n                            vm.geofencesEmpty = false;\n                        }\n                        widgetContext.detectChanges();\n                    }\n                }\n            });\n        }\n    };\n    \n    vm.form = vm.fb.group({\n        index: [null],\n        eventType: [null],\n        locations: [null],\n        zones: [null],\n        geofences: [null],\n        duration: [null, [vm.validators.pattern(/^-?[0-9]+$/)]]\n    });\n    \n    vm.form.get('eventType').valueChanges.subscribe((value) => {\n        vm.isMultiple = value != 'Geofence In' && value !== 'Geofence Out';\n        \n        vm.form.patchValue({\n            locations: null,\n            zones: null,\n            geofences: null,\n            duration: null\n        });\n        \n        vm.zonesEmpty = false;        \n        vm.geofencesEmpty = false;\n    });\n\n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    function checkZoneOccupied(eventType, zoneId, ignoreIds=[]){\n        if(ignoreIds.length){\n            ignoreIds = ignoreIds.map(x=>x.id.id)\n        }\n        \n        if(eventType == vm.type){\n            return widgetContext.$scope.datasource.some(item => \n                        item.eventType === eventType &&\n                        Array.isArray(item.zones) && \n                        item.zones.some(zone => zone.id && zone.id.id === zoneId && !ignoreIds.includes(zone.id.id))\n                    );\n        } else {\n            return widgetContext.$scope.datasource.some(item => \n                        item.eventType === eventType &&\n                        Array.isArray(item.zones) && \n                        item.zones.some(zone => zone.id && zone.id.id === zoneId)\n                    );\n        }\n        \n    }\n    \n    function checkGeofenceOccupied(eventType, geofenceId, ignoreIds=[]){\n        if(ignoreIds.length){\n            ignoreIds = ignoreIds.map(x=>x.id.id)\n        }\n        \n        if(eventType == vm.type){\n            return widgetContext.$scope.datasource.some(item => \n                        item.eventType === eventType &&\n                        Array.isArray(item.geofences) && \n                        item.geofences.some(geofence => geofence.id && geofence.id.id === geofenceId && !ignoreIds.includes(geofence.id.id))\n                    );\n        } else {\n            return widgetContext.$scope.datasource.some(item => \n                        item.eventType === eventType &&\n                        Array.isArray(item.geofences) && \n                        item.geofences.some(geofence => geofence.id && geofence.id.id === geofenceId)\n                    );\n        }\n\n    }\n\n    function getRuleInfo(){\n        vm.form.patchValue({\n            index: additionalParams.index,\n            eventType: additionalParams.eventType,\n            duration: additionalParams.duration\n        })\n        vm.select(\"getZones\", {value: additionalParams.locations}, true);\n    }\n\n    vm.save = function() {\n        let values = vm.form.value;\n        \n        const index = widgetContext.$scope.datasource.findIndex(x => x.index === values.index);\n        \n        if (index != -1) {\n            widgetContext.$scope.datasource[index] = values;\n        }\n        \n        widgetContext.$scope.alarmConfig.locationThresholds = widgetContext.$scope.datasource; \n        \n        attributeService.saveEntityAttributes(params.selectedEntity.entityId, \"SERVER_SCOPE\", [{key: \"alarmConfig\", value: widgetContext.$scope.alarmConfig}]).subscribe(()=>{\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n        });\n    };\n}\n\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "736e635f-de18-e277-0bab-3a0d95510df3"
+              }, {
+                "name" : "delete",
+                "icon" : "delete",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nlet params = widgetContext.stateController.getStateParams();\n\nopenDeleteEntityDialog();\n\nfunction openDeleteEntityDialog() {\n    let title = 'Delete alarm rule';\n    let content = 'Are you sure you want to delete the alarm rule?';\n    dialogs.confirm(title, content, 'Cancel', 'Delete').subscribe(\n        function(result) {\n            if (result) {\n                const updatedArray = deleteElementByIndex(widgetContext.$scope.datasource, additionalParams.index)\n                widgetContext.$scope.alarmConfig.locationThresholds = updatedArray;\n                \n                attributeService.saveEntityAttributes(params.selectedEntity.entityId, \"SERVER_SCOPE\", [{key: \"alarmConfig\", value: widgetContext.$scope.alarmConfig}]).subscribe(()=>{\n                    widgetContext.updateAliases();\n                });\n            }\n        }\n    );\n}\n\nfunction deleteElementByIndex(dataArray, index) {\n    const elementIndex = dataArray.findIndex(item => item.index === index);\n\n    if (elementIndex !== -1) {\n        dataArray.splice(elementIndex, 1);\n    }\n    \n    return dataArray;\n}\n\n",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "d49d0983-2021-b650-6b39-d1daae3deb19"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "c0c69069-0d5f-ead1-23ae-10f1157c96b0"
+        },
+        "1cc81097-9ed3-fa90-b004-24fd82e8628b" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1743412387241,
+                  "endTimeMs" : 1743498787241
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "5px 0",
+            "settings" : {
+              "activatedState" : {
+                "action" : "GET_DASHBOARD_STATE_OBJECT",
+                "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
+                "getAttribute" : {
+                  "scope" : null,
+                  "key" : "state"
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "FUNCTION",
+                  "dataToValueFunction" : "return data.params.subState == \"device\" ? true : false;",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "basic",
+                "showLabel" : true,
+                "label" : "Device thresholds rules",
+                "showIcon" : false,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054",
+                    "overrideBackgroundColor" : false,
+                    "overrideDropShadow" : false
+                  },
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : {
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF00"
+                  },
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "0px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "general",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"device\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9eec16b4-cebc-42f3-a69f-9c239d2ba031"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "1cc81097-9ed3-fa90-b004-24fd82e8628b"
+        },
+        "267f210a-b5b3-938e-e828-2ca839c9aacd" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1743412387241,
+                  "endTimeMs" : 1743498787241
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "5px 0",
+            "settings" : {
+              "activatedState" : {
+                "action" : "GET_DASHBOARD_STATE_OBJECT",
+                "defaultValue" : false,
+                "executeRpc" : {
+                  "method" : null,
+                  "requestTimeout" : null,
+                  "requestPersistent" : null,
+                  "persistentPollingInterval" : null
+                },
+                "getAttribute" : {
+                  "scope" : null,
+                  "key" : "state"
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "FUNCTION",
+                  "dataToValueFunction" : "return data.params.subState == \"location\" ? true : false;",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "basic",
+                "showLabel" : true,
+                "label" : "Location thresholds rules",
+                "showIcon" : false,
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "#344054",
+                    "overrideBackgroundColor" : false,
+                    "overrideDropShadow" : false
+                  },
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : {
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF00"
+                  },
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "0px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "location",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet params = controller.getStateParams();\nlet states = controller.stateObject.length;\n\nif(states > 1){\n    controller.navigatePrevState(0);\n}\n\nparams.subState = \"location\";\n\nwidgetContext.updateAliases();\ncontroller.updateState('default', params);",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9eec16b4-cebc-42f3-a69f-9c239d2ba031"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "267f210a-b5b3-938e-e828-2ca839c9aacd"
+        }
+      },
+      "states" : {
+        "alertsRules" : {
+          "name" : "alertsRules",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "8d764269-bea8-4a56-4955-51902dc5455d" : {
+                  "sizeX" : 24,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "default" : {
+          "name" : "default",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "b7a9535c-d808-89ba-cd60-4a7e3ffc4dde" : {
+                  "sizeX" : 24,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 0,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "alertsRuleDetails" : {
+          "name" : "alertsRuleDetails",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "945bb80a-477c-462b-9280-8b15c7068613" : {
+                  "sizeX" : 36,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "52b54bcb-6542-9ed8-2709-a671171d637a" : {
+                  "sizeX" : 11,
+                  "sizeY" : 15,
+                  "row" : 2,
+                  "col" : 0
+                },
+                "046e3022-3af4-0cc1-c61f-5ea423b2fd6f" : {
+                  "sizeX" : 25,
+                  "sizeY" : 14,
+                  "row" : 3,
+                  "col" : 11
+                },
+                "1cc81097-9ed3-fa90-b004-24fd82e8628b" : {
+                  "sizeX" : 4,
+                  "sizeY" : 1,
+                  "row" : 2,
+                  "col" : 11
+                },
+                "267f210a-b5b3-938e-e828-2ca839c9aacd" : {
+                  "sizeX" : 4,
+                  "sizeY" : 1,
+                  "row" : 2,
+                  "col" : 15
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 36,
+                "margin" : 0,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "deviceThresholdAlarms" : {
+          "name" : "deviceThresholdAlarms",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "e14b9bfa-9015-6132-a046-a24bd846a376" : {
+                  "sizeX" : 24,
+                  "sizeY" : 12,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 0,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "locationThresholdAlarms" : {
+          "name" : "locationThresholdAlarms",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "c0c69069-0d5f-ead1-23ae-10f1157c96b0" : {
+                  "sizeX" : 24,
+                  "sizeY" : 12,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 0,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "58e13e7d-6f23-49a4-1b87-615cbd5feb1b" : {
+          "id" : "58e13e7d-6f23-49a4-1b87-615cbd5feb1b",
+          "alias" : "Alert rules",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Alarm config" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "896ed68e-843a-654a-c187-ccfc03d06f0a" : {
+          "id" : "896ed68e-843a-654a-c187-ccfc03d06f0a",
+          "alias" : "Selected entity",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "selectedEntity",
+            "defaultStateEntity" : null
+          }
+        },
+        "b7c1524d-3c02-3d93-5983-05abb0a3ef7c" : {
+          "id" : "b7c1524d-3c02-3d93-5983-05abb0a3ef7c",
+          "alias" : "Alert rule devices",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedEntity",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ {
+              "relationType" : null,
+              "entityTypes" : [ "DEVICE" ]
+            } ]
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1738164958037,
+            "endTimeMs" : 1738251358037
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "dashboardCss" : ".tb-active-state {\n    border-bottom: 2px solid var(--tb-primary-500) !important;\n}"
+      }
+    },
+    "name" : "Alert rules dashboard",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "e6aecb90-df1f-11ef-be7c-2f4dc8c6852f"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "d3cbae70-c120-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Packaging Area",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "d3cbae70-c120-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "AssetToGeofence",
+    "typeGroup" : "COMMON",
+    "version" : 18371108
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "d3cbae70-c120-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "706407b0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 576693
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1734953220853,
+      "longValue" : null,
+      "strValue" : "#FFF59D"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.75325278289797,37.575857322554235],[48.75350035669912,37.57596729311721],[48.753460224247846,37.57618054747638],[48.7536807311289,37.576291840388386],[48.75357639697886,37.57681218890586],[48.75285631833672,37.576482295990154],[48.75294385419646,37.576035708189735],[48.75318912085302,37.57615236553796]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1734953279213,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75325278289797, 37.575857322554235], [48.75350035669912, 37.57596729311721], [48.753460224247846, 37.57618054747638], [48.7536807311289, 37.576291840388386], [48.75357639697886, 37.57681218890586], [48.75285631833672, 37.576482295990154], [48.75294385419646, 37.576035708189735], [48.75318912085302, 37.57615236553796]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1734953279233,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}
