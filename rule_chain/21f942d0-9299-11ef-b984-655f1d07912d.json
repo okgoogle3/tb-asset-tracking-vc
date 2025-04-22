@@ -36,6 +36,14 @@
       "toIndex" : 11,
       "type" : "web"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
       "fromIndex" : 5,
       "toIndex" : 15,
       "type" : "Success"
@@ -164,8 +172,8 @@
       "createdTime" : 0,
       "debugSettings" : {
         "allEnabled" : false,
-        "allEnabledUntil" : 1743757321623,
-        "failuresEnabled" : false
+        "allEnabledUntil" : 1745322594346,
+        "failuresEnabled" : true
       },
       "externalId" : null,
       "id" : {
@@ -226,7 +234,11 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugSettings" : null,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1745322577440,
+        "failuresEnabled" : true
+      },
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
