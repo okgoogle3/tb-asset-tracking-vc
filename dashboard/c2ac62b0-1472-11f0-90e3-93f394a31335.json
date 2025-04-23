@@ -140,7 +140,7 @@
                 },
                 "fillImage" : {
                   "type" : "function",
-                  "imageFunction" : "console.log(data)\n\nreturn {\n    url: data.image,\n    preserveAspectRatio: false,\n    opacity: 1,\n    angle: data.rotate\n}",
+                  "imageFunction" : "console.log(data.perimeter)\n\nif(data.perimeter && JSON.parse(data.perimeter)){\n    console.log(JSON.parse(data.perimeter));\n}\n\nreturn {\n    url: data.image,\n    preserveAspectRatio: false,\n    opacity: 1,\n    angle: data.rotate\n}",
                   "images" : null
                 },
                 "strokeColor" : {
