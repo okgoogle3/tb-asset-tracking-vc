@@ -284,7 +284,21 @@
             },
             "useDashboardTimewindow" : true,
             "showLegend" : false,
-            "actions" : { },
+            "actions" : {
+              "headerButton" : [ {
+                "name" : "test",
+                "buttonType" : "icon",
+                "icon" : "more_horiz",
+                "buttonColor" : "rgba(0, 0, 0, 0.87)",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\n\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\n\ndashboardService.getAllDashboards(true, widgetContext.pageLink(10, 0)).subscribe(res=>console.log(res))",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "583eace8-4304-0982-dc2f-b4de73a96d49"
+              } ]
+            },
             "displayTimewindow" : true
           },
           "row" : 0,
