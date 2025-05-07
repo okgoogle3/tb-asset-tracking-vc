@@ -8648,13 +8648,6 @@
                 "dsFilterId" : null,
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
-                  "name" : "name",
-                  "type" : "entityField",
-                  "label" : "Name",
-                  "color" : "#2196f3",
-                  "settings" : { },
-                  "_hash" : 0.42997762219075486
-                }, {
                   "name" : "color",
                   "type" : "attribute",
                   "label" : "color",
@@ -8692,7 +8685,7 @@
                   "rangeKey" : null,
                   "range" : null,
                   "colorFunction" : {
-                    "body" : "module.findFillColor(data);",
+                    "body" : "console.log(data)\nmodule.findFillColor(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
@@ -8720,8 +8713,16 @@
                   "scale" : 1
                 },
                 "strokeColor" : {
-                  "type" : "constant",
-                  "color" : "#3388ff"
+                  "type" : "function",
+                  "color" : "#3388ff",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "module.findStrokedColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
                 },
                 "strokeWeight" : 3,
                 "polygonKey" : {
