@@ -9584,45 +9584,6 @@
             "assetTypes" : [ "Geofence" ]
           }
         },
-        "15a3956f-c671-130b-6fee-246de6a8db29" : {
-          "id" : "15a3956f-c671-130b-6fee-246de6a8db29",
-          "alias" : "Configs",
-          "filter" : {
-            "type" : "assetType",
-            "resolveMultiple" : true,
-            "assetTypes" : [ "deviceConfig" ],
-            "assetNameFilter" : ""
-          }
-        },
-        "bd3d65de-56df-fb42-3373-db394d9cfbf8" : {
-          "id" : "bd3d65de-56df-fb42-3373-db394d9cfbf8",
-          "alias" : "Alert rules",
-          "filter" : {
-            "type" : "assetType",
-            "resolveMultiple" : true,
-            "assetTypes" : [ "Alarm config" ],
-            "assetNameFilter" : ""
-          }
-        },
-        "18a45d62-6baf-63a3-9b70-1865c9ce7004" : {
-          "id" : "18a45d62-6baf-63a3-9b70-1865c9ce7004",
-          "alias" : "Alert rule devices",
-          "filter" : {
-            "type" : "relationsQuery",
-            "resolveMultiple" : true,
-            "rootStateEntity" : true,
-            "stateEntityParamName" : "selectedEntity",
-            "defaultStateEntity" : null,
-            "rootEntity" : null,
-            "direction" : "FROM",
-            "maxLevel" : 1,
-            "fetchLastLevelOnly" : false,
-            "filters" : [ {
-              "relationType" : null,
-              "entityTypes" : [ "DEVICE" ]
-            } ]
-          }
-        },
         "b95ae626-0d98-e48c-6388-6868d889e040" : {
           "id" : "b95ae626-0d98-e48c-6388-6868d889e040",
           "alias" : "Selected zone",
