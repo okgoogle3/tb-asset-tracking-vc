@@ -8688,8 +8688,8 @@
           "col" : 0,
           "id" : "2e7cb356-cb27-197e-8963-aef79a2a0f3f"
         },
-        "af335492-2860-86f5-b11d-63009e502f09" : {
-          "typeFullFqn" : "system.map",
+        "8039144a-daf1-9a9d-0935-e5ee15bd8db4" : {
+          "typeFullFqn" : "tenant.broadcast_map2",
           "type" : "latest",
           "sizeX" : 8.5,
           "sizeY" : 6,
@@ -8712,8 +8712,8 @@
                 "interval" : 1000,
                 "timewindowMs" : 60000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1746513015659,
-                  "endTimeMs" : 1746599415659
+                  "startTimeMs" : 1746516559142,
+                  "endTimeMs" : 1746602959142
                 },
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
@@ -8737,6 +8737,15 @@
                 "provider" : "openstreet",
                 "layerType" : "CartoDB.Positron",
                 "referenceLayer" : null
+              }, {
+                "label" : "{i18n:widgets.maps.layer.satellite}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery"
+              }, {
+                "label" : "{i18n:widgets.maps.layer.hybrid}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery",
+                "referenceLayer" : "openstreetmap_hybrid"
               } ],
               "imageSource" : null,
               "markers" : [ ],
@@ -8753,7 +8762,7 @@
                   "label" : "color",
                   "color" : "#2196f3",
                   "settings" : { },
-                  "_hash" : 0.5926231428552414
+                  "_hash" : 0.9422691612191211
                 } ],
                 "label" : {
                   "show" : false,
@@ -8845,7 +8854,7 @@
                   "label" : "color",
                   "color" : "#2196f3",
                   "settings" : { },
-                  "_hash" : 0.6042684001817573
+                  "_hash" : 0.952789936736685
                 } ],
                 "label" : {
                   "show" : false,
@@ -8910,7 +8919,7 @@
                   "rangeKey" : null,
                   "range" : null,
                   "colorFunction" : {
-                    "body" : "return module.findFillColor(data);",
+                    "body" : "return module.findStrokedColor(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
@@ -8948,7 +8957,7 @@
               },
               "padding" : "0px"
             },
-            "title" : "Map",
+            "title" : "Broadcast map",
             "useDashboardTimewindow" : true,
             "displayTimewindow" : true,
             "showTitleIcon" : false,
@@ -8976,7 +8985,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "af335492-2860-86f5-b11d-63009e502f09"
+          "id" : "8039144a-daf1-9a9d-0935-e5ee15bd8db4"
         }
       },
       "states" : {
@@ -9378,9 +9387,9 @@
                   "mobileHide" : true,
                   "desktopHide" : true
                 },
-                "af335492-2860-86f5-b11d-63009e502f09" : {
-                  "sizeX" : 16,
-                  "sizeY" : 11,
+                "8039144a-daf1-9a9d-0935-e5ee15bd8db4" : {
+                  "sizeX" : 11,
+                  "sizeY" : 9,
                   "row" : 0,
                   "col" : 7
                 }
