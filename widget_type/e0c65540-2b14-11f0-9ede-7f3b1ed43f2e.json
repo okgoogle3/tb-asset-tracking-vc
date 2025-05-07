@@ -13,7 +13,7 @@
       "resources" : [ ],
       "templateHtml" : "<tb-map-widget \n    [ctx]=\"ctx\">\n</tb-map-widget>",
       "templateCss" : "",
-      "controllerScript" : "self.onInit = function() {\n    self.ctx.$scope.mapWidget.onInit();\n};\n\nself.typeParameters = function() {\n    return {\n        hideDataTab: true,\n        hideDataSettings: true,\n        previewWidth: '80%',\n        embedTitlePanel: true,\n        embedActionsPanel: true,\n        datasourcesOptional: true,\n        additionalWidgetActionTypes: ['placeMapItem']\n    };\n}\n",
+      "controllerScript" : "self.onInit = function() {\n    self.ctx.$scope.mapWidget.onInit();\n    \n    self.ctx.broadcastService = self.ctx.$scope.$injector.get(self.ctx.servicesMap.get('broadcastService'));\n    self.ctx.broadcastService.on('geofencesUpdate', (event, args) => {\n        self.ctx.updateAliases();\n        self.ctx.detectChanges();\n    });\n};\n\nself.typeParameters = function() {\n    return {\n        hideDataTab: true,\n        hideDataSettings: true,\n        previewWidth: '80%',\n        embedTitlePanel: true,\n        embedActionsPanel: true,\n        datasourcesOptional: true,\n        additionalWidgetActionTypes: ['placeMapItem']\n    };\n}\n",
       "settingsForm" : [ ],
       "dataKeySettingsForm" : [ ],
       "settingsDirective" : "tb-map-widget-settings",
