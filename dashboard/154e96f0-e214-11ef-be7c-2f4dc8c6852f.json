@@ -8705,9 +8705,10 @@
                   "_hash" : 0.8009959301197831
                 } ],
                 "label" : {
-                  "show" : true,
+                  "show" : false,
                   "type" : "pattern",
-                  "pattern" : "${entityName}"
+                  "pattern" : "${entityName}",
+                  "patternFunction" : null
                 },
                 "tooltip" : {
                   "show" : true,
@@ -8764,12 +8765,12 @@
                 "markerImage" : {
                   "type" : "function",
                   "imageFunction" : {
-                    "body" : "return module.createAssetTooltip(data);",
+                    "body" : "return module.findImage(images, data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   },
-                  "images" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg" ]
+                  "images" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg", "tb-image;/api/images/tenant/boxOnline.svg", "tb-image;/api/images/tenant/boxAlarm.svg", "tb-image;/api/images/tenant/Map bullet.svg", "tb-image;/api/images/tenant/Map bullet-1.svg", "tb-image;/api/images/tenant/workerOnline.svg", "tb-image;/api/images/tenant/workerAlarm.svg", "tb-image;/api/images/tenant/workerOffline.svg", "tb-image;/api/images/tenant/Map bullet-2.svg", "tb-image;/api/images/tenant/loaderOnline.svg", "tb-image;/api/images/tenant/loaderAlarm.svg", "tb-image;/api/images/tenant/loaderOffline.svg", "tb-image;/api/images/tenant/Map bullet (2).svg" ]
                 },
                 "markerOffsetX" : 0.5,
                 "markerOffsetY" : 1,
