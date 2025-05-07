@@ -8660,14 +8660,26 @@
                   "label" : "assignedDevice",
                   "color" : "#2196f3",
                   "settings" : { },
-                  "_hash" : 0.32890006135515193
+                  "_hash" : 0.32890006135515193,
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : true,
+                  "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n}\nreturn value;"
                 }, {
                   "name" : "assignedLocation",
                   "type" : "attribute",
                   "label" : "assignedLocation",
                   "color" : "#2196f3",
                   "settings" : { },
-                  "_hash" : 0.46910514901826983
+                  "_hash" : 0.46910514901826983,
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : true,
+                  "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n}\nreturn value;"
                 }, {
                   "name" : "status",
                   "type" : "attribute",
@@ -8712,12 +8724,19 @@
                 },
                 "tooltip" : {
                   "show" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "patternFunction" : {
+                    "body" : "return module.createAssetTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
                   "trigger" : "click",
                   "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
                   "offsetX" : 0,
-                  "offsetY" : -1
+                  "offsetY" : -1,
+                  "tagActions" : null
                 },
                 "click" : {
                   "type" : "doNothing"
@@ -8764,6 +8783,8 @@
                 },
                 "markerImage" : {
                   "type" : "function",
+                  "image" : "/assets/markers/shape1.svg",
+                  "imageSize" : 34,
                   "imageFunction" : {
                     "body" : "return module.findImage(images, data);",
                     "modules" : {
