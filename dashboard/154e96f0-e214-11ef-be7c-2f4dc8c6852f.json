@@ -8128,7 +8128,7 @@
                 "dsType" : "entity",
                 "dsLabel" : "",
                 "dsDeviceId" : null,
-                "dsEntityAliasId" : "eaa11b8a-34e9-0254-699d-3e69daeb37e1",
+                "dsEntityAliasId" : "f990533b-b240-661e-4078-21de498ae551",
                 "dsFilterId" : null,
                 "additionalDataSources" : null,
                 "additionalDataKeys" : [ {
@@ -8648,7 +8648,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "eaa11b8a-34e9-0254-699d-3e69daeb37e1",
+              "entityAliasId" : "f990533b-b240-661e-4078-21de498ae551",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
@@ -10101,6 +10101,25 @@
             "fetchLastLevelOnly" : false,
             "filters" : [ {
               "relationType" : "ZoneToAsset",
+              "entityTypes" : [ "ASSET" ]
+            } ]
+          }
+        },
+        "f990533b-b240-661e-4078-21de498ae551" : {
+          "id" : "f990533b-b240-661e-4078-21de498ae551",
+          "alias" : "Location assets",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "selectedEntity",
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ {
+              "relationType" : "LocationToAsset",
               "entityTypes" : [ "ASSET" ]
             } ]
           }
