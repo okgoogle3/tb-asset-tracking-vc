@@ -1088,7 +1088,7 @@
               "type" : "entity",
               "name" : "",
               "entityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
-              "filterId" : "9d8553cf-0fa5-9617-0845-b0d98dce891c",
+              "filterId" : "15f05a19-1a40-bf5e-e5e7-f2bdbc06e3d0",
               "dataKeys" : [ {
                 "name" : "name",
                 "type" : "entityField",
@@ -1304,7 +1304,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "",
+                  "defaultValue" : "Heat-sensitive Equipment 2, Heat-sensitive Equipment 1, Worker 10, Worker 11",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -1385,7 +1385,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "",
+                  "defaultValue" : "Control room, Raw material, Packaging Area",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -1466,7 +1466,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "",
+                  "defaultValue" : "Steelmaking Production",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : true,
