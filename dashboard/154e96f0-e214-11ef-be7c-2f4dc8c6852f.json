@@ -8640,6 +8640,69 @@
                   "color" : "#2196f3",
                   "settings" : { },
                   "_hash" : 0.16584135066130767
+                }, {
+                  "name" : "type",
+                  "type" : "entityField",
+                  "label" : "Type",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.7956220608405574
+                }, {
+                  "name" : "department",
+                  "type" : "attribute",
+                  "label" : "department",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.6854139210879144
+                }, {
+                  "name" : "assignedDevice",
+                  "type" : "attribute",
+                  "label" : "assignedDevice",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.32890006135515193
+                }, {
+                  "name" : "assignedLocation",
+                  "type" : "attribute",
+                  "label" : "assignedLocation",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.46910514901826983
+                }, {
+                  "name" : "status",
+                  "type" : "attribute",
+                  "label" : "status",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.3329541372003202
+                }, {
+                  "name" : "alertActivity",
+                  "type" : "attribute",
+                  "label" : "alertActivity",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.9078510502632269
+                }, {
+                  "name" : "name",
+                  "type" : "entityField",
+                  "label" : "Name",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.3643409994840917
+                }, {
+                  "name" : "movement",
+                  "type" : "timeseries",
+                  "label" : "movement",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.11246588178160333
+                }, {
+                  "name" : "alertTypes",
+                  "type" : "attribute",
+                  "label" : "alertTypes",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.8009959301197831
                 } ],
                 "label" : {
                   "show" : true,
@@ -8680,7 +8743,7 @@
                   "settings" : { },
                   "_hash" : 0.6529845141292556
                 },
-                "markerType" : "shape",
+                "markerType" : "image",
                 "markerShape" : {
                   "shape" : "markerShape1",
                   "size" : 34,
@@ -8699,9 +8762,14 @@
                   }
                 },
                 "markerImage" : {
-                  "type" : "image",
-                  "image" : "/assets/markers/shape1.svg",
-                  "imageSize" : 34
+                  "type" : "function",
+                  "imageFunction" : {
+                    "body" : "return module.createAssetTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "images" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg" ]
                 },
                 "markerOffsetX" : 0.5,
                 "markerOffsetY" : 1,
