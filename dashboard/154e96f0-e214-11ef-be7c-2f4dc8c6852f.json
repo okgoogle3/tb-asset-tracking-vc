@@ -10114,36 +10114,6 @@
             "stateEntityParamName" : "showAllAssets",
             "defaultStateEntity" : null
           }
-        },
-        "7a253fe4-49e1-f36e-0e96-1cb97b81349d" : {
-          "id" : "7a253fe4-49e1-f36e-0e96-1cb97b81349d",
-          "alias" : "All zones",
-          "filter" : {
-            "type" : "assetType",
-            "resolveMultiple" : true,
-            "assetTypes" : [ "Image on map", "Image plan", "Shape" ],
-            "assetNameFilter" : ""
-          }
-        },
-        "50f5bac7-8298-7d81-d3b4-b8e9b4800af2" : {
-          "id" : "50f5bac7-8298-7d81-d3b4-b8e9b4800af2",
-          "alias" : "All geofences",
-          "filter" : {
-            "type" : "assetType",
-            "resolveMultiple" : true,
-            "assetTypes" : [ "Geofence" ],
-            "assetNameFilter" : ""
-          }
-        },
-        "b9739349-ece2-3d5f-e374-9303879a5423" : {
-          "id" : "b9739349-ece2-3d5f-e374-9303879a5423",
-          "alias" : "Entity from dashboard state",
-          "filter" : {
-            "type" : "stateEntity",
-            "resolveMultiple" : false,
-            "stateEntityParamName" : null,
-            "defaultStateEntity" : null
-          }
         }
       },
       "filters" : {
