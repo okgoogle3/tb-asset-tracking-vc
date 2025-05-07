@@ -8628,15 +8628,6 @@
                 "provider" : "openstreet",
                 "layerType" : "CartoDB.Positron",
                 "referenceLayer" : null
-              }, {
-                "label" : "{i18n:widgets.maps.layer.satellite}",
-                "provider" : "openstreet",
-                "layerType" : "Esri.WorldImagery"
-              }, {
-                "label" : "{i18n:widgets.maps.layer.hybrid}",
-                "provider" : "openstreet",
-                "layerType" : "Esri.WorldImagery",
-                "referenceLayer" : "openstreetmap_hybrid"
               } ],
               "imageSource" : null,
               "markers" : [ ],
@@ -8653,7 +8644,7 @@
                   "label" : "color",
                   "color" : "#2196f3",
                   "settings" : { },
-                  "_hash" : 0.6522689761207052
+                  "_hash" : 0.5926231428552414
                 } ],
                 "label" : {
                   "show" : false,
@@ -8685,7 +8676,7 @@
                   "rangeKey" : null,
                   "range" : null,
                   "colorFunction" : {
-                    "body" : "console.log(data)\nmodule.findFillColor(data);",
+                    "body" : "module.findFillColor(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
