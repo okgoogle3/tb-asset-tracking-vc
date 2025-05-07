@@ -8629,19 +8629,56 @@
               "markers" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "e98fed76-25d1-9b7a-286c-2386690d996f",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "createdTime",
+                  "type" : "entityField",
+                  "label" : "Created time",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.16584135066130767
+                } ],
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "offsetX" : 0,
+                  "offsetY" : -1
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
                 "xKey" : {
                   "name" : "latitude",
+                  "type" : "timeseries",
                   "label" : "latitude",
-                  "type" : "attribute",
+                  "color" : "#2196f3",
                   "settings" : { },
-                  "color" : "#2196f3"
+                  "_hash" : 0.17038111869679518
                 },
                 "yKey" : {
                   "name" : "longitude",
+                  "type" : "timeseries",
                   "label" : "longitude",
-                  "type" : "attribute",
+                  "color" : "#2196f3",
                   "settings" : { },
-                  "color" : "#2196f3"
+                  "_hash" : 0.6529845141292556
                 },
                 "markerType" : "shape",
                 "markerShape" : {
@@ -8668,7 +8705,6 @@
                 },
                 "markerOffsetX" : 0.5,
                 "markerOffsetY" : 1,
-                "positionFunction" : "return {x: origXPos, y: origYPos};",
                 "markerClustering" : {
                   "enable" : false,
                   "zoomOnClick" : true,
@@ -8681,72 +8717,30 @@
                   "lazyLoad" : true,
                   "useClusterMarkerColorFunction" : false,
                   "clusterMarkerColorFunction" : null
-                },
-                "label" : {
-                  "show" : true,
-                  "type" : "pattern",
-                  "pattern" : "${entityName}"
-                },
-                "tooltip" : {
-                  "show" : true,
-                  "trigger" : "click",
-                  "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
-                  "offsetX" : 0,
-                  "offsetY" : -1
-                },
-                "click" : {
-                  "type" : "doNothing"
-                },
-                "edit" : {
-                  "enabledActions" : [ ],
-                  "attributeScope" : "SERVER_SCOPE",
-                  "snappable" : false
-                },
-                "dsEntityAliasId" : "e98fed76-25d1-9b7a-286c-2386690d996f"
+                }
               } ],
               "polygons" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
-                "polygonKey" : {
-                  "name" : "perimeter",
-                  "label" : "perimeter",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "color",
                   "type" : "attribute",
+                  "label" : "color",
+                  "color" : "#2196f3",
                   "settings" : { },
-                  "color" : "#2196f3"
-                },
-                "fillType" : "color",
-                "fillColor" : {
-                  "type" : "constant",
-                  "color" : "rgba(51,136,255,0.2)"
-                },
-                "fillImage" : {
-                  "type" : "image",
-                  "image" : "/assets/widget-preview-empty.svg",
-                  "preserveAspectRatio" : true,
-                  "opacity" : 1,
-                  "angle" : 0,
-                  "scale" : 1
-                },
-                "fillStripe" : {
-                  "weight" : 3,
-                  "color" : {
-                    "type" : "constant",
-                    "color" : "#8f8f8f"
-                  },
-                  "spaceWeight" : 9,
-                  "spaceColor" : {
-                    "type" : "constant",
-                    "color" : "rgba(143,143,143,0)"
-                  },
-                  "angle" : 45
-                },
-                "strokeColor" : {
-                  "type" : "constant",
-                  "color" : "#3388ff"
-                },
-                "strokeWeight" : 3,
+                  "_hash" : 0.7899397588287345
+                }, {
+                  "name" : "createdTime",
+                  "type" : "entityField",
+                  "label" : "Created time",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.9548344825171212
+                } ],
                 "label" : {
                   "show" : false,
                   "type" : "pattern",
@@ -8764,53 +8758,88 @@
                 "click" : {
                   "type" : "doNothing"
                 },
+                "groups" : null,
                 "edit" : {
                   "enabledActions" : [ ],
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 },
-                "dsEntityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040"
+                "fillType" : "color",
+                "fillColor" : {
+                  "type" : "function",
+                  "color" : "rgba(51,136,255,0.2)",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findFillColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "preserveAspectRatio" : true,
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
+                },
+                "strokeColor" : {
+                  "type" : "function",
+                  "color" : "#3388ff",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findStrokedColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
+                },
+                "strokeWeight" : 3,
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                }
               }, {
                 "dsType" : "entity",
                 "dsLabel" : "",
-                "polygonKey" : {
-                  "name" : "perimeter",
-                  "label" : "perimeter",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "18d57096-ebad-af54-4542-0d0ddf8554f0",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "color",
                   "type" : "attribute",
+                  "label" : "color",
+                  "color" : "#2196f3",
                   "settings" : { },
-                  "color" : "#2196f3"
-                },
-                "fillType" : "color",
-                "fillColor" : {
-                  "type" : "constant",
-                  "color" : "rgba(51,136,255,0.2)"
-                },
-                "fillImage" : {
-                  "type" : "image",
-                  "image" : "/assets/widget-preview-empty.svg",
-                  "preserveAspectRatio" : true,
-                  "opacity" : 1,
-                  "angle" : 0,
-                  "scale" : 1
-                },
-                "fillStripe" : {
-                  "weight" : 3,
-                  "color" : {
-                    "type" : "constant",
-                    "color" : "#8f8f8f"
-                  },
-                  "spaceWeight" : 9,
-                  "spaceColor" : {
-                    "type" : "constant",
-                    "color" : "rgba(143,143,143,0)"
-                  },
-                  "angle" : 45
-                },
-                "strokeColor" : {
-                  "type" : "constant",
-                  "color" : "#3388ff"
-                },
-                "strokeWeight" : 3,
+                  "_hash" : 0.28397784975920615
+                }, {
+                  "name" : "createdTime",
+                  "type" : "entityField",
+                  "label" : "Created time",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.6482059677534767
+                } ],
                 "label" : {
                   "show" : false,
                   "type" : "pattern",
@@ -8828,12 +8857,66 @@
                 "click" : {
                   "type" : "doNothing"
                 },
+                "groups" : null,
                 "edit" : {
                   "enabledActions" : [ ],
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 },
-                "dsEntityAliasId" : "18d57096-ebad-af54-4542-0d0ddf8554f0"
+                "fillType" : "color",
+                "fillColor" : {
+                  "type" : "function",
+                  "color" : "rgba(51,136,255,0.2)",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findFillColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "preserveAspectRatio" : true,
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
+                },
+                "strokeColor" : {
+                  "type" : "function",
+                  "color" : "#3388ff",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findStrokedColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
+                },
+                "strokeWeight" : 3,
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                }
               } ],
               "circles" : [ ],
               "additionalDataSources" : [ ],
