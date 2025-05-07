@@ -9373,7 +9373,10 @@
                   "sizeX" : 5,
                   "sizeY" : 11,
                   "row" : 0,
-                  "col" : 0
+                  "col" : 0,
+                  "resizable" : true,
+                  "mobileHide" : true,
+                  "desktopHide" : true
                 },
                 "af335492-2860-86f5-b11d-63009e502f09" : {
                   "sizeX" : 16,
