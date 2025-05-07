@@ -8685,16 +8685,16 @@
             "main" : {
               "widgets" : {
                 "c644da83-982e-c596-3f23-2a7a78e2cb36" : {
-                  "sizeX" : 16,
+                  "sizeX" : 18,
                   "sizeY" : 11,
                   "row" : 0,
                   "col" : 0
                 },
                 "2b0df2ee-c464-d4be-a0f2-b786c4bd6598" : {
-                  "sizeX" : 7,
+                  "sizeX" : 6,
                   "sizeY" : 6,
                   "row" : 0,
-                  "col" : 16
+                  "col" : 18
                 }
               },
               "gridSettings" : {
