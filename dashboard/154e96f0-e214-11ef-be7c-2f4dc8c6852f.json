@@ -8676,7 +8676,7 @@
                   "rangeKey" : null,
                   "range" : null,
                   "colorFunction" : {
-                    "body" : "module.findFillColor(data);",
+                    "body" : "return module.findFillColor(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
@@ -8709,7 +8709,7 @@
                   "rangeKey" : null,
                   "range" : null,
                   "colorFunction" : {
-                    "body" : "module.findStrokedColor(data);",
+                    "body" : "return module.findStrokedColor(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
