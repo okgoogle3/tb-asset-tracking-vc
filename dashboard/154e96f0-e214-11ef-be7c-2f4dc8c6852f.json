@@ -9613,26 +9613,6 @@
         }
       },
       "entityAliases" : {
-        "9bc1e366-e9b3-fe10-0879-4daa13fbb8cc" : {
-          "id" : "9bc1e366-e9b3-fe10-0879-4daa13fbb8cc",
-          "alias" : "Assets",
-          "filter" : {
-            "type" : "assetType",
-            "resolveMultiple" : true,
-            "assetTypes" : [ "Box", "Loader", "Tool", "Worker" ],
-            "assetNameFilter" : ""
-          }
-        },
-        "868672d7-2554-0d05-c85f-aad8f4826a2d" : {
-          "id" : "868672d7-2554-0d05-c85f-aad8f4826a2d",
-          "alias" : "Devices",
-          "filter" : {
-            "type" : "deviceType",
-            "resolveMultiple" : true,
-            "deviceTypes" : [ "Anchor", "Tag" ],
-            "deviceNameFilter" : ""
-          }
-        },
         "10b1d443-e815-ef4f-35b5-d9d97a3366b4" : {
           "id" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
           "alias" : "Selected entity",
@@ -9641,15 +9621,6 @@
             "resolveMultiple" : false,
             "stateEntityParamName" : "selectedEntity",
             "defaultStateEntity" : null
-          }
-        },
-        "93de69cc-58c7-ce0b-0011-bfaf961e09b6" : {
-          "id" : "93de69cc-58c7-ce0b-0011-bfaf961e09b6",
-          "alias" : "Users",
-          "filter" : {
-            "type" : "entityType",
-            "resolveMultiple" : true,
-            "entityType" : "USER"
           }
         },
         "866a50cc-34a1-fe42-587b-c1ac982a0ea3" : {
