@@ -1243,19 +1243,31 @@
                 },
                 "tooltip" : {
                   "show" : true,
-                  "trigger" : "click",
-                  "autoclose" : true,
                   "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
-                  "offsetX" : 0,
-                  "offsetY" : -1,
                   "patternFunction" : {
                     "body" : "return module.createAssetTooltip(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   },
-                  "tagActions" : null
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "offsetX" : 0,
+                  "offsetY" : -1,
+                  "tagActions" : [ {
+                    "name" : "assetDetails",
+                    "type" : "custom",
+                    "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst assetsDashboardName = \"Assets dashboard\";\n\ndashboardService.getTenantDashboards(pageLink).subscribe(response => {\n    const dashboardId = response.data.find(dashboard => dashboard.title === assetsDashboardName).id.id;\n    \n    const jsonStr = JSON.stringify([\n        {\n            id: \"default\",\n            params: {\n                stateId: \"assetDetails\",\n                prevState: \"assets\",\n                subState: \"general\",\n                statesArray: [\n                    {\n                        stateId: \"assets\",\n                        name: \"Assets\"\n                    },\n                    {\n                        stateId: \"assetDetails\",\n                        name: entityName\n                    }\n                ],\n                selectedEntity: {\n                    entityName,\n                    entityId,\n                    entityLabel\n                }\n            }\n        }\n    ]);\n    \n    const state = btoa(jsonStr);\n    \n    const queryParams = {\n        stateId: \"Assets\",\n        dashboardId,\n        hideDashboardToolbar: true,\n        state\n    };\n    \n    router.navigate(['/iframeView'], {queryParams});\n});",
+                    "openInSeparateDialog" : false,
+                    "openInPopover" : false
+                  }, {
+                    "name" : "historyDetails",
+                    "type" : "custom",
+                    "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst assetsDashboardName = \"Assets dashboard\";\n\ndashboardService.getTenantDashboards(pageLink).subscribe(response => {\n    const dashboardId = response.data.find(dashboard => dashboard.title === assetsDashboardName).id.id;\n    \n    const jsonStr = JSON.stringify([\n        {\n            id: \"default\",\n            params: {\n                stateId: \"assetDetails\",\n                prevState: \"assets\",\n                subState: \"eventHistory\",\n                statesArray: [\n                    {\n                        stateId: \"assets\",\n                        name: \"Assets\"\n                    },\n                    {\n                        stateId: \"assetDetails\",\n                        name: entityName\n                    }\n                ],\n                selectedEntity: {\n                    entityName,\n                    entityId,\n                    entityLabel\n                }\n            }\n        }\n    ]);\n    \n    const state = btoa(jsonStr);\n    \n    const queryParams = {\n        stateId: \"Assets\",\n        dashboardId,\n        hideDashboardToolbar: true,\n        state\n    };\n    \n    router.navigate(['/iframeView'], {queryParams});\n});",
+                    "openInSeparateDialog" : false,
+                    "openInPopover" : false
+                  } ]
                 },
                 "click" : {
                   "type" : "doNothing"
@@ -1302,6 +1314,8 @@
                 },
                 "markerImage" : {
                   "type" : "function",
+                  "image" : "/assets/markers/shape1.svg",
+                  "imageSize" : 34,
                   "imageFunction" : {
                     "body" : "return module.findImage(images, data);",
                     "modules" : {
