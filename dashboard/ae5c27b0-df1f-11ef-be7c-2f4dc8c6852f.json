@@ -5795,7 +5795,42 @@
                 "dsEntityAliasId" : "f9e4438c-85d7-dc29-f53e-7bb248b981df",
                 "dsFilterId" : null,
                 "additionalDataSources" : null,
-                "additionalDataKeys" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "alertActivity",
+                  "type" : "attribute",
+                  "label" : "alertActivity",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.2783642557752455
+                }, {
+                  "name" : "status",
+                  "type" : "attribute",
+                  "label" : "status",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.9349900034742032
+                }, {
+                  "name" : "movement",
+                  "type" : "timeseries",
+                  "label" : "movement",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.01370807532552032
+                }, {
+                  "name" : "type",
+                  "type" : "entityField",
+                  "label" : "Type",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.3339728318025861
+                }, {
+                  "name" : "name",
+                  "type" : "entityField",
+                  "label" : "Name",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.3429562497585842
+                } ],
                 "label" : {
                   "show" : false,
                   "type" : "pattern",
@@ -5804,18 +5839,18 @@
                 },
                 "tooltip" : {
                   "show" : false,
+                  "trigger" : "click",
+                  "autoclose" : true,
                   "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
                   "patternFunction" : {
                     "body" : "return module.createAssetTooltip(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   },
-                  "trigger" : "click",
-                  "autoclose" : true,
-                  "offsetX" : 0,
-                  "offsetY" : -1,
                   "tagActions" : null
                 },
                 "click" : {
@@ -5843,7 +5878,7 @@
                   "settings" : { },
                   "_hash" : 0.9609893338349781
                 },
-                "markerType" : "shape",
+                "markerType" : "image",
                 "markerShape" : {
                   "shape" : "markerShape1",
                   "size" : 34,
@@ -5862,9 +5897,14 @@
                   }
                 },
                 "markerImage" : {
-                  "type" : "image",
-                  "image" : "/assets/markers/shape1.svg",
-                  "imageSize" : 34
+                  "type" : "function",
+                  "imageFunction" : {
+                    "body" : "return module.findImage(images, data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "images" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg", "tb-image;/api/images/tenant/boxOnline.svg", "tb-image;/api/images/tenant/boxAlarm.svg", "tb-image;/api/images/tenant/Map bullet.svg", "tb-image;/api/images/tenant/Map bullet-1.svg", "tb-image;/api/images/tenant/workerOnline.svg", "tb-image;/api/images/tenant/workerAlarm.svg", "tb-image;/api/images/tenant/workerOffline.svg", "tb-image;/api/images/tenant/Map bullet-2.svg", "tb-image;/api/images/tenant/loaderOnline.svg", "tb-image;/api/images/tenant/loaderAlarm.svg", "tb-image;/api/images/tenant/loaderOffline.svg", "tb-image;/api/images/tenant/Map bullet (2).svg" ]
                 },
                 "markerOffsetX" : 0.5,
                 "markerOffsetY" : 1,
