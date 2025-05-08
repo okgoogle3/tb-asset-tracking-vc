@@ -2,7 +2,7 @@
   "entityType" : "WIDGET_TYPE",
   "entity" : {
     "fqn" : "alarm_wide_card",
-    "name" : "Alarm wide card",
+    "name" : "Generic alarm card",
     "deprecated" : false,
     "image" : "tb-image;/api/images/tenant/Screenshot from 2025-01-22 08-50-15.png",
     "description" : null,
