@@ -1349,12 +1349,12 @@
                   "settings" : { },
                   "_hash" : 0.48306712676344343
                 }, {
-                  "name" : "createdTime",
-                  "type" : "entityField",
-                  "label" : "Created time",
+                  "name" : "relatedZoneName",
+                  "type" : "attribute",
+                  "label" : "relatedZoneName",
                   "color" : "#9c27b0",
                   "settings" : { },
-                  "_hash" : 0.3293059820258879
+                  "_hash" : 0.3541462710334712
                 } ],
                 "label" : {
                   "show" : false,
@@ -1363,16 +1363,18 @@
                 },
                 "tooltip" : {
                   "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
                   "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
                   "patternFunction" : {
                     "body" : "return module.createGeofenceTooltip(data);",
                     "modules" : {
                       "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
                     }
                   },
-                  "trigger" : "click",
-                  "autoclose" : true,
                   "tagActions" : null
                 },
                 "click" : {
@@ -1470,7 +1472,7 @@
             "dropShadow" : false,
             "enableFullscreen" : false,
             "widgetStyle" : { },
-            "widgetCss" : "",
+            "widgetCss" : ".leaflet-popup-content-wrapper, .leaflet-popup-tip {\n    border: 1px solid #D0D5DD;\n    box-shadow: none;\n    border-radius: 8px;\n}\n\n.leaflet-popup-content {\n    margin: 0px;\n    padding: 15px;\n}\n\n.leaflet-container a {\n    text-align: center;\n    font-size: 15px;\n    font-weight: 500;\n    color: #026AA2;\n    text-decoration: none;\n    line-height: 28px;\n    border-bottom: 0;\n}",
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
