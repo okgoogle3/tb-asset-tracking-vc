@@ -7952,9 +7952,7 @@
             "titleTooltip" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
-            "widgetStyle" : {
-              "graggableMode" : "true"
-            },
+            "widgetStyle" : { },
             "widgetCss" : "",
             "titleStyle" : {
               "fontSize" : "16px",
