@@ -9349,12 +9349,12 @@
               "defaultZoomLevel" : null,
               "mapPageSize" : 16384,
               "mapActionButtons" : [ {
-                "label" : "Edit mode",
-                "icon" : "edit",
+                "label" : "Save coordinates",
+                "icon" : "save",
                 "color" : "#0000008a",
                 "action" : {
                   "type" : "custom",
-                  "customFunction" : "widgetContext.$scope.draggableMode = !widgetContext.$scope.draggableMode; ",
+                  "customFunction" : "widgetContext.$scope.saveCoordinates();",
                   "openInSeparateDialog" : false,
                   "openInPopover" : false
                 }
