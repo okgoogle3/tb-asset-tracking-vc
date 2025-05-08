@@ -1820,344 +1820,6 @@
           "col" : 0,
           "id" : "2ddad070-183b-fa8f-80ec-f825c85b6e87"
         },
-        "b21e826b-cf13-3784-9778-1bf2ad7d6063" : {
-          "typeFullFqn" : "tenant.map_with_custom_navigation_route",
-          "type" : "latest",
-          "sizeX" : 8.5,
-          "sizeY" : 6,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "d7e6eed0-a062-3146-4567-d742b00cdc1f",
-              "filterId" : null,
-              "dataKeys" : [ {
-                "name" : "pointA",
-                "type" : "attribute",
-                "label" : "pointA",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.5616589424541241
-              }, {
-                "name" : "pointB",
-                "type" : "attribute",
-                "label" : "pointB",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.6491196072511483
-              }, {
-                "name" : "pointC",
-                "type" : "attribute",
-                "label" : "pointC",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.16876387727161823
-              }, {
-                "name" : "perimeter",
-                "type" : "attribute",
-                "label" : "perimeter",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.9519370192043484
-              }, {
-                "name" : "image",
-                "type" : "attribute",
-                "label" : "image",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.5033190602760085
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            }, {
-              "type" : "entity",
-              "entityAliasId" : "f9e4438c-85d7-dc29-f53e-7bb248b981df",
-              "dataKeys" : [ {
-                "name" : "latitude",
-                "type" : "timeseries",
-                "label" : "latitude",
-                "color" : "#3f51b5",
-                "settings" : { },
-                "_hash" : 0.5038063278926626
-              }, {
-                "name" : "longitude",
-                "type" : "timeseries",
-                "label" : "longitude",
-                "color" : "#e91e63",
-                "settings" : { },
-                "_hash" : 0.7156884957769001
-              }, {
-                "name" : "assignedDevice",
-                "type" : "attribute",
-                "label" : "assignedDevice",
-                "color" : "#ffeb3b",
-                "settings" : { },
-                "_hash" : 0.6370584465775482,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n}\nreturn value;"
-              }, {
-                "name" : "assignedLocation",
-                "type" : "attribute",
-                "label" : "assignedLocation",
-                "color" : "#03a9f4",
-                "settings" : { },
-                "_hash" : 0.6249949391326373,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n}\nreturn value;"
-              }, {
-                "name" : "department",
-                "type" : "attribute",
-                "label" : "department",
-                "color" : "#ff9800",
-                "settings" : { },
-                "_hash" : 0.8573067013917399
-              }, {
-                "name" : "alertActivity",
-                "type" : "attribute",
-                "label" : "alertActivity",
-                "color" : "#673ab7",
-                "settings" : { },
-                "_hash" : 0.11350224757847394
-              }, {
-                "name" : "type",
-                "type" : "entityField",
-                "label" : "Type",
-                "color" : "#cddc39",
-                "settings" : { },
-                "_hash" : 0.7472805461031573
-              }, {
-                "name" : "status",
-                "type" : "attribute",
-                "label" : "status",
-                "color" : "#009688",
-                "settings" : { },
-                "_hash" : 0.26032934271511987
-              }, {
-                "name" : "movement",
-                "type" : "timeseries",
-                "label" : "movement",
-                "color" : "#ff5722",
-                "settings" : { },
-                "_hash" : 0.588134584866203
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            }, {
-              "type" : "entity",
-              "entityAliasId" : "e5743972-3a20-312c-6a26-497b77be7b00",
-              "dataKeys" : [ {
-                "name" : "perimeter",
-                "type" : "attribute",
-                "label" : "perimeter 2",
-                "color" : "#3f51b5",
-                "settings" : { },
-                "_hash" : 0.9183746645505595,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "color",
-                "type" : "attribute",
-                "label" : "color",
-                "color" : "#e91e63",
-                "settings" : { },
-                "_hash" : 0.8930409275318973
-              }, {
-                "name" : "createdTime",
-                "type" : "entityField",
-                "label" : "Created time",
-                "color" : "#795548",
-                "settings" : { },
-                "_hash" : 0.9639081056883618
-              }, {
-                "name" : "name",
-                "type" : "entityField",
-                "label" : "Name",
-                "color" : "#ff5722",
-                "settings" : { },
-                "_hash" : 0.5380651186529859
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1732173591900,
-                  "endTimeMs" : 1732259991900
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "provider" : "openstreet-map",
-              "gmApiKey" : "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
-              "gmDefaultMapType" : "roadmap",
-              "mapProvider" : "CartoDB.Positron",
-              "useCustomProvider" : false,
-              "mapProviderHere" : "HERE.normalDay",
-              "credentials" : {
-                "useV3" : true,
-                "app_id" : "AhM6TzD9ThyK78CT3ptx",
-                "app_code" : "p6NPiITB3Vv0GMUFnkLOOg",
-                "apiKey" : "kVXykxAfZ6LS4EbCTO02soFVfjA7HoBzNVVH9u7nzoE"
-              },
-              "mapImageUrl" : "tb-image;/api/images/system/label_widget_system_widget_background.svg",
-              "tmApiKey" : "84d6d83e0e51e481e50454ccbe8986b",
-              "tmDefaultMapType" : "roadmap",
-              "latKeyName" : "latitude",
-              "lngKeyName" : "longitude",
-              "xPosKeyName" : "xPos",
-              "yPosKeyName" : "yPos",
-              "defaultCenterPosition" : "0,0",
-              "disableScrollZooming" : false,
-              "disableZoomControl" : false,
-              "fitMapBounds" : true,
-              "useDefaultCenterPosition" : false,
-              "mapPageSize" : 16384,
-              "markerOffsetX" : 0.5,
-              "markerOffsetY" : 1,
-              "posFunction" : "return {x: origXPos, y: origYPos};",
-              "draggableMarker" : false,
-              "showLabel" : false,
-              "useLabelFunction" : false,
-              "label" : "${entityName}",
-              "showTooltip" : false,
-              "showTooltipAction" : "click",
-              "autocloseTooltip" : true,
-              "useTooltipFunction" : false,
-              "tooltipPattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}",
-              "tooltipOffsetX" : 0,
-              "tooltipOffsetY" : -1,
-              "color" : "#FE7569",
-              "useColorFunction" : false,
-              "useMarkerImageFunction" : true,
-              "markerImageSize" : 34,
-              "markerImages" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg", "tb-image;/api/images/tenant/boxOnline.svg", "tb-image;/api/images/tenant/boxAlarm.svg", "tb-image;/api/images/tenant/Map bullet.svg", "tb-image;/api/images/tenant/Map bullet-1.svg", "tb-image;/api/images/tenant/workerOnline.svg", "tb-image;/api/images/tenant/workerAlarm.svg", "tb-image;/api/images/tenant/workerOffline.svg", "tb-image;/api/images/tenant/Map bullet-2.svg", "tb-image;/api/images/tenant/loaderOnline.svg", "tb-image;/api/images/tenant/loaderAlarm.svg", "tb-image;/api/images/tenant/loaderOffline.svg", "tb-image;/api/images/tenant/Map bullet (2).svg" ],
-              "showPolygon" : true,
-              "polygonKeyName" : "perimeter 2",
-              "editablePolygon" : false,
-              "showPolygonLabel" : false,
-              "usePolygonLabelFunction" : false,
-              "polygonLabel" : "${entityName}",
-              "showPolygonTooltip" : true,
-              "showPolygonTooltipAction" : "click",
-              "autoClosePolygonTooltip" : true,
-              "usePolygonTooltipFunction" : true,
-              "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-              "polygonColor" : "#3388ff",
-              "polygonOpacity" : 0.15,
-              "usePolygonColorFunction" : true,
-              "polygonStrokeColor" : "#3388ff",
-              "polygonStrokeOpacity" : 0.2,
-              "polygonStrokeWeight" : 1,
-              "usePolygonStrokeColorFunction" : true,
-              "showCircle" : false,
-              "circleKeyName" : "perimeter",
-              "editableCircle" : false,
-              "showCircleLabel" : false,
-              "useCircleLabelFunction" : false,
-              "circleLabel" : "${entityName}",
-              "showCircleTooltip" : false,
-              "showCircleTooltipAction" : "click",
-              "autoCloseCircleTooltip" : true,
-              "useCircleTooltipFunction" : false,
-              "circleTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-              "circleFillColor" : "#3388ff",
-              "circleFillColorOpacity" : 0.2,
-              "useCircleFillColorFunction" : false,
-              "circleStrokeColor" : "#3388ff",
-              "circleStrokeOpacity" : 1,
-              "circleStrokeWeight" : 3,
-              "useCircleStrokeColorFunction" : false,
-              "useClusterMarkers" : false,
-              "zoomOnClick" : true,
-              "maxClusterRadius" : 80,
-              "animate" : true,
-              "spiderfyOnMaxZoom" : false,
-              "showCoverageOnHover" : true,
-              "chunkedLoading" : false,
-              "removeOutsideVisibleBounds" : true,
-              "snappable" : false,
-              "initDragMode" : false,
-              "hideAllControlButton" : false,
-              "hideDrawControlButton" : false,
-              "hideEditControlButton" : false,
-              "hideRemoveControlButton" : false,
-              "draggableImage" : false,
-              "imageAlias" : "Selected asset zone",
-              "aliasPolygonKey" : "perimeter",
-              "imageKey" : "image",
-              "markerImage" : "tb-image;/api/images/tenant/Map bullet (3).png",
-              "polygonStrokeColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";",
-              "polygonColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";",
-              "polygonTooltipFunction" : "let createdTime = data[\"Created time\"];\n\nif(createdTime){\n    createdTime = moment(createdTime).format(\"DD.MM.yyyy HH:mm\")\n}\n\nreturn `<div>\n            <span style=\"font-size: 22px;\n                        font-weight: 600;\n                        color: #0C111D;\n                        text-align:right;\n                        line-height: 32px;\">${data.entityName}</span>\n            \n            <div style=\"display: flex;justify-content:space-between;margin-top:5px;gap: 10px;\">\n                <span style=\"color:#344054;\">Created time</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${createdTime}</span>\n            </div>\n        </div>`",
-              "markerImageFunction" : "var type = data['Type'];\nvar isAlarm = data['alertActivity'];\nvar isActive = data['status'];\nvar isMovement = data['movement'];\n\nlet index;\n\nif (type == 'Tool'){\n    index = 0;\n} else if(type == \"Box\"){\n    index = 4;\n} else if(type == \"Worker\"){\n    index = 8;\n} else if(type == \"Loader\"){\n    index = 12;\n}\nif(isAlarm == \"true\"){\n    index += 1;\n} else {\n    if(isActive != \"true\"){\n        index += 2;\n    } else if(isMovement == \"true\"){\n        index += 3;\n    }\n}\n\nreturn {\n    url: images[index],\n    size: 28\n}"
-            },
-            "title" : "Map with photo",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "widgetStyle" : {
-              "border" : "1px solid #D0D5DD"
-            },
-            "actions" : { },
-            "displayTimewindow" : true,
-            "enableDataExport" : false,
-            "borderRadius" : "12px",
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "b21e826b-cf13-3784-9778-1bf2ad7d6063"
-        },
         "c15b72bc-548b-a2f0-997e-ff49eabf6e2c" : {
           "typeFullFqn" : "tenant.broadcast_image_map",
           "type" : "latest",
@@ -6161,6 +5823,414 @@
           "row" : 0,
           "col" : 0,
           "id" : "43a6c600-e21d-4103-854d-6786abeef70f"
+        },
+        "af07cf66-486e-408c-0160-9dad82e79e70" : {
+          "typeFullFqn" : "tenant.floorplan_custom_map_edit",
+          "type" : "latest",
+          "sizeX" : 8.5,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "d7e6eed0-a062-3146-4567-d742b00cdc1f",
+              "dataKeys" : [ {
+                "name" : "pointA",
+                "type" : "attribute",
+                "label" : "pointA",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6976802871572952,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)) {\n    return JSON.parse(value);\n} return value;"
+              }, {
+                "name" : "pointB",
+                "type" : "attribute",
+                "label" : "pointB",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.21974509048673552,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)) {\n    return JSON.parse(value);\n} return value;"
+              }, {
+                "name" : "pointC",
+                "type" : "attribute",
+                "label" : "pointC",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.3918728747150376,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)) {\n    return JSON.parse(value);\n} return value;"
+              }, {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.9966826006826204,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)) {\n    return JSON.parse(value);\n} return value;"
+              }, {
+                "name" : "image",
+                "type" : "attribute",
+                "label" : "image",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.9266563012757127
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1746619913940,
+                  "endTimeMs" : 1746706313940
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "mapType" : "geoMap",
+              "layers" : [ {
+                "label" : "{i18n:widgets.maps.layer.roadmap}",
+                "provider" : "openstreet",
+                "layerType" : "CartoDB.Positron",
+                "referenceLayer" : null
+              }, {
+                "label" : "{i18n:widgets.maps.layer.satellite}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery"
+              }, {
+                "label" : "{i18n:widgets.maps.layer.hybrid}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery",
+                "referenceLayer" : "openstreetmap_hybrid"
+              } ],
+              "imageSource" : null,
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "f9e4438c-85d7-dc29-f53e-7bb248b981df",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "alertActivity",
+                  "type" : "attribute",
+                  "label" : "alertActivity",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.2783642557752455
+                }, {
+                  "name" : "status",
+                  "type" : "attribute",
+                  "label" : "status",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.9349900034742032
+                }, {
+                  "name" : "movement",
+                  "type" : "timeseries",
+                  "label" : "movement",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.01370807532552032
+                }, {
+                  "name" : "type",
+                  "type" : "entityField",
+                  "label" : "Type",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.3339728318025861
+                }, {
+                  "name" : "name",
+                  "type" : "entityField",
+                  "label" : "Name",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.3429562497585842
+                } ],
+                "label" : {
+                  "show" : false,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}",
+                  "patternFunction" : null
+                },
+                "tooltip" : {
+                  "show" : false,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
+                  "patternFunction" : {
+                    "body" : "return module.createAssetTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "tagActions" : null
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "xKey" : {
+                  "name" : "latitude",
+                  "type" : "timeseries",
+                  "label" : "latitude",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.6140000443754137
+                },
+                "yKey" : {
+                  "name" : "longitude",
+                  "type" : "timeseries",
+                  "label" : "longitude",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.9609893338349781
+                },
+                "markerType" : "image",
+                "markerShape" : {
+                  "shape" : "markerShape1",
+                  "size" : 34,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "markerIcon" : {
+                  "iconContainer" : "iconContainer1",
+                  "icon" : "mdi:lightbulb-on",
+                  "size" : 48,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "markerImage" : {
+                  "type" : "function",
+                  "imageFunction" : {
+                    "body" : "return module.findImage(images, data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "images" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg", "tb-image;/api/images/tenant/boxOnline.svg", "tb-image;/api/images/tenant/boxAlarm.svg", "tb-image;/api/images/tenant/Map bullet.svg", "tb-image;/api/images/tenant/Map bullet-1.svg", "tb-image;/api/images/tenant/workerOnline.svg", "tb-image;/api/images/tenant/workerAlarm.svg", "tb-image;/api/images/tenant/workerOffline.svg", "tb-image;/api/images/tenant/Map bullet-2.svg", "tb-image;/api/images/tenant/loaderOnline.svg", "tb-image;/api/images/tenant/loaderAlarm.svg", "tb-image;/api/images/tenant/loaderOffline.svg", "tb-image;/api/images/tenant/Map bullet (2).svg" ]
+                },
+                "markerOffsetX" : 0.5,
+                "markerOffsetY" : 1,
+                "markerClustering" : {
+                  "enable" : false,
+                  "zoomOnClick" : true,
+                  "maxZoom" : null,
+                  "maxClusterRadius" : 80,
+                  "zoomAnimation" : true,
+                  "showCoverageOnHover" : true,
+                  "spiderfyOnMaxZoom" : false,
+                  "chunkedLoad" : false,
+                  "lazyLoad" : true,
+                  "useClusterMarkerColorFunction" : false,
+                  "clusterMarkerColorFunction" : null
+                }
+              } ],
+              "polygons" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "e5743972-3a20-312c-6a26-497b77be7b00",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "color",
+                  "type" : "attribute",
+                  "label" : "color",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.021838166546417348
+                } ],
+                "label" : {
+                  "show" : false,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "tooltip" : {
+                  "show" : false,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "fillType" : "color",
+                "fillColor" : {
+                  "type" : "function",
+                  "color" : "rgba(51,136,255,0.2)",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findFillColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "preserveAspectRatio" : true,
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
+                },
+                "strokeColor" : {
+                  "type" : "function",
+                  "color" : "#3388ff",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findStrokedColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
+                },
+                "strokeWeight" : 3,
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                }
+              } ],
+              "circles" : [ ],
+              "additionalDataSources" : [ ],
+              "controlsPosition" : "topleft",
+              "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
+              "scales" : [ ],
+              "dragModeButton" : false,
+              "fitMapBounds" : true,
+              "useDefaultCenterPosition" : false,
+              "defaultCenterPosition" : "0,0",
+              "defaultZoomLevel" : null,
+              "mapPageSize" : 16384,
+              "mapActionButtons" : [ ],
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0px"
+            },
+            "title" : "Simple custom map",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "configMode" : "advanced",
+            "titleFont" : null,
+            "titleColor" : null,
+            "margin" : "0px",
+            "borderRadius" : "12px",
+            "iconSize" : "24px",
+            "titleIcon" : "map",
+            "iconColor" : "#1F6BDD",
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "af07cf66-486e-408c-0160-9dad82e79e70"
         }
       },
       "states" : {
@@ -6409,9 +6479,9 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "b21e826b-cf13-3784-9778-1bf2ad7d6063" : {
+                "af07cf66-486e-408c-0160-9dad82e79e70" : {
                   "sizeX" : 24,
-                  "sizeY" : 11,
+                  "sizeY" : 12,
                   "row" : 0,
                   "col" : 0
                 }
