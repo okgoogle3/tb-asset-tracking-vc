@@ -9208,7 +9208,7 @@
                 },
                 "groups" : null,
                 "edit" : {
-                  "enabledActions" : [ ],
+                  "enabledActions" : [ "add", "edit", "move", "remove" ],
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 },
