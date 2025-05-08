@@ -1034,28 +1034,59 @@
                 "label" : "pointA",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.05834624948389977
+                "_hash" : 0.05834624948389977,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
               }, {
                 "name" : "pointB",
                 "type" : "attribute",
                 "label" : "pointB",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.10815988263798326
+                "_hash" : 0.10815988263798326,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
               }, {
                 "name" : "pointC",
                 "type" : "attribute",
                 "label" : "pointC",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.5676963944190284
+                "_hash" : 0.5676963944190284,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
               }, {
                 "name" : "polygon",
                 "type" : "attribute",
                 "label" : "polygon",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.03358930465375154
+                "_hash" : 0.03358930465375154,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
+              }, {
+                "name" : "image",
+                "type" : "attribute",
+                "label" : "image",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.4480669613319457
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
