@@ -1230,7 +1230,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Heat-sensitive Equipment 2, Heat-sensitive Equipment 1, Worker 10, Worker 11",
+                  "defaultValue" : "",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -1311,7 +1311,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Control room, Raw material, Packaging Area",
+                  "defaultValue" : "",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
@@ -1392,7 +1392,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "Steelmaking Production",
+                  "defaultValue" : "",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : true,
