@@ -1152,20 +1152,91 @@
                 "dsEntityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
                 "dsFilterId" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
                 "additionalDataSources" : null,
-                "additionalDataKeys" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "assignedDevice",
+                  "type" : "attribute",
+                  "label" : "assignedDevice",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.71438955435446
+                }, {
+                  "name" : "assignedLocation",
+                  "type" : "attribute",
+                  "label" : "assignedLocation",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.8267517047277986
+                }, {
+                  "name" : "type",
+                  "type" : "entityField",
+                  "label" : "Type",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.4730484617725964
+                }, {
+                  "name" : "alertActivity",
+                  "type" : "attribute",
+                  "label" : "alertActivity",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.33347916597811467
+                }, {
+                  "name" : "alertTypes",
+                  "type" : "attribute",
+                  "label" : "alertTypes",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.12774074680942182
+                }, {
+                  "name" : "createdTime",
+                  "type" : "entityField",
+                  "label" : "Created time",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.3016290929423875
+                }, {
+                  "name" : "department",
+                  "type" : "attribute",
+                  "label" : "department",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.340151575656057
+                }, {
+                  "name" : "movement",
+                  "type" : "timeseries",
+                  "label" : "movement",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.445221051140807
+                }, {
+                  "name" : "name",
+                  "type" : "entityField",
+                  "label" : "Name",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.334937257094038
+                } ],
                 "label" : {
-                  "show" : true,
+                  "show" : false,
                   "type" : "pattern",
-                  "pattern" : "${entityName}"
+                  "pattern" : "${entityName}",
+                  "patternFunction" : null
                 },
                 "tooltip" : {
                   "show" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "patternFunction" : {
+                    "body" : "return module.createAssetTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
                   "trigger" : "click",
                   "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
                   "offsetX" : 0,
-                  "offsetY" : -1
+                  "offsetY" : -1,
+                  "tagActions" : null
                 },
                 "click" : {
                   "type" : "doNothing"
