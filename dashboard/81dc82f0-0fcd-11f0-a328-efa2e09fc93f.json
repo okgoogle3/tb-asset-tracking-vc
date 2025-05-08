@@ -1148,6 +1148,34 @@
               "markers" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16",
+                "dsFilterId" : "4d5085e0-93b8-8e7c-0de2-0c07b24d95b8",
+                "additionalDataSources" : null,
+                "additionalDataKeys" : null,
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "offsetX" : 0,
+                  "offsetY" : -1
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
                 "xKey" : {
                   "name" : "latitude",
                   "type" : "timeseries",
@@ -1189,7 +1217,6 @@
                 },
                 "markerOffsetX" : 0.5,
                 "markerOffsetY" : 1,
-                "positionFunction" : "return {x: origXPos, y: origYPos};",
                 "markerClustering" : {
                   "enable" : false,
                   "zoomOnClick" : true,
@@ -1202,72 +1229,16 @@
                   "lazyLoad" : true,
                   "useClusterMarkerColorFunction" : false,
                   "clusterMarkerColorFunction" : null
-                },
-                "label" : {
-                  "show" : true,
-                  "type" : "pattern",
-                  "pattern" : "${entityName}"
-                },
-                "tooltip" : {
-                  "show" : true,
-                  "trigger" : "click",
-                  "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
-                  "offsetX" : 0,
-                  "offsetY" : -1
-                },
-                "click" : {
-                  "type" : "doNothing"
-                },
-                "edit" : {
-                  "enabledActions" : [ ],
-                  "attributeScope" : "SERVER_SCOPE",
-                  "snappable" : false
-                },
-                "dsEntityAliasId" : "0cbff0a8-ea5f-27d1-7d6c-80b582e5fb16"
+                }
               } ],
               "polygons" : [ {
                 "dsType" : "entity",
                 "dsLabel" : "",
-                "polygonKey" : {
-                  "name" : "perimeter",
-                  "label" : "perimeter",
-                  "type" : "attribute",
-                  "settings" : { },
-                  "color" : "#2196f3"
-                },
-                "fillType" : "color",
-                "fillColor" : {
-                  "type" : "constant",
-                  "color" : "rgba(51,136,255,0.2)"
-                },
-                "fillImage" : {
-                  "type" : "image",
-                  "image" : "/assets/widget-preview-empty.svg",
-                  "preserveAspectRatio" : true,
-                  "opacity" : 1,
-                  "angle" : 0,
-                  "scale" : 1
-                },
-                "fillStripe" : {
-                  "weight" : 3,
-                  "color" : {
-                    "type" : "constant",
-                    "color" : "#8f8f8f"
-                  },
-                  "spaceWeight" : 9,
-                  "spaceColor" : {
-                    "type" : "constant",
-                    "color" : "rgba(143,143,143,0)"
-                  },
-                  "angle" : 45
-                },
-                "strokeColor" : {
-                  "type" : "constant",
-                  "color" : "#3388ff"
-                },
-                "strokeWeight" : 3,
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
+                "dsFilterId" : "9d8553cf-0fa5-9617-0845-b0d98dce891c",
+                "additionalDataSources" : null,
+                "additionalDataKeys" : null,
                 "label" : {
                   "show" : false,
                   "type" : "pattern",
@@ -1285,12 +1256,119 @@
                 "click" : {
                   "type" : "doNothing"
                 },
+                "groups" : null,
                 "edit" : {
                   "enabledActions" : [ ],
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 },
-                "dsEntityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898"
+                "fillType" : "color",
+                "fillColor" : {
+                  "type" : "constant",
+                  "color" : "rgba(51,136,255,0.2)"
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "preserveAspectRatio" : true,
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
+                },
+                "strokeColor" : {
+                  "type" : "constant",
+                  "color" : "#3388ff"
+                },
+                "strokeWeight" : 3,
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                }
+              }, {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "e8f88e04-f80c-2aa6-a69a-9bc1cc1ca096",
+                "dsFilterId" : "0f60db3a-df12-283e-6705-1568188d4781",
+                "additionalDataSources" : null,
+                "additionalDataKeys" : null,
+                "label" : {
+                  "show" : false,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "tooltip" : {
+                  "show" : false,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "fillType" : "color",
+                "fillColor" : {
+                  "type" : "constant",
+                  "color" : "rgba(51,136,255,0.2)"
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "preserveAspectRatio" : true,
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
+                },
+                "strokeColor" : {
+                  "type" : "constant",
+                  "color" : "#3388ff"
+                },
+                "strokeWeight" : 3,
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                }
               } ],
               "circles" : [ ],
               "additionalDataSources" : [ ],
