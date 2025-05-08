@@ -1302,14 +1302,7 @@
               "defaultCenterPosition" : "0,0",
               "defaultZoomLevel" : null,
               "mapPageSize" : 16384,
-              "mapActionButtons" : [ {
-                "label" : "Save coordinates",
-                "icon" : "save",
-                "color" : "#0000008a",
-                "action" : {
-                  "type" : "doNothing"
-                }
-              } ],
+              "mapActionButtons" : [ ],
               "background" : {
                 "type" : "color",
                 "color" : "#fff",
