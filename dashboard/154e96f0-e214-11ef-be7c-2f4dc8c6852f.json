@@ -9349,16 +9349,6 @@
               "defaultZoomLevel" : null,
               "mapPageSize" : 16384,
               "mapActionButtons" : [ {
-                "label" : "Save coordinates",
-                "icon" : "save",
-                "color" : "#0000008a",
-                "action" : {
-                  "type" : "custom",
-                  "customFunction" : "console.log(widgetContext)\nwidgetContext.$scope.saveCoordinates();",
-                  "openInSeparateDialog" : false,
-                  "openInPopover" : false
-                }
-              }, {
                 "label" : "Edit mode",
                 "icon" : "edit",
                 "color" : "#0000008a",
@@ -9387,7 +9377,9 @@
             "titleTooltip" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "graggableMode" : "true"
+            },
             "widgetCss" : "",
             "titleStyle" : {
               "fontSize" : "16px",
