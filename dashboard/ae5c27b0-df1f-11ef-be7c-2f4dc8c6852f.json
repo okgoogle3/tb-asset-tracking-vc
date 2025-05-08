@@ -5598,6 +5598,13 @@
                   "color" : "#2196f3",
                   "settings" : { },
                   "_hash" : 0.7313413941507407
+                }, {
+                  "name" : "name",
+                  "type" : "entityField",
+                  "label" : "Name",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.5480425371989005
                 } ],
                 "label" : {
                   "show" : false,
@@ -5605,13 +5612,18 @@
                   "pattern" : "${entityName}"
                 },
                 "tooltip" : {
-                  "show" : false,
+                  "show" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "patternFunction" : {
+                    "body" : "return module.createZoneTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
                   "trigger" : "click",
                   "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-                  "offsetX" : 0,
-                  "offsetY" : -1
+                  "tagActions" : null
                 },
                 "click" : {
                   "type" : "doNothing"
@@ -5690,6 +5702,20 @@
                   "color" : "#2196f3",
                   "settings" : { },
                   "_hash" : 0.021838166546417348
+                }, {
+                  "name" : "name",
+                  "type" : "entityField",
+                  "label" : "Name",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.32532561648589153
+                }, {
+                  "name" : "relatedZoneName",
+                  "type" : "attribute",
+                  "label" : "relatedZoneName",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.7685255211537637
                 } ],
                 "label" : {
                   "show" : false,
@@ -5697,13 +5723,20 @@
                   "pattern" : "${entityName}"
                 },
                 "tooltip" : {
-                  "show" : false,
+                  "show" : true,
                   "trigger" : "click",
                   "autoclose" : true,
-                  "type" : "pattern",
+                  "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
                   "offsetX" : 0,
-                  "offsetY" : -1
+                  "offsetY" : -1,
+                  "patternFunction" : {
+                    "body" : "return module.createGeofenceTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "tagActions" : null
                 },
                 "click" : {
                   "type" : "doNothing"
