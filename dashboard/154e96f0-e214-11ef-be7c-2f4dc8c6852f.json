@@ -9294,7 +9294,42 @@
                 "dsEntityAliasId" : "866a50cc-34a1-fe42-587b-c1ac982a0ea3",
                 "dsFilterId" : null,
                 "additionalDataSources" : null,
-                "additionalDataKeys" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "address",
+                  "type" : "attribute",
+                  "label" : "address",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.36731956253060205
+                }, {
+                  "name" : "city",
+                  "type" : "attribute",
+                  "label" : "city",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.8057847864890598
+                }, {
+                  "name" : "country",
+                  "type" : "attribute",
+                  "label" : "country",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.48356532097006555
+                }, {
+                  "name" : "zonesCount",
+                  "type" : "attribute",
+                  "label" : "zonesCount",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.4023655441345806
+                }, {
+                  "name" : "assignedAssetsCount",
+                  "type" : "attribute",
+                  "label" : "assignedAssetsCount",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.7361909456564979
+                } ],
                 "label" : {
                   "show" : true,
                   "type" : "pattern",
