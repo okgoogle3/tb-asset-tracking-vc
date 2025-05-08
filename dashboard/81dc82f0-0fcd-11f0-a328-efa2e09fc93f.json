@@ -1266,13 +1266,18 @@
                   "pattern" : "${entityName}"
                 },
                 "tooltip" : {
-                  "show" : false,
+                  "show" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "patternFunction" : {
+                    "body" : "return module.createZoneTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
                   "trigger" : "click",
                   "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-                  "offsetX" : 0,
-                  "offsetY" : -1
+                  "tagActions" : null
                 },
                 "click" : {
                   "type" : "doNothing"
@@ -1365,13 +1370,18 @@
                   "pattern" : "${entityName}"
                 },
                 "tooltip" : {
-                  "show" : false,
+                  "show" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "patternFunction" : {
+                    "body" : "return module.createGeofenceTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
                   "trigger" : "click",
                   "autoclose" : true,
-                  "type" : "pattern",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-                  "offsetX" : 0,
-                  "offsetY" : -1
+                  "tagActions" : null
                 },
                 "click" : {
                   "type" : "doNothing"
@@ -1568,7 +1578,7 @@
                 },
                 "f8805d2a-df91-84c7-fbc4-dcbad03e019c" : {
                   "sizeX" : 12,
-                  "sizeY" : 11,
+                  "sizeY" : 16,
                   "row" : 0,
                   "col" : 12
                 }
