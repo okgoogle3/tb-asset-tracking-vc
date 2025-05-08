@@ -9335,7 +9335,10 @@
                 "icon" : "save",
                 "color" : "#0000008a",
                 "action" : {
-                  "type" : "doNothing"
+                  "type" : "custom",
+                  "customFunction" : "widgetContext.$scope.saveCoordinates();",
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
                 }
               } ],
               "background" : {
