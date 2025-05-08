@@ -9336,7 +9336,7 @@
                 "color" : "#0000008a",
                 "action" : {
                   "type" : "custom",
-                  "customFunction" : "widgetContext.$scope.saveCoordinates();",
+                  "customFunction" : "console.log(widgetContext)\nwidgetContext.$scope.saveCoordinates();",
                   "openInSeparateDialog" : false,
                   "openInPopover" : false
                 }
