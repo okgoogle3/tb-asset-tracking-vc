@@ -9375,8 +9375,16 @@
                 },
                 "fillType" : "color",
                 "fillColor" : {
-                  "type" : "constant",
-                  "color" : "rgba(51,136,255,0.2)"
+                  "type" : "function",
+                  "color" : "rgba(51,136,255,0.2)",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findFillColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
                 },
                 "fillStripe" : {
                   "weight" : 3,
@@ -9400,8 +9408,16 @@
                   "scale" : 1
                 },
                 "strokeColor" : {
-                  "type" : "constant",
-                  "color" : "#3388ff"
+                  "type" : "function",
+                  "color" : "#3388ff",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findStrokedColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
                 },
                 "strokeWeight" : 3,
                 "polygonKey" : {
