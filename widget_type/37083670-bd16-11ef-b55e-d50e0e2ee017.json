@@ -16,7 +16,7 @@
       "controllerScript" : "self.onInit = function() {\n    let utils = self.ctx.$scope.$injector.get(self.ctx.servicesMap.get('utils'));\n    settings = utils.deepClone(self.ctx.settings) || {};\n    self.ctx.$scope.units = self.ctx.units;\n    \n    self.ctx.$scope.value = 0;\n    self.ctx.$scope.label = 'Alerts';\n    self.ctx.$scope.icon = 'warning_amber';\n    self.ctx.$scope.iconColor = '#B42318'; \n    self.ctx.$scope.iconBackground = '#FEE4E2';     \n    self.ctx.$scope.wideCard = settings.wideCard; \n}\n\nself.onDataUpdated = function() {\n    self.ctx.$scope.alarmsTableWidget.onDataUpdated();\n    self.ctx.$scope.value = 0;\n    self.ctx.$scope.value = self.ctx.defaultSubscription.alarms.totalElements;\n    \n    self.ctx.detectChanges();\n}\n\nself.onEditModeChanged = function() {\n    self.ctx.$scope.alarmsTableWidget.onEditModeChanged();\n}\n\nself.actionSources = function() {\n    return {\n        'actionCellButton': {\n            name: 'widget-action.action-cell-button',\n            multiple: true,\n            hasShowCondition: true\n        },\n        'rowClick': {\n            name: 'widget-action.row-click',\n            multiple: false\n        },\n        'cellClick': {\n            name: 'widget-action.cell-click',\n            multiple: true\n        }\n    };\n}\n\nself.typeParameters = function() {\n    return {\n        datasourcesOptional: true,\n        dataKeysOptional: true\n    };\n}\n\nself.onDestroy = function() {\n}\n",
       "settingsForm" : [ {
         "id" : "title",
-        "name" : "title",
+        "name" : "Title",
         "group" : "Icon settings",
         "type" : "text",
         "required" : false,
