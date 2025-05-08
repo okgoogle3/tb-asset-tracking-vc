@@ -9358,6 +9358,16 @@
                   "openInSeparateDialog" : false,
                   "openInPopover" : false
                 }
+              }, {
+                "label" : "Edit mode",
+                "icon" : "edit",
+                "color" : "#0000008a",
+                "action" : {
+                  "type" : "custom",
+                  "customFunction" : "widgetContext.$scope.draggableMode = !widgetContext.$scope.draggableMode; ",
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
+                }
               } ],
               "background" : {
                 "type" : "color",
