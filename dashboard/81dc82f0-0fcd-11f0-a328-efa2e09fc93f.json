@@ -1227,6 +1227,13 @@
                   "color" : "#9c27b0",
                   "settings" : { },
                   "_hash" : 0.334937257094038
+                }, {
+                  "name" : "status",
+                  "type" : "attribute",
+                  "label" : "status",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.12369324584232733
                 } ],
                 "label" : {
                   "show" : false,
