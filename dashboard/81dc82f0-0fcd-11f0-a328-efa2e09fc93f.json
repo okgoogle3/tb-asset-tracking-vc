@@ -1132,7 +1132,8 @@
               "layers" : [ {
                 "label" : "{i18n:widgets.maps.layer.roadmap}",
                 "provider" : "openstreet",
-                "layerType" : "OpenStreetMap.Mapnik"
+                "layerType" : "CartoDB.Positron",
+                "referenceLayer" : null
               }, {
                 "label" : "{i18n:widgets.maps.layer.satellite}",
                 "provider" : "openstreet",
