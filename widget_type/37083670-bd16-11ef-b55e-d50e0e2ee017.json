@@ -46,7 +46,7 @@
         "default" : false,
         "required" : true
       } ],
-      "settingsDirective" : "tb-alarms-table-widget-settings",
+      "settingsDirective" : "",
       "dataKeySettingsDirective" : "",
       "hasBasicMode" : true,
       "basicModeDirective" : "tb-alarms-table-basic-config",
