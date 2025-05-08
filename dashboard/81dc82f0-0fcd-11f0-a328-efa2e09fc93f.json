@@ -1262,7 +1262,7 @@
                   "defaultValue" : "",
                   "dynamicValue" : null
                 },
-                "ignoreCase" : true,
+                "ignoreCase" : false,
                 "type" : "STRING"
               },
               "userInfo" : {
