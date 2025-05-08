@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : null
+      "description" : ""
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -18,7 +18,7 @@
       "id" : "21834dc0-2bdf-11f0-9ede-7f3b1ed43f2e"
     },
     "label" : null,
-    "name" : "test",
+    "name" : "testte",
     "ownerId" : null,
     "type" : "Image on map"
   },
@@ -34,17 +34,17 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[[48.75410567934902,37.57523238658906],[48.753645903962244,37.576058506965644]]",
+      "jsonValue" : "[[48.755000492539395,37.57465839385987],[48.75421531747378,37.57874608039857],[48.75219227871352,37.577801942825324],[48.75297745377914,37.57371425628663]]",
       "key" : "perimeter",
-      "lastUpdateTs" : 1746689813901,
+      "lastUpdateTs" : 1746690527175,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[48.75497924099179,37.57474422454835]",
+      "jsonValue" : "[48.75219227871352,37.577801942825324]",
       "key" : "pointA",
-      "lastUpdateTs" : 1746689803725,
+      "lastUpdateTs" : 1746690527175,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,23 +52,23 @@
       "doubleValue" : null,
       "jsonValue" : "[48.75421531747378,37.57874608039857]",
       "key" : "pointB",
-      "lastUpdateTs" : 1746689803725,
+      "lastUpdateTs" : 1746690527175,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[48.7529845273726,37.573800086975105]",
+      "jsonValue" : "[48.75297745377914,37.57371425628663]",
       "key" : "pointC",
-      "lastUpdateTs" : 1746689803725,
+      "lastUpdateTs" : 1746690527175,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75240396498977, 37.580495923679514], [48.75240396498977, 37.57849592367952], [48.75040396498977, 37.57849592367952], [48.75040396498977, 37.580495923679514]]\"}",
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.755000492539395, 37.57465839385987], [48.75421531747378, 37.57874608039857], [48.75219227871352, 37.577801942825324], [48.75297745377914, 37.57371425628663]]\"}",
       "key" : "polygon",
-      "lastUpdateTs" : 1746689778878,
+      "lastUpdateTs" : 1746690527184,
       "longValue" : null,
       "strValue" : null
     } ]
