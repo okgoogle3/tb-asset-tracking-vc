@@ -5612,7 +5612,7 @@
                   "pattern" : "${entityName}"
                 },
                 "tooltip" : {
-                  "show" : true,
+                  "show" : false,
                   "type" : "function",
                   "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
                   "patternFunction" : {
