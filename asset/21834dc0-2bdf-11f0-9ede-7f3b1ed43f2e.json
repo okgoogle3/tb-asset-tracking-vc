@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1746694950451,
+      "lastUpdateTs" : 1746698138574,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -42,9 +42,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[[48.761047795319925,37.567319869995124],[48.76052441163905,37.569808959960945],[48.758692592614445,37.56890773773194],[48.75921597629532,37.56641864776612]]",
+      "jsonValue" : "[[48.76101243172949,37.5673520565033],[48.76052441163905,37.569808959960945],[48.758692592614445,37.56890773773194],[48.75918061270489,37.5664508342743]]",
       "key" : "perimeter",
-      "lastUpdateTs" : 1746698136473,
+      "lastUpdateTs" : 1746698504189,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : "[48.758692592614445,37.56890773773194]",
       "key" : "pointA",
-      "lastUpdateTs" : 1746698136473,
+      "lastUpdateTs" : 1746698504189,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,23 +60,23 @@
       "doubleValue" : null,
       "jsonValue" : "[48.76052441163905,37.569808959960945]",
       "key" : "pointB",
-      "lastUpdateTs" : 1746698136473,
+      "lastUpdateTs" : 1746698504189,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[48.75921597629532,37.56641864776612]",
+      "jsonValue" : "[48.75918061270489,37.5664508342743]",
       "key" : "pointC",
-      "lastUpdateTs" : 1746698136473,
+      "lastUpdateTs" : 1746698504189,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.761047795319925, 37.567319869995124], [48.76052441163905, 37.569808959960945], [48.758692592614445, 37.56890773773194], [48.75921597629532, 37.56641864776612]]\"}",
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.76101243172949, 37.5673520565033], [48.76052441163905, 37.569808959960945], [48.758692592614445, 37.56890773773194], [48.75918061270489, 37.5664508342743]]\"}",
       "key" : "polygon",
-      "lastUpdateTs" : 1746698136521,
+      "lastUpdateTs" : 1746698504212,
       "longValue" : null,
       "strValue" : null
     } ]
