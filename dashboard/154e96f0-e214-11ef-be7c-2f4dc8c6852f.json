@@ -9252,7 +9252,13 @@
                 "label" : "perimeter",
                 "color" : "#607d8b",
                 "settings" : { },
-                "_hash" : 0.8254478035425913
+                "_hash" : 0.8254478035425913,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
