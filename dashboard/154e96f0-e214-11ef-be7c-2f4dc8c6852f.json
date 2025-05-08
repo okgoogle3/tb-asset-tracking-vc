@@ -9176,6 +9176,595 @@
           "row" : 0,
           "col" : 0,
           "id" : "f8d890a7-d19c-e737-af97-e890906eb710"
+        },
+        "a6e53451-4c08-ef4f-66bd-4d67b55e155c" : {
+          "typeFullFqn" : "tenant.floorplan_custom_map_edit",
+          "type" : "latest",
+          "sizeX" : 8.5,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5b20b015-bc5f-522f-59ad-ec8156224373",
+              "filterId" : "8ed067f2-9822-4762-dec6-b02a1fc2e641",
+              "dataKeys" : [ {
+                "name" : "pointA",
+                "type" : "attribute",
+                "label" : "pointA",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.05834624948389977,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
+              }, {
+                "name" : "pointB",
+                "type" : "attribute",
+                "label" : "pointB",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.10815988263798326,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
+              }, {
+                "name" : "pointC",
+                "type" : "attribute",
+                "label" : "pointC",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.5676963944190284,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
+              }, {
+                "name" : "polygon",
+                "type" : "attribute",
+                "label" : "polygon",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.03358930465375154,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
+              }, {
+                "name" : "image",
+                "type" : "attribute",
+                "label" : "image",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.4480669613319457
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1746606122808,
+                  "endTimeMs" : 1746692522808
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "mapType" : "geoMap",
+              "layers" : [ {
+                "label" : "{i18n:widgets.maps.layer.roadmap}",
+                "provider" : "openstreet",
+                "layerType" : "CartoDB.Positron",
+                "referenceLayer" : null
+              }, {
+                "label" : "{i18n:widgets.maps.layer.satellite}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery"
+              }, {
+                "label" : "{i18n:widgets.maps.layer.hybrid}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery",
+                "referenceLayer" : "openstreetmap_hybrid"
+              } ],
+              "imageSource" : null,
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "c852ac2a-5562-039b-5967-73e83958738a",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "assignedDevice",
+                  "type" : "attribute",
+                  "label" : "assignedDevice",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.71438955435446,
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : true,
+                  "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
+                }, {
+                  "name" : "assignedLocation",
+                  "type" : "attribute",
+                  "label" : "assignedLocation",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.8267517047277986,
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : true,
+                  "postFuncBody" : "if(value && JSON.parse(value)){\n    return JSON.parse(value);\n} return value;"
+                }, {
+                  "name" : "type",
+                  "type" : "entityField",
+                  "label" : "Type",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.4730484617725964
+                }, {
+                  "name" : "alertActivity",
+                  "type" : "attribute",
+                  "label" : "alertActivity",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.33347916597811467
+                }, {
+                  "name" : "alertTypes",
+                  "type" : "attribute",
+                  "label" : "alertTypes",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.12774074680942182
+                }, {
+                  "name" : "createdTime",
+                  "type" : "entityField",
+                  "label" : "Created time",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.3016290929423875
+                }, {
+                  "name" : "department",
+                  "type" : "attribute",
+                  "label" : "department",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.340151575656057
+                }, {
+                  "name" : "movement",
+                  "type" : "timeseries",
+                  "label" : "movement",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.445221051140807
+                }, {
+                  "name" : "name",
+                  "type" : "entityField",
+                  "label" : "Name",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.334937257094038
+                }, {
+                  "name" : "status",
+                  "type" : "attribute",
+                  "label" : "status",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.12369324584232733
+                } ],
+                "label" : {
+                  "show" : false,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}",
+                  "patternFunction" : null
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
+                  "patternFunction" : {
+                    "body" : "return module.createAssetTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "tagActions" : [ {
+                    "name" : "assetDetails",
+                    "type" : "custom",
+                    "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst assetsDashboardName = \"Assets dashboard\";\n\ndashboardService.getTenantDashboards(pageLink).subscribe(response => {\n    const dashboardId = response.data.find(dashboard => dashboard.title === assetsDashboardName).id.id;\n    \n    const jsonStr = JSON.stringify([\n        {\n            id: \"default\",\n            params: {\n                stateId: \"assetDetails\",\n                prevState: \"assets\",\n                subState: \"general\",\n                statesArray: [\n                    {\n                        stateId: \"assets\",\n                        name: \"Assets\"\n                    },\n                    {\n                        stateId: \"assetDetails\",\n                        name: entityName\n                    }\n                ],\n                selectedEntity: {\n                    entityName,\n                    entityId,\n                    entityLabel\n                }\n            }\n        }\n    ]);\n    \n    const state = btoa(jsonStr);\n    \n    const queryParams = {\n        stateId: \"Assets\",\n        dashboardId,\n        hideDashboardToolbar: true,\n        state\n    };\n    \n    router.navigate(['/iframeView'], {queryParams});\n});",
+                    "openInSeparateDialog" : false,
+                    "openInPopover" : false
+                  }, {
+                    "name" : "historyDetails",
+                    "type" : "custom",
+                    "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst assetsDashboardName = \"Assets dashboard\";\n\ndashboardService.getTenantDashboards(pageLink).subscribe(response => {\n    const dashboardId = response.data.find(dashboard => dashboard.title === assetsDashboardName).id.id;\n    \n    const jsonStr = JSON.stringify([\n        {\n            id: \"default\",\n            params: {\n                stateId: \"assetDetails\",\n                prevState: \"assets\",\n                subState: \"eventHistory\",\n                statesArray: [\n                    {\n                        stateId: \"assets\",\n                        name: \"Assets\"\n                    },\n                    {\n                        stateId: \"assetDetails\",\n                        name: entityName\n                    }\n                ],\n                selectedEntity: {\n                    entityName,\n                    entityId,\n                    entityLabel\n                }\n            }\n        }\n    ]);\n    \n    const state = btoa(jsonStr);\n    \n    const queryParams = {\n        stateId: \"Assets\",\n        dashboardId,\n        hideDashboardToolbar: true,\n        state\n    };\n    \n    router.navigate(['/iframeView'], {queryParams});\n});",
+                    "openInSeparateDialog" : false,
+                    "openInPopover" : false
+                  } ]
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "xKey" : {
+                  "name" : "latitude",
+                  "type" : "timeseries",
+                  "label" : "latitude",
+                  "color" : "#607d8b",
+                  "settings" : { },
+                  "_hash" : 0.6923996398919934
+                },
+                "yKey" : {
+                  "name" : "longitude",
+                  "type" : "timeseries",
+                  "label" : "longitude",
+                  "color" : "#607d8b",
+                  "settings" : { },
+                  "_hash" : 0.49405938633761937
+                },
+                "markerType" : "image",
+                "markerShape" : {
+                  "shape" : "markerShape1",
+                  "size" : 34,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "markerIcon" : {
+                  "iconContainer" : "iconContainer1",
+                  "icon" : "mdi:lightbulb-on",
+                  "size" : 48,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "markerImage" : {
+                  "type" : "function",
+                  "image" : "/assets/markers/shape1.svg",
+                  "imageSize" : 34,
+                  "imageFunction" : {
+                    "body" : "return module.findImage(images, data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "images" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png", "tb-image;/api/images/tenant/Map bullet-3.svg", "tb-image;/api/images/tenant/boxOnline.svg", "tb-image;/api/images/tenant/boxAlarm.svg", "tb-image;/api/images/tenant/Map bullet.svg", "tb-image;/api/images/tenant/Map bullet-1.svg", "tb-image;/api/images/tenant/workerOnline.svg", "tb-image;/api/images/tenant/workerAlarm.svg", "tb-image;/api/images/tenant/workerOffline.svg", "tb-image;/api/images/tenant/Map bullet-2.svg", "tb-image;/api/images/tenant/loaderOnline.svg", "tb-image;/api/images/tenant/loaderAlarm.svg", "tb-image;/api/images/tenant/loaderOffline.svg", "tb-image;/api/images/tenant/Map bullet (2).svg" ]
+                },
+                "markerOffsetX" : 0.5,
+                "markerOffsetY" : 1,
+                "markerClustering" : {
+                  "enable" : false,
+                  "zoomOnClick" : true,
+                  "maxZoom" : null,
+                  "maxClusterRadius" : 80,
+                  "zoomAnimation" : true,
+                  "showCoverageOnHover" : true,
+                  "spiderfyOnMaxZoom" : false,
+                  "chunkedLoad" : false,
+                  "lazyLoad" : true,
+                  "useClusterMarkerColorFunction" : false,
+                  "clusterMarkerColorFunction" : null
+                }
+              } ],
+              "polygons" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "5b20b015-bc5f-522f-59ad-ec8156224373",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "color",
+                  "type" : "attribute",
+                  "label" : "color",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.9915894678498371
+                } ],
+                "label" : {
+                  "show" : false,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
+                  "patternFunction" : {
+                    "body" : "return module.createZoneTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "tagActions" : [ {
+                    "name" : "zoneDetails",
+                    "type" : "custom",
+                    "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst locationsDashboardName = \"Locations dashboard\";\n\nlet selectedLocation;\n\nconst locationQueryParams = {\n    entityFilter: {\n        type: \"relationsQuery\",\n        rootEntity: entityId,\n        direction: \"FROM\",\n        maxLevel: 1,\n        filters: [{\n            relationType: \"ZoneToLocation\",\n            entityTypes: [\"ASSET\"]\n        }]\n    },\n    pageLink,\n    entityFields: [\n        {\n            type: \"ENTITY_FIELD\",\n            key: \"name\"\n        },\n        {\n            type: \"ENTITY_FIELD\",\n            key: \"label\"\n        }\n    ]\n};\n\nwidgetContext.http.post(`/api/entitiesQuery/find`, locationQueryParams)\n    .pipe(\n        widgetContext.rxjs.switchMap((locationResponse) => {\n            const location = locationResponse.data[0];\n            selectedLocation = {\n                entityId: location.entityId,\n                entityName: location.latest.ENTITY_FIELD.name.value,\n                entityLabel: location.latest.ENTITY_FIELD.label.value\n            };\n            \n            return dashboardService.getTenantDashboards(pageLink);\n        })\n    )\n    .subscribe(dashboardResponse => {\n        const dashboardId = dashboardResponse.data.find(dashboard => dashboard.title === locationsDashboardName).id.id;\n    \n        const jsonStr = JSON.stringify([\n            {\n                id: \"default\",\n                params: {\n                    stateId: 'zoneDetails',\n                    prevState: 'locationsDetails',\n                    subState: 'general',\n                    statesArray: [\n                        {\n                            stateId: 'locations', \n                            name: \"Locations\"\n                        },\n                    ],\n                    selectedLocation,\n                    selectedZone: {\n                        entityName,\n                        entityId,\n                        entityLabel\n                    }\n                }\n            }\n        ]);\n        \n        const state = btoa(jsonStr);\n        \n        const queryParams = {\n            stateId: \"Locations\",\n            dashboardId,\n            hideDashboardToolbar: true,\n            state\n        };\n        \n        router.navigate(['/iframeView'], {queryParams});\n    });",
+                    "openInSeparateDialog" : false,
+                    "openInPopover" : false
+                  } ]
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "fillType" : "color",
+                "fillColor" : {
+                  "type" : "function",
+                  "color" : "rgba(51,136,255,0.2)",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findFillColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "preserveAspectRatio" : true,
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
+                },
+                "strokeColor" : {
+                  "type" : "function",
+                  "color" : "#3388ff",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findStrokedColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
+                },
+                "strokeWeight" : 3,
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                }
+              }, {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "75e48562-c1bd-5585-ecc9-d943f634188e",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "color",
+                  "type" : "attribute",
+                  "label" : "color",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.48306712676344343
+                }, {
+                  "name" : "relatedZoneName",
+                  "type" : "attribute",
+                  "label" : "relatedZoneName",
+                  "color" : "#9c27b0",
+                  "settings" : { },
+                  "_hash" : 0.3541462710334712
+                } ],
+                "label" : {
+                  "show" : false,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "function",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
+                  "patternFunction" : {
+                    "body" : "return module.createGeofenceTooltip(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  },
+                  "tagActions" : null
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "fillType" : "color",
+                "fillColor" : {
+                  "type" : "function",
+                  "color" : "rgba(51,136,255,0.2)",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findFillColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "preserveAspectRatio" : true,
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
+                },
+                "strokeColor" : {
+                  "type" : "function",
+                  "color" : "#3388ff",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : {
+                    "body" : "return module.findStrokedColor(data);",
+                    "modules" : {
+                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
+                    }
+                  }
+                },
+                "strokeWeight" : 3,
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                }
+              } ],
+              "circles" : [ ],
+              "additionalDataSources" : [ ],
+              "controlsPosition" : "topleft",
+              "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
+              "scales" : [ ],
+              "dragModeButton" : false,
+              "fitMapBounds" : true,
+              "useDefaultCenterPosition" : false,
+              "defaultCenterPosition" : "0,0",
+              "defaultZoomLevel" : null,
+              "mapPageSize" : 16384,
+              "mapActionButtons" : [ ],
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0px"
+            },
+            "title" : "Simple custom map",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "border" : "1px solid #D0D5DD"
+            },
+            "widgetCss" : ".leaflet-popup-content-wrapper, .leaflet-popup-tip {\n    border: 1px solid #D0D5DD;\n    box-shadow: none;\n    border-radius: 8px;\n}\n\n.leaflet-popup-content {\n    margin: 0px;\n    padding: 15px;\n}\n\n.leaflet-container a {\n    text-align: center;\n    font-size: 15px;\n    font-weight: 500;\n    color: #026AA2;\n    text-decoration: none;\n    line-height: 28px;\n    border-bottom: 0;\n}",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "configMode" : "advanced",
+            "titleFont" : null,
+            "titleColor" : null,
+            "margin" : "0px",
+            "borderRadius" : "12px",
+            "iconSize" : "24px",
+            "titleIcon" : "map",
+            "iconColor" : "#1F6BDD",
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a6e53451-4c08-ef4f-66bd-4d67b55e155c"
         }
       },
       "states" : {
@@ -10057,10 +10646,16 @@
             "main" : {
               "widgets" : {
                 "937a273d-0f9c-d9f6-18be-36fd7033859a" : {
-                  "sizeX" : 24,
+                  "sizeX" : 5,
                   "sizeY" : 16,
                   "row" : 0,
                   "col" : 0
+                },
+                "a6e53451-4c08-ef4f-66bd-4d67b55e155c" : {
+                  "sizeX" : 24,
+                  "sizeY" : 16,
+                  "row" : 0,
+                  "col" : 5
                 }
               },
               "gridSettings" : {
@@ -10556,6 +11151,36 @@
               "entityTypes" : [ "ASSET" ]
             } ]
           }
+        },
+        "5b20b015-bc5f-522f-59ad-ec8156224373" : {
+          "id" : "5b20b015-bc5f-522f-59ad-ec8156224373",
+          "alias" : "All zones",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Image on map", "Image plan", "Shape" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "c852ac2a-5562-039b-5967-73e83958738a" : {
+          "id" : "c852ac2a-5562-039b-5967-73e83958738a",
+          "alias" : "Assets",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Box", "Loader", "Tool", "Worker" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "75e48562-c1bd-5585-ecc9-d943f634188e" : {
+          "id" : "75e48562-c1bd-5585-ecc9-d943f634188e",
+          "alias" : "All geofences",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Geofence" ],
+            "assetNameFilter" : ""
+          }
         }
       },
       "filters" : {
@@ -10749,6 +11374,145 @@
                   "dynamicValue" : null
                 },
                 "ignoreCase" : true,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "2010c8dd-4941-5201-1c55-5e7c4749b1c2" : {
+          "id" : "2010c8dd-4941-5201-1c55-5e7c4749b1c2",
+          "filter" : "Monitoring zones (Image on map)",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "name"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "IN",
+                "value" : {
+                  "defaultValue" : "",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : true,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          }, {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "type"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "EQUAL",
+                "value" : {
+                  "defaultValue" : "Image on map",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : false,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "c590cbc5-9363-2c4a-f89e-1b4caa05a99d" : {
+          "id" : "c590cbc5-9363-2c4a-f89e-1b4caa05a99d",
+          "filter" : "Monitoring assets",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "name"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "IN",
+                "value" : {
+                  "defaultValue" : "Heat-sensitive Equipment 2, Heat-sensitive Equipment 1, Worker 10, Worker 11",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : false,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "ae05e274-0c99-85e3-c24c-2c3bd43c0bae" : {
+          "id" : "ae05e274-0c99-85e3-c24c-2c3bd43c0bae",
+          "filter" : "Monitoring zones",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "name"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "IN",
+                "value" : {
+                  "defaultValue" : "Steelmaking Production",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : true,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "531406ce-b924-8fbe-5857-da3a68c0ec54" : {
+          "id" : "531406ce-b924-8fbe-5857-da3a68c0ec54",
+          "filter" : "Monitoring geofences",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "name"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "IN",
+                "value" : {
+                  "defaultValue" : "Control room, Raw material, Packaging Area",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : false,
                 "type" : "STRING"
               },
               "userInfo" : {
