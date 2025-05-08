@@ -2854,7 +2854,8 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "12px",
             "settings" : {
-              "wideCard" : true
+              "wideCard" : true,
+              "enableSelectColumnDisplay" : false
             },
             "title" : "Alarms table",
             "dropShadow" : false,
