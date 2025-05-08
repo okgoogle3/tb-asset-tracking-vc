@@ -9208,152 +9208,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "56ab2d42-4421-a38e-535c-830b73966ebe"
-        },
-        "d672cee6-7236-ddf4-20e5-26d3bf30a512" : {
-          "typeFullFqn" : "tenant.alarm_wide_card",
-          "type" : "alarm",
-          "sizeX" : 5.5,
-          "sizeY" : 2,
-          "config" : {
-            "timewindow" : {
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 86400000
-              },
-              "aggregation" : {
-                "type" : "NONE",
-                "limit" : 200
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "18px",
-            "settings" : {
-              "wideCard" : true,
-              "enableSelectColumnDisplay" : false,
-              "enableSearch" : false,
-              "enableFilter" : false,
-              "enableSelection" : false
-            },
-            "title" : "Alarms table",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400,
-              "padding" : "5px 10px 5px 10px"
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "alarmSource" : {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
-              "dataKeys" : [ {
-                "name" : "createdTime",
-                "type" : "alarm",
-                "label" : "Created time",
-                "color" : "#2196f3",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.021092237451093787,
-                "funcBody" : null
-              }, {
-                "name" : "originator",
-                "type" : "alarm",
-                "label" : "Originator",
-                "color" : "#4caf50",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.2780007688856758,
-                "funcBody" : null
-              }, {
-                "name" : "type",
-                "type" : "alarm",
-                "label" : "Type",
-                "color" : "#f44336",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.7323586880398418,
-                "funcBody" : null
-              }, {
-                "name" : "severity",
-                "type" : "alarm",
-                "label" : "Severity",
-                "color" : "#ffc107",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : false
-                },
-                "_hash" : 0.09927019860088193,
-                "funcBody" : null
-              }, {
-                "name" : "status",
-                "type" : "alarm",
-                "label" : "Status",
-                "color" : "#607d8b",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.6588418951443418,
-                "funcBody" : null
-              }, {
-                "name" : "assignee",
-                "type" : "alarm",
-                "label" : "Assignee",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.5008441077416634,
-                "funcBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            },
-            "alarmsPollingInterval" : 5,
-            "showTitleIcon" : false,
-            "titleIcon" : "warning",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "widgetStyle" : {
-              "border" : "1px solid #D0D5DD"
-            },
-            "displayTimewindow" : true,
-            "actions" : { },
-            "configMode" : "advanced",
-            "alarmFilterConfig" : {
-              "statusList" : [ ],
-              "severityList" : [ ],
-              "typeList" : [ ],
-              "searchPropagatedAlarms" : false
-            },
-            "enableDataExport" : false,
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "borderRadius" : "12px",
-            "datasources" : [ ]
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "d672cee6-7236-ddf4-20e5-26d3bf30a512"
         }
       },
       "states" : {
@@ -9503,7 +9357,7 @@
                   "sizeX" : 9,
                   "sizeY" : 3,
                   "row" : 1,
-                  "col" : 71
+                  "col" : 60
                 },
                 "b8c87c9a-752c-a44c-d289-dc2cca575308" : {
                   "sizeX" : 9,
@@ -9534,12 +9388,6 @@
                   "sizeY" : 2,
                   "row" : 5,
                   "col" : 61
-                },
-                "d672cee6-7236-ddf4-20e5-26d3bf30a512" : {
-                  "sizeX" : 10,
-                  "sizeY" : 3,
-                  "row" : 1,
-                  "col" : 59
                 }
               },
               "gridSettings" : {
