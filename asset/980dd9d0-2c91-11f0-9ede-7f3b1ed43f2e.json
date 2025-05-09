@@ -21,6 +21,46 @@
     "type" : "Geofence"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1746766428157,
+      "longValue" : null,
+      "strValue" : "#0086C9"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.75349205510485,37.58233487606049],[48.75341424630791,37.58273720741273],[48.75380328908751,37.58295178413392],[48.753898780945676,37.582527995109565]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1746766436168,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75349205510485, 37.58233487606049], [48.75341424630791, 37.58273720741273], [48.75380328908751, 37.58295178413392], [48.753898780945676, 37.582527995109565]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1746766436190,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "relatedZoneName",
+      "lastUpdateTs" : 1746766428175,
+      "longValue" : null,
+      "strValue" : "Zone 1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "relatedZoneType",
+      "lastUpdateTs" : 1746766428175,
+      "longValue" : null,
+      "strValue" : "Temporary asset"
+    } ]
   }
 }
