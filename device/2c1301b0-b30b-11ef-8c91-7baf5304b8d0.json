@@ -1,0 +1,411 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "464cd5f0-b2da-11ef-8c91-7baf5304b8d0"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "label" : null,
+    "name" : "Demo Device 2",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Tag"
+  },
+  "credentials" : {
+    "credentialsId" : "Tjhh20hBDp2A0Hvh17u4",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "DeviceToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 572729
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "3e367d30-1928-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "2c1301b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 27731470
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "BatteryAlarms",
+      "lastUpdateTs" : 1734088087622,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "IdleAlarms",
+      "lastUpdateTs" : 1734088087622,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "MovementAlarms",
+      "lastUpdateTs" : 1734088087622,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1735131967698,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"704b4f90-bdec-11ef-b55e-d50e0e2ee017\":{\"name\":\"Mechanical Assembly Production\",\"status\":\"outside\"}}",
+      "key" : "areaAlarmRules",
+      "lastUpdateTs" : 1744632131453,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"zone\":{\"inside\":[\"zone in STEELMAKING PRODUCTION\"],\"outside\":[]},\"geofence\":{\"inside\":[],\"outside\":[]}}",
+      "key" : "areaAlarms",
+      "lastUpdateTs" : 1734611047380,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAlarmProfile",
+      "lastUpdateTs" : 1744632108240,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAsset",
+      "lastUpdateTs" : 1744304025476,
+      "longValue" : null,
+      "strValue" : "{\"name\":\"Worker 2\",\"id\":{\"id\":\"986765e0-b30b-11ef-8c91-7baf5304b8d0\",\"entityType\":\"ASSET\"}}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedLocation",
+      "lastUpdateTs" : 1734950057925,
+      "longValue" : null,
+      "strValue" : "Kramatorsk Machinebuilding Factory"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "configPreset",
+      "lastUpdateTs" : 1733404608248,
+      "longValue" : null,
+      "strValue" : "Default config"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectivity",
+      "lastUpdateTs" : 1733404608248,
+      "longValue" : null,
+      "strValue" : "RFID (MQTT)"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1733404608248,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdBatteryLevel",
+      "lastUpdateTs" : 1734611005880,
+      "longValue" : 50,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1734611005880,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdTemperature",
+      "lastUpdateTs" : 1744306221483,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "equalThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1733832137736,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{}",
+      "key" : "geofenceThresolds",
+      "lastUpdateTs" : 1734610944791,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "hasRelatedAsset",
+      "lastUpdateTs" : 1734949900460,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "idleEnabled",
+      "lastUpdateTs" : 1734611011264,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "idleTimeSec",
+      "lastUpdateTs" : 1734611011264,
+      "longValue" : 12,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1735127542902,
+      "longValue" : 1735127542902,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"id\":\"2c1301b0-b30b-11ef-8c91-7baf5304b8d0\",\"name\":\"Demo Asset 2\"}",
+      "key" : "info",
+      "lastUpdateTs" : 1734949900484,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isAssigned",
+      "lastUpdateTs" : 1734949900484,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1746989449661,
+      "longValue" : 1746989447624,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1744637052715,
+      "longValue" : 1744637052715,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1744637050583,
+      "longValue" : 1744637050583,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdBatteryLevel",
+      "lastUpdateTs" : 1734611005880,
+      "longValue" : 40,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1734611005880,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdTemperature",
+      "lastUpdateTs" : 1744306221483,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowerThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1733832137736,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "modelNumber",
+      "lastUpdateTs" : 1733404608248,
+      "longValue" : null,
+      "strValue" : "Demo Device 2"
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "movementEnabled",
+      "lastUpdateTs" : 1734611008579,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "movementTimeSec",
+      "lastUpdateTs" : 1734611008579,
+      "longValue" : 12,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "serialNumber",
+      "lastUpdateTs" : 1733404608248,
+      "longValue" : null,
+      "strValue" : "Demo Device 2"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "temperatureAlarms",
+      "lastUpdateTs" : 1734441821385,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "totalActiveAlarms",
+      "lastUpdateTs" : 1734441821385,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "totalAlarms",
+      "lastUpdateTs" : 1734088087622,
+      "longValue" : 21781,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdBatteryLevel",
+      "lastUpdateTs" : 1733907465397,
+      "longValue" : 90,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdBatteryLevelEnabled",
+      "lastUpdateTs" : 1734611005880,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdTemperature",
+      "lastUpdateTs" : 1734610989322,
+      "longValue" : 90,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upperThresholdTemperatureEnabled",
+      "lastUpdateTs" : 1733832137736,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"704b4f90-bdec-11ef-b55e-d50e0e2ee017\":{\"minOutsideDuration\":180}}",
+      "key" : "zoneThresolds",
+      "lastUpdateTs" : 1744632131453,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,232 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "464cd5f0-b2da-11ef-8c91-7baf5304b8d0"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "3582679c-c139-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Demo Device 11",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Tag"
+  },
+  "credentials" : {
+    "credentialsId" : "d1McD5YMDdeztpb4LHhP",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "fb161600-c139-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "3582679c-c139-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "DeviceToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586479
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "65e51910-1926-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "3582679c-c139-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 27731052
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1735131967695,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"718cc5a0-c120-11ef-b55e-d50e0e2ee017\":{\"name\":\"Control room\",\"status\":\"outside\"}}",
+      "key" : "areaAlarmRules",
+      "lastUpdateTs" : 1744631396788,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"zone\":{\"inside\":[],\"outside\":[]},\"geofence\":{\"inside\":[],\"outside\":[\"geofence out Control room\"]}}",
+      "key" : "areaAlarms",
+      "lastUpdateTs" : 1744632581373,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAlarmProfile",
+      "lastUpdateTs" : 1744631371077,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAsset",
+      "lastUpdateTs" : 1744303961827,
+      "longValue" : null,
+      "strValue" : "{\"name\":\"Worker 11\",\"id\":{\"id\":\"fb161600-c139-11ef-b55e-d50e0e2ee017\",\"entityType\":\"ASSET\"}}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedLocation",
+      "lastUpdateTs" : 1734964024239,
+      "longValue" : null,
+      "strValue" : "Kramatorsk Machinebuilding Factory"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "configPreset",
+      "lastUpdateTs" : 1734963696564,
+      "longValue" : null,
+      "strValue" : "Default config"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectivity",
+      "lastUpdateTs" : 1734963696564,
+      "longValue" : null,
+      "strValue" : "RFID (MQTT)"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1734963696564,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"718cc5a0-c120-11ef-b55e-d50e0e2ee017\":{\"minOutsideDuration\":300}}",
+      "key" : "geofenceThresolds",
+      "lastUpdateTs" : 1744631396788,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "hasRelatedAsset",
+      "lastUpdateTs" : 1734964024216,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1735127542903,
+      "longValue" : 1735127542902,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"id\":\"3582679c-c139-11ef-b55e-d50e0e2ee017\",\"name\":\"Demo Asset 11\"}",
+      "key" : "info",
+      "lastUpdateTs" : 1734964024227,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isAssigned",
+      "lastUpdateTs" : 1734964024227,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1746989449662,
+      "longValue" : 1746989447625,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1744637052704,
+      "longValue" : 1744637052704,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1744637050949,
+      "longValue" : 1744637050949,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "modelNumber",
+      "lastUpdateTs" : 1734963696564,
+      "longValue" : null,
+      "strValue" : "Demo Device 11"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "serialNumber",
+      "lastUpdateTs" : 1734963696564,
+      "longValue" : null,
+      "strValue" : "Demo Device 11"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{}",
+      "key" : "zoneThresolds",
+      "lastUpdateTs" : 1744626009593,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
