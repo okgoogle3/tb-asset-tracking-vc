@@ -729,7 +729,8 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "type" : "Device thresholds"
+              "type" : "Device thresholds",
+              "images" : [ "tb-image;/api/images/tenant/download.jpeg", "tb-image;/api/images/tenant/svg_(4).svg", "tb-image;/api/images/tenant/svg_(3).svg", "tb-image;/api/images/tenant/svg_(2).svg", "tb-image;/api/images/tenant/svg_(1).svg", "tb-image;/api/images/tenant/svg.svg", "tb-image;/api/images/tenant/Frame 1618873866.png", "tb-image;/api/images/tenant/Frame 1618873862.png", "tb-image;/api/images/tenant/Device Image Container.png" ]
             },
             "title" : "Device thresholds",
             "useDashboardTimewindow" : true,
