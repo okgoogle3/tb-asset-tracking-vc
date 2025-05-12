@@ -1,0 +1,101 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "3642e7b0-1939-11f0-9ede-7f3b1ed43f2e"
+    },
+    "label" : null,
+    "name" : "Test Sasha",
+    "ownerId" : null,
+    "type" : "Alarm config"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "3642e7b0-1939-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "96a1fdf0-a5bf-11ef-aeb9-2d6dbc59e038"
+    },
+    "type" : "AlarmConfigToInformingUser",
+    "typeGroup" : "COMMON",
+    "version" : 27736161
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "3642e7b0-1939-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "0a9c81f0-b2f7-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 27736156
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "3642e7b0-1939-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "2cae60b0-c8eb-11ef-ab5a-5fc560f62ac3"
+    },
+    "type" : "AlarmConfigToInformingUser",
+    "typeGroup" : "COMMON",
+    "version" : 27736159
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "3642e7b0-1939-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66e99210-b39f-11ef-838c-5dd5db96bde1"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 27736157
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "3642e7b0-1939-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "729d8c90-c445-11ef-ab5a-5fc560f62ac3"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 27736158
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"description\":null,\"isActive\":false,\"phone\":false,\"email\":false,\"application\":false}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1744640919466,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,62 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "e9855120-1928-11f0-9ede-7f3b1ed43f2e"
+    },
+    "label" : null,
+    "name" : "Foundry Production Tool Alert Config",
+    "ownerId" : null,
+    "type" : "Alarm config"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e9855120-1928-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "96a1fdf0-a5bf-11ef-aeb9-2d6dbc59e038"
+    },
+    "type" : "AlarmConfigToInformingUser",
+    "typeGroup" : "COMMON",
+    "version" : 27731623
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e9855120-1928-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "53dcf160-c139-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "AlarmConfigToDevice",
+    "typeGroup" : "COMMON",
+    "version" : 27731622
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"isActive\":true,\"phone\":false,\"email\":false,\"application\":false,\"locationThresholds\":[{\"eventType\":\"Geofence Out\",\"locations\":{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017\"}},\"zones\":{\"name\":\"Foundry Production\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"70593240-bdec-11ef-b55e-d50e0e2ee017\"}},\"geofences\":[{\"name\":\"Castings producing of carbon\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6fa8a6f0-bdec-11ef-b55e-d50e0e2ee017\"}}],\"duration\":1,\"index\":\"7cfb4095-3ab5-236d-b250-1cdd9bf5e750\"}],\"deviceThresholds\":[{\"type\":\"Temperature\",\"status\":false},{\"type\":\"Battery level\",\"status\":true,\"lowerThreshold\":15},{\"type\":\"Movement\",\"status\":false},{\"type\":\"Idle\",\"status\":false}]}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1745314305845,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}
