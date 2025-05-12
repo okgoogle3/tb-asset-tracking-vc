@@ -98,6 +98,7 @@
               },
               "background" : {
                 "type" : "color",
+                "imageUrl" : null,
                 "color" : "#fff",
                 "overlay" : {
                   "enabled" : false,
@@ -166,14 +167,15 @@
               "iconColor" : "var(--tb-primary-500)",
               "background" : {
                 "type" : "color",
+                "imageUrl" : null,
                 "color" : "#fff",
                 "overlay" : {
-                  "enabled" : false,
+                  "enabled" : true,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
                 }
               },
-              "padding" : "112px"
+              "padding" : "px"
             },
             "title" : "Label card",
             "dropShadow" : true,
@@ -225,8 +227,8 @@
                   "col" : 0
                 },
                 "a250c616-257f-10be-4441-504d8f12223a" : {
-                  "sizeX" : 10,
-                  "sizeY" : 4,
+                  "sizeX" : 11,
+                  "sizeY" : 7,
                   "row" : 1,
                   "col" : 12
                 }
