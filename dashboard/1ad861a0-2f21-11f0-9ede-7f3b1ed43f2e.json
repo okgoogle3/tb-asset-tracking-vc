@@ -146,7 +146,7 @@
             "showTitle" : false,
             "backgroundColor" : "rgba(0, 0, 0, 0)",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
+            "padding" : "10px",
             "settings" : {
               "autoScale" : true,
               "label" : "Thermostat",
@@ -184,7 +184,7 @@
             },
             "widgetStyle" : { },
             "actions" : { },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "margin" : "0px",
             "borderRadius" : "0px",
             "widgetCss" : "",
@@ -202,7 +202,9 @@
             "titleIcon" : "",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "14px",
-            "datasources" : [ ]
+            "datasources" : [ ],
+            "enableDataExport" : true,
+            "pageSize" : 1024
           },
           "row" : 0,
           "col" : 0,
