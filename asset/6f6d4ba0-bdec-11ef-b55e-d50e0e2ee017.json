@@ -1,0 +1,549 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Novokramatorsky Mashynobudivny Zavod (English:New Kramatorsk Machinebuilding Plant) (Ukrainian: Новокраматорський машинобудівний завод) is a large heavy equipment manufacturer in Ukraine. Its abbreviation is NKMZ. The company produces mining equipment; metallurgy equipment; rolling mills, forges, blast furnaces, ore crushers, presses, and other industrial process equipment. The company manufactures propeller shafts for icebreakers and components for submarines According to its website, the company has designed and constructed over 18 mining complexes."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "0d968e80-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Kramatorsk Machinebuilding Factory",
+    "ownerId" : null,
+    "type" : "Location"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "91487540-2c0c-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 28749974
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "df0bb9d0-2c0d-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 28750184
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "54ad9ef0-2c91-11f0-9ede-7f3b1ed43f2e"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 28796294
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "60c344a0-cced-11ef-ab5a-5fc560f62ac3"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 28693204
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f1d56e0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 26743517
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "903e5130-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 27575002
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "986765e0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 572931
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "a61cc450-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 143604
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "af699880-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 27575374
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "b8eda950-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 27729067
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "c0674420-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 27732120
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "ce728f60-1b85-11f0-9ede-7f3b1ed43f2e"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 27856707
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "d11485d0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 27575295
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "ed99a1e0-c139-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586456
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "f14185b0-b30b-11ef-8c91-7baf5304b8d0"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 27575038
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "fb161600-c139-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586480
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "0b842bd0-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586520
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "134a8710-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586542
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "1b9cf5b0-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586555
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "23ec3000-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586567
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2b8eaf90-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586583
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "34d05be0-d8c2-11ef-ab5a-5fc560f62ac3"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 27773732
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "3514e340-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586598
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "3c8c0d10-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 27773688
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "438e7c10-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586624
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "4a674300-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586632
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "511158d0-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586642
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "58422ad0-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586656
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "5f489170-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586673
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6703c920-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586687
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6da7eb80-c13a-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "LocationToAsset",
+    "typeGroup" : "COMMON",
+    "version" : 586696
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "704b4f90-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 28748903
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "70593240-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 28795842
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "706407b0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 28795873
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "7071ea60-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "ZoneToLocation",
+    "typeGroup" : "COMMON",
+    "version" : 28746778
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1734601768515,
+      "longValue" : null,
+      "strValue" : "Oleksy Tykhoho St, 5"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignedAssetsCount",
+      "lastUpdateTs" : 1744892195753,
+      "longValue" : 26,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "city",
+      "lastUpdateTs" : 1734601768515,
+      "longValue" : null,
+      "strValue" : "Kramatorsk"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "country",
+      "lastUpdateTs" : 1734601768515,
+      "longValue" : null,
+      "strValue" : "Ukraine"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1734601768515,
+      "longValue" : null,
+      "strValue" : "Novokramatorsky Mashynobudivny Zavod (English:New Kramatorsk Machinebuilding Plant) (Ukrainian: Новокраматорський машинобудівний завод) is a large heavy equipment manufacturer in Ukraine. Its abbreviation is NKMZ. The company produces mining equipment; metallurgy equipment; rolling mills, forges, blast furnaces, ore crushers, presses, and other industrial process equipment. The company manufactures propeller shafts for icebreakers and components for submarines According to its website, the company has designed and constructed over 18 mining complexes."
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 48.75140396498977,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1734601768515,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 37.57949592367952,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1734601768515,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "zonesCount",
+      "lastUpdateTs" : 1746766444096,
+      "longValue" : 9,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

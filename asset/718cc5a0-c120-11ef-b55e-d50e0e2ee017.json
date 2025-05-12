@@ -1,0 +1,81 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "718cc5a0-c120-11ef-b55e-d50e0e2ee017"
+    },
+    "label" : null,
+    "name" : "Control room",
+    "ownerId" : null,
+    "type" : "Geofence"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "718cc5a0-c120-11ef-b55e-d50e0e2ee017"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "706407b0-bdec-11ef-b55e-d50e0e2ee017"
+    },
+    "type" : "GeofenceToZone",
+    "typeGroup" : "COMMON",
+    "version" : 576552
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1735920001059,
+      "longValue" : null,
+      "strValue" : "#FF00CD"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[48.75401124094376,37.57559716162811],[48.754196034428176,37.57568701654773],[48.754002399121894,37.57663786161578],[48.75381848910962,37.576554712287155]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1734953118857,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75401124094376, 37.57559716162811], [48.754196034428176, 37.57568701654773], [48.754002399121894, 37.57663786161578], [48.75381848910962, 37.576554712287155]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1734953118904,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "relatedZoneName",
+      "lastUpdateTs" : 1746765928216,
+      "longValue" : null,
+      "strValue" : "Steelmaking Production"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "relatedZoneType",
+      "lastUpdateTs" : 1746765922588,
+      "longValue" : null,
+      "strValue" : "Image on map"
+    } ]
+  },
+  "calculatedFields" : [ ]
+}
