@@ -6402,10 +6402,10 @@
             "main" : {
               "widgets" : {
                 "3214d3d2-e1e1-3cfe-b3c2-376bc7aea912" : {
-                  "sizeX" : 12,
+                  "sizeX" : 4,
                   "sizeY" : 2,
                   "row" : 0,
-                  "col" : 0
+                  "col" : 8
                 },
                 "28f58dd7-6293-a35c-6f47-27a5d9f1b21e" : {
                   "sizeX" : 36,
