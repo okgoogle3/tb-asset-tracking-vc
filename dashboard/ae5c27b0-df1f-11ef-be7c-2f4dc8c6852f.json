@@ -6322,7 +6322,9 @@
             "decimals" : null,
             "useDashboardTimewindow" : true,
             "showLegend" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "padding" : "12px"
+            },
             "actions" : { },
             "configMode" : "advanced",
             "displayTimewindow" : true,
