@@ -6322,16 +6322,12 @@
             "decimals" : null,
             "useDashboardTimewindow" : true,
             "showLegend" : false,
-            "widgetStyle" : {
-              "border" : "1px solid #D0D5DD",
-              "margin-right" : "5px",
-              "margin-bottom" : "5px"
-            },
+            "widgetStyle" : { },
             "actions" : { },
             "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
-            "borderRadius" : "12px",
+            "borderRadius" : "",
             "widgetCss" : ".tb-count-icon-background-panel > div {\n    border-radius: 50%!important;\n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
@@ -6836,8 +6832,8 @@
             "main" : {
               "widgets" : {
                 "141cff4b-b3e9-2fe2-2d72-bccfaeda0d5c" : {
-                  "sizeX" : 6,
-                  "sizeY" : 3,
+                  "sizeX" : 24,
+                  "sizeY" : 11,
                   "row" : 0,
                   "col" : 0
                 }
