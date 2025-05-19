@@ -6981,8 +6981,8 @@
           "historyType" : 1,
           "interval" : 1000,
           "fixedTimewindow" : {
-            "startTimeMs" : 1743627600000,
-            "endTimeMs" : 1743713999999
+            "startTimeMs" : 1747602000000,
+            "endTimeMs" : 1747688399999
           }
         },
         "selectedTab" : 1
