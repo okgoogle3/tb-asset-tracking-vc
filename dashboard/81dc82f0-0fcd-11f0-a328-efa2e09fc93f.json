@@ -1117,7 +1117,7 @@
               "type" : "entity",
               "name" : "",
               "entityAliasId" : "e8f88e04-f80c-2aa6-a69a-9bc1cc1ca096",
-              "filterId" : null,
+              "filterId" : "0f60db3a-df12-283e-6705-1568188d4781",
               "dataKeys" : [ {
                 "name" : "name",
                 "type" : "entityField",
@@ -1131,7 +1131,7 @@
               }
             } ],
             "displayTimewindow" : false,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "list",
@@ -1214,7 +1214,7 @@
               "type" : "entity",
               "name" : "",
               "entityAliasId" : "2d6edda9-58bc-49df-58e7-b2b356068898",
-              "filterId" : null,
+              "filterId" : "15f05a19-1a40-bf5e-e5e7-f2bdbc06e3d0",
               "dataKeys" : [ {
                 "name" : "name",
                 "type" : "entityField",
@@ -1228,7 +1228,7 @@
               }
             } ],
             "displayTimewindow" : false,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "list",
