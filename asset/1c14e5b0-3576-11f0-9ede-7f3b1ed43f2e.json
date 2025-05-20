@@ -2,11 +2,11 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : "department"
+      "description" : "de"
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -20,9 +20,33 @@
     "label" : null,
     "name" : "Airplane department",
     "ownerId" : null,
-    "type" : "Temporary asset"
+    "type" : "Shape"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1747744184277,
+      "longValue" : null,
+      "strValue" : "department"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[50.461708016981646,30.391670465469364],[50.461339200392366,30.39201378822327]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1747744262712,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[50.461708016981646, 30.391670465469364], [50.461339200392366, 30.39201378822327]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1747744262763,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
