@@ -18,7 +18,7 @@
       "id" : "60c344a0-cced-11ef-ab5a-5fc560f62ac3"
     },
     "label" : null,
-    "name" : "Equipment warehouse",
+    "name" : "Equipment warehouse ",
     "ownerId" : null,
     "type" : "Image on map"
   },
@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1746597545706,
+      "lastUpdateTs" : 1746597554089,
       "longValue" : null,
       "strValue" : "A warehouse is a facility that, along with storage racks, handling equipment and personnel and management resources, allows us to control the differences between the incoming flow of goods (received from suppliers, production centres, etc.) and the outgoing flow of goods (goods being sent to production, sales, etc.). Usually, these flows are not coordinated, and this is one of the reasons why it is important to have storage facilities."
     }, {
@@ -42,9 +42,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[[48.75554951914993,37.57935896359048],[48.754929727782454,37.57907867431641],[48.755686567225275,37.57515192031861],[48.75630635859275,37.57543220959268]]",
+      "jsonValue" : "[[48.75557338600017,37.57937908172608],[48.754929727782454,37.57907867431641],[48.755686567225275,37.57515192031861],[48.756330225442994,37.57545232772828]]",
       "key" : "perimeter",
-      "lastUpdateTs" : 1746597552056,
+      "lastUpdateTs" : 1746597757174,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : "[48.755686567225275,37.57515192031861]",
       "key" : "pointA",
-      "lastUpdateTs" : 1746597552056,
+      "lastUpdateTs" : 1746597757174,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,23 +60,23 @@
       "doubleValue" : null,
       "jsonValue" : "[48.754929727782454,37.57907867431641]",
       "key" : "pointB",
-      "lastUpdateTs" : 1746597552056,
+      "lastUpdateTs" : 1746597757174,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "[48.75630635859275,37.57543220959268]",
+      "jsonValue" : "[48.756330225442994,37.57545232772828]",
       "key" : "pointC",
-      "lastUpdateTs" : 1746597552056,
+      "lastUpdateTs" : 1746597757174,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75554951914993, 37.57935896359048], [48.754929727782454, 37.57907867431641], [48.755686567225275, 37.57515192031861], [48.75630635859275, 37.57543220959268]]\"}",
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75557338600017, 37.57937908172608], [48.754929727782454, 37.57907867431641], [48.755686567225275, 37.57515192031861], [48.756330225442994, 37.57545232772828]]\"}",
       "key" : "polygon",
-      "lastUpdateTs" : 1746597552077,
+      "lastUpdateTs" : 1746597757194,
       "longValue" : null,
       "strValue" : null
     } ]
