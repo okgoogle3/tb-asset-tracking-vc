@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -20,9 +20,33 @@
     "label" : null,
     "name" : "Main Building",
     "ownerId" : null,
-    "type" : "Temporary asset"
+    "type" : "Shape"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1747742809749,
+      "longValue" : null,
+      "strValue" : "#306B33"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[50.46428407807677,30.3982504312439],[50.46428407807677,30.396250431243896],[50.46228407807678,30.396250431243896],[50.46228407807678,30.3982504312439]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1747742917991,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[50.46428407807677, 30.3982504312439], [50.46428407807677, 30.396250431243896], [50.46228407807678, 30.396250431243896], [50.46228407807678, 30.3982504312439]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1747742918018,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
