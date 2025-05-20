@@ -18,7 +18,7 @@
       "id" : "60c344a0-cced-11ef-ab5a-5fc560f62ac3"
     },
     "label" : null,
-    "name" : "Equipment warehouse ",
+    "name" : "Equipment warehouse",
     "ownerId" : null,
     "type" : "Image on map"
   },
@@ -28,7 +28,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1746597554089,
+      "lastUpdateTs" : 1747732671614,
       "longValue" : null,
       "strValue" : "A warehouse is a facility that, along with storage racks, handling equipment and personnel and management resources, allows us to control the differences between the incoming flow of goods (received from suppliers, production centres, etc.) and the outgoing flow of goods (goods being sent to production, sales, etc.). Usually, these flows are not coordinated, and this is one of the reasons why it is important to have storage facilities."
     }, {
