@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : null
+      "description" : ""
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -18,7 +18,7 @@
       "id" : "916e30b0-3557-11f0-9ede-7f3b1ed43f2e"
     },
     "label" : null,
-    "name" : "3grvre",
+    "name" : "Image plan test zone",
     "ownerId" : null,
     "type" : "Image plan"
   },
