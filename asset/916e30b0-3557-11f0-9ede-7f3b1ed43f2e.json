@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : "1"
+      "description" : ""
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -28,9 +28,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1747732414086,
+      "lastUpdateTs" : 1747733594963,
       "longValue" : null,
-      "strValue" : ""
+      "strValue" : "1"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
