@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "0ab79020-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -20,9 +20,41 @@
     "label" : null,
     "name" : "testtestimage",
     "ownerId" : null,
-    "type" : "Temporary asset"
+    "type" : "Image plan"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "description",
+      "lastUpdateTs" : 1747728338914,
+      "longValue" : null,
+      "strValue" : "wegv"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "image",
+      "lastUpdateTs" : 1747728343718,
+      "longValue" : null,
+      "strValue" : "data:image/png;base64,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"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "perimeter",
+      "lastUpdateTs" : 1747728343718,
+      "longValue" : null,
+      "strValue" : "[[48.75240396498977, 37.580495923679514], [48.75240396498977, 37.57849592367952], [48.75040396498977, 37.57849592367952], [48.75040396498977, 37.580495923679514]]"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[48.75240396498977, 37.580495923679514], [48.75240396498977, 37.57849592367952], [48.75040396498977, 37.57849592367952], [48.75040396498977, 37.580495923679514]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1747728338967,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
