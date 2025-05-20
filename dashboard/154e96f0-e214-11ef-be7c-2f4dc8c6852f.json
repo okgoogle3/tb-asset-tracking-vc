@@ -601,286 +601,6 @@
           "col" : 0,
           "id" : "640d1ffb-3a26-aa4d-7845-253179645c2b"
         },
-        "f1f1fe55-0e58-7de2-74f7-2d0bfd35dd4a" : {
-          "typeFullFqn" : "system.maps_v2.image_map",
-          "type" : "latest",
-          "sizeX" : 8.5,
-          "sizeY" : 6.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "18d57096-ebad-af54-4542-0d0ddf8554f0",
-              "filterId" : null,
-              "dataKeys" : [ {
-                "name" : "name",
-                "type" : "entityField",
-                "label" : "Name",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.7713010340959157
-              }, {
-                "name" : "perimeter",
-                "type" : "attribute",
-                "label" : "perimeter",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.7546962017228787
-              }, {
-                "name" : "color",
-                "type" : "attribute",
-                "label" : "color",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.07559757078595486
-              }, {
-                "name" : "type",
-                "type" : "entityField",
-                "label" : "Type",
-                "color" : "#ff9800",
-                "settings" : { },
-                "_hash" : 0.29385069785115037,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            }, {
-              "type" : "entity",
-              "entityAliasId" : "e98fed76-25d1-9b7a-286c-2386690d996f",
-              "dataKeys" : [ {
-                "name" : "xPos",
-                "type" : "attribute",
-                "label" : "xPos",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.42721964460667894
-              }, {
-                "name" : "yPos",
-                "type" : "attribute",
-                "label" : "yPos",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.23033295663441677
-              }, {
-                "name" : "active",
-                "type" : "attribute",
-                "label" : "active",
-                "color" : "#607d8b",
-                "settings" : { },
-                "_hash" : 0.4101464412247522
-              }, {
-                "name" : "alarmsCount",
-                "type" : "attribute",
-                "label" : "alarmsCount",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.5291959029477442
-              }, {
-                "name" : "type",
-                "type" : "entityField",
-                "label" : "Type",
-                "color" : "#3f51b5",
-                "settings" : { },
-                "_hash" : 0.32247805416508024
-              }, {
-                "name" : "department",
-                "type" : "attribute",
-                "label" : "department",
-                "color" : "#e91e63",
-                "settings" : { },
-                "_hash" : 0.13142248954779534
-              }, {
-                "name" : "latitude",
-                "type" : "attribute",
-                "label" : "latitude",
-                "color" : "#ffeb3b",
-                "settings" : { },
-                "_hash" : 0.8848807532340157
-              }, {
-                "name" : "longitude",
-                "type" : "attribute",
-                "label" : "longitude",
-                "color" : "#03a9f4",
-                "settings" : { },
-                "_hash" : 0.2786387821976344
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1731510529403,
-                  "endTimeMs" : 1731596929403
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "provider" : "image-map",
-              "gmApiKey" : "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
-              "gmDefaultMapType" : "roadmap",
-              "mapProvider" : "OpenStreetMap.Mapnik",
-              "useCustomProvider" : false,
-              "customProviderTileUrl" : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-              "mapProviderHere" : "HERE.normalDay",
-              "credentials" : {
-                "useV3" : true,
-                "app_id" : "AhM6TzD9ThyK78CT3ptx",
-                "app_code" : "p6NPiITB3Vv0GMUFnkLOOg",
-                "apiKey" : "kVXykxAfZ6LS4EbCTO02soFVfjA7HoBzNVVH9u7nzoE"
-              },
-              "mapImageUrl" : "tb-image;/api/images/system/image_map_system_widget_map_image.svg",
-              "imageEntityAlias" : "Selected zone",
-              "imageUrlAttribute" : "image",
-              "tmApiKey" : "84d6d83e0e51e481e50454ccbe8986b",
-              "tmDefaultMapType" : "roadmap",
-              "latKeyName" : "latitude",
-              "lngKeyName" : "longitude",
-              "xPosKeyName" : "xPos",
-              "yPosKeyName" : "yPos",
-              "defaultZoomLevel" : null,
-              "defaultCenterPosition" : "0,0",
-              "disableScrollZooming" : false,
-              "disableDoubleClickZooming" : false,
-              "disableZoomControl" : false,
-              "fitMapBounds" : true,
-              "useDefaultCenterPosition" : false,
-              "mapPageSize" : 16384,
-              "markerOffsetX" : 0.5,
-              "markerOffsetY" : 1,
-              "posFunction" : "return {x: origXPos, y: origYPos};",
-              "draggableMarker" : false,
-              "showLabel" : false,
-              "useLabelFunction" : false,
-              "label" : "${entityName}",
-              "labelFunction" : null,
-              "showTooltip" : true,
-              "showTooltipAction" : "click",
-              "autocloseTooltip" : true,
-              "useTooltipFunction" : true,
-              "tooltipPattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}",
-              "tooltipFunction" : "return `<div>\n            <span style=\"font-size: 24px;\n                        font-weight: 600;\n                        color: #0C111D;\n                        text-align:right;\n                        line-height: 32px;\">\n                ${data.entityName}</span>\n            <div style=\"display: flex;justify-content:space-between;margin-top:5px;\">\n                <span style=\"color:#344054;\">Type</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${data.Type}</span>\n            </div>\n            <div style=\"display: flex;justify-content:space-between;margin-top:5px;\">\n                <span style=\"color:#344054;\">Department</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${data.department}</span>\n            </div>\n            <div style=\"display: flex;justify-content:space-between;margin-top:5px;\">\n                <span style=\"color:#344054;\">Longitude, latitude</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${data.latitude}, ${data.longitude}</span>\n            </div>\n            <div style=\"display:flex;justify-content:center;margin-top:5px;\"><link-act name='assetDetails'>Details</link-act></div>\n        </div>`",
-              "tooltipOffsetX" : 0,
-              "tooltipOffsetY" : -1,
-              "color" : "#fe7569",
-              "useColorFunction" : false,
-              "colorFunction" : null,
-              "useMarkerImageFunction" : true,
-              "markerImage" : null,
-              "markerImageSize" : 34,
-              "markerImageFunction" : "var status = dsData[dsIndex]['active'];\nvar alarmsCount = dsData[dsIndex]['alarmsCount'];\n\nvar res = {\n    url: images[0],\n    size: 28\n}\n\nif (!status) {\n    res.url = images[0];\n} else {\n    if(alarmsCount > 0){\n        res.url = images[1];\n    } else res.url = images[2];\n}\n\nreturn res;",
-              "markerImages" : [ "tb-image;/api/images/tenant/Map bullet (1).svg", "tb-image;/api/images/tenant/Map bullet (1).png", "tb-image;/api/images/tenant/Map bullet.png" ],
-              "showPolygon" : true,
-              "polygonKeyName" : "perimeter",
-              "editablePolygon" : false,
-              "showPolygonLabel" : false,
-              "showPolygonTooltip" : true,
-              "showPolygonTooltipAction" : "click",
-              "autoClosePolygonTooltip" : true,
-              "usePolygonTooltipFunction" : true,
-              "polygonTooltipFunction" : "let typeLabel = data.Type ===  \"Geofence\" ? data.Type : \"Zone\";\nreturn `<div>\n            <span style=\"font-size: 22px;\n                        font-weight: 600;\n                        color: #0C111D;\n                        text-align:right;\n                        line-height: 32px;\">${data.entityName}</span>\n            \n            <div style=\"display: flex;justify-content:space-between;margin-top:5px;gap: 10px;\">\n                <span style=\"color:#344054;\">Type</span>\n                <span style=\"color:#0C111D;font-weight:600;text-align:right;\">${typeLabel}</span>\n            </div>\n        </div>`;",
-              "polygonColor" : "#3388ff",
-              "polygonOpacity" : 0.15,
-              "usePolygonColorFunction" : true,
-              "polygonColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";",
-              "polygonStrokeColor" : "#3388ff",
-              "polygonStrokeOpacity" : 0.2,
-              "polygonStrokeWeight" : 1,
-              "usePolygonStrokeColorFunction" : true,
-              "polygonStrokeColorFunction" : "if (data.color) {\n    return data.color;     \n} else return \"#0086C9\";",
-              "showCircle" : false,
-              "circleKeyName" : "perimeter",
-              "editableCircle" : false,
-              "showCircleLabel" : false,
-              "useCircleLabelFunction" : false,
-              "circleLabel" : "${entityName}",
-              "circleLabelFunction" : null,
-              "showCircleTooltip" : false,
-              "showCircleTooltipAction" : "click",
-              "autoCloseCircleTooltip" : true,
-              "useCircleTooltipFunction" : false,
-              "circleTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-              "circleTooltipFunction" : null,
-              "circleFillColor" : "#3388ff",
-              "circleFillColorOpacity" : 0.2,
-              "useCircleFillColorFunction" : false,
-              "circleFillColorFunction" : null,
-              "circleStrokeColor" : "#3388ff",
-              "circleStrokeOpacity" : 1,
-              "circleStrokeWeight" : 3,
-              "useCircleStrokeColorFunction" : false,
-              "circleStrokeColorFunction" : null
-            },
-            "title" : "Image Map",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "widgetStyle" : {
-              "border" : "1px solid #D0D5DD"
-            },
-            "actions" : {
-              "tooltipAction" : [ {
-                "name" : "assetDetails",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "let controller = widgetContext.$scope.ctx.stateController;\nlet states = controller.stateObject.length;\nlet $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nif(states>1){\n    controller.navigatePrevState(0);\n}\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst assetsDashboardName = \"Assets dashboard\";\n\n\ndashboardService.getTenantDashboards(pageLink).subscribe(response => {\n    const dashboardId = response.data.find(dashboard => dashboard.title === assetsDashboardName).id.id;\n    \n    const jsonStr = JSON.stringify([\n        {\n            id: \"default\",\n            params: {\n                stateId: \"assetDetails\",\n                prevState: \"assets\",\n                subState: \"general\",\n                statesArray: [\n                    {\n                        stateId: \"assets\",\n                        name: \"Assets\"\n                    },\n                    {\n                        stateId: \"assetDetails\",\n                        name: entityName\n                    }\n                ],\n                selectedEntity: {\n                    entityName,\n                    entityId,\n                    entityLabel\n                }\n            }\n        }\n    ]);\n    \n    const state = btoa(jsonStr);\n    \n    const queryParams = {\n        stateId: \"Assets\",\n        dashboardId,\n        hideDashboardToolbar: true,\n        state\n    };\n    \n    router.navigate(['/iframeView'], {queryParams});\n});",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "324908a1-2bad-c6a6-a198-d6aa74da1308"
-              } ]
-            },
-            "displayTimewindow" : true,
-            "enableDataExport" : false,
-            "borderRadius" : "12px",
-            "widgetCss" : ".leaflet-popup-content-wrapper, .leaflet-popup-tip {\n    border: 1px solid #D0D5DD;\n    box-shadow: none;\n    border-radius: 8px;\n}\n\n.leaflet-popup-content {\n    margin: 0px;\n    padding: 15px;\n    min-width: 200px;\n}\n\n.leaflet-container a {\n    text-align: center;\n    font-size: 15px;\n    font-weight: 500;\n    color: #026AA2;\n    text-decoration: none;\n    line-height: 28px;\n    border-bottom: 0;\n}",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "f1f1fe55-0e58-7de2-74f7-2d0bfd35dd4a"
-        },
         "4d794955-6f33-d103-5d0c-c052b7a2faa3" : {
           "typeFullFqn" : "system.cards.markdown_card",
           "type" : "latest",
@@ -6100,14 +5820,14 @@
               "imageSource" : {
                 "sourceType" : "entityKey",
                 "url" : "data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMiIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwIiB3aWR0aD0iMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgdmlld0JveD0iMCAwIDEwMCAxMDAiPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtOTUyLjM2KSI+CiAgPHJlY3QgaWQ9InJlY3Q0Njg0IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBoZWlnaHQ9Ijk5LjAxIiB3aWR0aD0iOTkuMDEiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiB5PSI5NTIuODYiIHg9Ii40OTUwNSIgc3Ryb2tlLXdpZHRoPSIuOTkwMTAiIGZpbGw9IiNlZWUiLz4KICA8dGV4dCBpZD0idGV4dDQ2ODYiIHN0eWxlPSJ3b3JkLXNwYWNpbmc6MHB4O2xldHRlci1zcGFjaW5nOjBweDt0ZXh0LWFuY2hvcjptaWRkbGU7dGV4dC1hbGlnbjpjZW50ZXIiIGZvbnQtd2VpZ2h0PSJib2xkIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmb250LXNpemU9IjEwcHgiIGxpbmUtaGVpZ2h0PSIxMjUlIiB5PSI5NzAuNzI4MDkiIHg9IjQ5LjM5NjQ3NyIgZm9udC1mYW1pbHk9IlJvYm90byIgZmlsbD0iIzY2NjY2NiI+PHRzcGFuIGlkPSJ0c3BhbjQ2OTAiIHg9IjUwLjY0NjQ3NyIgeT0iOTcwLjcyODA5Ij5JbWFnZSBiYWNrZ3JvdW5kIDwvdHNwYW4+PHRzcGFuIGlkPSJ0c3BhbjQ2OTIiIHg9IjQ5LjM5NjQ3NyIgeT0iOTgzLjIyODA5Ij5pcyBub3QgY29uZmlndXJlZDwvdHNwYW4+PC90ZXh0PgogIDxyZWN0IGlkPSJyZWN0NDY5NCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgaGVpZ2h0PSIxOS4zNiIgd2lkdGg9IjY5LjM2IiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgeT0iOTkyLjY4IiB4PSIxNS4zMiIgc3Ryb2tlLXdpZHRoPSIuNjM5ODYiIGZpbGw9Im5vbmUiLz4KIDwvZz4KPC9zdmc+Cg==",
-                "entityAliasId" : "10b1d443-e815-ef4f-35b5-d9d97a3366b4",
+                "entityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
                 "entityKey" : {
                   "name" : "image",
                   "type" : "attribute",
                   "label" : "image",
                   "color" : "#2196f3",
                   "settings" : { },
-                  "_hash" : 0.9092342751559714
+                  "_hash" : 0.6425655461537481
                 }
               },
               "markers" : [ {
@@ -6220,7 +5940,19 @@
                   "autoclose" : true,
                   "offsetX" : 0,
                   "offsetY" : -1,
-                  "tagActions" : null
+                  "tagActions" : [ {
+                    "name" : "assetDetails",
+                    "type" : "custom",
+                    "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst assetsDashboardName = \"Assets dashboard\";\n\ndashboardService.getTenantDashboards(pageLink).subscribe(response => {\n    const dashboardId = response.data.find(dashboard => dashboard.title === assetsDashboardName).id.id;\n    \n    const jsonStr = JSON.stringify([\n        {\n            id: \"default\",\n            params: {\n                stateId: \"assetDetails\",\n                prevState: \"assets\",\n                subState: \"general\",\n                statesArray: [\n                    {\n                        stateId: \"assets\",\n                        name: \"Assets\"\n                    },\n                    {\n                        stateId: \"assetDetails\",\n                        name: entityName\n                    }\n                ],\n                selectedEntity: {\n                    entityName,\n                    entityId,\n                    entityLabel\n                }\n            }\n        }\n    ]);\n    \n    const state = btoa(jsonStr);\n    \n    const queryParams = {\n        stateId: \"Asset tracking template\",\n        childStateId: \"Assets\",\n        childDashboardId: dashboardId,\n        childHideDashboardToolbar: true,\n        state\n    };\n    \n    router.navigate(['/iframeView/child'], {queryParams});\n});",
+                    "openInSeparateDialog" : false,
+                    "openInPopover" : false
+                  }, {
+                    "name" : "historyDetails",
+                    "type" : "custom",
+                    "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst pageLink = widgetContext.pageLink(100000);\n\nconst assetsDashboardName = \"Assets dashboard\";\n\ndashboardService.getTenantDashboards(pageLink).subscribe(response => {\n    const dashboardId = response.data.find(dashboard => dashboard.title === assetsDashboardName).id.id;\n    \n    const jsonStr = JSON.stringify([\n        {\n            id: \"default\",\n            params: {\n                stateId: \"assetDetails\",\n                prevState: \"assets\",\n                subState: \"eventHistory\",\n                statesArray: [\n                    {\n                        stateId: \"assets\",\n                        name: \"Assets\"\n                    },\n                    {\n                        stateId: \"assetDetails\",\n                        name: entityName\n                    }\n                ],\n                selectedEntity: {\n                    entityName,\n                    entityId,\n                    entityLabel\n                }\n            }\n        }\n    ]);\n    \n    const state = btoa(jsonStr);\n    \n    const queryParams = {\n        stateId: \"Asset tracking template\",\n        childStateId: \"Assets\",\n        childDashboardId: dashboardId,\n        childHideDashboardToolbar: true,\n        state\n    };\n    \n    router.navigate(['/iframeView/child'], {queryParams});\n});",
+                    "openInSeparateDialog" : false,
+                    "openInPopover" : false
+                  } ]
                 },
                 "click" : {
                   "type" : "doNothing"
@@ -6279,6 +6011,7 @@
                 },
                 "markerOffsetX" : 0.5,
                 "markerOffsetY" : 1,
+                "positionFunction" : "return {x: origXPos, y: origYPos};",
                 "markerClustering" : {
                   "enable" : false,
                   "zoomOnClick" : true,
@@ -6294,117 +6027,6 @@
                 }
               } ],
               "polygons" : [ {
-                "dsType" : "entity",
-                "dsLabel" : "",
-                "dsDeviceId" : null,
-                "dsEntityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
-                "dsFilterId" : null,
-                "additionalDataSources" : null,
-                "additionalDataKeys" : [ {
-                  "name" : "color",
-                  "type" : "attribute",
-                  "label" : "color",
-                  "color" : "#2196f3",
-                  "settings" : { },
-                  "_hash" : 0.7899397588287345
-                }, {
-                  "name" : "createdTime",
-                  "type" : "entityField",
-                  "label" : "Created time",
-                  "color" : "#2196f3",
-                  "settings" : { },
-                  "_hash" : 0.9548344825171212
-                }, {
-                  "name" : "type",
-                  "type" : "entityField",
-                  "label" : "Type",
-                  "color" : "#2196f3",
-                  "settings" : { },
-                  "_hash" : 0.4625412340738859
-                } ],
-                "label" : {
-                  "show" : false,
-                  "type" : "pattern",
-                  "pattern" : "${entityName}"
-                },
-                "tooltip" : {
-                  "show" : true,
-                  "type" : "function",
-                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
-                  "patternFunction" : {
-                    "body" : "return module.createZoneTooltip(data);",
-                    "modules" : {
-                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
-                    }
-                  },
-                  "trigger" : "click",
-                  "autoclose" : true,
-                  "tagActions" : null
-                },
-                "click" : {
-                  "type" : "doNothing"
-                },
-                "groups" : null,
-                "edit" : {
-                  "enabledActions" : [ ],
-                  "attributeScope" : "SERVER_SCOPE",
-                  "snappable" : false
-                },
-                "fillType" : "color",
-                "fillColor" : {
-                  "type" : "function",
-                  "color" : "rgba(51,136,255,0.2)",
-                  "rangeKey" : null,
-                  "range" : null,
-                  "colorFunction" : {
-                    "body" : "return module.findFillColor(data);",
-                    "modules" : {
-                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
-                    }
-                  }
-                },
-                "fillStripe" : {
-                  "weight" : 3,
-                  "color" : {
-                    "type" : "constant",
-                    "color" : "#8f8f8f"
-                  },
-                  "spaceWeight" : 9,
-                  "spaceColor" : {
-                    "type" : "constant",
-                    "color" : "rgba(143,143,143,0)"
-                  },
-                  "angle" : 45
-                },
-                "fillImage" : {
-                  "type" : "image",
-                  "image" : "/assets/widget-preview-empty.svg",
-                  "preserveAspectRatio" : true,
-                  "opacity" : 1,
-                  "angle" : 0,
-                  "scale" : 1
-                },
-                "strokeColor" : {
-                  "type" : "function",
-                  "color" : "#3388ff",
-                  "rangeKey" : null,
-                  "range" : null,
-                  "colorFunction" : {
-                    "body" : "return module.findStrokedColor(data);",
-                    "modules" : {
-                      "module" : "tb-resource;/api/resource/js_module/tenant/Asset Marker Image.js"
-                    }
-                  }
-                },
-                "strokeWeight" : 3,
-                "polygonKey" : {
-                  "name" : "perimeter",
-                  "label" : "perimeter",
-                  "type" : "attribute",
-                  "settings" : { },
-                  "color" : "#2196f3"
-                }
-              }, {
                 "dsType" : "entity",
                 "dsLabel" : "",
                 "dsDeviceId" : null,
@@ -9925,17 +9547,11 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "f1f1fe55-0e58-7de2-74f7-2d0bfd35dd4a" : {
-                  "sizeX" : 5,
+                "67e47931-6ad8-79aa-3be2-7bd4ea85ee0d" : {
+                  "sizeX" : 24,
                   "sizeY" : 11,
                   "row" : 0,
                   "col" : 0
-                },
-                "67e47931-6ad8-79aa-3be2-7bd4ea85ee0d" : {
-                  "sizeX" : 19,
-                  "sizeY" : 12,
-                  "row" : 0,
-                  "col" : 5
                 }
               },
               "gridSettings" : {
