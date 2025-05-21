@@ -39,6 +39,10 @@
       "type" : "RPC Request to Device"
     }, {
       "fromIndex" : 1,
+      "toIndex" : 9,
+      "type" : "Generate Report"
+    }, {
+      "fromIndex" : 1,
       "toIndex" : 10,
       "type" : "Post telemetry"
     }, {
