@@ -1,0 +1,29 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "eef0af90-362b-11f0-9ede-7f3b1ed43f2e"
+    },
+    "label" : null,
+    "name" : "test asset alarm rule",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
+    },
+    "type" : "Alarm config"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
