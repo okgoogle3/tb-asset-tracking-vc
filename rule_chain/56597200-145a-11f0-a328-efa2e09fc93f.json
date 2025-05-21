@@ -53,7 +53,8 @@
         "layoutY" : 150
       },
       "configuration" : {
-        "searchEntityGroupForTenantOnly" : true,
+        "searchEntityGroupForTenantOnly" : false,
+        "considerMessageOriginatorAsAGroupOwner" : null,
         "groupType" : "ASSET",
         "groupName" : "configuration assets"
       },
