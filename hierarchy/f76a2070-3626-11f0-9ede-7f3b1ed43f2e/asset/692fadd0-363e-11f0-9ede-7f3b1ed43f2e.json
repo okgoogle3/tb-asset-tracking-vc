@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "07190ca0-a727-11ef-98fa-d9f628e02cb7"
+      "id" : "133331a0-a727-11ef-98fa-d9f628e02cb7"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -23,9 +23,33 @@
       "entityType" : "CUSTOMER",
       "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
     },
-    "type" : "Temporary asset"
+    "type" : "Shape"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1747830217734,
+      "longValue" : null,
+      "strValue" : "#C91000"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[0.001,0.001],[0.001,-0.001],[-0.001,-0.001],[-0.002381801604534518,0.0030899047851562504]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1747830231110,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"perimeterType\":\"POLYGON\",\"polygonsDefinition\":\"[[0.001, 0.001], [0.001, -0.001], [-0.001, -0.001], [-0.002381801604534518, 0.0030899047851562504]]\"}",
+      "key" : "polygon",
+      "lastUpdateTs" : 1747830231136,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
