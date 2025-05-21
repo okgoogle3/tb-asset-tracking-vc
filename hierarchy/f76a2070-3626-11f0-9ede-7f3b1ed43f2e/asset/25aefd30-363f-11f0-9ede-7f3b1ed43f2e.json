@@ -2,7 +2,7 @@
   "entityType" : "ASSET",
   "entity" : {
     "additionalInfo" : {
-      "description" : null
+      "description" : ""
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
@@ -18,7 +18,7 @@
       "id" : "25aefd30-363f-11f0-9ede-7f3b1ed43f2e"
     },
     "label" : null,
-    "name" : "Create zone test",
+    "name" : "AAA zone test",
     "ownerId" : {
       "entityType" : "CUSTOMER",
       "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
