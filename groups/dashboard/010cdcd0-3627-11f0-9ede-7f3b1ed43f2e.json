@@ -24,7 +24,7 @@
       "entityType" : "ENTITY_GROUP",
       "id" : "010cdcd0-3627-11f0-9ede-7f3b1ed43f2e"
     },
-    "name" : "Asset tracking",
+    "name" : "Asset Tracking",
     "ownerId" : {
       "entityType" : "TENANT",
       "id" : "964a19f0-a5bf-11ef-aeb9-2d6dbc59e038"
