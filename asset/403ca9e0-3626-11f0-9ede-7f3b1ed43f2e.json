@@ -1,0 +1,26 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "8331c730-a729-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "403ca9e0-3626-11f0-9ede-7f3b1ed43f2e"
+    },
+    "label" : null,
+    "name" : "test c",
+    "ownerId" : null,
+    "type" : "deviceConfig"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
