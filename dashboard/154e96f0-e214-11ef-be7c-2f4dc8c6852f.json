@@ -2754,8 +2754,8 @@
                 "units" : null,
                 "decimals" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value || 0;"
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
