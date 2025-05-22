@@ -1,0 +1,31 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "0d968e80-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "0ae01570-36df-11f0-9ede-7f3b1ed43f2e"
+    },
+    "label" : null,
+    "name" : "дай мені",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
+    },
+    "type" : "Location"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
