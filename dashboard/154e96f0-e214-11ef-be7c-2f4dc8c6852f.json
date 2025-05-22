@@ -748,7 +748,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "866a50cc-34a1-fe42-587b-c1ac982a0ea3",
+              "entityAliasId" : "d43b27c5-4fe0-6cf0-f4b9-00d2adff629e",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "createdTime",
@@ -10397,6 +10397,15 @@
             "resolveMultiple" : true,
             "assetTypes" : [ "Geofence" ],
             "assetNameFilter" : ""
+          }
+        },
+        "d43b27c5-4fe0-6cf0-f4b9-00d2adff629e" : {
+          "id" : "d43b27c5-4fe0-6cf0-f4b9-00d2adff629e",
+          "alias" : "Test",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "ASSET"
           }
         }
       },
