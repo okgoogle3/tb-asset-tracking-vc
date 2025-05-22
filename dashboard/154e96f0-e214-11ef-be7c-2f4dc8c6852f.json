@@ -2908,7 +2908,7 @@
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "12px",
-            "widgetCss" : "tb-icon {\n  display: inline-flex; /* Ensures it behaves like an inline element but allows flex properties */\n  justify-content: center; /* Centers the icon inside the circle */\n  align-items: center; /* Centers the icon vertically */\n  border-radius: 50%; /* Makes the background circular */\n  width: 40px!important; /* Set width and height to define the size of the circle */\n  height: 40px!important;\n  background-color: #E9F9FF;\n}\n\n.tb-label-value-card-row {\n    justify-content: space-between;\n}",
+            "widgetCss" : "tb-icon {\n  display: inline-flex; /* Ensures it behaves like an inline element but allows flex properties */\n  justify-content: center; /* Centers the icon inside the circle */\n  align-items: center; /* Centers the icon vertically */\n  border-radius: 50%; /* Makes the background circular */\n  width: 40px!important; /* Set width and height to define the size of the circle */\n  height: 40px!important;\n  background-color: #E9F9FF;\n}\n\n.tb-label-value-card-row {\n    justify-content: space-between!important;\n    width: 100%!important;\n}",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "showTitleIcon" : false,
