@@ -78,7 +78,7 @@
     }, {
       "fromIndex" : 5,
       "toIndex" : 32,
-      "type" : "Alarm Cleared"
+      "type" : "Alarm Created"
     }, {
       "fromIndex" : 5,
       "toIndex" : 33,
@@ -973,8 +973,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 31,
-        "layoutY" : 506
+        "layoutX" : 35,
+        "layoutY" : 502
       },
       "configuration" : {
         "scriptLang" : "TBEL",
