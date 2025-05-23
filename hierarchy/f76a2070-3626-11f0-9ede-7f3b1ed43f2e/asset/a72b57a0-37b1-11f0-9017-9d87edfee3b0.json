@@ -1,0 +1,29 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "06d54730-6b6e-11ef-9e6c-75c864e5f031"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "a72b57a0-37b1-11f0-9017-9d87edfee3b0"
+    },
+    "label" : null,
+    "name" : "Test",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
+    },
+    "type" : "Geofence"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
