@@ -21,6 +21,14 @@
     "type" : "Alarm config"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"description\":null,\"isActive\":true,\"phone\":true,\"email\":true,\"application\":true,\"deviceThresholds\":[{\"type\":\"Temperature\",\"status\":false,\"upperThreshold\":100,\"lowerThreshold\":0,\"equalThreshold\":50},{\"type\":\"Battery level\",\"status\":false,\"upperThreshold\":100,\"lowerThreshold\":0,\"equalThreshold\":50},{\"type\":\"Movement\",\"status\":true,\"durationThreshold\":10},{\"type\":\"Idle\",\"status\":true,\"durationThreshold\":10}],\"locationThresholds\":[{\"eventType\":\"Zone Out\",\"locations\":{\"name\":\"Alarm test location\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"c1d9f6a0-3794-11f0-9ede-7f3b1ed43f2e\"}},\"zones\":[{\"name\":\"alarm zone\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"c7465c50-3794-11f0-9ede-7f3b1ed43f2e\"}}],\"geofences\":\"\",\"duration\":10,\"index\":\"597cc70d-9d09-4de0-37dc-4993cfe6858d\"}]}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1747977972126,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
