@@ -112,7 +112,7 @@
       "createdTime" : 0,
       "debugSettings" : {
         "allEnabled" : false,
-        "allEnabledUntil" : 1743757162324,
+        "allEnabledUntil" : 1748006487129,
         "failuresEnabled" : true
       },
       "externalId" : null,
@@ -326,7 +326,7 @@
       "createdTime" : 0,
       "debugSettings" : {
         "allEnabled" : false,
-        "allEnabledUntil" : 1743755065336,
+        "allEnabledUntil" : 1748006487129,
         "failuresEnabled" : true
       },
       "externalId" : null,
@@ -356,7 +356,7 @@
       "createdTime" : 0,
       "debugSettings" : {
         "allEnabled" : false,
-        "allEnabledUntil" : 1743755050213,
+        "allEnabledUntil" : 1748006487129,
         "failuresEnabled" : false
       },
       "externalId" : null,
@@ -390,7 +390,7 @@
       "createdTime" : 0,
       "debugSettings" : {
         "allEnabled" : false,
-        "allEnabledUntil" : 1743755033625,
+        "allEnabledUntil" : 1748006487129,
         "failuresEnabled" : false
       },
       "externalId" : null,
@@ -500,7 +500,7 @@
       "createdTime" : 0,
       "debugSettings" : {
         "allEnabled" : false,
-        "allEnabledUntil" : 1743754454278,
+        "allEnabledUntil" : 1748006487129,
         "failuresEnabled" : false
       },
       "externalId" : null,
@@ -619,7 +619,7 @@
       "createdTime" : 0,
       "debugSettings" : {
         "allEnabled" : false,
-        "allEnabledUntil" : 1743756451411,
+        "allEnabledUntil" : 1748006487129,
         "failuresEnabled" : false
       },
       "externalId" : null,
@@ -645,7 +645,11 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugSettings" : null,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1748006487129,
+        "failuresEnabled" : false
+      },
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
