@@ -16,7 +16,7 @@
       "id" : "a72b57a0-37b1-11f0-9017-9d87edfee3b0"
     },
     "label" : null,
-    "name" : "Test",
+    "name" : "Test QQQ",
     "ownerId" : {
       "entityType" : "CUSTOMER",
       "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
@@ -24,6 +24,30 @@
     "type" : "Geofence"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "color",
+      "lastUpdateTs" : 1747989660210,
+      "longValue" : null,
+      "strValue" : "#0086C9"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "relatedZoneName",
+      "lastUpdateTs" : 1747989660254,
+      "longValue" : null,
+      "strValue" : "Second image plan"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "relatedZoneType",
+      "lastUpdateTs" : 1747989660254,
+      "longValue" : null,
+      "strValue" : "Image plan"
+    } ]
   }
 }
