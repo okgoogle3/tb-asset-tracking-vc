@@ -97,7 +97,7 @@
       "type" : "False"
     }, {
       "fromIndex" : 19,
-      "toIndex" : 20,
+      "toIndex" : 5,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 13,
@@ -671,17 +671,17 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 612,
-        "layoutY" : 321
+        "layoutX" : 611,
+        "layoutY" : 475
       },
       "configuration" : {
         "msgCount" : 1,
         "periodInSeconds" : 1,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "originatorId" : "d87ed190-3795-11f0-9017-9d87edfee3b0",
-        "originatorType" : "DEVICE"
+        "tbelScript" : "var msg = {\n    \"id\": {\n        \"entityType\": \"ALARM\",\n        \"id\": \"43c3aa36-7897-4024-828a-03be56a66ff8\"\n    },\n    \"createdTime\": 1747978951354,\n    \"tenantId\": {\n        \"entityType\": \"TENANT\",\n        \"id\": \"964a19f0-a5bf-11ef-aeb9-2d6dbc59e038\"\n    },\n    \"type\": \"zone out alarm zone\",\n    \"originator\": {\n        \"entityType\": \"DEVICE\",\n        \"id\": \"d87ed190-3795-11f0-9017-9d87edfee3b0\"\n    },\n    \"severity\": \"CRITICAL\",\n    \"acknowledged\": false,\n    \"cleared\": false,\n    \"startTs\": 1747978951326,\n    \"endTs\": 1747978951326,\n    \"ackTs\": 0,\n    \"clearTs\": 0,\n    \"assignTs\": 0,\n    \"propagate\": false,\n    \"propagateToOwner\": false,\n    \"propagateToOwnerHierarchy\": false,\n    \"propagateToTenant\": false,\n    \"propagateRelationTypes\": [],\n    \"originatorName\": \"alarm device\",\n    \"originatorLabel\": \"alarm device\",\n    \"name\": \"zone out alarm zone\",\n    \"status\": \"ACTIVE_UNACK\",\n    \"details\": {\n        \"zone\": \"alarm zone\"\n    }\n};\nvar metadata = {\n    \"alarmCreated\": \"true\",\n    \"area\": \"zone\",\n    \"areaId\": \"c7465c50-3794-11f0-9ede-7f3b1ed43f2e\",\n    \"areaName\": \"alarm zone\",\n    \"assetName\": \"alarm asset\",\n    \"create\": \"true\",\n    \"data\": \"40\",\n    \"isNewAlarm\": \"true\",\n    \"latitude\": \"10\",\n    \"longitude\": \"10\",\n    \"originatorId\": \"f49f9800-3795-11f0-9017-9d87edfee3b0\",\n    \"ss_alarmConfig\": \"{\\\"description\\\":null,\\\"isActive\\\":true,\\\"phone\\\":true,\\\"email\\\":true,\\\"application\\\":true,\\\"deviceThresholds\\\":[{\\\"type\\\":\\\"Temperature\\\",\\\"status\\\":false,\\\"upperThreshold\\\":100,\\\"lowerThreshold\\\":0,\\\"equalThreshold\\\":50},{\\\"type\\\":\\\"Battery level\\\",\\\"status\\\":false,\\\"upperThreshold\\\":100,\\\"lowerThreshold\\\":0,\\\"equalThreshold\\\":50},{\\\"type\\\":\\\"Movement\\\",\\\"status\\\":true,\\\"durationThreshold\\\":10},{\\\"type\\\":\\\"Idle\\\",\\\"status\\\":true,\\\"durationThreshold\\\":10}],\\\"locationThresholds\\\":[{\\\"eventType\\\":\\\"Zone Out\\\",\\\"locations\\\":{\\\"name\\\":\\\"Alarm test location\\\",\\\"id\\\":{\\\"entityType\\\":\\\"ASSET\\\",\\\"id\\\":\\\"c1d9f6a0-3794-11f0-9ede-7f3b1ed43f2e\\\"}},\\\"zones\\\":[{\\\"name\\\":\\\"alarm zone\\\",\\\"id\\\":{\\\"entityType\\\":\\\"ASSET\\\",\\\"id\\\":\\\"c7465c50-3794-11f0-9ede-7f3b1ed43f2e\\\"}}],\\\"geofences\\\":\\\"\\\",\\\"duration\\\":10,\\\"index\\\":\\\"597cc70d-9d09-4de0-37dc-4993cfe6858d\\\"}]}\",\n    \"ss_areaAlarmRules\": \"{\\\"c7465c50-3794-11f0-9ede-7f3b1ed43f2e\\\":{\\\"name\\\":\\\"alarm zone\\\",\\\"status\\\":\\\"outside\\\"}}\",\n    \"ss_geofenceThresolds\": \"{}\",\n    \"ss_zoneThresolds\": \"{\\\"c7465c50-3794-11f0-9ede-7f3b1ed43f2e\\\":{\\\"minOutsideDuration\\\":10}}\",\n    \"status\": \"outside\"\n};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "originatorId" : "96a1fdf0-a5bf-11ef-aeb9-2d6dbc59e038",
+        "originatorType" : "USER"
       },
       "configurationVersion" : 2,
       "createdTime" : 0,
@@ -696,44 +696,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 650,
-        "layoutY" : 441
-      },
-      "configuration" : {
-        "originatorSource" : "RELATED",
-        "preserveOriginatorIfCustomer" : false,
-        "entityType" : null,
-        "entityNamePattern" : null,
-        "relationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "TO",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "AlarmConfigToDevice",
-            "entityTypes" : [ "ASSET" ]
-          } ]
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugSettings" : {
-        "allEnabled" : false,
-        "allEnabledUntil" : 1748007965614,
-        "failuresEnabled" : true
-      },
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "37eae3f1-3799-11f0-9017-9d87edfee3b0"
-      },
-      "name" : "toAlarmConfig asset",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     } ],
     "ruleChainConnections" : null
   },
