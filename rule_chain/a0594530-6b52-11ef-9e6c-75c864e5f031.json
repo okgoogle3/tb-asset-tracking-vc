@@ -18,7 +18,7 @@
       "entityType" : "RULE_CHAIN",
       "id" : "a0594530-6b52-11ef-9e6c-75c864e5f031"
     },
-    "name" : "Tag device (Root Rule Chain)",
+    "name" : "Tag device Root Rule Chain",
     "root" : false,
     "type" : "CORE"
   },
