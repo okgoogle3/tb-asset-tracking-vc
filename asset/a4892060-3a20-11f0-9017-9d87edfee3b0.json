@@ -24,9 +24,9 @@
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"description\":\"tetstststtstststststts\",\"isActive\":false,\"phone\":false,\"email\":false,\"application\":false}",
+      "jsonValue" : "{\"description\":\"tetstststtstststststts\",\"isActive\":true,\"phone\":true,\"email\":true,\"application\":true,\"locationThresholds\":[{\"eventType\":\"Zone Out\",\"locations\":{\"name\":\"Antonov Company\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"36950ec0-3566-11f0-9ede-7f3b1ed43f2e\"}},\"zones\":[{\"name\":\"Airplane department\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"1c14e5b0-3576-11f0-9ede-7f3b1ed43f2e\"}}],\"geofences\":\"\",\"duration\":1,\"index\":\"b3be1c06-8f1e-59c4-1f32-91f9398ff706\"}],\"deviceThresholds\":[{\"type\":\"Temperature\",\"status\":false,\"upperThreshold\":null,\"lowerThreshold\":null,\"equalThreshold\":null},{\"type\":\"Battery level\",\"status\":true,\"upperThreshold\":null,\"lowerThreshold\":null,\"equalThreshold\":null},{\"type\":\"Movement\",\"status\":true,\"durationThreshold\":null},{\"type\":\"Idle\",\"status\":true,\"durationThreshold\":null}]}",
       "key" : "alarmConfig",
-      "lastUpdateTs" : 1748257331715,
+      "lastUpdateTs" : 1748258143565,
       "longValue" : null,
       "strValue" : null
     } ]
