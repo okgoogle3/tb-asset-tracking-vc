@@ -5963,23 +5963,13 @@
                   "tagActions" : [ {
                     "name" : "assetDetails",
                     "type" : "custom",
-                    "customFunction" : {
-                      "body" : "let $injector = widgetContext.$scope.$injector;\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst dashboardId = dashboardIDs.ASSETS_DASHBOARD_ID;\n\nconst jsonStr = JSON.stringify([\n    {\n        id: \"default\",\n        params: {\n            stateId: \"assetDetails\",\n            prevState: \"assets\",\n            subState: \"general\",\n            statesArray: [\n                {\n                    stateId: \"assets\",\n                    name: \"Assets\"\n                },\n                {\n                    stateId: \"assetDetails\",\n                    name: entityName\n                }\n            ],\n            selectedEntity: {\n                entityName,\n                entityId,\n                entityLabel\n            }\n        }\n    }\n]);\n\nconst state = btoa(jsonStr);\n\nconst queryParams = {\n    stateId: \"Assets\",\n    dashboardId,\n    hideDashboardToolbar: true,\n    state\n};\n\nrouter.navigate(['/iframeView'], {queryParams});",
-                      "modules" : {
-                        "dashboardIDs" : "tb-resource;/api/resource/js_module/tenant/Dashboards IDs.js"
-                      }
-                    },
+                    "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst dashboardId = \"ae5c27b0-df1f-11ef-be7c-2f4dc8c6852f\";\n\nconst jsonStr = JSON.stringify([\n    {\n        id: \"default\",\n        params: {\n            stateId: \"assetDetails\",\n            prevState: \"assets\",\n            subState: \"general\",\n            statesArray: [\n                {\n                    stateId: \"assets\",\n                    name: \"Assets\"\n                },\n                {\n                    stateId: \"assetDetails\",\n                    name: entityName\n                }\n            ],\n            selectedEntity: {\n                entityName,\n                entityId,\n                entityLabel\n            }\n        }\n    }\n]);\n\nconst state = btoa(jsonStr);\n\nconst queryParams = {\n    stateId: \"Assets\",\n    dashboardId,\n    hideDashboardToolbar: true,\n    state\n};\n\nrouter.navigate(['/iframeView'], {queryParams});",
                     "openInSeparateDialog" : false,
                     "openInPopover" : false
                   }, {
                     "name" : "historyDetails",
                     "type" : "custom",
-                    "customFunction" : {
-                      "body" : "let $injector = widgetContext.$scope.$injector;\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst dashboardId = dashboardIDs.ASSETS_DASHBOARD_ID;\n\nconst jsonStr = JSON.stringify([\n    {\n        id: \"default\",\n        params: {\n            stateId: \"assetDetails\",\n            prevState: \"assets\",\n            subState: \"eventHistory\",\n            statesArray: [\n                {\n                    stateId: \"assets\",\n                    name: \"Assets\"\n                },\n                {\n                    stateId: \"assetDetails\",\n                    name: entityName\n                }\n            ],\n            selectedEntity: {\n                entityName,\n                entityId,\n                entityLabel\n            }\n        }\n    }\n]);\n\nconst state = btoa(jsonStr);\n\nconst queryParams = {\n    stateId: \"Assets\",\n    dashboardId,\n    hideDashboardToolbar: true,\n    state\n};\n\nrouter.navigate(['/iframeView'], {queryParams});",
-                      "modules" : {
-                        "dashboardIDs" : "tb-resource;/api/resource/js_module/tenant/Dashboards IDs.js"
-                      }
-                    },
+                    "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet router = $injector.get(widgetContext.servicesMap.get('router'));\n\nconst dashboardId = \"ae5c27b0-df1f-11ef-be7c-2f4dc8c6852f\";\n\nconst jsonStr = JSON.stringify([\n    {\n        id: \"default\",\n        params: {\n            stateId: \"assetDetails\",\n            prevState: \"assets\",\n            subState: \"eventHistory\",\n            statesArray: [\n                {\n                    stateId: \"assets\",\n                    name: \"Assets\"\n                },\n                {\n                    stateId: \"assetDetails\",\n                    name: entityName\n                }\n            ],\n            selectedEntity: {\n                entityName,\n                entityId,\n                entityLabel\n            }\n        }\n    }\n]);\n\nconst state = btoa(jsonStr);\n\nconst queryParams = {\n    stateId: \"Assets\",\n    dashboardId,\n    hideDashboardToolbar: true,\n    state\n};\n\nrouter.navigate(['/iframeView'], {queryParams});",
                     "openInSeparateDialog" : false,
                     "openInPopover" : false
                   } ]
