@@ -1,0 +1,26 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "eabf5d80-8227-11ef-b5ef-a3c9386e22a5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "14747040-3d3d-11f0-a531-a5104f21ac36"
+    },
+    "label" : null,
+    "name" : "45345",
+    "ownerId" : null,
+    "type" : "Alarm config"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
