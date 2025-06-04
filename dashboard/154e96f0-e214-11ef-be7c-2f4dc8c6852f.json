@@ -7505,6 +7505,7 @@
             "datasources" : [ {
               "type" : "entity",
               "entityAliasId" : "b95ae626-0d98-e48c-6388-6868d889e040",
+              "filterId" : "16675d00-61cc-2cf6-6d4d-6ce5eaf697bc",
               "dataKeys" : [ {
                 "name" : "pointA",
                 "type" : "attribute",
@@ -10572,7 +10573,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "",
+                  "defaultValue" : "Steel crane",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : false,
