@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "department",
-      "lastUpdateTs" : 1750765663649,
+      "lastUpdateTs" : 1750765889794,
       "longValue" : null,
       "strValue" : "Demo Asset 1"
     }, {
@@ -76,7 +76,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1750765663649,
+      "lastUpdateTs" : 1750765889794,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -92,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1750765663649,
+      "lastUpdateTs" : 1750765889794,
       "longValue" : null,
       "strValue" : "bfg"
     }, {
@@ -100,7 +100,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1750765663649,
+      "lastUpdateTs" : 1750765889794,
       "longValue" : null,
       "strValue" : ""
     }, {
