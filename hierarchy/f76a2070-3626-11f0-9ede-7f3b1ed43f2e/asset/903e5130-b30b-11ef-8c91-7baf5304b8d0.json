@@ -71,7 +71,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1752226273859,
+      "lastUpdateTs" : 1752226433735,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -127,7 +127,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1752226433735,
+      "lastUpdateTs" : 1752226436533,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -175,7 +175,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "modelNumber",
-      "lastUpdateTs" : 1752226433735,
+      "lastUpdateTs" : 1752226436533,
       "longValue" : null,
       "strValue" : "Demo Asset 1"
     }, {
@@ -191,7 +191,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1752226433735,
+      "lastUpdateTs" : 1752226436533,
       "longValue" : null,
       "strValue" : "Demo Asset 1"
     }, {
