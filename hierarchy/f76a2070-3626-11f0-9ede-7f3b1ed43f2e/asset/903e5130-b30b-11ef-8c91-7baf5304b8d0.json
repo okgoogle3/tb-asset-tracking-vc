@@ -79,7 +79,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1752225173057,
+      "lastUpdateTs" : 1752225214553,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -127,7 +127,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1752225173057,
+      "lastUpdateTs" : 1752225214553,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -135,7 +135,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1752225214553,
+      "lastUpdateTs" : 1752226139126,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -199,7 +199,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "serialNumber",
-      "lastUpdateTs" : 1752225214553,
+      "lastUpdateTs" : 1752226139126,
       "longValue" : null,
       "strValue" : "Demo Asset 1"
     }, {
