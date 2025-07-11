@@ -1,0 +1,31 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "22c73b20-a727-11ef-98fa-d9f628e02cb7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "55594d90-5e3c-11f0-abbf-cbd1149b410e"
+    },
+    "label" : null,
+    "name" : "Test Assets for Delete Device",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f76a2070-3626-11f0-9ede-7f3b1ed43f2e"
+    },
+    "type" : "Tool"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
