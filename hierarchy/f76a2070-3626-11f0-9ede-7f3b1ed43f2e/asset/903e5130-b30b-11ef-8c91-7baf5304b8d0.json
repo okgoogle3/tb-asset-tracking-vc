@@ -47,7 +47,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"id\":{\"entityType\":\"DEVICE\",\"id\":\"25003f00-b30b-11ef-8c91-7baf5304b8d0\"},\"name\":\"Demo Device 1\"}",
       "key" : "assignedDevice",
-      "lastUpdateTs" : 1752226139126,
+      "lastUpdateTs" : 1752226152928,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -55,7 +55,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"name\":\"Kramatorsk Machinebuilding Factory\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"6f6d4ba0-bdec-11ef-b55e-d50e0e2ee017\"}}",
       "key" : "assignedLocation",
-      "lastUpdateTs" : 1752226139126,
+      "lastUpdateTs" : 1752226152928,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -79,7 +79,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "description",
-      "lastUpdateTs" : 1752226139126,
+      "lastUpdateTs" : 1752226152928,
       "longValue" : null,
       "strValue" : ""
     }, {
@@ -119,7 +119,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedDevice",
-      "lastUpdateTs" : 1752226139126,
+      "lastUpdateTs" : 1752226152928,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -127,7 +127,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "hasRelatedLocation",
-      "lastUpdateTs" : 1752226139126,
+      "lastUpdateTs" : 1752226152928,
       "longValue" : null,
       "strValue" : null
     }, {
