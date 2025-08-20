@@ -21,6 +21,14 @@
     "type" : "Alarm config"
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"isActive\":true,\"phone\":true,\"email\":true,\"application\":true,\"locationThresholds\":[{\"eventType\":\"Zone In\",\"locations\":{\"name\":\"Mykolaiv Alumina Plant\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"12d6a6b0-c126-11ef-b55e-d50e0e2ee017\"}},\"zones\":[{\"name\":\"Electrical repair workshop\",\"id\":{\"entityType\":\"ASSET\",\"id\":\"b3a14790-c1d9-11ef-b55e-d50e0e2ee017\"}}],\"geofences\":\"\",\"duration\":10,\"index\":\"dd9758c1-cd51-f894-5bf0-e3a60ca24feb\"}]}",
+      "key" : "alarmConfig",
+      "lastUpdateTs" : 1752225786773,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
